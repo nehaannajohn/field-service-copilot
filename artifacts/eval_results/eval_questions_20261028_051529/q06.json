@@ -1660,6 +1660,7 @@
         "reason": "The copilot does not provide procedural reset instructions; it only states that an HV-certified technician must use the applicable procedure."
       }
     ],
-    "verdict": "partially_correct"
+    "verdict": "partially_correct",
+    "key_point_score": 0.8571428571428571
   }
 }

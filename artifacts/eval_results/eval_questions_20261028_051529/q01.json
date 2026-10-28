@@ -1317,6 +1317,7 @@
       }
     ],
     "constraints": [],
-    "verdict": "partially_correct"
+    "verdict": "partially_correct",
+    "key_point_score": 0.8571428571428571
   }
 }

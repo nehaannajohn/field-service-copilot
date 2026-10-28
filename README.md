@@ -87,6 +87,8 @@ I used Claude Code as my AI agent across design and implementation.
 
 ## Results
 
-Correctness on the 10 provided questions: **5 of 10 correct**, 5 partially correct, 0 incorrect
+Correctness on the 10 provided questions: **5 of 10 correct**, 5 partially correct, 0 incorrect.
+Key points present: **micro 91%** (63 of 69 key points, every point weighted equally),
+**macro 88%** (mean of per-question scores, every question weighted equally).
 (`artifacts/eval_results/eval_questions_20261028_051529/summary.json`; one file per question with the
 judge's grading of every key point). Run with `.venv/bin/copilot eval`.

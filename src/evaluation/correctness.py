@@ -72,9 +72,15 @@ def verdict(judgement: dict) -> str:
     return "partially_correct"
 
 
+def key_point_score(judgement: dict) -> float | None:
+    """Share of the reference's key points that are present (partial counts as not present)."""
+    points = judgement["key_points"]
+    return sum(k["verdict"] == "present" for k in points) / len(points) if points else None
+
+
 def judge(question: str, reference: str, result: dict) -> dict:
-    """One judge call; the verdict is computed in code from the per-point grades."""
+    """One judge call; the verdict and the key-point score are computed in code from the per-point grades."""
     prompt = (f"Question: {question}\n\nReference answer:\n{reference}\n\n"
               f"Copilot answer:\n{answer_text(result)}")
     judgement = structured("judge", prompt, SCHEMA, "correctness", instructions=INSTRUCTIONS)
-    return judgement | {"verdict": verdict(judgement)}
+    return judgement | {"verdict": verdict(judgement), "key_point_score": key_point_score(judgement)}

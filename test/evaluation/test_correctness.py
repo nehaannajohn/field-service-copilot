@@ -1,4 +1,5 @@
-from evaluation.correctness import answer_text, verdict
+from evaluation.correctness import answer_text, key_point_score, verdict
+from evaluation.run_eval import summarise
 
 
 def grades(points, constraints=()):
@@ -28,3 +29,16 @@ def test_answer_text_is_summary_or_message():
     assert answer_text(answered) == "A.\nB."
     assert answer_text({"status": "no_permitted_source", "message": "No document you have access to covers this."}) \
         == "No document you have access to covers this."
+
+
+def test_key_point_score_counts_present_only():
+    assert key_point_score(grades(["present", "partial", "missing", "present"])) == 0.5
+    assert key_point_score(grades([])) is None
+
+
+def test_micro_and_macro_scores():
+    rows = [{"verdict": "correct", "key_points_present": 1, "key_points_total": 1, "key_point_score": 1.0},
+            {"verdict": "partially_correct", "key_points_present": 1, "key_points_total": 3, "key_point_score": 1 / 3}]
+    s = summarise(rows)
+    assert s["micro_key_point_score"] == 0.5          # 2 of 4 points
+    assert s["macro_key_point_score"] == 0.667        # mean of 1.0 and 0.333

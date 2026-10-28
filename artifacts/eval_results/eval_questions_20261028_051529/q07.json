@@ -1013,6 +1013,7 @@
         "reason": "The copilot gives no warranty duration and does not mention BX-12."
       }
     ],
-    "verdict": "correct"
+    "verdict": "correct",
+    "key_point_score": 1.0
   }
 }

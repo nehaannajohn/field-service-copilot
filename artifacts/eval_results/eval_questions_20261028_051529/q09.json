@@ -2098,6 +2098,7 @@
         "reason": "The copilot repeatedly says not to top up and requires leak testing and repair under SOP-020 before charging."
       }
     ],
-    "verdict": "partially_correct"
+    "verdict": "partially_correct",
+    "key_point_score": 0.9090909090909091
   }
 }

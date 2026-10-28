@@ -5,76 +5,110 @@
     "partially_correct": 5,
     "correct": 5
   },
+  "key_points_present": 63,
+  "key_points_total": 69,
+  "micro_key_point_score": 0.913,
+  "macro_key_point_score": 0.879,
   "rows": [
     {
       "id": "q01",
       "user_id": "u01",
       "verdict": "partially_correct",
       "status": "answered",
-      "seconds": 67.7
+      "seconds": 67.7,
+      "key_points_present": 6,
+      "key_points_total": 7,
+      "key_point_score": 0.8571428571428571
     },
     {
       "id": "q02",
       "user_id": "u01",
       "verdict": "partially_correct",
       "status": "answered",
-      "seconds": 22.0
+      "seconds": 22.0,
+      "key_points_present": 2,
+      "key_points_total": 3,
+      "key_point_score": 0.6666666666666666
     },
     {
       "id": "q03",
       "user_id": "u03",
       "verdict": "partially_correct",
       "status": "answered",
-      "seconds": 50.1
+      "seconds": 50.1,
+      "key_points_present": 2,
+      "key_points_total": 4,
+      "key_point_score": 0.5
     },
     {
       "id": "q04",
       "user_id": "u04",
       "verdict": "correct",
       "status": "answered",
-      "seconds": 65.3
+      "seconds": 65.3,
+      "key_points_present": 7,
+      "key_points_total": 7,
+      "key_point_score": 1.0
     },
     {
       "id": "q05",
       "user_id": "u02",
       "verdict": "correct",
       "status": "answered",
-      "seconds": 111.0
+      "seconds": 111.0,
+      "key_points_present": 12,
+      "key_points_total": 12,
+      "key_point_score": 1.0
     },
     {
       "id": "q06",
       "user_id": "u03",
       "verdict": "partially_correct",
       "status": "answered",
-      "seconds": 71.8
+      "seconds": 71.8,
+      "key_points_present": 6,
+      "key_points_total": 7,
+      "key_point_score": 0.8571428571428571
     },
     {
       "id": "q07",
       "user_id": "u12",
       "verdict": "correct",
       "status": "no_permitted_source",
-      "seconds": 5.2
+      "seconds": 5.2,
+      "key_points_present": 3,
+      "key_points_total": 3,
+      "key_point_score": 1.0
     },
     {
       "id": "q08",
       "user_id": "u03",
       "verdict": "correct",
       "status": "answered",
-      "seconds": 82.0
+      "seconds": 82.0,
+      "key_points_present": 9,
+      "key_points_total": 9,
+      "key_point_score": 1.0
     },
     {
       "id": "q09",
       "user_id": "u05",
       "verdict": "partially_correct",
       "status": "answered",
-      "seconds": 152.1
+      "seconds": 152.1,
+      "key_points_present": 10,
+      "key_points_total": 11,
+      "key_point_score": 0.9090909090909091
     },
     {
       "id": "q10",
       "user_id": "u12",
       "verdict": "correct",
       "status": "answered",
-      "seconds": 87.1
+      "seconds": 87.1,
+      "key_points_present": 6,
+      "key_points_total": 6,
+      "key_point_score": 1.0
     }
   ]
 }

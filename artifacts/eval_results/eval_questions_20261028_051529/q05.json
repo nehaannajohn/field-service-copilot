@@ -1967,6 +1967,7 @@
       }
     ],
     "constraints": [],
-    "verdict": "correct"
+    "verdict": "correct",
+    "key_point_score": 1.0
   }
 }
