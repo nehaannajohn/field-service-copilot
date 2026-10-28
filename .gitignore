@@ -1,0 +1,21 @@
+# Secrets
+.env
+
+# Kept local
+docs/
+scripts/
+
+# Generated outputs: everything except the search index
+artifacts/*
+!artifacts/.gitkeep
+!artifacts/index.db
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+*.egg-info/
+
+# OS
+.DS_Store

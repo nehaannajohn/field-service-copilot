@@ -1,0 +1,44 @@
+paths:
+  data_dir: data
+  corpus_dir: data/corpus
+  users: data/users.json
+  permissions: data/permissions.json
+  eval_dir: data/eval
+  artifacts_dir: artifacts
+  index_db: artifacts/index.db
+  ingest_report: artifacts/ingest_report.json
+  cache_dir: artifacts/cache
+  outbox_dir: artifacts/outbox
+  eval_results_dir: artifacts/eval_results
+
+access:
+  deny_key: "__no_permission_entry__"
+  certification_prefix: "cert-"   # groups with this prefix are certifications, shown to the claims model
+
+models:
+  answer: gpt-6.1-sol          # claims and compose response
+  verifier: gpt-5.6-terra      # verifier
+  ingest: gpt-5.6-terra        # ingest
+  work_order: gpt-5.6-terra    # work order draft
+  judge: gpt-5.6-terra         # eval judge
+  embedding: text-embedding-3-large
+  embedding_dimensions: 1024
+
+llm:
+  max_retries: 3             # SDK retries: 408, 409, 429, 5xx, timeouts, connection errors
+  embedding_batch_size: 100  # texts per embeddings request
+
+ingest:
+  max_input_chars: 30000   # about 7.5k tokens per part, so the rewritten output stays well under the model's limit
+  max_records_per_part: 40   # caps output size: records are rewritten, and translated when not in English
+  max_workers: 8   # parts parsed in parallel
+
+retrieval:
+  top_k: 30                  # chunks passed to the claims step
+  candidates_per_method: 50  # BM25 and vector each contribute this many before fusion
+  rrf_k: 60                  # reciprocal rank fusion damping constant: larger = flatter weighting across ranks
+  bm25_k1: 1.2               # BM25 term-frequency saturation: higher = repeated terms keep adding score longer
+  bm25_b: 0.75               # BM25 length normalisation: 1 = fully penalise long chunks, 0 = ignore length
+
+chunking:
+  max_tokens: 2000
