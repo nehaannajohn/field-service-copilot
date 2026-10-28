@@ -4,6 +4,66 @@ A permission-aware question-answering copilot for Corvane field technicians. It 
 documents, cites the source behind every sentence, uses only the documents the asking technician may see,
 says when no permitted document covers the question, and drafts work orders for a person to approve.
 
+## Architecture
+
+```
+                                  ┌──────────────────────────────────────────┐
+                                  │ data/                                    │
+                                  │ corpus/ · permissions.json · users.json  │
+                                  └──────────────────────────────────────────┘
+                                                       │
+                                                       ▼
+OFFLINE · copilot ingest
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ ┌────────────┐   ┌────────────┐   ┌────────────────┐   ┌─────────────────┐   ┌─────────────┐   ┌──────────┐ │
+│ │ Reconcile  │──▶│ Dedupe     │──▶│ Build inputs   │──▶│ Parse           │──▶│ Chunk       │──▶│ Embed    │ │
+│ │ access key │   │ content +  │   │ PDF as file    │   │ LLM per part    │   │ threads     │   │ 1024-dim │ │
+│ │ per file   │   │ access key │   │ text · ≤40 rec │   │ OCR · translate │   │ ≤ 2,000 tok │   │ vectors  │ │
+│ └────────────┘   └────────────┘   └────────────────┘   └─────────────────┘   └─────────────┘   └──────────┘ │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+                                                       │
+                                                       ▼
+                             ┌────────────────────────────┐   ┌──────────────────┐
+                             │ artifacts/index.db         │   │ artifacts/cache/ │
+                             │ chunks + vectors · FTS5    │   │ parse results    │
+                             │ ingest_status              │   │ embeddings       │
+                             │ each chunk keyed by access │   │                  │
+                             └────────────────────────────┘   └──────────────────┘
+                                                       │   read only through the user's permitted access keys
+                                                       ▼
+ONLINE · copilot ask --user U "question"
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ ┌────────────────┐   ┌───────────────────┐   ┌───────────────┐                                              │
+│ │ Access         │──▶│ Retrieve          │──▶│ Fuse          │                                              │
+│ │ groups →       │   │ BM25 + cosine     │   │ reciprocal    │                                              │
+│ │ permitted keys │   │ on permitted only │   │ rank · top 30 │                                              │
+│ └────────────────┘   └───────────────────┘   └───────────────┘                                              │
+│                                                      │                                                      │
+│  ┌───────────────────────────────────────────────────┘                                                      │
+│  ▼                                                                                                          │
+│ ┌─────────────────┐   ┌──────────────┐   ┌────────────────┐   ┌─────────────┐   ┌────────────────┐          │
+│ │ Claims          │──▶│ Verify       │──▶│ Compose        │──▶│ Work order  │──▶│ Answer         │          │
+│ │ LLM: cited      │   │ LLM: claim × │   │ LLM: summary   │   │ LLM: draft, │   │ summary + ✓/✗  │          │
+│ │ claims · status │   │ cited chunk  │   │ code: evidence │   │ only when   │   │ evidence table │          │
+│ │ work order?     │   │ matrix       │   │ table          │   │ needed      │   │ approve? y/n   │          │
+│ └─────────────────┘   └──────────────┘   └────────────────┘   └─────────────┘   └────────────────┘          │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+                                                                                           │ approve
+                                                                                           ▼
+                                                                                 ┌───────────────────┐
+                                                                                 │ artifacts/outbox/ │
+                                                                                 └───────────────────┘
+
+EVAL · copilot eval
+┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ ┌──────────────────┐   ┌─────────────────┐   ┌──────────────┐   ┌───────────────────┐                       │
+│ │ data/eval/*.json │──▶│ Online pipeline │──▶│ LLM judge    │──▶│ Score             │                       │
+│ │ question + ref   │   │ (above)         │   │ key points + │   │ verdict · micro / │                       │
+│ │                  │   │                 │   │ constraints  │   │ macro key points  │                       │
+│ └──────────────────┘   └─────────────────┘   └──────────────┘   └───────────────────┘                       │
+└─────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
 ## Repository layout
 
 ```
