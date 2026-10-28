@@ -2,6 +2,8 @@
 import argparse
 import json
 
+from common.config import PROJECT_ROOT
+from evaluation.run_eval import run_eval
 from offline_pipeline.ingest import ingest
 from online_query.pipeline import run_query, show
 
@@ -27,6 +29,10 @@ def main() -> None:
     ask.add_argument("--trace", action="store_true", help="print every pipeline stage")
     ask.add_argument("question")
 
+    ev = commands.add_parser("eval", help="run the correctness eval on a question set")
+    ev.add_argument("--set", default="data/eval/eval_questions.json",
+                    help="questions file, relative to the project root")
+
     args = parser.parse_args()
     if args.command == "ingest":
         print(json.dumps(ingest(set(args.files) or None)["summary"], indent=2))
@@ -35,6 +41,8 @@ def main() -> None:
         if args.trace:
             print_trace(result)
         show(result)
+    elif args.command == "eval":
+        run_eval(PROJECT_ROOT / args.set)
 
 
 if __name__ == "__main__":
