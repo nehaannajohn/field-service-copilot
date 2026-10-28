@@ -1,0 +1,665 @@
+{
+  "summary": {
+    "corpus_files": 42,
+    "by_status": {
+      "indexed": 39,
+      "error": 1,
+      "duplicate": 1,
+      "not_indexed": 1
+    },
+    "indexed_chunks": 1577,
+    "last_run": {
+      "files_processed": 42,
+      "sample": false,
+      "removed_from_index": [],
+      "seconds": 1292.1
+    }
+  },
+  "files": [
+    {
+      "path": "corpus/bulletins/Halden_SB-2025-009_HCP-350_Casing_Torque.pdf",
+      "acl_key": "family-pumps",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 12,
+      "cached": 0,
+      "transformations_applied": [
+        "boilerplate_removal",
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference"
+      ],
+      "updated_at": "2026-10-27 22:05:44"
+    },
+    {
+      "path": "corpus/bulletins/Halden_SB-2025-018_Seal_Kit_Supersession.pdf",
+      "acl_key": "family-pumps",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 11,
+      "cached": 0,
+      "transformations_applied": [
+        "boilerplate_removal",
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference"
+      ],
+      "updated_at": "2026-10-27 22:06:04"
+    },
+    {
+      "path": "corpus/bulletins/Nordkyl_SB-2025-014_NK-600_EXV_Campaign.pdf",
+      "acl_key": "family-chillers|region-eu",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 10,
+      "cached": 0,
+      "transformations_applied": [
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference"
+      ],
+      "updated_at": "2026-10-27 22:06:24"
+    },
+    {
+      "path": "corpus/bulletins/Vastra_SB-2026-003_VRS-110_Firmware_5.1.pdf",
+      "acl_key": "family-compressors",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 11,
+      "cached": 0,
+      "transformations_applied": [
+        "boilerplate_removal",
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference"
+      ],
+      "updated_at": "2026-10-27 22:06:46"
+    },
+    {
+      "path": "corpus/bulletins/Vastra_SB-2026-015_VRS-45_Coupling.pdf",
+      "acl_key": "family-compressors",
+      "status": "error",
+      "reason": "BadRequestError: Error code: 400 - The file you uploaded is badly formatted or corrupted. Please fix the file and try again.",
+      "flags": [],
+      "transformations_applied": [],
+      "updated_at": "2026-10-27 22:06:46"
+    },
+    {
+      "path": "corpus/chat/Teams_na-compressors_2026-07.json",
+      "acl_key": "family-compressors|region-na",
+      "status": "indexed",
+      "flags": [],
+      "parts": 2,
+      "chunks": 7,
+      "cached": 0,
+      "transformations_applied": [
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference",
+        "thread_grouping"
+      ],
+      "updated_at": "2026-10-27 22:07:03"
+    },
+    {
+      "path": "corpus/confluence/Compressor-Troubleshooting-Playbook.html",
+      "acl_key": "family-compressors",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 22,
+      "cached": 0,
+      "transformations_applied": [
+        "boilerplate_removal",
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference",
+        "thread_grouping"
+      ],
+      "updated_at": "2026-10-27 22:07:41"
+    },
+    {
+      "path": "corpus/confluence/EU-Chiller-Field-Guide.html",
+      "acl_key": "family-chillers|region-eu",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 16,
+      "cached": 0,
+      "transformations_applied": [
+        "boilerplate_removal",
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference",
+        "thread_grouping"
+      ],
+      "updated_at": "2026-10-27 22:08:06"
+    },
+    {
+      "path": "corpus/confluence/HCP-500-Maintenance-Quick-Reference.html",
+      "acl_key": "family-pumps",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 6,
+      "cached": 0,
+      "transformations_applied": [
+        "boilerplate_removal",
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference",
+        "thread_grouping"
+      ],
+      "updated_at": "2026-10-27 22:08:16"
+    },
+    {
+      "path": "corpus/confluence/Lessons-Learned-2025.html",
+      "acl_key": "role-lead",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 14,
+      "cached": 0,
+      "transformations_applied": [
+        "boilerplate_removal",
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference"
+      ],
+      "updated_at": "2026-10-27 22:08:39"
+    },
+    {
+      "path": "corpus/confluence/Pump-Troubleshooting-Playbook.html",
+      "acl_key": "family-pumps",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 19,
+      "cached": 0,
+      "transformations_applied": [
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference",
+        "thread_grouping"
+      ],
+      "updated_at": "2026-10-27 22:09:08"
+    },
+    {
+      "path": "corpus/confluence/Rotterdam-Site-Notes.html",
+      "acl_key": "region-eu",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 9,
+      "cached": 0,
+      "transformations_applied": [
+        "boilerplate_removal",
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference",
+        "thread_grouping"
+      ],
+      "updated_at": "2026-10-27 22:09:24"
+    },
+    {
+      "path": "corpus/confluence/Tacoma-Site-Notes.html",
+      "acl_key": "region-na",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 11,
+      "cached": 0,
+      "transformations_applied": [
+        "boilerplate_removal",
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference",
+        "thread_grouping"
+      ],
+      "updated_at": "2026-10-27 22:09:41"
+    },
+    {
+      "path": "corpus/confluence/VRS-110-VFD-quick-reset-unofficial.html",
+      "acl_key": "__no_permission_entry__",
+      "status": "indexed",
+      "flags": [
+        "no_permission_entry"
+      ],
+      "parts": 1,
+      "chunks": 4,
+      "cached": 0,
+      "transformations_applied": [
+        "boilerplate_removal",
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference"
+      ],
+      "updated_at": "2026-10-27 22:09:52"
+    },
+    {
+      "path": "corpus/confluence/VRS-Series-Oil-and-Filter-Quick-Reference.html",
+      "acl_key": "family-compressors",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 7,
+      "cached": 0,
+      "transformations_applied": [
+        "boilerplate_removal",
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference",
+        "thread_grouping"
+      ],
+      "updated_at": "2026-10-27 22:10:01"
+    },
+    {
+      "path": "corpus/confluence/Work-Order-Writing-Guide.html",
+      "acl_key": "",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 9,
+      "cached": 0,
+      "transformations_applied": [
+        "boilerplate_removal",
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference",
+        "thread_grouping"
+      ],
+      "updated_at": "2026-10-27 22:10:19"
+    },
+    {
+      "path": "corpus/data/Q2_2026_Field_Service_Ops_Review.pdf",
+      "acl_key": "role-lead",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 8,
+      "cached": 0,
+      "transformations_applied": [
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference"
+      ],
+      "updated_at": "2026-10-27 22:10:42"
+    },
+    {
+      "path": "corpus/data/fleet_register.csv",
+      "acl_key": "",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 30,
+      "cached": 0,
+      "transformations_applied": [
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference"
+      ],
+      "updated_at": "2026-10-27 22:11:07"
+    },
+    {
+      "path": "corpus/data/maintpro_history_NA_2023-2026.csv",
+      "acl_key": "region-na",
+      "status": "indexed",
+      "flags": [],
+      "parts": 15,
+      "chunks": 588,
+      "cached": 0,
+      "transformations_applied": [
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference"
+      ],
+      "updated_at": "2026-10-27 22:12:21"
+    },
+    {
+      "path": "corpus/data/salesforce_cases_EU_2025-2026.json",
+      "acl_key": "region-eu",
+      "status": "indexed",
+      "flags": [],
+      "parts": 2,
+      "chunks": 30,
+      "cached": 0,
+      "transformations_applied": [
+        "boilerplate_removal",
+        "metadata_extraction",
+        "structure_inference",
+        "translation"
+      ],
+      "updated_at": "2026-10-27 22:13:12"
+    },
+    {
+      "path": "corpus/data/salesforce_cases_NA_2025-2026.json",
+      "acl_key": "region-na",
+      "status": "indexed",
+      "flags": [],
+      "parts": 3,
+      "chunks": 38,
+      "cached": 0,
+      "transformations_applied": [
+        "boilerplate_removal",
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference"
+      ],
+      "updated_at": "2026-10-27 22:14:02"
+    },
+    {
+      "path": "corpus/data/servio_export_EU_2023-2026.csv",
+      "acl_key": "region-eu",
+      "status": "indexed",
+      "flags": [],
+      "parts": 12,
+      "chunks": 445,
+      "cached": 0,
+      "transformations_applied": [
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference",
+        "translation"
+      ],
+      "updated_at": "2026-10-27 22:16:02"
+    },
+    {
+      "path": "corpus/email/FW_RTM-H-0007_repeat_alarm_customer_escalation.eml",
+      "acl_key": "family-chillers|region-eu",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 3,
+      "cached": 0,
+      "transformations_applied": [
+        "boilerplate_removal",
+        "metadata_extraction",
+        "thread_grouping",
+        "translation"
+      ],
+      "updated_at": "2026-10-27 22:16:28"
+    },
+    {
+      "path": "corpus/email/HCP-350_casing_leak_FRS-P-0031_Halden_thread.pdf",
+      "acl_key": "family-pumps",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 8,
+      "cached": 0,
+      "transformations_applied": [
+        "boilerplate_removal",
+        "layout_cleanup",
+        "metadata_extraction",
+        "thread_grouping"
+      ],
+      "updated_at": "2026-10-27 22:16:54"
+    },
+    {
+      "path": "corpus/email/RE_BX-12_tracking_after_belt_change.eml",
+      "acl_key": "family-conveyors",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 4,
+      "cached": 0,
+      "transformations_applied": [
+        "boilerplate_removal",
+        "layout_cleanup",
+        "metadata_extraction",
+        "thread_grouping"
+      ],
+      "updated_at": "2026-10-27 22:17:09"
+    },
+    {
+      "path": "corpus/manuals/Belton_BX-12_OM_Manual_RevB.pdf",
+      "acl_key": "family-conveyors",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 17,
+      "cached": 0,
+      "transformations_applied": [
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference"
+      ],
+      "updated_at": "2026-10-27 22:17:43"
+    },
+    {
+      "path": "corpus/manuals/Halden_HCP-200_Betriebsanleitung_1998_scan.pdf",
+      "acl_key": "family-pumps",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 9,
+      "cached": 0,
+      "transformations_applied": [
+        "layout_cleanup",
+        "metadata_extraction",
+        "ocr",
+        "structure_inference",
+        "translation"
+      ],
+      "updated_at": "2026-10-27 22:18:49"
+    },
+    {
+      "path": "corpus/manuals/Halden_HCP-350_IOM_RevD.pdf",
+      "acl_key": "family-pumps",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 18,
+      "cached": 0,
+      "transformations_applied": [
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference"
+      ],
+      "updated_at": "2026-10-27 22:19:30"
+    },
+    {
+      "path": "corpus/manuals/Halden_HCP-500_IOM_RevB.pdf",
+      "acl_key": "family-pumps",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 18,
+      "cached": 0,
+      "transformations_applied": [
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference"
+      ],
+      "updated_at": "2026-10-27 22:20:13"
+    },
+    {
+      "path": "corpus/manuals/NK600_manual_final_v2.pdf",
+      "acl_key": "family-chillers",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 14,
+      "cached": 0,
+      "transformations_applied": [
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference"
+      ],
+      "updated_at": "2026-10-27 22:21:07"
+    },
+    {
+      "path": "corpus/manuals/Nordkyl_NK-600_Service_Manual_RevC.pdf",
+      "acl_key": "family-chillers",
+      "status": "duplicate",
+      "reason": "same content and access as corpus/manuals/NK600_manual_final_v2.pdf",
+      "flags": [],
+      "transformations_applied": [],
+      "updated_at": "2026-10-27 22:05:19"
+    },
+    {
+      "path": "corpus/manuals/Vastra_VRS-110_Service_Manual_RevA.pdf",
+      "acl_key": "family-compressors",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 11,
+      "cached": 0,
+      "transformations_applied": [
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference"
+      ],
+      "updated_at": "2026-10-27 22:22:04"
+    },
+    {
+      "path": "corpus/manuals/Vastra_VRS-75_Service_Manual_RevB_2024.pdf",
+      "acl_key": "family-compressors",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 37,
+      "cached": 0,
+      "transformations_applied": [
+        "boilerplate_removal",
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference"
+      ],
+      "updated_at": "2026-10-27 22:22:55"
+    },
+    {
+      "path": "corpus/manuals/Vastra_VRS-75_Service_Manual_RevC_2026.pdf",
+      "acl_key": "family-compressors",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 11,
+      "cached": 0,
+      "transformations_applied": [
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference"
+      ],
+      "updated_at": "2026-10-27 22:23:49"
+    },
+    {
+      "path": "corpus/sharepoint/CS-PROC-03_Confined_Space_Entry_Pump_Pits.docx",
+      "acl_key": "cert-confined-space",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 20,
+      "cached": 0,
+      "transformations_applied": [
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference"
+      ],
+      "updated_at": "2026-10-27 22:24:15"
+    },
+    {
+      "path": "corpus/sharepoint/FS-STD-001_Field_Service_Standard.docx",
+      "acl_key": "",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 16,
+      "cached": 0,
+      "transformations_applied": [
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference"
+      ],
+      "updated_at": "2026-10-27 22:24:44"
+    },
+    {
+      "path": "corpus/sharepoint/HV-PROC-02_Electrical_Isolation_Verification.docx",
+      "acl_key": "cert-hv",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 20,
+      "cached": 0,
+      "transformations_applied": [
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference"
+      ],
+      "updated_at": "2026-10-27 22:25:11"
+    },
+    {
+      "path": "corpus/sharepoint/HV-PROC-07_VRS-110_VFD_Fault_Reset.docx",
+      "acl_key": "cert-hv|family-compressors",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 17,
+      "cached": 0,
+      "transformations_applied": [
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference"
+      ],
+      "updated_at": "2026-10-27 22:25:42"
+    },
+    {
+      "path": "corpus/sharepoint/Inspection_Checklist_Q3_FINAL.docx",
+      "acl_key": "",
+      "status": "not_indexed",
+      "reason": "zero bytes",
+      "flags": [],
+      "transformations_applied": [],
+      "updated_at": "2026-10-27 22:25:42"
+    },
+    {
+      "path": "corpus/sharepoint/KT-WI-14_Low_Suction_Pressure_Chillers_EN.docx",
+      "acl_key": "family-chillers|region-eu",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 8,
+      "cached": 0,
+      "transformations_applied": [
+        "boilerplate_removal",
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference"
+      ],
+      "updated_at": "2026-10-27 22:26:05"
+    },
+    {
+      "path": "corpus/sharepoint/SOP-020_Chiller_Leak_Test_and_Recharge.docx",
+      "acl_key": "cert-refrigerant|family-chillers",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 16,
+      "cached": 0,
+      "transformations_applied": [
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference"
+      ],
+      "updated_at": "2026-10-27 22:26:26"
+    },
+    {
+      "path": "corpus/sharepoint/Technician_Certification_Matrix_2026.docx",
+      "acl_key": "role-lead",
+      "status": "indexed",
+      "flags": [],
+      "parts": 1,
+      "chunks": 23,
+      "cached": 0,
+      "transformations_applied": [
+        "layout_cleanup",
+        "metadata_extraction",
+        "structure_inference"
+      ],
+      "updated_at": "2026-10-27 22:26:51"
+    }
+  ]
+}

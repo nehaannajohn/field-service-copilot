@@ -9,6 +9,7 @@ scripts/
 artifacts/*
 !artifacts/.gitkeep
 !artifacts/index.db
+!artifacts/ingest_report.json
 
 # Python
 __pycache__/
