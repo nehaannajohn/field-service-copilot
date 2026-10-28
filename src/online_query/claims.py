@@ -44,9 +44,12 @@ RULES, applied in this order
       - relevant history for the asset (earlier occurrences with dates, case or work order numbers, what was done).
    b. If the chunks say the work needs a certification the technician does NOT hold, include a claim that the
       work needs that certification, and do not include the steps of the certified work.
-   c. If the fix needs parts, a certification the technician does not hold, an OEM campaign, a specialist or
-      a return visit, or the fault is a repeat: work_order_needed = true and work_order_reason = the main
-      reason. Otherwise: work_order_needed = false and work_order_reason = null."""
+   c. Set work_order_needed only when the technician cannot complete the fix now: the fix needs parts, a
+      certification the technician does not hold, an OEM campaign, a specialist or a return visit, or the chunks
+      say this occurrence must be escalated as a repeat. Judge "repeat" by the time window the chunks define
+      (e.g. within 24 hours or 30 days of a previous occurrence); an earlier occurrence outside that window is
+      history, not a repeat. Then work_order_needed = true and work_order_reason = the main reason.
+      Otherwise: work_order_needed = false and work_order_reason = null."""
 
 SCHEMA = {
     "type": "object",
