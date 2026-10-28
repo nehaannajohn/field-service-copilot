@@ -1,5 +1,7 @@
 """Query runner: retrieve -> claims -> verify -> compose -> work order draft, assembled into one result."""
 import json
+import shutil
+import textwrap
 import time
 from dataclasses import asdict
 
@@ -52,6 +54,40 @@ def run_query(question: str, user_id: str) -> dict:
     }
 
 
+COLUMNS = [("Sentence", 0.24, 20), ("Src", 0.05, 4), ("Status", 0.10, 12), ("Document", 0.20, 16),
+           ("Location", 0.22, 16), ("Rev", 0.06, 4), ("Date", 0.13, 10)]   # (name, share of width, minimum)
+
+
+def table(rows: list[list[str]]) -> str:
+    """A bordered table that fits the terminal width; long cells wrap inside their column."""
+    width = max(80, shutil.get_terminal_size().columns) - 3 * len(COLUMNS) - 1
+    widths = [max(len(name), minimum, int(width * share)) for name, share, minimum in COLUMNS]
+    line = lambda l, m, r: l + m.join("─" * (w + 2) for w in widths) + r
+
+    def render(cells):
+        wrapped = [textwrap.wrap(str(c), w) or [""] for c, w in zip(cells, widths)]
+        return ["│" + "│".join(f" {(col[i] if i < len(col) else ''):<{w}} " for col, w in zip(wrapped, widths)) + "│"
+                for i in range(max(len(col) for col in wrapped))]
+
+    out = [line("┌", "┬", "┐"), *render([name for name, *_ in COLUMNS]), line("├", "┼", "┤")]
+    for i, row in enumerate(rows):
+        if i:
+            out.append(line("├", "┼", "┤"))
+        out += render(row)
+    return "\n".join(out + [line("└", "┴", "┘")])
+
+
+def evidence_rows(evidence: list[dict]) -> list[list[str]]:
+    rows, previous = [], None
+    for r in evidence:
+        mark = "✓" if r["status"] == "Supported" else "✗"
+        blank = lambda v: "" if v == "unknown" else v
+        rows.append(["" if r["sentence"] == previous else r["sentence"], f"{r['source']} {mark}", r["status"],
+                     r["title"], r["location"], blank(r["revision"]), blank(r["date"])])
+        previous = r["sentence"]
+    return rows
+
+
 def render_answer(result: dict) -> str:
     """Summary with ✓/✗ source markers, then the evidence table, then the work order draft if there is one."""
     if result["status"] != "answered":
@@ -59,10 +95,7 @@ def render_answer(result: dict) -> str:
     status = {r["source"]: "✓" if r["status"] == "Supported" else "✗" for r in result["evidence"]}
     lines = [f"{s['sentence']} [{', '.join(f'{x} {status.get(x, chr(63))}' for x in s['sources'])}]"
              for s in result["summary"]]
-    lines += ["", "Evidence:"]
-    for r in result["evidence"]:
-        lines.append(f"- {r['sentence'][:60]}… | {r['source']} {status[r['source']]} {r['status']} | "
-                     f"{r['title']} · {r['location']} · rev {r['revision']} · {r['date']}")
+    lines += ["", "Evidence:", table(evidence_rows(result["evidence"]))]
     if result["work_order"]:
         lines += ["", "Work order draft:", json.dumps(result["work_order"], indent=2, ensure_ascii=False)]
     return "\n".join(lines)

@@ -1,4 +1,4 @@
-from online_query.pipeline import render_answer, submit_work_order
+from online_query.pipeline import evidence_rows, render_answer, submit_work_order, table
 
 RESULT = {
     "status": "answered", "message": None, "work_order": None,
@@ -35,3 +35,11 @@ def test_rejected_work_order_writes_nothing(tmp_path, monkeypatch):
     monkeypatch.setitem(cfg["paths"], "outbox_dir", tmp_path / "outbox")
     assert submit_work_order({"requested_by": "u03"}, approved=False) == "Work order discarded."
     assert not (tmp_path / "outbox").exists()
+
+
+def test_evidence_table_has_header_borders_and_even_rows():
+    text = table(evidence_rows(RESULT["evidence"]))
+    lines = text.splitlines()
+    assert lines[0].startswith("┌") and lines[-1].startswith("└") and "Sentence" in lines[1]
+    assert len({len(l) for l in lines}) == 1        # every line the same width
+    assert evidence_rows(RESULT["evidence"])[1][0] == ""   # sentence shown once per group

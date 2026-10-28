@@ -74,3 +74,13 @@ Paths are relative to `data/`.
 .venv/bin/copilot ingest                                                                  # full corpus (~20 min)
 ```
 Ingest updates `artifacts/index.db` and writes `artifacts/ingest_report.json` with the status of every file.
+
+## Where AI helped
+
+I used Claude Code as my AI agent across design and implementation.
+
+- **Design.** I started from a skeleton design and iterated with the agent, section by section, until we agreed
+  on each part. The agent read the brief and the corpus and surfaced the data issues (missing permissions entry,
+  corrupt and empty files, the scanned manual, duplicates, contradicting sources); I made the design decisions.
+- **Implementation.** Step by step: the agent proposed each code snippet, I reviewed it and changed it where
+  needed, and only then was it written. Every live model run was approved before it ran.

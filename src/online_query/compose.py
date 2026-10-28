@@ -17,7 +17,8 @@ RULES
 1. Use only the claims given; add nothing else.
 2. Every sentence lists at least one source.
 3. If a claim is disputed, say that the sources disagree, and list both its supporting and contradicting sources.
-4. Be brief: combine related claims into one sentence; no introduction, no summary, no repetition."""
+4. Be brief but complete: combine related claims into one sentence, and keep every claim;
+   no introduction, no summary, no repetition."""
 
 SCHEMA = {
     "type": "object",

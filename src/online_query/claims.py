@@ -36,7 +36,12 @@ RULES, applied in this order
    A chunk about a different model, asset or topic does not answer the question, even if it looks similar.
 3. Otherwise: status = "answered", and
    a. Write the claims using only what the chunks state; never use outside knowledge.
-      Every claim cites at least one chunk_id.
+      Every claim cites at least one chunk_id. Answer completely, including from the chunks:
+      - what the fault, alarm or code means;
+      - the values with the conditions under which they apply (model, serial range, revision, oil type);
+      - which source applies when sources differ, and why (e.g. a bulletin for a serial range, a newer revision);
+      - what to do if a check fails or a limit is exceeded;
+      - relevant history for the asset (earlier occurrences with dates, case or work order numbers, what was done).
    b. If the chunks say the work needs a certification the technician does NOT hold, include a claim that the
       work needs that certification, and do not include the steps of the certified work.
    c. If the fix needs parts, a certification the technician does not hold, an OEM campaign, a specialist or
