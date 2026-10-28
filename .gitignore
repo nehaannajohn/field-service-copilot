@@ -5,7 +5,7 @@
 docs/
 scripts/
 
-# Generated outputs: everything except the search index
+# Generated outputs: everything except the search index and its ingest report
 artifacts/*
 !artifacts/.gitkeep
 !artifacts/index.db
