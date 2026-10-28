@@ -1,0 +1,1249 @@
+{
+  "question": {
+    "id": "q03",
+    "user_id": "u03",
+    "question": "How often do I change the oil on a VRS-75?",
+    "reference_answer": "Every 6,000 h or 12 months with Vastra SynLube 46, per manual Rev C (April 2026). Units on mineral oil stay at 4,000 h. Rev B and the 2024 wiki quick reference (4,000 h for all units) are out of date."
+  },
+  "result": {
+    "question": "How often do I change the oil on a VRS-75?",
+    "user_id": "u03",
+    "status": "answered",
+    "message": null,
+    "summary": [
+      {
+        "sentence": "Sources disagree on Rev C VRS-75 oil-change intervals: S1 and S2 specify every 6,000 running hours or 12 months, whichever comes first, for genuine Vastra SynLube 46 under normal operating conditions, and every 4,000 running hours or 12 months, whichever comes first, for mineral compressor oil ISO VG 46; the longer synthetic interval applies only to genuine Vastra SynLube 46, and S3 contradicts these intervals.",
+        "sources": [
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      {
+        "sentence": "Check the oil type in the fleet register before planning the change, and do not mix SynLube with mineral oil.",
+        "sources": [
+          "S4"
+        ]
+      },
+      {
+        "sentence": "Shorten intervals in dusty or humid environments or when ambient temperature is continuously above 40°C; contact Vastra service for adapted intervals.",
+        "sources": [
+          "S1",
+          "S5"
+        ]
+      },
+      {
+        "sentence": "On compressors delivered before April 2026 using Vastra SynLube 46, change the factory-set oil and oil-filter intervals from 4,000 to 6,000 hours in Service > Intervals > Oil; do not extend them for mineral oil, and record the oil type.",
+        "sources": [
+          "S2",
+          "S6"
+        ]
+      },
+      {
+        "sentence": "Replace the oil filter at every oil change, or earlier at warning E-07; the current filter is 41-1475, and existing stock marked 41-1470 is the same filter and remains usable.",
+        "sources": [
+          "S1"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "sentence": "Sources disagree on Rev C VRS-75 oil-change intervals: S1 and S2 specify every 6,000 running hours or 12 months, whichever comes first, for genuine Vastra SynLube 46 under normal operating conditions, and every 4,000 running hours or 12 months, whichever comes first, for mineral compressor oil ISO VG 46; the longer synthetic interval applies only to genuine Vastra SynLube 46, and S3 contradicts these intervals.",
+        "source": "S1",
+        "chunk_id": "4f128dc1bf312618",
+        "title": "Vastra VRS-75 Service Manual Rev C",
+        "location": "p.8 · 4 Maintenance",
+        "doc_type": "Service Manual",
+        "revision": "C",
+        "date": "2026-04-20",
+        "status": "Supported",
+        "evidence": "Interval: 6,000 h / 12 months\nTask: Change the oil (Vastra SynLube 46)."
+      },
+      {
+        "sentence": "Sources disagree on Rev C VRS-75 oil-change intervals: S1 and S2 specify every 6,000 running hours or 12 months, whichever comes first, for genuine Vastra SynLube 46 under normal operating conditions, and every 4,000 running hours or 12 months, whichever comes first, for mineral compressor oil ISO VG 46; the longer synthetic interval applies only to genuine Vastra SynLube 46, and S3 contradicts these intervals.",
+        "source": "S2",
+        "chunk_id": "f76e5dccac2cc788",
+        "title": "Vastra VRS-75 Service Manual Rev C",
+        "location": "p.2 · About this revision",
+        "doc_type": "Service Manual",
+        "revision": "C",
+        "date": "2026-04-20",
+        "status": "Supported",
+        "evidence": "Longer oil change interval with Vastra SynLube 46: 6,000 running hours or 12 months, whichever comes first."
+      },
+      {
+        "sentence": "Sources disagree on Rev C VRS-75 oil-change intervals: S1 and S2 specify every 6,000 running hours or 12 months, whichever comes first, for genuine Vastra SynLube 46 under normal operating conditions, and every 4,000 running hours or 12 months, whichever comes first, for mineral compressor oil ISO VG 46; the longer synthetic interval applies only to genuine Vastra SynLube 46, and S3 contradicts these intervals.",
+        "source": "S3",
+        "chunk_id": "83e2486267b17bc4",
+        "title": "VRS Series Oil and Filter Quick Reference",
+        "location": "Field Service : VRS Series Oil and Filter Quick Reference › Intervals",
+        "doc_type": "Field Service",
+        "revision": "unknown",
+        "date": "Mar 21, 2024",
+        "status": "Contradicted",
+        "evidence": "VRS-75 | SynLube 46 | 4,000 h"
+      },
+      {
+        "sentence": "Check the oil type in the fleet register before planning the change, and do not mix SynLube with mineral oil.",
+        "source": "S4",
+        "chunk_id": "96c97ee4d600e6f9",
+        "title": "VRS Series Oil and Filter Quick Reference",
+        "location": "Field Service : VRS Series Oil and Filter Quick Reference › Oil",
+        "doc_type": "Field Service",
+        "revision": "unknown",
+        "date": "Mar 21, 2024",
+        "status": "Supported",
+        "evidence": "Never mix SynLube with mineral oil. If a unit is on mineral oil, it stays on mineral oil until someone does a full flush and changeover.\n- Check the oil type on the fleet register before you leave the shop."
+      },
+      {
+        "sentence": "Shorten intervals in dusty or humid environments or when ambient temperature is continuously above 40°C; contact Vastra service for adapted intervals.",
+        "source": "S1",
+        "chunk_id": "4f128dc1bf312618",
+        "title": "Vastra VRS-75 Service Manual Rev C",
+        "location": "p.8 · 4 Maintenance",
+        "doc_type": "Service Manual",
+        "revision": "C",
+        "date": "2026-04-20",
+        "status": "Supported",
+        "evidence": "Interval: 6,000 h / 12 months\nTask: Change the oil (Vastra SynLube 46)."
+      },
+      {
+        "sentence": "Shorten intervals in dusty or humid environments or when ambient temperature is continuously above 40°C; contact Vastra service for adapted intervals.",
+        "source": "S5",
+        "chunk_id": "a816d57b6e65081b",
+        "title": "Vastra VRS-75 Service Manual Rev B",
+        "location": "p.7 · 4 Maintenance › 4.1 Maintenance schedule",
+        "doc_type": "Service Manual",
+        "revision": "B",
+        "date": "2024-02-12",
+        "status": "Supported",
+        "evidence": "In dusty or humid environment, and when the ambient temperature is continuously above 40 C, the intervals for the air filter, the coolers and the oil shall be shortened. Contact Vastra service for advice on adapted intervals."
+      },
+      {
+        "sentence": "On compressors delivered before April 2026 using Vastra SynLube 46, change the factory-set oil and oil-filter intervals from 4,000 to 6,000 hours in Service > Intervals > Oil; do not extend them for mineral oil, and record the oil type.",
+        "source": "S2",
+        "chunk_id": "f76e5dccac2cc788",
+        "title": "Vastra VRS-75 Service Manual Rev C",
+        "location": "p.2 · About this revision",
+        "doc_type": "Service Manual",
+        "revision": "C",
+        "date": "2026-04-20",
+        "status": "Supported",
+        "evidence": "Longer oil change interval with Vastra SynLube 46: 6,000 running hours or 12 months, whichever comes first."
+      },
+      {
+        "sentence": "On compressors delivered before April 2026 using Vastra SynLube 46, change the factory-set oil and oil-filter intervals from 4,000 to 6,000 hours in Service > Intervals > Oil; do not extend them for mineral oil, and record the oil type.",
+        "source": "S6",
+        "chunk_id": "0647a63af94584e0",
+        "title": "Vastra VRS-75 Service Manual Rev C",
+        "location": "p.7 · 3 Vcon 3 controller",
+        "doc_type": "Service Manual",
+        "revision": "C",
+        "date": "2026-04-20",
+        "status": "Supported",
+        "evidence": "NOTE: Compressors delivered before April 2026 have the oil interval set to 4,000 h from the factory. When Vastra SynLube 46 is used, change the oil and oil filter intervals to 6,000 h in Service > Intervals > Oil. Do not change the interval when mineral oil is used. Note the oil type on the service record."
+      },
+      {
+        "sentence": "Replace the oil filter at every oil change, or earlier at warning E-07; the current filter is 41-1475, and existing stock marked 41-1470 is the same filter and remains usable.",
+        "source": "S1",
+        "chunk_id": "4f128dc1bf312618",
+        "title": "Vastra VRS-75 Service Manual Rev C",
+        "location": "p.8 · 4 Maintenance",
+        "doc_type": "Service Manual",
+        "revision": "C",
+        "date": "2026-04-20",
+        "status": "Supported",
+        "evidence": "Interval: 6,000 h / 12 months\nTask: Change the oil (Vastra SynLube 46)."
+      }
+    ],
+    "dropped_claims": [
+      "Rev C, dated April 20, 2026, replaces Rev B and applies to VRS-75 serial numbers VRS75-200001 onward, including earlier deliveries; within that range, use its oil-type-dependent intervals rather than the March 2024 quick reference's blanket 4,000-hour interval."
+    ],
+    "work_order": null,
+    "trace": {
+      "events": [
+        {
+          "stage": "retrieve",
+          "inputs": {
+            "question": "How often do I change the oil on a VRS-75?",
+            "user_id": "u03"
+          },
+          "outputs": {
+            "chunks": [
+              [
+                "83e2486267b17bc4",
+                "VRS Series Oil and Filter Quick Reference",
+                "VRS Series Oil and Filter Quick Reference | Field Service : VRS Series Oil and Filter Quick Reference › Intervals"
+              ],
+              [
+                "96c97ee4d600e6f9",
+                "VRS Series Oil and Filter Quick Reference",
+                "VRS Series Oil and Filter Quick Reference | Field Service : VRS Series Oil and Filter Quick Reference › Oil"
+              ],
+              [
+                "c749120520b41309",
+                "Vastra VRS-75 Service Manual Rev B",
+                "Vastra VRS-75 Service Manual Rev B | B | 4 Maintenance › 4.2 Oil"
+              ],
+              [
+                "39b73f03a98561a7",
+                "Vastra VRS-75 Service Manual Rev B",
+                "Vastra VRS-75 Service Manual Rev B | B | 4 Maintenance › 4.3 Changing the oil and the oil filter"
+              ],
+              [
+                "b6631522c033840f",
+                "VRS Series Oil and Filter Quick Reference",
+                "VRS Series Oil and Filter Quick Reference | Field Service : VRS Series Oil and Filter Quick Reference › On site"
+              ],
+              [
+                "4f128dc1bf312618",
+                "Vastra VRS-75 Service Manual Rev C",
+                "Vastra VRS-75 Service Manual Rev C | C | 4 Maintenance"
+              ],
+              [
+                "6cf5804337abbfe3",
+                "Compressor Troubleshooting Playbook",
+                "Compressor Troubleshooting Playbook | Field Service : Compressor Troubleshooting Playbook › E-07 Oil filter differential high"
+              ],
+              [
+                "f50d138cf453e93d",
+                "Vastra VRS-75 Service Manual Rev B",
+                "Vastra VRS-75 Service Manual Rev B | B | 3 Vcon 3 controller › 3.4 Service interval counters"
+              ],
+              [
+                "acfdb8128181d811",
+                "VRS Series Oil and Filter Quick Reference",
+                "VRS Series Oil and Filter Quick Reference | Field Service : VRS Series Oil and Filter Quick Reference"
+              ],
+              [
+                "a045802daa051e5b",
+                "Vastra VRS-75 Service Manual Rev B",
+                "Vastra VRS-75 Service Manual Rev B | B | 4 Maintenance › 4.4 Replacing the air filter element"
+              ],
+              [
+                "b5abeac7cb93d827",
+                "Vastra VRS-110 Service Manual Rev A",
+                "Vastra VRS-110 Service Manual Rev A | A | 5 Maintenance"
+              ],
+              [
+                "a3daeee48765a690",
+                "Vastra VRS-75 Service Manual Rev B",
+                "Vastra VRS-75 Service Manual Rev B | B | 1 Safety › 1.4 Before maintenance and repair"
+              ],
+              [
+                "f76e5dccac2cc788",
+                "Vastra VRS-75 Service Manual Rev C",
+                "Vastra VRS-75 Service Manual Rev C | C | About this revision"
+              ],
+              [
+                "8b9c6658f856175a",
+                "Vastra VRS-75 Service Manual Rev B",
+                "Vastra VRS-75 Service Manual Rev B | B | 2 General description › 2.2 Air flow and oil system"
+              ],
+              [
+                "bbe92701faf3d09f",
+                "Vastra VRS-75 Service Manual Rev C",
+                "Vastra VRS-75 Service Manual Rev C | C | 2 General description"
+              ],
+              [
+                "cd4c51a6d67f5baf",
+                "Teams #na-compressors, July 2026",
+                "Teams #na-compressors, July 2026 | 1751400245489"
+              ],
+              [
+                "41517193a33a0d9a",
+                "Teams #na-compressors, July 2026",
+                "Teams #na-compressors, July 2026 | 1751400000000"
+              ],
+              [
+                "94cfba6e244d0474",
+                "Teams #na-compressors, July 2026",
+                "Teams #na-compressors, July 2026 | 1751400174218"
+              ],
+              [
+                "e60d30db6a1aac2b",
+                "Vastra VRS-75 Service Manual Rev B",
+                "Vastra VRS-75 Service Manual Rev B | B | 6 Spare parts › 6.4 Recommended stock"
+              ],
+              [
+                "eb9eee8401d60965",
+                "Compressor Troubleshooting Playbook",
+                "Compressor Troubleshooting Playbook | Field Service : Compressor Troubleshooting Playbook › Quick table"
+              ],
+              [
+                "a816d57b6e65081b",
+                "Vastra VRS-75 Service Manual Rev B",
+                "Vastra VRS-75 Service Manual Rev B | B | 4 Maintenance › 4.1 Maintenance schedule"
+              ],
+              [
+                "f5b39d220d9465c0",
+                "Compressor Troubleshooting Playbook",
+                "Compressor Troubleshooting Playbook | Field Service : Compressor Troubleshooting Playbook › Before you touch anything"
+              ],
+              [
+                "99c8d9c6b6b4dcbd",
+                "VRS Series Oil and Filter Quick Reference",
+                "VRS Series Oil and Filter Quick Reference | Field Service : VRS Series Oil and Filter Quick Reference › Comments"
+              ],
+              [
+                "c128f87dddc60bed",
+                "Compressor Troubleshooting Playbook",
+                "Compressor Troubleshooting Playbook | Field Service : Compressor Troubleshooting Playbook › Things that look like faults but aren't"
+              ],
+              [
+                "a06a33ecb4c142be",
+                "Compressor Troubleshooting Playbook",
+                "Compressor Troubleshooting Playbook | Field Service : Compressor Troubleshooting Playbook › E-14 Discharge temperature high"
+              ],
+              [
+                "191135bd179b0e30",
+                "Compressor Troubleshooting Playbook",
+                "Compressor Troubleshooting Playbook | Field Service : Compressor Troubleshooting Playbook › E-31 VFD overcurrent (VRS-110 only)"
+              ],
+              [
+                "0647a63af94584e0",
+                "Vastra VRS-75 Service Manual Rev C",
+                "Vastra VRS-75 Service Manual Rev C | C | 3 Vcon 3 controller"
+              ],
+              [
+                "9e93436fffb95506",
+                "Tacoma Site Notes",
+                "Tacoma Site Notes | Field Service › Field Service Home › Sites › North America › Field Service : Tacoma Site Notes"
+              ],
+              [
+                "112602b936d3acee",
+                "Vastra VRS-75 Service Manual Rev B",
+                "Vastra VRS-75 Service Manual Rev B | B | 7 Warranty and documentation › 7.2 Revision history"
+              ],
+              [
+                "c506452b6e68fed8",
+                "FS-STD-001 Field Service Standard",
+                "FS-STD-001 Field Service Standard | 4 | 3. Definitions"
+              ]
+            ]
+          },
+          "seconds": 0.256
+        },
+        {
+          "stage": "claims",
+          "inputs": {},
+          "outputs": {
+            "status": "answered",
+            "claims": [
+              {
+                "id": "c1",
+                "text": "For a VRS-75 covered by Rev C, change genuine Vastra SynLube 46 every 6,000 running hours or 12 months, whichever comes first, under normal operating conditions.",
+                "citations": [
+                  "4f128dc1bf312618",
+                  "f76e5dccac2cc788"
+                ]
+              },
+              {
+                "id": "c2",
+                "text": "With mineral compressor oil ISO VG 46, change the oil every 4,000 running hours or 12 months, whichever comes first; the longer synthetic interval applies only to genuine Vastra SynLube 46.",
+                "citations": [
+                  "4f128dc1bf312618",
+                  "f76e5dccac2cc788"
+                ]
+              },
+              {
+                "id": "c3",
+                "text": "Rev C, dated April 20, 2026, replaces Rev B and applies to VRS-75 serial numbers VRS75-200001 onward, including earlier deliveries; within that range, use its oil-type-dependent intervals rather than the March 2024 quick reference's blanket 4,000-hour interval.",
+                "citations": [
+                  "f76e5dccac2cc788",
+                  "83e2486267b17bc4"
+                ]
+              },
+              {
+                "id": "c4",
+                "text": "Check the oil type in the fleet register before planning the oil change, and do not mix SynLube with mineral oil.",
+                "citations": [
+                  "96c97ee4d600e6f9"
+                ]
+              },
+              {
+                "id": "c5",
+                "text": "Shorten oil intervals in dusty or humid environments or when ambient temperature is continuously above 40°C; contact Vastra service for adapted intervals.",
+                "citations": [
+                  "4f128dc1bf312618",
+                  "a816d57b6e65081b"
+                ]
+              },
+              {
+                "id": "c6",
+                "text": "On compressors delivered before April 2026 using Vastra SynLube 46, change the factory-set oil and oil-filter intervals from 4,000 to 6,000 hours in Service > Intervals > Oil; do not extend them for mineral oil, and record the oil type.",
+                "citations": [
+                  "0647a63af94584e0"
+                ]
+              },
+              {
+                "id": "c7",
+                "text": "Replace the oil filter at every oil change, or earlier at warning E-07; the current filter is 41-1475, and existing stock marked 41-1470 is the same filter and remains usable.",
+                "citations": [
+                  "4f128dc1bf312618"
+                ]
+              }
+            ],
+            "work_order_needed": false,
+            "work_order_reason": null
+          },
+          "seconds": 11.242
+        },
+        {
+          "stage": "verify",
+          "inputs": {},
+          "outputs": {
+            "c1": "sources_disagree",
+            "c2": "sources_disagree",
+            "c3": "unsupported",
+            "c4": "supported",
+            "c5": "supported",
+            "c6": "supported",
+            "c7": "supported"
+          },
+          "seconds": 28.907
+        },
+        {
+          "stage": "compose",
+          "inputs": {},
+          "outputs": {
+            "sentences": 5
+          },
+          "seconds": 4.269
+        },
+        {
+          "stage": "work_order",
+          "inputs": {},
+          "outputs": {
+            "drafted": false
+          },
+          "seconds": 0.0
+        }
+      ]
+    },
+    "retrieved": [
+      {
+        "chunk_id": "83e2486267b17bc4",
+        "doc_path": "corpus/confluence/VRS-Series-Oil-and-Filter-Quick-Reference.html",
+        "doc_title": "VRS Series Oil and Filter Quick Reference",
+        "doc_type": "Field Service",
+        "revision": "unknown",
+        "effective_date": "Mar 21, 2024",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : VRS Series Oil and Filter Quick Reference",
+            "Intervals"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "VRS Series Oil and Filter Quick Reference | Field Service : VRS Series Oil and Filter Quick Reference › Intervals",
+        "text_original": "Model | Oil | Oil change | Oil filter | Air filter | Separator element\nVRS-45 | SynLube 46 or mineral ISO 46 (check the asset) | 4,000 h | With every oil change (ask stores, not stocked in Tacoma) | 2,000 h, 41-1510 | 8,000 h, 41-3070\nVRS-75 | SynLube 46 | 4,000 h | With every oil change, 41-1470 | 2,000 h, 41-1510 | 8,000 h, 41-3075\nVRS-110 | SynLube 46 | 4,000 h | With every oil change, 41-1480 | 2,000 h, 41-1512 | 8,000 h, 41-3075\n\nAll intervals are running hours or 12 months, whichever comes first. Shorten the air filter interval if the unit trips on air filter restriction before the 2,000 h mark (Tacoma, I'm looking at you).",
+        "text_en": "Model | Oil | Oil change | Oil filter | Air filter | Separator element\nVRS-45 | SynLube 46 or mineral ISO 46 (check the asset) | 4,000 h | With every oil change (ask stores, not stocked in Tacoma) | 2,000 h, 41-1510 | 8,000 h, 41-3070\nVRS-75 | SynLube 46 | 4,000 h | With every oil change, 41-1470 | 2,000 h, 41-1510 | 8,000 h, 41-3075\nVRS-110 | SynLube 46 | 4,000 h | With every oil change, 41-1480 | 2,000 h, 41-1512 | 8,000 h, 41-3075\n\nAll intervals are running hours or 12 months, whichever comes first. Shorten the air filter interval if the unit trips on air filter restriction before the 2,000 h mark (Tacoma, I'm looking at you).",
+        "acl_key": "family-compressors",
+        "cosine": 0.5882603526115417,
+        "bm25_rank": 3,
+        "vector_rank": 1,
+        "rrf": 0.032266458495966696
+      },
+      {
+        "chunk_id": "96c97ee4d600e6f9",
+        "doc_path": "corpus/confluence/VRS-Series-Oil-and-Filter-Quick-Reference.html",
+        "doc_title": "VRS Series Oil and Filter Quick Reference",
+        "doc_type": "Field Service",
+        "revision": "unknown",
+        "effective_date": "Mar 21, 2024",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : VRS Series Oil and Filter Quick Reference",
+            "Oil"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "VRS Series Oil and Filter Quick Reference | Field Service : VRS Series Oil and Filter Quick Reference › Oil",
+        "text_original": "- Vastra SynLube 46 comes in 20 L drums, part 41-0046. One drum does a VRS-75 change with some left over. A 110 needs most of a drum.\n- Never mix SynLube with mineral oil. If a unit is on mineral oil, it stays on mineral oil until someone does a full flush and changeover.\n- Check the oil type on the fleet register before you leave the shop.\n- Waste oil goes in the site drum, not in the van.",
+        "text_en": "- Vastra SynLube 46 comes in 20 L drums, part 41-0046. One drum does a VRS-75 change with some left over. A 110 needs most of a drum.\n- Never mix SynLube with mineral oil. If a unit is on mineral oil, it stays on mineral oil until someone does a full flush and changeover.\n- Check the oil type on the fleet register before you leave the shop.\n- Waste oil goes in the site drum, not in the van.",
+        "acl_key": "family-compressors",
+        "cosine": 0.5461759567260742,
+        "bm25_rank": 5,
+        "vector_rank": 2,
+        "rrf": 0.0315136476426799
+      },
+      {
+        "chunk_id": "c749120520b41309",
+        "doc_path": "corpus/manuals/Vastra_VRS-75_Service_Manual_RevB_2024.pdf",
+        "doc_title": "Vastra VRS-75 Service Manual Rev B",
+        "doc_type": "Service Manual",
+        "revision": "B",
+        "effective_date": "2024-02-12",
+        "locator": {
+          "page": 7,
+          "section_path": [
+            "4 Maintenance",
+            "4.2 Oil"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Vastra VRS-75 Service Manual Rev B | B | 4 Maintenance › 4.2 Oil",
+        "text_original": "Vastra recommends Vastra SynLube 46 (synthetic, part no. 41-0046, 20 l can). It is allowed to use a mineral compressor oil ISO VG 46 according to DIN 51506 VDL in normal operating conditions. The oil change interval in 4.1 is the same for both oil types.\n\nDo not mix oils of different types or makes. When changing from mineral oil to Vastra SynLube 46, drain the system completely, replace the oil filter, run the compressor for 24 hours and then change the oil and the oil filter a second time.\n\nControl the oil level with the compressor stopped for 2 minutes. The level shall be in the upper half of the sight glass. Top up only with the same oil type. An oil consumption of more than 0.5 l per 100 running hours is not normal; see 5.2.4.",
+        "text_en": "Vastra recommends Vastra SynLube 46 (synthetic, part no. 41-0046, 20 l can). It is allowed to use a mineral compressor oil ISO VG 46 according to DIN 51506 VDL in normal operating conditions. The oil change interval in 4.1 is the same for both oil types.\n\nDo not mix oils of different types or makes. When changing from mineral oil to Vastra SynLube 46, drain the system completely, replace the oil filter, run the compressor for 24 hours and then change the oil and the oil filter a second time.\n\nControl the oil level with the compressor stopped for 2 minutes. The level shall be in the upper half of the sight glass. Top up only with the same oil type. An oil consumption of more than 0.5 l per 100 running hours is not normal; see 5.2.4.",
+        "acl_key": "family-compressors",
+        "cosine": 0.5239036679267883,
+        "bm25_rank": 8,
+        "vector_rank": 4,
+        "rrf": 0.030330882352941176
+      },
+      {
+        "chunk_id": "39b73f03a98561a7",
+        "doc_path": "corpus/manuals/Vastra_VRS-75_Service_Manual_RevB_2024.pdf",
+        "doc_title": "Vastra VRS-75 Service Manual Rev B",
+        "doc_type": "Service Manual",
+        "revision": "B",
+        "effective_date": "2024-02-12",
+        "locator": {
+          "page": 8,
+          "section_path": [
+            "4 Maintenance",
+            "4.3 Changing the oil and the oil filter"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Vastra VRS-75 Service Manual Rev B | B | 4 Maintenance › 4.3 Changing the oil and the oil filter",
+        "text_original": "1. Run the compressor until it is warm (discharge temperature above 70 C). Warm oil drains faster and takes more contamination with it.\n2. Stop, isolate and vent the compressor according to 1.4. Control that PT-1 shows 0 bar.\n3. Open the oil filler plug slowly by one turn. Remaining pressure escapes through the vent hole in the plug thread.\n4. Connect a hose to the oil drain valve at the bottom of the separator vessel and drain the oil into a container. Drain also the oil cooler through its drain plug.\n5. Remove the oil filter (41-1470) with a strap wrench. Clean the sealing surface on the filter head.\n6. Oil the gasket of the new filter with clean oil. Screw the filter on by hand until the gasket touches, then turn a further 3/4 turn by hand. Do not use a tool.\n7. Close the drain valve and the cooler drain plug. Fill oil through the filler opening until the level is in the upper half of the sight glass. Approximately 34 l is needed; the rest of the 38 l stays in the element and the pipes.\n8. Fit the filler plug with a new O-ring. Run the compressor loaded for 5 minutes, stop, wait 2 minutes and control the level. Top up if necessary.\n9. Reset the service counters for oil and oil filter in Service > Intervals. Write the date, the running hours and the oil type in the service record.\n\nCAUTION\nUsed oil and used filters are hazardous waste. Collect them separately and hand them over to an authorised company.",
+        "text_en": "1. Run the compressor until it is warm (discharge temperature above 70 C). Warm oil drains faster and takes more contamination with it.\n2. Stop, isolate and vent the compressor according to 1.4. Control that PT-1 shows 0 bar.\n3. Open the oil filler plug slowly by one turn. Remaining pressure escapes through the vent hole in the plug thread.\n4. Connect a hose to the oil drain valve at the bottom of the separator vessel and drain the oil into a container. Drain also the oil cooler through its drain plug.\n5. Remove the oil filter (41-1470) with a strap wrench. Clean the sealing surface on the filter head.\n6. Oil the gasket of the new filter with clean oil. Screw the filter on by hand until the gasket touches, then turn a further 3/4 turn by hand. Do not use a tool.\n7. Close the drain valve and the cooler drain plug. Fill oil through the filler opening until the level is in the upper half of the sight glass. Approximately 34 l is needed; the rest of the 38 l stays in the element and the pipes.\n8. Fit the filler plug with a new O-ring. Run the compressor loaded for 5 minutes, stop, wait 2 minutes and control the level. Top up if necessary.\n9. Reset the service counters for oil and oil filter in Service > Intervals. Write the date, the running hours and the oil type in the service record.\n\nCAUTION\nUsed oil and used filters are hazardous waste. Collect them separately and hand them over to an authorised company.",
+        "acl_key": "family-compressors",
+        "cosine": 0.5369107723236084,
+        "bm25_rank": 20,
+        "vector_rank": 3,
+        "rrf": 0.028373015873015873
+      },
+      {
+        "chunk_id": "b6631522c033840f",
+        "doc_path": "corpus/confluence/VRS-Series-Oil-and-Filter-Quick-Reference.html",
+        "doc_title": "VRS Series Oil and Filter Quick Reference",
+        "doc_type": "Field Service",
+        "revision": "unknown",
+        "effective_date": "Mar 21, 2024",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : VRS Series Oil and Filter Quick Reference",
+            "On site"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "VRS Series Oil and Filter Quick Reference | Field Service : VRS Series Oil and Filter Quick Reference › On site",
+        "text_original": "- Run the unit for 10 minutes so the oil is warm and drains better.\n- Stop, isolate, wait for the separator to depressurise fully. Check the gauge reads zero.\n- Drain the oil from the separator drain valve into a clean container so you can look at it. Milky oil means water, black and sludgy means it was overdue.\n- Change the oil filter. Oil the new gasket. Hand tight plus three-quarters of a turn.\n- Fill to the middle of the sight glass with the unit stopped.\n- Run, check for leaks, check the level again after 10 minutes stopped.\n- Reset the service counter on the controller and record the hours in MaintPro.",
+        "text_en": "- Run the unit for 10 minutes so the oil is warm and drains better.\n- Stop, isolate, wait for the separator to depressurise fully. Check the gauge reads zero.\n- Drain the oil from the separator drain valve into a clean container so you can look at it. Milky oil means water, black and sludgy means it was overdue.\n- Change the oil filter. Oil the new gasket. Hand tight plus three-quarters of a turn.\n- Fill to the middle of the sight glass with the unit stopped.\n- Run, check for leaks, check the level again after 10 minutes stopped.\n- Reset the service counter on the controller and record the hours in MaintPro.",
+        "acl_key": "family-compressors",
+        "cosine": 0.5121757388114929,
+        "bm25_rank": 17,
+        "vector_rank": 7,
+        "rrf": 0.027912386121341344
+      },
+      {
+        "chunk_id": "4f128dc1bf312618",
+        "doc_path": "corpus/manuals/Vastra_VRS-75_Service_Manual_RevC_2026.pdf",
+        "doc_title": "Vastra VRS-75 Service Manual Rev C",
+        "doc_type": "Service Manual",
+        "revision": "C",
+        "effective_date": "2026-04-20",
+        "locator": {
+          "page": 8,
+          "section_path": [
+            "4 Maintenance"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Vastra VRS-75 Service Manual Rev C | C | 4 Maintenance",
+        "text_original": "4 Maintenance\n\n4.1 Maintenance schedule\nThe intervals are maximum intervals for normal operating conditions. The task is due at the interval in running hours or at the time interval, whichever comes first.\n\nInterval: Daily\nTask: Control the oil level in the sight glass (compressor stopped for 2 minutes). Control the display for warnings.\nPart no.: \nSee: 4.2\n\nInterval: 500 h / monthly\nTask: Clean the pre-filter mats in the enclosure air inlet. Control the scavenge line sight glass for oil flow.\nPart no.: \nSee: 4.6\n\nInterval: 2,000 h\nTask: Replace the air filter element, or earlier at warning E-18.\nPart no.: 41-1510\nSee: 4.4\n\nInterval: 2,000 h\nTask: Clean the oil cooler and the aftercooler. Test the electronic water drain.\nPart no.: \nSee: 4.6\n\nInterval: 6,000 h / 12 months\nTask: Change the oil (Vastra SynLube 46).\nPart no.: 41-0046\nSee: 4.3\n\nInterval: 4,000 h / 12 months\nTask: Change the oil (mineral oil ISO VG 46).\nPart no.: \nSee: 4.3\n\nInterval: At each oil change\nTask: Replace the oil filter, or earlier at warning E-07.\nPart no.: 41-1475\nSee: 4.3\n\nInterval: 8,000 h\nTask: Replace the separator element, or earlier at warning E-27.\nPart no.: 41-3075\nSee: 4.5\n\nInterval: 8,000 h / yearly\nTask: Test the safety valve. Control the minimum pressure valve and the coupling element.\nPart no.: \nSee: 4.7\n\nInterval: 24,000 h\nTask: Overhaul of the compression element bearings and shaft seal (Vastra service only).\nPart no.: \nSee: \n\nIn dusty or humid environment, and when the ambient temperature is continuously above 40 C, the intervals for the air filter, the coolers and the oil shall be shortened. Contact Vastra service for advice on adapted intervals.\n\n4.2 Oil\nVastra recommends Vastra SynLube 46 (synthetic, part no. 41-0046, 20 l can). It is allowed to use a mineral compressor oil ISO VG 46 according to DIN 51506 VDL in normal operating conditions. The oil change interval depends on the oil type, see 4.1. The longer interval for Vastra SynLube 46 is based on oil analysis from field installations 2022 - 2025 and is valid only with genuine Vastra SynLube 46.\n\nDo not mix oils of different types or makes. When changing from mineral oil to Vastra SynLube 46, drain the system completely, replace the oil filter, run the compressor for 24 hours and then change the oil and the oil filter a second time.\n\nControl the oil level with the compressor stopped for 2 minutes. The level shall be in the upper half of the sight glass. Top up only with the same oil type. An oil consumption of more than 0.5 l per 100 running hours is not normal; see 5.2.4 and 5.2.5.\n\n4.3 Changing the oil and the oil filter\n1. Run the compressor until it is warm (discharge temperature above 70 C). Warm oil drains faster and takes more contamination with it.\n2. Stop, isolate and vent the compressor according to 1.4. Control that PT-1 shows 0 bar.\n3. Open the oil filler plug slowly by one turn. Remaining pressure escapes through the vent hole in the plug thread.\n4. Connect a hose to the oil drain valve at the bottom of the separator vessel and drain the oil into a container. Drain also the oil cooler through its drain plug.\n5. Remove the oil filter (41-1475) with a strap wrench. Clean the sealing surface on the filter head.\n6. Oil the gasket of the new filter with clean oil. Screw the filter on by hand until the gasket touches, then turn a further 3/4 turn by hand. Do not use a tool.\n7. Close the drain valve and the cooler drain plug. Fill oil through the filler opening until the level is in the upper half of the sight glass. Approximately 34 l is needed; the rest of the 38 l stays in the element and the pipes.\n8. Fit the filler plug with a new O-ring. Run the compressor loaded for 5 minutes, stop, wait 2 minutes and control the level. Top up if necessary.\n9. Reset the service counters for oil and oil filter in Service > Intervals. Write the date, the running hours and the oil type in the service record.\n\nFilter 41-1475 is the same filter as 41-1470, delivered in new packaging from 2026. Filters in boxes marked 41-1470 can be used until the stock is finished.\n\nCAUTION: Used oil and used filters are hazardous waste. Collect them separately and hand them over to an authorised company.\n\n4.4 Replacing the air filter element\n1. Stop and isolate the compressor (1.4, steps 1 and 2 are sufficient).\n2. Open the air filter cover clips and remove the cover. Pull out the element 41-1510 with a turning movement.\n3. Clean the inside of the housing with a damp cloth. Do not blow into the inlet of the compressor.\n4. Fit the new element and the cover. The arrow on the cover shall point upwards.\n5. Reset the air filter service counter.\n\nCAUTION: Never clean the paper element with compressed air. It damages the paper and lets dust into the element.\n\n4.5 Replacing the separator element\nReplace the separator element every 8,000 h, or earlier when warning E-27 is shown (see 5.2.4). A clogged element increases the internal pressure and the energy consumption; a damaged element gives oil carry-over into the compressed air.\n1. Stop, isolate and vent the compressor (1.4). Control that PT-1 shows 0 bar.\n2. Disconnect the scavenge line and the control line from the separator vessel cover.\n3. Remove the cover bolts (M16) and lift off the cover with the lifting eye. Lift out the separator element 41-3075.\n4. Clean the sealing surfaces. Control that the earthing staple in the new element is in place; it prevents static charge.\n5. Fit the new element with the new gaskets from the kit. Fit the cover and tighten the bolts crosswise to 110 N-m.\n6. Remove the restrictor from the scavenge line and clean the bore (1.5 mm) with a soft wire. Refit and reconnect the lines.\n7. Run the compressor loaded and control that the oil flows in the scavenge line sight glass. Note the separator dP in the service record and reset the separator service counter.\n\n4.6 Cleaning the coolers\nClean the oil cooler and the aftercooler from the fan side, against the normal direction of the cooling air, with compressed air at maximum 6 bar. Cover the motor and the electrical cabinet. Oily dirt is removed with a degreasing agent and water at low pressure. A steam cleaner or a high-pressure washer bends the fins and is not allowed. Clean also the pre-filter mats in the enclosure air inlet; they can be washed in warm water with a mild detergent.\n\n4.7 Safety valve, minimum pressure valve and coupling\nThe safety valve shall be tested once per year, or according to the national regulations for pressure equipment if these are more strict. Lift the valve with the test lever with the compressor running unloaded. The valve shall blow and close tight. A valve that leaks after the test shall be replaced; it is not allowed to repair it.\n\nControl that the minimum pressure valve opens and closes smoothly: at start, the net pressure (PT-2) shall begin to rise when the internal pressure (PT-1) has reached approximately 4 bar. Inspect the coupling element through the inspection hole for cracks and rubber dust.",
+        "text_en": "4 Maintenance\n\n4.1 Maintenance schedule\nThe intervals are maximum intervals for normal operating conditions. The task is due at the interval in running hours or at the time interval, whichever comes first.\n\nInterval: Daily\nTask: Control the oil level in the sight glass (compressor stopped for 2 minutes). Control the display for warnings.\nPart no.: \nSee: 4.2\n\nInterval: 500 h / monthly\nTask: Clean the pre-filter mats in the enclosure air inlet. Control the scavenge line sight glass for oil flow.\nPart no.: \nSee: 4.6\n\nInterval: 2,000 h\nTask: Replace the air filter element, or earlier at warning E-18.\nPart no.: 41-1510\nSee: 4.4\n\nInterval: 2,000 h\nTask: Clean the oil cooler and the aftercooler. Test the electronic water drain.\nPart no.: \nSee: 4.6\n\nInterval: 6,000 h / 12 months\nTask: Change the oil (Vastra SynLube 46).\nPart no.: 41-0046\nSee: 4.3\n\nInterval: 4,000 h / 12 months\nTask: Change the oil (mineral oil ISO VG 46).\nPart no.: \nSee: 4.3\n\nInterval: At each oil change\nTask: Replace the oil filter, or earlier at warning E-07.\nPart no.: 41-1475\nSee: 4.3\n\nInterval: 8,000 h\nTask: Replace the separator element, or earlier at warning E-27.\nPart no.: 41-3075\nSee: 4.5\n\nInterval: 8,000 h / yearly\nTask: Test the safety valve. Control the minimum pressure valve and the coupling element.\nPart no.: \nSee: 4.7\n\nInterval: 24,000 h\nTask: Overhaul of the compression element bearings and shaft seal (Vastra service only).\nPart no.: \nSee: \n\nIn dusty or humid environment, and when the ambient temperature is continuously above 40 C, the intervals for the air filter, the coolers and the oil shall be shortened. Contact Vastra service for advice on adapted intervals.\n\n4.2 Oil\nVastra recommends Vastra SynLube 46 (synthetic, part no. 41-0046, 20 l can). It is allowed to use a mineral compressor oil ISO VG 46 according to DIN 51506 VDL in normal operating conditions. The oil change interval depends on the oil type, see 4.1. The longer interval for Vastra SynLube 46 is based on oil analysis from field installations 2022 - 2025 and is valid only with genuine Vastra SynLube 46.\n\nDo not mix oils of different types or makes. When changing from mineral oil to Vastra SynLube 46, drain the system completely, replace the oil filter, run the compressor for 24 hours and then change the oil and the oil filter a second time.\n\nControl the oil level with the compressor stopped for 2 minutes. The level shall be in the upper half of the sight glass. Top up only with the same oil type. An oil consumption of more than 0.5 l per 100 running hours is not normal; see 5.2.4 and 5.2.5.\n\n4.3 Changing the oil and the oil filter\n1. Run the compressor until it is warm (discharge temperature above 70 C). Warm oil drains faster and takes more contamination with it.\n2. Stop, isolate and vent the compressor according to 1.4. Control that PT-1 shows 0 bar.\n3. Open the oil filler plug slowly by one turn. Remaining pressure escapes through the vent hole in the plug thread.\n4. Connect a hose to the oil drain valve at the bottom of the separator vessel and drain the oil into a container. Drain also the oil cooler through its drain plug.\n5. Remove the oil filter (41-1475) with a strap wrench. Clean the sealing surface on the filter head.\n6. Oil the gasket of the new filter with clean oil. Screw the filter on by hand until the gasket touches, then turn a further 3/4 turn by hand. Do not use a tool.\n7. Close the drain valve and the cooler drain plug. Fill oil through the filler opening until the level is in the upper half of the sight glass. Approximately 34 l is needed; the rest of the 38 l stays in the element and the pipes.\n8. Fit the filler plug with a new O-ring. Run the compressor loaded for 5 minutes, stop, wait 2 minutes and control the level. Top up if necessary.\n9. Reset the service counters for oil and oil filter in Service > Intervals. Write the date, the running hours and the oil type in the service record.\n\nFilter 41-1475 is the same filter as 41-1470, delivered in new packaging from 2026. Filters in boxes marked 41-1470 can be used until the stock is finished.\n\nCAUTION: Used oil and used filters are hazardous waste. Collect them separately and hand them over to an authorised company.\n\n4.4 Replacing the air filter element\n1. Stop and isolate the compressor (1.4, steps 1 and 2 are sufficient).\n2. Open the air filter cover clips and remove the cover. Pull out the element 41-1510 with a turning movement.\n3. Clean the inside of the housing with a damp cloth. Do not blow into the inlet of the compressor.\n4. Fit the new element and the cover. The arrow on the cover shall point upwards.\n5. Reset the air filter service counter.\n\nCAUTION: Never clean the paper element with compressed air. It damages the paper and lets dust into the element.\n\n4.5 Replacing the separator element\nReplace the separator element every 8,000 h, or earlier when warning E-27 is shown (see 5.2.4). A clogged element increases the internal pressure and the energy consumption; a damaged element gives oil carry-over into the compressed air.\n1. Stop, isolate and vent the compressor (1.4). Control that PT-1 shows 0 bar.\n2. Disconnect the scavenge line and the control line from the separator vessel cover.\n3. Remove the cover bolts (M16) and lift off the cover with the lifting eye. Lift out the separator element 41-3075.\n4. Clean the sealing surfaces. Control that the earthing staple in the new element is in place; it prevents static charge.\n5. Fit the new element with the new gaskets from the kit. Fit the cover and tighten the bolts crosswise to 110 N-m.\n6. Remove the restrictor from the scavenge line and clean the bore (1.5 mm) with a soft wire. Refit and reconnect the lines.\n7. Run the compressor loaded and control that the oil flows in the scavenge line sight glass. Note the separator dP in the service record and reset the separator service counter.\n\n4.6 Cleaning the coolers\nClean the oil cooler and the aftercooler from the fan side, against the normal direction of the cooling air, with compressed air at maximum 6 bar. Cover the motor and the electrical cabinet. Oily dirt is removed with a degreasing agent and water at low pressure. A steam cleaner or a high-pressure washer bends the fins and is not allowed. Clean also the pre-filter mats in the enclosure air inlet; they can be washed in warm water with a mild detergent.\n\n4.7 Safety valve, minimum pressure valve and coupling\nThe safety valve shall be tested once per year, or according to the national regulations for pressure equipment if these are more strict. Lift the valve with the test lever with the compressor running unloaded. The valve shall blow and close tight. A valve that leaks after the test shall be replaced; it is not allowed to repair it.\n\nControl that the minimum pressure valve opens and closes smoothly: at start, the net pressure (PT-2) shall begin to rise when the internal pressure (PT-1) has reached approximately 4 bar. Inspect the coupling element through the inspection hole for cracks and rubber dust.",
+        "acl_key": "family-compressors",
+        "cosine": 0.47506183385849,
+        "bm25_rank": 15,
+        "vector_rank": 9,
+        "rrf": 0.02782608695652174
+      },
+      {
+        "chunk_id": "6cf5804337abbfe3",
+        "doc_path": "corpus/confluence/Compressor-Troubleshooting-Playbook.html",
+        "doc_title": "Compressor Troubleshooting Playbook",
+        "doc_type": "Field Service : Compressor Troubleshooting Playbook",
+        "revision": "unknown",
+        "effective_date": "Feb 11, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Compressor Troubleshooting Playbook",
+            "E-07 Oil filter differential high"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Compressor Troubleshooting Playbook | Field Service : Compressor Troubleshooting Playbook › E-07 Oil filter differential high",
+        "text_original": "First question: how many hours since the last oil filter change? If it's due or overdue, change it and move on. If it was changed recently, look at the timing of the trip. A cold start in a cold room (Tacoma compressor room in January, or the GDN plant room) gives a high differential for the first few minutes because the oil is thick. If the log shows the trip within minutes of a cold start and never during running, it's the cold, not the filter.\n\nUse the right filter for the model. The VRS-75 filter is now boxed as 41-1475. Older boxes say 41-1470. It's the same filter, don't send the new boxes back. The 110 uses 41-1480.",
+        "text_en": "First question: how many hours since the last oil filter change? If it's due or overdue, change it and move on. If it was changed recently, look at the timing of the trip. A cold start in a cold room (Tacoma compressor room in January, or the GDN plant room) gives a high differential for the first few minutes because the oil is thick. If the log shows the trip within minutes of a cold start and never during running, it's the cold, not the filter.\n\nUse the right filter for the model. The VRS-75 filter is now boxed as 41-1475. Older boxes say 41-1470. It's the same filter, don't send the new boxes back. The 110 uses 41-1480.",
+        "acl_key": "family-compressors",
+        "cosine": 0.3938589096069336,
+        "bm25_rank": 1,
+        "vector_rank": 28,
+        "rrf": 0.027757078986587184
+      },
+      {
+        "chunk_id": "f50d138cf453e93d",
+        "doc_path": "corpus/manuals/Vastra_VRS-75_Service_Manual_RevB_2024.pdf",
+        "doc_title": "Vastra VRS-75 Service Manual Rev B",
+        "doc_type": "Service Manual",
+        "revision": "B",
+        "effective_date": "2024-02-12",
+        "locator": {
+          "page": 6,
+          "section_path": [
+            "3 Vcon 3 controller",
+            "3.4 Service interval counters"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Vastra VRS-75 Service Manual Rev B | B | 3 Vcon 3 controller › 3.4 Service interval counters",
+        "text_original": "The controller counts the running hours down to the next maintenance for each task: oil, oil filter, air filter, separator element and general inspection. When a counter reaches zero, warning E-19 is shown with the name of the task. The intervals are set in Service > Intervals. The factory settings correspond to the maintenance schedule in 4.1.\n\nNOTE\nDo not set longer intervals than in the maintenance schedule. Too long oil intervals cause varnish in the element and in the thermostatic valve.",
+        "text_en": "The controller counts the running hours down to the next maintenance for each task: oil, oil filter, air filter, separator element and general inspection. When a counter reaches zero, warning E-19 is shown with the name of the task. The intervals are set in Service > Intervals. The factory settings correspond to the maintenance schedule in 4.1.\n\nNOTE\nDo not set longer intervals than in the maintenance schedule. Too long oil intervals cause varnish in the element and in the thermostatic valve.",
+        "acl_key": "family-compressors",
+        "cosine": 0.4637705385684967,
+        "bm25_rank": 22,
+        "vector_rank": 12,
+        "rrf": 0.0260840108401084
+      },
+      {
+        "chunk_id": "acfdb8128181d811",
+        "doc_path": "corpus/confluence/VRS-Series-Oil-and-Filter-Quick-Reference.html",
+        "doc_title": "VRS Series Oil and Filter Quick Reference",
+        "doc_type": "Field Service",
+        "revision": "unknown",
+        "effective_date": "Mar 21, 2024",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : VRS Series Oil and Filter Quick Reference"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": "Mar 21, 2024"
+        },
+        "header": "VRS Series Oil and Filter Quick Reference | Field Service : VRS Series Oil and Filter Quick Reference",
+        "text_original": "Quick reference for PM visits on the Vastra VRS compressors. I put this together during my apprentice placement in Tacoma so I didn't have to scroll through three manuals in the compressor room with one bar of signal. Values are from the current Vastra service manuals (March 2024). Kenji checked it.\n\nPrint this page and keep it in the van binder. The compressor room at TAC has no signal.",
+        "text_en": "Quick reference for PM visits on the Vastra VRS compressors. I put this together during my apprentice placement in Tacoma so I didn't have to scroll through three manuals in the compressor room with one bar of signal. Values are from the current Vastra service manuals (March 2024). Kenji checked it.\n\nPrint this page and keep it in the van binder. The compressor room at TAC has no signal.",
+        "acl_key": "family-compressors",
+        "cosine": 0.4654291570186615,
+        "bm25_rank": 26,
+        "vector_rank": 11,
+        "rrf": 0.02571241401899771
+      },
+      {
+        "chunk_id": "a045802daa051e5b",
+        "doc_path": "corpus/manuals/Vastra_VRS-75_Service_Manual_RevB_2024.pdf",
+        "doc_title": "Vastra VRS-75 Service Manual Rev B",
+        "doc_type": "Service Manual",
+        "revision": "B",
+        "effective_date": "2024-02-12",
+        "locator": {
+          "page": 8,
+          "section_path": [
+            "4 Maintenance",
+            "4.4 Replacing the air filter element"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Vastra VRS-75 Service Manual Rev B | B | 4 Maintenance › 4.4 Replacing the air filter element",
+        "text_original": "1. Stop and isolate the compressor (1.4, steps 1 and 2 are sufficient).\n2. Open the air filter cover clips and remove the cover. Pull out the element 41-1510 with a turning movement.\n3. Clean the inside of the housing with a damp cloth. Do not blow into the inlet of the compressor.\n4. Fit the new element and the cover. The arrow on the cover shall point upwards.\n5. Reset the air filter service counter.\n\nCAUTION\nNever clean the paper element with compressed air. It damages the paper and lets dust into the element.",
+        "text_en": "1. Stop and isolate the compressor (1.4, steps 1 and 2 are sufficient).\n2. Open the air filter cover clips and remove the cover. Pull out the element 41-1510 with a turning movement.\n3. Clean the inside of the housing with a damp cloth. Do not blow into the inlet of the compressor.\n4. Fit the new element and the cover. The arrow on the cover shall point upwards.\n5. Reset the air filter service counter.\n\nCAUTION\nNever clean the paper element with compressed air. It damages the paper and lets dust into the element.",
+        "acl_key": "family-compressors",
+        "cosine": 0.42363959550857544,
+        "bm25_rank": 29,
+        "vector_rank": 18,
+        "rrf": 0.024056467876692595
+      },
+      {
+        "chunk_id": "b5abeac7cb93d827",
+        "doc_path": "corpus/manuals/Vastra_VRS-110_Service_Manual_RevA.pdf",
+        "doc_title": "Vastra VRS-110 Service Manual Rev A",
+        "doc_type": "Service Manual",
+        "revision": "A",
+        "effective_date": "2023-11-14",
+        "locator": {
+          "page": 8,
+          "section_path": [
+            "5 Maintenance"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Vastra VRS-110 Service Manual Rev A | A | 5 Maintenance",
+        "text_original": "5.1 Maintenance schedule\nThe intervals are maximum intervals for normal operating conditions. The task is due at the interval in running hours or at the time interval, whichever comes first. The controller counts the running hours down for each task and shows warning E-19 when a task is due.\n\nInterval: Daily\nTask: Control the oil level in the sight glass (compressor stopped for 2 minutes). Control the display for warnings.\nPart no.: \nSee: 5.2\n\nInterval: 500 h / monthly\nTask: Clean the pre-filter mats in the enclosure air inlet and the filter mats of the drive cabinet.\nPart no.: \nSee: 5.6, 7.6\n\nInterval: 2,000 h\nTask: Replace the air filter element, or earlier at warning E-18.\nPart no.: 41-1512\nSee: 5.4\n\nInterval: 2,000 h\nTask: Clean the oil cooler and the aftercooler. Test the electronic water drain. Control the drive cabinet fans.\nPart no.: \nSee: 5.6, 7.6\n\nInterval: 4,000 h / 12 months\nTask: Change the oil.\nPart no.: 41-0046\nSee: 5.3\n\nInterval: 4,000 h / 12 months\nTask: Replace the oil filter, or earlier at warning E-07.\nPart no.: 41-1480\nSee: 5.3\n\nInterval: 8,000 h\nTask: Replace the separator element.\nPart no.: 41-3075\nSee: 5.5\n\nInterval: 8,000 h / yearly\nTask: Test the safety valve. Control the minimum pressure valve, the oil stop valve and the coupling element.\nPart no.: \nSee: 5.7\n\nInterval: 8,000 h / yearly\nTask: Control the sensors PT-1, PT-2 and TS-2 against reference instruments.\nPart no.: \nSee: 6.3.1\n\nInterval: Yearly\nTask: Control the tightness of the power connections in the drive cabinet (authorised person only).\nPart no.: \nSee: 7.3, 7.6\n\nInterval: 24,000 h\nTask: Overhaul of the compression element bearings and shaft seal (Vastra service only).\nPart no.: \nSee: \n\nIn dusty or humid environment, and when the ambient temperature is continuously above 40 C, the intervals for the air filter, the coolers, the drive cabinet filter mats and the oil shall be shortened. Contact Vastra service for advice.\n\n5.2 Oil\nOnly Vastra SynLube 46 (part no. 41-0046, 20 l can) is approved for the VRS-110. The high element speed at full load and the long periods at low speed demand a synthetic oil. Mineral oil is not allowed and makes the warranty invalid.\n\nControl the oil level with the compressor stopped for 2 minutes. The level shall be in the upper half of the sight glass. An oil consumption of more than 0.5 l per 100 running hours is not normal; control the separator element and the scavenge line.\n\n5.3 Changing the oil and the oil filter\n1. Run the compressor at full speed until it is warm (discharge temperature above 70 C).\n2. Stop, isolate and vent the compressor according to 1.4. Control that PT-1 shows 0 bar.\n3. Open the oil filler plug slowly by one turn. Remaining pressure escapes through the vent hole in the plug thread.\n4. Drain the oil from the separator vessel drain valve and from the oil cooler drain plug into a container.\n5. Remove the oil filter 41-1480 with a strap wrench. Clean the sealing surface on the filter head.\n6. Oil the gasket of the new filter. Screw it on by hand until the gasket touches, then a further 3/4 turn by hand.\n7. Fill approximately 56 l of Vastra SynLube 46 until the level is in the upper half of the sight glass. Fit the filler plug with a new O-ring.\n8. Run the compressor for 5 minutes, stop, wait 2 minutes and control the level. Top up if necessary.\n9. Reset the service counters for oil and oil filter. Write the date and the running hours in the service record.\n\n5.4 Replacing the air filter element\nStop and isolate the compressor. Open the cover clips, remove the cover and pull out the element 41-1512 with a turning movement. Clean the housing with a damp cloth, fit the new element and the cover, and reset the counter. Never clean the paper element with compressed air.\n\n5.5 Replacing the separator element\nThe procedure is the same as for the VRS-75 and uses the same element 41-3075. Stop, isolate and vent the compressor (1.4); disconnect the scavenge line and the control line; remove the cover bolts (M16) and lift off the cover; replace the element and the gaskets; control the earthing staple; tighten the cover bolts crosswise to 110 N-m; clean the scavenge line restrictor (1.5 mm). After the start, control the oil flow in the scavenge line sight glass and note the separator dP from Measurements in the service record. A rising separator dP from one service to the next shows that the element comes to the end of its life.\n\n5.6 Cleaning the coolers\nClean the oil cooler and the aftercooler from the fan side, against the normal direction of the cooling air, with compressed air at maximum 6 bar. Oily dirt is removed with a degreasing agent and water at low pressure; a high-pressure washer is not allowed. The cooling fan of the VRS-110 is speed-controlled; during cleaning it can start if the main isolator is not locked.\n\n5.7 Safety valve, minimum pressure valve and oil stop valve\nTest the safety valve once per year with the test lever, with the compressor running, or according to the national regulations if these are more strict. A valve that leaks after the test shall be replaced. Control that the oil stop valve closes when the motor stops: after a stop, no oil shall be pressed out of the inlet valve. An oil stop valve that does not close gives oil in the air filter housing.\n\n5.8 Replacing the discharge temperature sensor TS-2\nTS-2 (41-2207) is a PT1000 sensor that sits in a thermowell in the discharge pipe. It can be replaced without draining the oil.\n1. Stop, isolate and vent the compressor (1.4). Let the discharge pipe cool down.\n2. Disconnect the plug at the sensor. Unscrew the sensor from the thermowell. Do not unscrew the thermowell from the pipe.\n3. Apply a small quantity of heat-conducting paste on the tip of the new sensor. Screw it in by hand, then a further 1/4 turn.\n4. Connect the plug. Control that the cable is fixed with the original clips along its full route and does not touch hot parts.\n5. Start the compressor and compare the reading with a handheld thermometer as described in 6.3.1.",
+        "text_en": "5.1 Maintenance schedule\nThe intervals are maximum intervals for normal operating conditions. The task is due at the interval in running hours or at the time interval, whichever comes first. The controller counts the running hours down for each task and shows warning E-19 when a task is due.\n\nInterval: Daily\nTask: Control the oil level in the sight glass (compressor stopped for 2 minutes). Control the display for warnings.\nPart no.: \nSee: 5.2\n\nInterval: 500 h / monthly\nTask: Clean the pre-filter mats in the enclosure air inlet and the filter mats of the drive cabinet.\nPart no.: \nSee: 5.6, 7.6\n\nInterval: 2,000 h\nTask: Replace the air filter element, or earlier at warning E-18.\nPart no.: 41-1512\nSee: 5.4\n\nInterval: 2,000 h\nTask: Clean the oil cooler and the aftercooler. Test the electronic water drain. Control the drive cabinet fans.\nPart no.: \nSee: 5.6, 7.6\n\nInterval: 4,000 h / 12 months\nTask: Change the oil.\nPart no.: 41-0046\nSee: 5.3\n\nInterval: 4,000 h / 12 months\nTask: Replace the oil filter, or earlier at warning E-07.\nPart no.: 41-1480\nSee: 5.3\n\nInterval: 8,000 h\nTask: Replace the separator element.\nPart no.: 41-3075\nSee: 5.5\n\nInterval: 8,000 h / yearly\nTask: Test the safety valve. Control the minimum pressure valve, the oil stop valve and the coupling element.\nPart no.: \nSee: 5.7\n\nInterval: 8,000 h / yearly\nTask: Control the sensors PT-1, PT-2 and TS-2 against reference instruments.\nPart no.: \nSee: 6.3.1\n\nInterval: Yearly\nTask: Control the tightness of the power connections in the drive cabinet (authorised person only).\nPart no.: \nSee: 7.3, 7.6\n\nInterval: 24,000 h\nTask: Overhaul of the compression element bearings and shaft seal (Vastra service only).\nPart no.: \nSee: \n\nIn dusty or humid environment, and when the ambient temperature is continuously above 40 C, the intervals for the air filter, the coolers, the drive cabinet filter mats and the oil shall be shortened. Contact Vastra service for advice.\n\n5.2 Oil\nOnly Vastra SynLube 46 (part no. 41-0046, 20 l can) is approved for the VRS-110. The high element speed at full load and the long periods at low speed demand a synthetic oil. Mineral oil is not allowed and makes the warranty invalid.\n\nControl the oil level with the compressor stopped for 2 minutes. The level shall be in the upper half of the sight glass. An oil consumption of more than 0.5 l per 100 running hours is not normal; control the separator element and the scavenge line.\n\n5.3 Changing the oil and the oil filter\n1. Run the compressor at full speed until it is warm (discharge temperature above 70 C).\n2. Stop, isolate and vent the compressor according to 1.4. Control that PT-1 shows 0 bar.\n3. Open the oil filler plug slowly by one turn. Remaining pressure escapes through the vent hole in the plug thread.\n4. Drain the oil from the separator vessel drain valve and from the oil cooler drain plug into a container.\n5. Remove the oil filter 41-1480 with a strap wrench. Clean the sealing surface on the filter head.\n6. Oil the gasket of the new filter. Screw it on by hand until the gasket touches, then a further 3/4 turn by hand.\n7. Fill approximately 56 l of Vastra SynLube 46 until the level is in the upper half of the sight glass. Fit the filler plug with a new O-ring.\n8. Run the compressor for 5 minutes, stop, wait 2 minutes and control the level. Top up if necessary.\n9. Reset the service counters for oil and oil filter. Write the date and the running hours in the service record.\n\n5.4 Replacing the air filter element\nStop and isolate the compressor. Open the cover clips, remove the cover and pull out the element 41-1512 with a turning movement. Clean the housing with a damp cloth, fit the new element and the cover, and reset the counter. Never clean the paper element with compressed air.\n\n5.5 Replacing the separator element\nThe procedure is the same as for the VRS-75 and uses the same element 41-3075. Stop, isolate and vent the compressor (1.4); disconnect the scavenge line and the control line; remove the cover bolts (M16) and lift off the cover; replace the element and the gaskets; control the earthing staple; tighten the cover bolts crosswise to 110 N-m; clean the scavenge line restrictor (1.5 mm). After the start, control the oil flow in the scavenge line sight glass and note the separator dP from Measurements in the service record. A rising separator dP from one service to the next shows that the element comes to the end of its life.\n\n5.6 Cleaning the coolers\nClean the oil cooler and the aftercooler from the fan side, against the normal direction of the cooling air, with compressed air at maximum 6 bar. Oily dirt is removed with a degreasing agent and water at low pressure; a high-pressure washer is not allowed. The cooling fan of the VRS-110 is speed-controlled; during cleaning it can start if the main isolator is not locked.\n\n5.7 Safety valve, minimum pressure valve and oil stop valve\nTest the safety valve once per year with the test lever, with the compressor running, or according to the national regulations if these are more strict. A valve that leaks after the test shall be replaced. Control that the oil stop valve closes when the motor stops: after a stop, no oil shall be pressed out of the inlet valve. An oil stop valve that does not close gives oil in the air filter housing.\n\n5.8 Replacing the discharge temperature sensor TS-2\nTS-2 (41-2207) is a PT1000 sensor that sits in a thermowell in the discharge pipe. It can be replaced without draining the oil.\n1. Stop, isolate and vent the compressor (1.4). Let the discharge pipe cool down.\n2. Disconnect the plug at the sensor. Unscrew the sensor from the thermowell. Do not unscrew the thermowell from the pipe.\n3. Apply a small quantity of heat-conducting paste on the tip of the new sensor. Screw it in by hand, then a further 1/4 turn.\n4. Connect the plug. Control that the cable is fixed with the original clips along its full route and does not touch hot parts.\n5. Start the compressor and compare the reading with a handheld thermometer as described in 6.3.1.",
+        "acl_key": "family-compressors",
+        "cosine": 0.46579840779304504,
+        "bm25_rank": 43,
+        "vector_rank": 10,
+        "rrf": 0.023994452149791956
+      },
+      {
+        "chunk_id": "a3daeee48765a690",
+        "doc_path": "corpus/manuals/Vastra_VRS-75_Service_Manual_RevB_2024.pdf",
+        "doc_title": "Vastra VRS-75 Service Manual Rev B",
+        "doc_type": "Service Manual",
+        "revision": "B",
+        "effective_date": "2024-02-12",
+        "locator": {
+          "page": 4,
+          "section_path": [
+            "1 Safety",
+            "1.4 Before maintenance and repair"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Vastra VRS-75 Service Manual Rev B | B | 1 Safety › 1.4 Before maintenance and repair",
+        "text_original": "Carry out the following steps before every maintenance or repair task, if the task description does not say otherwise.\n1. Stop the compressor with the stop key (O). Wait until the unloaded run-down is finished and the motor has stopped.\n2. Switch off the main isolator and lock it in the off position. Hang a sign \"Work in progress - do not start\" on the isolator.\n3. Close the air outlet valve to the network. Open the manual vent valve on the separator vessel and control on the display (PT-1) that the internal pressure is 0 bar.\n4. Let the compressor cool down. The element and the oil stay hot for a long time after stop.\n\nWARNING\nObserve that the stop key alone does not make the compressor safe. In automatic mode, and after a power failure with auto restart activated, the compressor starts without warning. Always lock the main isolator.",
+        "text_en": "Carry out the following steps before every maintenance or repair task, if the task description does not say otherwise.\n1. Stop the compressor with the stop key (O). Wait until the unloaded run-down is finished and the motor has stopped.\n2. Switch off the main isolator and lock it in the off position. Hang a sign \"Work in progress - do not start\" on the isolator.\n3. Close the air outlet valve to the network. Open the manual vent valve on the separator vessel and control on the display (PT-1) that the internal pressure is 0 bar.\n4. Let the compressor cool down. The element and the oil stay hot for a long time after stop.\n\nWARNING\nObserve that the stop key alone does not make the compressor safe. In automatic mode, and after a power failure with auto restart activated, the compressor starts without warning. Always lock the main isolator.",
+        "acl_key": "family-compressors",
+        "cosine": 0.38166436553001404,
+        "bm25_rank": 19,
+        "vector_rank": 35,
+        "rrf": 0.02318454363757495
+      },
+      {
+        "chunk_id": "f76e5dccac2cc788",
+        "doc_path": "corpus/manuals/Vastra_VRS-75_Service_Manual_RevC_2026.pdf",
+        "doc_title": "Vastra VRS-75 Service Manual Rev C",
+        "doc_type": "Service Manual",
+        "revision": "C",
+        "effective_date": "2026-04-20",
+        "locator": {
+          "page": 2,
+          "section_path": [
+            "About this revision"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Vastra VRS-75 Service Manual Rev C | C | About this revision",
+        "text_original": "About this revision\n\nWhat's new in Rev C\n\nThis revision replaces Rev B of February 2024. Text that is changed or new compared with Rev B is marked with a vertical bar in the left margin, as for this paragraph.\n\n- Longer oil change interval with Vastra SynLube 46: 6,000 running hours or 12 months, whichever comes first. With mineral compressor oil ISO VG 46 the interval is unchanged, 4,000 running hours or 12 months. See 4.1 and 4.2.\n- On compressors delivered before April 2026 the oil interval in the controller is set to 4,000 h from the factory. The interval must be changed manually when Vastra SynLube 46 is used. See 3.4.\n- The oil filter is now delivered as part no. 41-1475. It is the same filter as 41-1470 in new packaging. See 4.3 and 6.2.\n- New warning E-27, separator differential pressure high (above 1.0 bar). Replace the separator element 41-3075 and check the oil carry-over. See 5.1 and 5.2.4.\n- Service kits renamed (6.3). Contact details updated (7.3).\n\nWhich revision applies\n\nRev C applies to all VRS-75 compressors from serial no. VRS75-200001, also to compressors delivered before the date of this revision. Destroy or mark as invalid the printed copies of Rev B that are kept at the compressor.",
+        "text_en": "About this revision\n\nWhat's new in Rev C\n\nThis revision replaces Rev B of February 2024. Text that is changed or new compared with Rev B is marked with a vertical bar in the left margin, as for this paragraph.\n\n- Longer oil change interval with Vastra SynLube 46: 6,000 running hours or 12 months, whichever comes first. With mineral compressor oil ISO VG 46 the interval is unchanged, 4,000 running hours or 12 months. See 4.1 and 4.2.\n- On compressors delivered before April 2026 the oil interval in the controller is set to 4,000 h from the factory. The interval must be changed manually when Vastra SynLube 46 is used. See 3.4.\n- The oil filter is now delivered as part no. 41-1475. It is the same filter as 41-1470 in new packaging. See 4.3 and 6.2.\n- New warning E-27, separator differential pressure high (above 1.0 bar). Replace the separator element 41-3075 and check the oil carry-over. See 5.1 and 5.2.4.\n- Service kits renamed (6.3). Contact details updated (7.3).\n\nWhich revision applies\n\nRev C applies to all VRS-75 compressors from serial no. VRS75-200001, also to compressors delivered before the date of this revision. Destroy or mark as invalid the printed copies of Rev B that are kept at the compressor.",
+        "acl_key": "family-compressors",
+        "cosine": 0.40439876914024353,
+        "bm25_rank": 32,
+        "vector_rank": 23,
+        "rrf": 0.022917757988475642
+      },
+      {
+        "chunk_id": "8b9c6658f856175a",
+        "doc_path": "corpus/manuals/Vastra_VRS-75_Service_Manual_RevB_2024.pdf",
+        "doc_title": "Vastra VRS-75 Service Manual Rev B",
+        "doc_type": "Service Manual",
+        "revision": "B",
+        "effective_date": "2024-02-12",
+        "locator": {
+          "page": 4,
+          "section_path": [
+            "2 General description",
+            "2.2 Air flow and oil system"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Vastra VRS-75 Service Manual Rev B | B | 2 General description › 2.2 Air flow and oil system",
+        "text_original": "Air is drawn in through the air filter (AF) and the inlet valve (IV) into the compression element (CE). Oil is injected into the element for cooling, sealing and lubrication. The mixture of air and oil leaves the element through the discharge pipe, where the discharge temperature sensor TS-2 is mounted, and enters the separator vessel (SV). Most of the oil is separated in the vessel by the change of direction. The remaining oil is removed by the separator element (OS). The air then passes the minimum pressure valve (MPV) and the aftercooler (AC) and leaves the compressor at the air outlet valve.\n\nThe internal pressure presses the oil from the separator vessel through the thermostatic valve (TV), the oil cooler (OC) and the oil filter (OF) back to the element. The thermostatic valve begins to open at 71 C; below this temperature the oil bypasses the cooler so that the compressor reaches operating temperature quickly. Oil collected in the separator element is returned to the element through the scavenge line, which has a restrictor and a sight glass.\n\nThe minimum pressure valve keeps the internal pressure at minimum 4 bar during loaded operation, also when the network is empty, to assure the oil circulation. Condensate from the aftercooler is removed by the electronic water drain (EWD).",
+        "text_en": "Air is drawn in through the air filter (AF) and the inlet valve (IV) into the compression element (CE). Oil is injected into the element for cooling, sealing and lubrication. The mixture of air and oil leaves the element through the discharge pipe, where the discharge temperature sensor TS-2 is mounted, and enters the separator vessel (SV). Most of the oil is separated in the vessel by the change of direction. The remaining oil is removed by the separator element (OS). The air then passes the minimum pressure valve (MPV) and the aftercooler (AC) and leaves the compressor at the air outlet valve.\n\nThe internal pressure presses the oil from the separator vessel through the thermostatic valve (TV), the oil cooler (OC) and the oil filter (OF) back to the element. The thermostatic valve begins to open at 71 C; below this temperature the oil bypasses the cooler so that the compressor reaches operating temperature quickly. Oil collected in the separator element is returned to the element through the scavenge line, which has a restrictor and a sight glass.\n\nThe minimum pressure valve keeps the internal pressure at minimum 4 bar during loaded operation, also when the network is empty, to assure the oil circulation. Condensate from the aftercooler is removed by the electronic water drain (EWD).",
+        "acl_key": "family-compressors",
+        "cosine": 0.4215559661388397,
+        "bm25_rank": 46,
+        "vector_rank": 20,
+        "rrf": 0.021933962264150945
+      },
+      {
+        "chunk_id": "bbe92701faf3d09f",
+        "doc_path": "corpus/manuals/Vastra_VRS-75_Service_Manual_RevC_2026.pdf",
+        "doc_title": "Vastra VRS-75 Service Manual Rev C",
+        "doc_type": "Service Manual",
+        "revision": "C",
+        "effective_date": "2026-04-20",
+        "locator": {
+          "page": 5,
+          "section_path": [
+            "2 General description"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Vastra VRS-75 Service Manual Rev C | C | 2 General description",
+        "text_original": "2 General description\n\n2.1 Introduction\nThe VRS-75 is an oil-injected, single-stage rotary screw compressor. The compression element is driven by a 75 kW electric motor through a flexible coupling. The compressor is air-cooled and is delivered as a complete package in a sound-insulated enclosure, with the Vastra Vcon 3 controller. Capacity regulation is by load and unload with the inlet valve; the motor runs at constant speed. For variable speed regulation, see the VRS-110.\n\n2.2 Air flow and oil system\nAir is drawn in through the air filter (AF) and the inlet valve (IV) into the compression element (CE). Oil is injected into the element for cooling, sealing and lubrication. The mixture of air and oil leaves the element through the discharge pipe, where the discharge temperature sensor TS-2 is mounted, and enters the separator vessel (SV). Most of the oil is separated in the vessel by the change of direction. The remaining oil is removed by the separator element (OS). The air then passes the minimum pressure valve (MPV) and the aftercooler (AC) and leaves the compressor at the air outlet valve.\n\nThe internal pressure presses the oil from the separator vessel through the thermostatic valve (TV), the oil cooler (OC) and the oil filter (OF) back to the element. The thermostatic valve begins to open at 71 C; below this temperature the oil bypasses the cooler so that the compressor reaches operating temperature quickly. Oil collected in the separator element is returned to the element through the scavenge line, which has a restrictor and a sight glass.\n\nThe minimum pressure valve keeps the internal pressure at minimum 4 bar during loaded operation, also when the network is empty, to assure the oil circulation. Condensate from the aftercooler is removed by the electronic water drain (EWD).\n\n2.3 Sensors and switches\nDesignation: PT-1\nFunction: Internal pressure\nLocation: Separator vessel, top cover\n\nDesignation: PT-2\nFunction: Net pressure\nLocation: Air outlet, after the minimum pressure valve\n\nDesignation: TS-1\nFunction: Air inlet temperature (ambient)\nLocation: Air filter housing\n\nDesignation: TS-2\nFunction: Discharge temperature (element outlet)\nLocation: Discharge pipe, approx. 150 mm after the element outlet flange\n\nDesignation: PS-3\nFunction: Oil filter differential pressure switch\nLocation: Oil filter head\n\nDesignation: PS-4\nFunction: Air filter vacuum switch\nLocation: Air filter housing, outlet side\n\nDesignation: B21\nFunction: Motor PTC thermistors\nLocation: Motor winding, connected to terminal X3\n\n2.4 Technical data\nParameter: Pressure version\nValue: 7.5 bar / 10 bar / 13 bar\n\nParameter: Max. working pressure\nValue: 7.5 / 10 / 13 bar(e)\n\nParameter: Free air delivery (ISO 1217, Annex C)\nValue: 13.1 / 11.4 / 9.6 m3/min\n\nParameter: Shaft power at max. working pressure\nValue: 74.0 / 75.2 / 74.8 kW\n\nParameter: Motor\nValue: 75 kW, IE3, 2-pole, IP55\n\nParameter: Supply\nValue: 400 V 50 Hz / 460 V 60 Hz, 3-phase\n\nParameter: Rated motor current\nValue: 134 A at 400 V / 116 A at 460 V\n\nParameter: Oil capacity (system)\nValue: 38 l\n\nParameter: Recommended oil\nValue: Vastra SynLube 46 (synthetic) or mineral compressor oil ISO VG 46 (DIN 51506 VDL)\n\nParameter: Discharge temperature, normal operation\nValue: 75 - 95 C\n\nParameter: Thermostatic valve, opening temperature\nValue: 71 C\n\nParameter: Permitted ambient temperature\nValue: +1 to +46 C\n\nParameter: Air outlet temperature\nValue: Ambient + 10 C (approx.)\n\nParameter: Cooling air flow\nValue: 7.6 m3/s\n\nParameter: Sound pressure level (ISO 2151)\nValue: 71 dB(A)\n\nParameter: Air outlet connection\nValue: G 2 1/2\n\nParameter: Dimensions L x W x H\nValue: 2,050 x 1,100 x 1,750 mm\n\nParameter: Weight\nValue: 1,480 kg\n\nWhere three values are given, they apply to the 7.5, 10 and 13 bar versions. The data plate is on the inside of the electrical cabinet door.",
+        "text_en": "2 General description\n\n2.1 Introduction\nThe VRS-75 is an oil-injected, single-stage rotary screw compressor. The compression element is driven by a 75 kW electric motor through a flexible coupling. The compressor is air-cooled and is delivered as a complete package in a sound-insulated enclosure, with the Vastra Vcon 3 controller. Capacity regulation is by load and unload with the inlet valve; the motor runs at constant speed. For variable speed regulation, see the VRS-110.\n\n2.2 Air flow and oil system\nAir is drawn in through the air filter (AF) and the inlet valve (IV) into the compression element (CE). Oil is injected into the element for cooling, sealing and lubrication. The mixture of air and oil leaves the element through the discharge pipe, where the discharge temperature sensor TS-2 is mounted, and enters the separator vessel (SV). Most of the oil is separated in the vessel by the change of direction. The remaining oil is removed by the separator element (OS). The air then passes the minimum pressure valve (MPV) and the aftercooler (AC) and leaves the compressor at the air outlet valve.\n\nThe internal pressure presses the oil from the separator vessel through the thermostatic valve (TV), the oil cooler (OC) and the oil filter (OF) back to the element. The thermostatic valve begins to open at 71 C; below this temperature the oil bypasses the cooler so that the compressor reaches operating temperature quickly. Oil collected in the separator element is returned to the element through the scavenge line, which has a restrictor and a sight glass.\n\nThe minimum pressure valve keeps the internal pressure at minimum 4 bar during loaded operation, also when the network is empty, to assure the oil circulation. Condensate from the aftercooler is removed by the electronic water drain (EWD).\n\n2.3 Sensors and switches\nDesignation: PT-1\nFunction: Internal pressure\nLocation: Separator vessel, top cover\n\nDesignation: PT-2\nFunction: Net pressure\nLocation: Air outlet, after the minimum pressure valve\n\nDesignation: TS-1\nFunction: Air inlet temperature (ambient)\nLocation: Air filter housing\n\nDesignation: TS-2\nFunction: Discharge temperature (element outlet)\nLocation: Discharge pipe, approx. 150 mm after the element outlet flange\n\nDesignation: PS-3\nFunction: Oil filter differential pressure switch\nLocation: Oil filter head\n\nDesignation: PS-4\nFunction: Air filter vacuum switch\nLocation: Air filter housing, outlet side\n\nDesignation: B21\nFunction: Motor PTC thermistors\nLocation: Motor winding, connected to terminal X3\n\n2.4 Technical data\nParameter: Pressure version\nValue: 7.5 bar / 10 bar / 13 bar\n\nParameter: Max. working pressure\nValue: 7.5 / 10 / 13 bar(e)\n\nParameter: Free air delivery (ISO 1217, Annex C)\nValue: 13.1 / 11.4 / 9.6 m3/min\n\nParameter: Shaft power at max. working pressure\nValue: 74.0 / 75.2 / 74.8 kW\n\nParameter: Motor\nValue: 75 kW, IE3, 2-pole, IP55\n\nParameter: Supply\nValue: 400 V 50 Hz / 460 V 60 Hz, 3-phase\n\nParameter: Rated motor current\nValue: 134 A at 400 V / 116 A at 460 V\n\nParameter: Oil capacity (system)\nValue: 38 l\n\nParameter: Recommended oil\nValue: Vastra SynLube 46 (synthetic) or mineral compressor oil ISO VG 46 (DIN 51506 VDL)\n\nParameter: Discharge temperature, normal operation\nValue: 75 - 95 C\n\nParameter: Thermostatic valve, opening temperature\nValue: 71 C\n\nParameter: Permitted ambient temperature\nValue: +1 to +46 C\n\nParameter: Air outlet temperature\nValue: Ambient + 10 C (approx.)\n\nParameter: Cooling air flow\nValue: 7.6 m3/s\n\nParameter: Sound pressure level (ISO 2151)\nValue: 71 dB(A)\n\nParameter: Air outlet connection\nValue: G 2 1/2\n\nParameter: Dimensions L x W x H\nValue: 2,050 x 1,100 x 1,750 mm\n\nParameter: Weight\nValue: 1,480 kg\n\nWhere three values are given, they apply to the 7.5, 10 and 13 bar versions. The data plate is on the inside of the electrical cabinet door.",
+        "acl_key": "family-compressors",
+        "cosine": 0.3723319470882416,
+        "bm25_rank": 48,
+        "vector_rank": 38,
+        "rrf": 0.019463340891912317
+      },
+      {
+        "chunk_id": "cd4c51a6d67f5baf",
+        "doc_path": "corpus/chat/Teams_na-compressors_2026-07.json",
+        "doc_title": "Teams #na-compressors, July 2026",
+        "doc_type": "teams",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "1751400245489",
+          "sender": "Daniel Reyes",
+          "date": "2026-07-09T16:12:00.000Z",
+          "thread_record_ids": [
+            "1751400245489",
+            "1751400253408"
+          ]
+        },
+        "header": "Teams #na-compressors, July 2026 | 1751400245489",
+        "text_original": "Heads up for anyone doing VRS-75 PMs, the new oil filter boxes say 41-1475 not 41-1470. Same filter, new box. Don't send them back like I did\n\nReaction: laugh — Tom Becker — 2026-07-09T16:17:00.000Z\nReaction: like — Priya Natarajan — 2026-07-09T16:18:00.000Z\n\n[Deleted message — 2026-07-09T16:16:00.000Z]",
+        "text_en": "Heads up for anyone doing VRS-75 PMs, the new oil filter boxes say 41-1475 not 41-1470. Same filter, new box. Don't send them back like I did\n\nReaction: laugh — Tom Becker — 2026-07-09T16:17:00.000Z\nReaction: like — Priya Natarajan — 2026-07-09T16:18:00.000Z\n\n[Deleted message — 2026-07-09T16:16:00.000Z]",
+        "acl_key": "family-compressors|region-na",
+        "cosine": 0.35858139395713806,
+        "bm25_rank": 41,
+        "vector_rank": 45,
+        "rrf": 0.019424799622819428
+      },
+      {
+        "chunk_id": "41517193a33a0d9a",
+        "doc_path": "corpus/chat/Teams_na-compressors_2026-07.json",
+        "doc_title": "Teams #na-compressors, July 2026",
+        "doc_type": "teams",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "1751400000000",
+          "sender": "Priya Natarajan",
+          "date": "2026-07-02T13:41:00.000Z",
+          "thread_record_ids": [
+            "1751400000000",
+            "1751400007919",
+            "1751400015838",
+            "1751400023757",
+            "1751400031676",
+            "1751400039595",
+            "1751400047514",
+            "1751400055433",
+            "1751400063352",
+            "1751400071271",
+            "1751400079190",
+            "1751400087109",
+            "1751400110866",
+            "1751400118785",
+            "1751400126704",
+            "1751400213813",
+            "1751400221732",
+            "1751400229651"
+          ]
+        },
+        "header": "Teams #na-compressors, July 2026 | 1751400000000",
+        "text_original": "0142 tripped E-14 again overnight, Dave Ortiz called me at 6. I'm on site.\n\nagain?? we swapped TS-2 on that one in March\n\nCooler fins were pretty bad on the exhaust side so I blew them out yesterday afternoon and restarted. Ran fine until about 01:30 then E-14. Ambient by the unit is 38C right now. Controller shows TS-2 at 113, my handheld at the discharge flange says 102.\n\nAttachment: IMG_4471.jpg\n\nso 11 degrees off\n\nWhat firmware is 0142 on?\n\n5.0\n\nOk. Read the Vastra bulletin on 5.1 (SB-2026-003). Below 5.1 a failing TS-2 shows up as E-14, so from the code alone you can't tell a dead sensor from a real overtemp. 5.1 splits them, a sensor problem comes up as E-15. 0143 is on 5.1 and hasn't done any of this.\n\nAnd two sensors in four months on the same unit is not a bad batch. On 0142 the TS-2 harness runs along the freezer exhaust duct for about a metre and a half before it goes into the cabinet. It cooks. When you do the firmware, reroute the harness under the cable tray on the other side of the unit. I told Dave about it last year but we never got to it.\n\nGot it. Should I swap the sensor now or wait for the firmware?\n\nSwap it now, they need the unit. 41-2207. Daniel Reyes you still have one in the van?\n\nyep one left. I'm at TAC-P-0044 till 10, I'll drop it by\n\nfirmware though, I don't have the X10 cable, lent it to Fresno. earliest next week\n\nTS-2 swapped, unit running. Controller and handheld within 4 degrees now. Case 00042388 updated.\n\nThanks. Put the harness routing in the case too, otherwise it gets lost again.\n\nwill do\n\n0142 update: no trips since the swap. Dave is asking when we do the firmware.\n\ncable is back from Fresno tomorrow. I can do it Thursday if Dave gives me a 2h window\n\nHe said Thursday doesn't work, they have a big inbound. Probably after the 20th\n\nReaction: sad — Daniel Reyes — 2026-07-08T23:30:00.000Z",
+        "text_en": "0142 tripped E-14 again overnight, Dave Ortiz called me at 6. I'm on site.\n\nagain?? we swapped TS-2 on that one in March\n\nCooler fins were pretty bad on the exhaust side so I blew them out yesterday afternoon and restarted. Ran fine until about 01:30 then E-14. Ambient by the unit is 38C right now. Controller shows TS-2 at 113, my handheld at the discharge flange says 102.\n\nAttachment: IMG_4471.jpg\n\nso 11 degrees off\n\nWhat firmware is 0142 on?\n\n5.0\n\nOk. Read the Vastra bulletin on 5.1 (SB-2026-003). Below 5.1 a failing TS-2 shows up as E-14, so from the code alone you can't tell a dead sensor from a real overtemp. 5.1 splits them, a sensor problem comes up as E-15. 0143 is on 5.1 and hasn't done any of this.\n\nAnd two sensors in four months on the same unit is not a bad batch. On 0142 the TS-2 harness runs along the freezer exhaust duct for about a metre and a half before it goes into the cabinet. It cooks. When you do the firmware, reroute the harness under the cable tray on the other side of the unit. I told Dave about it last year but we never got to it.\n\nGot it. Should I swap the sensor now or wait for the firmware?\n\nSwap it now, they need the unit. 41-2207. Daniel Reyes you still have one in the van?\n\nyep one left. I'm at TAC-P-0044 till 10, I'll drop it by\n\nfirmware though, I don't have the X10 cable, lent it to Fresno. earliest next week\n\nTS-2 swapped, unit running. Controller and handheld within 4 degrees now. Case 00042388 updated.\n\nThanks. Put the harness routing in the case too, otherwise it gets lost again.\n\nwill do\n\n0142 update: no trips since the swap. Dave is asking when we do the firmware.\n\ncable is back from Fresno tomorrow. I can do it Thursday if Dave gives me a 2h window\n\nHe said Thursday doesn't work, they have a big inbound. Probably after the 20th\n\nReaction: sad — Daniel Reyes — 2026-07-08T23:30:00.000Z",
+        "acl_key": "family-compressors|region-na",
+        "cosine": null,
+        "bm25_rank": 2,
+        "vector_rank": null,
+        "rrf": 0.016129032258064516
+      },
+      {
+        "chunk_id": "94cfba6e244d0474",
+        "doc_path": "corpus/chat/Teams_na-compressors_2026-07.json",
+        "doc_title": "Teams #na-compressors, July 2026",
+        "doc_type": "teams",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "1751400174218",
+          "sender": "Priya Natarajan",
+          "date": "2026-07-06T20:22:00.000Z",
+          "thread_record_ids": [
+            "1751400174218",
+            "1751400182137",
+            "1751400190056"
+          ]
+        },
+        "header": "Teams #na-compressors, July 2026 | 1751400174218",
+        "text_original": "Question for the HV folks: if a 110 trips E-31 and I'm the only one on site, is there anything I can do before someone certified gets there?\n\nRead the alarm log, note what the unit was doing when it tripped (load, ambient, any power dip), check the site didn't have a grid event, and put all that in the case. That saves whoever comes 30 minutes. Do not open the VFD cabinet. Request HV on the work order and the supervisor will send Daniel or me.\n\n(the panel won't let you reset an E-31 anyway)",
+        "text_en": "Question for the HV folks: if a 110 trips E-31 and I'm the only one on site, is there anything I can do before someone certified gets there?\n\nRead the alarm log, note what the unit was doing when it tripped (load, ambient, any power dip), check the site didn't have a grid event, and put all that in the case. That saves whoever comes 30 minutes. Do not open the VFD cabinet. Request HV on the work order and the supervisor will send Daniel or me.\n\n(the panel won't let you reset an E-31 anyway)",
+        "acl_key": "family-compressors|region-na",
+        "cosine": null,
+        "bm25_rank": 4,
+        "vector_rank": null,
+        "rrf": 0.015625
+      },
+      {
+        "chunk_id": "e60d30db6a1aac2b",
+        "doc_path": "corpus/manuals/Vastra_VRS-75_Service_Manual_RevB_2024.pdf",
+        "doc_title": "Vastra VRS-75 Service Manual Rev B",
+        "doc_type": "Service Manual",
+        "revision": "B",
+        "effective_date": "2024-02-12",
+        "locator": {
+          "page": 12,
+          "section_path": [
+            "6 Spare parts",
+            "6.4 Recommended stock"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Vastra VRS-75 Service Manual Rev B | B | 6 Spare parts › 6.4 Recommended stock",
+        "text_original": "For a site with one or two VRS-75, Vastra recommends to keep on site one air filter element, one oil filter and 40 l of oil. Keep oil cans closed and stored indoors; opened cans shall be used within 6 months.",
+        "text_en": "For a site with one or two VRS-75, Vastra recommends to keep on site one air filter element, one oil filter and 40 l of oil. Keep oil cans closed and stored indoors; opened cans shall be used within 6 months.",
+        "acl_key": "family-compressors",
+        "cosine": 0.5233802199363708,
+        "bm25_rank": null,
+        "vector_rank": 5,
+        "rrf": 0.015384615384615385
+      },
+      {
+        "chunk_id": "eb9eee8401d60965",
+        "doc_path": "corpus/confluence/Compressor-Troubleshooting-Playbook.html",
+        "doc_title": "Compressor Troubleshooting Playbook",
+        "doc_type": "Field Service : Compressor Troubleshooting Playbook",
+        "revision": "unknown",
+        "effective_date": "Feb 11, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Compressor Troubleshooting Playbook",
+            "Quick table"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Compressor Troubleshooting Playbook | Field Service : Compressor Troubleshooting Playbook › Quick table",
+        "text_original": "One line per code we actually see. Details further down.\n\nCode | Controller text | What it usually is for us | Check first | Who\nE-02 | Supply fault | Site power. Grid dips, a breaker upstream, phase loss after site electrical work | Ask the site about power events. Incoming supply indicator on the panel | Anyone to diagnose. Electrical repair is the site electrician or HV\nE-05 | Main motor overload | Fouled cooler making the unit work harder, or someone raised the pressure setpoint | Setpoint against the commissioning sheet, then the cooler | Anyone\nE-07 | Oil filter differential high | Overdue filter. Sometimes a cold start with cold oil | Hours since the last filter change. Was the room cold overnight? | Anyone\nE-11 | Delivery pressure high | Downstream valve closed, blocked dryer. Fresno changeovers | Walk the line to the receiver | Anyone\nE-14 | Discharge temperature high | Fouled cooler, low oil, hot room, or the sensor. See below, and on the 110s check firmware first | Firmware, then TS-2 against a handheld, then cooler and oil | Anyone (not the VFD side)\nE-18 | Air filter restriction | Dirty element. Cold store dust is worse than you'd think | Air filter element | Anyone\nE-20 | Motor temperature (PTC) | Motor fan cowl blocked, or too many starts per hour | Fan cowl, starts per hour in the log | Anyone\nE-31 | VFD overcurrent (110 only) | Grid dip, motor or cable fault, occasionally a tight airend | Read the log. Do not open the cabinet | HV-certified only\nE-33 | DC bus overvoltage (110 only) | Grid event, often in the same minute as an E-31 | Log, site power events | HV-certified only\nE-35 | VFD heatsink temperature (110 only) | Clogged door filter mats, dead cabinet fan | Door filter mats, from the outside | Mats: anyone. Inside the cabinet: HV only\n\nThe VRS-45 uses the same numbers up to E-22 but has no VFD codes, and the older 45s don't report E-18 at all. If your unit shows a code that isn't in its own manual, write it down exactly and call me before you do anything clever.",
+        "text_en": "One line per code we actually see. Details further down.\n\nCode | Controller text | What it usually is for us | Check first | Who\nE-02 | Supply fault | Site power. Grid dips, a breaker upstream, phase loss after site electrical work | Ask the site about power events. Incoming supply indicator on the panel | Anyone to diagnose. Electrical repair is the site electrician or HV\nE-05 | Main motor overload | Fouled cooler making the unit work harder, or someone raised the pressure setpoint | Setpoint against the commissioning sheet, then the cooler | Anyone\nE-07 | Oil filter differential high | Overdue filter. Sometimes a cold start with cold oil | Hours since the last filter change. Was the room cold overnight? | Anyone\nE-11 | Delivery pressure high | Downstream valve closed, blocked dryer. Fresno changeovers | Walk the line to the receiver | Anyone\nE-14 | Discharge temperature high | Fouled cooler, low oil, hot room, or the sensor. See below, and on the 110s check firmware first | Firmware, then TS-2 against a handheld, then cooler and oil | Anyone (not the VFD side)\nE-18 | Air filter restriction | Dirty element. Cold store dust is worse than you'd think | Air filter element | Anyone\nE-20 | Motor temperature (PTC) | Motor fan cowl blocked, or too many starts per hour | Fan cowl, starts per hour in the log | Anyone\nE-31 | VFD overcurrent (110 only) | Grid dip, motor or cable fault, occasionally a tight airend | Read the log. Do not open the cabinet | HV-certified only\nE-33 | DC bus overvoltage (110 only) | Grid event, often in the same minute as an E-31 | Log, site power events | HV-certified only\nE-35 | VFD heatsink temperature (110 only) | Clogged door filter mats, dead cabinet fan | Door filter mats, from the outside | Mats: anyone. Inside the cabinet: HV only\n\nThe VRS-45 uses the same numbers up to E-22 but has no VFD codes, and the older 45s don't report E-18 at all. If your unit shows a code that isn't in its own manual, write it down exactly and call me before you do anything clever.",
+        "acl_key": "family-compressors",
+        "cosine": null,
+        "bm25_rank": 6,
+        "vector_rank": null,
+        "rrf": 0.015151515151515152
+      },
+      {
+        "chunk_id": "a816d57b6e65081b",
+        "doc_path": "corpus/manuals/Vastra_VRS-75_Service_Manual_RevB_2024.pdf",
+        "doc_title": "Vastra VRS-75 Service Manual Rev B",
+        "doc_type": "Service Manual",
+        "revision": "B",
+        "effective_date": "2024-02-12",
+        "locator": {
+          "page": 7,
+          "section_path": [
+            "4 Maintenance",
+            "4.1 Maintenance schedule"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Vastra VRS-75 Service Manual Rev B | B | 4 Maintenance › 4.1 Maintenance schedule",
+        "text_original": "The intervals are maximum intervals for normal operating conditions. The task is due at the interval in running hours or at the time interval, whichever comes first.\n\nInterval: Daily\nTask: Control the oil level in the sight glass (compressor stopped for 2 minutes). Control the display for warnings.\nPart no.: \nSee: 4.2\n\nInterval: 500 h / monthly\nTask: Clean the pre-filter mats in the enclosure air inlet. Control the scavenge line sight glass for oil flow.\nPart no.: \nSee: 4.6\n\nInterval: 2,000 h\nTask: Replace the air filter element, or earlier at warning E-18.\nPart no.: 41-1510\nSee: 4.4\n\nInterval: 2,000 h\nTask: Clean the oil cooler and the aftercooler. Test the electronic water drain.\nPart no.: \nSee: 4.6\n\nInterval: 4,000 h / yearly\nTask: Change the oil.\nPart no.: 41-0046\nSee: 4.3\n\nInterval: 4,000 h / yearly\nTask: Replace the oil filter, or earlier at warning E-07.\nPart no.: 41-1470\nSee: 4.3\n\nInterval: 8,000 h\nTask: Replace the separator element.\nPart no.: 41-3075\nSee: 4.5\n\nInterval: 8,000 h / yearly\nTask: Test the safety valve. Control the minimum pressure valve and the coupling element.\nPart no.: \nSee: 4.7\n\nInterval: 24,000 h\nTask: Overhaul of the compression element bearings and shaft seal (Vastra service only).\nPart no.: \nSee: \n\nIn dusty or humid environment, and when the ambient temperature is continuously above 40 C, the intervals for the air filter, the coolers and the oil shall be shortened. Contact Vastra service for advice on adapted intervals.",
+        "text_en": "The intervals are maximum intervals for normal operating conditions. The task is due at the interval in running hours or at the time interval, whichever comes first.\n\nInterval: Daily\nTask: Control the oil level in the sight glass (compressor stopped for 2 minutes). Control the display for warnings.\nPart no.: \nSee: 4.2\n\nInterval: 500 h / monthly\nTask: Clean the pre-filter mats in the enclosure air inlet. Control the scavenge line sight glass for oil flow.\nPart no.: \nSee: 4.6\n\nInterval: 2,000 h\nTask: Replace the air filter element, or earlier at warning E-18.\nPart no.: 41-1510\nSee: 4.4\n\nInterval: 2,000 h\nTask: Clean the oil cooler and the aftercooler. Test the electronic water drain.\nPart no.: \nSee: 4.6\n\nInterval: 4,000 h / yearly\nTask: Change the oil.\nPart no.: 41-0046\nSee: 4.3\n\nInterval: 4,000 h / yearly\nTask: Replace the oil filter, or earlier at warning E-07.\nPart no.: 41-1470\nSee: 4.3\n\nInterval: 8,000 h\nTask: Replace the separator element.\nPart no.: 41-3075\nSee: 4.5\n\nInterval: 8,000 h / yearly\nTask: Test the safety valve. Control the minimum pressure valve and the coupling element.\nPart no.: \nSee: 4.7\n\nInterval: 24,000 h\nTask: Overhaul of the compression element bearings and shaft seal (Vastra service only).\nPart no.: \nSee: \n\nIn dusty or humid environment, and when the ambient temperature is continuously above 40 C, the intervals for the air filter, the coolers and the oil shall be shortened. Contact Vastra service for advice on adapted intervals.",
+        "acl_key": "family-compressors",
+        "cosine": 0.5175398588180542,
+        "bm25_rank": null,
+        "vector_rank": 6,
+        "rrf": 0.015151515151515152
+      },
+      {
+        "chunk_id": "f5b39d220d9465c0",
+        "doc_path": "corpus/confluence/Compressor-Troubleshooting-Playbook.html",
+        "doc_title": "Compressor Troubleshooting Playbook",
+        "doc_type": "Field Service : Compressor Troubleshooting Playbook",
+        "revision": "unknown",
+        "effective_date": "Feb 11, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Compressor Troubleshooting Playbook",
+            "Before you touch anything"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Compressor Troubleshooting Playbook | Field Service : Compressor Troubleshooting Playbook › Before you touch anything",
+        "text_original": "Every compressor call, whatever the code, starts the same way. I know it's tempting to clear the fault and see if it comes back. Don't, or at least not before you've done this:\n\n- Read the event log, not just the screen. The screen shows the last code. The log (Service menu, Event log, needs the level 2 code from the site binder) shows the sequence, and the sequence is usually the answer. An E-14 that follows two hours of high delivery pressure warnings is a different problem from an E-14 out of nowhere at 2 a.m. on a cool night.\n- Write down the conditions. Load, pressure setpoint, ambient temperature at the unit (not the weather app), and what the site was doing when it tripped. Ask the operator. They'll know if the dock doors were open all night or if the line was down for a changeover.\n- Check the firmware version on the controller info screen and put it in the case. On the 110s this matters more than people think. See E-14.\n- Look up the history. MaintPro for NA, the Servio export for the EU (Salesforce only has the EU from January 2025 onwards). Last PM, last oil change, anything replaced in the last 12 months. If a part was swapped recently and the same code is back, that's your biggest clue.\n- Photograph the controller screen and the log page. Thirty seconds. It's the first thing Vastra asks for, and it settles arguments later.\n\nThen decide whether you're fixing it or just restarting it, and be honest in the case about which one you did. A restart with no cause written down is how we end up at the same unit three times in a month. FS-STD-001 makes three trips in 24 hours a High priority case anyway, so if you don't find it now you'll be back tonight.",
+        "text_en": "Every compressor call, whatever the code, starts the same way. I know it's tempting to clear the fault and see if it comes back. Don't, or at least not before you've done this:\n\n- Read the event log, not just the screen. The screen shows the last code. The log (Service menu, Event log, needs the level 2 code from the site binder) shows the sequence, and the sequence is usually the answer. An E-14 that follows two hours of high delivery pressure warnings is a different problem from an E-14 out of nowhere at 2 a.m. on a cool night.\n- Write down the conditions. Load, pressure setpoint, ambient temperature at the unit (not the weather app), and what the site was doing when it tripped. Ask the operator. They'll know if the dock doors were open all night or if the line was down for a changeover.\n- Check the firmware version on the controller info screen and put it in the case. On the 110s this matters more than people think. See E-14.\n- Look up the history. MaintPro for NA, the Servio export for the EU (Salesforce only has the EU from January 2025 onwards). Last PM, last oil change, anything replaced in the last 12 months. If a part was swapped recently and the same code is back, that's your biggest clue.\n- Photograph the controller screen and the log page. Thirty seconds. It's the first thing Vastra asks for, and it settles arguments later.\n\nThen decide whether you're fixing it or just restarting it, and be honest in the case about which one you did. A restart with no cause written down is how we end up at the same unit three times in a month. FS-STD-001 makes three trips in 24 hours a High priority case anyway, so if you don't find it now you'll be back tonight.",
+        "acl_key": "family-compressors",
+        "cosine": null,
+        "bm25_rank": 7,
+        "vector_rank": null,
+        "rrf": 0.014925373134328358
+      },
+      {
+        "chunk_id": "99c8d9c6b6b4dcbd",
+        "doc_path": "corpus/confluence/VRS-Series-Oil-and-Filter-Quick-Reference.html",
+        "doc_title": "VRS Series Oil and Filter Quick Reference",
+        "doc_type": "Field Service",
+        "revision": "unknown",
+        "effective_date": "Mar 21, 2024",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : VRS Series Oil and Filter Quick Reference",
+            "Comments"
+          ],
+          "record_id": null,
+          "sender": "Daniel Reyes",
+          "date": "Apr 21, 2026 15:09"
+        },
+        "header": "VRS Series Oil and Filter Quick Reference | Field Service : VRS Series Oil and Filter Quick Reference › Comments",
+        "text_original": "Rev C changed this?",
+        "text_en": "Rev C changed this?",
+        "acl_key": "family-compressors",
+        "cosine": 0.48634564876556396,
+        "bm25_rank": null,
+        "vector_rank": 8,
+        "rrf": 0.014705882352941176
+      },
+      {
+        "chunk_id": "c128f87dddc60bed",
+        "doc_path": "corpus/confluence/Compressor-Troubleshooting-Playbook.html",
+        "doc_title": "Compressor Troubleshooting Playbook",
+        "doc_type": "Field Service : Compressor Troubleshooting Playbook",
+        "revision": "unknown",
+        "effective_date": "Feb 11, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Compressor Troubleshooting Playbook",
+            "Things that look like faults but aren't"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Compressor Troubleshooting Playbook | Field Service : Compressor Troubleshooting Playbook › Things that look like faults but aren't",
+        "text_original": "- A loud hiss for a few seconds after the unit unloads. That's the blowdown valve venting the separator. Normal.\n- A 110 running for hours at low speed and not stopping. That's the VFD matching demand. It's supposed to do that.\n- A bit of oil mist in the condensate drain for the first day after an oil change, especially if it was overfilled slightly. Check again the next day before you call it carryover.\n- The controller clock being wrong. Half our controllers are an hour out since the last daylight saving change. Note the offset in the case so the log times make sense.",
+        "text_en": "- A loud hiss for a few seconds after the unit unloads. That's the blowdown valve venting the separator. Normal.\n- A 110 running for hours at low speed and not stopping. That's the VFD matching demand. It's supposed to do that.\n- A bit of oil mist in the condensate drain for the first day after an oil change, especially if it was overfilled slightly. Check again the next day before you call it carryover.\n- The controller clock being wrong. Half our controllers are an hour out since the last daylight saving change. Note the offset in the case so the log times make sense.",
+        "acl_key": "family-compressors",
+        "cosine": null,
+        "bm25_rank": 9,
+        "vector_rank": null,
+        "rrf": 0.014492753623188406
+      },
+      {
+        "chunk_id": "a06a33ecb4c142be",
+        "doc_path": "corpus/confluence/Compressor-Troubleshooting-Playbook.html",
+        "doc_title": "Compressor Troubleshooting Playbook",
+        "doc_type": "Field Service : Compressor Troubleshooting Playbook",
+        "revision": "unknown",
+        "effective_date": "Feb 11, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Compressor Troubleshooting Playbook",
+            "E-14 Discharge temperature high"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Compressor Troubleshooting Playbook | Field Service : Compressor Troubleshooting Playbook › E-14 Discharge temperature high",
+        "text_original": "This is the one that gets us. It's our most common compressor code by a distance, and it has more possible causes than anything else on the list. The controller trips the unit when the discharge temperature goes above 110 C. Usually the temperature really was that high. Sometimes it wasn't.\n\n### Check the firmware first on the 110s\nFirmware matters for E-14 on the 110s. Before you replace anything on a VRS-110 with an E-14, check the firmware version on the info screen and read the bulletin: Vastra SB-2026-003 (January 2026), on SharePoint under OEM bulletins, Vastra. I'm not summarising it here on purpose, because people skim this page and get it half right. Read the bulletin, and put the firmware version in the case.\n\nFirmware updates need the X10 service cable and a laptop with ServiceTool. See Tools below.\n\n### The order I check things in\n- Firmware (110s only, see the box above).\n- Is the reading real? Compare the controller's TS-2 reading with a handheld.\n- Cooler condition.\n- Oil level and oil type.\n- Thermostatic valve.\n- The room: ventilation, ambient, what's blowing on the unit.\n\n### Is the reading real (TS-2 check)\nWith the unit running loaded and settled, read the discharge temperature on the controller (that's TS-2) and measure the discharge flange with a calibrated contact thermometer. Use a contact probe, not the IR gun. The paint on the flange throws the IR reading off by several degrees and you'll fool yourself. If the two readings are more than 8 C apart, the sensor is suspect. The check is written up in the E-14 section of the VRS-110 manual and it works the same way on the 45 and the 75.\n\nTS-2 is part 41-2207, same part across the whole VRS series. Keep one in the van.\n\nOne rule of mine: if you're replacing TS-2 on the same unit for the second time in a year, stop swapping sensors and find out why. Sensors don't die in pairs on their own. Something on that unit is killing them, or something is making a good sensor look bad. Write it up and call me.\n\n### Cooler\nThe cooler is the cause more often than everything else on this list put together. Each site fouls it differently:\n- Fresno: sugar and syrup mist from the bottling hall gets into the cooling air and coats the fins with a sticky film. Compressed air alone just moves it around. Use the foaming coil cleaner from the van, let it work, rinse, then air.\n- Tacoma: fluff and dust from the cold store evaporator fans and the dock. Blow from the fan side outwards, against the normal airflow. Blowing from the outside packs the dirt deeper into the core.\n- EU sites: Lena says Rotterdam is mostly salt and fine sand on the roof intake side, and Gdansk is flour dust from the processing hall. Same rule, clean against the airflow.\n\nA cooler that looks clean on the outside face can still be blocked in the middle. Shine a torch through it. If you can't see light, it isn't clean.\n\n### Oil\nCheck the level at standstill after the unit has been stopped for at least five minutes, in the sight glass on the separator vessel. Low oil means less heat carried away and a hotter discharge. If the level is low, find out where it went: a leak at the oil filter housing, carryover into the air system (check the condensate), or someone drained it during a PM and didn't fill it properly.\n\nDon't mix oil types. Most of our units run Vastra SynLube 46 (41-0046), but FRS-C-0104 (VRS-45) is still on mineral oil. Check the fleet register before you top up anything, and don't top up 0104 with SynLube from the van.\n\n### Thermostatic valve\nThe thermostatic valve sends oil through the cooler once it's warm. If it sticks in bypass, the oil never gets cooled and the discharge temperature climbs steadily with load. Feel the oil lines either side of the cooler after the unit has warmed up: if the line into the cooler is hot and the line out is the same temperature as the room, the oil isn't flowing through. The valve element is in the manual's spare parts list. We don't keep it on the van, order through stores.\n\n### The room\nA compressor room that's more than 10 C warmer than outside isn't being ventilated properly. Check the room exhaust fan runs and the louvres open. In summer at Tacoma and Fresno, ambient at the unit is often well above the outdoor temperature, and a unit that's fine in April trips in July. Write the ambient at the unit in the case. It helps the next person.\n\nAlso look at what's around the unit. Anything hot nearby, recirculating cooling air because a door was left open the wrong way, cardboard stacked against the intake. You'd be surprised.",
+        "text_en": "This is the one that gets us. It's our most common compressor code by a distance, and it has more possible causes than anything else on the list. The controller trips the unit when the discharge temperature goes above 110 C. Usually the temperature really was that high. Sometimes it wasn't.\n\n### Check the firmware first on the 110s\nFirmware matters for E-14 on the 110s. Before you replace anything on a VRS-110 with an E-14, check the firmware version on the info screen and read the bulletin: Vastra SB-2026-003 (January 2026), on SharePoint under OEM bulletins, Vastra. I'm not summarising it here on purpose, because people skim this page and get it half right. Read the bulletin, and put the firmware version in the case.\n\nFirmware updates need the X10 service cable and a laptop with ServiceTool. See Tools below.\n\n### The order I check things in\n- Firmware (110s only, see the box above).\n- Is the reading real? Compare the controller's TS-2 reading with a handheld.\n- Cooler condition.\n- Oil level and oil type.\n- Thermostatic valve.\n- The room: ventilation, ambient, what's blowing on the unit.\n\n### Is the reading real (TS-2 check)\nWith the unit running loaded and settled, read the discharge temperature on the controller (that's TS-2) and measure the discharge flange with a calibrated contact thermometer. Use a contact probe, not the IR gun. The paint on the flange throws the IR reading off by several degrees and you'll fool yourself. If the two readings are more than 8 C apart, the sensor is suspect. The check is written up in the E-14 section of the VRS-110 manual and it works the same way on the 45 and the 75.\n\nTS-2 is part 41-2207, same part across the whole VRS series. Keep one in the van.\n\nOne rule of mine: if you're replacing TS-2 on the same unit for the second time in a year, stop swapping sensors and find out why. Sensors don't die in pairs on their own. Something on that unit is killing them, or something is making a good sensor look bad. Write it up and call me.\n\n### Cooler\nThe cooler is the cause more often than everything else on this list put together. Each site fouls it differently:\n- Fresno: sugar and syrup mist from the bottling hall gets into the cooling air and coats the fins with a sticky film. Compressed air alone just moves it around. Use the foaming coil cleaner from the van, let it work, rinse, then air.\n- Tacoma: fluff and dust from the cold store evaporator fans and the dock. Blow from the fan side outwards, against the normal airflow. Blowing from the outside packs the dirt deeper into the core.\n- EU sites: Lena says Rotterdam is mostly salt and fine sand on the roof intake side, and Gdansk is flour dust from the processing hall. Same rule, clean against the airflow.\n\nA cooler that looks clean on the outside face can still be blocked in the middle. Shine a torch through it. If you can't see light, it isn't clean.\n\n### Oil\nCheck the level at standstill after the unit has been stopped for at least five minutes, in the sight glass on the separator vessel. Low oil means less heat carried away and a hotter discharge. If the level is low, find out where it went: a leak at the oil filter housing, carryover into the air system (check the condensate), or someone drained it during a PM and didn't fill it properly.\n\nDon't mix oil types. Most of our units run Vastra SynLube 46 (41-0046), but FRS-C-0104 (VRS-45) is still on mineral oil. Check the fleet register before you top up anything, and don't top up 0104 with SynLube from the van.\n\n### Thermostatic valve\nThe thermostatic valve sends oil through the cooler once it's warm. If it sticks in bypass, the oil never gets cooled and the discharge temperature climbs steadily with load. Feel the oil lines either side of the cooler after the unit has warmed up: if the line into the cooler is hot and the line out is the same temperature as the room, the oil isn't flowing through. The valve element is in the manual's spare parts list. We don't keep it on the van, order through stores.\n\n### The room\nA compressor room that's more than 10 C warmer than outside isn't being ventilated properly. Check the room exhaust fan runs and the louvres open. In summer at Tacoma and Fresno, ambient at the unit is often well above the outdoor temperature, and a unit that's fine in April trips in July. Write the ambient at the unit in the case. It helps the next person.\n\nAlso look at what's around the unit. Anything hot nearby, recirculating cooling air because a door was left open the wrong way, cardboard stacked against the intake. You'd be surprised.",
+        "acl_key": "family-compressors",
+        "cosine": null,
+        "bm25_rank": 10,
+        "vector_rank": null,
+        "rrf": 0.014285714285714285
+      },
+      {
+        "chunk_id": "191135bd179b0e30",
+        "doc_path": "corpus/confluence/Compressor-Troubleshooting-Playbook.html",
+        "doc_title": "Compressor Troubleshooting Playbook",
+        "doc_type": "Field Service : Compressor Troubleshooting Playbook",
+        "revision": "unknown",
+        "effective_date": "Feb 11, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Compressor Troubleshooting Playbook",
+            "E-31 VFD overcurrent (VRS-110 only)"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Compressor Troubleshooting Playbook | Field Service : Compressor Troubleshooting Playbook › E-31 VFD overcurrent (VRS-110 only)",
+        "text_original": "HV-certified technicians only. The panel reset is disabled for E-31 on purpose. The reset is done under HV-PROC-07, which you can open on SharePoint if you hold the HV certification. If you don't: do not open the VFD cabinet, not even to have a look. The DC bus stays charged after the unit is isolated.\n\nE-31 means the drive saw more current than it allows. Common reasons, in the order we see them: a grid dip or power event, a motor or motor cable fault, and occasionally an airend that's getting tight. The drive can't tell you which. The log and the conditions can.\n\nIf you're not HV-certified and you're first on site, here's what you can do, and it genuinely saves the HV tech half an hour:\n- Read the event log and write down every code in the hour before the trip, with times.\n- Note what the unit was doing: load, ambient, whether it was starting or running.\n- Ask the site whether there was a power event. Did anything else trip? Did lights flicker?\n- Photograph the controller screen and the log.\n- Put all of it in the case, then raise the work order with Certification required: HV (see the Work Order Writing Guide). The supervisor assigns. Don't call around to find someone yourself.\n- Tell the site contact the unit is out until an HV tech arrives, and roughly when. Don't promise a time you don't control.\n\nExample of how it should go: TAC-C-0143 tripped E-31 at 04:10 on November 20, 2025 after a grid dip that also tripped half the dock lighting. Daniel came in, did the reset under HV-PROC-07, the insulation test was clean and it's been fine since. Case 00040311. Short, because the cause was obvious and written down.\n\nIf a 110 trips E-31 again soon after a reset, it's not the grid. HV-PROC-07 covers what to do with a repeat, including when to get Vastra L2 involved. Don't keep resetting it.",
+        "text_en": "HV-certified technicians only. The panel reset is disabled for E-31 on purpose. The reset is done under HV-PROC-07, which you can open on SharePoint if you hold the HV certification. If you don't: do not open the VFD cabinet, not even to have a look. The DC bus stays charged after the unit is isolated.\n\nE-31 means the drive saw more current than it allows. Common reasons, in the order we see them: a grid dip or power event, a motor or motor cable fault, and occasionally an airend that's getting tight. The drive can't tell you which. The log and the conditions can.\n\nIf you're not HV-certified and you're first on site, here's what you can do, and it genuinely saves the HV tech half an hour:\n- Read the event log and write down every code in the hour before the trip, with times.\n- Note what the unit was doing: load, ambient, whether it was starting or running.\n- Ask the site whether there was a power event. Did anything else trip? Did lights flicker?\n- Photograph the controller screen and the log.\n- Put all of it in the case, then raise the work order with Certification required: HV (see the Work Order Writing Guide). The supervisor assigns. Don't call around to find someone yourself.\n- Tell the site contact the unit is out until an HV tech arrives, and roughly when. Don't promise a time you don't control.\n\nExample of how it should go: TAC-C-0143 tripped E-31 at 04:10 on November 20, 2025 after a grid dip that also tripped half the dock lighting. Daniel came in, did the reset under HV-PROC-07, the insulation test was clean and it's been fine since. Case 00040311. Short, because the cause was obvious and written down.\n\nIf a 110 trips E-31 again soon after a reset, it's not the grid. HV-PROC-07 covers what to do with a repeat, including when to get Vastra L2 involved. Don't keep resetting it.",
+        "acl_key": "family-compressors",
+        "cosine": null,
+        "bm25_rank": 11,
+        "vector_rank": null,
+        "rrf": 0.014084507042253521
+      },
+      {
+        "chunk_id": "0647a63af94584e0",
+        "doc_path": "corpus/manuals/Vastra_VRS-75_Service_Manual_RevC_2026.pdf",
+        "doc_title": "Vastra VRS-75 Service Manual Rev C",
+        "doc_type": "Service Manual",
+        "revision": "C",
+        "effective_date": "2026-04-20",
+        "locator": {
+          "page": 7,
+          "section_path": [
+            "3 Vcon 3 controller"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Vastra VRS-75 Service Manual Rev C | C | 3 Vcon 3 controller",
+        "text_original": "3 Vcon 3 controller\n\n3.1 Control panel\nThe Vcon 3 has a graphical display, the keys Start (I), Stop (O), Reset, arrow up and down, Enter and Esc, and four LEDs: voltage on (green), automatic operation (green), warning (yellow) and shutdown (red, flashing). The main screen shows the net pressure, the discharge temperature, the operating status (stopped, loaded, unloaded, waiting for restart) and the running hours.\n\n3.2 Menu structure\nMenu: Measurements\nContent: PT-1, PT-2, TS-1, TS-2, separator dP (PT-1 minus PT-2), motor starts last hour\nAccess: All users\n\nMenu: Counters\nContent: Running hours, loaded hours, motor starts, time to next service per task\nAccess: All users\n\nMenu: Event log\nContent: Last 100 shutdowns and warnings with time, code and measured values\nAccess: All users\n\nMenu: Settings\nContent: Load and unload pressure, auto restart, local or remote control, date and time\nAccess: Customer code\n\nMenu: Service\nContent: Service intervals, counter reset, sensor calibration, factory settings\nAccess: Service code\n\nThe service code is given to trained service technicians only. Settings changed in the service menu are written to the event log with the code E-00 \"parameter changed\".\n\n3.3 Shutdowns and warnings\nA shutdown stops the compressor directly: the motor is switched off, the inlet valve closes and the separator vessel is vented through the blow-off valve. The red LED flashes and the code is shown on the display. When the cause is removed, press Reset. The compressor can then be started again with the Start key, or starts by itself if it is in automatic mode.\n\nA warning lights the yellow LED. The compressor continues to run. Warnings disappear by themselves when the condition is no longer present, except the service warning E-19, which is reset in the service menu when the maintenance is done.\n\n3.4 Service interval counters\nThe controller counts the running hours down to the next maintenance for each task: oil, oil filter, air filter, separator element and general inspection. When a counter reaches zero, warning E-19 is shown with the name of the task. The intervals are set in Service > Intervals. The factory settings correspond to the maintenance schedule in 4.1.\n\nNOTE: Compressors delivered before April 2026 have the oil interval set to 4,000 h from the factory. When Vastra SynLube 46 is used, change the oil and oil filter intervals to 6,000 h in Service > Intervals > Oil. Do not change the interval when mineral oil is used. Note the oil type on the service record.\n\n3.5 Event log and service port\nThe event log stores the last 100 events. For every event the controller saves the date and time, the code, the running hours and the values of PT-1, PT-2, TS-1 and TS-2 at the moment of the event. The log can be read on the display or exported with the VastraLink service software through the service port X10 on the controller board in the control compartment. Always attach the exported log to warranty claims and to questions to Vastra Technical Support.\n\n3.6 Customer settings\nParameter: C1.01\nDescription: Unload pressure\nRange: 4.0 - max. working pressure\nFactory: 7.0 / 9.5 / 12.5 bar\n\nParameter: C1.02\nDescription: Load pressure\nRange: C1.01 minus 0.3 to 2.0 bar\nFactory: C1.01 minus 0.8 bar\n\nParameter: C1.03\nDescription: Unloaded run time before stop\nRange: 60 - 900 s\nFactory: 300 s\n\nParameter: C1.05\nDescription: Auto restart after power failure\nRange: Off / On\nFactory: Off\n\nParameter: C1.06\nDescription: Restart delay after power return\nRange: 10 - 600 s\nFactory: 30 s\n\nParameter: C1.08\nDescription: Control mode\nRange: Local / Remote / Modbus\nFactory: Local",
+        "text_en": "3 Vcon 3 controller\n\n3.1 Control panel\nThe Vcon 3 has a graphical display, the keys Start (I), Stop (O), Reset, arrow up and down, Enter and Esc, and four LEDs: voltage on (green), automatic operation (green), warning (yellow) and shutdown (red, flashing). The main screen shows the net pressure, the discharge temperature, the operating status (stopped, loaded, unloaded, waiting for restart) and the running hours.\n\n3.2 Menu structure\nMenu: Measurements\nContent: PT-1, PT-2, TS-1, TS-2, separator dP (PT-1 minus PT-2), motor starts last hour\nAccess: All users\n\nMenu: Counters\nContent: Running hours, loaded hours, motor starts, time to next service per task\nAccess: All users\n\nMenu: Event log\nContent: Last 100 shutdowns and warnings with time, code and measured values\nAccess: All users\n\nMenu: Settings\nContent: Load and unload pressure, auto restart, local or remote control, date and time\nAccess: Customer code\n\nMenu: Service\nContent: Service intervals, counter reset, sensor calibration, factory settings\nAccess: Service code\n\nThe service code is given to trained service technicians only. Settings changed in the service menu are written to the event log with the code E-00 \"parameter changed\".\n\n3.3 Shutdowns and warnings\nA shutdown stops the compressor directly: the motor is switched off, the inlet valve closes and the separator vessel is vented through the blow-off valve. The red LED flashes and the code is shown on the display. When the cause is removed, press Reset. The compressor can then be started again with the Start key, or starts by itself if it is in automatic mode.\n\nA warning lights the yellow LED. The compressor continues to run. Warnings disappear by themselves when the condition is no longer present, except the service warning E-19, which is reset in the service menu when the maintenance is done.\n\n3.4 Service interval counters\nThe controller counts the running hours down to the next maintenance for each task: oil, oil filter, air filter, separator element and general inspection. When a counter reaches zero, warning E-19 is shown with the name of the task. The intervals are set in Service > Intervals. The factory settings correspond to the maintenance schedule in 4.1.\n\nNOTE: Compressors delivered before April 2026 have the oil interval set to 4,000 h from the factory. When Vastra SynLube 46 is used, change the oil and oil filter intervals to 6,000 h in Service > Intervals > Oil. Do not change the interval when mineral oil is used. Note the oil type on the service record.\n\n3.5 Event log and service port\nThe event log stores the last 100 events. For every event the controller saves the date and time, the code, the running hours and the values of PT-1, PT-2, TS-1 and TS-2 at the moment of the event. The log can be read on the display or exported with the VastraLink service software through the service port X10 on the controller board in the control compartment. Always attach the exported log to warranty claims and to questions to Vastra Technical Support.\n\n3.6 Customer settings\nParameter: C1.01\nDescription: Unload pressure\nRange: 4.0 - max. working pressure\nFactory: 7.0 / 9.5 / 12.5 bar\n\nParameter: C1.02\nDescription: Load pressure\nRange: C1.01 minus 0.3 to 2.0 bar\nFactory: C1.01 minus 0.8 bar\n\nParameter: C1.03\nDescription: Unloaded run time before stop\nRange: 60 - 900 s\nFactory: 300 s\n\nParameter: C1.05\nDescription: Auto restart after power failure\nRange: Off / On\nFactory: Off\n\nParameter: C1.06\nDescription: Restart delay after power return\nRange: 10 - 600 s\nFactory: 30 s\n\nParameter: C1.08\nDescription: Control mode\nRange: Local / Remote / Modbus\nFactory: Local",
+        "acl_key": "family-compressors",
+        "cosine": null,
+        "bm25_rank": 12,
+        "vector_rank": null,
+        "rrf": 0.013888888888888888
+      },
+      {
+        "chunk_id": "9e93436fffb95506",
+        "doc_path": "corpus/confluence/Tacoma-Site-Notes.html",
+        "doc_title": "Tacoma Site Notes",
+        "doc_type": "Site Notes",
+        "revision": "unknown",
+        "effective_date": "Apr 14, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service",
+            "Field Service Home",
+            "Sites",
+            "North America",
+            "Field Service : Tacoma Site Notes"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Tacoma Site Notes | Field Service › Field Service Home › Sites › North America › Field Service : Tacoma Site Notes",
+        "text_original": "Created by Daniel Reyes, last modified on Apr 14, 2026\n\nStuff I wish someone had told me my first week at TAC. Not official. If the site rules change, the site rules win, and please update this page. - Daniel",
+        "text_en": "Created by Daniel Reyes, last modified on Apr 14, 2026\n\nStuff I wish someone had told me my first week at TAC. Not official. If the site rules change, the site rules win, and please update this page. - Daniel",
+        "acl_key": "region-na",
+        "cosine": null,
+        "bm25_rank": 13,
+        "vector_rank": null,
+        "rrf": 0.0136986301369863
+      },
+      {
+        "chunk_id": "112602b936d3acee",
+        "doc_path": "corpus/manuals/Vastra_VRS-75_Service_Manual_RevB_2024.pdf",
+        "doc_title": "Vastra VRS-75 Service Manual Rev B",
+        "doc_type": "Service Manual",
+        "revision": "B",
+        "effective_date": "2024-02-12",
+        "locator": {
+          "page": 13,
+          "section_path": [
+            "7 Warranty and documentation",
+            "7.2 Revision history"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Vastra VRS-75 Service Manual Rev B | B | 7 Warranty and documentation › 7.2 Revision history",
+        "text_original": "Rev.: A\nDate: 2021-09-06\nChanges: First edition.\n\nRev.: B\nDate: 2024-02-12\nChanges: 3.4: service interval counters described. 4.5: separator element replacement revised, cover bolt torque changed to 110 N-m. 5.1: warnings E-21 and E-22 added. 6.2: air filter element 41-1510 now common with VRS-45.",
+        "text_en": "Rev.: A\nDate: 2021-09-06\nChanges: First edition.\n\nRev.: B\nDate: 2024-02-12\nChanges: 3.4: service interval counters described. 4.5: separator element replacement revised, cover bolt torque changed to 110 N-m. 5.1: warnings E-21 and E-22 added. 6.2: air filter element 41-1510 now common with VRS-45.",
+        "acl_key": "family-compressors",
+        "cosine": 0.45526963472366333,
+        "bm25_rank": null,
+        "vector_rank": 13,
+        "rrf": 0.0136986301369863
+      },
+      {
+        "chunk_id": "c506452b6e68fed8",
+        "doc_path": "corpus/sharepoint/FS-STD-001_Field_Service_Standard.docx",
+        "doc_title": "FS-STD-001 Field Service Standard",
+        "doc_type": "Field Service Standard",
+        "revision": "4",
+        "effective_date": "2026-01-12",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "3. Definitions"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "FS-STD-001 Field Service Standard | 4 | 3. Definitions",
+        "text_original": "# 3. Definitions\n\nTerm | Meaning\nCase | The record of a customer problem or request in Salesforce. One case per problem per asset. A case can have several work orders.\nWork order (WO) | The record of a piece of work to be done on one asset on one visit. It holds the task, the required certification, the parts, the time and the technician's notes.\nService appointment | The scheduled time slot for a work order, with the assigned technician.\nSupervisor | The person who approves work orders and assigns technicians for a region or team. In NA the supervisors sit with dispatch in Sacramento; in the EU the team lead in Rotterdam acts as supervisor.\nRequired certification | The work order field stating which certification the work needs: None, HV, Refrigerant, or Confined space.\nService bulletin | A technical notice from the equipment manufacturer (OEM) about a fault, a change or a corrective action, often for a named serial range.\nCampaign | A corrective action that the OEM asks to be carried out on every unit in a serial range, announced by bulletin and identified by a campaign code.\nTrip | A protective shutdown of the equipment by its own controller, including shutdowns followed by an automatic restart.\nRepeat visit | A visit to the same asset for the same symptom within 30 days of a previous visit that was marked resolved.\nFirst-time fix | A case resolved on the first visit, without a repeat visit within 30 days.\nAsset history | Salesforce cases and work orders from 2025; before that, MaintPro for NA assets and the monthly Servio export for EU (ex-Kyltek) assets.",
+        "text_en": "# 3. Definitions\n\nTerm | Meaning\nCase | The record of a customer problem or request in Salesforce. One case per problem per asset. A case can have several work orders.\nWork order (WO) | The record of a piece of work to be done on one asset on one visit. It holds the task, the required certification, the parts, the time and the technician's notes.\nService appointment | The scheduled time slot for a work order, with the assigned technician.\nSupervisor | The person who approves work orders and assigns technicians for a region or team. In NA the supervisors sit with dispatch in Sacramento; in the EU the team lead in Rotterdam acts as supervisor.\nRequired certification | The work order field stating which certification the work needs: None, HV, Refrigerant, or Confined space.\nService bulletin | A technical notice from the equipment manufacturer (OEM) about a fault, a change or a corrective action, often for a named serial range.\nCampaign | A corrective action that the OEM asks to be carried out on every unit in a serial range, announced by bulletin and identified by a campaign code.\nTrip | A protective shutdown of the equipment by its own controller, including shutdowns followed by an automatic restart.\nRepeat visit | A visit to the same asset for the same symptom within 30 days of a previous visit that was marked resolved.\nFirst-time fix | A case resolved on the first visit, without a repeat visit within 30 days.\nAsset history | Salesforce cases and work orders from 2025; before that, MaintPro for NA assets and the monthly Servio export for EU (ex-Kyltek) assets.",
+        "acl_key": "",
+        "cosine": null,
+        "bm25_rank": 14,
+        "vector_rank": null,
+        "rrf": 0.013513513513513514
+      }
+    ]
+  },
+  "judgement": {
+    "key_points": [
+      {
+        "point": "Use a 6,000-hour or 12-month oil-change interval with Vastra SynLube 46",
+        "verdict": "present",
+        "reason": "The copilot states that genuine Vastra SynLube 46 is changed every 6,000 running hours or 12 months, whichever comes first."
+      },
+      {
+        "point": "This interval is specified by Manual Rev C (April 2026)",
+        "verdict": "partial",
+        "reason": "The copilot refers to compressors delivered before April 2026 and changing intervals to 6,000 hours, but does not clearly identify Manual Rev C (April 2026) as the authoritative source."
+      },
+      {
+        "point": "Units using mineral oil remain on a 4,000-hour interval",
+        "verdict": "present",
+        "reason": "The copilot says mineral compressor oil ISO VG 46 requires changes every 4,000 running hours and says not to extend mineral-oil intervals."
+      },
+      {
+        "point": "Rev B and the 2024 wiki quick reference stating 4,000 hours for all units are outdated",
+        "verdict": "partial",
+        "reason": "The copilot notes that another source contradicts the current intervals and describes changing prior 4,000-hour settings, but it does not specifically identify Rev B or the 2024 wiki quick reference as outdated."
+      }
+    ],
+    "constraints": [],
+    "verdict": "partially_correct"
+  }
+}

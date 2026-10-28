@@ -1,0 +1,1322 @@
+{
+  "question": {
+    "id": "q01",
+    "user_id": "u01",
+    "question": "HCP-500 is showing P-07. What does that mean and what should I check first?",
+    "reference_answer": "P-07 is cavitation: suction pressure fluctuating more than 15% for 10 s because NPSH available is too low. First read the strainer differential pressure at PI-01/PI-02; if it is above 0.30 bar, clean the suction strainer (section 8.3), then confirm the suction isolation valve is fully open."
+  },
+  "result": {
+    "question": "HCP-500 is showing P-07. What does that mean and what should I check first?",
+    "user_id": "u01",
+    "status": "answered",
+    "message": null,
+    "summary": [
+      {
+        "sentence": "On the HCP-500, P-07 means cavitation: PC-3 detects suction-pressure fluctuation above 15% for 10 seconds.",
+        "sources": [
+          "S1"
+        ]
+      },
+      {
+        "sentence": "First read strainer differential pressure at PI-01/PI-02 (PI-01 minus PI-02); HCP-500 Rev B instructs you to clean the strainer if it exceeds 0.30 bar, then confirm the suction isolation valve is fully open.",
+        "sources": [
+          "S1"
+        ]
+      },
+      {
+        "sentence": "Use the HCP-500 Rev B fault row, which revised the P-07 first check, not the HCP-350’s 0.25-bar threshold; the manual applies from serial HCP500-230001, and any service bulletin takes precedence for the units and serial ranges it names.",
+        "sources": [
+          "S2",
+          "S1",
+          "S3",
+          "S4",
+          "S5"
+        ]
+      },
+      {
+        "sentence": "When cleaning, inspect the basket mesh for tears (basket 18-1120), fit a new cover gasket 18-1121 every time—so have a replacement gasket available—and confirm afterward that the strainer differential has returned to near zero.",
+        "sources": [
+          "S2"
+        ]
+      },
+      {
+        "sentence": "Also check for a partly closed suction valve, low supply-tank level and elevated liquid temperature; verify valve opening by counting turns or checking its position indicator, not by judging from a distance.",
+        "sources": [
+          "S2"
+        ]
+      },
+      {
+        "sentence": "These conditions reduce available NPSH, which at the HCP-500 rated point must exceed the required 4.8 m by at least 1.0 m; insufficient NPSH causes cavitation and can pit the impeller inlet over time.",
+        "sources": [
+          "S6"
+        ]
+      },
+      {
+        "sentence": "HCP-500 example FRS-P-0033, August 2026, case 00043015, had both a loaded strainer and a suction valve left three-quarters open after pipework changes, so cleaning alone would not have resolved both causes.",
+        "sources": [
+          "S2"
+        ]
+      },
+      {
+        "sentence": "Once the cause has cleared, press RESET to acknowledge the latched fault.",
+        "sources": [
+          "S6"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "sentence": "On the HCP-500, P-07 means cavitation: PC-3 detects suction-pressure fluctuation above 15% for 10 seconds.",
+        "source": "S1",
+        "chunk_id": "d549f332f130f3c9",
+        "title": "Halden HCP-500 IOM Rev B",
+        "location": "p.9 · 9 Faults and troubleshooting",
+        "doc_type": "Installation, Operation and Maintenance Manual",
+        "revision": "B",
+        "date": "2025-01-30",
+        "status": "Supported",
+        "evidence": "Code: P-07\nText: Cavitation\nTrigger: Suction pressure fluctuation above 15% for 10 s"
+      },
+      {
+        "sentence": "First read strainer differential pressure at PI-01/PI-02 (PI-01 minus PI-02); HCP-500 Rev B instructs you to clean the strainer if it exceeds 0.30 bar, then confirm the suction isolation valve is fully open.",
+        "source": "S1",
+        "chunk_id": "d549f332f130f3c9",
+        "title": "Halden HCP-500 IOM Rev B",
+        "location": "p.9 · 9 Faults and troubleshooting",
+        "doc_type": "Installation, Operation and Maintenance Manual",
+        "revision": "B",
+        "date": "2025-01-30",
+        "status": "Supported",
+        "evidence": "Code: P-07\nText: Cavitation\nTrigger: Suction pressure fluctuation above 15% for 10 s"
+      },
+      {
+        "sentence": "Use the HCP-500 Rev B fault row, which revised the P-07 first check, not the HCP-350’s 0.25-bar threshold; the manual applies from serial HCP500-230001, and any service bulletin takes precedence for the units and serial ranges it names.",
+        "source": "S2",
+        "chunk_id": "7d5c1c90f3f7b436",
+        "title": "Pump Troubleshooting Playbook",
+        "location": "Field Service : Pump Troubleshooting Playbook › Gravel noise and P-07 (cavitation)",
+        "doc_type": "Field Service wiki page",
+        "revision": "unknown",
+        "date": "Sep 08, 2026",
+        "status": "Supported",
+        "evidence": "The first measure on the HCP-500 isn't the same as on the HCP-350, and the strainer threshold is different between them."
+      },
+      {
+        "sentence": "Use the HCP-500 Rev B fault row, which revised the P-07 first check, not the HCP-350’s 0.25-bar threshold; the manual applies from serial HCP500-230001, and any service bulletin takes precedence for the units and serial ranges it names.",
+        "source": "S1",
+        "chunk_id": "d549f332f130f3c9",
+        "title": "Halden HCP-500 IOM Rev B",
+        "location": "p.9 · 9 Faults and troubleshooting",
+        "doc_type": "Installation, Operation and Maintenance Manual",
+        "revision": "B",
+        "date": "2025-01-30",
+        "status": "Supported",
+        "evidence": "Code: P-07\nText: Cavitation\nTrigger: Suction pressure fluctuation above 15% for 10 s"
+      },
+      {
+        "sentence": "Use the HCP-500 Rev B fault row, which revised the P-07 first check, not the HCP-350’s 0.25-bar threshold; the manual applies from serial HCP500-230001, and any service bulletin takes precedence for the units and serial ranges it names.",
+        "source": "S3",
+        "chunk_id": "8c785926fb25b4e6",
+        "title": "Halden HCP-350 IOM Rev D",
+        "location": "p.9 · 9 Faults and troubleshooting",
+        "doc_type": "Installation, Operation and Maintenance Manual",
+        "revision": "D",
+        "date": "2023-05-22",
+        "status": "Supported",
+        "evidence": "First measure: Read the strainer dP at PI-01/PI-02. If above 0.25 bar, clean the strainer (8.3)"
+      },
+      {
+        "sentence": "Use the HCP-500 Rev B fault row, which revised the P-07 first check, not the HCP-350’s 0.25-bar threshold; the manual applies from serial HCP500-230001, and any service bulletin takes precedence for the units and serial ranges it names.",
+        "source": "S4",
+        "chunk_id": "c6305a9cbeeea984",
+        "title": "Halden HCP-500 IOM Rev B",
+        "location": "p.3 · 1 General information",
+        "doc_type": "Installation, Operation and Maintenance Manual",
+        "revision": "B",
+        "date": "2025-01-30",
+        "status": "Supported",
+        "evidence": "This manual applies to Halden HCP-500 split-case centrifugal pumps with serial numbers from HCP500-230001"
+      },
+      {
+        "sentence": "Use the HCP-500 Rev B fault row, which revised the P-07 first check, not the HCP-350’s 0.25-bar threshold; the manual applies from serial HCP500-230001, and any service bulletin takes precedence for the units and serial ranges it names.",
+        "source": "S5",
+        "chunk_id": "e100cab0f79e6fe5",
+        "title": "Halden HCP-500 IOM Rev B",
+        "location": "p.10 · 12 Revision history",
+        "doc_type": "Installation, Operation and Maintenance Manual",
+        "revision": "B",
+        "date": "2025-01-30",
+        "status": "Supported",
+        "evidence": "Rev.: B\nDate: 2025-01-30\nChange: Section 8.1: strainer cleaning interval changed from 500 h to 750 h after field data review. Section 9.1: P-07 first check revised."
+      },
+      {
+        "sentence": "When cleaning, inspect the basket mesh for tears (basket 18-1120), fit a new cover gasket 18-1121 every time—so have a replacement gasket available—and confirm afterward that the strainer differential has returned to near zero.",
+        "source": "S2",
+        "chunk_id": "7d5c1c90f3f7b436",
+        "title": "Pump Troubleshooting Playbook",
+        "location": "Field Service : Pump Troubleshooting Playbook › Gravel noise and P-07 (cavitation)",
+        "doc_type": "Field Service wiki page",
+        "revision": "unknown",
+        "date": "Sep 08, 2026",
+        "status": "Supported",
+        "evidence": "The first measure on the HCP-500 isn't the same as on the HCP-350, and the strainer threshold is different between them."
+      },
+      {
+        "sentence": "Also check for a partly closed suction valve, low supply-tank level and elevated liquid temperature; verify valve opening by counting turns or checking its position indicator, not by judging from a distance.",
+        "source": "S2",
+        "chunk_id": "7d5c1c90f3f7b436",
+        "title": "Pump Troubleshooting Playbook",
+        "location": "Field Service : Pump Troubleshooting Playbook › Gravel noise and P-07 (cavitation)",
+        "doc_type": "Field Service wiki page",
+        "revision": "unknown",
+        "date": "Sep 08, 2026",
+        "status": "Supported",
+        "evidence": "The first measure on the HCP-500 isn't the same as on the HCP-350, and the strainer threshold is different between them."
+      },
+      {
+        "sentence": "These conditions reduce available NPSH, which at the HCP-500 rated point must exceed the required 4.8 m by at least 1.0 m; insufficient NPSH causes cavitation and can pit the impeller inlet over time.",
+        "source": "S6",
+        "chunk_id": "3cb37840f8b133da",
+        "title": "Halden HCP-500 IOM Rev B",
+        "location": "p.6 · 7 Operation",
+        "doc_type": "Installation, Operation and Maintenance Manual",
+        "revision": "B",
+        "date": "2025-01-30",
+        "status": "Supported",
+        "evidence": "The NPSH available at the pump inlet must exceed the NPSH required (4.8 m at the rated point) by a margin of at least 1.0 m. NPSH available falls when the suction strainer clogs, when the suction isolation valve is partly closed, when the liquid level in the supply tank drops, or when the liquid temperature rises. Insufficient NPSH causes cavitation: a crackling noise like gravel in the pump, fluctuating discharge pressure and, over time, pitting damage to the impeller inlet."
+      },
+      {
+        "sentence": "HCP-500 example FRS-P-0033, August 2026, case 00043015, had both a loaded strainer and a suction valve left three-quarters open after pipework changes, so cleaning alone would not have resolved both causes.",
+        "source": "S2",
+        "chunk_id": "7d5c1c90f3f7b436",
+        "title": "Pump Troubleshooting Playbook",
+        "location": "Field Service : Pump Troubleshooting Playbook › Gravel noise and P-07 (cavitation)",
+        "doc_type": "Field Service wiki page",
+        "revision": "unknown",
+        "date": "Sep 08, 2026",
+        "status": "Supported",
+        "evidence": "The first measure on the HCP-500 isn't the same as on the HCP-350, and the strainer threshold is different between them."
+      },
+      {
+        "sentence": "Once the cause has cleared, press RESET to acknowledge the latched fault.",
+        "source": "S6",
+        "chunk_id": "3cb37840f8b133da",
+        "title": "Halden HCP-500 IOM Rev B",
+        "location": "p.6 · 7 Operation",
+        "doc_type": "Installation, Operation and Maintenance Manual",
+        "revision": "B",
+        "date": "2025-01-30",
+        "status": "Supported",
+        "evidence": "The NPSH available at the pump inlet must exceed the NPSH required (4.8 m at the rated point) by a margin of at least 1.0 m. NPSH available falls when the suction strainer clogs, when the suction isolation valve is partly closed, when the liquid level in the supply tank drops, or when the liquid temperature rises. Insufficient NPSH causes cavitation: a crackling noise like gravel in the pump, fluctuating discharge pressure and, over time, pitting damage to the impeller inlet."
+      }
+    ],
+    "dropped_claims": [],
+    "work_order": {
+      "asset_id": "HCP-500",
+      "fault_code": "P-07",
+      "summary": "P-07 indicates cavitation; diagnose suction-side restrictions and NPSH conditions, service the strainer if required, and reset the fault after the cause is cleared.",
+      "work_steps": [
+        "Review the applicable HCP-500 Rev B P-07 fault row and any service bulletin applicable to the unit serial range before work.",
+        "Read strainer differential pressure as PI-01 minus PI-02.",
+        "If differential pressure exceeds 0.30 bar, clean the strainer in accordance with the HCP-500 Rev B instruction; inspect basket mesh 18-1120 for tears and install a new cover gasket 18-1121.",
+        "After strainer cleaning, confirm strainer differential pressure has returned to near zero.",
+        "Confirm the suction isolation valve is fully open by counting turns or checking its position indicator.",
+        "Check supply-tank level and liquid temperature, and confirm available NPSH exceeds the 4.8 m required NPSH by at least 1.0 m at the rated point.",
+        "Once the cause is cleared, press RESET to acknowledge the latched fault."
+      ],
+      "parts": [
+        {
+          "part_number": "18-1121",
+          "qty": 1
+        }
+      ],
+      "certification_required": [],
+      "estimated_duration_h": null,
+      "priority": null,
+      "campaign_code": null,
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6"
+      ],
+      "requested_by": "u01",
+      "reason": "parts"
+    },
+    "trace": {
+      "events": [
+        {
+          "stage": "retrieve",
+          "inputs": {
+            "question": "HCP-500 is showing P-07. What does that mean and what should I check first?",
+            "user_id": "u01"
+          },
+          "outputs": {
+            "chunks": [
+              [
+                "ce722c77a0ce6aa6",
+                "Pump Troubleshooting Playbook",
+                "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Why there are no numbers on this page"
+              ],
+              [
+                "7d5c1c90f3f7b436",
+                "Pump Troubleshooting Playbook",
+                "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Gravel noise and P-07 (cavitation)"
+              ],
+              [
+                "d549f332f130f3c9",
+                "Halden HCP-500 IOM Rev B",
+                "Halden HCP-500 IOM Rev B | B | 9 Faults and troubleshooting"
+              ],
+              [
+                "8c785926fb25b4e6",
+                "Halden HCP-350 IOM Rev D",
+                "Halden HCP-350 IOM Rev D | D | 9 Faults and troubleshooting"
+              ],
+              [
+                "e1e06daa4e2229e2",
+                "Pump Troubleshooting Playbook",
+                "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › How to use this page"
+              ],
+              [
+                "649e9a003193b3c6",
+                "HCP-500 Maintenance Quick Reference",
+                "HCP-500 Maintenance Quick Reference | Field Service › HCP-500 Maintenance Quick Reference"
+              ],
+              [
+                "1e53ab5467b0d545",
+                "Pump Troubleshooting Playbook",
+                "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Motor tripping and P-05"
+              ],
+              [
+                "6be9865afd90dd67",
+                "Pump Troubleshooting Playbook",
+                "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Quick table"
+              ],
+              [
+                "485c3292ac51002c",
+                "Pump Troubleshooting Playbook",
+                "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Seal leaks and P-04"
+              ],
+              [
+                "c6305a9cbeeea984",
+                "Halden HCP-500 IOM Rev B",
+                "Halden HCP-500 IOM Rev B | B | 1 General information"
+              ],
+              [
+                "243af2898a8522ce",
+                "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+                "HCP-350 casing leak FRS-P-0031 (Halden thread)"
+              ],
+              [
+                "6e1b211d60cec2b6",
+                "Pump Troubleshooting Playbook",
+                "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Low flow or low head"
+              ],
+              [
+                "b4af1292d59f178b",
+                "Pump Troubleshooting Playbook",
+                "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Sensor fault and P-08"
+              ],
+              [
+                "e100cab0f79e6fe5",
+                "Halden HCP-500 IOM Rev B",
+                "Halden HCP-500 IOM Rev B | B | 12 Revision history"
+              ],
+              [
+                "e3a89423c49a016f",
+                "Halden HCP-500 IOM Rev B",
+                "Halden HCP-500 IOM Rev B | B | 6 Commissioning"
+              ],
+              [
+                "0d97bca514000bc0",
+                "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+                "HCP-350 casing leak FRS-P-0031 (Halden thread)"
+              ],
+              [
+                "fdc39325a1112937",
+                "Halden HCP-350 IOM Rev D",
+                "Halden HCP-350 IOM Rev D | D | 6 Commissioning"
+              ],
+              [
+                "eec5f77b74b51c55",
+                "HCP-500 Maintenance Quick Reference",
+                "HCP-500 Maintenance Quick Reference | Field Service › HCP-500 Maintenance Quick Reference › PM intervals"
+              ],
+              [
+                "f8cc1e10ba7cb262",
+                "Halden SB-2025-009",
+                "Halden SB-2025-009 | 0 | 2 Affected products / Betroffene Produkte"
+              ],
+              [
+                "c73398449d0d8ff6",
+                "HCP-500 Maintenance Quick Reference",
+                "HCP-500 Maintenance Quick Reference | Field Service › HCP-500 Maintenance Quick Reference › Vibration"
+              ],
+              [
+                "115dc716f10dd3cd",
+                "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+                "HCP-350 casing leak FRS-P-0031 (Halden thread)"
+              ],
+              [
+                "327ad97468d7e01a",
+                "Work Order Writing Guide",
+                "Work Order Writing Guide | Field Service: Work Order Writing Guide › Why this matters"
+              ],
+              [
+                "3cb37840f8b133da",
+                "Halden HCP-500 IOM Rev B",
+                "Halden HCP-500 IOM Rev B | B | 7 Operation"
+              ],
+              [
+                "28294c8f4338fa83",
+                "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+                "HCP-350 casing leak FRS-P-0031 (Halden thread)"
+              ],
+              [
+                "66bb4cdcda36cf6c",
+                "Pump Troubleshooting Playbook",
+                "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Casing joint weeping after a seal change"
+              ],
+              [
+                "715ebfc08381ca70",
+                "Halden HCP-350 IOM Rev D",
+                "Halden HCP-350 IOM Rev D | D | 7 Operation"
+              ],
+              [
+                "386a287b2a299ba9",
+                "HCP-500 Maintenance Quick Reference",
+                "HCP-500 Maintenance Quick Reference | Field Service › HCP-500 Maintenance Quick Reference › Comments"
+              ],
+              [
+                "a731c1401e67f682",
+                "Halden SB-2025-018",
+                "Halden SB-2025-018 | 0 | 3 Background / Hintergrund"
+              ],
+              [
+                "79104e05f08eaede",
+                "Halden HCP-200 Betriebsanleitung 1998 (scan)",
+                "Halden HCP-200 Betriebsanleitung 1998 (scan) | Revision A | 8 Störungen / Faults"
+              ],
+              [
+                "c8e2a61622f6ed4a",
+                "HCP-500 Maintenance Quick Reference",
+                "HCP-500 Maintenance Quick Reference | Field Service › HCP-500 Maintenance Quick Reference › Things the trainer stressed"
+              ]
+            ]
+          },
+          "seconds": 1.647
+        },
+        {
+          "stage": "claims",
+          "inputs": {},
+          "outputs": {
+            "status": "answered",
+            "claims": [
+              {
+                "id": "c1",
+                "text": "On the HCP-500, P-07 means cavitation: the PC-3 detects suction-pressure fluctuation above 15% for 10 seconds.",
+                "citations": [
+                  "d549f332f130f3c9"
+                ]
+              },
+              {
+                "id": "c2",
+                "text": "First read the strainer differential pressure at PI-01/PI-02 (PI-01 minus PI-02). The HCP-500 Rev B instruction is to clean the strainer if it exceeds 0.30 bar, then confirm the suction isolation valve is fully open.",
+                "citations": [
+                  "d549f332f130f3c9",
+                  "6e1b211d60cec2b6"
+                ]
+              },
+              {
+                "id": "c3",
+                "text": "Use the HCP-500 Rev B fault row, not the HCP-350's 0.25-bar threshold. Rev B revised the HCP-500 P-07 first check; the manual applies from serial HCP500-230001, and any service bulletin takes precedence for the units and serial ranges it names.",
+                "citations": [
+                  "d549f332f130f3c9",
+                  "8c785926fb25b4e6",
+                  "e100cab0f79e6fe5",
+                  "c6305a9cbeeea984"
+                ]
+              },
+              {
+                "id": "c4",
+                "text": "When cleaning the strainer, inspect the basket mesh for tears (basket 18-1120) and fit a new cover gasket, 18-1121, every time; cleaning therefore requires a replacement gasket. After cleaning, confirm the strainer differential has returned to near zero.",
+                "citations": [
+                  "7d5c1c90f3f7b436"
+                ]
+              },
+              {
+                "id": "c5",
+                "text": "Also check for a partly closed suction valve, low supply-tank level and elevated liquid temperature. Verify valve opening by counting turns or checking its position indicator rather than judging from a distance.",
+                "citations": [
+                  "7d5c1c90f3f7b436"
+                ]
+              },
+              {
+                "id": "c6",
+                "text": "These conditions reduce available NPSH. For the HCP-500 at the rated point, available NPSH must exceed the required 4.8 m by at least 1.0 m; insufficient NPSH causes cavitation and can pit the impeller inlet over time.",
+                "citations": [
+                  "3cb37840f8b133da"
+                ]
+              },
+              {
+                "id": "c7",
+                "text": "A relevant HCP-500 example is FRS-P-0033 in August 2026, case 00043015: it had both a loaded strainer and a suction valve left three-quarters open after pipework changes, so cleaning alone would not have resolved both causes.",
+                "citations": [
+                  "7d5c1c90f3f7b436"
+                ]
+              },
+              {
+                "id": "c8",
+                "text": "Once the cause has cleared, press RESET to acknowledge the latched fault.",
+                "citations": [
+                  "3cb37840f8b133da"
+                ]
+              }
+            ],
+            "work_order_needed": true,
+            "work_order_reason": "parts"
+          },
+          "seconds": 12.44
+        },
+        {
+          "stage": "verify",
+          "inputs": {},
+          "outputs": {
+            "c1": "supported",
+            "c2": "supported",
+            "c3": "supported",
+            "c4": "supported",
+            "c5": "supported",
+            "c6": "supported",
+            "c7": "supported",
+            "c8": "supported"
+          },
+          "seconds": 33.511
+        },
+        {
+          "stage": "compose",
+          "inputs": {},
+          "outputs": {
+            "sentences": 8
+          },
+          "seconds": 5.221
+        },
+        {
+          "stage": "work_order",
+          "inputs": {},
+          "outputs": {
+            "drafted": true
+          },
+          "seconds": 8.399
+        }
+      ]
+    },
+    "retrieved": [
+      {
+        "chunk_id": "ce722c77a0ce6aa6",
+        "doc_path": "corpus/confluence/Pump-Troubleshooting-Playbook.html",
+        "doc_title": "Pump Troubleshooting Playbook",
+        "doc_type": "Field Service wiki page",
+        "revision": "unknown",
+        "effective_date": "Sep 08, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Pump Troubleshooting Playbook",
+            "Why there are no numbers on this page"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Why there are no numbers on this page",
+        "text_original": "People keep asking me to put the limits in here so they don't have to open the manual. I'm not going to, and here's why. The HCP-350 and the HCP-500 use the same fault codes with different trigger values. The HCP-200 is a different generation altogether. And Halden has already changed a value on the 350 by service bulletin without revising the manual, which means a number copied into a wiki in 2024 could be wrong for a pump installed in 2025. We found that out the expensive way in June 2026 (see Casing joint weeping, below).\n\nSo: this page tells you what's likely and what to check first. The manual's fault table (chapter 9 in the Halden IOMs) and technical data table (4.3) tell you the numbers. The bulletins tell you when the manual is wrong for your serial. Open all three. On the PC-3 controller the fault table is also in Menu, Service, Fault help, if you don't have the PDF handy.",
+        "text_en": "People keep asking me to put the limits in here so they don't have to open the manual. I'm not going to, and here's why. The HCP-350 and the HCP-500 use the same fault codes with different trigger values. The HCP-200 is a different generation altogether. And Halden has already changed a value on the 350 by service bulletin without revising the manual, which means a number copied into a wiki in 2024 could be wrong for a pump installed in 2025. We found that out the expensive way in June 2026 (see Casing joint weeping, below).\n\nSo: this page tells you what's likely and what to check first. The manual's fault table (chapter 9 in the Halden IOMs) and technical data table (4.3) tell you the numbers. The bulletins tell you when the manual is wrong for your serial. Open all three. On the PC-3 controller the fault table is also in Menu, Service, Fault help, if you don't have the PDF handy.",
+        "acl_key": "family-pumps",
+        "cosine": 0.5566065311431885,
+        "bm25_rank": 1,
+        "vector_rank": 2,
+        "rrf": 0.03252247488101534
+      },
+      {
+        "chunk_id": "7d5c1c90f3f7b436",
+        "doc_path": "corpus/confluence/Pump-Troubleshooting-Playbook.html",
+        "doc_title": "Pump Troubleshooting Playbook",
+        "doc_type": "Field Service wiki page",
+        "revision": "unknown",
+        "effective_date": "Sep 08, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Pump Troubleshooting Playbook",
+            "Gravel noise and P-07 (cavitation)"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Gravel noise and P-07 (cavitation)",
+        "text_original": "If it sounds like someone poured gravel into the pump, it's cavitation. The liquid is boiling at the impeller inlet because the pressure there is too low, and the bubbles collapse against the impeller. Left alone it pits the impeller inlet and you'll be replacing it. The PC-3 flags it as P-07 when the suction pressure starts fluctuating.\n\nUse the P-07 row in the fault table for the model you're on, and read the whole row. The first measure on the HCP-500 isn't the same as on the HCP-350, and the strainer threshold is different between them. People who've worked mostly on 350s get this wrong on the 500s.\n\nWhat actually causes it at our sites:\n- Strainer loaded. The usual one. Fresno gets label scraps and bits of shrink film into the return water. Clean the basket, check the mesh for tears (18-1120), new cover gasket (18-1121) every time.\n- Suction valve not fully open. Somebody did work on the line, reopened the valve by feel, and left it partly closed. A partly closed suction valve looks fine from a distance. Count the turns or check the position indicator.\n- Tank level low. Ask the operator what level they've been running at. Less liquid above the pump means less pressure at the inlet.\n- Warm liquid. Hot summer days at Fresno raise the water temperature in the return tank, and warmer water cavitates sooner. If P-07 only happens on hot afternoons, that's your clue. It's still worth cleaning the strainer, because it gives you margin.\n\nFRS-P-0033 (HCP-500) in August 2026 had two of these at once: the strainer was loaded and the suction valve had been left three-quarters open after pipework changes. Cleaning the strainer alone would have brought it back in a week. Case 00043015 if you want the details.\n\nAfter cleaning, confirm the strainer differential has dropped back to near zero (the manual gives the clean value) before you leave.",
+        "text_en": "If it sounds like someone poured gravel into the pump, it's cavitation. The liquid is boiling at the impeller inlet because the pressure there is too low, and the bubbles collapse against the impeller. Left alone it pits the impeller inlet and you'll be replacing it. The PC-3 flags it as P-07 when the suction pressure starts fluctuating.\n\nUse the P-07 row in the fault table for the model you're on, and read the whole row. The first measure on the HCP-500 isn't the same as on the HCP-350, and the strainer threshold is different between them. People who've worked mostly on 350s get this wrong on the 500s.\n\nWhat actually causes it at our sites:\n- Strainer loaded. The usual one. Fresno gets label scraps and bits of shrink film into the return water. Clean the basket, check the mesh for tears (18-1120), new cover gasket (18-1121) every time.\n- Suction valve not fully open. Somebody did work on the line, reopened the valve by feel, and left it partly closed. A partly closed suction valve looks fine from a distance. Count the turns or check the position indicator.\n- Tank level low. Ask the operator what level they've been running at. Less liquid above the pump means less pressure at the inlet.\n- Warm liquid. Hot summer days at Fresno raise the water temperature in the return tank, and warmer water cavitates sooner. If P-07 only happens on hot afternoons, that's your clue. It's still worth cleaning the strainer, because it gives you margin.\n\nFRS-P-0033 (HCP-500) in August 2026 had two of these at once: the strainer was loaded and the suction valve had been left three-quarters open after pipework changes. Cleaning the strainer alone would have brought it back in a week. Case 00043015 if you want the details.\n\nAfter cleaning, confirm the strainer differential has dropped back to near zero (the manual gives the clean value) before you leave.",
+        "acl_key": "family-pumps",
+        "cosine": 0.5192707777023315,
+        "bm25_rank": 2,
+        "vector_rank": 6,
+        "rrf": 0.03128054740957967
+      },
+      {
+        "chunk_id": "d549f332f130f3c9",
+        "doc_path": "corpus/manuals/Halden_HCP-500_IOM_RevB.pdf",
+        "doc_title": "Halden HCP-500 IOM Rev B",
+        "doc_type": "Installation, Operation and Maintenance Manual",
+        "revision": "B",
+        "effective_date": "2025-01-30",
+        "locator": {
+          "page": 9,
+          "section_path": [
+            "9 Faults and troubleshooting"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden HCP-500 IOM Rev B | B | 9 Faults and troubleshooting",
+        "text_original": "9 Faults and troubleshooting\n\n9.1 Controller fault codes\nThe following faults are displayed by the PC-3 controller. Check the first measure listed before replacing any component.\n\nCode: P-01\nText: Suction pressure low\nTrigger: PT-1 below setpoint for 30 s\nPossible causes: Supply tank level low; suction valve closed; strainer blocked\nFirst measure: Check tank level and suction valve position\n\nCode: P-02\nText: Bearing temp. high\nTrigger: Bearing RTD above 85 C\nPossible causes: Over-greasing after maintenance; lack of grease; misalignment\nFirst measure: Check grease record. Do not add grease if M-01 was done in the last 500 h\n\nCode: P-03\nText: Vibration high\nTrigger: Overall velocity above 7.1 mm/s\nPossible causes: Misalignment; loose foundation bolts; impeller imbalance\nFirst measure: Check foundation bolt torque, then coupling alignment\n\nCode: P-04\nText: Seal leakage\nTrigger: Leak sensor wet for 60 s\nPossible causes: Worn seal faces; seal damage after dry running\nFirst measure: Inspect seal flush line; replace seal if leakage exceeds 10 drops/min\n\nCode: P-05\nText: Motor overload\nTrigger: Current above 110% FLA for 20 s\nPossible causes: Liquid viscosity/density change; impeller rubbing; supply voltage imbalance\nFirst measure: Compare the three phase currents; check impeller clearance (8.5)\n\nCode: P-06\nText: Dry running\nTrigger: No flow with motor running for 15 s\nPossible causes: Empty supply tank; air lock; pump not primed\nFirst measure: Stop pump. Vent casing and refill before restart\n\nCode: P-07\nText: Cavitation\nTrigger: Suction pressure fluctuation above 15% for 10 s\nPossible causes: NPSH available too low: strainer clogged, suction valve throttled, liquid temperature high\nFirst measure: Read the strainer dP at PI-01/PI-02. If above 0.30 bar, clean the strainer (8.3). Then confirm the suction isolation valve is fully open (7.2)\n\nCode: P-08\nText: Sensor fault\nTrigger: PT-1 or PT-2 signal outside 4-20 mA\nPossible causes: Wire break; moisture in connector; transmitter failure\nFirst measure: Check wiring at X3.1 - X3.4 and connector seals\n\n9.2 Troubleshooting by symptom\nSymptom: Pump delivers too little\nPossible cause: Wrong direction of rotation; worn wear rings; air in suction line\nRemedy: Check rotation; measure clearance (8.5); check suction line for leaks\n\nSymptom: Pump delivers nothing\nPossible cause: Not primed; suction valve closed; strainer completely blocked\nRemedy: Prime and vent; open valve; clean strainer\n\nSymptom: Noise like gravel in the pump\nPossible cause: Cavitation\nRemedy: See P-07\n\nSymptom: Vibration rising over weeks\nPossible cause: Bearing wear; impeller fouling or damage\nRemedy: Trend vibration; inspect bearings and impeller\n\nSymptom: Motor overheats\nPossible cause: Operation far right of BEP; voltage too low\nRemedy: Throttle discharge to the rated point; check supply\n\nSymptom: Seal leaks soon after replacement\nPossible cause: O-rings damaged during fitting; dry running at start-up\nRemedy: Replace seal; always vent before start\n\nVibration evaluation: overall velocity below 2.8 mm/s is good, 2.8 to 7.1 mm/s is acceptable for continuous operation but should be trended, above 7.1 mm/s requires action (fault P-03). A peak at running speed (1x) usually indicates imbalance; at twice running speed (2x), misalignment; at blade-pass frequency, hydraulic causes such as operation far from BEP.",
+        "text_en": "9 Faults and troubleshooting\n\n9.1 Controller fault codes\nThe following faults are displayed by the PC-3 controller. Check the first measure listed before replacing any component.\n\nCode: P-01\nText: Suction pressure low\nTrigger: PT-1 below setpoint for 30 s\nPossible causes: Supply tank level low; suction valve closed; strainer blocked\nFirst measure: Check tank level and suction valve position\n\nCode: P-02\nText: Bearing temp. high\nTrigger: Bearing RTD above 85 C\nPossible causes: Over-greasing after maintenance; lack of grease; misalignment\nFirst measure: Check grease record. Do not add grease if M-01 was done in the last 500 h\n\nCode: P-03\nText: Vibration high\nTrigger: Overall velocity above 7.1 mm/s\nPossible causes: Misalignment; loose foundation bolts; impeller imbalance\nFirst measure: Check foundation bolt torque, then coupling alignment\n\nCode: P-04\nText: Seal leakage\nTrigger: Leak sensor wet for 60 s\nPossible causes: Worn seal faces; seal damage after dry running\nFirst measure: Inspect seal flush line; replace seal if leakage exceeds 10 drops/min\n\nCode: P-05\nText: Motor overload\nTrigger: Current above 110% FLA for 20 s\nPossible causes: Liquid viscosity/density change; impeller rubbing; supply voltage imbalance\nFirst measure: Compare the three phase currents; check impeller clearance (8.5)\n\nCode: P-06\nText: Dry running\nTrigger: No flow with motor running for 15 s\nPossible causes: Empty supply tank; air lock; pump not primed\nFirst measure: Stop pump. Vent casing and refill before restart\n\nCode: P-07\nText: Cavitation\nTrigger: Suction pressure fluctuation above 15% for 10 s\nPossible causes: NPSH available too low: strainer clogged, suction valve throttled, liquid temperature high\nFirst measure: Read the strainer dP at PI-01/PI-02. If above 0.30 bar, clean the strainer (8.3). Then confirm the suction isolation valve is fully open (7.2)\n\nCode: P-08\nText: Sensor fault\nTrigger: PT-1 or PT-2 signal outside 4-20 mA\nPossible causes: Wire break; moisture in connector; transmitter failure\nFirst measure: Check wiring at X3.1 - X3.4 and connector seals\n\n9.2 Troubleshooting by symptom\nSymptom: Pump delivers too little\nPossible cause: Wrong direction of rotation; worn wear rings; air in suction line\nRemedy: Check rotation; measure clearance (8.5); check suction line for leaks\n\nSymptom: Pump delivers nothing\nPossible cause: Not primed; suction valve closed; strainer completely blocked\nRemedy: Prime and vent; open valve; clean strainer\n\nSymptom: Noise like gravel in the pump\nPossible cause: Cavitation\nRemedy: See P-07\n\nSymptom: Vibration rising over weeks\nPossible cause: Bearing wear; impeller fouling or damage\nRemedy: Trend vibration; inspect bearings and impeller\n\nSymptom: Motor overheats\nPossible cause: Operation far right of BEP; voltage too low\nRemedy: Throttle discharge to the rated point; check supply\n\nSymptom: Seal leaks soon after replacement\nPossible cause: O-rings damaged during fitting; dry running at start-up\nRemedy: Replace seal; always vent before start\n\nVibration evaluation: overall velocity below 2.8 mm/s is good, 2.8 to 7.1 mm/s is acceptable for continuous operation but should be trended, above 7.1 mm/s requires action (fault P-03). A peak at running speed (1x) usually indicates imbalance; at twice running speed (2x), misalignment; at blade-pass frequency, hydraulic causes such as operation far from BEP.",
+        "acl_key": "family-pumps",
+        "cosine": 0.5323295593261719,
+        "bm25_rank": 10,
+        "vector_rank": 4,
+        "rrf": 0.029910714285714284
+      },
+      {
+        "chunk_id": "8c785926fb25b4e6",
+        "doc_path": "corpus/manuals/Halden_HCP-350_IOM_RevD.pdf",
+        "doc_title": "Halden HCP-350 IOM Rev D",
+        "doc_type": "Installation, Operation and Maintenance Manual",
+        "revision": "D",
+        "effective_date": "2023-05-22",
+        "locator": {
+          "page": 9,
+          "section_path": [
+            "9 Faults and troubleshooting"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden HCP-350 IOM Rev D | D | 9 Faults and troubleshooting",
+        "text_original": "9 Faults and troubleshooting\n\n9.1 Controller fault codes\nThe following faults are displayed by the PC-3 controller. Check the first measure listed before replacing any component.\n\nCode: P-01\nText: Suction pressure low\nTrigger: PT-1 below setpoint for 30 s\nPossible causes: Supply tank level low; suction valve closed; strainer blocked\nFirst measure: Check tank level and suction valve position\n\nCode: P-02\nText: Bearing temp. high\nTrigger: Bearing RTD above 85 C\nPossible causes: Over-greasing after maintenance; lack of grease; misalignment\nFirst measure: Check grease record. Do not add grease if M-01 was done in the last 500 h\n\nCode: P-03\nText: Vibration high\nTrigger: Overall velocity above 7.1 mm/s\nPossible causes: Misalignment; loose foundation bolts; impeller imbalance\nFirst measure: Check foundation bolt torque, then coupling alignment\n\nCode: P-04\nText: Seal leakage\nTrigger: Leak sensor wet for 60 s\nPossible causes: Worn seal faces; seal damage after dry running\nFirst measure: Inspect seal flush line; replace seal if leakage exceeds 10 drops/min\n\nCode: P-05\nText: Motor overload\nTrigger: Current above 110% FLA for 20 s\nPossible causes: Liquid viscosity/density change; impeller rubbing; supply voltage imbalance\nFirst measure: Compare the three phase currents; check impeller clearance (8.5)\n\nCode: P-06\nText: Dry running\nTrigger: No flow with motor running for 15 s\nPossible causes: Empty supply tank; air lock; pump not primed\nFirst measure: Stop pump. Vent casing and refill before restart\n\nCode: P-07\nText: Cavitation\nTrigger: Suction pressure fluctuation above 15% for 10 s\nPossible causes: NPSH available too low: strainer clogged, suction valve throttled, liquid temperature high\nFirst measure: Read the strainer dP at PI-01/PI-02. If above 0.25 bar, clean the strainer (8.3)\n\nCode: P-08\nText: Sensor fault\nTrigger: PT-1 or PT-2 signal outside 4-20 mA\nPossible causes: Wire break; moisture in connector; transmitter failure\nFirst measure: Check wiring at X3.1 - X3.4 and connector seals\n\n9.2 Troubleshooting by symptom\nSymptom: Pump delivers too little\nPossible cause: Wrong direction of rotation; worn wear rings; air in suction line\nRemedy: Check rotation; measure clearance (8.5); check suction line for leaks\n\nSymptom: Pump delivers nothing\nPossible cause: Not primed; suction valve closed; strainer completely blocked\nRemedy: Prime and vent; open valve; clean strainer\n\nSymptom: Noise like gravel in the pump\nPossible cause: Cavitation\nRemedy: See P-07\n\nSymptom: Vibration rising over weeks\nPossible cause: Bearing wear; impeller fouling or damage\nRemedy: Trend vibration; inspect bearings and impeller\n\nSymptom: Motor overheats\nPossible cause: Operation far right of BEP; voltage too low\nRemedy: Throttle discharge to the rated point; check supply\n\nSymptom: Seal leaks soon after replacement\nPossible cause: O-rings damaged during fitting; dry running at start-up\nRemedy: Replace seal; always vent before start\n\nVibration evaluation: overall velocity below 2.8 mm/s is good, 2.8 to 7.1 mm/s is acceptable for continuous operation but should be trended, above 7.1 mm/s requires action (fault P-03). A peak at running speed (1x) usually indicates imbalance; at twice running speed (2x), misalignment; at blade-pass frequency, hydraulic causes such as operation far from BEP.",
+        "text_en": "9 Faults and troubleshooting\n\n9.1 Controller fault codes\nThe following faults are displayed by the PC-3 controller. Check the first measure listed before replacing any component.\n\nCode: P-01\nText: Suction pressure low\nTrigger: PT-1 below setpoint for 30 s\nPossible causes: Supply tank level low; suction valve closed; strainer blocked\nFirst measure: Check tank level and suction valve position\n\nCode: P-02\nText: Bearing temp. high\nTrigger: Bearing RTD above 85 C\nPossible causes: Over-greasing after maintenance; lack of grease; misalignment\nFirst measure: Check grease record. Do not add grease if M-01 was done in the last 500 h\n\nCode: P-03\nText: Vibration high\nTrigger: Overall velocity above 7.1 mm/s\nPossible causes: Misalignment; loose foundation bolts; impeller imbalance\nFirst measure: Check foundation bolt torque, then coupling alignment\n\nCode: P-04\nText: Seal leakage\nTrigger: Leak sensor wet for 60 s\nPossible causes: Worn seal faces; seal damage after dry running\nFirst measure: Inspect seal flush line; replace seal if leakage exceeds 10 drops/min\n\nCode: P-05\nText: Motor overload\nTrigger: Current above 110% FLA for 20 s\nPossible causes: Liquid viscosity/density change; impeller rubbing; supply voltage imbalance\nFirst measure: Compare the three phase currents; check impeller clearance (8.5)\n\nCode: P-06\nText: Dry running\nTrigger: No flow with motor running for 15 s\nPossible causes: Empty supply tank; air lock; pump not primed\nFirst measure: Stop pump. Vent casing and refill before restart\n\nCode: P-07\nText: Cavitation\nTrigger: Suction pressure fluctuation above 15% for 10 s\nPossible causes: NPSH available too low: strainer clogged, suction valve throttled, liquid temperature high\nFirst measure: Read the strainer dP at PI-01/PI-02. If above 0.25 bar, clean the strainer (8.3)\n\nCode: P-08\nText: Sensor fault\nTrigger: PT-1 or PT-2 signal outside 4-20 mA\nPossible causes: Wire break; moisture in connector; transmitter failure\nFirst measure: Check wiring at X3.1 - X3.4 and connector seals\n\n9.2 Troubleshooting by symptom\nSymptom: Pump delivers too little\nPossible cause: Wrong direction of rotation; worn wear rings; air in suction line\nRemedy: Check rotation; measure clearance (8.5); check suction line for leaks\n\nSymptom: Pump delivers nothing\nPossible cause: Not primed; suction valve closed; strainer completely blocked\nRemedy: Prime and vent; open valve; clean strainer\n\nSymptom: Noise like gravel in the pump\nPossible cause: Cavitation\nRemedy: See P-07\n\nSymptom: Vibration rising over weeks\nPossible cause: Bearing wear; impeller fouling or damage\nRemedy: Trend vibration; inspect bearings and impeller\n\nSymptom: Motor overheats\nPossible cause: Operation far right of BEP; voltage too low\nRemedy: Throttle discharge to the rated point; check supply\n\nSymptom: Seal leaks soon after replacement\nPossible cause: O-rings damaged during fitting; dry running at start-up\nRemedy: Replace seal; always vent before start\n\nVibration evaluation: overall velocity below 2.8 mm/s is good, 2.8 to 7.1 mm/s is acceptable for continuous operation but should be trended, above 7.1 mm/s requires action (fault P-03). A peak at running speed (1x) usually indicates imbalance; at twice running speed (2x), misalignment; at blade-pass frequency, hydraulic causes such as operation far from BEP.",
+        "acl_key": "family-pumps",
+        "cosine": 0.519163966178894,
+        "bm25_rank": 12,
+        "vector_rank": 7,
+        "rrf": 0.028814262023217248
+      },
+      {
+        "chunk_id": "e1e06daa4e2229e2",
+        "doc_path": "corpus/confluence/Pump-Troubleshooting-Playbook.html",
+        "doc_title": "Pump Troubleshooting Playbook",
+        "doc_type": "Field Service wiki page",
+        "revision": "unknown",
+        "effective_date": "Sep 08, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Pump Troubleshooting Playbook",
+            "How to use this page"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › How to use this page",
+        "text_original": "Symptoms to causes for the Halden HCP pumps (HCP-200, HCP-350, HCP-500). Start from what you see and hear, not from the code on the controller. This page has no thresholds or clearances in it, on purpose. They're different for each model, and Halden changes them by bulletin. Read them from the fault table and the technical data in the manual for the model in front of you, and check the bulletins for the serial.",
+        "text_en": "Symptoms to causes for the Halden HCP pumps (HCP-200, HCP-350, HCP-500). Start from what you see and hear, not from the code on the controller. This page has no thresholds or clearances in it, on purpose. They're different for each model, and Halden changes them by bulletin. Read them from the fault table and the technical data in the manual for the model in front of you, and check the bulletins for the serial.",
+        "acl_key": "family-pumps",
+        "cosine": 0.5471294522285461,
+        "bm25_rank": 27,
+        "vector_rank": 3,
+        "rrf": 0.02736726874657909
+      },
+      {
+        "chunk_id": "649e9a003193b3c6",
+        "doc_path": "corpus/confluence/HCP-500-Maintenance-Quick-Reference.html",
+        "doc_title": "HCP-500 Maintenance Quick Reference",
+        "doc_type": "confluence",
+        "revision": "unknown",
+        "effective_date": "Apr 26, 2023",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service",
+            "HCP-500 Maintenance Quick Reference"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "HCP-500 Maintenance Quick Reference | Field Service › HCP-500 Maintenance Quick Reference",
+        "text_original": "Field Service: HCP-500 Maintenance Quick Reference\n\nCreated by Tom Becker, last modified on Apr 26, 2023\n\nMy notes from the Halden HCP-500 online training (March 2023), tidied up. The first 500 in our fleet goes in at Tacoma in July (TAC-P-0044) and we're helping with commissioning, so I wanted the PM tasks somewhere everyone can find them. This is the short version. The manual (HDN-IOM-500) has the details.\n\nThe HCP-500 is a split-case pump, not end-suction like the 350. Two bearing housings, two mechanical seals, top half of the casing lifts off. Don't plan a seal job on a 500 like a 350 job, it's twice the work.",
+        "text_en": "Field Service: HCP-500 Maintenance Quick Reference\n\nCreated by Tom Becker, last modified on Apr 26, 2023\n\nMy notes from the Halden HCP-500 online training (March 2023), tidied up. The first 500 in our fleet goes in at Tacoma in July (TAC-P-0044) and we're helping with commissioning, so I wanted the PM tasks somewhere everyone can find them. This is the short version. The manual (HDN-IOM-500) has the details.\n\nThe HCP-500 is a split-case pump, not end-suction like the 350. Two bearing housings, two mechanical seals, top half of the casing lifts off. Don't plan a seal job on a 500 like a 350 job, it's twice the work.",
+        "acl_key": "family-pumps",
+        "cosine": 0.49573904275894165,
+        "bm25_rank": 17,
+        "vector_rank": 12,
+        "rrf": 0.026875901875901876
+      },
+      {
+        "chunk_id": "1e53ab5467b0d545",
+        "doc_path": "corpus/confluence/Pump-Troubleshooting-Playbook.html",
+        "doc_title": "Pump Troubleshooting Playbook",
+        "doc_type": "Field Service wiki page",
+        "revision": "unknown",
+        "effective_date": "Sep 08, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Pump Troubleshooting Playbook",
+            "Motor tripping and P-05"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Motor tripping and P-05",
+        "text_original": "Read the three phase currents at the motor and compare them. If one is well off the other two, it's a supply problem or a winding problem, and that's the site electrician. If all three are high and equal, the pump is asking for more power than it should. Check whether the impeller is rubbing (turn the shaft by hand with the pump isolated, it should turn freely) and whether the pump is running far right on its curve because someone opened a bypass or a discharge valve all the way.",
+        "text_en": "Read the three phase currents at the motor and compare them. If one is well off the other two, it's a supply problem or a winding problem, and that's the site electrician. If all three are high and equal, the pump is asking for more power than it should. Check whether the impeller is rubbing (turn the shaft by hand with the pump isolated, it should turn freely) and whether the pump is running far right on its curve because someone opened a bypass or a discharge valve all the way.",
+        "acl_key": "family-pumps",
+        "cosine": 0.4424591660499573,
+        "bm25_rank": 4,
+        "vector_rank": 32,
+        "rrf": 0.026494565217391304
+      },
+      {
+        "chunk_id": "6be9865afd90dd67",
+        "doc_path": "corpus/confluence/Pump-Troubleshooting-Playbook.html",
+        "doc_title": "Pump Troubleshooting Playbook",
+        "doc_type": "Field Service wiki page",
+        "revision": "unknown",
+        "effective_date": "Sep 08, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Pump Troubleshooting Playbook",
+            "Quick table"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Quick table",
+        "text_original": "What you see or hear | Likely causes, most common first | Check first | Controller code\nLow flow or low head | Worn wear rings, strainer loading up, air getting into the suction, wrong rotation after motor work | Strainer dP, then rotation, then clearance | Often none, sometimes P-01\nCrackling, gravel noise | Cavitation: strainer, suction valve, tank level, warm liquid | Strainer dP at PI-01/PI-02, then the rest of the fault table row | P-07\nVibration rising | Loose foundation bolts, misalignment, bearings, impeller fouling | Foundation bolt torque, then alignment | P-03\nHot bearing | Over-greasing after a PM, by a wide margin | Grease record | P-02\nSeal leaking | Flush line, dry run at start-up, O-rings fitted with grease | Flush line, then how it was last started | P-04\nMotor tripping | Rubbing impeller, voltage imbalance, running far right of the curve | Three phase currents | P-05\nPump runs, nothing comes out | Not primed, air lock, empty tank | Stop. Vent and refill | P-06\nReadings jump around or go to zero | Wet connector, broken wire, transmitter | Connector seals at the transmitter | P-08\nCasing joint weeping after a seal change | Wrong casing bolt torque for the serial | Bulletins for the serial | None",
+        "text_en": "What you see or hear | Likely causes, most common first | Check first | Controller code\nLow flow or low head | Worn wear rings, strainer loading up, air getting into the suction, wrong rotation after motor work | Strainer dP, then rotation, then clearance | Often none, sometimes P-01\nCrackling, gravel noise | Cavitation: strainer, suction valve, tank level, warm liquid | Strainer dP at PI-01/PI-02, then the rest of the fault table row | P-07\nVibration rising | Loose foundation bolts, misalignment, bearings, impeller fouling | Foundation bolt torque, then alignment | P-03\nHot bearing | Over-greasing after a PM, by a wide margin | Grease record | P-02\nSeal leaking | Flush line, dry run at start-up, O-rings fitted with grease | Flush line, then how it was last started | P-04\nMotor tripping | Rubbing impeller, voltage imbalance, running far right of the curve | Three phase currents | P-05\nPump runs, nothing comes out | Not primed, air lock, empty tank | Stop. Vent and refill | P-06\nReadings jump around or go to zero | Wet connector, broken wire, transmitter | Connector seals at the transmitter | P-08\nCasing joint weeping after a seal change | Wrong casing bolt torque for the serial | Bulletins for the serial | None",
+        "acl_key": "family-pumps",
+        "cosine": 0.47885340452194214,
+        "bm25_rank": 21,
+        "vector_rank": 14,
+        "rrf": 0.025859192525859193
+      },
+      {
+        "chunk_id": "485c3292ac51002c",
+        "doc_path": "corpus/confluence/Pump-Troubleshooting-Playbook.html",
+        "doc_title": "Pump Troubleshooting Playbook",
+        "doc_type": "Field Service wiki page",
+        "revision": "unknown",
+        "effective_date": "Sep 08, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Pump Troubleshooting Playbook",
+            "Seal leaks and P-04"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Seal leaks and P-04",
+        "text_original": "A new seal that leaks within days was nearly always damaged at fitting or at start-up. Two things to check:\n- Did someone lubricate the O-rings with oil or grease? Halden says water or glycerine only. Mineral grease swells the elastomers.\n- Was the pump vented properly before the first start? A few seconds of dry running is enough to damage the seal faces.\n\nAn older seal that starts leaking: check the seal flush line first. Aisha found a kinked flush line on GDN-P-0070 in August 2025 (case 00039115). The seal was cooking because no flush water was reaching it. Rerouting the line was the actual fix, the new seal was a bonus.\n\nSeal kits:\nModel | Seal kit | Note\nHCP-200 | 18-0201 |\nHCP-350 | 18-0356 | Supersedes 18-0355 (Halden SB-2025-018). If you find an 18-0355 in a van, use it up on older pumps only if 18-0356 isn't available, and tell stores\nHCP-500 | 18-0502 | Split case, two seals per pump, so two kits",
+        "text_en": "A new seal that leaks within days was nearly always damaged at fitting or at start-up. Two things to check:\n- Did someone lubricate the O-rings with oil or grease? Halden says water or glycerine only. Mineral grease swells the elastomers.\n- Was the pump vented properly before the first start? A few seconds of dry running is enough to damage the seal faces.\n\nAn older seal that starts leaking: check the seal flush line first. Aisha found a kinked flush line on GDN-P-0070 in August 2025 (case 00039115). The seal was cooking because no flush water was reaching it. Rerouting the line was the actual fix, the new seal was a bonus.\n\nSeal kits:\nModel | Seal kit | Note\nHCP-200 | 18-0201 |\nHCP-350 | 18-0356 | Supersedes 18-0355 (Halden SB-2025-018). If you find an 18-0355 in a van, use it up on older pumps only if 18-0356 isn't available, and tell stores\nHCP-500 | 18-0502 | Split case, two seals per pump, so two kits",
+        "acl_key": "family-pumps",
+        "cosine": 0.44849976897239685,
+        "bm25_rank": 13,
+        "vector_rank": 25,
+        "rrf": 0.02546333601933924
+      },
+      {
+        "chunk_id": "c6305a9cbeeea984",
+        "doc_path": "corpus/manuals/Halden_HCP-500_IOM_RevB.pdf",
+        "doc_title": "Halden HCP-500 IOM Rev B",
+        "doc_type": "Installation, Operation and Maintenance Manual",
+        "revision": "B",
+        "effective_date": "2025-01-30",
+        "locator": {
+          "page": 3,
+          "section_path": [
+            "1 General information"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden HCP-500 IOM Rev B | B | 1 General information",
+        "text_original": "1 General information\n\n1.1 About this manual\nThis manual applies to Halden HCP-500 split-case centrifugal pumps with serial numbers from HCP500-230001, supplied as a bare-shaft pump or as a pump unit on a common baseplate with motor and Halden PC-3 pump controller. It is part of the product. Personnel responsible for installation, operation and maintenance must have read and understood it.\n\nInformation on accessories not supplied by Halden (motors, variable frequency drives, couplings of other makes) is given in the respective manufacturer's documentation. Where that documentation contradicts this manual for the pump itself, this manual applies.\n\nHalden publishes technical changes that affect safety or reliability as Service Bulletins between manual revisions. Service Bulletins take precedence over this manual for the units and serial ranges they name. Current bulletins are available from your Halden service partner.\n\n1.2 Symbols and signal words\nDANGER: Immediate hazard. Will result in death or serious injury if not avoided.\nWARNING: Possible hazard. Could result in death or serious injury if not avoided.\nCAUTION: Possible hazard. Could result in minor injury or damage to the pump or the installation.\nNOTE: Information for efficient and trouble-free operation.\n\n1.3 Manufacturer\nHalden Pumpen GmbH, Industriestrasse 14, 73430 Aalen, Germany. Service hotline +49 7361 555 0140 (Monday to Friday, 07:00 - 17:00 CET). For North American installations, contact your authorised Halden service partner.\n\n1.4 Warranty\nHalden warrants the pump against defects in material and workmanship for 24 months from delivery or 18 months from commissioning, whichever expires first. The warranty does not cover wear parts (mechanical seals, wear rings, bearings, gaskets), damage caused by dry running, cavitation, operation outside the permitted operating range, use of non-original spare parts, or failure to carry out the maintenance described in chapter 8. Claims must be submitted through the authorised service partner with the serial number and the controller event log.",
+        "text_en": "1 General information\n\n1.1 About this manual\nThis manual applies to Halden HCP-500 split-case centrifugal pumps with serial numbers from HCP500-230001, supplied as a bare-shaft pump or as a pump unit on a common baseplate with motor and Halden PC-3 pump controller. It is part of the product. Personnel responsible for installation, operation and maintenance must have read and understood it.\n\nInformation on accessories not supplied by Halden (motors, variable frequency drives, couplings of other makes) is given in the respective manufacturer's documentation. Where that documentation contradicts this manual for the pump itself, this manual applies.\n\nHalden publishes technical changes that affect safety or reliability as Service Bulletins between manual revisions. Service Bulletins take precedence over this manual for the units and serial ranges they name. Current bulletins are available from your Halden service partner.\n\n1.2 Symbols and signal words\nDANGER: Immediate hazard. Will result in death or serious injury if not avoided.\nWARNING: Possible hazard. Could result in death or serious injury if not avoided.\nCAUTION: Possible hazard. Could result in minor injury or damage to the pump or the installation.\nNOTE: Information for efficient and trouble-free operation.\n\n1.3 Manufacturer\nHalden Pumpen GmbH, Industriestrasse 14, 73430 Aalen, Germany. Service hotline +49 7361 555 0140 (Monday to Friday, 07:00 - 17:00 CET). For North American installations, contact your authorised Halden service partner.\n\n1.4 Warranty\nHalden warrants the pump against defects in material and workmanship for 24 months from delivery or 18 months from commissioning, whichever expires first. The warranty does not cover wear parts (mechanical seals, wear rings, bearings, gaskets), damage caused by dry running, cavitation, operation outside the permitted operating range, use of non-original spare parts, or failure to carry out the maintenance described in chapter 8. Claims must be submitted through the authorised service partner with the serial number and the controller event log.",
+        "acl_key": "family-pumps",
+        "cosine": 0.4654029607772827,
+        "bm25_rank": 22,
+        "vector_rank": 16,
+        "rrf": 0.025353016688061617
+      },
+      {
+        "chunk_id": "243af2898a8522ce",
+        "doc_path": "corpus/email/HCP-350_casing_leak_FRS-P-0031_Halden_thread.pdf",
+        "doc_title": "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": 1,
+          "section_path": [],
+          "record_id": null,
+          "sender": "Stefan Wirth <s.wirth@halden-pumpen.de>",
+          "date": "Wednesday, June 3, 2026 11:08 PM"
+        },
+        "header": "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+        "text_original": "To: Tom Becker <t.becker@corvane.com>\nCc: Maria Okafor <m.okafor@corvane.com>\nSubject: AW: HCP-350 casing joint leaking after seal change - FRS-P-0031 / HCP350-241187\nAttachments: Halden_SB-2025-009_HCP-350_Casing_Torque.pdf\n\nDear Mr. Becker,\n\nthank you for the clear description and the photos.\n\nYour pump has serial HCP350-241187. For HCP-350 pumps from serial HCP350-240001 the casing was revised, with a lighter casing and a changed gasket seat, and the casing bolt torque for these units is 38 N-m, not 45 N-m. This is in our Service Bulletin SB-2025-009 from June 2025. I attach it again to this email.\n\nFrom your photos I think it is likely that the gasket seat is cracked. The pattern you describe, a joint that is tight at assembly and then weeps at one position after some hours at temperature and pressure, is what we have seen on the other over-torque cases. That the bolts did not move at 45 N-m fits as well.\n\nPlease:\n- do not tighten further, and do not run the pump again with this casing,\n- when you open it, clean the gasket seat and check it with dye penetrant, especially around the bolt holes near the leak,\n- send me photos of the seat after the dye test.\n\nIf there is a crack, the casing cannot be repaired. Welding or sealing compound is not permitted on this casing. You would need a new casing, which I can supply.\n\nTo your question 1: the gasket is the same part, there is no different gasket. Question 2: no, lower, see above.\n\nPlease note also section 1.1 of the IOM: service bulletins take precedence over the manual for the serial ranges they name.",
+        "text_en": "To: Tom Becker <t.becker@corvane.com>\nCc: Maria Okafor <m.okafor@corvane.com>\nSubject: AW: HCP-350 casing joint leaking after seal change - FRS-P-0031 / HCP350-241187\nAttachments: Halden_SB-2025-009_HCP-350_Casing_Torque.pdf\n\nDear Mr. Becker,\n\nthank you for the clear description and the photos.\n\nYour pump has serial HCP350-241187. For HCP-350 pumps from serial HCP350-240001 the casing was revised, with a lighter casing and a changed gasket seat, and the casing bolt torque for these units is 38 N-m, not 45 N-m. This is in our Service Bulletin SB-2025-009 from June 2025. I attach it again to this email.\n\nFrom your photos I think it is likely that the gasket seat is cracked. The pattern you describe, a joint that is tight at assembly and then weeps at one position after some hours at temperature and pressure, is what we have seen on the other over-torque cases. That the bolts did not move at 45 N-m fits as well.\n\nPlease:\n- do not tighten further, and do not run the pump again with this casing,\n- when you open it, clean the gasket seat and check it with dye penetrant, especially around the bolt holes near the leak,\n- send me photos of the seat after the dye test.\n\nIf there is a crack, the casing cannot be repaired. Welding or sealing compound is not permitted on this casing. You would need a new casing, which I can supply.\n\nTo your question 1: the gasket is the same part, there is no different gasket. Question 2: no, lower, see above.\n\nPlease note also section 1.1 of the IOM: service bulletins take precedence over the manual for the serial ranges they name.",
+        "acl_key": "family-pumps",
+        "cosine": 0.4400653541088104,
+        "bm25_rank": 8,
+        "vector_rank": 36,
+        "rrf": 0.025122549019607844
+      },
+      {
+        "chunk_id": "6e1b211d60cec2b6",
+        "doc_path": "corpus/confluence/Pump-Troubleshooting-Playbook.html",
+        "doc_title": "Pump Troubleshooting Playbook",
+        "doc_type": "Field Service wiki page",
+        "revision": "unknown",
+        "effective_date": "Sep 08, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Pump Troubleshooting Playbook",
+            "Low flow or low head"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Low flow or low head",
+        "text_original": "The customer usually tells you this one before the controller does: \"the line is slow\", \"the tank takes longer to fill\". The pump is running and there's no alarm, so the first thing is to get a number for \"low\". Read suction and discharge pressure on the controller and compare them with the commissioning record in the site binder. If the pump makes less head at the same flow than it did at commissioning, the hydraulics have worn. If the suction pressure has dropped, the problem is upstream of the pump.\n\nIn the order I'd check:\n- Strainer. Read the differential across the strainer (PI-01 minus PI-02). A strainer that's loading up gives you low flow long before it's bad enough to cause cavitation.\n- Rotation. If anybody has had the motor off (rewind, new motor, site electrical work), check the rotation arrow on the bearing housing. A centrifugal pump running backwards still pumps a bit, which is why people miss it.\n- Air in the suction. Look for a leaking gasket or a loose fitting on the suction side, and check the suction line still rises toward the pump. Air in the suction gives a noisy, wandering discharge pressure.\n- Wear rings. Measure the impeller-to-casing clearance with feeler gauges at four points (manual section 8.5) and compare with the limit for that model. Worn rings are the usual cause on older pumps that have done years of duty.\n\nOn the HCP-200s, the clearance limit is only in the old scanned paper manual in the library (it's a 1998 manual and there's no newer one). It's an image scan, so you can't search it. Find the technical data table and read it off. Don't use the 350 or 500 limit on a 200, the impeller and rings are different. FRS-P-0007 in September 2026 is the example: about a fifth down on flow, clearance well over the limit, wear rings on order.",
+        "text_en": "The customer usually tells you this one before the controller does: \"the line is slow\", \"the tank takes longer to fill\". The pump is running and there's no alarm, so the first thing is to get a number for \"low\". Read suction and discharge pressure on the controller and compare them with the commissioning record in the site binder. If the pump makes less head at the same flow than it did at commissioning, the hydraulics have worn. If the suction pressure has dropped, the problem is upstream of the pump.\n\nIn the order I'd check:\n- Strainer. Read the differential across the strainer (PI-01 minus PI-02). A strainer that's loading up gives you low flow long before it's bad enough to cause cavitation.\n- Rotation. If anybody has had the motor off (rewind, new motor, site electrical work), check the rotation arrow on the bearing housing. A centrifugal pump running backwards still pumps a bit, which is why people miss it.\n- Air in the suction. Look for a leaking gasket or a loose fitting on the suction side, and check the suction line still rises toward the pump. Air in the suction gives a noisy, wandering discharge pressure.\n- Wear rings. Measure the impeller-to-casing clearance with feeler gauges at four points (manual section 8.5) and compare with the limit for that model. Worn rings are the usual cause on older pumps that have done years of duty.\n\nOn the HCP-200s, the clearance limit is only in the old scanned paper manual in the library (it's a 1998 manual and there's no newer one). It's an image scan, so you can't search it. Find the technical data table and read it off. Don't use the 350 or 500 limit on a 200, the impeller and rings are different. FRS-P-0007 in September 2026 is the example: about a fifth down on flow, clearance well over the limit, wear rings on order.",
+        "acl_key": "family-pumps",
+        "cosine": 0.43295055627822876,
+        "bm25_rank": 6,
+        "vector_rank": 45,
+        "rrf": 0.024675324675324677
+      },
+      {
+        "chunk_id": "b4af1292d59f178b",
+        "doc_path": "corpus/confluence/Pump-Troubleshooting-Playbook.html",
+        "doc_title": "Pump Troubleshooting Playbook",
+        "doc_type": "Field Service wiki page",
+        "revision": "unknown",
+        "effective_date": "Sep 08, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Pump Troubleshooting Playbook",
+            "Sensor fault and P-08"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Sensor fault and P-08",
+        "text_original": "On the pumps in wash-down areas (the bottling hall at Fresno, the processing hall at Gdansk) this is nearly always water in the transmitter connector. Unplug, dry, check the connector seal, replug. If the seal is perished, replace it. If the transmitter itself has failed, it's 19-0301 for both PT-1 and PT-2. Check the wiring at the X3 terminals in the controller before you condemn the transmitter.",
+        "text_en": "On the pumps in wash-down areas (the bottling hall at Fresno, the processing hall at Gdansk) this is nearly always water in the transmitter connector. Unplug, dry, check the connector seal, replug. If the seal is perished, replace it. If the transmitter itself has failed, it's 19-0301 for both PT-1 and PT-2. Check the wiring at the X3 terminals in the controller before you condemn the transmitter.",
+        "acl_key": "family-pumps",
+        "cosine": 0.5163747668266296,
+        "bm25_rank": 48,
+        "vector_rank": 8,
+        "rrf": 0.023965141612200435
+      },
+      {
+        "chunk_id": "e100cab0f79e6fe5",
+        "doc_path": "corpus/manuals/Halden_HCP-500_IOM_RevB.pdf",
+        "doc_title": "Halden HCP-500 IOM Rev B",
+        "doc_type": "Installation, Operation and Maintenance Manual",
+        "revision": "B",
+        "effective_date": "2025-01-30",
+        "locator": {
+          "page": 10,
+          "section_path": [
+            "12 Revision history"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden HCP-500 IOM Rev B | B | 12 Revision history",
+        "text_original": "12 Revision history\n\nRev.: A\nDate: 2023-02-14\nChange: First edition\n\nRev.: B\nDate: 2025-01-30\nChange: Section 8.1: strainer cleaning interval changed from 500 h to 750 h after field data review. Section 9.1: P-07 first check revised.",
+        "text_en": "12 Revision history\n\nRev.: A\nDate: 2023-02-14\nChange: First edition\n\nRev.: B\nDate: 2025-01-30\nChange: Section 8.1: strainer cleaning interval changed from 500 h to 750 h after field data review. Section 9.1: P-07 first check revised.",
+        "acl_key": "family-pumps",
+        "cosine": 0.4400307834148407,
+        "bm25_rank": 14,
+        "vector_rank": 37,
+        "rrf": 0.023822791864028976
+      },
+      {
+        "chunk_id": "e3a89423c49a016f",
+        "doc_path": "corpus/manuals/Halden_HCP-500_IOM_RevB.pdf",
+        "doc_title": "Halden HCP-500 IOM Rev B",
+        "doc_type": "Installation, Operation and Maintenance Manual",
+        "revision": "B",
+        "effective_date": "2025-01-30",
+        "locator": {
+          "page": 6,
+          "section_path": [
+            "6 Commissioning"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden HCP-500 IOM Rev B | B | 6 Commissioning",
+        "text_original": "6 Commissioning\n\n1. Check that the suction strainer basket is installed and clean.\n2. Open the suction isolation valve fully. Leave the discharge valve closed.\n3. Fill the pump and the suction line with liquid. Vent the casing through the vent plug on the upper casing half until liquid without air bubbles emerges.\n4. Check the direction of rotation by switching the motor on briefly. The direction must match the arrow on the bearing housing.\n5. Start the pump. Open the discharge valve slowly within 30 seconds of start-up. Never run against a closed discharge valve for more than 30 seconds.\n6. Set the controller limits for suction pressure and strainer differential pressure (factory default: strainer dP alarm at 0.30 bar).\n7. Record suction and discharge pressure, motor current, bearing temperature and vibration at both bearings on the commissioning record. Keep the record with this manual.",
+        "text_en": "6 Commissioning\n\n1. Check that the suction strainer basket is installed and clean.\n2. Open the suction isolation valve fully. Leave the discharge valve closed.\n3. Fill the pump and the suction line with liquid. Vent the casing through the vent plug on the upper casing half until liquid without air bubbles emerges.\n4. Check the direction of rotation by switching the motor on briefly. The direction must match the arrow on the bearing housing.\n5. Start the pump. Open the discharge valve slowly within 30 seconds of start-up. Never run against a closed discharge valve for more than 30 seconds.\n6. Set the controller limits for suction pressure and strainer differential pressure (factory default: strainer dP alarm at 0.30 bar).\n7. Record suction and discharge pressure, motor current, bearing temperature and vibration at both bearings on the commissioning record. Keep the record with this manual.",
+        "acl_key": "family-pumps",
+        "cosine": 0.4648869037628174,
+        "bm25_rank": 32,
+        "vector_rank": 18,
+        "rrf": 0.023690078037904124
+      },
+      {
+        "chunk_id": "0d97bca514000bc0",
+        "doc_path": "corpus/email/HCP-350_casing_leak_FRS-P-0031_Halden_thread.pdf",
+        "doc_title": "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": 3,
+          "section_path": [],
+          "record_id": null,
+          "sender": "Stefan Wirth <s.wirth@halden-pumpen.de>",
+          "date": "Thursday, June 4, 2026 11:52 PM"
+        },
+        "header": "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+        "text_original": "To: Maria Okafor <m.okafor@corvane.com>\nCc: Tom Becker <t.becker@corvane.com>; Kenji Watanabe <k.watanabe@corvane.com>\nSubject: AW: HCP-350 casing joint leaking after seal change - FRS-P-0031 / HCP350-241187\n\nDear Ms. Okafor,\n\nI understand the frustration and I won't argue with the main point.\n\nRev E of the HCP-350 IOM is in preparation. It will include the serial-dependent torque from SB-2025-009 in sections 4.3, 8.4 and 8.7, and the seal kit change from SB-2025-018. I do not have a release date I can give you. It is with our technical documentation department, and the translations are part of the delay, because we release all languages together.\n\nAbout distribution: bulletins are sent by email to the contacts registered for each service partner, and they are posted on HaldenNet under Service > Bulletins. Manuals and bulletins are on different pages of HaldenNet, which I know is not ideal. I have checked our distribution record. SB-2025-009 was sent on 18 June 2025 to the one address we have registered for Corvane, which is a shared mailbox in Sacramento. I cannot see whether someone opened it. If you send me the names and addresses of the people who should receive pump bulletins, I will add them.\n\nYour reading of the serial ranges is correct: 45 N-m for FRS-P-0012 and TAC-P-0045, 38 N-m for GDN-P-0070.\n\nFor FRS-P-0031: I have reserved a revised casing in Aalen. As soon as Mr. Becker confirms the dye penetrant result and we have your order, it goes by air freight, normally three working days to California. The pump is outside the warranty period, so the casing would normally be charged. Given the situation with the manual, I have asked my manager to supply it at no charge. I expect an answer on Monday.",
+        "text_en": "To: Maria Okafor <m.okafor@corvane.com>\nCc: Tom Becker <t.becker@corvane.com>; Kenji Watanabe <k.watanabe@corvane.com>\nSubject: AW: HCP-350 casing joint leaking after seal change - FRS-P-0031 / HCP350-241187\n\nDear Ms. Okafor,\n\nI understand the frustration and I won't argue with the main point.\n\nRev E of the HCP-350 IOM is in preparation. It will include the serial-dependent torque from SB-2025-009 in sections 4.3, 8.4 and 8.7, and the seal kit change from SB-2025-018. I do not have a release date I can give you. It is with our technical documentation department, and the translations are part of the delay, because we release all languages together.\n\nAbout distribution: bulletins are sent by email to the contacts registered for each service partner, and they are posted on HaldenNet under Service > Bulletins. Manuals and bulletins are on different pages of HaldenNet, which I know is not ideal. I have checked our distribution record. SB-2025-009 was sent on 18 June 2025 to the one address we have registered for Corvane, which is a shared mailbox in Sacramento. I cannot see whether someone opened it. If you send me the names and addresses of the people who should receive pump bulletins, I will add them.\n\nYour reading of the serial ranges is correct: 45 N-m for FRS-P-0012 and TAC-P-0045, 38 N-m for GDN-P-0070.\n\nFor FRS-P-0031: I have reserved a revised casing in Aalen. As soon as Mr. Becker confirms the dye penetrant result and we have your order, it goes by air freight, normally three working days to California. The pump is outside the warranty period, so the casing would normally be charged. Given the situation with the manual, I have asked my manager to supply it at no charge. I expect an answer on Monday.",
+        "acl_key": "family-pumps",
+        "cosine": 0.43458032608032227,
+        "bm25_rank": 18,
+        "vector_rank": 41,
+        "rrf": 0.02272150291952272
+      },
+      {
+        "chunk_id": "fdc39325a1112937",
+        "doc_path": "corpus/manuals/Halden_HCP-350_IOM_RevD.pdf",
+        "doc_title": "Halden HCP-350 IOM Rev D",
+        "doc_type": "Installation, Operation and Maintenance Manual",
+        "revision": "D",
+        "effective_date": "2023-05-22",
+        "locator": {
+          "page": 6,
+          "section_path": [
+            "6 Commissioning"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden HCP-350 IOM Rev D | D | 6 Commissioning",
+        "text_original": "6 Commissioning\n\n1. Check that the suction strainer basket is installed and clean.\n2. Open the suction isolation valve fully. Leave the discharge valve closed.\n3. Fill the pump and the suction line with liquid. Vent the casing through the vent plug until liquid without air bubbles emerges.\n4. Check the direction of rotation by switching the motor on briefly. The direction must match the arrow on the bearing housing.\n5. Start the pump. Open the discharge valve slowly within 30 seconds of start-up. Never run against a closed discharge valve for more than 30 seconds.\n6. Set the controller limits for suction pressure and strainer differential pressure (factory default: strainer dP alarm at 0.25 bar).\n7. Record suction and discharge pressure, motor current, bearing temperature and vibration at both bearings on the commissioning record. Keep the record with this manual.",
+        "text_en": "6 Commissioning\n\n1. Check that the suction strainer basket is installed and clean.\n2. Open the suction isolation valve fully. Leave the discharge valve closed.\n3. Fill the pump and the suction line with liquid. Vent the casing through the vent plug until liquid without air bubbles emerges.\n4. Check the direction of rotation by switching the motor on briefly. The direction must match the arrow on the bearing housing.\n5. Start the pump. Open the discharge valve slowly within 30 seconds of start-up. Never run against a closed discharge valve for more than 30 seconds.\n6. Set the controller limits for suction pressure and strainer differential pressure (factory default: strainer dP alarm at 0.25 bar).\n7. Record suction and discharge pressure, motor current, bearing temperature and vibration at both bearings on the commissioning record. Keep the record with this manual.",
+        "acl_key": "family-pumps",
+        "cosine": 0.4467044174671173,
+        "bm25_rank": 39,
+        "vector_rank": 27,
+        "rrf": 0.021595262974573322
+      },
+      {
+        "chunk_id": "eec5f77b74b51c55",
+        "doc_path": "corpus/confluence/HCP-500-Maintenance-Quick-Reference.html",
+        "doc_title": "HCP-500 Maintenance Quick Reference",
+        "doc_type": "confluence",
+        "revision": "unknown",
+        "effective_date": "Apr 26, 2023",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service",
+            "HCP-500 Maintenance Quick Reference",
+            "PM intervals"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "HCP-500 Maintenance Quick Reference | Field Service › HCP-500 Maintenance Quick Reference › PM intervals",
+        "text_original": "PM intervals\n\nTask | Interval | Notes\nGrease bearings (pump and motor) | 2,000 h | 25 g per bearing, lithium complex NLGI 2. With the pump running, relief plug open. Don't overdo it\nClean suction strainer | Every 500 h | Or when the strainer dP alarm comes up. New cover gasket each time (18-1121). Basket is 18-1120\nVibration readings, both bearings | 1,000 h | Write them in MaintPro so we can trend them\nInspect mechanical seals for leakage | 4,000 h | Both sides. Kit is 18-0502, you need two\nCheck coupling alignment | 4,000 h or 12 months | Laser kit from Fresno\nMeasure wear ring clearance | 8,000 h | Limit in the manual, section 8.5\nCheck foundation bolt torque | 8,000 h |\nCalibrate PT-1 / PT-2 | 24 months | Transmitters are 19-0301",
+        "text_en": "PM intervals\n\nTask | Interval | Notes\nGrease bearings (pump and motor) | 2,000 h | 25 g per bearing, lithium complex NLGI 2. With the pump running, relief plug open. Don't overdo it\nClean suction strainer | Every 500 h | Or when the strainer dP alarm comes up. New cover gasket each time (18-1121). Basket is 18-1120\nVibration readings, both bearings | 1,000 h | Write them in MaintPro so we can trend them\nInspect mechanical seals for leakage | 4,000 h | Both sides. Kit is 18-0502, you need two\nCheck coupling alignment | 4,000 h or 12 months | Laser kit from Fresno\nMeasure wear ring clearance | 8,000 h | Limit in the manual, section 8.5\nCheck foundation bolt torque | 8,000 h |\nCalibrate PT-1 / PT-2 | 24 months | Transmitters are 19-0301",
+        "acl_key": "family-pumps",
+        "cosine": 0.4477560222148895,
+        "bm25_rank": 47,
+        "vector_rank": 26,
+        "rrf": 0.02097370136926755
+      },
+      {
+        "chunk_id": "f8cc1e10ba7cb262",
+        "doc_path": "corpus/bulletins/Halden_SB-2025-009_HCP-350_Casing_Torque.pdf",
+        "doc_title": "Halden SB-2025-009",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "effective_date": "2025-06-18",
+        "locator": {
+          "page": 1,
+          "section_path": [
+            "2 Affected products / Betroffene Produkte"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden SB-2025-009 | 0 | 2 Affected products / Betroffene Produkte",
+        "text_original": "Model: HCP-350\nSerial number range: HCP350-210001 to HCP350-239999\nCasing cover: Version 1 (original)\nCasing gasket: 1.5 mm fibre\nCasing bolt torque: 45 N-m, per IOM Rev D (unchanged)\n\nModel: HCP-350\nSerial number range: HCP350-240001 and later\nCasing cover: Version 2 (revised)\nCasing gasket: 0.8 mm aramid fibre, graphite faced\nCasing bolt torque: 38 N-m, per this bulletin\n\nModel: HCP-200\nSerial number range: all\nCasing cover: -\nCasing gasket: -\nCasing bolt torque: Not affected\n\nIdentification. Version 2 casing covers carry the cast mark \"V2\" on the flange next to the drain plug boss, and the raised gasket face is 8 mm wide instead of 12 mm. The nameplate does not show the casing version. If the nameplate is missing or not readable, use the cast mark.\n\nReplacement casing covers supplied as spare parts after January 2024 are always Version 2, whatever the serial number of the pump. A pump before HCP350-240001 that has been fitted with a replacement cover is to be treated as a Version 2 pump for all purposes of this bulletin. Record the cover change on the pump's maintenance record.",
+        "text_en": "Model: HCP-350\nSerial number range: HCP350-210001 to HCP350-239999\nCasing cover: Version 1 (original)\nCasing gasket: 1.5 mm fibre\nCasing bolt torque: 45 N-m, per IOM Rev D (unchanged)\n\nModel: HCP-350\nSerial number range: HCP350-240001 and later\nCasing cover: Version 2 (revised)\nCasing gasket: 0.8 mm aramid fibre, graphite faced\nCasing bolt torque: 38 N-m, per this bulletin\n\nModel: HCP-200\nSerial number range: all\nCasing cover: -\nCasing gasket: -\nCasing bolt torque: Not affected\n\nIdentification. Version 2 casing covers carry the cast mark \"V2\" on the flange next to the drain plug boss, and the raised gasket face is 8 mm wide instead of 12 mm. The nameplate does not show the casing version. If the nameplate is missing or not readable, use the cast mark.\n\nReplacement casing covers supplied as spare parts after January 2024 are always Version 2, whatever the serial number of the pump. A pump before HCP350-240001 that has been fitted with a replacement cover is to be treated as a Version 2 pump for all purposes of this bulletin. Record the cover change on the pump's maintenance record.",
+        "acl_key": "family-pumps",
+        "cosine": 0.4316280782222748,
+        "bm25_rank": 43,
+        "vector_rank": 49,
+        "rrf": 0.018883049790683174
+      },
+      {
+        "chunk_id": "c73398449d0d8ff6",
+        "doc_path": "corpus/confluence/HCP-500-Maintenance-Quick-Reference.html",
+        "doc_title": "HCP-500 Maintenance Quick Reference",
+        "doc_type": "confluence",
+        "revision": "unknown",
+        "effective_date": "Apr 26, 2023",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service",
+            "HCP-500 Maintenance Quick Reference",
+            "Vibration"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "HCP-500 Maintenance Quick Reference | Field Service › HCP-500 Maintenance Quick Reference › Vibration",
+        "text_original": "Vibration\n\nUnder 2.8 mm/s is good. 2.8 to 7.1 is OK but trend it. Over 7.1 the controller will alarm (P-03) and you need to do something.",
+        "text_en": "Vibration\n\nUnder 2.8 mm/s is good. 2.8 to 7.1 is OK but trend it. Over 7.1 the controller will alarm (P-03) and you need to do something.",
+        "acl_key": "family-pumps",
+        "cosine": 0.5626928806304932,
+        "bm25_rank": null,
+        "vector_rank": 1,
+        "rrf": 0.01639344262295082
+      },
+      {
+        "chunk_id": "115dc716f10dd3cd",
+        "doc_path": "corpus/email/HCP-350_casing_leak_FRS-P-0031_Halden_thread.pdf",
+        "doc_title": "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": 5,
+          "section_path": [],
+          "record_id": null,
+          "sender": "Stefan Wirth <s.wirth@halden-pumpen.de>",
+          "date": "Sunday, June 7, 2026 11:31 PM"
+        },
+        "header": "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+        "text_original": "To: Tom Becker <t.becker@corvane.com>\nCc: Maria Okafor <m.okafor@corvane.com>; Kenji Watanabe <k.watanabe@corvane.com>\nSubject: AW: HCP-350 casing joint leaking after seal change - FRS-P-0031 / HCP350-241187\n\nDear Tom,\n\nthank you for the photos. That is the typical crack from over-torque. I have added your case to our internal report on this casing.\n\nYour order arrived on Friday evening. The casing leaves Aalen today by air freight and delivery in Fresno is planned for Wednesday 10 June. A new casing gasket is in the box, and yes, it is the same gasket as before.\n\nMy manager has approved the casing at no charge. Freight is also on us. Labour is not covered, I am sorry I could not do more there.\n\nFor the assembly:\n- clean the gasket face on the cover side and check that it is flat and undamaged before you fit the new casing,\n- new gasket, threads lightly oiled,\n- 38 N-m in a cross pattern, two passes, and not more,\n- if you see moisture at the joint after start-up, do not re-tighten it, contact me first.\n\nMs. Okafor, I have added your address and Mr. Watanabe's to the distribution for pump bulletins from today.",
+        "text_en": "To: Tom Becker <t.becker@corvane.com>\nCc: Maria Okafor <m.okafor@corvane.com>; Kenji Watanabe <k.watanabe@corvane.com>\nSubject: AW: HCP-350 casing joint leaking after seal change - FRS-P-0031 / HCP350-241187\n\nDear Tom,\n\nthank you for the photos. That is the typical crack from over-torque. I have added your case to our internal report on this casing.\n\nYour order arrived on Friday evening. The casing leaves Aalen today by air freight and delivery in Fresno is planned for Wednesday 10 June. A new casing gasket is in the box, and yes, it is the same gasket as before.\n\nMy manager has approved the casing at no charge. Freight is also on us. Labour is not covered, I am sorry I could not do more there.\n\nFor the assembly:\n- clean the gasket face on the cover side and check that it is flat and undamaged before you fit the new casing,\n- new gasket, threads lightly oiled,\n- 38 N-m in a cross pattern, two passes, and not more,\n- if you see moisture at the joint after start-up, do not re-tighten it, contact me first.\n\nMs. Okafor, I have added your address and Mr. Watanabe's to the distribution for pump bulletins from today.",
+        "acl_key": "family-pumps",
+        "cosine": null,
+        "bm25_rank": 3,
+        "vector_rank": null,
+        "rrf": 0.015873015873015872
+      },
+      {
+        "chunk_id": "327ad97468d7e01a",
+        "doc_path": "corpus/confluence/Work-Order-Writing-Guide.html",
+        "doc_title": "Work Order Writing Guide",
+        "doc_type": "Work Order Writing Guide",
+        "revision": "unknown",
+        "effective_date": "Jan 21, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service: Work Order Writing Guide",
+            "Why this matters"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Work Order Writing Guide | Field Service: Work Order Writing Guide › Why this matters",
+        "text_original": "Every work order is approved by a supervisor before the work is scheduled. The supervisor decides who goes, when, and with what parts, from what you wrote. They usually haven't seen the unit. If the work order says \"fix compressor\", they have to call you, and if they can't reach you, the job waits. Most of the delays I see in the scheduling queue are work orders that are missing one of the fields below.\n\nThe work order is also the record. Six months from now, somebody standing in front of the same unit will read it to find out what was done and why. Write it for that person.",
+        "text_en": "Every work order is approved by a supervisor before the work is scheduled. The supervisor decides who goes, when, and with what parts, from what you wrote. They usually haven't seen the unit. If the work order says \"fix compressor\", they have to call you, and if they can't reach you, the job waits. Most of the delays I see in the scheduling queue are work orders that are missing one of the fields below.\n\nThe work order is also the record. Six months from now, somebody standing in front of the same unit will read it to find out what was done and why. Write it for that person.",
+        "acl_key": "",
+        "cosine": null,
+        "bm25_rank": 5,
+        "vector_rank": null,
+        "rrf": 0.015384615384615385
+      },
+      {
+        "chunk_id": "3cb37840f8b133da",
+        "doc_path": "corpus/manuals/Halden_HCP-500_IOM_RevB.pdf",
+        "doc_title": "Halden HCP-500 IOM Rev B",
+        "doc_type": "Installation, Operation and Maintenance Manual",
+        "revision": "B",
+        "effective_date": "2025-01-30",
+        "locator": {
+          "page": 6,
+          "section_path": [
+            "7 Operation"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden HCP-500 IOM Rev B | B | 7 Operation",
+        "text_original": "7 Operation\n\n7.1 Operating range\nOperate the pump between 40% and 110% of the flow at best efficiency point (BEP). Continuous operation below 25% of BEP flow causes recirculation, temperature rise and vibration and is not permitted.\n\n7.2 Suction conditions\nThe NPSH available at the pump inlet must exceed the NPSH required (4.8 m at the rated point) by a margin of at least 1.0 m. NPSH available falls when the suction strainer clogs, when the suction isolation valve is partly closed, when the liquid level in the supply tank drops, or when the liquid temperature rises. Insufficient NPSH causes cavitation: a crackling noise like gravel in the pump, fluctuating discharge pressure and, over time, pitting damage to the impeller inlet.\n\n7.3 Controller display\nThe PC-3 shows the operating values on the main screen and active faults as a P-code with a short text. Faults are latched until acknowledged. Pressing RESET acknowledges the fault once its cause has cleared. The last 200 events are stored in the event log (Menu > Service > Event log) and can be exported to USB.",
+        "text_en": "7 Operation\n\n7.1 Operating range\nOperate the pump between 40% and 110% of the flow at best efficiency point (BEP). Continuous operation below 25% of BEP flow causes recirculation, temperature rise and vibration and is not permitted.\n\n7.2 Suction conditions\nThe NPSH available at the pump inlet must exceed the NPSH required (4.8 m at the rated point) by a margin of at least 1.0 m. NPSH available falls when the suction strainer clogs, when the suction isolation valve is partly closed, when the liquid level in the supply tank drops, or when the liquid temperature rises. Insufficient NPSH causes cavitation: a crackling noise like gravel in the pump, fluctuating discharge pressure and, over time, pitting damage to the impeller inlet.\n\n7.3 Controller display\nThe PC-3 shows the operating values on the main screen and active faults as a P-code with a short text. Faults are latched until acknowledged. Pressing RESET acknowledges the fault once its cause has cleared. The last 200 events are stored in the event log (Menu > Service > Event log) and can be exported to USB.",
+        "acl_key": "family-pumps",
+        "cosine": 0.5220168828964233,
+        "bm25_rank": null,
+        "vector_rank": 5,
+        "rrf": 0.015384615384615385
+      },
+      {
+        "chunk_id": "28294c8f4338fa83",
+        "doc_path": "corpus/email/HCP-350_casing_leak_FRS-P-0031_Halden_thread.pdf",
+        "doc_title": "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": 2,
+          "section_path": [],
+          "record_id": null,
+          "sender": "Maria Okafor <m.okafor@corvane.com>",
+          "date": "Thursday, June 4, 2026 8:17 AM"
+        },
+        "header": "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+        "text_original": "To: Stefan Wirth <s.wirth@halden-pumpen.de>\nCc: Tom Becker <t.becker@corvane.com>; Kenji Watanabe <k.watanabe@corvane.com>\nSubject: RE: AW: HCP-350 casing joint leaking after seal change - FRS-P-0031 / HCP350-241187\n\nStefan,\n\nThanks for the quick answer. I'm the senior pump technician on the Fresno contract, and I'm copying Kenji Watanabe, our team lead.\n\nI have to push back on the last line, though. Tom did exactly what the manual says. Rev D is the IOM on HaldenNet. I downloaded it again this morning to be sure: it still says 45 N-m in 4.3, 8.4 and 8.7, with no mention of serial numbers and no mention of the bulletin. Rev D is from 2023. The bulletin is from June 2025. So for a year there has been a torque that cracks the casing on the newer pumps, and the manual every technician opens still has the old number.\n\nTwo questions:\n1. Why was the IOM never updated? If the torque depends on the serial, that belongs in the manual, in the torque table, not in a separate PDF that someone has to know exists.\n2. Why didn't the bulletin reach us? I've checked our manual library, which is what the technicians open on their tablets on site, and SB-2025-009 isn't in it. Nobody on the NA pump team remembers receiving it. If it was sent to Corvane, tell me where it went and we'll fix our side.\n\nI know section 1.1 says bulletins take precedence. That only works if the bulletin is somewhere the technician will see it.\n\nSeparately, I've gone through our fleet register for the other HCP-350s we look after. FRS-P-0012 (HCP350-221034) and TAC-P-0045 (HCP350-231650) are older serials, so 45 N-m is still right for those if I read the bulletin correctly. GDN-P-0070 in Gdansk, HCP350-250877, is in the new range. That one belongs to our EU team and I'll make sure they know, because they'll be working from the same Rev D.\n\nMaria",
+        "text_en": "To: Stefan Wirth <s.wirth@halden-pumpen.de>\nCc: Tom Becker <t.becker@corvane.com>; Kenji Watanabe <k.watanabe@corvane.com>\nSubject: RE: AW: HCP-350 casing joint leaking after seal change - FRS-P-0031 / HCP350-241187\n\nStefan,\n\nThanks for the quick answer. I'm the senior pump technician on the Fresno contract, and I'm copying Kenji Watanabe, our team lead.\n\nI have to push back on the last line, though. Tom did exactly what the manual says. Rev D is the IOM on HaldenNet. I downloaded it again this morning to be sure: it still says 45 N-m in 4.3, 8.4 and 8.7, with no mention of serial numbers and no mention of the bulletin. Rev D is from 2023. The bulletin is from June 2025. So for a year there has been a torque that cracks the casing on the newer pumps, and the manual every technician opens still has the old number.\n\nTwo questions:\n1. Why was the IOM never updated? If the torque depends on the serial, that belongs in the manual, in the torque table, not in a separate PDF that someone has to know exists.\n2. Why didn't the bulletin reach us? I've checked our manual library, which is what the technicians open on their tablets on site, and SB-2025-009 isn't in it. Nobody on the NA pump team remembers receiving it. If it was sent to Corvane, tell me where it went and we'll fix our side.\n\nI know section 1.1 says bulletins take precedence. That only works if the bulletin is somewhere the technician will see it.\n\nSeparately, I've gone through our fleet register for the other HCP-350s we look after. FRS-P-0012 (HCP350-221034) and TAC-P-0045 (HCP350-231650) are older serials, so 45 N-m is still right for those if I read the bulletin correctly. GDN-P-0070 in Gdansk, HCP350-250877, is in the new range. That one belongs to our EU team and I'll make sure they know, because they'll be working from the same Rev D.\n\nMaria",
+        "acl_key": "family-pumps",
+        "cosine": null,
+        "bm25_rank": 7,
+        "vector_rank": null,
+        "rrf": 0.014925373134328358
+      },
+      {
+        "chunk_id": "66bb4cdcda36cf6c",
+        "doc_path": "corpus/confluence/Pump-Troubleshooting-Playbook.html",
+        "doc_title": "Pump Troubleshooting Playbook",
+        "doc_type": "Field Service wiki page",
+        "revision": "unknown",
+        "effective_date": "Sep 08, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Pump Troubleshooting Playbook",
+            "Casing joint weeping after a seal change"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Casing joint weeping after a seal change",
+        "text_original": "Check the bulletins for the serial before you torque casing bolts. Halden revised the casing on newer HCP-350 serials and changed the casing bolt torque in Service Bulletin SB-2025-009. The manual (Rev D) was never updated, so the manual value is wrong for those pumps. Over-torquing cracks the gasket seat. SB-2025-009 also has a note about the HCP-500, so read it to the end if you're on a 500.\n\nThis is what happened on FRS-P-0031 in June 2026. Tom did a seal change, torqued the casing bolts to the manual value like any of us would have, and the joint started weeping. When we opened it again the gasket seat was cracked. The serial was in the bulletin's range. A new casing half went on and it was torqued to the bulletin value. Case 00041988, and there's an email thread with Stefan Wirth at Halden if you want the background.\n\nI asked Halden why the manual wasn't revised. No answer yet. Until there is one: serial first, bulletin second, manual third, for anything with a torque value.",
+        "text_en": "Check the bulletins for the serial before you torque casing bolts. Halden revised the casing on newer HCP-350 serials and changed the casing bolt torque in Service Bulletin SB-2025-009. The manual (Rev D) was never updated, so the manual value is wrong for those pumps. Over-torquing cracks the gasket seat. SB-2025-009 also has a note about the HCP-500, so read it to the end if you're on a 500.\n\nThis is what happened on FRS-P-0031 in June 2026. Tom did a seal change, torqued the casing bolts to the manual value like any of us would have, and the joint started weeping. When we opened it again the gasket seat was cracked. The serial was in the bulletin's range. A new casing half went on and it was torqued to the bulletin value. Case 00041988, and there's an email thread with Stefan Wirth at Halden if you want the background.\n\nI asked Halden why the manual wasn't revised. No answer yet. Until there is one: serial first, bulletin second, manual third, for anything with a torque value.",
+        "acl_key": "family-pumps",
+        "cosine": null,
+        "bm25_rank": 9,
+        "vector_rank": null,
+        "rrf": 0.014492753623188406
+      },
+      {
+        "chunk_id": "715ebfc08381ca70",
+        "doc_path": "corpus/manuals/Halden_HCP-350_IOM_RevD.pdf",
+        "doc_title": "Halden HCP-350 IOM Rev D",
+        "doc_type": "Installation, Operation and Maintenance Manual",
+        "revision": "D",
+        "effective_date": "2023-05-22",
+        "locator": {
+          "page": 6,
+          "section_path": [
+            "7 Operation"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden HCP-350 IOM Rev D | D | 7 Operation",
+        "text_original": "7 Operation\n\n7.1 Operating range\nOperate the pump between 40% and 110% of the flow at best efficiency point (BEP). Continuous operation below 25% of BEP flow causes recirculation, temperature rise and vibration and is not permitted.\n\n7.2 Suction conditions\nThe NPSH available at the pump inlet must exceed the NPSH required (4.1 m at the rated point) by a margin of at least 1.0 m. NPSH available falls when the suction strainer clogs, when the suction isolation valve is partly closed, when the liquid level in the supply tank drops, or when the liquid temperature rises. Insufficient NPSH causes cavitation: a crackling noise like gravel in the pump, fluctuating discharge pressure and, over time, pitting damage to the impeller inlet.\n\n7.3 Controller display\nThe PC-3 shows the operating values on the main screen and active faults as a P-code with a short text. Faults are latched until acknowledged. Pressing RESET acknowledges the fault once its cause has cleared. The last 200 events are stored in the event log (Menu > Service > Event log) and can be exported to USB.",
+        "text_en": "7 Operation\n\n7.1 Operating range\nOperate the pump between 40% and 110% of the flow at best efficiency point (BEP). Continuous operation below 25% of BEP flow causes recirculation, temperature rise and vibration and is not permitted.\n\n7.2 Suction conditions\nThe NPSH available at the pump inlet must exceed the NPSH required (4.1 m at the rated point) by a margin of at least 1.0 m. NPSH available falls when the suction strainer clogs, when the suction isolation valve is partly closed, when the liquid level in the supply tank drops, or when the liquid temperature rises. Insufficient NPSH causes cavitation: a crackling noise like gravel in the pump, fluctuating discharge pressure and, over time, pitting damage to the impeller inlet.\n\n7.3 Controller display\nThe PC-3 shows the operating values on the main screen and active faults as a P-code with a short text. Faults are latched until acknowledged. Pressing RESET acknowledges the fault once its cause has cleared. The last 200 events are stored in the event log (Menu > Service > Event log) and can be exported to USB.",
+        "acl_key": "family-pumps",
+        "cosine": 0.5110586881637573,
+        "bm25_rank": null,
+        "vector_rank": 9,
+        "rrf": 0.014492753623188406
+      },
+      {
+        "chunk_id": "386a287b2a299ba9",
+        "doc_path": "corpus/confluence/HCP-500-Maintenance-Quick-Reference.html",
+        "doc_title": "HCP-500 Maintenance Quick Reference",
+        "doc_type": "confluence",
+        "revision": "unknown",
+        "effective_date": "Apr 26, 2023",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service",
+            "HCP-500 Maintenance Quick Reference",
+            "Comments"
+          ],
+          "record_id": null,
+          "sender": "Kenji Watanabe",
+          "date": "Jul 19, 2023 18:20"
+        },
+        "header": "HCP-500 Maintenance Quick Reference | Field Service › HCP-500 Maintenance Quick Reference › Comments",
+        "text_original": "Used this for TAC-P-0044 commissioning. Strainer was full of welding slag on day 3, the trainer was right. Thanks Tom.",
+        "text_en": "Used this for TAC-P-0044 commissioning. Strainer was full of welding slag on day 3, the trainer was right. Thanks Tom.",
+        "acl_key": "family-pumps",
+        "cosine": 0.509853184223175,
+        "bm25_rank": null,
+        "vector_rank": 10,
+        "rrf": 0.014285714285714285
+      },
+      {
+        "chunk_id": "a731c1401e67f682",
+        "doc_path": "corpus/bulletins/Halden_SB-2025-018_Seal_Kit_Supersession.pdf",
+        "doc_title": "Halden SB-2025-018",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "effective_date": "2025-11-04",
+        "locator": {
+          "page": 1,
+          "section_path": [
+            "3 Background / Hintergrund"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden SB-2025-018 | 0 | 3 Background / Hintergrund",
+        "text_original": "Field data collected by Halden service partners in 2024 and 2025 show that on HCP-350 pumps in water-glycol circuits with suspended solids, and on pumps with frequent start-stop duty (more than 20 starts per day), the carbon face of kit 18-0355 wears faster than expected. Typical findings are grooving of the carbon face and blistering after repeated thermal shock. The result is seal leakage (fault P-04) well before the 4,000 h inspection interval (IOM task M-03).\n\nSilicon carbide against silicon carbide is more resistant to abrasive particles and does not blister. Bench tests at Aalen with 30% propylene glycol and 50 mg/l of test dust gave a mean face wear of less than one third of the carbon face. In the same tests the SiC/SiC pairing was more sensitive to dry running. The instruction never to start the pump unless the casing is completely filled and vented (IOM chapters 2.3 and 6) therefore becomes more important, not less.",
+        "text_en": "Field data collected by Halden service partners in 2024 and 2025 show that on HCP-350 pumps in water-glycol circuits with suspended solids, and on pumps with frequent start-stop duty (more than 20 starts per day), the carbon face of kit 18-0355 wears faster than expected. Typical findings are grooving of the carbon face and blistering after repeated thermal shock. The result is seal leakage (fault P-04) well before the 4,000 h inspection interval (IOM task M-03).\n\nSilicon carbide against silicon carbide is more resistant to abrasive particles and does not blister. Bench tests at Aalen with 30% propylene glycol and 50 mg/l of test dust gave a mean face wear of less than one third of the carbon face. In the same tests the SiC/SiC pairing was more sensitive to dry running. The instruction never to start the pump unless the casing is completely filled and vented (IOM chapters 2.3 and 6) therefore becomes more important, not less.",
+        "acl_key": "family-pumps",
+        "cosine": null,
+        "bm25_rank": 11,
+        "vector_rank": null,
+        "rrf": 0.014084507042253521
+      },
+      {
+        "chunk_id": "79104e05f08eaede",
+        "doc_path": "corpus/manuals/Halden_HCP-200_Betriebsanleitung_1998_scan.pdf",
+        "doc_title": "Halden HCP-200 Betriebsanleitung 1998 (scan)",
+        "doc_type": "Betriebsanleitung / Operating Instructions",
+        "revision": "Revision A",
+        "effective_date": "03/1998",
+        "locator": {
+          "page": 7,
+          "section_path": [
+            "8 Störungen / Faults"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden HCP-200 Betriebsanleitung 1998 (scan) | Revision A | 8 Störungen / Faults",
+        "text_original": "8 Störungen\nFaults\n\n8.1 Störmeldungen der Steuerung PC-1 / Fault messages PC-1\nCode: P-01\nStörung / Fault: Trockenlauf / Dry running\nUrsache / Cause: Behälter leer, Pumpe nicht entlüftet / Tank empty, pump not vented\nAbhilfe / Remedy: Pumpe füllen und entlüften / Fill and vent pump\n\nCode: P-02\nStörung / Fault: Motor überlastet / Motor overload\nUrsache / Cause: Laufrad schleift, Dichte zu hoch / Impeller rubbing, density too high\nAbhilfe / Remedy: Strom und Spaltmaß prüfen (7.3) / Check current and clearance (7.3)\n\nCode: P-03\nStörung / Fault: Lagertemperatur über 85 °C / Bearing temperature above 85 °C\nUrsache / Cause: Zu viel oder zu wenig Fett, Ausrichtung / Too much or too little grease, alignment\nAbhilfe / Remedy: Schmierung und Kupplung prüfen / Check lubrication and coupling\n\nCode: P-04\nStörung / Fault: Leckage Gleitringdichtung / Leakage mechanical seal\nUrsache / Cause: Dichtflächen verschlissen / Seal faces worn\nAbhilfe / Remedy: Dichtung wechseln (7.4) / Change seal (7.4)\n\nCode: P-05\nStörung / Fault: Saugdruck zu niedrig / Suction pressure too low\nUrsache / Cause: Saugsieb verstopft, Schieber nicht offen / Strainer clogged, valve not open\nAbhilfe / Remedy: Sieb reinigen, Schieber öffnen / Clear strainer, open valve\n\nCode: P-06\nStörung / Fault: Fühlerstörung / Sensor fault\nUrsache / Cause: Kabelbruch, Feuchtigkeit / Wire break, moisture\nAbhilfe / Remedy: Anschlüsse prüfen / Check connections\n\n8.2 Störungen ohne Meldung / Faults without message\nStörung / Fault: Förderstrom zu gering / Flow rate too low\nMögliche Ursache / Possible cause: Spaltmaß zu groß, falsche Drehrichtung, Luft in der Saugleitung / Clearance too big, wrong direction of rotation, air in suction pipe\nAbhilfe / Remedy: Spaltmaß messen (7.3), Drehrichtung prüfen / Measure clearance (7.3), check rotation\n\nStörung / Fault: Pumpe laut / Pump noisy\nMögliche Ursache / Possible cause: Kavitation, Lagerschaden / Cavitation, bearing damage\nAbhilfe / Remedy: Saugseite prüfen, Lager wechseln / Check suction side, change bearings\n\nStörung / Fault: Pumpe fördert nicht / Pump does not deliver\nMögliche Ursache / Possible cause: Nicht entlüftet, Saugschieber zu / Not vented, suction valve closed\nAbhilfe / Remedy: Entlüften, Schieber öffnen / Vent, open valve\n\nStörung / Fault: Motor wird heiß / Motor gets hot\nMögliche Ursache / Possible cause: Betrieb weit rechts vom Bestpunkt / Operation far right of best point\nAbhilfe / Remedy: Druckschieber drosseln / Throttle pressure valve",
+        "text_en": "8 Faults\n\n8.1 PC-1 controller fault messages\nP-01 — Dry running. Cause: tank empty, pump not vented. Remedy: fill and vent pump.\nP-02 — Motor overload. Cause: impeller rubbing, density too high. Remedy: check current and clearance (7.3).\nP-03 — Bearing temperature above 85 °C. Cause: too much or too little grease, alignment. Remedy: check lubrication and coupling.\nP-04 — Mechanical-seal leakage. Cause: seal faces worn. Remedy: change seal (7.4).\nP-05 — Suction pressure too low. Cause: strainer clogged, valve not open. Remedy: clear strainer and open valve.\nP-06 — Sensor fault. Cause: wire break, moisture. Remedy: check connections.\n\n8.2 Faults without a message\nFlow rate too low. Possible causes: clearance too large, incorrect direction of rotation, air in suction pipe. Remedy: measure clearance (7.3) and check direction of rotation.\n\nPump noisy. Possible causes: cavitation, bearing damage. Remedy: check suction side and change bearings.\n\nPump does not deliver. Possible causes: not vented, suction valve closed. Remedy: vent and open valve.\n\nMotor gets hot. Possible cause: operation far to the right of the best point. Remedy: throttle discharge valve.",
+        "acl_key": "family-pumps",
+        "cosine": 0.49996376037597656,
+        "bm25_rank": null,
+        "vector_rank": 11,
+        "rrf": 0.014084507042253521
+      },
+      {
+        "chunk_id": "c8e2a61622f6ed4a",
+        "doc_path": "corpus/confluence/HCP-500-Maintenance-Quick-Reference.html",
+        "doc_title": "HCP-500 Maintenance Quick Reference",
+        "doc_type": "confluence",
+        "revision": "unknown",
+        "effective_date": "Apr 26, 2023",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service",
+            "HCP-500 Maintenance Quick Reference",
+            "Things the trainer stressed"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "HCP-500 Maintenance Quick Reference | Field Service › HCP-500 Maintenance Quick Reference › Things the trainer stressed",
+        "text_original": "Things the trainer stressed\n\n- Suction isolation valve fully open in operation. No throttling on the suction side, ever.\n- Never run against a closed discharge valve for more than 30 seconds.\n- Casing bolts in a cross pattern, two passes. Torque is in the manual. Don't overtighten, the casing gasket seat can crack.\n- O-rings on the seals: water or glycerine only.",
+        "text_en": "Things the trainer stressed\n\n- Suction isolation valve fully open in operation. No throttling on the suction side, ever.\n- Never run against a closed discharge valve for more than 30 seconds.\n- Casing bolts in a cross pattern, two passes. Torque is in the manual. Don't overtighten, the casing gasket seat can crack.\n- O-rings on the seals: water or glycerine only.",
+        "acl_key": "family-pumps",
+        "cosine": 0.486789733171463,
+        "bm25_rank": null,
+        "vector_rank": 13,
+        "rrf": 0.0136986301369863
+      }
+    ]
+  },
+  "judgement": {
+    "key_points": [
+      {
+        "point": "P-07 indicates cavitation",
+        "verdict": "present",
+        "reason": "The copilot explicitly states that P-07 means cavitation."
+      },
+      {
+        "point": "Cavitation is triggered by suction-pressure fluctuation greater than 15% for 10 seconds",
+        "verdict": "present",
+        "reason": "The copilot says PC-3 detects suction-pressure fluctuation above 15% for 10 seconds."
+      },
+      {
+        "point": "The cause is insufficient NPSH available",
+        "verdict": "present",
+        "reason": "The copilot states that these conditions reduce available NPSH and that insufficient NPSH causes cavitation."
+      },
+      {
+        "point": "First read strainer differential pressure at PI-01/PI-02",
+        "verdict": "present",
+        "reason": "The copilot instructs the technician to first read strainer differential pressure at PI-01/PI-02."
+      },
+      {
+        "point": "If differential pressure exceeds 0.30 bar, clean the suction strainer",
+        "verdict": "present",
+        "reason": "The copilot says to clean the strainer if the differential pressure exceeds 0.30 bar."
+      },
+      {
+        "point": "Use section 8.3 for suction-strainer cleaning",
+        "verdict": "missing",
+        "reason": "The copilot provides additional cleaning details but does not reference section 8.3."
+      },
+      {
+        "point": "Afterward, confirm the suction isolation valve is fully open",
+        "verdict": "present",
+        "reason": "The copilot instructs the technician to confirm the suction isolation valve is fully open after cleaning."
+      }
+    ],
+    "constraints": [],
+    "verdict": "partially_correct"
+  }
+}

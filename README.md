@@ -84,3 +84,9 @@ I used Claude Code as my AI agent across design and implementation.
   corrupt and empty files, the scanned manual, duplicates, contradicting sources); I made the design decisions.
 - **Implementation.** Step by step: the agent proposed each code snippet, I reviewed it and changed it where
   needed, and only then was it written. Every live model run was approved before it ran.
+
+## Results
+
+Correctness on the 10 provided questions: **5 of 10 correct**, 5 partially correct, 0 incorrect
+(`artifacts/eval_results/eval_questions_20261028_051529/summary.json`; one file per question with the
+judge's grading of every key point). Run with `.venv/bin/copilot eval`.

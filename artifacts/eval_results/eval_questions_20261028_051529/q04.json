@@ -1,0 +1,1307 @@
+{
+  "question": {
+    "id": "q04",
+    "user_id": "u04",
+    "question": "What torque do I use on the casing bolts for FRS-P-0031 after a seal change?",
+    "reference_answer": "38 N-m, cross pattern, two passes. FRS-P-0031 is an HCP-350 with serial HCP350-241187, which has the revised casing covered by Halden bulletin SB-2025-009 (serials from HCP350-240001). The 45 N-m in IOM Rev D applies only to earlier serials; torquing this unit to 45 N-m cracked the gasket seat in June 2026 (case 00041988)."
+  },
+  "result": {
+    "question": "What torque do I use on the casing bolts for FRS-P-0031 after a seal change?",
+    "user_id": "u04",
+    "status": "answered",
+    "message": null,
+    "summary": [
+      {
+        "sentence": "Use 38 N·m—not 45 N·m—on FRS-P-0031, an HCP-350 with serial HCP350-241187.",
+        "sources": [
+          "S1",
+          "S2",
+          "S3"
+        ]
+      },
+      {
+        "sentence": "SB-2025-009 Rev 0 supersedes IOM Rev D casing-bolt torque for HCP-350 serials HCP350-240001 onward and any pump with a Version 2 cover; 45 N·m remains valid only for earlier serials with the original cover and can crack the revised cover’s gasket seat.",
+        "sources": [
+          "S4"
+        ]
+      },
+      {
+        "sentence": "Sources disagree on the pre-closure instruction: S6 calls for cleaning and inspecting both gasket seats for cracks, preferably with dye penetrant, and fitting a new Version 2 0.8 mm graphite-faced aramid-fibre gasket—not a reused gasket or a 1.5 mm Version 1 gasket—while S1 and S7 contradict this claim.",
+        "sources": [
+          "S6",
+          "S1",
+          "S7"
+        ]
+      },
+      {
+        "sentence": "Lightly oil the property-class 8.8 bolt threads and use a calibrated torque wrench in a cross pattern, approximately 20 N·m on the first pass and 38 N·m on the second; do not use impact tools or lower-friction anti-seize paste.",
+        "sources": [
+          "S5"
+        ]
+      },
+      {
+        "sentence": "After the first 24 hours at operating temperature, check torque once at 38 N·m without exceeding it, and record the applied torque and SB-2025-009 reference in the maintenance record.",
+        "sources": [
+          "S5"
+        ]
+      },
+      {
+        "sentence": "If the joint weeps after start-up, do not tighten further: Halden’s instruction for FRS-P-0031 is to contact support first; the bulletin requires stopping, isolating and draining a leaking pump before opening the joint and dye-penetrant inspecting the seat, then replacing the gasket if uncracked or the Version 2 cover and gasket if cracked, with no welding, filler or liquid-sealant repairs.",
+        "sources": [
+          "S8"
+        ]
+      },
+      {
+        "sentence": "FRS-P-0031 previously received 45 N·m after its June 2, 2026 seal change under WO 229636; weeping was recorded June 3 under WO 229658, and cracks at two bolt holes were confirmed June 4 under WO 229790.",
+        "sources": [
+          "S2"
+        ]
+      },
+      {
+        "sentence": "That incident, case 00041988, was resolved June 11, 2026 by fitting a new casing half and gasket, tightening to 38 N·m in a two-pass cross pattern, and confirming a dry joint after 24 hours; the case closed June 12.",
+        "sources": [
+          "S3"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "sentence": "Use 38 N·m—not 45 N·m—on FRS-P-0031, an HCP-350 with serial HCP350-241187.",
+        "source": "S1",
+        "chunk_id": "243af2898a8522ce",
+        "title": "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+        "location": "p.1 · Stefan Wirth <s.wirth@halden-pumpen.de>, Wednesday, June 3, 2026 11:08 PM",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Contradicted",
+        "evidence": "To your question 1: the gasket is the same part, there is no different gasket."
+      },
+      {
+        "sentence": "Use 38 N·m—not 45 N·m—on FRS-P-0031, an HCP-350 with serial HCP350-241187.",
+        "source": "S2",
+        "chunk_id": "e8ae032d05bd0734",
+        "title": "MaintPro history NA",
+        "location": "229636 · TBECKER, 06/02/2026",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Asset: FRS-P-0031\nModel: HCP-350\nSerial: HCP350-241187"
+      },
+      {
+        "sentence": "Use 38 N·m—not 45 N·m—on FRS-P-0031, an HCP-350 with serial HCP350-241187.",
+        "source": "S3",
+        "chunk_id": "35bb59f86fa36562",
+        "title": "Salesforce cases NA",
+        "location": "5008d000002p9rO8Bm · 2026-06-03T16:15:00.000+0000",
+        "doc_type": "Salesforce Case export",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Halden says this serial is in SB-2025-009, revised casing, 38 N-m not 45."
+      },
+      {
+        "sentence": "SB-2025-009 Rev 0 supersedes IOM Rev D casing-bolt torque for HCP-350 serials HCP350-240001 onward and any pump with a Version 2 cover; 45 N·m remains valid only for earlier serials with the original cover and can crack the revised cover’s gasket seat.",
+        "source": "S4",
+        "chunk_id": "fb3937653b365307",
+        "title": "Halden SB-2025-009",
+        "location": "p.3 · 7 Documentation affected / Betroffene Dokumentation",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "date": "2025-06-18",
+        "status": "Supported",
+        "evidence": "For pumps from serial HCP350-240001, and for pumps fitted with a Version 2 cover, this bulletin supersedes the casing bolt torque given in HDN-IOM-350 Rev D, sections 4.3 (Technical data), 8.4 (Replacing the mechanical seal) and 8.7 (Tightening torques). For earlier serials with the original cover the IOM values remain valid."
+      },
+      {
+        "sentence": "Sources disagree on the pre-closure instruction: S6 calls for cleaning and inspecting both gasket seats for cracks, preferably with dye penetrant, and fitting a new Version 2 0.8 mm graphite-faced aramid-fibre gasket—not a reused gasket or a 1.5 mm Version 1 gasket—while S1 and S7 contradict this claim.",
+        "source": "S6",
+        "chunk_id": "f8cc1e10ba7cb262",
+        "title": "Halden SB-2025-009",
+        "location": "p.1 · 2 Affected products / Betroffene Produkte",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "date": "2025-06-18",
+        "status": "Supported",
+        "evidence": "Casing gasket: 0.8 mm aramid fibre, graphite faced\nCasing bolt torque: 38 N-m, per this bulletin"
+      },
+      {
+        "sentence": "Sources disagree on the pre-closure instruction: S6 calls for cleaning and inspecting both gasket seats for cracks, preferably with dye penetrant, and fitting a new Version 2 0.8 mm graphite-faced aramid-fibre gasket—not a reused gasket or a 1.5 mm Version 1 gasket—while S1 and S7 contradict this claim.",
+        "source": "S1",
+        "chunk_id": "243af2898a8522ce",
+        "title": "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+        "location": "p.1 · Stefan Wirth <s.wirth@halden-pumpen.de>, Wednesday, June 3, 2026 11:08 PM",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Contradicted",
+        "evidence": "To your question 1: the gasket is the same part, there is no different gasket."
+      },
+      {
+        "sentence": "Sources disagree on the pre-closure instruction: S6 calls for cleaning and inspecting both gasket seats for cracks, preferably with dye penetrant, and fitting a new Version 2 0.8 mm graphite-faced aramid-fibre gasket—not a reused gasket or a 1.5 mm Version 1 gasket—while S1 and S7 contradict this claim.",
+        "source": "S7",
+        "chunk_id": "115dc716f10dd3cd",
+        "title": "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+        "location": "p.5 · Stefan Wirth <s.wirth@halden-pumpen.de>, Sunday, June 7, 2026 11:31 PM",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Contradicted",
+        "evidence": "A new casing gasket is in the box, and yes, it is the same gasket as before."
+      },
+      {
+        "sentence": "Lightly oil the property-class 8.8 bolt threads and use a calibrated torque wrench in a cross pattern, approximately 20 N·m on the first pass and 38 N·m on the second; do not use impact tools or lower-friction anti-seize paste.",
+        "source": "S5",
+        "chunk_id": "16e73ea02ff60d65",
+        "title": "Halden SB-2025-009",
+        "location": "p.2 · 5 Corrective action / Massnahmen › 5.1 Every time the casing joint of an affected pump is closed",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "date": "2025-06-18",
+        "status": "Supported",
+        "evidence": "Lightly oil the bolt threads (property class 8.8). Do not use anti-seize paste with a lower friction value; it raises the clamping force at the same torque.\n5. Tighten the casing bolts in a cross pattern in two passes: first pass to approximately 20 N-m, second pass to 38 N-m. Use a calibrated torque wrench. Impact tools are not permitted on this joint."
+      },
+      {
+        "sentence": "After the first 24 hours at operating temperature, check torque once at 38 N·m without exceeding it, and record the applied torque and SB-2025-009 reference in the maintenance record.",
+        "source": "S5",
+        "chunk_id": "16e73ea02ff60d65",
+        "title": "Halden SB-2025-009",
+        "location": "p.2 · 5 Corrective action / Massnahmen › 5.1 Every time the casing joint of an affected pump is closed",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "date": "2025-06-18",
+        "status": "Supported",
+        "evidence": "Lightly oil the bolt threads (property class 8.8). Do not use anti-seize paste with a lower friction value; it raises the clamping force at the same torque.\n5. Tighten the casing bolts in a cross pattern in two passes: first pass to approximately 20 N-m, second pass to 38 N-m. Use a calibrated torque wrench. Impact tools are not permitted on this joint."
+      },
+      {
+        "sentence": "If the joint weeps after start-up, do not tighten further: Halden’s instruction for FRS-P-0031 is to contact support first; the bulletin requires stopping, isolating and draining a leaking pump before opening the joint and dye-penetrant inspecting the seat, then replacing the gasket if uncracked or the Version 2 cover and gasket if cracked, with no welding, filler or liquid-sealant repairs.",
+        "source": "S8",
+        "chunk_id": "25ca189dbcd1906c",
+        "title": "Halden SB-2025-009",
+        "location": "p.2 · 5 Corrective action / Massnahmen › 5.2 Field inspection of affected pumps in service",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "date": "2025-06-18",
+        "status": "Supported",
+        "evidence": "Leakage present: stop, isolate and drain the pump. Open the casing joint, remove the gasket and inspect the gasket seat with dye penetrant. Without cracks: fit a new Version 2 gasket and close the joint per 5.1. With cracks: replace the casing cover (Version 2) and gasket. Do not attempt repair by welding, metal filler or liquid sealant."
+      },
+      {
+        "sentence": "FRS-P-0031 previously received 45 N·m after its June 2, 2026 seal change under WO 229636; weeping was recorded June 3 under WO 229658, and cracks at two bolt holes were confirmed June 4 under WO 229790.",
+        "source": "S2",
+        "chunk_id": "e8ae032d05bd0734",
+        "title": "MaintPro history NA",
+        "location": "229636 · TBECKER, 06/02/2026",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Asset: FRS-P-0031\nModel: HCP-350\nSerial: HCP350-241187"
+      },
+      {
+        "sentence": "That incident, case 00041988, was resolved June 11, 2026 by fitting a new casing half and gasket, tightening to 38 N·m in a two-pass cross pattern, and confirming a dry joint after 24 hours; the case closed June 12.",
+        "source": "S3",
+        "chunk_id": "35bb59f86fa36562",
+        "title": "Salesforce cases NA",
+        "location": "5008d000002p9rO8Bm · 2026-06-03T16:15:00.000+0000",
+        "doc_type": "Salesforce Case export",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Halden says this serial is in SB-2025-009, revised casing, 38 N-m not 45."
+      }
+    ],
+    "dropped_claims": [],
+    "work_order": {
+      "asset_id": "FRS-P-0031",
+      "fault_code": null,
+      "summary": "Casing-joint torque requires correction to the revised 38 N·m specification; inspect gasket seats and renew the Version 2 gasket, repairing the cover only if cracks are found.",
+      "work_steps": [
+        "Perform the casing-joint work in accordance with SB-2025-009 Rev 0; this supersedes the casing-bolt torque in IOM Rev D for this pump serial range.",
+        "Before closing the joint, clean and inspect both gasket seats for cracks, preferably using dye penetrant.",
+        "Fit a new 0.8 mm graphite-faced aramid-fibre Version 2 gasket; do not reuse a gasket or fit the 1.5 mm Version 1 gasket.",
+        "Lightly oil property-class 8.8 bolt threads and tighten in a cross pattern with a calibrated torque wrench: approximately 20 N·m first pass, then 38 N·m second pass. Do not use impact tools or anti-seize paste.",
+        "After 24 hours at operating temperature, check torque once at 38 N·m without exceeding that value, and record the applied torque and reference SB-2025-009 in the maintenance record.",
+        "If the joint weeps after start-up, do not tighten further; contact support. Stop, isolate, and drain the pump before opening the joint. Inspect the seat with dye penetrant and replace the gasket if uncracked, or replace the Version 2 cover and gasket if cracked. Do not use welding, filler, or liquid sealant repairs."
+      ],
+      "parts": [],
+      "certification_required": [
+        "None"
+      ],
+      "estimated_duration_h": null,
+      "priority": null,
+      "campaign_code": null,
+      "sources": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "S6",
+        "S8"
+      ],
+      "requested_by": "u04",
+      "reason": "return_visit"
+    },
+    "trace": {
+      "events": [
+        {
+          "stage": "retrieve",
+          "inputs": {
+            "question": "What torque do I use on the casing bolts for FRS-P-0031 after a seal change?",
+            "user_id": "u04"
+          },
+          "outputs": {
+            "chunks": [
+              [
+                "66bb4cdcda36cf6c",
+                "Pump Troubleshooting Playbook",
+                "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Casing joint weeping after a seal change"
+              ],
+              [
+                "243af2898a8522ce",
+                "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+                "HCP-350 casing leak FRS-P-0031 (Halden thread)"
+              ],
+              [
+                "d02586d02254f8f9",
+                "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+                "HCP-350 casing leak FRS-P-0031 (Halden thread)"
+              ],
+              [
+                "28294c8f4338fa83",
+                "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+                "HCP-350 casing leak FRS-P-0031 (Halden thread)"
+              ],
+              [
+                "115dc716f10dd3cd",
+                "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+                "HCP-350 casing leak FRS-P-0031 (Halden thread)"
+              ],
+              [
+                "0d97bca514000bc0",
+                "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+                "HCP-350 casing leak FRS-P-0031 (Halden thread)"
+              ],
+              [
+                "16e73ea02ff60d65",
+                "Halden SB-2025-009",
+                "Halden SB-2025-009 | 0 | 5 Corrective action / Massnahmen › 5.1 Every time the casing joint of an affected pump is closed"
+              ],
+              [
+                "e8b88430439366fc",
+                "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+                "HCP-350 casing leak FRS-P-0031 (Halden thread)"
+              ],
+              [
+                "960f8e218cd69f41",
+                "Halden SB-2025-009",
+                "Halden SB-2025-009 | 0 | 4 Root cause / Ursache"
+              ],
+              [
+                "a356c1872ed8f6cb",
+                "Halden SB-2025-009",
+                "Halden SB-2025-009 | 0 | 1 Summary / Zusammenfassung"
+              ],
+              [
+                "b81ed513056f7036",
+                "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+                "HCP-350 casing leak FRS-P-0031 (Halden thread)"
+              ],
+              [
+                "abe1a8fbea3d42e7",
+                "Halden HCP-350 IOM Rev D",
+                "Halden HCP-350 IOM Rev D | D | 8 Maintenance"
+              ],
+              [
+                "7f548093b5d27256",
+                "Halden HCP-500 IOM Rev B",
+                "Halden HCP-500 IOM Rev B | B | 8 Maintenance"
+              ],
+              [
+                "f8cc1e10ba7cb262",
+                "Halden SB-2025-009",
+                "Halden SB-2025-009 | 0 | 2 Affected products / Betroffene Produkte"
+              ],
+              [
+                "25ca189dbcd1906c",
+                "Halden SB-2025-009",
+                "Halden SB-2025-009 | 0 | 5 Corrective action / Massnahmen › 5.2 Field inspection of affected pumps in service"
+              ],
+              [
+                "c4f7f28c596978a7",
+                "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+                "HCP-350 casing leak FRS-P-0031 (Halden thread)"
+              ],
+              [
+                "fb3937653b365307",
+                "Halden SB-2025-009",
+                "Halden SB-2025-009 | 0 | 7 Documentation affected / Betroffene Dokumentation"
+              ],
+              [
+                "c8e2a61622f6ed4a",
+                "HCP-500 Maintenance Quick Reference",
+                "HCP-500 Maintenance Quick Reference | Field Service › HCP-500 Maintenance Quick Reference › Things the trainer stressed"
+              ],
+              [
+                "0225db2fbb73cc85",
+                "Halden HCP-350 IOM Rev D",
+                "Halden HCP-350 IOM Rev D | D | 5 Installation"
+              ],
+              [
+                "e8ae032d05bd0734",
+                "MaintPro history NA",
+                "MaintPro history NA | 229636"
+              ],
+              [
+                "8152be6b6e9c8177",
+                "Halden SB-2025-009",
+                "Halden SB-2025-009 | 0 | 10 Note on other models / Hinweis zu anderen Baureihen"
+              ],
+              [
+                "35bb59f86fa36562",
+                "Salesforce cases NA",
+                "Salesforce cases NA | 5008d000002p9rO8Bm"
+              ],
+              [
+                "fcb6b78759947b1e",
+                "Halden HCP-500 IOM Rev B",
+                "Halden HCP-500 IOM Rev B | B | 5 Installation"
+              ],
+              [
+                "f24784bc455c2080",
+                "Pump Troubleshooting Playbook",
+                "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Parts we carry"
+              ],
+              [
+                "df4cabd8b72012ce",
+                "Pump Troubleshooting Playbook",
+                "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Comments"
+              ],
+              [
+                "eb2ed6f3b1e4df9f",
+                "Halden HCP-200 Betriebsanleitung 1998 (scan)",
+                "Halden HCP-200 Betriebsanleitung 1998 (scan) | Revision A | 7 Wartung / Maintenance"
+              ],
+              [
+                "239c3f900e768030",
+                "Halden SB-2025-009",
+                "Halden SB-2025-009 | 0 | 3 Symptom / Schadensbild"
+              ],
+              [
+                "c3c3af14669126e0",
+                "Belton BX-12 O&M Manual Rev B",
+                "Belton BX-12 O&M Manual Rev B | Issue B | Section 8 › Belt replacement"
+              ],
+              [
+                "5903fd4a5ef112ef",
+                "Halden SB-2025-018",
+                "Halden SB-2025-018 | 0 | 4 Kit comparison / Vergleich der Sätze"
+              ],
+              [
+                "aad0b252f485e69a",
+                "Halden HCP-200 Betriebsanleitung 1998 (scan)",
+                "Halden HCP-200 Betriebsanleitung 1998 (scan) | Revision A | 3 Technische Daten / Technical data"
+              ]
+            ]
+          },
+          "seconds": 0.689
+        },
+        {
+          "stage": "claims",
+          "inputs": {},
+          "outputs": {
+            "status": "answered",
+            "claims": [
+              {
+                "id": "c1",
+                "text": "Use 38 N·m—not 45 N·m—on FRS-P-0031, an HCP-350 with serial HCP350-241187.",
+                "citations": [
+                  "243af2898a8522ce",
+                  "35bb59f86fa36562"
+                ]
+              },
+              {
+                "id": "c2",
+                "text": "SB-2025-009 Rev 0 supersedes the casing-bolt torque in IOM Rev D for HCP-350 serials HCP350-240001 and later, and for any pump fitted with a Version 2 cover. The manual's 45 N·m remains valid only for earlier serials with the original cover; applying it to the revised cover can crack the gasket seat.",
+                "citations": [
+                  "fb3937653b365307",
+                  "a356c1872ed8f6cb"
+                ]
+              },
+              {
+                "id": "c3",
+                "text": "For the affected casing joint, lightly oil the property-class 8.8 bolt threads and tighten in a cross pattern with a calibrated torque wrench: approximately 20 N·m on the first pass, then 38 N·m on the second. Do not use impact tools or lower-friction anti-seize paste.",
+                "citations": [
+                  "16e73ea02ff60d65"
+                ]
+              },
+              {
+                "id": "c4",
+                "text": "Before closing the joint, clean and inspect both gasket seats for cracks, preferably with dye penetrant, and fit a new Version 2 gasket. The bulletin specifies a 0.8 mm graphite-faced aramid-fibre gasket for Version 2; do not reuse a gasket or substitute the 1.5 mm Version 1 gasket.",
+                "citations": [
+                  "16e73ea02ff60d65",
+                  "f8cc1e10ba7cb262"
+                ]
+              },
+              {
+                "id": "c5",
+                "text": "After the first 24 hours at operating temperature, check the torque once at 38 N·m, without exceeding that value, and record the applied torque and reference SB-2025-009 in the maintenance record.",
+                "citations": [
+                  "16e73ea02ff60d65"
+                ]
+              },
+              {
+                "id": "c6",
+                "text": "If the joint weeps after start-up, do not tighten it further; Halden's instruction for FRS-P-0031 is to contact support first. The bulletin requires stopping, isolating and draining a leaking pump before opening the joint and dye-penetrant inspecting the seat; replace the gasket if uncracked, or the Version 2 cover and gasket if cracked. Welding, filler and liquid-sealant repairs are prohibited.",
+                "citations": [
+                  "115dc716f10dd3cd",
+                  "25ca189dbcd1906c"
+                ]
+              },
+              {
+                "id": "c7",
+                "text": "FRS-P-0031 previously received 45 N·m after its June 2, 2026 seal change under WO 229636; casing-joint weeping was recorded June 3 under WO 229658, and cracks at two bolt holes were confirmed June 4 under WO 229790.",
+                "citations": [
+                  "e8ae032d05bd0734"
+                ]
+              },
+              {
+                "id": "c8",
+                "text": "The earlier incident, case 00041988, was resolved by fitting a new casing half and gasket on June 11, 2026, tightening to 38 N·m in a cross pattern in two passes, and confirming a dry joint after 24 hours; the case closed June 12.",
+                "citations": [
+                  "35bb59f86fa36562"
+                ]
+              }
+            ],
+            "work_order_needed": true,
+            "work_order_reason": "return_visit"
+          },
+          "seconds": 14.046
+        },
+        {
+          "stage": "verify",
+          "inputs": {},
+          "outputs": {
+            "c1": "supported",
+            "c2": "supported",
+            "c3": "supported",
+            "c4": "sources_disagree",
+            "c5": "supported",
+            "c6": "supported",
+            "c7": "supported",
+            "c8": "supported"
+          },
+          "seconds": 29.812
+        },
+        {
+          "stage": "compose",
+          "inputs": {},
+          "outputs": {
+            "sentences": 8
+          },
+          "seconds": 6.546
+        },
+        {
+          "stage": "work_order",
+          "inputs": {},
+          "outputs": {
+            "drafted": true
+          },
+          "seconds": 9.211
+        }
+      ]
+    },
+    "retrieved": [
+      {
+        "chunk_id": "66bb4cdcda36cf6c",
+        "doc_path": "corpus/confluence/Pump-Troubleshooting-Playbook.html",
+        "doc_title": "Pump Troubleshooting Playbook",
+        "doc_type": "Field Service wiki page",
+        "revision": "unknown",
+        "effective_date": "Sep 08, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Pump Troubleshooting Playbook",
+            "Casing joint weeping after a seal change"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Casing joint weeping after a seal change",
+        "text_original": "Check the bulletins for the serial before you torque casing bolts. Halden revised the casing on newer HCP-350 serials and changed the casing bolt torque in Service Bulletin SB-2025-009. The manual (Rev D) was never updated, so the manual value is wrong for those pumps. Over-torquing cracks the gasket seat. SB-2025-009 also has a note about the HCP-500, so read it to the end if you're on a 500.\n\nThis is what happened on FRS-P-0031 in June 2026. Tom did a seal change, torqued the casing bolts to the manual value like any of us would have, and the joint started weeping. When we opened it again the gasket seat was cracked. The serial was in the bulletin's range. A new casing half went on and it was torqued to the bulletin value. Case 00041988, and there's an email thread with Stefan Wirth at Halden if you want the background.\n\nI asked Halden why the manual wasn't revised. No answer yet. Until there is one: serial first, bulletin second, manual third, for anything with a torque value.",
+        "text_en": "Check the bulletins for the serial before you torque casing bolts. Halden revised the casing on newer HCP-350 serials and changed the casing bolt torque in Service Bulletin SB-2025-009. The manual (Rev D) was never updated, so the manual value is wrong for those pumps. Over-torquing cracks the gasket seat. SB-2025-009 also has a note about the HCP-500, so read it to the end if you're on a 500.\n\nThis is what happened on FRS-P-0031 in June 2026. Tom did a seal change, torqued the casing bolts to the manual value like any of us would have, and the joint started weeping. When we opened it again the gasket seat was cracked. The serial was in the bulletin's range. A new casing half went on and it was torqued to the bulletin value. Case 00041988, and there's an email thread with Stefan Wirth at Halden if you want the background.\n\nI asked Halden why the manual wasn't revised. No answer yet. Until there is one: serial first, bulletin second, manual third, for anything with a torque value.",
+        "acl_key": "family-pumps",
+        "cosine": 0.6466257572174072,
+        "bm25_rank": 1,
+        "vector_rank": 1,
+        "rrf": 0.03278688524590164
+      },
+      {
+        "chunk_id": "243af2898a8522ce",
+        "doc_path": "corpus/email/HCP-350_casing_leak_FRS-P-0031_Halden_thread.pdf",
+        "doc_title": "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": 1,
+          "section_path": [],
+          "record_id": null,
+          "sender": "Stefan Wirth <s.wirth@halden-pumpen.de>",
+          "date": "Wednesday, June 3, 2026 11:08 PM"
+        },
+        "header": "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+        "text_original": "To: Tom Becker <t.becker@corvane.com>\nCc: Maria Okafor <m.okafor@corvane.com>\nSubject: AW: HCP-350 casing joint leaking after seal change - FRS-P-0031 / HCP350-241187\nAttachments: Halden_SB-2025-009_HCP-350_Casing_Torque.pdf\n\nDear Mr. Becker,\n\nthank you for the clear description and the photos.\n\nYour pump has serial HCP350-241187. For HCP-350 pumps from serial HCP350-240001 the casing was revised, with a lighter casing and a changed gasket seat, and the casing bolt torque for these units is 38 N-m, not 45 N-m. This is in our Service Bulletin SB-2025-009 from June 2025. I attach it again to this email.\n\nFrom your photos I think it is likely that the gasket seat is cracked. The pattern you describe, a joint that is tight at assembly and then weeps at one position after some hours at temperature and pressure, is what we have seen on the other over-torque cases. That the bolts did not move at 45 N-m fits as well.\n\nPlease:\n- do not tighten further, and do not run the pump again with this casing,\n- when you open it, clean the gasket seat and check it with dye penetrant, especially around the bolt holes near the leak,\n- send me photos of the seat after the dye test.\n\nIf there is a crack, the casing cannot be repaired. Welding or sealing compound is not permitted on this casing. You would need a new casing, which I can supply.\n\nTo your question 1: the gasket is the same part, there is no different gasket. Question 2: no, lower, see above.\n\nPlease note also section 1.1 of the IOM: service bulletins take precedence over the manual for the serial ranges they name.",
+        "text_en": "To: Tom Becker <t.becker@corvane.com>\nCc: Maria Okafor <m.okafor@corvane.com>\nSubject: AW: HCP-350 casing joint leaking after seal change - FRS-P-0031 / HCP350-241187\nAttachments: Halden_SB-2025-009_HCP-350_Casing_Torque.pdf\n\nDear Mr. Becker,\n\nthank you for the clear description and the photos.\n\nYour pump has serial HCP350-241187. For HCP-350 pumps from serial HCP350-240001 the casing was revised, with a lighter casing and a changed gasket seat, and the casing bolt torque for these units is 38 N-m, not 45 N-m. This is in our Service Bulletin SB-2025-009 from June 2025. I attach it again to this email.\n\nFrom your photos I think it is likely that the gasket seat is cracked. The pattern you describe, a joint that is tight at assembly and then weeps at one position after some hours at temperature and pressure, is what we have seen on the other over-torque cases. That the bolts did not move at 45 N-m fits as well.\n\nPlease:\n- do not tighten further, and do not run the pump again with this casing,\n- when you open it, clean the gasket seat and check it with dye penetrant, especially around the bolt holes near the leak,\n- send me photos of the seat after the dye test.\n\nIf there is a crack, the casing cannot be repaired. Welding or sealing compound is not permitted on this casing. You would need a new casing, which I can supply.\n\nTo your question 1: the gasket is the same part, there is no different gasket. Question 2: no, lower, see above.\n\nPlease note also section 1.1 of the IOM: service bulletins take precedence over the manual for the serial ranges they name.",
+        "acl_key": "family-pumps",
+        "cosine": 0.5885173678398132,
+        "bm25_rank": 2,
+        "vector_rank": 6,
+        "rrf": 0.03128054740957967
+      },
+      {
+        "chunk_id": "d02586d02254f8f9",
+        "doc_path": "corpus/email/HCP-350_casing_leak_FRS-P-0031_Halden_thread.pdf",
+        "doc_title": "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": 1,
+          "section_path": [],
+          "record_id": null,
+          "sender": "Tom Becker <t.becker@corvane.com>",
+          "date": "Wednesday, June 3, 2026 10:42 AM"
+        },
+        "header": "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+        "text_original": "To: Stefan Wirth <s.wirth@halden-pumpen.de>\nCc: Maria Okafor <m.okafor@corvane.com>\nSubject: HCP-350 casing joint leaking after seal change - FRS-P-0031 / HCP350-241187\nAttachments: IMG_3051.jpg; IMG_3052.jpg; IMG_3054.jpg\n\nHello Stefan,\n\nMaria Okafor gave me your address. She says you helped her with a PC-3 controller question last year.\n\nWe service Halden pumps at Sierra Springs Beverage in Fresno, California. I'm writing about FRS-P-0031, an HCP-350, serial HCP350-241187, commissioned August 2024. It's the process water supply pump for the syrup room and runs as duty pump with FRS-P-0012 as standby.\n\nYesterday (June 2) I replaced the mechanical seal, which had started weeping at the faces. I used seal kit 18-0356 and followed your IOM HDN-IOM-350 Rev D, section 8.4: withdrew the back pull-out assembly, fitted the new seal, new casing gasket, and torqued the casing bolts to 45 N-m in a cross pattern, two passes, threads lightly oiled as section 8.7 says. The torque wrench is in calibration (certificate from March).\n\nPump went back in service at 06:30 this morning. The seal is dry. But after about two hours the casing-to-cover joint started weeping at roughly the 4 o'clock position, looking from the motor end. A drop every few seconds at about 5.5 bar discharge. I stopped the pump and switched the duty to 0012. I checked the bolts at 45 N-m and none of them moved. I have not gone above 45 N-m and didn't want to before asking you.\n\nPhotos attached: the joint, the old gasket, and the nameplate.\n\nQuestions:\n1. Is there a different gasket for this serial? The one in the kit looked the same as the one I took out.\n2. Should the torque be higher?\n3. Anything else you want me to check before I open it up again?\n\nOur reference is case 00041988.\n\nThanks,\nTom",
+        "text_en": "To: Stefan Wirth <s.wirth@halden-pumpen.de>\nCc: Maria Okafor <m.okafor@corvane.com>\nSubject: HCP-350 casing joint leaking after seal change - FRS-P-0031 / HCP350-241187\nAttachments: IMG_3051.jpg; IMG_3052.jpg; IMG_3054.jpg\n\nHello Stefan,\n\nMaria Okafor gave me your address. She says you helped her with a PC-3 controller question last year.\n\nWe service Halden pumps at Sierra Springs Beverage in Fresno, California. I'm writing about FRS-P-0031, an HCP-350, serial HCP350-241187, commissioned August 2024. It's the process water supply pump for the syrup room and runs as duty pump with FRS-P-0012 as standby.\n\nYesterday (June 2) I replaced the mechanical seal, which had started weeping at the faces. I used seal kit 18-0356 and followed your IOM HDN-IOM-350 Rev D, section 8.4: withdrew the back pull-out assembly, fitted the new seal, new casing gasket, and torqued the casing bolts to 45 N-m in a cross pattern, two passes, threads lightly oiled as section 8.7 says. The torque wrench is in calibration (certificate from March).\n\nPump went back in service at 06:30 this morning. The seal is dry. But after about two hours the casing-to-cover joint started weeping at roughly the 4 o'clock position, looking from the motor end. A drop every few seconds at about 5.5 bar discharge. I stopped the pump and switched the duty to 0012. I checked the bolts at 45 N-m and none of them moved. I have not gone above 45 N-m and didn't want to before asking you.\n\nPhotos attached: the joint, the old gasket, and the nameplate.\n\nQuestions:\n1. Is there a different gasket for this serial? The one in the kit looked the same as the one I took out.\n2. Should the torque be higher?\n3. Anything else you want me to check before I open it up again?\n\nOur reference is case 00041988.\n\nThanks,\nTom",
+        "acl_key": "family-pumps",
+        "cosine": 0.612944483757019,
+        "bm25_rank": 6,
+        "vector_rank": 2,
+        "rrf": 0.03128054740957967
+      },
+      {
+        "chunk_id": "28294c8f4338fa83",
+        "doc_path": "corpus/email/HCP-350_casing_leak_FRS-P-0031_Halden_thread.pdf",
+        "doc_title": "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": 2,
+          "section_path": [],
+          "record_id": null,
+          "sender": "Maria Okafor <m.okafor@corvane.com>",
+          "date": "Thursday, June 4, 2026 8:17 AM"
+        },
+        "header": "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+        "text_original": "To: Stefan Wirth <s.wirth@halden-pumpen.de>\nCc: Tom Becker <t.becker@corvane.com>; Kenji Watanabe <k.watanabe@corvane.com>\nSubject: RE: AW: HCP-350 casing joint leaking after seal change - FRS-P-0031 / HCP350-241187\n\nStefan,\n\nThanks for the quick answer. I'm the senior pump technician on the Fresno contract, and I'm copying Kenji Watanabe, our team lead.\n\nI have to push back on the last line, though. Tom did exactly what the manual says. Rev D is the IOM on HaldenNet. I downloaded it again this morning to be sure: it still says 45 N-m in 4.3, 8.4 and 8.7, with no mention of serial numbers and no mention of the bulletin. Rev D is from 2023. The bulletin is from June 2025. So for a year there has been a torque that cracks the casing on the newer pumps, and the manual every technician opens still has the old number.\n\nTwo questions:\n1. Why was the IOM never updated? If the torque depends on the serial, that belongs in the manual, in the torque table, not in a separate PDF that someone has to know exists.\n2. Why didn't the bulletin reach us? I've checked our manual library, which is what the technicians open on their tablets on site, and SB-2025-009 isn't in it. Nobody on the NA pump team remembers receiving it. If it was sent to Corvane, tell me where it went and we'll fix our side.\n\nI know section 1.1 says bulletins take precedence. That only works if the bulletin is somewhere the technician will see it.\n\nSeparately, I've gone through our fleet register for the other HCP-350s we look after. FRS-P-0012 (HCP350-221034) and TAC-P-0045 (HCP350-231650) are older serials, so 45 N-m is still right for those if I read the bulletin correctly. GDN-P-0070 in Gdansk, HCP350-250877, is in the new range. That one belongs to our EU team and I'll make sure they know, because they'll be working from the same Rev D.\n\nMaria",
+        "text_en": "To: Stefan Wirth <s.wirth@halden-pumpen.de>\nCc: Tom Becker <t.becker@corvane.com>; Kenji Watanabe <k.watanabe@corvane.com>\nSubject: RE: AW: HCP-350 casing joint leaking after seal change - FRS-P-0031 / HCP350-241187\n\nStefan,\n\nThanks for the quick answer. I'm the senior pump technician on the Fresno contract, and I'm copying Kenji Watanabe, our team lead.\n\nI have to push back on the last line, though. Tom did exactly what the manual says. Rev D is the IOM on HaldenNet. I downloaded it again this morning to be sure: it still says 45 N-m in 4.3, 8.4 and 8.7, with no mention of serial numbers and no mention of the bulletin. Rev D is from 2023. The bulletin is from June 2025. So for a year there has been a torque that cracks the casing on the newer pumps, and the manual every technician opens still has the old number.\n\nTwo questions:\n1. Why was the IOM never updated? If the torque depends on the serial, that belongs in the manual, in the torque table, not in a separate PDF that someone has to know exists.\n2. Why didn't the bulletin reach us? I've checked our manual library, which is what the technicians open on their tablets on site, and SB-2025-009 isn't in it. Nobody on the NA pump team remembers receiving it. If it was sent to Corvane, tell me where it went and we'll fix our side.\n\nI know section 1.1 says bulletins take precedence. That only works if the bulletin is somewhere the technician will see it.\n\nSeparately, I've gone through our fleet register for the other HCP-350s we look after. FRS-P-0012 (HCP350-221034) and TAC-P-0045 (HCP350-231650) are older serials, so 45 N-m is still right for those if I read the bulletin correctly. GDN-P-0070 in Gdansk, HCP350-250877, is in the new range. That one belongs to our EU team and I'll make sure they know, because they'll be working from the same Rev D.\n\nMaria",
+        "acl_key": "family-pumps",
+        "cosine": 0.6096428036689758,
+        "bm25_rank": 5,
+        "vector_rank": 5,
+        "rrf": 0.03076923076923077
+      },
+      {
+        "chunk_id": "115dc716f10dd3cd",
+        "doc_path": "corpus/email/HCP-350_casing_leak_FRS-P-0031_Halden_thread.pdf",
+        "doc_title": "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": 5,
+          "section_path": [],
+          "record_id": null,
+          "sender": "Stefan Wirth <s.wirth@halden-pumpen.de>",
+          "date": "Sunday, June 7, 2026 11:31 PM"
+        },
+        "header": "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+        "text_original": "To: Tom Becker <t.becker@corvane.com>\nCc: Maria Okafor <m.okafor@corvane.com>; Kenji Watanabe <k.watanabe@corvane.com>\nSubject: AW: HCP-350 casing joint leaking after seal change - FRS-P-0031 / HCP350-241187\n\nDear Tom,\n\nthank you for the photos. That is the typical crack from over-torque. I have added your case to our internal report on this casing.\n\nYour order arrived on Friday evening. The casing leaves Aalen today by air freight and delivery in Fresno is planned for Wednesday 10 June. A new casing gasket is in the box, and yes, it is the same gasket as before.\n\nMy manager has approved the casing at no charge. Freight is also on us. Labour is not covered, I am sorry I could not do more there.\n\nFor the assembly:\n- clean the gasket face on the cover side and check that it is flat and undamaged before you fit the new casing,\n- new gasket, threads lightly oiled,\n- 38 N-m in a cross pattern, two passes, and not more,\n- if you see moisture at the joint after start-up, do not re-tighten it, contact me first.\n\nMs. Okafor, I have added your address and Mr. Watanabe's to the distribution for pump bulletins from today.",
+        "text_en": "To: Tom Becker <t.becker@corvane.com>\nCc: Maria Okafor <m.okafor@corvane.com>; Kenji Watanabe <k.watanabe@corvane.com>\nSubject: AW: HCP-350 casing joint leaking after seal change - FRS-P-0031 / HCP350-241187\n\nDear Tom,\n\nthank you for the photos. That is the typical crack from over-torque. I have added your case to our internal report on this casing.\n\nYour order arrived on Friday evening. The casing leaves Aalen today by air freight and delivery in Fresno is planned for Wednesday 10 June. A new casing gasket is in the box, and yes, it is the same gasket as before.\n\nMy manager has approved the casing at no charge. Freight is also on us. Labour is not covered, I am sorry I could not do more there.\n\nFor the assembly:\n- clean the gasket face on the cover side and check that it is flat and undamaged before you fit the new casing,\n- new gasket, threads lightly oiled,\n- 38 N-m in a cross pattern, two passes, and not more,\n- if you see moisture at the joint after start-up, do not re-tighten it, contact me first.\n\nMs. Okafor, I have added your address and Mr. Watanabe's to the distribution for pump bulletins from today.",
+        "acl_key": "family-pumps",
+        "cosine": 0.5663106441497803,
+        "bm25_rank": 4,
+        "vector_rank": 9,
+        "rrf": 0.030117753623188408
+      },
+      {
+        "chunk_id": "0d97bca514000bc0",
+        "doc_path": "corpus/email/HCP-350_casing_leak_FRS-P-0031_Halden_thread.pdf",
+        "doc_title": "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": 3,
+          "section_path": [],
+          "record_id": null,
+          "sender": "Stefan Wirth <s.wirth@halden-pumpen.de>",
+          "date": "Thursday, June 4, 2026 11:52 PM"
+        },
+        "header": "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+        "text_original": "To: Maria Okafor <m.okafor@corvane.com>\nCc: Tom Becker <t.becker@corvane.com>; Kenji Watanabe <k.watanabe@corvane.com>\nSubject: AW: HCP-350 casing joint leaking after seal change - FRS-P-0031 / HCP350-241187\n\nDear Ms. Okafor,\n\nI understand the frustration and I won't argue with the main point.\n\nRev E of the HCP-350 IOM is in preparation. It will include the serial-dependent torque from SB-2025-009 in sections 4.3, 8.4 and 8.7, and the seal kit change from SB-2025-018. I do not have a release date I can give you. It is with our technical documentation department, and the translations are part of the delay, because we release all languages together.\n\nAbout distribution: bulletins are sent by email to the contacts registered for each service partner, and they are posted on HaldenNet under Service > Bulletins. Manuals and bulletins are on different pages of HaldenNet, which I know is not ideal. I have checked our distribution record. SB-2025-009 was sent on 18 June 2025 to the one address we have registered for Corvane, which is a shared mailbox in Sacramento. I cannot see whether someone opened it. If you send me the names and addresses of the people who should receive pump bulletins, I will add them.\n\nYour reading of the serial ranges is correct: 45 N-m for FRS-P-0012 and TAC-P-0045, 38 N-m for GDN-P-0070.\n\nFor FRS-P-0031: I have reserved a revised casing in Aalen. As soon as Mr. Becker confirms the dye penetrant result and we have your order, it goes by air freight, normally three working days to California. The pump is outside the warranty period, so the casing would normally be charged. Given the situation with the manual, I have asked my manager to supply it at no charge. I expect an answer on Monday.",
+        "text_en": "To: Maria Okafor <m.okafor@corvane.com>\nCc: Tom Becker <t.becker@corvane.com>; Kenji Watanabe <k.watanabe@corvane.com>\nSubject: AW: HCP-350 casing joint leaking after seal change - FRS-P-0031 / HCP350-241187\n\nDear Ms. Okafor,\n\nI understand the frustration and I won't argue with the main point.\n\nRev E of the HCP-350 IOM is in preparation. It will include the serial-dependent torque from SB-2025-009 in sections 4.3, 8.4 and 8.7, and the seal kit change from SB-2025-018. I do not have a release date I can give you. It is with our technical documentation department, and the translations are part of the delay, because we release all languages together.\n\nAbout distribution: bulletins are sent by email to the contacts registered for each service partner, and they are posted on HaldenNet under Service > Bulletins. Manuals and bulletins are on different pages of HaldenNet, which I know is not ideal. I have checked our distribution record. SB-2025-009 was sent on 18 June 2025 to the one address we have registered for Corvane, which is a shared mailbox in Sacramento. I cannot see whether someone opened it. If you send me the names and addresses of the people who should receive pump bulletins, I will add them.\n\nYour reading of the serial ranges is correct: 45 N-m for FRS-P-0012 and TAC-P-0045, 38 N-m for GDN-P-0070.\n\nFor FRS-P-0031: I have reserved a revised casing in Aalen. As soon as Mr. Becker confirms the dye penetrant result and we have your order, it goes by air freight, normally three working days to California. The pump is outside the warranty period, so the casing would normally be charged. Given the situation with the manual, I have asked my manager to supply it at no charge. I expect an answer on Monday.",
+        "acl_key": "family-pumps",
+        "cosine": 0.5456415414810181,
+        "bm25_rank": 3,
+        "vector_rank": 11,
+        "rrf": 0.029957522915269395
+      },
+      {
+        "chunk_id": "16e73ea02ff60d65",
+        "doc_path": "corpus/bulletins/Halden_SB-2025-009_HCP-350_Casing_Torque.pdf",
+        "doc_title": "Halden SB-2025-009",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "effective_date": "2025-06-18",
+        "locator": {
+          "page": 2,
+          "section_path": [
+            "5 Corrective action / Massnahmen",
+            "5.1 Every time the casing joint of an affected pump is closed"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden SB-2025-009 | 0 | 5 Corrective action / Massnahmen › 5.1 Every time the casing joint of an affected pump is closed",
+        "text_original": "1. Read the pump serial number and check the cast mark on the cover (see 2). Treat any Version 2 cover as affected.\n2. Clean the gasket seat on casing and cover. With the gasket removed, inspect the seat for cracks, preferably with dye penetrant. A cracked cover must be replaced (5.2, step 5).\n3. Fit a new Version 2 casing gasket. Never reuse a gasket. Never fit a 1.5 mm Version 1 gasket on a Version 2 seat, or the reverse; the joint will not seal.\n4. Lightly oil the bolt threads (property class 8.8). Do not use anti-seize paste with a lower friction value; it raises the clamping force at the same torque.\n5. Tighten the casing bolts in a cross pattern in two passes: first pass to approximately 20 N-m, second pass to 38 N-m. Use a calibrated torque wrench. Impact tools are not permitted on this joint.\n6. After the first 24 hours at operating temperature, check the torque once at 38 N-m. Do not re-tighten beyond this value to stop a leak; a joint that leaks at 38 N-m has a damaged gasket or seat.\n7. Record the torque applied and the reference \"SB-2025-009\" in the maintenance record (IOM Annex B).",
+        "text_en": "1. Read the pump serial number and check the cast mark on the cover (see 2). Treat any Version 2 cover as affected.\n2. Clean the gasket seat on casing and cover. With the gasket removed, inspect the seat for cracks, preferably with dye penetrant. A cracked cover must be replaced (5.2, step 5).\n3. Fit a new Version 2 casing gasket. Never reuse a gasket. Never fit a 1.5 mm Version 1 gasket on a Version 2 seat, or the reverse; the joint will not seal.\n4. Lightly oil the bolt threads (property class 8.8). Do not use anti-seize paste with a lower friction value; it raises the clamping force at the same torque.\n5. Tighten the casing bolts in a cross pattern in two passes: first pass to approximately 20 N-m, second pass to 38 N-m. Use a calibrated torque wrench. Impact tools are not permitted on this joint.\n6. After the first 24 hours at operating temperature, check the torque once at 38 N-m. Do not re-tighten beyond this value to stop a leak; a joint that leaks at 38 N-m has a damaged gasket or seat.\n7. Record the torque applied and the reference \"SB-2025-009\" in the maintenance record (IOM Annex B).",
+        "acl_key": "family-pumps",
+        "cosine": 0.5849090814590454,
+        "bm25_rank": 8,
+        "vector_rank": 7,
+        "rrf": 0.029631255487269532
+      },
+      {
+        "chunk_id": "e8b88430439366fc",
+        "doc_path": "corpus/email/HCP-350_casing_leak_FRS-P-0031_Halden_thread.pdf",
+        "doc_title": "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": 6,
+          "section_path": [],
+          "record_id": null,
+          "sender": "Tom Becker <t.becker@corvane.com>",
+          "date": "Friday, June 12, 2026 2:47 PM"
+        },
+        "header": "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+        "text_original": "To: Stefan Wirth <s.wirth@halden-pumpen.de>\nCc: Maria Okafor <m.okafor@corvane.com>; Kenji Watanabe <k.watanabe@corvane.com>\nSubject: RE: AW: HCP-350 casing joint leaking after seal change - FRS-P-0031 / HCP350-241187\n\nStefan,\n\nClosing this out from our side. The casing arrived Wednesday afternoon as planned. I replaced the casing half yesterday (June 11): gasket face on the cover side checked flat with no damage, new gasket, bolts torqued to 38 N-m in a cross pattern in two passes. Back in service at 13:10. It has now run 24 hours as duty pump, joint and seal both dry, discharge 5.6 bar, bearing temperatures normal. FRS-P-0012 is back on standby.\n\nCase 00041988 is closed with the bulletin reference in the resolution. Maria has put SB-2025-009 in our manual library.\n\nThe cracked casing is on the shelf in the Fresno shop if Halden wants it back for the report. Let me know and I'll ship it.\n\nThanks for the help, and for the casing.\n\nTom",
+        "text_en": "To: Stefan Wirth <s.wirth@halden-pumpen.de>\nCc: Maria Okafor <m.okafor@corvane.com>; Kenji Watanabe <k.watanabe@corvane.com>\nSubject: RE: AW: HCP-350 casing joint leaking after seal change - FRS-P-0031 / HCP350-241187\n\nStefan,\n\nClosing this out from our side. The casing arrived Wednesday afternoon as planned. I replaced the casing half yesterday (June 11): gasket face on the cover side checked flat with no damage, new gasket, bolts torqued to 38 N-m in a cross pattern in two passes. Back in service at 13:10. It has now run 24 hours as duty pump, joint and seal both dry, discharge 5.6 bar, bearing temperatures normal. FRS-P-0012 is back on standby.\n\nCase 00041988 is closed with the bulletin reference in the resolution. Maria has put SB-2025-009 in our manual library.\n\nThe cracked casing is on the shelf in the Fresno shop if Halden wants it back for the report. Let me know and I'll ship it.\n\nThanks for the help, and for the casing.\n\nTom",
+        "acl_key": "family-pumps",
+        "cosine": 0.5277173519134521,
+        "bm25_rank": 7,
+        "vector_rank": 15,
+        "rrf": 0.028258706467661692
+      },
+      {
+        "chunk_id": "960f8e218cd69f41",
+        "doc_path": "corpus/bulletins/Halden_SB-2025-009_HCP-350_Casing_Torque.pdf",
+        "doc_title": "Halden SB-2025-009",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "effective_date": "2025-06-18",
+        "locator": {
+          "page": 2,
+          "section_path": [
+            "4 Root cause / Ursache"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden SB-2025-009 | 0 | 4 Root cause / Ursache",
+        "text_original": "The Version 2 casing cover was introduced to reduce casting weight and to improve casting yield at the foundry. The gasket seat was narrowed and the casing gasket changed from 1.5 mm fibre to 0.8 mm aramid fibre with graphite facing. Pumps are assembled in the factory with 38 N-m. The change was released in production without a corresponding revision of the operating instructions, so the IOM still states 45 N-m in sections 4.3, 8.4 and 8.7.\n\nWith the thinner gasket and the narrower seat, a bolt torque of 45 N-m produces a surface pressure on the seat above the permissible value for the casting. The overload alone does not always cause immediate leakage. Cracks initiate at the bolt holes and grow with each heating and cooling cycle. Use of impact wrenches or tightening without a cross pattern increases the risk further.\n\nHalden regrets that the documentation did not follow the production change. The IOM will be corrected in Rev E (see 7).",
+        "text_en": "The Version 2 casing cover was introduced to reduce casting weight and to improve casting yield at the foundry. The gasket seat was narrowed and the casing gasket changed from 1.5 mm fibre to 0.8 mm aramid fibre with graphite facing. Pumps are assembled in the factory with 38 N-m. The change was released in production without a corresponding revision of the operating instructions, so the IOM still states 45 N-m in sections 4.3, 8.4 and 8.7.\n\nWith the thinner gasket and the narrower seat, a bolt torque of 45 N-m produces a surface pressure on the seat above the permissible value for the casting. The overload alone does not always cause immediate leakage. Cracks initiate at the bolt holes and grow with each heating and cooling cycle. Use of impact wrenches or tightening without a cross pattern increases the risk further.\n\nHalden regrets that the documentation did not follow the production change. The IOM will be corrected in Rev E (see 7).",
+        "acl_key": "family-pumps",
+        "cosine": 0.6101980805397034,
+        "bm25_rank": 24,
+        "vector_rank": 4,
+        "rrf": 0.027529761904761904
+      },
+      {
+        "chunk_id": "a356c1872ed8f6cb",
+        "doc_path": "corpus/bulletins/Halden_SB-2025-009_HCP-350_Casing_Torque.pdf",
+        "doc_title": "Halden SB-2025-009",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "effective_date": "2025-06-18",
+        "locator": {
+          "page": 1,
+          "section_path": [
+            "1 Summary / Zusammenfassung"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden SB-2025-009 | 0 | 1 Summary / Zusammenfassung",
+        "text_original": "Since production week 01/2024 (serial number HCP350-240001), HCP-350 pumps are built with a revised casing cover and a thinner casing gasket. The tightening torque for the casing bolts on these pumps is 38 N-m, applied in a cross pattern in two passes. The value of 45 N-m given in the Installation, Operation and Maintenance Manual HDN-IOM-350 Rev D applies only to pumps with serial numbers before HCP350-240001.\n\nTightening a revised casing cover to 45 N-m overloads the gasket seat and can crack it. A cracked gasket seat cannot be repaired. Pumps in service whose casing joint has been opened since delivery must be inspected as described in 5.2.",
+        "text_en": "Since production week 01/2024 (serial number HCP350-240001), HCP-350 pumps are built with a revised casing cover and a thinner casing gasket. The tightening torque for the casing bolts on these pumps is 38 N-m, applied in a cross pattern in two passes. The value of 45 N-m given in the Installation, Operation and Maintenance Manual HDN-IOM-350 Rev D applies only to pumps with serial numbers before HCP350-240001.\n\nTightening a revised casing cover to 45 N-m overloads the gasket seat and can crack it. A cracked gasket seat cannot be repaired. Pumps in service whose casing joint has been opened since delivery must be inspected as described in 5.2.",
+        "acl_key": "family-pumps",
+        "cosine": 0.6125539541244507,
+        "bm25_rank": 26,
+        "vector_rank": 3,
+        "rrf": 0.027500922849760058
+      },
+      {
+        "chunk_id": "b81ed513056f7036",
+        "doc_path": "corpus/email/HCP-350_casing_leak_FRS-P-0031_Halden_thread.pdf",
+        "doc_title": "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": 4,
+          "section_path": [],
+          "record_id": null,
+          "sender": "Tom Becker <t.becker@corvane.com>",
+          "date": "Friday, June 5, 2026 9:26 AM"
+        },
+        "header": "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+        "text_original": "To: Stefan Wirth <s.wirth@halden-pumpen.de>\nCc: Maria Okafor <m.okafor@corvane.com>; Kenji Watanabe <k.watanabe@corvane.com>\nSubject: RE: AW: HCP-350 casing joint leaking after seal change - FRS-P-0031 / HCP350-241187\nAttachments: IMG_3088.jpg; IMG_3090.jpg; IMG_3091.jpg\n\nStefan (Tom is fine, by the way),\n\nOpened it up first thing this morning. The dye penetrant shows a crack in the gasket seat starting at the bolt hole at 4 o'clock and running about 15 mm inward. That's exactly where it was weeping. There's a second, shorter indication at the next bolt hole clockwise, maybe 5 mm. Photos attached, the red lines are clear enough.\n\nSo please go ahead with the casing. Our purchasing will send the order today with case 00041988 as the reference. Ship to Corvane Field Services, c/o Sierra Springs Beverage, Fresno plant, receiving dock 2, attention Tom Becker.\n\nThe line is running on FRS-P-0012 for now. The plant can live with that for a week, but they don't like having no standby on the syrup room water, so the sooner the better.\n\nThe seal stays in the back pull-out assembly, so I won't disturb it again. Is the gasket that comes with the casing the same one as before?\n\nTom",
+        "text_en": "To: Stefan Wirth <s.wirth@halden-pumpen.de>\nCc: Maria Okafor <m.okafor@corvane.com>; Kenji Watanabe <k.watanabe@corvane.com>\nSubject: RE: AW: HCP-350 casing joint leaking after seal change - FRS-P-0031 / HCP350-241187\nAttachments: IMG_3088.jpg; IMG_3090.jpg; IMG_3091.jpg\n\nStefan (Tom is fine, by the way),\n\nOpened it up first thing this morning. The dye penetrant shows a crack in the gasket seat starting at the bolt hole at 4 o'clock and running about 15 mm inward. That's exactly where it was weeping. There's a second, shorter indication at the next bolt hole clockwise, maybe 5 mm. Photos attached, the red lines are clear enough.\n\nSo please go ahead with the casing. Our purchasing will send the order today with case 00041988 as the reference. Ship to Corvane Field Services, c/o Sierra Springs Beverage, Fresno plant, receiving dock 2, attention Tom Becker.\n\nThe line is running on FRS-P-0012 for now. The plant can live with that for a week, but they don't like having no standby on the syrup room water, so the sooner the better.\n\nThe seal stays in the back pull-out assembly, so I won't disturb it again. Is the gasket that comes with the casing the same one as before?\n\nTom",
+        "acl_key": "family-pumps",
+        "cosine": 0.5259460210800171,
+        "bm25_rank": 13,
+        "vector_rank": 16,
+        "rrf": 0.026856524873828405
+      },
+      {
+        "chunk_id": "abe1a8fbea3d42e7",
+        "doc_path": "corpus/manuals/Halden_HCP-350_IOM_RevD.pdf",
+        "doc_title": "Halden HCP-350 IOM Rev D",
+        "doc_type": "Installation, Operation and Maintenance Manual",
+        "revision": "D",
+        "effective_date": "2023-05-22",
+        "locator": {
+          "page": 6,
+          "section_path": [
+            "8 Maintenance"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden HCP-350 IOM Rev D | D | 8 Maintenance",
+        "text_original": "8 Maintenance\n\n8.1 Maintenance schedule\nID: M-01\nTask: Grease pump and motor bearings\nInterval: 2,000 operating hours\nReference: 8.2\n\nID: M-02\nTask: Check coupling alignment\nInterval: 4,000 h or 12 months\nReference: 5.3\n\nID: M-03\nTask: Inspect mechanical seal(s) for leakage\nInterval: 4,000 h\nReference: 8.4\n\nID: M-04\nTask: Clean suction strainer\nInterval: 750 h, or when the strainer dP alarm is active\nReference: 8.3\n\nID: M-05\nTask: Measure vibration at both bearings\nInterval: 1,000 h\nReference: 9.2\n\nID: M-06\nTask: Measure impeller-to-casing clearance\nInterval: 8,000 h\nReference: 8.5\n\nID: M-07\nTask: Check foundation bolt torque\nInterval: 8,000 h\nReference: 5.1\n\nID: M-08\nTask: Calibrate PT-1 / PT-2 transmitters\nInterval: 24 months\nReference: 4.1\n\nNOTE: Intervals apply to normal duty (clean water, up to 6,000 operating hours per year). Shorten them for contaminated liquids or continuous duty.\n\n8.2 Lubrication\nGrease each bearing with 18 g of lithium complex grease NLGI 2 through the grease nipple while the pump is running. Open the grease relief plug during greasing and close it after five minutes. Over-greasing raises bearing temperature and is the most frequent cause of fault P-02 after maintenance.\n\n8.3 Cleaning the suction strainer (task M-04)\n1. Stop the pump and secure it against restart.\n2. Close the suction isolation valve and the valve between strainer and pump inlet.\n3. Relieve pressure through the strainer drain and remove the strainer cover.\n4. Lift out the basket, clean it with water and a soft brush, and check the mesh for tears. Replace damaged baskets (part 18-1120).\n5. Refit the basket and cover with a new cover gasket. Open the valves, vent, and restart.\n6. Confirm that the strainer differential pressure (PI-01 minus PI-02) has returned to below 0.05 bar.\n\n8.4 Replacing the mechanical seal\n1. Isolate, drain and cool the pump (see 2.4). Remove the coupling guard and the coupling spacer.\n2. Remove the casing bolts and withdraw the back pull-out assembly using the jacking screws.\n3. Remove the impeller nut (left-hand thread) and pull off the impeller. Withdraw the seal cartridge.\n4. Fit a new seal kit (18-0355). Lubricate O-rings with water or glycerine only, never with oil or grease.\n5. Refit the impeller and the back pull-out assembly with a new casing gasket. Tighten the casing bolts to 45 N-m in a cross pattern, in two passes.\n6. Refit the coupling spacer, re-check alignment, and refit the guard.\n\nCAUTION: Do not exceed the specified casing bolt torque. Over-tightening can crack the gasket seat in the casing.\n\n8.5 Measuring the impeller-to-casing clearance (task M-06)\nMeasure the diametral clearance between impeller wear ring and casing wear ring with a feeler gauge at four points, 90 degrees apart. Permitted clearance: 0.40 - 0.55 mm. If the clearance exceeds the upper limit, replace the casing wear rings. Pump efficiency falls by roughly 1 to 2% for every 0.1 mm above the upper limit.\n\n8.6 Replacing the bearings\n1. Remove the rotating assembly as described in 8.4, steps 1 to 2.\n2. Remove the bearing covers and pull the bearings off the shaft with a puller acting on the inner ring only.\n3. Heat the new bearings to 90 - 110 C with an induction heater (never with an open flame) and slide them onto the shaft against the shoulder.\n4. Pack each bearing with 18 g of grease and refit the covers with new lip seals.\n5. Reassemble and re-check alignment (5.3). Measure bearing temperature and vibration after the first 4 hours of operation.\n\n8.7 Tightening torques\nUnless stated otherwise, torques apply to lightly oiled threads, property class 8.8. Tighten in a cross pattern in at least two passes.\n\nJoint: Casing bolts (casing to cover)\nThread: M16\nTorque (N-m): 45\n\nJoint: Bearing housing to casing\nThread: M12\nTorque (N-m): 60\n\nJoint: Bearing covers\nThread: M10\nTorque (N-m): 25\n\nJoint: Strainer cover\nThread: M12\nTorque (N-m): 45\n\nJoint: Pump feet to baseplate\nThread: M20\nTorque (N-m): 180\n\nJoint: Foundation bolts\nThread: M24\nTorque (N-m): 310\n\nJoint: Impeller nut\nThread: M30 LH\nTorque (N-m): 120",
+        "text_en": "8 Maintenance\n\n8.1 Maintenance schedule\nID: M-01\nTask: Grease pump and motor bearings\nInterval: 2,000 operating hours\nReference: 8.2\n\nID: M-02\nTask: Check coupling alignment\nInterval: 4,000 h or 12 months\nReference: 5.3\n\nID: M-03\nTask: Inspect mechanical seal(s) for leakage\nInterval: 4,000 h\nReference: 8.4\n\nID: M-04\nTask: Clean suction strainer\nInterval: 750 h, or when the strainer dP alarm is active\nReference: 8.3\n\nID: M-05\nTask: Measure vibration at both bearings\nInterval: 1,000 h\nReference: 9.2\n\nID: M-06\nTask: Measure impeller-to-casing clearance\nInterval: 8,000 h\nReference: 8.5\n\nID: M-07\nTask: Check foundation bolt torque\nInterval: 8,000 h\nReference: 5.1\n\nID: M-08\nTask: Calibrate PT-1 / PT-2 transmitters\nInterval: 24 months\nReference: 4.1\n\nNOTE: Intervals apply to normal duty (clean water, up to 6,000 operating hours per year). Shorten them for contaminated liquids or continuous duty.\n\n8.2 Lubrication\nGrease each bearing with 18 g of lithium complex grease NLGI 2 through the grease nipple while the pump is running. Open the grease relief plug during greasing and close it after five minutes. Over-greasing raises bearing temperature and is the most frequent cause of fault P-02 after maintenance.\n\n8.3 Cleaning the suction strainer (task M-04)\n1. Stop the pump and secure it against restart.\n2. Close the suction isolation valve and the valve between strainer and pump inlet.\n3. Relieve pressure through the strainer drain and remove the strainer cover.\n4. Lift out the basket, clean it with water and a soft brush, and check the mesh for tears. Replace damaged baskets (part 18-1120).\n5. Refit the basket and cover with a new cover gasket. Open the valves, vent, and restart.\n6. Confirm that the strainer differential pressure (PI-01 minus PI-02) has returned to below 0.05 bar.\n\n8.4 Replacing the mechanical seal\n1. Isolate, drain and cool the pump (see 2.4). Remove the coupling guard and the coupling spacer.\n2. Remove the casing bolts and withdraw the back pull-out assembly using the jacking screws.\n3. Remove the impeller nut (left-hand thread) and pull off the impeller. Withdraw the seal cartridge.\n4. Fit a new seal kit (18-0355). Lubricate O-rings with water or glycerine only, never with oil or grease.\n5. Refit the impeller and the back pull-out assembly with a new casing gasket. Tighten the casing bolts to 45 N-m in a cross pattern, in two passes.\n6. Refit the coupling spacer, re-check alignment, and refit the guard.\n\nCAUTION: Do not exceed the specified casing bolt torque. Over-tightening can crack the gasket seat in the casing.\n\n8.5 Measuring the impeller-to-casing clearance (task M-06)\nMeasure the diametral clearance between impeller wear ring and casing wear ring with a feeler gauge at four points, 90 degrees apart. Permitted clearance: 0.40 - 0.55 mm. If the clearance exceeds the upper limit, replace the casing wear rings. Pump efficiency falls by roughly 1 to 2% for every 0.1 mm above the upper limit.\n\n8.6 Replacing the bearings\n1. Remove the rotating assembly as described in 8.4, steps 1 to 2.\n2. Remove the bearing covers and pull the bearings off the shaft with a puller acting on the inner ring only.\n3. Heat the new bearings to 90 - 110 C with an induction heater (never with an open flame) and slide them onto the shaft against the shoulder.\n4. Pack each bearing with 18 g of grease and refit the covers with new lip seals.\n5. Reassemble and re-check alignment (5.3). Measure bearing temperature and vibration after the first 4 hours of operation.\n\n8.7 Tightening torques\nUnless stated otherwise, torques apply to lightly oiled threads, property class 8.8. Tighten in a cross pattern in at least two passes.\n\nJoint: Casing bolts (casing to cover)\nThread: M16\nTorque (N-m): 45\n\nJoint: Bearing housing to casing\nThread: M12\nTorque (N-m): 60\n\nJoint: Bearing covers\nThread: M10\nTorque (N-m): 25\n\nJoint: Strainer cover\nThread: M12\nTorque (N-m): 45\n\nJoint: Pump feet to baseplate\nThread: M20\nTorque (N-m): 180\n\nJoint: Foundation bolts\nThread: M24\nTorque (N-m): 310\n\nJoint: Impeller nut\nThread: M30 LH\nTorque (N-m): 120",
+        "acl_key": "family-pumps",
+        "cosine": 0.5320601463317871,
+        "bm25_rank": 16,
+        "vector_rank": 13,
+        "rrf": 0.026856524873828405
+      },
+      {
+        "chunk_id": "7f548093b5d27256",
+        "doc_path": "corpus/manuals/Halden_HCP-500_IOM_RevB.pdf",
+        "doc_title": "Halden HCP-500 IOM Rev B",
+        "doc_type": "Installation, Operation and Maintenance Manual",
+        "revision": "B",
+        "effective_date": "2025-01-30",
+        "locator": {
+          "page": 6,
+          "section_path": [
+            "8 Maintenance"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden HCP-500 IOM Rev B | B | 8 Maintenance",
+        "text_original": "8 Maintenance\n\n8.1 Maintenance schedule\nID: M-01\nTask: Grease pump and motor bearings\nInterval: 2,000 operating hours\nReference: 8.2\n\nID: M-02\nTask: Check coupling alignment\nInterval: 4,000 h or 12 months\nReference: 5.3\n\nID: M-03\nTask: Inspect mechanical seal(s) for leakage\nInterval: 4,000 h\nReference: 8.4\n\nID: M-04\nTask: Clean suction strainer\nInterval: 750 h, or when the strainer dP alarm is active\nReference: 8.3\n\nID: M-05\nTask: Measure vibration at both bearings\nInterval: 1,000 h\nReference: 9.2\n\nID: M-06\nTask: Measure impeller-to-casing clearance\nInterval: 8,000 h\nReference: 8.5\n\nID: M-07\nTask: Check foundation bolt torque\nInterval: 8,000 h\nReference: 5.1\n\nID: M-08\nTask: Calibrate PT-1 / PT-2 transmitters\nInterval: 24 months\nReference: 4.1\n\nNOTE: Intervals apply to normal duty (clean water, up to 6,000 operating hours per year). Shorten them for contaminated liquids or continuous duty.\n\n8.2 Lubrication\nGrease each bearing with 25 g of lithium complex grease NLGI 2 through the grease nipple while the pump is running. Open the grease relief plug during greasing and close it after five minutes. Over-greasing raises bearing temperature and is the most frequent cause of fault P-02 after maintenance.\n\n8.3 Cleaning the suction strainer (task M-04)\n1. Stop the pump and secure it against restart.\n2. Close the suction isolation valve and the valve between strainer and pump inlet.\n3. Relieve pressure through the strainer drain and remove the strainer cover.\n4. Lift out the basket, clean it with water and a soft brush, and check the mesh for tears. Replace damaged baskets (part 18-1120).\n5. Refit the basket and cover with a new cover gasket. Open the valves, vent, and restart.\n6. Confirm that the strainer differential pressure (PI-01 minus PI-02) has returned to below 0.05 bar.\n\n8.4 Replacing the mechanical seal\n1. Isolate, drain and cool the pump (see 2.4). Remove the coupling guard.\n2. Remove the casing bolts of the upper casing half and lift it off using the jacking screws. Discard the casing gasket.\n3. Lift the rotating assembly out of the lower casing half and place it on V-blocks.\n4. Remove the bearing housings, then the seal cartridges from both sides.\n5. Fit new seal kits (18-0502) on both sides. Lubricate O-rings with water or glycerine only.\n6. Lower the rotating assembly into the lower casing half and check that the wear rings sit correctly in their recesses.\n7. Fit a new casing gasket, place the upper casing half, and tighten the casing bolts to 52 N-m in a cross pattern, in two passes.\n8. Turn the shaft by hand. It must turn freely without rubbing.\n\nCAUTION: Do not exceed the specified casing bolt torque. Over-tightening can crack the gasket seat in the casing.\n\n8.5 Measuring the impeller-to-casing clearance (task M-06)\nMeasure the diametral clearance between impeller wear ring and casing wear ring with a feeler gauge at four points, 90 degrees apart. Permitted clearance: 0.45 - 0.60 mm. If the clearance exceeds the upper limit, replace the casing wear rings. Pump efficiency falls by roughly 1 to 2% for every 0.1 mm above the upper limit.\n\n8.6 Replacing the bearings\n1. Remove the rotating assembly as described in 8.4, steps 1 to 3.\n2. Remove the bearing covers and pull the bearings off the shaft with a puller acting on the inner ring only.\n3. Heat the new bearings to 90 - 110 C with an induction heater (never with an open flame) and slide them onto the shaft against the shoulder.\n4. Pack each bearing with 25 g of grease and refit the covers with new lip seals.\n5. Reassemble and re-check alignment (5.3). Measure bearing temperature and vibration after the first 4 hours of operation.\n\n8.7 Tightening torques\nUnless stated otherwise, torques apply to lightly oiled threads, property class 8.8. Tighten in a cross pattern in at least two passes.\n\nJoint: Casing bolts (upper to lower half)\nThread: M16\nTorque (N-m): 52\n\nJoint: Bearing housing to casing\nThread: M12\nTorque (N-m): 60\n\nJoint: Bearing covers\nThread: M10\nTorque (N-m): 25\n\nJoint: Strainer cover\nThread: M12\nTorque (N-m): 45\n\nJoint: Pump feet to baseplate\nThread: M20\nTorque (N-m): 180\n\nJoint: Foundation bolts\nThread: M24\nTorque (N-m): 310\n\nJoint: Impeller nut\nThread: M36\nTorque (N-m): 160",
+        "text_en": "8 Maintenance\n\n8.1 Maintenance schedule\nID: M-01\nTask: Grease pump and motor bearings\nInterval: 2,000 operating hours\nReference: 8.2\n\nID: M-02\nTask: Check coupling alignment\nInterval: 4,000 h or 12 months\nReference: 5.3\n\nID: M-03\nTask: Inspect mechanical seal(s) for leakage\nInterval: 4,000 h\nReference: 8.4\n\nID: M-04\nTask: Clean suction strainer\nInterval: 750 h, or when the strainer dP alarm is active\nReference: 8.3\n\nID: M-05\nTask: Measure vibration at both bearings\nInterval: 1,000 h\nReference: 9.2\n\nID: M-06\nTask: Measure impeller-to-casing clearance\nInterval: 8,000 h\nReference: 8.5\n\nID: M-07\nTask: Check foundation bolt torque\nInterval: 8,000 h\nReference: 5.1\n\nID: M-08\nTask: Calibrate PT-1 / PT-2 transmitters\nInterval: 24 months\nReference: 4.1\n\nNOTE: Intervals apply to normal duty (clean water, up to 6,000 operating hours per year). Shorten them for contaminated liquids or continuous duty.\n\n8.2 Lubrication\nGrease each bearing with 25 g of lithium complex grease NLGI 2 through the grease nipple while the pump is running. Open the grease relief plug during greasing and close it after five minutes. Over-greasing raises bearing temperature and is the most frequent cause of fault P-02 after maintenance.\n\n8.3 Cleaning the suction strainer (task M-04)\n1. Stop the pump and secure it against restart.\n2. Close the suction isolation valve and the valve between strainer and pump inlet.\n3. Relieve pressure through the strainer drain and remove the strainer cover.\n4. Lift out the basket, clean it with water and a soft brush, and check the mesh for tears. Replace damaged baskets (part 18-1120).\n5. Refit the basket and cover with a new cover gasket. Open the valves, vent, and restart.\n6. Confirm that the strainer differential pressure (PI-01 minus PI-02) has returned to below 0.05 bar.\n\n8.4 Replacing the mechanical seal\n1. Isolate, drain and cool the pump (see 2.4). Remove the coupling guard.\n2. Remove the casing bolts of the upper casing half and lift it off using the jacking screws. Discard the casing gasket.\n3. Lift the rotating assembly out of the lower casing half and place it on V-blocks.\n4. Remove the bearing housings, then the seal cartridges from both sides.\n5. Fit new seal kits (18-0502) on both sides. Lubricate O-rings with water or glycerine only.\n6. Lower the rotating assembly into the lower casing half and check that the wear rings sit correctly in their recesses.\n7. Fit a new casing gasket, place the upper casing half, and tighten the casing bolts to 52 N-m in a cross pattern, in two passes.\n8. Turn the shaft by hand. It must turn freely without rubbing.\n\nCAUTION: Do not exceed the specified casing bolt torque. Over-tightening can crack the gasket seat in the casing.\n\n8.5 Measuring the impeller-to-casing clearance (task M-06)\nMeasure the diametral clearance between impeller wear ring and casing wear ring with a feeler gauge at four points, 90 degrees apart. Permitted clearance: 0.45 - 0.60 mm. If the clearance exceeds the upper limit, replace the casing wear rings. Pump efficiency falls by roughly 1 to 2% for every 0.1 mm above the upper limit.\n\n8.6 Replacing the bearings\n1. Remove the rotating assembly as described in 8.4, steps 1 to 3.\n2. Remove the bearing covers and pull the bearings off the shaft with a puller acting on the inner ring only.\n3. Heat the new bearings to 90 - 110 C with an induction heater (never with an open flame) and slide them onto the shaft against the shoulder.\n4. Pack each bearing with 25 g of grease and refit the covers with new lip seals.\n5. Reassemble and re-check alignment (5.3). Measure bearing temperature and vibration after the first 4 hours of operation.\n\n8.7 Tightening torques\nUnless stated otherwise, torques apply to lightly oiled threads, property class 8.8. Tighten in a cross pattern in at least two passes.\n\nJoint: Casing bolts (upper to lower half)\nThread: M16\nTorque (N-m): 52\n\nJoint: Bearing housing to casing\nThread: M12\nTorque (N-m): 60\n\nJoint: Bearing covers\nThread: M10\nTorque (N-m): 25\n\nJoint: Strainer cover\nThread: M12\nTorque (N-m): 45\n\nJoint: Pump feet to baseplate\nThread: M20\nTorque (N-m): 180\n\nJoint: Foundation bolts\nThread: M24\nTorque (N-m): 310\n\nJoint: Impeller nut\nThread: M36\nTorque (N-m): 160",
+        "acl_key": "family-pumps",
+        "cosine": 0.5320412516593933,
+        "bm25_rank": 15,
+        "vector_rank": 14,
+        "rrf": 0.02684684684684685
+      },
+      {
+        "chunk_id": "f8cc1e10ba7cb262",
+        "doc_path": "corpus/bulletins/Halden_SB-2025-009_HCP-350_Casing_Torque.pdf",
+        "doc_title": "Halden SB-2025-009",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "effective_date": "2025-06-18",
+        "locator": {
+          "page": 1,
+          "section_path": [
+            "2 Affected products / Betroffene Produkte"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden SB-2025-009 | 0 | 2 Affected products / Betroffene Produkte",
+        "text_original": "Model: HCP-350\nSerial number range: HCP350-210001 to HCP350-239999\nCasing cover: Version 1 (original)\nCasing gasket: 1.5 mm fibre\nCasing bolt torque: 45 N-m, per IOM Rev D (unchanged)\n\nModel: HCP-350\nSerial number range: HCP350-240001 and later\nCasing cover: Version 2 (revised)\nCasing gasket: 0.8 mm aramid fibre, graphite faced\nCasing bolt torque: 38 N-m, per this bulletin\n\nModel: HCP-200\nSerial number range: all\nCasing cover: -\nCasing gasket: -\nCasing bolt torque: Not affected\n\nIdentification. Version 2 casing covers carry the cast mark \"V2\" on the flange next to the drain plug boss, and the raised gasket face is 8 mm wide instead of 12 mm. The nameplate does not show the casing version. If the nameplate is missing or not readable, use the cast mark.\n\nReplacement casing covers supplied as spare parts after January 2024 are always Version 2, whatever the serial number of the pump. A pump before HCP350-240001 that has been fitted with a replacement cover is to be treated as a Version 2 pump for all purposes of this bulletin. Record the cover change on the pump's maintenance record.",
+        "text_en": "Model: HCP-350\nSerial number range: HCP350-210001 to HCP350-239999\nCasing cover: Version 1 (original)\nCasing gasket: 1.5 mm fibre\nCasing bolt torque: 45 N-m, per IOM Rev D (unchanged)\n\nModel: HCP-350\nSerial number range: HCP350-240001 and later\nCasing cover: Version 2 (revised)\nCasing gasket: 0.8 mm aramid fibre, graphite faced\nCasing bolt torque: 38 N-m, per this bulletin\n\nModel: HCP-200\nSerial number range: all\nCasing cover: -\nCasing gasket: -\nCasing bolt torque: Not affected\n\nIdentification. Version 2 casing covers carry the cast mark \"V2\" on the flange next to the drain plug boss, and the raised gasket face is 8 mm wide instead of 12 mm. The nameplate does not show the casing version. If the nameplate is missing or not readable, use the cast mark.\n\nReplacement casing covers supplied as spare parts after January 2024 are always Version 2, whatever the serial number of the pump. A pump before HCP350-240001 that has been fitted with a replacement cover is to be treated as a Version 2 pump for all purposes of this bulletin. Record the cover change on the pump's maintenance record.",
+        "acl_key": "family-pumps",
+        "cosine": 0.5232157707214355,
+        "bm25_rank": 14,
+        "vector_rank": 17,
+        "rrf": 0.026500526500526502
+      },
+      {
+        "chunk_id": "25ca189dbcd1906c",
+        "doc_path": "corpus/bulletins/Halden_SB-2025-009_HCP-350_Casing_Torque.pdf",
+        "doc_title": "Halden SB-2025-009",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "effective_date": "2025-06-18",
+        "locator": {
+          "page": 2,
+          "section_path": [
+            "5 Corrective action / Massnahmen",
+            "5.2 Field inspection of affected pumps in service"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden SB-2025-009 | 0 | 5 Corrective action / Massnahmen › 5.2 Field inspection of affected pumps in service",
+        "text_original": "Carry out this inspection at the next scheduled maintenance visit, at the latest by 2025-12-31, on all pumps from serial HCP350-240001 (and on earlier pumps fitted with a Version 2 cover) whose casing joint has been opened since delivery. Pumps whose casing joint has never been opened were assembled at the correct torque and need no action.\n\n1. Check the maintenance records for the pump: was the casing joint opened, and which torque was applied? If the records do not state the torque, assume 45 N-m.\n2. With the pump running at operating pressure and temperature, inspect the casing joint all round for weeping, glycol or mineral residue, and staining on the casing below the joint.\n3. No leakage and 38 N-m documented: no further action. Record the inspection.\n4. No leakage but 45 N-m documented or torque unknown: at a convenient stop, isolate and drain the pump (IOM 2.4), slacken the casing bolts, and re-tighten to 38 N-m per 5.1, step 5. Inspect again after 24 hours at operating temperature. If leakage appears, continue with step 5.\n5. Leakage present: stop, isolate and drain the pump. Open the casing joint, remove the gasket and inspect the gasket seat with dye penetrant. Without cracks: fit a new Version 2 gasket and close the joint per 5.1. With cracks: replace the casing cover (Version 2) and gasket. Do not attempt repair by welding, metal filler or liquid sealant.\n6. Report the result of every inspection to Halden with the claim form, including inspections without findings. Halden uses these reports to confirm the affected population.\n\nWARNING / WARNUNG\nA cracked gasket seat can release hot liquid under pressure (up to 16 bar, 90 C). Do not approach a leaking casing joint on a running pump to re-tighten bolts. Stop and isolate the pump first.",
+        "text_en": "Carry out this inspection at the next scheduled maintenance visit, at the latest by 2025-12-31, on all pumps from serial HCP350-240001 (and on earlier pumps fitted with a Version 2 cover) whose casing joint has been opened since delivery. Pumps whose casing joint has never been opened were assembled at the correct torque and need no action.\n\n1. Check the maintenance records for the pump: was the casing joint opened, and which torque was applied? If the records do not state the torque, assume 45 N-m.\n2. With the pump running at operating pressure and temperature, inspect the casing joint all round for weeping, glycol or mineral residue, and staining on the casing below the joint.\n3. No leakage and 38 N-m documented: no further action. Record the inspection.\n4. No leakage but 45 N-m documented or torque unknown: at a convenient stop, isolate and drain the pump (IOM 2.4), slacken the casing bolts, and re-tighten to 38 N-m per 5.1, step 5. Inspect again after 24 hours at operating temperature. If leakage appears, continue with step 5.\n5. Leakage present: stop, isolate and drain the pump. Open the casing joint, remove the gasket and inspect the gasket seat with dye penetrant. Without cracks: fit a new Version 2 gasket and close the joint per 5.1. With cracks: replace the casing cover (Version 2) and gasket. Do not attempt repair by welding, metal filler or liquid sealant.\n6. Report the result of every inspection to Halden with the claim form, including inspections without findings. Halden uses these reports to confirm the affected population.\n\nWARNING / WARNUNG\nA cracked gasket seat can release hot liquid under pressure (up to 16 bar, 90 C). Do not approach a leaking casing joint on a running pump to re-tighten bolts. Stop and isolate the pump first.",
+        "acl_key": "family-pumps",
+        "cosine": 0.4994027018547058,
+        "bm25_rank": 12,
+        "vector_rank": 20,
+        "rrf": 0.02638888888888889
+      },
+      {
+        "chunk_id": "c4f7f28c596978a7",
+        "doc_path": "corpus/email/HCP-350_casing_leak_FRS-P-0031_Halden_thread.pdf",
+        "doc_title": "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": 3,
+          "section_path": [],
+          "record_id": null,
+          "sender": "Kenji Watanabe <k.watanabe@corvane.com>",
+          "date": "Thursday, June 4, 2026 9:02 AM"
+        },
+        "header": "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+        "text_original": "To: Maria Okafor <m.okafor@corvane.com>; Tom Becker <t.becker@corvane.com>\nSubject: RE: AW: HCP-350 casing joint leaking after seal change - FRS-P-0031 / HCP350-241187\n\nTaking Stefan off this one.\n\nGood email Maria. Tom, 0031 stays down until the casing has been checked, even if the plant pushes. If the seat is cracked it only gets worse, and 0012 can carry the syrup room for a week.\n\nI'll take the bulletin question to Rachel. I'd bet this isn't only a Halden problem. Right now nobody on our side owns making sure OEM bulletins end up next to the manuals, they come in to whoever happens to be on the list.\n\nK",
+        "text_en": "To: Maria Okafor <m.okafor@corvane.com>; Tom Becker <t.becker@corvane.com>\nSubject: RE: AW: HCP-350 casing joint leaking after seal change - FRS-P-0031 / HCP350-241187\n\nTaking Stefan off this one.\n\nGood email Maria. Tom, 0031 stays down until the casing has been checked, even if the plant pushes. If the seat is cracked it only gets worse, and 0012 can carry the syrup room for a week.\n\nI'll take the bulletin question to Rachel. I'd bet this isn't only a Halden problem. Right now nobody on our side owns making sure OEM bulletins end up next to the manuals, they come in to whoever happens to be on the list.\n\nK",
+        "acl_key": "family-pumps",
+        "cosine": 0.4594653248786926,
+        "bm25_rank": 9,
+        "vector_rank": 29,
+        "rrf": 0.025728708679368183
+      },
+      {
+        "chunk_id": "fb3937653b365307",
+        "doc_path": "corpus/bulletins/Halden_SB-2025-009_HCP-350_Casing_Torque.pdf",
+        "doc_title": "Halden SB-2025-009",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "effective_date": "2025-06-18",
+        "locator": {
+          "page": 3,
+          "section_path": [
+            "7 Documentation affected / Betroffene Dokumentation"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden SB-2025-009 | 0 | 7 Documentation affected / Betroffene Dokumentation",
+        "text_original": "For pumps from serial HCP350-240001, and for pumps fitted with a Version 2 cover, this bulletin supersedes the casing bolt torque given in HDN-IOM-350 Rev D, sections 4.3 (Technical data), 8.4 (Replacing the mechanical seal) and 8.7 (Tightening torques). For earlier serials with the original cover the IOM values remain valid. The correction will be included in IOM Rev E.\n\nUntil Rev E is published, keep a copy of this bulletin with the manual at the place of installation and mark printed copies of section 8.7 by hand: \"From HCP350-240001: see SB-2025-009\".",
+        "text_en": "For pumps from serial HCP350-240001, and for pumps fitted with a Version 2 cover, this bulletin supersedes the casing bolt torque given in HDN-IOM-350 Rev D, sections 4.3 (Technical data), 8.4 (Replacing the mechanical seal) and 8.7 (Tightening torques). For earlier serials with the original cover the IOM values remain valid. The correction will be included in IOM Rev E.\n\nUntil Rev E is published, keep a copy of this bulletin with the manual at the place of installation and mark printed copies of section 8.7 by hand: \"From HCP350-240001: see SB-2025-009\".",
+        "acl_key": "family-pumps",
+        "cosine": 0.5770114660263062,
+        "bm25_rank": 37,
+        "vector_rank": 8,
+        "rrf": 0.02501516070345664
+      },
+      {
+        "chunk_id": "c8e2a61622f6ed4a",
+        "doc_path": "corpus/confluence/HCP-500-Maintenance-Quick-Reference.html",
+        "doc_title": "HCP-500 Maintenance Quick Reference",
+        "doc_type": "confluence",
+        "revision": "unknown",
+        "effective_date": "Apr 26, 2023",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service",
+            "HCP-500 Maintenance Quick Reference",
+            "Things the trainer stressed"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "HCP-500 Maintenance Quick Reference | Field Service › HCP-500 Maintenance Quick Reference › Things the trainer stressed",
+        "text_original": "Things the trainer stressed\n\n- Suction isolation valve fully open in operation. No throttling on the suction side, ever.\n- Never run against a closed discharge valve for more than 30 seconds.\n- Casing bolts in a cross pattern, two passes. Torque is in the manual. Don't overtighten, the casing gasket seat can crack.\n- O-rings on the seals: water or glycerine only.",
+        "text_en": "Things the trainer stressed\n\n- Suction isolation valve fully open in operation. No throttling on the suction side, ever.\n- Never run against a closed discharge valve for more than 30 seconds.\n- Casing bolts in a cross pattern, two passes. Torque is in the manual. Don't overtighten, the casing gasket seat can crack.\n- O-rings on the seals: water or glycerine only.",
+        "acl_key": "family-pumps",
+        "cosine": 0.49939000606536865,
+        "bm25_rank": 20,
+        "vector_rank": 21,
+        "rrf": 0.02484567901234568
+      },
+      {
+        "chunk_id": "0225db2fbb73cc85",
+        "doc_path": "corpus/manuals/Halden_HCP-350_IOM_RevD.pdf",
+        "doc_title": "Halden HCP-350 IOM Rev D",
+        "doc_type": "Installation, Operation and Maintenance Manual",
+        "revision": "D",
+        "effective_date": "2023-05-22",
+        "locator": {
+          "page": 5,
+          "section_path": [
+            "5 Installation"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden HCP-350 IOM Rev D | D | 5 Installation",
+        "text_original": "5 Installation\n\n5.1 Foundation and baseplate\nThe foundation must be rigid enough to absorb vibration and have a mass of at least three times the mass of the pump unit. Level the baseplate to within 0.2 mm/m using shims next to the foundation bolts, then grout it with non-shrink grout. Do not tighten the foundation bolts fully until the grout has cured (typically 48 hours).\n\n5.2 Piping\nSupport the piping independently so that no forces or moments are transmitted to the pump flanges. Connect the flanges only after the grout has cured. The suction line should be as short and straight as possible, with a straight length of at least five pipe diameters before the pump inlet, and must rise continuously toward the pump to prevent air pockets. Use an eccentric reducer with the flat side on top.\n\nCAUTION: Do not install a throttling valve in the suction line. The suction isolation valve must be fully open during operation (see 7.2).\n\nA suction strainer (basket strainer, mesh 3 mm, Halden part 18-1120) must be installed between the suction isolation valve and the pump inlet, with pressure gauges PI-01 and PI-02 on either side so that the strainer differential pressure can be read.\n\n5.3 Coupling alignment\nAlign the coupling after the piping has been connected. Permitted misalignment: radial offset 0.05 mm, angular 0.05 mm per 100 mm. Use a laser alignment tool where available. Re-check alignment after 24 hours of operation at operating temperature.\n\n5.4 Electrical connection\nConnect the motor according to the motor nameplate and the wiring diagram in the controller door. Connect transmitters PT-1 and PT-2 to terminals X3.1 to X3.4 with shielded cable, shield earthed at the controller end only. The PC-3 provides Modbus TCP on port 502 for connection to the plant control system (see chapter 11).\n\n5.5 Permitted nozzle loads\nForces and moments from the piping must not exceed the values below (EN ISO 5199, cast iron casing). Higher loads distort the casing, change the wear ring clearance and shorten bearing and seal life.\n\nFlange: Suction\nFx (N): 2,350\nFy (N): 2,100\nFz (N): 2,650\nMx (N-m): 1,050\nMy (N-m): 750\nMz (N-m): 860\n\nFlange: Discharge\nFx (N): 1,600\nFy (N): 1,450\nFz (N): 1,800\nMx (N-m): 700\nMy (N-m): 500\nMz (N-m): 580",
+        "text_en": "5 Installation\n\n5.1 Foundation and baseplate\nThe foundation must be rigid enough to absorb vibration and have a mass of at least three times the mass of the pump unit. Level the baseplate to within 0.2 mm/m using shims next to the foundation bolts, then grout it with non-shrink grout. Do not tighten the foundation bolts fully until the grout has cured (typically 48 hours).\n\n5.2 Piping\nSupport the piping independently so that no forces or moments are transmitted to the pump flanges. Connect the flanges only after the grout has cured. The suction line should be as short and straight as possible, with a straight length of at least five pipe diameters before the pump inlet, and must rise continuously toward the pump to prevent air pockets. Use an eccentric reducer with the flat side on top.\n\nCAUTION: Do not install a throttling valve in the suction line. The suction isolation valve must be fully open during operation (see 7.2).\n\nA suction strainer (basket strainer, mesh 3 mm, Halden part 18-1120) must be installed between the suction isolation valve and the pump inlet, with pressure gauges PI-01 and PI-02 on either side so that the strainer differential pressure can be read.\n\n5.3 Coupling alignment\nAlign the coupling after the piping has been connected. Permitted misalignment: radial offset 0.05 mm, angular 0.05 mm per 100 mm. Use a laser alignment tool where available. Re-check alignment after 24 hours of operation at operating temperature.\n\n5.4 Electrical connection\nConnect the motor according to the motor nameplate and the wiring diagram in the controller door. Connect transmitters PT-1 and PT-2 to terminals X3.1 to X3.4 with shielded cable, shield earthed at the controller end only. The PC-3 provides Modbus TCP on port 502 for connection to the plant control system (see chapter 11).\n\n5.5 Permitted nozzle loads\nForces and moments from the piping must not exceed the values below (EN ISO 5199, cast iron casing). Higher loads distort the casing, change the wear ring clearance and shorten bearing and seal life.\n\nFlange: Suction\nFx (N): 2,350\nFy (N): 2,100\nFz (N): 2,650\nMx (N-m): 1,050\nMy (N-m): 750\nMz (N-m): 860\n\nFlange: Discharge\nFx (N): 1,600\nFy (N): 1,450\nFz (N): 1,800\nMx (N-m): 700\nMy (N-m): 500\nMz (N-m): 580",
+        "acl_key": "family-pumps",
+        "cosine": 0.45964232087135315,
+        "bm25_rank": 17,
+        "vector_rank": 28,
+        "rrf": 0.024350649350649352
+      },
+      {
+        "chunk_id": "e8ae032d05bd0734",
+        "doc_path": "corpus/data/maintpro_history_NA_2023-2026.csv",
+        "doc_title": "MaintPro history NA",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "229636",
+          "sender": "TBECKER",
+          "date": "06/02/2026",
+          "thread_record_ids": [
+            "229636",
+            "229658",
+            "229790"
+          ]
+        },
+        "header": "MaintPro history NA | 229636",
+        "text_original": "WO_No: 229636\nDate: 06/02/2026\nSite: FRS\nAsset: FRS-P-0031\nModel: HCP-350\nSerial: HCP350-241187\nEvent_Type: CM\nFault: P-04\nHours: 9977\nTech: TBECKER\nNotes: seal weeping at faces. replced mech seal 18-0356 per IOM 8.4. new casing gskt, casing bolts 45 Nm cross patern 2 passes per manual\nParts: 18-0356 x1; casing gasket x1\nLabor_Hrs: 5\nStatus: CLOSED\n\nWO_No: 229658\nDate: 06/03/2026\nSite: FRS\nAsset: FRS-P-0031\nModel: HCP-350\nSerial: HCP350-241187\nEvent_Type: CM\nFault: \nHours: 9987\nTech: TBECKER\nNotes: casing to cover joint weeping @ 4 oclock ~2h after start. bolts checked at 45, none moved. duty to 0012. emailed Halden (Stefan W). SF 00041988\nParts: \nLabor_Hrs: 2\nStatus: WAITING PARTS\n\nWO_No: 229790\nDate: 06/04/2026\nSite: FRS\nAsset: FRS-P-0031\nModel: HCP-350\nSerial: HCP350-241187\nEvent_Type: Inspection\nFault: \nHours: \nTech: TBECKER\nNotes: opened joint, dye pen on gasket seat - cracked at 2 bolt holes. halden says casing cant be repaired. new casing ordered (Halden direct, no chg)\nParts: \nLabor_Hrs: 3\nStatus: WAITING PARTS",
+        "text_en": "WO_No: 229636\nDate: 06/02/2026\nSite: FRS\nAsset: FRS-P-0031\nModel: HCP-350\nSerial: HCP350-241187\nEvent_Type: CM\nFault: P-04\nHours: 9977\nTech: TBECKER\nNotes: seal weeping at faces. replced mech seal 18-0356 per IOM 8.4. new casing gskt, casing bolts 45 Nm cross patern 2 passes per manual\nParts: 18-0356 x1; casing gasket x1\nLabor_Hrs: 5\nStatus: CLOSED\n\nWO_No: 229658\nDate: 06/03/2026\nSite: FRS\nAsset: FRS-P-0031\nModel: HCP-350\nSerial: HCP350-241187\nEvent_Type: CM\nFault: \nHours: 9987\nTech: TBECKER\nNotes: casing to cover joint weeping @ 4 oclock ~2h after start. bolts checked at 45, none moved. duty to 0012. emailed Halden (Stefan W). SF 00041988\nParts: \nLabor_Hrs: 2\nStatus: WAITING PARTS\n\nWO_No: 229790\nDate: 06/04/2026\nSite: FRS\nAsset: FRS-P-0031\nModel: HCP-350\nSerial: HCP350-241187\nEvent_Type: Inspection\nFault: \nHours: \nTech: TBECKER\nNotes: opened joint, dye pen on gasket seat - cracked at 2 bolt holes. halden says casing cant be repaired. new casing ordered (Halden direct, no chg)\nParts: \nLabor_Hrs: 3\nStatus: WAITING PARTS",
+        "acl_key": "region-na",
+        "cosine": 0.5136834979057312,
+        "bm25_rank": 29,
+        "vector_rank": 18,
+        "rrf": 0.024056467876692595
+      },
+      {
+        "chunk_id": "8152be6b6e9c8177",
+        "doc_path": "corpus/bulletins/Halden_SB-2025-009_HCP-350_Casing_Torque.pdf",
+        "doc_title": "Halden SB-2025-009",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "effective_date": "2025-06-18",
+        "locator": {
+          "page": 3,
+          "section_path": [
+            "10 Note on other models / Hinweis zu anderen Baureihen"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden SB-2025-009 | 0 | 10 Note on other models / Hinweis zu anderen Baureihen",
+        "text_original": "HCP-200 pumps are not affected. HCP-500 units from serial HCP500-250001 also use the revised casing; torque values for these units are given in torque chart HDN-TC-2025.\n\nPrepared: Jonas Albrecht\nProduct Engineering, Centrifugal Pumps\n\nApproved: Dipl.-Ing. M. Kessler\nHead of Engineering\n\nReleased electronically in Halden PLM. Valid without handwritten signature.\n\nTechnical questions: Stefan Wirth, Technical Support, s.wirth@halden-pumpen.de, +49 7361 555 0140 (Monday to Friday, 07:00 - 17:00 CET). Please quote the pump serial number in all correspondence.",
+        "text_en": "HCP-200 pumps are not affected. HCP-500 units from serial HCP500-250001 also use the revised casing; torque values for these units are given in torque chart HDN-TC-2025.\n\nPrepared: Jonas Albrecht\nProduct Engineering, Centrifugal Pumps\n\nApproved: Dipl.-Ing. M. Kessler\nHead of Engineering\n\nReleased electronically in Halden PLM. Valid without handwritten signature.\n\nTechnical questions: Stefan Wirth, Technical Support, s.wirth@halden-pumpen.de, +49 7361 555 0140 (Monday to Friday, 07:00 - 17:00 CET). Please quote the pump serial number in all correspondence.",
+        "acl_key": "family-pumps",
+        "cosine": 0.5397726893424988,
+        "bm25_rank": 40,
+        "vector_rank": 12,
+        "rrf": 0.02388888888888889
+      },
+      {
+        "chunk_id": "35bb59f86fa36562",
+        "doc_path": "corpus/data/salesforce_cases_NA_2025-2026.json",
+        "doc_title": "Salesforce cases NA",
+        "doc_type": "Salesforce Case export",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "5008d000002p9rO8Bm",
+          "sender": null,
+          "date": "2026-06-03T16:15:00.000+0000",
+          "thread_record_ids": [
+            "5008d000002p9rO8Bm",
+            "00a8d0000019yx8Qss",
+            "00a8d00000jcm0Ir7L",
+            "00a8d00000YyaKq1n8",
+            "00a8d00000xwRi4gqg"
+          ]
+        },
+        "header": "Salesforce cases NA | 5008d000002p9rO8Bm",
+        "text_original": "attributes.type: Case\nattributes.url: /services/data/v60.0/sobjects/Case/5008d000002p9rO8Bm\nId: 5008d000002p9rO8Bm\nCaseNumber: 00041988\nSubject: FRS-P-0031 casing joint weeping after seal change\nStatus: Closed\nPriority: High\nOrigin: Technician\nCreatedDate: 2026-06-03T16:15:00.000+0000\nClosedDate: 2026-06-12T22:05:00.000+0000\nAccount.Name: Sierra Springs Beverage\nAsset__r.Name: FRS-P-0031\nEquipment_Model__c: HCP-350\nSerial_Number__c: HCP350-241187\nSite__c: FRS - Fresno Bottling Plant\nFault_Code__c: null\nDescription: Casing joint weeping after the seal change on 06/02. Casing bolts torqued to 45 N-m per the manual (IOM Rev D 8.4). Joint weeping at about 4 o'clock after 2 h in service, ~5.5 bar discharge. Duty switched to FRS-P-0012.\nResolution__c: Gasket seat cracked (dye penetrant, two bolt holes). Serial HCP350-241187 is in the Halden SB-2025-009 range (revised casing from HCP350-240001). New casing half fitted with new gasket, torqued to 38 N-m cross pattern, two passes, per SB-2025-009. 24 h run, dry.\nParts_Used__c: 18-0356 x1 (seal, 06/02); casing half + gasket (Halden, no charge)\nOwner.Name: Tom Becker\nCaseComments.totalSize: 4\nCaseComments.done: true\nEmailMessages: null\n\nattributes.type: CaseComment\nattributes.url: /services/data/v60.0/sobjects/CaseComment/00a8d0000019yx8Qss\nId: 00a8d0000019yx8Qss\nCommentBody: emailed Stefan Wirth at Halden w/ photos. not going above 45.\nCreatedDate: 2026-06-03T17:50:00.000+0000\nIsPublished: false\nCreatedBy.Name: Tom Becker\n\nattributes.type: CaseComment\nattributes.url: /services/data/v60.0/sobjects/CaseComment/00a8d00000jcm0Ir7L\nId: 00a8d00000jcm0Ir7L\nCommentBody: dye pen shows cracks at 2 bolt holes. casing ordered from Halden.\nCreatedDate: 2026-06-04T23:30:00.000+0000\nIsPublished: false\nCreatedBy.Name: Tom Becker\n\nattributes.type: CaseComment\nattributes.url: /services/data/v60.0/sobjects/CaseComment/00a8d00000YyaKq1n8\nId: 00a8d00000YyaKq1n8\nCommentBody: Halden says this serial is in SB-2025-009, revised casing, 38 N-m not 45. Manual Rev D still says 45. I've asked Stefan why the manual was never updated.\nCreatedDate: 2026-06-05T15:12:00.000+0000\nIsPublished: false\nCreatedBy.Name: Maria Okafor\n\nattributes.type: CaseComment\nattributes.url: /services/data/v60.0/sobjects/CaseComment/00a8d00000xwRi4gqg\nId: 00a8d00000xwRi4gqg\nCommentBody: casing fitted 6/11, 24h run dry. closing\nCreatedDate: 2026-06-12T22:03:00.000+0000\nIsPublished: false\nCreatedBy.Name: Tom Becker",
+        "text_en": "attributes.type: Case\nattributes.url: /services/data/v60.0/sobjects/Case/5008d000002p9rO8Bm\nId: 5008d000002p9rO8Bm\nCaseNumber: 00041988\nSubject: FRS-P-0031 casing joint weeping after seal change\nStatus: Closed\nPriority: High\nOrigin: Technician\nCreatedDate: 2026-06-03T16:15:00.000+0000\nClosedDate: 2026-06-12T22:05:00.000+0000\nAccount.Name: Sierra Springs Beverage\nAsset__r.Name: FRS-P-0031\nEquipment_Model__c: HCP-350\nSerial_Number__c: HCP350-241187\nSite__c: FRS - Fresno Bottling Plant\nFault_Code__c: null\nDescription: Casing joint weeping after the seal change on 06/02. Casing bolts torqued to 45 N-m per the manual (IOM Rev D 8.4). Joint weeping at about 4 o'clock after 2 h in service, ~5.5 bar discharge. Duty switched to FRS-P-0012.\nResolution__c: Gasket seat cracked (dye penetrant, two bolt holes). Serial HCP350-241187 is in the Halden SB-2025-009 range (revised casing from HCP350-240001). New casing half fitted with new gasket, torqued to 38 N-m cross pattern, two passes, per SB-2025-009. 24 h run, dry.\nParts_Used__c: 18-0356 x1 (seal, 06/02); casing half + gasket (Halden, no charge)\nOwner.Name: Tom Becker\nCaseComments.totalSize: 4\nCaseComments.done: true\nEmailMessages: null\n\nattributes.type: CaseComment\nattributes.url: /services/data/v60.0/sobjects/CaseComment/00a8d0000019yx8Qss\nId: 00a8d0000019yx8Qss\nCommentBody: emailed Stefan Wirth at Halden w/ photos. not going above 45.\nCreatedDate: 2026-06-03T17:50:00.000+0000\nIsPublished: false\nCreatedBy.Name: Tom Becker\n\nattributes.type: CaseComment\nattributes.url: /services/data/v60.0/sobjects/CaseComment/00a8d00000jcm0Ir7L\nId: 00a8d00000jcm0Ir7L\nCommentBody: dye pen shows cracks at 2 bolt holes. casing ordered from Halden.\nCreatedDate: 2026-06-04T23:30:00.000+0000\nIsPublished: false\nCreatedBy.Name: Tom Becker\n\nattributes.type: CaseComment\nattributes.url: /services/data/v60.0/sobjects/CaseComment/00a8d00000YyaKq1n8\nId: 00a8d00000YyaKq1n8\nCommentBody: Halden says this serial is in SB-2025-009, revised casing, 38 N-m not 45. Manual Rev D still says 45. I've asked Stefan why the manual was never updated.\nCreatedDate: 2026-06-05T15:12:00.000+0000\nIsPublished: false\nCreatedBy.Name: Maria Okafor\n\nattributes.type: CaseComment\nattributes.url: /services/data/v60.0/sobjects/CaseComment/00a8d00000xwRi4gqg\nId: 00a8d00000xwRi4gqg\nCommentBody: casing fitted 6/11, 24h run dry. closing\nCreatedDate: 2026-06-12T22:03:00.000+0000\nIsPublished: false\nCreatedBy.Name: Tom Becker",
+        "acl_key": "region-na",
+        "cosine": 0.4707973301410675,
+        "bm25_rank": 25,
+        "vector_rank": 25,
+        "rrf": 0.023529411764705882
+      },
+      {
+        "chunk_id": "fcb6b78759947b1e",
+        "doc_path": "corpus/manuals/Halden_HCP-500_IOM_RevB.pdf",
+        "doc_title": "Halden HCP-500 IOM Rev B",
+        "doc_type": "Installation, Operation and Maintenance Manual",
+        "revision": "B",
+        "effective_date": "2025-01-30",
+        "locator": {
+          "page": 5,
+          "section_path": [
+            "5 Installation"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden HCP-500 IOM Rev B | B | 5 Installation",
+        "text_original": "5 Installation\n\n5.1 Foundation and baseplate\nThe foundation must be rigid enough to absorb vibration and have a mass of at least three times the mass of the pump unit. Level the baseplate to within 0.2 mm/m using shims next to the foundation bolts, then grout it with non-shrink grout. Do not tighten the foundation bolts fully until the grout has cured (typically 48 hours).\n\n5.2 Piping\nSupport the piping independently so that no forces or moments are transmitted to the pump flanges. Connect the flanges only after the grout has cured. The suction line should be as short and straight as possible, with a straight length of at least five pipe diameters before the pump inlet, and must rise continuously toward the pump to prevent air pockets. Use an eccentric reducer with the flat side on top.\n\nCAUTION: Do not install a throttling valve in the suction line. The suction isolation valve must be fully open during operation (see 7.2).\n\nA suction strainer (basket strainer, mesh 3 mm, Halden part 18-1120) must be installed between the suction isolation valve and the pump inlet, with pressure gauges PI-01 and PI-02 on either side so that the strainer differential pressure can be read.\n\n5.3 Coupling alignment\nAlign the coupling after the piping has been connected. Permitted misalignment: radial offset 0.05 mm, angular 0.05 mm per 100 mm. Use a laser alignment tool where available. Re-check alignment after 24 hours of operation at operating temperature.\n\n5.4 Electrical connection\nConnect the motor according to the motor nameplate and the wiring diagram in the controller door. Connect transmitters PT-1 and PT-2 to terminals X3.1 to X3.4 with shielded cable, shield earthed at the controller end only. The PC-3 provides Modbus TCP on port 502 for connection to the plant control system (see chapter 11).\n\n5.5 Permitted nozzle loads\nForces and moments from the piping must not exceed the values below (EN ISO 5199, cast iron casing). Higher loads distort the casing, change the wear ring clearance and shorten bearing and seal life.\n\nFlange: Suction\nFx (N): 3,150\nFy (N): 2,800\nFz (N): 3,500\nMx (N-m): 1,450\nMy (N-m): 1,050\nMz (N-m): 1,200\n\nFlange: Discharge\nFx (N): 2,350\nFy (N): 2,100\nFz (N): 2,650\nMx (N-m): 1,050\nMy (N-m): 750\nMz (N-m): 860",
+        "text_en": "5 Installation\n\n5.1 Foundation and baseplate\nThe foundation must be rigid enough to absorb vibration and have a mass of at least three times the mass of the pump unit. Level the baseplate to within 0.2 mm/m using shims next to the foundation bolts, then grout it with non-shrink grout. Do not tighten the foundation bolts fully until the grout has cured (typically 48 hours).\n\n5.2 Piping\nSupport the piping independently so that no forces or moments are transmitted to the pump flanges. Connect the flanges only after the grout has cured. The suction line should be as short and straight as possible, with a straight length of at least five pipe diameters before the pump inlet, and must rise continuously toward the pump to prevent air pockets. Use an eccentric reducer with the flat side on top.\n\nCAUTION: Do not install a throttling valve in the suction line. The suction isolation valve must be fully open during operation (see 7.2).\n\nA suction strainer (basket strainer, mesh 3 mm, Halden part 18-1120) must be installed between the suction isolation valve and the pump inlet, with pressure gauges PI-01 and PI-02 on either side so that the strainer differential pressure can be read.\n\n5.3 Coupling alignment\nAlign the coupling after the piping has been connected. Permitted misalignment: radial offset 0.05 mm, angular 0.05 mm per 100 mm. Use a laser alignment tool where available. Re-check alignment after 24 hours of operation at operating temperature.\n\n5.4 Electrical connection\nConnect the motor according to the motor nameplate and the wiring diagram in the controller door. Connect transmitters PT-1 and PT-2 to terminals X3.1 to X3.4 with shielded cable, shield earthed at the controller end only. The PC-3 provides Modbus TCP on port 502 for connection to the plant control system (see chapter 11).\n\n5.5 Permitted nozzle loads\nForces and moments from the piping must not exceed the values below (EN ISO 5199, cast iron casing). Higher loads distort the casing, change the wear ring clearance and shorten bearing and seal life.\n\nFlange: Suction\nFx (N): 3,150\nFy (N): 2,800\nFz (N): 3,500\nMx (N-m): 1,450\nMy (N-m): 1,050\nMz (N-m): 1,200\n\nFlange: Discharge\nFx (N): 2,350\nFy (N): 2,100\nFz (N): 2,650\nMx (N-m): 1,050\nMy (N-m): 750\nMz (N-m): 860",
+        "acl_key": "family-pumps",
+        "cosine": 0.45155513286590576,
+        "bm25_rank": 19,
+        "vector_rank": 33,
+        "rrf": 0.02341091602014428
+      },
+      {
+        "chunk_id": "f24784bc455c2080",
+        "doc_path": "corpus/confluence/Pump-Troubleshooting-Playbook.html",
+        "doc_title": "Pump Troubleshooting Playbook",
+        "doc_type": "Field Service wiki page",
+        "revision": "unknown",
+        "effective_date": "Sep 08, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Pump Troubleshooting Playbook",
+            "Parts we carry"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Parts we carry",
+        "text_original": "Part | What | Van stock\n18-0201 | Seal kit HCP-200 | Fresno vans only\n18-0356 | Seal kit HCP-350 | All pump vans\n18-0502 | Seal kit HCP-500 | Two per van where we look after a 500\n18-1120 | Strainer basket, 3 mm mesh, HCP-350/500 | One per van\n18-1121 | Strainer cover gasket | Several. Use a new one every time\n19-0301 | Pressure transmitter PT-1/PT-2 | One in Fresno stores\n\nWear rings, bearings and casing gaskets are ordered per job through stores with the serial number. Don't guess part numbers on the order, write the description and the serial and let stores look it up.",
+        "text_en": "Part | What | Van stock\n18-0201 | Seal kit HCP-200 | Fresno vans only\n18-0356 | Seal kit HCP-350 | All pump vans\n18-0502 | Seal kit HCP-500 | Two per van where we look after a 500\n18-1120 | Strainer basket, 3 mm mesh, HCP-350/500 | One per van\n18-1121 | Strainer cover gasket | Several. Use a new one every time\n19-0301 | Pressure transmitter PT-1/PT-2 | One in Fresno stores\n\nWear rings, bearings and casing gaskets are ordered per job through stores with the serial number. Don't guess part numbers on the order, write the description and the serial and let stores look it up.",
+        "acl_key": "family-pumps",
+        "cosine": 0.4268592298030853,
+        "bm25_rank": 18,
+        "vector_rank": 46,
+        "rrf": 0.022254475084663765
+      },
+      {
+        "chunk_id": "df4cabd8b72012ce",
+        "doc_path": "corpus/confluence/Pump-Troubleshooting-Playbook.html",
+        "doc_title": "Pump Troubleshooting Playbook",
+        "doc_type": "Field Service wiki page",
+        "revision": "unknown",
+        "effective_date": "Sep 08, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Pump Troubleshooting Playbook",
+            "Comments"
+          ],
+          "record_id": null,
+          "sender": "Maria Okafor",
+          "date": "Aug 22, 2024 12:02"
+        },
+        "header": "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Comments",
+        "text_original": "I'd rather not. The values are in the manual and they change by bulletin. If they're here too, someone will use this page when it's out of date. Open the manual, it's two clicks on the tablet.",
+        "text_en": "I'd rather not. The values are in the manual and they change by bulletin. If they're here too, someone will use this page when it's out of date. Open the manual, it's two clicks on the tablet.",
+        "acl_key": "family-pumps",
+        "cosine": 0.44763311743736267,
+        "bm25_rank": 34,
+        "vector_rank": 34,
+        "rrf": 0.02127659574468085
+      },
+      {
+        "chunk_id": "eb2ed6f3b1e4df9f",
+        "doc_path": "corpus/manuals/Halden_HCP-200_Betriebsanleitung_1998_scan.pdf",
+        "doc_title": "Halden HCP-200 Betriebsanleitung 1998 (scan)",
+        "doc_type": "Betriebsanleitung / Operating Instructions",
+        "revision": "Revision A",
+        "effective_date": "03/1998",
+        "locator": {
+          "page": 6,
+          "section_path": [
+            "7 Wartung / Maintenance"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden HCP-200 Betriebsanleitung 1998 (scan) | Revision A | 7 Wartung / Maintenance",
+        "text_original": "7 Wartung\nMaintenance\n\n7.1 Wartungsplan / Maintenance schedule\nArbeit / Work: Lager nachschmieren / Regrease bearings\nIntervall / Interval: alle 2000 Betriebsstunden / every 2,000 operating hours\n\nArbeit / Work: Saugsieb reinigen / Clean suction strainer\nIntervall / Interval: alle 500 Betriebsstunden / every 500 operating hours\n\nArbeit / Work: Gleitringdichtung auf Leckage prüfen / Check mechanical seal for leakage\nIntervall / Interval: wöchentlich / weekly\n\nArbeit / Work: Kupplungsausrichtung prüfen / Check coupling alignment\nIntervall / Interval: jährlich / yearly\n\nArbeit / Work: Spaltmaß messen (7.3) / Measure clearance (7.3)\nIntervall / Interval: alle 8000 Betriebsstunden / every 8,000 operating hours\n\n7.2 Schmierung / Lubrication\nJedes Lager über den Schmiernippel bei laufender Pumpe mit der Fettmenge nach Tabelle 3.1 nachschmieren. Zu viel Fett erhöht die Lagertemperatur.\nRegrease each bearing over the grease nipple with running pump with the grease quantity according to table 3.1. Too much grease increases the bearing temperature.\n\n7.3 Spaltmaß prüfen / Checking the clearance\nSpaltmaß zwischen Laufrad und Spaltring mit Fühlerlehre an vier um 90° versetzten Stellen messen. Überschreitet das Spaltmaß den Höchstwert nach Tabelle 3.1, sind die Spaltringe zu erneuern. Mit wachsendem Spaltmaß sinken Förderstrom und Wirkungsgrad.\nMeasure the clearance between impeller and wear ring with feeler gauge at four places offset by 90°. If the clearance exceeds the maximum value according to table 3.1, the wear rings are to be renewed. With growing clearance flow rate and efficiency decrease.\n\n7.4 Gleitringdichtung wechseln / Changing the mechanical seal\n1. Pumpe außer Betrieb nehmen und sichern (2.2).\nTake the pump out of operation and secure it (2.2).\n\n2. Kupplungsschutz und Zwischenstück abbauen.\nRemove coupling guard and spacer.\n\n3. Gehäuseschrauben lösen, Lagerträger mit Laufrad herausziehen.\nLoosen the casing bolts, pull out the bearing bracket with impeller.\n\n4. Laufradmutter lösen, Laufrad abziehen, Gleitringdichtung ausbauen.\nLoosen the impeller nut, pull off the impeller, dismantle the mechanical seal.\n\n5. Neuen Dichtungssatz 18-0201 einbauen. O-Ringe nur mit Wasser benetzen, nie mit Öl oder Fett.\nInstall new seal kit 18-0201. Wet O-rings only with water, never with oil or grease.\n\n6. Mit neuer Gehäusedichtung zusammenbauen. Gehäuseschrauben über Kreuz mit dem Anzugsmoment nach Tabelle 3.1 anziehen.\nAssemble with new casing gasket. Tighten casing bolts crosswise with the torque according to table 3.1.",
+        "text_en": "7 Maintenance\n\n7.1 Maintenance schedule\nRegrease bearings: every 2,000 operating hours.\nClean suction strainer: every 500 operating hours.\nCheck mechanical seal for leakage: weekly.\nCheck coupling alignment: yearly.\nMeasure clearance (7.3): every 8,000 operating hours.\n\n7.2 Lubrication\nWith the pump running, regrease each bearing through the grease nipple using the quantity in table 3.1. Excess grease increases bearing temperature.\n\n7.3 Checking the clearance\nMeasure the clearance between impeller and wear ring at four positions 90° apart using a feeler gauge. Renew the wear rings if the clearance exceeds the maximum value in table 3.1. Increasing clearance reduces flow rate and efficiency.\n\n7.4 Changing the mechanical seal\n1. Take the pump out of operation and secure it as specified in 2.2.\n2. Remove the coupling guard and spacer.\n3. Loosen the casing bolts and pull out the bearing bracket with the impeller.\n4. Loosen the impeller nut, remove the impeller, and dismantle the mechanical seal.\n5. Install new seal kit 18-0201. Wet O-rings only with water, never with oil or grease.\n6. Reassemble using a new casing gasket. Tighten casing bolts crosswise to the torque specified in table 3.1.",
+        "acl_key": "family-pumps",
+        "cosine": 0.4629881680011749,
+        "bm25_rank": 43,
+        "vector_rank": 27,
+        "rrf": 0.021202990737640887
+      },
+      {
+        "chunk_id": "239c3f900e768030",
+        "doc_path": "corpus/bulletins/Halden_SB-2025-009_HCP-350_Casing_Torque.pdf",
+        "doc_title": "Halden SB-2025-009",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "effective_date": "2025-06-18",
+        "locator": {
+          "page": 1,
+          "section_path": [
+            "3 Symptom / Schadensbild"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden SB-2025-009 | 0 | 3 Symptom / Schadensbild",
+        "text_original": "Since October 2024 Halden has received 14 field reports from North America and Europe of weeping at the joint between casing and casing cover on HCP-350 pumps less than two years old. In all reported cases the leakage started within days or weeks after the casing joint had been opened in the field, most often for replacement of the mechanical seal (IOM 8.4), in two cases for wear ring replacement.\n\nOn the returned covers, dye penetrant testing showed radial hairline cracks in the gasket seat, starting at one or more bolt holes and running toward the bore. Leakage is small at first (drops, glycol residue below the joint) and increases with thermal cycling. No case has been reported on a pump whose casing joint had not been opened since delivery.",
+        "text_en": "Since October 2024 Halden has received 14 field reports from North America and Europe of weeping at the joint between casing and casing cover on HCP-350 pumps less than two years old. In all reported cases the leakage started within days or weeks after the casing joint had been opened in the field, most often for replacement of the mechanical seal (IOM 8.4), in two cases for wear ring replacement.\n\nOn the returned covers, dye penetrant testing showed radial hairline cracks in the gasket seat, starting at one or more bolt holes and running toward the bore. Leakage is small at first (drops, glycol residue below the joint) and increases with thermal cycling. No case has been reported on a pump whose casing joint had not been opened since delivery.",
+        "acl_key": "family-pumps",
+        "cosine": 0.43445461988449097,
+        "bm25_rank": 32,
+        "vector_rank": 41,
+        "rrf": 0.020770555316401207
+      },
+      {
+        "chunk_id": "c3c3af14669126e0",
+        "doc_path": "corpus/manuals/Belton_BX-12_OM_Manual_RevB.pdf",
+        "doc_title": "Belton BX-12 O&M Manual Rev B",
+        "doc_type": "Operation & Maintenance Manual",
+        "revision": "Issue B",
+        "effective_date": "1 October 2024",
+        "locator": {
+          "page": 6,
+          "section_path": [
+            "Section 8",
+            "Belt replacement"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Belton BX-12 O&M Manual Rev B | Issue B | Section 8 › Belt replacement",
+        "text_original": "8.1 The BX-12 belt is endless and is replaced from the right-hand side, which has removable bed plates and a cantilevered return frame. Allow one hour for two people on a 6 m conveyor.\na) Isolate and lock off the BCU-2.\nb) Remove the side guards on the right-hand side. Slacken both take-up screws fully and note their positions.\nc) Remove the four bolts holding the right-hand return frame brackets and the bed plate retaining clips.\nd) Slide the old belt off sideways. Inspect the slider bed for wear and grooves while it is exposed.\ne) Check the direction arrow on the inside of the new belt (77-1012) and fit it with the arrow pointing towards the drive end on the top run.\nf) Refit the return frame brackets (tighten to 25 Nm), the bed plate clips and the guards.\ng) Tension the belt to 0.3 % (Section 6) and track it (Section 7).\nh) Re-check tension and tracking after 8 hours and 50 hours of running.\n\n8.2 Replacing a return idler\nReturn idlers drop into slotted brackets on both side frames and are held by spring clips.\na) Isolate and lock off the BCU-2. Slacken both take-up screws by two turns each to take the weight off the idlers.\nb) Remove the spring clips at both ends of the idler and lift it out of its slots.\nc) Fit the new idler (77-0410). Check that both hexagon shaft ends sit fully down in their slots, and refit the clips.\nd) Spin the idler by hand. It must turn freely and run true.\ne) Re-tension the belt by turning both screws back two turns, then check the tension marks (Section 6) and the tracking (Section 7).\n\n8.3 Replacing the geared motor\nThe geared motor is mounted on the drive pulley shaft with a hollow shaft and torque arm.\na) Isolate and lock off. Unplug the motor cable at the motor.\nb) Remove the torque arm bolt and the shaft end retaining bolt.\nc) Draw the motor off the shaft with a puller on the extraction thread. Do not hammer on the gear housing.\nd) Coat the shaft with anti-seize paste, slide the new motor on, and refit the retaining bolt (25 Nm) and the torque arm bolt with its rubber bush.\ne) Check the direction of travel before running with product.",
+        "text_en": "8.1 The BX-12 belt is endless and is replaced from the right-hand side, which has removable bed plates and a cantilevered return frame. Allow one hour for two people on a 6 m conveyor.\na) Isolate and lock off the BCU-2.\nb) Remove the side guards on the right-hand side. Slacken both take-up screws fully and note their positions.\nc) Remove the four bolts holding the right-hand return frame brackets and the bed plate retaining clips.\nd) Slide the old belt off sideways. Inspect the slider bed for wear and grooves while it is exposed.\ne) Check the direction arrow on the inside of the new belt (77-1012) and fit it with the arrow pointing towards the drive end on the top run.\nf) Refit the return frame brackets (tighten to 25 Nm), the bed plate clips and the guards.\ng) Tension the belt to 0.3 % (Section 6) and track it (Section 7).\nh) Re-check tension and tracking after 8 hours and 50 hours of running.\n\n8.2 Replacing a return idler\nReturn idlers drop into slotted brackets on both side frames and are held by spring clips.\na) Isolate and lock off the BCU-2. Slacken both take-up screws by two turns each to take the weight off the idlers.\nb) Remove the spring clips at both ends of the idler and lift it out of its slots.\nc) Fit the new idler (77-0410). Check that both hexagon shaft ends sit fully down in their slots, and refit the clips.\nd) Spin the idler by hand. It must turn freely and run true.\ne) Re-tension the belt by turning both screws back two turns, then check the tension marks (Section 6) and the tracking (Section 7).\n\n8.3 Replacing the geared motor\nThe geared motor is mounted on the drive pulley shaft with a hollow shaft and torque arm.\na) Isolate and lock off. Unplug the motor cable at the motor.\nb) Remove the torque arm bolt and the shaft end retaining bolt.\nc) Draw the motor off the shaft with a puller on the extraction thread. Do not hammer on the gear housing.\nd) Coat the shaft with anti-seize paste, slide the new motor on, and refit the retaining bolt (25 Nm) and the torque arm bolt with its rubber bush.\ne) Check the direction of travel before running with product.",
+        "acl_key": "family-conveyors",
+        "cosine": 0.4385715126991272,
+        "bm25_rank": 36,
+        "vector_rank": 38,
+        "rrf": 0.020620748299319726
+      },
+      {
+        "chunk_id": "5903fd4a5ef112ef",
+        "doc_path": "corpus/bulletins/Halden_SB-2025-018_Seal_Kit_Supersession.pdf",
+        "doc_title": "Halden SB-2025-018",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "effective_date": "2025-11-04",
+        "locator": {
+          "page": 1,
+          "section_path": [
+            "4 Kit comparison / Vergleich der Sätze"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden SB-2025-018 | 0 | 4 Kit comparison / Vergleich der Sätze",
+        "text_original": "Item | 18-0355 (old) | 18-0356 (new)\nRotating face | Carbon, resin impregnated | Silicon carbide, sintered (SSiC)\nStationary face | Silicon carbide (SSiC) | Silicon carbide (SSiC)\nSecondary seals (O-rings) | EPDM, peroxide cured | EPDM, peroxide cured (unchanged)\nSpring and metal parts | Stainless steel 1.4571 | Stainless steel 1.4571 (unchanged)\nCartridge length / shaft diameter | Unchanged | Unchanged\nKit contents | Seal cartridge, O-rings, gland gasket | Seal cartridge, O-rings, gland gasket\nBox label | White label | Blue label, cartridge laser marked \"SIC/SIC\"\n\nThe casing gasket is not part of either kit. It is ordered separately according to the casing version of the pump. For pumps with the revised casing cover, see SB-2025-009 for the gasket and the casing bolt torque.",
+        "text_en": "Item | 18-0355 (old) | 18-0356 (new)\nRotating face | Carbon, resin impregnated | Silicon carbide, sintered (SSiC)\nStationary face | Silicon carbide (SSiC) | Silicon carbide (SSiC)\nSecondary seals (O-rings) | EPDM, peroxide cured | EPDM, peroxide cured (unchanged)\nSpring and metal parts | Stainless steel 1.4571 | Stainless steel 1.4571 (unchanged)\nCartridge length / shaft diameter | Unchanged | Unchanged\nKit contents | Seal cartridge, O-rings, gland gasket | Seal cartridge, O-rings, gland gasket\nBox label | White label | Blue label, cartridge laser marked \"SIC/SIC\"\n\nThe casing gasket is not part of either kit. It is ordered separately according to the casing version of the pump. For pumps with the revised casing cover, see SB-2025-009 for the gasket and the casing bolt torque.",
+        "acl_key": "family-pumps",
+        "cosine": 0.45354676246643066,
+        "bm25_rank": 48,
+        "vector_rank": 32,
+        "rrf": 0.020128824476650563
+      },
+      {
+        "chunk_id": "aad0b252f485e69a",
+        "doc_path": "corpus/manuals/Halden_HCP-200_Betriebsanleitung_1998_scan.pdf",
+        "doc_title": "Halden HCP-200 Betriebsanleitung 1998 (scan)",
+        "doc_type": "Betriebsanleitung / Operating Instructions",
+        "revision": "Revision A",
+        "effective_date": "03/1998",
+        "locator": {
+          "page": 3,
+          "section_path": [
+            "3 Technische Daten / Technical data"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden HCP-200 Betriebsanleitung 1998 (scan) | Revision A | 3 Technische Daten / Technical data",
+        "text_original": "3 Technische Daten\nTechnical data\n\nDie Angaben gelten für die Normalausführung. Abweichende Daten von Sonderausführungen siehe Auftragsbestätigung.\nThe data are valid for the standard design. Differing data of special designs see order confirmation.\n\nTabelle / Table 3.1\nBenennung / Designation: Förderstrom / Förderhöhe / Flow rate / head\nWert / Value: 200 m³/h / 45 m\n\nBenennung / Designation: NPSH erforderlich / NPSH required\nWert / Value: 3,2 m\n\nBenennung / Designation: Drehzahl / Speed\nWert / Value: 1450 1/min (50 Hz) / 1750 1/min (60 Hz)\n\nBenennung / Designation: Motorleistung / Motor power\nWert / Value: 30 kW (50 Hz) / 37 kW (60 Hz)\n\nBenennung / Designation: Max. Betriebsdruck / Fördertemperatur / Max. working pressure / liquid temperature\nWert / Value: 10 bar / 80 °C\n\nBenennung / Designation: Flansche Saug- / Druckseite / Flanges suction / discharge\nWert / Value: DN 125 / DN 100, PN 16\n\nBenennung / Designation: Laufraddurchmesser / Impeller diameter\nWert / Value: 265 mm\n\nBenennung / Designation: Spaltmaß Laufrad - Gehäuse (diametral) / Impeller-to-casing clearance (diametral)\nWert / Value: 0.38 - 0.50 mm\n\nBenennung / Designation: Anzugsmoment Gehäuseschrauben M14 / Casing bolt torque M14\nWert / Value: 40 N-m\n\nBenennung / Designation: Wälzlager / Bearings\nWert / Value: 6309 C3 (beide / both)\n\nBenennung / Designation: Fettmenge je Lager / Grease quantity per bearing\nWert / Value: 12 g, Lithiumseifenfett / lithium grease NLGI 2\n\nBenennung / Designation: Gleitringdichtung / Mechanical seal\nWert / Value: Satz / kit 18-0201\n\nBenennung / Designation: Masse Pumpenaggregat / Weight pump unit\nWert / Value: ca. / approx. 410 kg\n\nBenennung / Designation: Schalldruckpegel in 1 m / Sound pressure level at 1 m\nWert / Value: 76 dB(A)\n\n3.2 Weitere Anzugsmomente / Other tightening torques\nVerbindung / Joint: Lagerdeckel / Bearing cover\nGewinde / Thread: M8\nN-m: 20\n\nVerbindung / Joint: Laufradmutter / Impeller nut\nGewinde / Thread: M20\nN-m: 90\n\nVerbindung / Joint: Pumpenfüße / Fundamentschrauben / Pump feet / foundation bolts\nGewinde / Thread: M16\nN-m: 120\n\nDie Anzugsmomente gelten für leicht geölte Gewinde. Gehäuseschrauben über Kreuz in zwei Durchgängen anziehen.\nThe torques are valid for lightly oiled threads. Tighten casing bolts crosswise in two passes.\n\n3.3 Betriebsbereich / Operating range\nDauerbetrieb zwischen 30 % und 110 % des Förderstroms im Bestpunkt. Bei Betrieb am Frequenzumrichter darf die Drehzahl 60 % der Nenndrehzahl nicht unterschreiten.\nContinuous operation between 30 % and 110 % of the flow rate at best efficiency point. With frequency converter the speed must not fall below 60 % of rated speed.",
+        "text_en": "3 Technical data\n\nThe data apply to the standard design. For special designs, see the order confirmation.\n\nTable 3.1\nFlow rate / head: 200 m³/h / 45 m\nNPSH required: 3,2 m\nSpeed: 1450 1/min (50 Hz) / 1750 1/min (60 Hz)\nMotor power: 30 kW (50 Hz) / 37 kW (60 Hz)\nMaximum working pressure / liquid temperature: 10 bar / 80 °C\nSuction / discharge flanges: DN 125 / DN 100, PN 16\nImpeller diameter: 265 mm\nImpeller-to-casing clearance, diametral: 0.38 - 0.50 mm\nCasing bolt torque M14: 40 N-m\nBearings: 6309 C3 (both)\nGrease quantity per bearing: 12 g, lithium grease NLGI 2\nMechanical seal: kit 18-0201\nPump-unit weight: approx. 410 kg\nSound pressure level at 1 m: 76 dB(A)\n\n3.2 Other tightening torques\nBearing cover: thread M8; 20 N-m\nImpeller nut: thread M20; 90 N-m\nPump feet / foundation bolts: thread M16; 120 N-m\n\nThe torques apply to lightly oiled threads. Tighten casing bolts crosswise in two passes.\n\n3.3 Operating range\nContinuous operation is permitted between 30 % and 110 % of the flow rate at the best-efficiency point. When using a frequency converter, speed must not fall below 60 % of rated speed.",
+        "acl_key": "family-pumps",
+        "cosine": 0.42777469754219055,
+        "bm25_rank": 45,
+        "vector_rank": 44,
+        "rrf": 0.01913919413919414
+      }
+    ]
+  },
+  "judgement": {
+    "key_points": [
+      {
+        "point": "Use 38 N·m casing-bolt torque",
+        "verdict": "present",
+        "reason": "The copilot explicitly says to use 38 N·m, not 45 N·m, and specifies 38 N·m for the second pass."
+      },
+      {
+        "point": "Tighten in a cross pattern",
+        "verdict": "present",
+        "reason": "The copilot instructs use of a calibrated torque wrench in a cross pattern."
+      },
+      {
+        "point": "Use two tightening passes",
+        "verdict": "present",
+        "reason": "The copilot specifies approximately 20 N·m on the first pass and 38 N·m on the second pass."
+      },
+      {
+        "point": "FRS-P-0031 is HCP-350 serial HCP350-241187",
+        "verdict": "present",
+        "reason": "The copilot identifies FRS-P-0031 as an HCP-350 with serial HCP350-241187."
+      },
+      {
+        "point": "The unit has the revised casing covered by SB-2025-009 from serial HCP350-240001",
+        "verdict": "present",
+        "reason": "The copilot says SB-2025-009 supersedes the old torque for HCP-350 serials HCP350-240001 onward and identifies this unit as within that range."
+      },
+      {
+        "point": "45 N·m in IOM Rev D applies only to earlier serials",
+        "verdict": "present",
+        "reason": "The copilot states that 45 N·m remains valid only for earlier serials with the original cover."
+      },
+      {
+        "point": "Applying 45 N·m cracked this unit's gasket seat in June 2026, case 00041988",
+        "verdict": "present",
+        "reason": "The copilot describes the June 2026 45 N·m incident, subsequent confirmed cracks, and identifies case 00041988."
+      }
+    ],
+    "constraints": [],
+    "verdict": "correct"
+  }
+}

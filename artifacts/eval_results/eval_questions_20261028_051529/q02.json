@@ -1,0 +1,1101 @@
+{
+  "question": {
+    "id": "q02",
+    "user_id": "u01",
+    "question": "What's the impeller-to-casing clearance spec on an HCP-200?",
+    "reference_answer": "0.38 - 0.50 mm, from the 1998 HCP-200 manual (scanned). Above the upper limit, replace the wear ring."
+  },
+  "result": {
+    "question": "What's the impeller-to-casing clearance spec on an HCP-200?",
+    "user_id": "u01",
+    "status": "answered",
+    "message": null,
+    "summary": [
+      {
+        "sentence": "For a standard-design HCP-200, impeller-to-casing clearance is 0.38–0.50 mm diametral, per the March 1998 operating instructions, Revision A, Table 3.1.",
+        "sources": [
+          "S1"
+        ]
+      },
+      {
+        "sentence": "For special-design HCP-200 pumps, consult the order confirmation instead of applying standard-design data.",
+        "sources": [
+          "S1"
+        ]
+      },
+      {
+        "sentence": "Do not use HCP-350 or HCP-500 clearance limits on an HCP-200; its impeller and rings are different.",
+        "sources": [
+          "S2"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "sentence": "For a standard-design HCP-200, impeller-to-casing clearance is 0.38–0.50 mm diametral, per the March 1998 operating instructions, Revision A, Table 3.1.",
+        "source": "S1",
+        "chunk_id": "aad0b252f485e69a",
+        "title": "Halden HCP-200 Betriebsanleitung 1998 (scan)",
+        "location": "p.3 · 3 Technische Daten / Technical data",
+        "doc_type": "Betriebsanleitung / Operating Instructions",
+        "revision": "Revision A",
+        "date": "03/1998",
+        "status": "Supported",
+        "evidence": "Halden HCP-200 Betriebsanleitung 1998 (scan) | Revision A | 3 Technische Daten / Technical data\n\nImpeller-to-casing clearance, diametral: 0.38 - 0.50 mm"
+      },
+      {
+        "sentence": "For special-design HCP-200 pumps, consult the order confirmation instead of applying standard-design data.",
+        "source": "S1",
+        "chunk_id": "aad0b252f485e69a",
+        "title": "Halden HCP-200 Betriebsanleitung 1998 (scan)",
+        "location": "p.3 · 3 Technische Daten / Technical data",
+        "doc_type": "Betriebsanleitung / Operating Instructions",
+        "revision": "Revision A",
+        "date": "03/1998",
+        "status": "Supported",
+        "evidence": "Halden HCP-200 Betriebsanleitung 1998 (scan) | Revision A | 3 Technische Daten / Technical data\n\nImpeller-to-casing clearance, diametral: 0.38 - 0.50 mm"
+      },
+      {
+        "sentence": "Do not use HCP-350 or HCP-500 clearance limits on an HCP-200; its impeller and rings are different.",
+        "source": "S2",
+        "chunk_id": "6e1b211d60cec2b6",
+        "title": "Pump Troubleshooting Playbook",
+        "location": "Field Service : Pump Troubleshooting Playbook › Low flow or low head",
+        "doc_type": "Field Service wiki page",
+        "revision": "unknown",
+        "date": "Sep 08, 2026",
+        "status": "Supported",
+        "evidence": "Don't use the 350 or 500 limit on a 200, the impeller and rings are different."
+      }
+    ],
+    "dropped_claims": [
+      "Measure clearance with a feeler gauge at four positions 90° apart; renew the wear rings if clearance exceeds the 0.50 mm maximum."
+    ],
+    "work_order": null,
+    "trace": {
+      "events": [
+        {
+          "stage": "retrieve",
+          "inputs": {
+            "question": "What's the impeller-to-casing clearance spec on an HCP-200?",
+            "user_id": "u01"
+          },
+          "outputs": {
+            "chunks": [
+              [
+                "ce722c77a0ce6aa6",
+                "Pump Troubleshooting Playbook",
+                "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Why there are no numbers on this page"
+              ],
+              [
+                "0c7ae26078b91c93",
+                "Halden HCP-350 IOM Rev D",
+                "Halden HCP-350 IOM Rev D | D | 4 Product description"
+              ],
+              [
+                "6e1b211d60cec2b6",
+                "Pump Troubleshooting Playbook",
+                "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Low flow or low head"
+              ],
+              [
+                "66bb4cdcda36cf6c",
+                "Pump Troubleshooting Playbook",
+                "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Casing joint weeping after a seal change"
+              ],
+              [
+                "7f548093b5d27256",
+                "Halden HCP-500 IOM Rev B",
+                "Halden HCP-500 IOM Rev B | B | 8 Maintenance"
+              ],
+              [
+                "f24784bc455c2080",
+                "Pump Troubleshooting Playbook",
+                "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Parts we carry"
+              ],
+              [
+                "e1e06daa4e2229e2",
+                "Pump Troubleshooting Playbook",
+                "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › How to use this page"
+              ],
+              [
+                "eb2ed6f3b1e4df9f",
+                "Halden HCP-200 Betriebsanleitung 1998 (scan)",
+                "Halden HCP-200 Betriebsanleitung 1998 (scan) | Revision A | 7 Wartung / Maintenance"
+              ],
+              [
+                "8152be6b6e9c8177",
+                "Halden SB-2025-009",
+                "Halden SB-2025-009 | 0 | 10 Note on other models / Hinweis zu anderen Baureihen"
+              ],
+              [
+                "aad0b252f485e69a",
+                "Halden HCP-200 Betriebsanleitung 1998 (scan)",
+                "Halden HCP-200 Betriebsanleitung 1998 (scan) | Revision A | 3 Technische Daten / Technical data"
+              ],
+              [
+                "31263bd6a3915ac5",
+                "Halden HCP-500 IOM Rev B",
+                "Halden HCP-500 IOM Rev B | B | 4 Product description"
+              ],
+              [
+                "f8cc1e10ba7cb262",
+                "Halden SB-2025-009",
+                "Halden SB-2025-009 | 0 | 2 Affected products / Betroffene Produkte"
+              ],
+              [
+                "abe1a8fbea3d42e7",
+                "Halden HCP-350 IOM Rev D",
+                "Halden HCP-350 IOM Rev D | D | 8 Maintenance"
+              ],
+              [
+                "485c3292ac51002c",
+                "Pump Troubleshooting Playbook",
+                "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Seal leaks and P-04"
+              ],
+              [
+                "0225db2fbb73cc85",
+                "Halden HCP-350 IOM Rev D",
+                "Halden HCP-350 IOM Rev D | D | 5 Installation"
+              ],
+              [
+                "cc2fb73d33d253fd",
+                "Halden HCP-200 Betriebsanleitung 1998 (scan)",
+                "Halden HCP-200 Betriebsanleitung 1998 (scan) | Revision A | 1 Allgemeines / General"
+              ],
+              [
+                "28294c8f4338fa83",
+                "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+                "HCP-350 casing leak FRS-P-0031 (Halden thread)"
+              ],
+              [
+                "fcb6b78759947b1e",
+                "Halden HCP-500 IOM Rev B",
+                "Halden HCP-500 IOM Rev B | B | 5 Installation"
+              ],
+              [
+                "fd1787af11861253",
+                "MaintPro history NA",
+                "MaintPro history NA | 232039"
+              ],
+              [
+                "478199a6e2624667",
+                "Halden HCP-200 Betriebsanleitung 1998 (scan)",
+                "Halden HCP-200 Betriebsanleitung 1998 (scan) | Revision A | 4 Aufstellung und Einbau / Installation"
+              ],
+              [
+                "649e9a003193b3c6",
+                "HCP-500 Maintenance Quick Reference",
+                "HCP-500 Maintenance Quick Reference | Field Service › HCP-500 Maintenance Quick Reference"
+              ],
+              [
+                "a22e8cbd78317ed8",
+                "Work Order Writing Guide",
+                "Work Order Writing Guide | Field Service: Work Order Writing Guide › Certification required: the rule"
+              ],
+              [
+                "993b5478e0412fdf",
+                "Salesforce cases NA",
+                "Salesforce cases NA | 5008d00000XduD7w40"
+              ],
+              [
+                "e4541cd981693613",
+                "Tacoma Site Notes",
+                "Tacoma Site Notes | Field Service › Field Service Home › Sites › North America › Field Service : Tacoma Site Notes › Our equipment and where it is"
+              ],
+              [
+                "c8e2a61622f6ed4a",
+                "HCP-500 Maintenance Quick Reference",
+                "HCP-500 Maintenance Quick Reference | Field Service › HCP-500 Maintenance Quick Reference › Things the trainer stressed"
+              ],
+              [
+                "4b51571191526614",
+                "Pump Troubleshooting Playbook",
+                "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Vibration and P-03"
+              ],
+              [
+                "a356c1872ed8f6cb",
+                "Halden SB-2025-009",
+                "Halden SB-2025-009 | 0 | 1 Summary / Zusammenfassung"
+              ],
+              [
+                "d2547ffb1fd7ce1b",
+                "Halden HCP-200 Betriebsanleitung 1998 (scan)",
+                "Halden HCP-200 Betriebsanleitung 1998 (scan) | Revision A | 9 Ersatzteile / Spare parts › 10 Kundendienst / Service › EG-Konformitätserklärung / EC declaration of conformity"
+              ],
+              [
+                "189e841d996aa6a6",
+                "Work Order Writing Guide",
+                "Work Order Writing Guide | Field Service: Work Order Writing Guide › Required fields"
+              ],
+              [
+                "c6305a9cbeeea984",
+                "Halden HCP-500 IOM Rev B",
+                "Halden HCP-500 IOM Rev B | B | 1 General information"
+              ]
+            ]
+          },
+          "seconds": 0.897
+        },
+        {
+          "stage": "claims",
+          "inputs": {},
+          "outputs": {
+            "status": "answered",
+            "claims": [
+              {
+                "id": "c1",
+                "text": "For a standard-design HCP-200, the impeller-to-casing clearance is 0.38–0.50 mm, diametral, per the March 1998 operating instructions, Revision A, Table 3.1.",
+                "citations": [
+                  "aad0b252f485e69a"
+                ]
+              },
+              {
+                "id": "c2",
+                "text": "For special-design HCP-200 pumps, consult the order confirmation rather than applying the standard-design data.",
+                "citations": [
+                  "aad0b252f485e69a"
+                ]
+              },
+              {
+                "id": "c3",
+                "text": "Measure clearance with a feeler gauge at four positions 90° apart; renew the wear rings if clearance exceeds the 0.50 mm maximum.",
+                "citations": [
+                  "eb2ed6f3b1e4df9f",
+                  "aad0b252f485e69a"
+                ]
+              },
+              {
+                "id": "c4",
+                "text": "Do not use HCP-350 or HCP-500 clearance limits on an HCP-200: its impeller and rings are different.",
+                "citations": [
+                  "6e1b211d60cec2b6"
+                ]
+              }
+            ],
+            "work_order_needed": false,
+            "work_order_reason": null
+          },
+          "seconds": 6.942
+        },
+        {
+          "stage": "verify",
+          "inputs": {},
+          "outputs": {
+            "c1": "supported",
+            "c2": "supported",
+            "c3": "unsupported",
+            "c4": "supported"
+          },
+          "seconds": 8.867
+        },
+        {
+          "stage": "compose",
+          "inputs": {},
+          "outputs": {
+            "sentences": 3
+          },
+          "seconds": 2.333
+        },
+        {
+          "stage": "work_order",
+          "inputs": {},
+          "outputs": {
+            "drafted": false
+          },
+          "seconds": 0.0
+        }
+      ]
+    },
+    "retrieved": [
+      {
+        "chunk_id": "ce722c77a0ce6aa6",
+        "doc_path": "corpus/confluence/Pump-Troubleshooting-Playbook.html",
+        "doc_title": "Pump Troubleshooting Playbook",
+        "doc_type": "Field Service wiki page",
+        "revision": "unknown",
+        "effective_date": "Sep 08, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Pump Troubleshooting Playbook",
+            "Why there are no numbers on this page"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Why there are no numbers on this page",
+        "text_original": "People keep asking me to put the limits in here so they don't have to open the manual. I'm not going to, and here's why. The HCP-350 and the HCP-500 use the same fault codes with different trigger values. The HCP-200 is a different generation altogether. And Halden has already changed a value on the 350 by service bulletin without revising the manual, which means a number copied into a wiki in 2024 could be wrong for a pump installed in 2025. We found that out the expensive way in June 2026 (see Casing joint weeping, below).\n\nSo: this page tells you what's likely and what to check first. The manual's fault table (chapter 9 in the Halden IOMs) and technical data table (4.3) tell you the numbers. The bulletins tell you when the manual is wrong for your serial. Open all three. On the PC-3 controller the fault table is also in Menu, Service, Fault help, if you don't have the PDF handy.",
+        "text_en": "People keep asking me to put the limits in here so they don't have to open the manual. I'm not going to, and here's why. The HCP-350 and the HCP-500 use the same fault codes with different trigger values. The HCP-200 is a different generation altogether. And Halden has already changed a value on the 350 by service bulletin without revising the manual, which means a number copied into a wiki in 2024 could be wrong for a pump installed in 2025. We found that out the expensive way in June 2026 (see Casing joint weeping, below).\n\nSo: this page tells you what's likely and what to check first. The manual's fault table (chapter 9 in the Halden IOMs) and technical data table (4.3) tell you the numbers. The bulletins tell you when the manual is wrong for your serial. Open all three. On the PC-3 controller the fault table is also in Menu, Service, Fault help, if you don't have the PDF handy.",
+        "acl_key": "family-pumps",
+        "cosine": 0.5483295917510986,
+        "bm25_rank": 3,
+        "vector_rank": 13,
+        "rrf": 0.029571646010002173
+      },
+      {
+        "chunk_id": "0c7ae26078b91c93",
+        "doc_path": "corpus/manuals/Halden_HCP-350_IOM_RevD.pdf",
+        "doc_title": "Halden HCP-350 IOM Rev D",
+        "doc_type": "Installation, Operation and Maintenance Manual",
+        "revision": "D",
+        "effective_date": "2023-05-22",
+        "locator": {
+          "page": 4,
+          "section_path": [
+            "4 Product description"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden HCP-350 IOM Rev D | D | 4 Product description",
+        "text_original": "4 Product description\n\n4.1 Design\nThe HCP-350 is an end-suction, single-stage pump of back pull-out design. The motor, coupling spacer and bearing frame can be withdrawn with the impeller as one assembly without disturbing the piping. The shaft is sealed with a single cartridge-type mechanical seal.\n\nEach pump is supplied with a Halden PC-3 controller monitoring suction and discharge pressure (transmitters PT-1 and PT-2), bearing temperature, seal leak detection, motor current, and the differential pressure across the suction strainer (gauges PI-01 upstream and PI-02 downstream of the strainer).\n\n4.2 Type key\nExample: HCP-350-310-55-4 = pump size / impeller diameter in mm / motor power in kW / number of motor poles.\n\n4.3 Technical data\nParameter: Rated flow / head\nValue: 350 m3/h at 60 m\nParameter: NPSH required at rated point\nValue: 4.1 m\nParameter: Motor\nValue: 55 kW, 4-pole, 1780 rpm at 60 Hz (1480 rpm at 50 Hz)\nParameter: Max. working pressure / temperature\nValue: 16 bar / 90 C\nParameter: Flanges suction / discharge\nValue: DN 150 / DN 125\nParameter: Impeller diameter (standard)\nValue: 310 mm\nParameter: Impeller-to-casing (wear ring) clearance\nValue: 0.40 - 0.55 mm, diametral\nParameter: Casing bolt tightening torque\nValue: 45 N-m, cross pattern, two passes (lubricated threads)\nParameter: Bearings\nValue: 6311 C3 (drive end) / 3311 (non-drive end)\nParameter: Grease quantity per bearing\nValue: 18 g, lithium complex NLGI 2\nParameter: Mechanical seal kit\nValue: 18-0355\nParameter: Weight, complete unit\nValue: approx. 640 kg\nParameter: Sound pressure level at 1 m\nValue: 79 dB(A)",
+        "text_en": "4 Product description\n\n4.1 Design\nThe HCP-350 is an end-suction, single-stage pump of back pull-out design. The motor, coupling spacer and bearing frame can be withdrawn with the impeller as one assembly without disturbing the piping. The shaft is sealed with a single cartridge-type mechanical seal.\n\nEach pump is supplied with a Halden PC-3 controller monitoring suction and discharge pressure (transmitters PT-1 and PT-2), bearing temperature, seal leak detection, motor current, and the differential pressure across the suction strainer (gauges PI-01 upstream and PI-02 downstream of the strainer).\n\n4.2 Type key\nExample: HCP-350-310-55-4 = pump size / impeller diameter in mm / motor power in kW / number of motor poles.\n\n4.3 Technical data\nParameter: Rated flow / head\nValue: 350 m3/h at 60 m\nParameter: NPSH required at rated point\nValue: 4.1 m\nParameter: Motor\nValue: 55 kW, 4-pole, 1780 rpm at 60 Hz (1480 rpm at 50 Hz)\nParameter: Max. working pressure / temperature\nValue: 16 bar / 90 C\nParameter: Flanges suction / discharge\nValue: DN 150 / DN 125\nParameter: Impeller diameter (standard)\nValue: 310 mm\nParameter: Impeller-to-casing (wear ring) clearance\nValue: 0.40 - 0.55 mm, diametral\nParameter: Casing bolt tightening torque\nValue: 45 N-m, cross pattern, two passes (lubricated threads)\nParameter: Bearings\nValue: 6311 C3 (drive end) / 3311 (non-drive end)\nParameter: Grease quantity per bearing\nValue: 18 g, lithium complex NLGI 2\nParameter: Mechanical seal kit\nValue: 18-0355\nParameter: Weight, complete unit\nValue: approx. 640 kg\nParameter: Sound pressure level at 1 m\nValue: 79 dB(A)",
+        "acl_key": "family-pumps",
+        "cosine": 0.6116887927055359,
+        "bm25_rank": 18,
+        "vector_rank": 3,
+        "rrf": 0.028693528693528692
+      },
+      {
+        "chunk_id": "6e1b211d60cec2b6",
+        "doc_path": "corpus/confluence/Pump-Troubleshooting-Playbook.html",
+        "doc_title": "Pump Troubleshooting Playbook",
+        "doc_type": "Field Service wiki page",
+        "revision": "unknown",
+        "effective_date": "Sep 08, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Pump Troubleshooting Playbook",
+            "Low flow or low head"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Low flow or low head",
+        "text_original": "The customer usually tells you this one before the controller does: \"the line is slow\", \"the tank takes longer to fill\". The pump is running and there's no alarm, so the first thing is to get a number for \"low\". Read suction and discharge pressure on the controller and compare them with the commissioning record in the site binder. If the pump makes less head at the same flow than it did at commissioning, the hydraulics have worn. If the suction pressure has dropped, the problem is upstream of the pump.\n\nIn the order I'd check:\n- Strainer. Read the differential across the strainer (PI-01 minus PI-02). A strainer that's loading up gives you low flow long before it's bad enough to cause cavitation.\n- Rotation. If anybody has had the motor off (rewind, new motor, site electrical work), check the rotation arrow on the bearing housing. A centrifugal pump running backwards still pumps a bit, which is why people miss it.\n- Air in the suction. Look for a leaking gasket or a loose fitting on the suction side, and check the suction line still rises toward the pump. Air in the suction gives a noisy, wandering discharge pressure.\n- Wear rings. Measure the impeller-to-casing clearance with feeler gauges at four points (manual section 8.5) and compare with the limit for that model. Worn rings are the usual cause on older pumps that have done years of duty.\n\nOn the HCP-200s, the clearance limit is only in the old scanned paper manual in the library (it's a 1998 manual and there's no newer one). It's an image scan, so you can't search it. Find the technical data table and read it off. Don't use the 350 or 500 limit on a 200, the impeller and rings are different. FRS-P-0007 in September 2026 is the example: about a fifth down on flow, clearance well over the limit, wear rings on order.",
+        "text_en": "The customer usually tells you this one before the controller does: \"the line is slow\", \"the tank takes longer to fill\". The pump is running and there's no alarm, so the first thing is to get a number for \"low\". Read suction and discharge pressure on the controller and compare them with the commissioning record in the site binder. If the pump makes less head at the same flow than it did at commissioning, the hydraulics have worn. If the suction pressure has dropped, the problem is upstream of the pump.\n\nIn the order I'd check:\n- Strainer. Read the differential across the strainer (PI-01 minus PI-02). A strainer that's loading up gives you low flow long before it's bad enough to cause cavitation.\n- Rotation. If anybody has had the motor off (rewind, new motor, site electrical work), check the rotation arrow on the bearing housing. A centrifugal pump running backwards still pumps a bit, which is why people miss it.\n- Air in the suction. Look for a leaking gasket or a loose fitting on the suction side, and check the suction line still rises toward the pump. Air in the suction gives a noisy, wandering discharge pressure.\n- Wear rings. Measure the impeller-to-casing clearance with feeler gauges at four points (manual section 8.5) and compare with the limit for that model. Worn rings are the usual cause on older pumps that have done years of duty.\n\nOn the HCP-200s, the clearance limit is only in the old scanned paper manual in the library (it's a 1998 manual and there's no newer one). It's an image scan, so you can't search it. Find the technical data table and read it off. Don't use the 350 or 500 limit on a 200, the impeller and rings are different. FRS-P-0007 in September 2026 is the example: about a fifth down on flow, clearance well over the limit, wear rings on order.",
+        "acl_key": "family-pumps",
+        "cosine": 0.533482015132904,
+        "bm25_rank": 1,
+        "vector_rank": 25,
+        "rrf": 0.02815814850530376
+      },
+      {
+        "chunk_id": "66bb4cdcda36cf6c",
+        "doc_path": "corpus/confluence/Pump-Troubleshooting-Playbook.html",
+        "doc_title": "Pump Troubleshooting Playbook",
+        "doc_type": "Field Service wiki page",
+        "revision": "unknown",
+        "effective_date": "Sep 08, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Pump Troubleshooting Playbook",
+            "Casing joint weeping after a seal change"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Casing joint weeping after a seal change",
+        "text_original": "Check the bulletins for the serial before you torque casing bolts. Halden revised the casing on newer HCP-350 serials and changed the casing bolt torque in Service Bulletin SB-2025-009. The manual (Rev D) was never updated, so the manual value is wrong for those pumps. Over-torquing cracks the gasket seat. SB-2025-009 also has a note about the HCP-500, so read it to the end if you're on a 500.\n\nThis is what happened on FRS-P-0031 in June 2026. Tom did a seal change, torqued the casing bolts to the manual value like any of us would have, and the joint started weeping. When we opened it again the gasket seat was cracked. The serial was in the bulletin's range. A new casing half went on and it was torqued to the bulletin value. Case 00041988, and there's an email thread with Stefan Wirth at Halden if you want the background.\n\nI asked Halden why the manual wasn't revised. No answer yet. Until there is one: serial first, bulletin second, manual third, for anything with a torque value.",
+        "text_en": "Check the bulletins for the serial before you torque casing bolts. Halden revised the casing on newer HCP-350 serials and changed the casing bolt torque in Service Bulletin SB-2025-009. The manual (Rev D) was never updated, so the manual value is wrong for those pumps. Over-torquing cracks the gasket seat. SB-2025-009 also has a note about the HCP-500, so read it to the end if you're on a 500.\n\nThis is what happened on FRS-P-0031 in June 2026. Tom did a seal change, torqued the casing bolts to the manual value like any of us would have, and the joint started weeping. When we opened it again the gasket seat was cracked. The serial was in the bulletin's range. A new casing half went on and it was torqued to the bulletin value. Case 00041988, and there's an email thread with Stefan Wirth at Halden if you want the background.\n\nI asked Halden why the manual wasn't revised. No answer yet. Until there is one: serial first, bulletin second, manual third, for anything with a torque value.",
+        "acl_key": "family-pumps",
+        "cosine": 0.5410654544830322,
+        "bm25_rank": 6,
+        "vector_rank": 19,
+        "rrf": 0.027809742999616416
+      },
+      {
+        "chunk_id": "7f548093b5d27256",
+        "doc_path": "corpus/manuals/Halden_HCP-500_IOM_RevB.pdf",
+        "doc_title": "Halden HCP-500 IOM Rev B",
+        "doc_type": "Installation, Operation and Maintenance Manual",
+        "revision": "B",
+        "effective_date": "2025-01-30",
+        "locator": {
+          "page": 6,
+          "section_path": [
+            "8 Maintenance"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden HCP-500 IOM Rev B | B | 8 Maintenance",
+        "text_original": "8 Maintenance\n\n8.1 Maintenance schedule\nID: M-01\nTask: Grease pump and motor bearings\nInterval: 2,000 operating hours\nReference: 8.2\n\nID: M-02\nTask: Check coupling alignment\nInterval: 4,000 h or 12 months\nReference: 5.3\n\nID: M-03\nTask: Inspect mechanical seal(s) for leakage\nInterval: 4,000 h\nReference: 8.4\n\nID: M-04\nTask: Clean suction strainer\nInterval: 750 h, or when the strainer dP alarm is active\nReference: 8.3\n\nID: M-05\nTask: Measure vibration at both bearings\nInterval: 1,000 h\nReference: 9.2\n\nID: M-06\nTask: Measure impeller-to-casing clearance\nInterval: 8,000 h\nReference: 8.5\n\nID: M-07\nTask: Check foundation bolt torque\nInterval: 8,000 h\nReference: 5.1\n\nID: M-08\nTask: Calibrate PT-1 / PT-2 transmitters\nInterval: 24 months\nReference: 4.1\n\nNOTE: Intervals apply to normal duty (clean water, up to 6,000 operating hours per year). Shorten them for contaminated liquids or continuous duty.\n\n8.2 Lubrication\nGrease each bearing with 25 g of lithium complex grease NLGI 2 through the grease nipple while the pump is running. Open the grease relief plug during greasing and close it after five minutes. Over-greasing raises bearing temperature and is the most frequent cause of fault P-02 after maintenance.\n\n8.3 Cleaning the suction strainer (task M-04)\n1. Stop the pump and secure it against restart.\n2. Close the suction isolation valve and the valve between strainer and pump inlet.\n3. Relieve pressure through the strainer drain and remove the strainer cover.\n4. Lift out the basket, clean it with water and a soft brush, and check the mesh for tears. Replace damaged baskets (part 18-1120).\n5. Refit the basket and cover with a new cover gasket. Open the valves, vent, and restart.\n6. Confirm that the strainer differential pressure (PI-01 minus PI-02) has returned to below 0.05 bar.\n\n8.4 Replacing the mechanical seal\n1. Isolate, drain and cool the pump (see 2.4). Remove the coupling guard.\n2. Remove the casing bolts of the upper casing half and lift it off using the jacking screws. Discard the casing gasket.\n3. Lift the rotating assembly out of the lower casing half and place it on V-blocks.\n4. Remove the bearing housings, then the seal cartridges from both sides.\n5. Fit new seal kits (18-0502) on both sides. Lubricate O-rings with water or glycerine only.\n6. Lower the rotating assembly into the lower casing half and check that the wear rings sit correctly in their recesses.\n7. Fit a new casing gasket, place the upper casing half, and tighten the casing bolts to 52 N-m in a cross pattern, in two passes.\n8. Turn the shaft by hand. It must turn freely without rubbing.\n\nCAUTION: Do not exceed the specified casing bolt torque. Over-tightening can crack the gasket seat in the casing.\n\n8.5 Measuring the impeller-to-casing clearance (task M-06)\nMeasure the diametral clearance between impeller wear ring and casing wear ring with a feeler gauge at four points, 90 degrees apart. Permitted clearance: 0.45 - 0.60 mm. If the clearance exceeds the upper limit, replace the casing wear rings. Pump efficiency falls by roughly 1 to 2% for every 0.1 mm above the upper limit.\n\n8.6 Replacing the bearings\n1. Remove the rotating assembly as described in 8.4, steps 1 to 3.\n2. Remove the bearing covers and pull the bearings off the shaft with a puller acting on the inner ring only.\n3. Heat the new bearings to 90 - 110 C with an induction heater (never with an open flame) and slide them onto the shaft against the shoulder.\n4. Pack each bearing with 25 g of grease and refit the covers with new lip seals.\n5. Reassemble and re-check alignment (5.3). Measure bearing temperature and vibration after the first 4 hours of operation.\n\n8.7 Tightening torques\nUnless stated otherwise, torques apply to lightly oiled threads, property class 8.8. Tighten in a cross pattern in at least two passes.\n\nJoint: Casing bolts (upper to lower half)\nThread: M16\nTorque (N-m): 52\n\nJoint: Bearing housing to casing\nThread: M12\nTorque (N-m): 60\n\nJoint: Bearing covers\nThread: M10\nTorque (N-m): 25\n\nJoint: Strainer cover\nThread: M12\nTorque (N-m): 45\n\nJoint: Pump feet to baseplate\nThread: M20\nTorque (N-m): 180\n\nJoint: Foundation bolts\nThread: M24\nTorque (N-m): 310\n\nJoint: Impeller nut\nThread: M36\nTorque (N-m): 160",
+        "text_en": "8 Maintenance\n\n8.1 Maintenance schedule\nID: M-01\nTask: Grease pump and motor bearings\nInterval: 2,000 operating hours\nReference: 8.2\n\nID: M-02\nTask: Check coupling alignment\nInterval: 4,000 h or 12 months\nReference: 5.3\n\nID: M-03\nTask: Inspect mechanical seal(s) for leakage\nInterval: 4,000 h\nReference: 8.4\n\nID: M-04\nTask: Clean suction strainer\nInterval: 750 h, or when the strainer dP alarm is active\nReference: 8.3\n\nID: M-05\nTask: Measure vibration at both bearings\nInterval: 1,000 h\nReference: 9.2\n\nID: M-06\nTask: Measure impeller-to-casing clearance\nInterval: 8,000 h\nReference: 8.5\n\nID: M-07\nTask: Check foundation bolt torque\nInterval: 8,000 h\nReference: 5.1\n\nID: M-08\nTask: Calibrate PT-1 / PT-2 transmitters\nInterval: 24 months\nReference: 4.1\n\nNOTE: Intervals apply to normal duty (clean water, up to 6,000 operating hours per year). Shorten them for contaminated liquids or continuous duty.\n\n8.2 Lubrication\nGrease each bearing with 25 g of lithium complex grease NLGI 2 through the grease nipple while the pump is running. Open the grease relief plug during greasing and close it after five minutes. Over-greasing raises bearing temperature and is the most frequent cause of fault P-02 after maintenance.\n\n8.3 Cleaning the suction strainer (task M-04)\n1. Stop the pump and secure it against restart.\n2. Close the suction isolation valve and the valve between strainer and pump inlet.\n3. Relieve pressure through the strainer drain and remove the strainer cover.\n4. Lift out the basket, clean it with water and a soft brush, and check the mesh for tears. Replace damaged baskets (part 18-1120).\n5. Refit the basket and cover with a new cover gasket. Open the valves, vent, and restart.\n6. Confirm that the strainer differential pressure (PI-01 minus PI-02) has returned to below 0.05 bar.\n\n8.4 Replacing the mechanical seal\n1. Isolate, drain and cool the pump (see 2.4). Remove the coupling guard.\n2. Remove the casing bolts of the upper casing half and lift it off using the jacking screws. Discard the casing gasket.\n3. Lift the rotating assembly out of the lower casing half and place it on V-blocks.\n4. Remove the bearing housings, then the seal cartridges from both sides.\n5. Fit new seal kits (18-0502) on both sides. Lubricate O-rings with water or glycerine only.\n6. Lower the rotating assembly into the lower casing half and check that the wear rings sit correctly in their recesses.\n7. Fit a new casing gasket, place the upper casing half, and tighten the casing bolts to 52 N-m in a cross pattern, in two passes.\n8. Turn the shaft by hand. It must turn freely without rubbing.\n\nCAUTION: Do not exceed the specified casing bolt torque. Over-tightening can crack the gasket seat in the casing.\n\n8.5 Measuring the impeller-to-casing clearance (task M-06)\nMeasure the diametral clearance between impeller wear ring and casing wear ring with a feeler gauge at four points, 90 degrees apart. Permitted clearance: 0.45 - 0.60 mm. If the clearance exceeds the upper limit, replace the casing wear rings. Pump efficiency falls by roughly 1 to 2% for every 0.1 mm above the upper limit.\n\n8.6 Replacing the bearings\n1. Remove the rotating assembly as described in 8.4, steps 1 to 3.\n2. Remove the bearing covers and pull the bearings off the shaft with a puller acting on the inner ring only.\n3. Heat the new bearings to 90 - 110 C with an induction heater (never with an open flame) and slide them onto the shaft against the shoulder.\n4. Pack each bearing with 25 g of grease and refit the covers with new lip seals.\n5. Reassemble and re-check alignment (5.3). Measure bearing temperature and vibration after the first 4 hours of operation.\n\n8.7 Tightening torques\nUnless stated otherwise, torques apply to lightly oiled threads, property class 8.8. Tighten in a cross pattern in at least two passes.\n\nJoint: Casing bolts (upper to lower half)\nThread: M16\nTorque (N-m): 52\n\nJoint: Bearing housing to casing\nThread: M12\nTorque (N-m): 60\n\nJoint: Bearing covers\nThread: M10\nTorque (N-m): 25\n\nJoint: Strainer cover\nThread: M12\nTorque (N-m): 45\n\nJoint: Pump feet to baseplate\nThread: M20\nTorque (N-m): 180\n\nJoint: Foundation bolts\nThread: M24\nTorque (N-m): 310\n\nJoint: Impeller nut\nThread: M36\nTorque (N-m): 160",
+        "acl_key": "family-pumps",
+        "cosine": 0.543246328830719,
+        "bm25_rank": 9,
+        "vector_rank": 16,
+        "rrf": 0.027650648360030512
+      },
+      {
+        "chunk_id": "f24784bc455c2080",
+        "doc_path": "corpus/confluence/Pump-Troubleshooting-Playbook.html",
+        "doc_title": "Pump Troubleshooting Playbook",
+        "doc_type": "Field Service wiki page",
+        "revision": "unknown",
+        "effective_date": "Sep 08, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Pump Troubleshooting Playbook",
+            "Parts we carry"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Parts we carry",
+        "text_original": "Part | What | Van stock\n18-0201 | Seal kit HCP-200 | Fresno vans only\n18-0356 | Seal kit HCP-350 | All pump vans\n18-0502 | Seal kit HCP-500 | Two per van where we look after a 500\n18-1120 | Strainer basket, 3 mm mesh, HCP-350/500 | One per van\n18-1121 | Strainer cover gasket | Several. Use a new one every time\n19-0301 | Pressure transmitter PT-1/PT-2 | One in Fresno stores\n\nWear rings, bearings and casing gaskets are ordered per job through stores with the serial number. Don't guess part numbers on the order, write the description and the serial and let stores look it up.",
+        "text_en": "Part | What | Van stock\n18-0201 | Seal kit HCP-200 | Fresno vans only\n18-0356 | Seal kit HCP-350 | All pump vans\n18-0502 | Seal kit HCP-500 | Two per van where we look after a 500\n18-1120 | Strainer basket, 3 mm mesh, HCP-350/500 | One per van\n18-1121 | Strainer cover gasket | Several. Use a new one every time\n19-0301 | Pressure transmitter PT-1/PT-2 | One in Fresno stores\n\nWear rings, bearings and casing gaskets are ordered per job through stores with the serial number. Don't guess part numbers on the order, write the description and the serial and let stores look it up.",
+        "acl_key": "family-pumps",
+        "cosine": 0.5520818829536438,
+        "bm25_rank": 14,
+        "vector_rank": 11,
+        "rrf": 0.027598020555767037
+      },
+      {
+        "chunk_id": "e1e06daa4e2229e2",
+        "doc_path": "corpus/confluence/Pump-Troubleshooting-Playbook.html",
+        "doc_title": "Pump Troubleshooting Playbook",
+        "doc_type": "Field Service wiki page",
+        "revision": "unknown",
+        "effective_date": "Sep 08, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Pump Troubleshooting Playbook",
+            "How to use this page"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › How to use this page",
+        "text_original": "Symptoms to causes for the Halden HCP pumps (HCP-200, HCP-350, HCP-500). Start from what you see and hear, not from the code on the controller. This page has no thresholds or clearances in it, on purpose. They're different for each model, and Halden changes them by bulletin. Read them from the fault table and the technical data in the manual for the model in front of you, and check the bulletins for the serial.",
+        "text_en": "Symptoms to causes for the Halden HCP pumps (HCP-200, HCP-350, HCP-500). Start from what you see and hear, not from the code on the controller. This page has no thresholds or clearances in it, on purpose. They're different for each model, and Halden changes them by bulletin. Read them from the fault table and the technical data in the manual for the model in front of you, and check the bulletins for the serial.",
+        "acl_key": "family-pumps",
+        "cosine": 0.541959285736084,
+        "bm25_rank": 8,
+        "vector_rank": 18,
+        "rrf": 0.027526395173453996
+      },
+      {
+        "chunk_id": "eb2ed6f3b1e4df9f",
+        "doc_path": "corpus/manuals/Halden_HCP-200_Betriebsanleitung_1998_scan.pdf",
+        "doc_title": "Halden HCP-200 Betriebsanleitung 1998 (scan)",
+        "doc_type": "Betriebsanleitung / Operating Instructions",
+        "revision": "Revision A",
+        "effective_date": "03/1998",
+        "locator": {
+          "page": 6,
+          "section_path": [
+            "7 Wartung / Maintenance"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden HCP-200 Betriebsanleitung 1998 (scan) | Revision A | 7 Wartung / Maintenance",
+        "text_original": "7 Wartung\nMaintenance\n\n7.1 Wartungsplan / Maintenance schedule\nArbeit / Work: Lager nachschmieren / Regrease bearings\nIntervall / Interval: alle 2000 Betriebsstunden / every 2,000 operating hours\n\nArbeit / Work: Saugsieb reinigen / Clean suction strainer\nIntervall / Interval: alle 500 Betriebsstunden / every 500 operating hours\n\nArbeit / Work: Gleitringdichtung auf Leckage prüfen / Check mechanical seal for leakage\nIntervall / Interval: wöchentlich / weekly\n\nArbeit / Work: Kupplungsausrichtung prüfen / Check coupling alignment\nIntervall / Interval: jährlich / yearly\n\nArbeit / Work: Spaltmaß messen (7.3) / Measure clearance (7.3)\nIntervall / Interval: alle 8000 Betriebsstunden / every 8,000 operating hours\n\n7.2 Schmierung / Lubrication\nJedes Lager über den Schmiernippel bei laufender Pumpe mit der Fettmenge nach Tabelle 3.1 nachschmieren. Zu viel Fett erhöht die Lagertemperatur.\nRegrease each bearing over the grease nipple with running pump with the grease quantity according to table 3.1. Too much grease increases the bearing temperature.\n\n7.3 Spaltmaß prüfen / Checking the clearance\nSpaltmaß zwischen Laufrad und Spaltring mit Fühlerlehre an vier um 90° versetzten Stellen messen. Überschreitet das Spaltmaß den Höchstwert nach Tabelle 3.1, sind die Spaltringe zu erneuern. Mit wachsendem Spaltmaß sinken Förderstrom und Wirkungsgrad.\nMeasure the clearance between impeller and wear ring with feeler gauge at four places offset by 90°. If the clearance exceeds the maximum value according to table 3.1, the wear rings are to be renewed. With growing clearance flow rate and efficiency decrease.\n\n7.4 Gleitringdichtung wechseln / Changing the mechanical seal\n1. Pumpe außer Betrieb nehmen und sichern (2.2).\nTake the pump out of operation and secure it (2.2).\n\n2. Kupplungsschutz und Zwischenstück abbauen.\nRemove coupling guard and spacer.\n\n3. Gehäuseschrauben lösen, Lagerträger mit Laufrad herausziehen.\nLoosen the casing bolts, pull out the bearing bracket with impeller.\n\n4. Laufradmutter lösen, Laufrad abziehen, Gleitringdichtung ausbauen.\nLoosen the impeller nut, pull off the impeller, dismantle the mechanical seal.\n\n5. Neuen Dichtungssatz 18-0201 einbauen. O-Ringe nur mit Wasser benetzen, nie mit Öl oder Fett.\nInstall new seal kit 18-0201. Wet O-rings only with water, never with oil or grease.\n\n6. Mit neuer Gehäusedichtung zusammenbauen. Gehäuseschrauben über Kreuz mit dem Anzugsmoment nach Tabelle 3.1 anziehen.\nAssemble with new casing gasket. Tighten casing bolts crosswise with the torque according to table 3.1.",
+        "text_en": "7 Maintenance\n\n7.1 Maintenance schedule\nRegrease bearings: every 2,000 operating hours.\nClean suction strainer: every 500 operating hours.\nCheck mechanical seal for leakage: weekly.\nCheck coupling alignment: yearly.\nMeasure clearance (7.3): every 8,000 operating hours.\n\n7.2 Lubrication\nWith the pump running, regrease each bearing through the grease nipple using the quantity in table 3.1. Excess grease increases bearing temperature.\n\n7.3 Checking the clearance\nMeasure the clearance between impeller and wear ring at four positions 90° apart using a feeler gauge. Renew the wear rings if the clearance exceeds the maximum value in table 3.1. Increasing clearance reduces flow rate and efficiency.\n\n7.4 Changing the mechanical seal\n1. Take the pump out of operation and secure it as specified in 2.2.\n2. Remove the coupling guard and spacer.\n3. Loosen the casing bolts and pull out the bearing bracket with the impeller.\n4. Loosen the impeller nut, remove the impeller, and dismantle the mechanical seal.\n5. Install new seal kit 18-0201. Wet O-rings only with water, never with oil or grease.\n6. Reassemble using a new casing gasket. Tighten casing bolts crosswise to the torque specified in table 3.1.",
+        "acl_key": "family-pumps",
+        "cosine": 0.5718380212783813,
+        "bm25_rank": 20,
+        "vector_rank": 7,
+        "rrf": 0.027425373134328357
+      },
+      {
+        "chunk_id": "8152be6b6e9c8177",
+        "doc_path": "corpus/bulletins/Halden_SB-2025-009_HCP-350_Casing_Torque.pdf",
+        "doc_title": "Halden SB-2025-009",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "effective_date": "2025-06-18",
+        "locator": {
+          "page": 3,
+          "section_path": [
+            "10 Note on other models / Hinweis zu anderen Baureihen"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden SB-2025-009 | 0 | 10 Note on other models / Hinweis zu anderen Baureihen",
+        "text_original": "HCP-200 pumps are not affected. HCP-500 units from serial HCP500-250001 also use the revised casing; torque values for these units are given in torque chart HDN-TC-2025.\n\nPrepared: Jonas Albrecht\nProduct Engineering, Centrifugal Pumps\n\nApproved: Dipl.-Ing. M. Kessler\nHead of Engineering\n\nReleased electronically in Halden PLM. Valid without handwritten signature.\n\nTechnical questions: Stefan Wirth, Technical Support, s.wirth@halden-pumpen.de, +49 7361 555 0140 (Monday to Friday, 07:00 - 17:00 CET). Please quote the pump serial number in all correspondence.",
+        "text_en": "HCP-200 pumps are not affected. HCP-500 units from serial HCP500-250001 also use the revised casing; torque values for these units are given in torque chart HDN-TC-2025.\n\nPrepared: Jonas Albrecht\nProduct Engineering, Centrifugal Pumps\n\nApproved: Dipl.-Ing. M. Kessler\nHead of Engineering\n\nReleased electronically in Halden PLM. Valid without handwritten signature.\n\nTechnical questions: Stefan Wirth, Technical Support, s.wirth@halden-pumpen.de, +49 7361 555 0140 (Monday to Friday, 07:00 - 17:00 CET). Please quote the pump serial number in all correspondence.",
+        "acl_key": "family-pumps",
+        "cosine": 0.6065199971199036,
+        "bm25_rank": 25,
+        "vector_rank": 4,
+        "rrf": 0.02738970588235294
+      },
+      {
+        "chunk_id": "aad0b252f485e69a",
+        "doc_path": "corpus/manuals/Halden_HCP-200_Betriebsanleitung_1998_scan.pdf",
+        "doc_title": "Halden HCP-200 Betriebsanleitung 1998 (scan)",
+        "doc_type": "Betriebsanleitung / Operating Instructions",
+        "revision": "Revision A",
+        "effective_date": "03/1998",
+        "locator": {
+          "page": 3,
+          "section_path": [
+            "3 Technische Daten / Technical data"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden HCP-200 Betriebsanleitung 1998 (scan) | Revision A | 3 Technische Daten / Technical data",
+        "text_original": "3 Technische Daten\nTechnical data\n\nDie Angaben gelten für die Normalausführung. Abweichende Daten von Sonderausführungen siehe Auftragsbestätigung.\nThe data are valid for the standard design. Differing data of special designs see order confirmation.\n\nTabelle / Table 3.1\nBenennung / Designation: Förderstrom / Förderhöhe / Flow rate / head\nWert / Value: 200 m³/h / 45 m\n\nBenennung / Designation: NPSH erforderlich / NPSH required\nWert / Value: 3,2 m\n\nBenennung / Designation: Drehzahl / Speed\nWert / Value: 1450 1/min (50 Hz) / 1750 1/min (60 Hz)\n\nBenennung / Designation: Motorleistung / Motor power\nWert / Value: 30 kW (50 Hz) / 37 kW (60 Hz)\n\nBenennung / Designation: Max. Betriebsdruck / Fördertemperatur / Max. working pressure / liquid temperature\nWert / Value: 10 bar / 80 °C\n\nBenennung / Designation: Flansche Saug- / Druckseite / Flanges suction / discharge\nWert / Value: DN 125 / DN 100, PN 16\n\nBenennung / Designation: Laufraddurchmesser / Impeller diameter\nWert / Value: 265 mm\n\nBenennung / Designation: Spaltmaß Laufrad - Gehäuse (diametral) / Impeller-to-casing clearance (diametral)\nWert / Value: 0.38 - 0.50 mm\n\nBenennung / Designation: Anzugsmoment Gehäuseschrauben M14 / Casing bolt torque M14\nWert / Value: 40 N-m\n\nBenennung / Designation: Wälzlager / Bearings\nWert / Value: 6309 C3 (beide / both)\n\nBenennung / Designation: Fettmenge je Lager / Grease quantity per bearing\nWert / Value: 12 g, Lithiumseifenfett / lithium grease NLGI 2\n\nBenennung / Designation: Gleitringdichtung / Mechanical seal\nWert / Value: Satz / kit 18-0201\n\nBenennung / Designation: Masse Pumpenaggregat / Weight pump unit\nWert / Value: ca. / approx. 410 kg\n\nBenennung / Designation: Schalldruckpegel in 1 m / Sound pressure level at 1 m\nWert / Value: 76 dB(A)\n\n3.2 Weitere Anzugsmomente / Other tightening torques\nVerbindung / Joint: Lagerdeckel / Bearing cover\nGewinde / Thread: M8\nN-m: 20\n\nVerbindung / Joint: Laufradmutter / Impeller nut\nGewinde / Thread: M20\nN-m: 90\n\nVerbindung / Joint: Pumpenfüße / Fundamentschrauben / Pump feet / foundation bolts\nGewinde / Thread: M16\nN-m: 120\n\nDie Anzugsmomente gelten für leicht geölte Gewinde. Gehäuseschrauben über Kreuz in zwei Durchgängen anziehen.\nThe torques are valid for lightly oiled threads. Tighten casing bolts crosswise in two passes.\n\n3.3 Betriebsbereich / Operating range\nDauerbetrieb zwischen 30 % und 110 % des Förderstroms im Bestpunkt. Bei Betrieb am Frequenzumrichter darf die Drehzahl 60 % der Nenndrehzahl nicht unterschreiten.\nContinuous operation between 30 % and 110 % of the flow rate at best efficiency point. With frequency converter the speed must not fall below 60 % of rated speed.",
+        "text_en": "3 Technical data\n\nThe data apply to the standard design. For special designs, see the order confirmation.\n\nTable 3.1\nFlow rate / head: 200 m³/h / 45 m\nNPSH required: 3,2 m\nSpeed: 1450 1/min (50 Hz) / 1750 1/min (60 Hz)\nMotor power: 30 kW (50 Hz) / 37 kW (60 Hz)\nMaximum working pressure / liquid temperature: 10 bar / 80 °C\nSuction / discharge flanges: DN 125 / DN 100, PN 16\nImpeller diameter: 265 mm\nImpeller-to-casing clearance, diametral: 0.38 - 0.50 mm\nCasing bolt torque M14: 40 N-m\nBearings: 6309 C3 (both)\nGrease quantity per bearing: 12 g, lithium grease NLGI 2\nMechanical seal: kit 18-0201\nPump-unit weight: approx. 410 kg\nSound pressure level at 1 m: 76 dB(A)\n\n3.2 Other tightening torques\nBearing cover: thread M8; 20 N-m\nImpeller nut: thread M20; 90 N-m\nPump feet / foundation bolts: thread M16; 120 N-m\n\nThe torques apply to lightly oiled threads. Tighten casing bolts crosswise in two passes.\n\n3.3 Operating range\nContinuous operation is permitted between 30 % and 110 % of the flow rate at the best-efficiency point. When using a frequency converter, speed must not fall below 60 % of rated speed.",
+        "acl_key": "family-pumps",
+        "cosine": 0.6176743507385254,
+        "bm25_rank": 31,
+        "vector_rank": 2,
+        "rrf": 0.027118043247075507
+      },
+      {
+        "chunk_id": "31263bd6a3915ac5",
+        "doc_path": "corpus/manuals/Halden_HCP-500_IOM_RevB.pdf",
+        "doc_title": "Halden HCP-500 IOM Rev B",
+        "doc_type": "Installation, Operation and Maintenance Manual",
+        "revision": "B",
+        "effective_date": "2025-01-30",
+        "locator": {
+          "page": 4,
+          "section_path": [
+            "4 Product description"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden HCP-500 IOM Rev B | B | 4 Product description",
+        "text_original": "4 Product description\n\n4.1 Design\nThe HCP-500 is a horizontally split-case, double-suction, single-stage pump. The upper casing half can be removed for access to the rotating assembly without disturbing the suction and discharge piping. The impeller is supported between two bearing housings, each fitted with a mechanical seal. The double-suction impeller balances axial thrust hydraulically.\n\nEach pump is supplied with a Halden PC-3 controller monitoring suction and discharge pressure (transmitters PT-1 and PT-2), bearing temperature, seal leak detection, motor current, and the differential pressure across the suction strainer (gauges PI-01 upstream and PI-02 downstream of the strainer).\n\n4.2 Type key\nExample: HCP-500-365-90-4 = pump size / impeller diameter in mm / motor power in kW / number of motor poles.\n\n4.3 Technical data\nParameter: Rated flow / head\nValue: 500 m3/h at 72 m\n\nParameter: NPSH required at rated point\nValue: 4.8 m\n\nParameter: Motor\nValue: 90 kW, 4-pole, 1780 rpm at 60 Hz (1480 rpm at 50 Hz)\n\nParameter: Max. working pressure / temperature\nValue: 16 bar / 90 C\n\nParameter: Flanges suction / discharge\nValue: DN 200 / DN 150\n\nParameter: Impeller diameter (standard)\nValue: 365 mm\n\nParameter: Impeller-to-casing (wear ring) clearance\nValue: 0.45 - 0.60 mm, diametral\n\nParameter: Casing bolt tightening torque\nValue: 52 N-m, cross pattern, two passes (lubricated threads)\n\nParameter: Bearings\nValue: 6312 C3 (both bearing housings)\n\nParameter: Grease quantity per bearing\nValue: 25 g, lithium complex NLGI 2\n\nParameter: Mechanical seal kit\nValue: 18-0502\n\nParameter: Weight, complete unit\nValue: approx. 1240 kg\n\nParameter: Sound pressure level at 1 m\nValue: 82 dB(A)",
+        "text_en": "4 Product description\n\n4.1 Design\nThe HCP-500 is a horizontally split-case, double-suction, single-stage pump. The upper casing half can be removed for access to the rotating assembly without disturbing the suction and discharge piping. The impeller is supported between two bearing housings, each fitted with a mechanical seal. The double-suction impeller balances axial thrust hydraulically.\n\nEach pump is supplied with a Halden PC-3 controller monitoring suction and discharge pressure (transmitters PT-1 and PT-2), bearing temperature, seal leak detection, motor current, and the differential pressure across the suction strainer (gauges PI-01 upstream and PI-02 downstream of the strainer).\n\n4.2 Type key\nExample: HCP-500-365-90-4 = pump size / impeller diameter in mm / motor power in kW / number of motor poles.\n\n4.3 Technical data\nParameter: Rated flow / head\nValue: 500 m3/h at 72 m\n\nParameter: NPSH required at rated point\nValue: 4.8 m\n\nParameter: Motor\nValue: 90 kW, 4-pole, 1780 rpm at 60 Hz (1480 rpm at 50 Hz)\n\nParameter: Max. working pressure / temperature\nValue: 16 bar / 90 C\n\nParameter: Flanges suction / discharge\nValue: DN 200 / DN 150\n\nParameter: Impeller diameter (standard)\nValue: 365 mm\n\nParameter: Impeller-to-casing (wear ring) clearance\nValue: 0.45 - 0.60 mm, diametral\n\nParameter: Casing bolt tightening torque\nValue: 52 N-m, cross pattern, two passes (lubricated threads)\n\nParameter: Bearings\nValue: 6312 C3 (both bearing housings)\n\nParameter: Grease quantity per bearing\nValue: 25 g, lithium complex NLGI 2\n\nParameter: Mechanical seal kit\nValue: 18-0502\n\nParameter: Weight, complete unit\nValue: approx. 1240 kg\n\nParameter: Sound pressure level at 1 m\nValue: 82 dB(A)",
+        "acl_key": "family-pumps",
+        "cosine": 0.6185876131057739,
+        "bm25_rank": 35,
+        "vector_rank": 1,
+        "rrf": 0.026919758412424506
+      },
+      {
+        "chunk_id": "f8cc1e10ba7cb262",
+        "doc_path": "corpus/bulletins/Halden_SB-2025-009_HCP-350_Casing_Torque.pdf",
+        "doc_title": "Halden SB-2025-009",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "effective_date": "2025-06-18",
+        "locator": {
+          "page": 1,
+          "section_path": [
+            "2 Affected products / Betroffene Produkte"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden SB-2025-009 | 0 | 2 Affected products / Betroffene Produkte",
+        "text_original": "Model: HCP-350\nSerial number range: HCP350-210001 to HCP350-239999\nCasing cover: Version 1 (original)\nCasing gasket: 1.5 mm fibre\nCasing bolt torque: 45 N-m, per IOM Rev D (unchanged)\n\nModel: HCP-350\nSerial number range: HCP350-240001 and later\nCasing cover: Version 2 (revised)\nCasing gasket: 0.8 mm aramid fibre, graphite faced\nCasing bolt torque: 38 N-m, per this bulletin\n\nModel: HCP-200\nSerial number range: all\nCasing cover: -\nCasing gasket: -\nCasing bolt torque: Not affected\n\nIdentification. Version 2 casing covers carry the cast mark \"V2\" on the flange next to the drain plug boss, and the raised gasket face is 8 mm wide instead of 12 mm. The nameplate does not show the casing version. If the nameplate is missing or not readable, use the cast mark.\n\nReplacement casing covers supplied as spare parts after January 2024 are always Version 2, whatever the serial number of the pump. A pump before HCP350-240001 that has been fitted with a replacement cover is to be treated as a Version 2 pump for all purposes of this bulletin. Record the cover change on the pump's maintenance record.",
+        "text_en": "Model: HCP-350\nSerial number range: HCP350-210001 to HCP350-239999\nCasing cover: Version 1 (original)\nCasing gasket: 1.5 mm fibre\nCasing bolt torque: 45 N-m, per IOM Rev D (unchanged)\n\nModel: HCP-350\nSerial number range: HCP350-240001 and later\nCasing cover: Version 2 (revised)\nCasing gasket: 0.8 mm aramid fibre, graphite faced\nCasing bolt torque: 38 N-m, per this bulletin\n\nModel: HCP-200\nSerial number range: all\nCasing cover: -\nCasing gasket: -\nCasing bolt torque: Not affected\n\nIdentification. Version 2 casing covers carry the cast mark \"V2\" on the flange next to the drain plug boss, and the raised gasket face is 8 mm wide instead of 12 mm. The nameplate does not show the casing version. If the nameplate is missing or not readable, use the cast mark.\n\nReplacement casing covers supplied as spare parts after January 2024 are always Version 2, whatever the serial number of the pump. A pump before HCP350-240001 that has been fitted with a replacement cover is to be treated as a Version 2 pump for all purposes of this bulletin. Record the cover change on the pump's maintenance record.",
+        "acl_key": "family-pumps",
+        "cosine": 0.6035287976264954,
+        "bm25_rank": 27,
+        "vector_rank": 5,
+        "rrf": 0.026878868258178604
+      },
+      {
+        "chunk_id": "abe1a8fbea3d42e7",
+        "doc_path": "corpus/manuals/Halden_HCP-350_IOM_RevD.pdf",
+        "doc_title": "Halden HCP-350 IOM Rev D",
+        "doc_type": "Installation, Operation and Maintenance Manual",
+        "revision": "D",
+        "effective_date": "2023-05-22",
+        "locator": {
+          "page": 6,
+          "section_path": [
+            "8 Maintenance"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden HCP-350 IOM Rev D | D | 8 Maintenance",
+        "text_original": "8 Maintenance\n\n8.1 Maintenance schedule\nID: M-01\nTask: Grease pump and motor bearings\nInterval: 2,000 operating hours\nReference: 8.2\n\nID: M-02\nTask: Check coupling alignment\nInterval: 4,000 h or 12 months\nReference: 5.3\n\nID: M-03\nTask: Inspect mechanical seal(s) for leakage\nInterval: 4,000 h\nReference: 8.4\n\nID: M-04\nTask: Clean suction strainer\nInterval: 750 h, or when the strainer dP alarm is active\nReference: 8.3\n\nID: M-05\nTask: Measure vibration at both bearings\nInterval: 1,000 h\nReference: 9.2\n\nID: M-06\nTask: Measure impeller-to-casing clearance\nInterval: 8,000 h\nReference: 8.5\n\nID: M-07\nTask: Check foundation bolt torque\nInterval: 8,000 h\nReference: 5.1\n\nID: M-08\nTask: Calibrate PT-1 / PT-2 transmitters\nInterval: 24 months\nReference: 4.1\n\nNOTE: Intervals apply to normal duty (clean water, up to 6,000 operating hours per year). Shorten them for contaminated liquids or continuous duty.\n\n8.2 Lubrication\nGrease each bearing with 18 g of lithium complex grease NLGI 2 through the grease nipple while the pump is running. Open the grease relief plug during greasing and close it after five minutes. Over-greasing raises bearing temperature and is the most frequent cause of fault P-02 after maintenance.\n\n8.3 Cleaning the suction strainer (task M-04)\n1. Stop the pump and secure it against restart.\n2. Close the suction isolation valve and the valve between strainer and pump inlet.\n3. Relieve pressure through the strainer drain and remove the strainer cover.\n4. Lift out the basket, clean it with water and a soft brush, and check the mesh for tears. Replace damaged baskets (part 18-1120).\n5. Refit the basket and cover with a new cover gasket. Open the valves, vent, and restart.\n6. Confirm that the strainer differential pressure (PI-01 minus PI-02) has returned to below 0.05 bar.\n\n8.4 Replacing the mechanical seal\n1. Isolate, drain and cool the pump (see 2.4). Remove the coupling guard and the coupling spacer.\n2. Remove the casing bolts and withdraw the back pull-out assembly using the jacking screws.\n3. Remove the impeller nut (left-hand thread) and pull off the impeller. Withdraw the seal cartridge.\n4. Fit a new seal kit (18-0355). Lubricate O-rings with water or glycerine only, never with oil or grease.\n5. Refit the impeller and the back pull-out assembly with a new casing gasket. Tighten the casing bolts to 45 N-m in a cross pattern, in two passes.\n6. Refit the coupling spacer, re-check alignment, and refit the guard.\n\nCAUTION: Do not exceed the specified casing bolt torque. Over-tightening can crack the gasket seat in the casing.\n\n8.5 Measuring the impeller-to-casing clearance (task M-06)\nMeasure the diametral clearance between impeller wear ring and casing wear ring with a feeler gauge at four points, 90 degrees apart. Permitted clearance: 0.40 - 0.55 mm. If the clearance exceeds the upper limit, replace the casing wear rings. Pump efficiency falls by roughly 1 to 2% for every 0.1 mm above the upper limit.\n\n8.6 Replacing the bearings\n1. Remove the rotating assembly as described in 8.4, steps 1 to 2.\n2. Remove the bearing covers and pull the bearings off the shaft with a puller acting on the inner ring only.\n3. Heat the new bearings to 90 - 110 C with an induction heater (never with an open flame) and slide them onto the shaft against the shoulder.\n4. Pack each bearing with 18 g of grease and refit the covers with new lip seals.\n5. Reassemble and re-check alignment (5.3). Measure bearing temperature and vibration after the first 4 hours of operation.\n\n8.7 Tightening torques\nUnless stated otherwise, torques apply to lightly oiled threads, property class 8.8. Tighten in a cross pattern in at least two passes.\n\nJoint: Casing bolts (casing to cover)\nThread: M16\nTorque (N-m): 45\n\nJoint: Bearing housing to casing\nThread: M12\nTorque (N-m): 60\n\nJoint: Bearing covers\nThread: M10\nTorque (N-m): 25\n\nJoint: Strainer cover\nThread: M12\nTorque (N-m): 45\n\nJoint: Pump feet to baseplate\nThread: M20\nTorque (N-m): 180\n\nJoint: Foundation bolts\nThread: M24\nTorque (N-m): 310\n\nJoint: Impeller nut\nThread: M30 LH\nTorque (N-m): 120",
+        "text_en": "8 Maintenance\n\n8.1 Maintenance schedule\nID: M-01\nTask: Grease pump and motor bearings\nInterval: 2,000 operating hours\nReference: 8.2\n\nID: M-02\nTask: Check coupling alignment\nInterval: 4,000 h or 12 months\nReference: 5.3\n\nID: M-03\nTask: Inspect mechanical seal(s) for leakage\nInterval: 4,000 h\nReference: 8.4\n\nID: M-04\nTask: Clean suction strainer\nInterval: 750 h, or when the strainer dP alarm is active\nReference: 8.3\n\nID: M-05\nTask: Measure vibration at both bearings\nInterval: 1,000 h\nReference: 9.2\n\nID: M-06\nTask: Measure impeller-to-casing clearance\nInterval: 8,000 h\nReference: 8.5\n\nID: M-07\nTask: Check foundation bolt torque\nInterval: 8,000 h\nReference: 5.1\n\nID: M-08\nTask: Calibrate PT-1 / PT-2 transmitters\nInterval: 24 months\nReference: 4.1\n\nNOTE: Intervals apply to normal duty (clean water, up to 6,000 operating hours per year). Shorten them for contaminated liquids or continuous duty.\n\n8.2 Lubrication\nGrease each bearing with 18 g of lithium complex grease NLGI 2 through the grease nipple while the pump is running. Open the grease relief plug during greasing and close it after five minutes. Over-greasing raises bearing temperature and is the most frequent cause of fault P-02 after maintenance.\n\n8.3 Cleaning the suction strainer (task M-04)\n1. Stop the pump and secure it against restart.\n2. Close the suction isolation valve and the valve between strainer and pump inlet.\n3. Relieve pressure through the strainer drain and remove the strainer cover.\n4. Lift out the basket, clean it with water and a soft brush, and check the mesh for tears. Replace damaged baskets (part 18-1120).\n5. Refit the basket and cover with a new cover gasket. Open the valves, vent, and restart.\n6. Confirm that the strainer differential pressure (PI-01 minus PI-02) has returned to below 0.05 bar.\n\n8.4 Replacing the mechanical seal\n1. Isolate, drain and cool the pump (see 2.4). Remove the coupling guard and the coupling spacer.\n2. Remove the casing bolts and withdraw the back pull-out assembly using the jacking screws.\n3. Remove the impeller nut (left-hand thread) and pull off the impeller. Withdraw the seal cartridge.\n4. Fit a new seal kit (18-0355). Lubricate O-rings with water or glycerine only, never with oil or grease.\n5. Refit the impeller and the back pull-out assembly with a new casing gasket. Tighten the casing bolts to 45 N-m in a cross pattern, in two passes.\n6. Refit the coupling spacer, re-check alignment, and refit the guard.\n\nCAUTION: Do not exceed the specified casing bolt torque. Over-tightening can crack the gasket seat in the casing.\n\n8.5 Measuring the impeller-to-casing clearance (task M-06)\nMeasure the diametral clearance between impeller wear ring and casing wear ring with a feeler gauge at four points, 90 degrees apart. Permitted clearance: 0.40 - 0.55 mm. If the clearance exceeds the upper limit, replace the casing wear rings. Pump efficiency falls by roughly 1 to 2% for every 0.1 mm above the upper limit.\n\n8.6 Replacing the bearings\n1. Remove the rotating assembly as described in 8.4, steps 1 to 2.\n2. Remove the bearing covers and pull the bearings off the shaft with a puller acting on the inner ring only.\n3. Heat the new bearings to 90 - 110 C with an induction heater (never with an open flame) and slide them onto the shaft against the shoulder.\n4. Pack each bearing with 18 g of grease and refit the covers with new lip seals.\n5. Reassemble and re-check alignment (5.3). Measure bearing temperature and vibration after the first 4 hours of operation.\n\n8.7 Tightening torques\nUnless stated otherwise, torques apply to lightly oiled threads, property class 8.8. Tighten in a cross pattern in at least two passes.\n\nJoint: Casing bolts (casing to cover)\nThread: M16\nTorque (N-m): 45\n\nJoint: Bearing housing to casing\nThread: M12\nTorque (N-m): 60\n\nJoint: Bearing covers\nThread: M10\nTorque (N-m): 25\n\nJoint: Strainer cover\nThread: M12\nTorque (N-m): 45\n\nJoint: Pump feet to baseplate\nThread: M20\nTorque (N-m): 180\n\nJoint: Foundation bolts\nThread: M24\nTorque (N-m): 310\n\nJoint: Impeller nut\nThread: M30 LH\nTorque (N-m): 120",
+        "acl_key": "family-pumps",
+        "cosine": 0.5391062498092651,
+        "bm25_rank": 11,
+        "vector_rank": 23,
+        "rrf": 0.026132699813337858
+      },
+      {
+        "chunk_id": "485c3292ac51002c",
+        "doc_path": "corpus/confluence/Pump-Troubleshooting-Playbook.html",
+        "doc_title": "Pump Troubleshooting Playbook",
+        "doc_type": "Field Service wiki page",
+        "revision": "unknown",
+        "effective_date": "Sep 08, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Pump Troubleshooting Playbook",
+            "Seal leaks and P-04"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Seal leaks and P-04",
+        "text_original": "A new seal that leaks within days was nearly always damaged at fitting or at start-up. Two things to check:\n- Did someone lubricate the O-rings with oil or grease? Halden says water or glycerine only. Mineral grease swells the elastomers.\n- Was the pump vented properly before the first start? A few seconds of dry running is enough to damage the seal faces.\n\nAn older seal that starts leaking: check the seal flush line first. Aisha found a kinked flush line on GDN-P-0070 in August 2025 (case 00039115). The seal was cooking because no flush water was reaching it. Rerouting the line was the actual fix, the new seal was a bonus.\n\nSeal kits:\nModel | Seal kit | Note\nHCP-200 | 18-0201 |\nHCP-350 | 18-0356 | Supersedes 18-0355 (Halden SB-2025-018). If you find an 18-0355 in a van, use it up on older pumps only if 18-0356 isn't available, and tell stores\nHCP-500 | 18-0502 | Split case, two seals per pump, so two kits",
+        "text_en": "A new seal that leaks within days was nearly always damaged at fitting or at start-up. Two things to check:\n- Did someone lubricate the O-rings with oil or grease? Halden says water or glycerine only. Mineral grease swells the elastomers.\n- Was the pump vented properly before the first start? A few seconds of dry running is enough to damage the seal faces.\n\nAn older seal that starts leaking: check the seal flush line first. Aisha found a kinked flush line on GDN-P-0070 in August 2025 (case 00039115). The seal was cooking because no flush water was reaching it. Rerouting the line was the actual fix, the new seal was a bonus.\n\nSeal kits:\nModel | Seal kit | Note\nHCP-200 | 18-0201 |\nHCP-350 | 18-0356 | Supersedes 18-0355 (Halden SB-2025-018). If you find an 18-0355 in a van, use it up on older pumps only if 18-0356 isn't available, and tell stores\nHCP-500 | 18-0502 | Split case, two seals per pump, so two kits",
+        "acl_key": "family-pumps",
+        "cosine": 0.5202111601829529,
+        "bm25_rank": 15,
+        "vector_rank": 33,
+        "rrf": 0.024086021505376344
+      },
+      {
+        "chunk_id": "0225db2fbb73cc85",
+        "doc_path": "corpus/manuals/Halden_HCP-350_IOM_RevD.pdf",
+        "doc_title": "Halden HCP-350 IOM Rev D",
+        "doc_type": "Installation, Operation and Maintenance Manual",
+        "revision": "D",
+        "effective_date": "2023-05-22",
+        "locator": {
+          "page": 5,
+          "section_path": [
+            "5 Installation"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden HCP-350 IOM Rev D | D | 5 Installation",
+        "text_original": "5 Installation\n\n5.1 Foundation and baseplate\nThe foundation must be rigid enough to absorb vibration and have a mass of at least three times the mass of the pump unit. Level the baseplate to within 0.2 mm/m using shims next to the foundation bolts, then grout it with non-shrink grout. Do not tighten the foundation bolts fully until the grout has cured (typically 48 hours).\n\n5.2 Piping\nSupport the piping independently so that no forces or moments are transmitted to the pump flanges. Connect the flanges only after the grout has cured. The suction line should be as short and straight as possible, with a straight length of at least five pipe diameters before the pump inlet, and must rise continuously toward the pump to prevent air pockets. Use an eccentric reducer with the flat side on top.\n\nCAUTION: Do not install a throttling valve in the suction line. The suction isolation valve must be fully open during operation (see 7.2).\n\nA suction strainer (basket strainer, mesh 3 mm, Halden part 18-1120) must be installed between the suction isolation valve and the pump inlet, with pressure gauges PI-01 and PI-02 on either side so that the strainer differential pressure can be read.\n\n5.3 Coupling alignment\nAlign the coupling after the piping has been connected. Permitted misalignment: radial offset 0.05 mm, angular 0.05 mm per 100 mm. Use a laser alignment tool where available. Re-check alignment after 24 hours of operation at operating temperature.\n\n5.4 Electrical connection\nConnect the motor according to the motor nameplate and the wiring diagram in the controller door. Connect transmitters PT-1 and PT-2 to terminals X3.1 to X3.4 with shielded cable, shield earthed at the controller end only. The PC-3 provides Modbus TCP on port 502 for connection to the plant control system (see chapter 11).\n\n5.5 Permitted nozzle loads\nForces and moments from the piping must not exceed the values below (EN ISO 5199, cast iron casing). Higher loads distort the casing, change the wear ring clearance and shorten bearing and seal life.\n\nFlange: Suction\nFx (N): 2,350\nFy (N): 2,100\nFz (N): 2,650\nMx (N-m): 1,050\nMy (N-m): 750\nMz (N-m): 860\n\nFlange: Discharge\nFx (N): 1,600\nFy (N): 1,450\nFz (N): 1,800\nMx (N-m): 700\nMy (N-m): 500\nMz (N-m): 580",
+        "text_en": "5 Installation\n\n5.1 Foundation and baseplate\nThe foundation must be rigid enough to absorb vibration and have a mass of at least three times the mass of the pump unit. Level the baseplate to within 0.2 mm/m using shims next to the foundation bolts, then grout it with non-shrink grout. Do not tighten the foundation bolts fully until the grout has cured (typically 48 hours).\n\n5.2 Piping\nSupport the piping independently so that no forces or moments are transmitted to the pump flanges. Connect the flanges only after the grout has cured. The suction line should be as short and straight as possible, with a straight length of at least five pipe diameters before the pump inlet, and must rise continuously toward the pump to prevent air pockets. Use an eccentric reducer with the flat side on top.\n\nCAUTION: Do not install a throttling valve in the suction line. The suction isolation valve must be fully open during operation (see 7.2).\n\nA suction strainer (basket strainer, mesh 3 mm, Halden part 18-1120) must be installed between the suction isolation valve and the pump inlet, with pressure gauges PI-01 and PI-02 on either side so that the strainer differential pressure can be read.\n\n5.3 Coupling alignment\nAlign the coupling after the piping has been connected. Permitted misalignment: radial offset 0.05 mm, angular 0.05 mm per 100 mm. Use a laser alignment tool where available. Re-check alignment after 24 hours of operation at operating temperature.\n\n5.4 Electrical connection\nConnect the motor according to the motor nameplate and the wiring diagram in the controller door. Connect transmitters PT-1 and PT-2 to terminals X3.1 to X3.4 with shielded cable, shield earthed at the controller end only. The PC-3 provides Modbus TCP on port 502 for connection to the plant control system (see chapter 11).\n\n5.5 Permitted nozzle loads\nForces and moments from the piping must not exceed the values below (EN ISO 5199, cast iron casing). Higher loads distort the casing, change the wear ring clearance and shorten bearing and seal life.\n\nFlange: Suction\nFx (N): 2,350\nFy (N): 2,100\nFz (N): 2,650\nMx (N-m): 1,050\nMy (N-m): 750\nMz (N-m): 860\n\nFlange: Discharge\nFx (N): 1,600\nFy (N): 1,450\nFz (N): 1,800\nMx (N-m): 700\nMy (N-m): 500\nMz (N-m): 580",
+        "acl_key": "family-pumps",
+        "cosine": 0.5431026220321655,
+        "bm25_rank": 39,
+        "vector_rank": 17,
+        "rrf": 0.023088023088023088
+      },
+      {
+        "chunk_id": "cc2fb73d33d253fd",
+        "doc_path": "corpus/manuals/Halden_HCP-200_Betriebsanleitung_1998_scan.pdf",
+        "doc_title": "Halden HCP-200 Betriebsanleitung 1998 (scan)",
+        "doc_type": "Betriebsanleitung / Operating Instructions",
+        "revision": "Revision A",
+        "effective_date": "03/1998",
+        "locator": {
+          "page": 2,
+          "section_path": [
+            "1 Allgemeines / General"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden HCP-200 Betriebsanleitung 1998 (scan) | Revision A | 1 Allgemeines / General",
+        "text_original": "1 Allgemeines\nGeneral\n\n1.1 Geltungsbereich / Scope\nDiese Betriebsanleitung gilt für Kreiselpumpen der Baureihe HCP-200 in Normalausführung: einflutig, einstufig, auf Grundrahmen mit Elektromotor und Kupplung, Wellenabdichtung durch Gleitringdichtung. Sonderausführungen sind in einem Beiblatt zur Auftragsbestätigung beschrieben.\nThese operating instructions are valid for centrifugal pumps of series HCP-200 in standard design: single-entry, single-stage, on baseplate with electric motor and coupling, shaft sealing by mechanical seal. Special designs are described in a supplementary sheet to the order confirmation.\n\n1.2 Typenschild / Nameplate\nBei Rückfragen und Ersatzteilbestellungen sind stets Baureihe, Fabrik-Nr. und Baujahr vom Typenschild anzugeben. Das Typenschild befindet sich am Lagerträger.\nFor all enquiries and spare part orders always state series, works number and year of construction from the nameplate. The nameplate is fixed on the bearing bracket.\n\n1.3 Gewährleistung / Warranty\nDie Gewährleistung richtet sich nach unseren Allgemeinen Lieferbedingungen. Für Schäden durch Trockenlauf, Nichtbeachtung dieser Anleitung oder Verwendung nicht originaler Ersatzteile übernehmen wir keine Haftung.\nWarranty is according to our General Conditions of Delivery. For damages by dry running, non-observance of these instructions or use of non-original spare parts we accept no liability.",
+        "text_en": "1 General\n\n1.1 Scope\nThese operating instructions apply to HCP-200 series centrifugal pumps in standard design: single-entry, single-stage, mounted on a baseplate with electric motor and coupling, and with shaft sealing by mechanical seal. Special designs are described in a supplementary sheet to the order confirmation.\n\n1.2 Nameplate\nFor all enquiries and spare-part orders, always state the series, works number, and year of construction from the nameplate. The nameplate is fitted to the bearing bracket.\n\n1.3 Warranty\nWarranty is governed by the General Conditions of Delivery. No liability is accepted for damage caused by dry running, failure to observe these instructions, or use of non-original spare parts.",
+        "acl_key": "family-pumps",
+        "cosine": 0.5442962646484375,
+        "bm25_rank": 43,
+        "vector_rank": 15,
+        "rrf": 0.023042071197411
+      },
+      {
+        "chunk_id": "28294c8f4338fa83",
+        "doc_path": "corpus/email/HCP-350_casing_leak_FRS-P-0031_Halden_thread.pdf",
+        "doc_title": "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": 2,
+          "section_path": [],
+          "record_id": null,
+          "sender": "Maria Okafor <m.okafor@corvane.com>",
+          "date": "Thursday, June 4, 2026 8:17 AM"
+        },
+        "header": "HCP-350 casing leak FRS-P-0031 (Halden thread)",
+        "text_original": "To: Stefan Wirth <s.wirth@halden-pumpen.de>\nCc: Tom Becker <t.becker@corvane.com>; Kenji Watanabe <k.watanabe@corvane.com>\nSubject: RE: AW: HCP-350 casing joint leaking after seal change - FRS-P-0031 / HCP350-241187\n\nStefan,\n\nThanks for the quick answer. I'm the senior pump technician on the Fresno contract, and I'm copying Kenji Watanabe, our team lead.\n\nI have to push back on the last line, though. Tom did exactly what the manual says. Rev D is the IOM on HaldenNet. I downloaded it again this morning to be sure: it still says 45 N-m in 4.3, 8.4 and 8.7, with no mention of serial numbers and no mention of the bulletin. Rev D is from 2023. The bulletin is from June 2025. So for a year there has been a torque that cracks the casing on the newer pumps, and the manual every technician opens still has the old number.\n\nTwo questions:\n1. Why was the IOM never updated? If the torque depends on the serial, that belongs in the manual, in the torque table, not in a separate PDF that someone has to know exists.\n2. Why didn't the bulletin reach us? I've checked our manual library, which is what the technicians open on their tablets on site, and SB-2025-009 isn't in it. Nobody on the NA pump team remembers receiving it. If it was sent to Corvane, tell me where it went and we'll fix our side.\n\nI know section 1.1 says bulletins take precedence. That only works if the bulletin is somewhere the technician will see it.\n\nSeparately, I've gone through our fleet register for the other HCP-350s we look after. FRS-P-0012 (HCP350-221034) and TAC-P-0045 (HCP350-231650) are older serials, so 45 N-m is still right for those if I read the bulletin correctly. GDN-P-0070 in Gdansk, HCP350-250877, is in the new range. That one belongs to our EU team and I'll make sure they know, because they'll be working from the same Rev D.\n\nMaria",
+        "text_en": "To: Stefan Wirth <s.wirth@halden-pumpen.de>\nCc: Tom Becker <t.becker@corvane.com>; Kenji Watanabe <k.watanabe@corvane.com>\nSubject: RE: AW: HCP-350 casing joint leaking after seal change - FRS-P-0031 / HCP350-241187\n\nStefan,\n\nThanks for the quick answer. I'm the senior pump technician on the Fresno contract, and I'm copying Kenji Watanabe, our team lead.\n\nI have to push back on the last line, though. Tom did exactly what the manual says. Rev D is the IOM on HaldenNet. I downloaded it again this morning to be sure: it still says 45 N-m in 4.3, 8.4 and 8.7, with no mention of serial numbers and no mention of the bulletin. Rev D is from 2023. The bulletin is from June 2025. So for a year there has been a torque that cracks the casing on the newer pumps, and the manual every technician opens still has the old number.\n\nTwo questions:\n1. Why was the IOM never updated? If the torque depends on the serial, that belongs in the manual, in the torque table, not in a separate PDF that someone has to know exists.\n2. Why didn't the bulletin reach us? I've checked our manual library, which is what the technicians open on their tablets on site, and SB-2025-009 isn't in it. Nobody on the NA pump team remembers receiving it. If it was sent to Corvane, tell me where it went and we'll fix our side.\n\nI know section 1.1 says bulletins take precedence. That only works if the bulletin is somewhere the technician will see it.\n\nSeparately, I've gone through our fleet register for the other HCP-350s we look after. FRS-P-0012 (HCP350-221034) and TAC-P-0045 (HCP350-231650) are older serials, so 45 N-m is still right for those if I read the bulletin correctly. GDN-P-0070 in Gdansk, HCP350-250877, is in the new range. That one belongs to our EU team and I'll make sure they know, because they'll be working from the same Rev D.\n\nMaria",
+        "acl_key": "family-pumps",
+        "cosine": 0.518293023109436,
+        "bm25_rank": 22,
+        "vector_rank": 35,
+        "rrf": 0.0227214377406932
+      },
+      {
+        "chunk_id": "fcb6b78759947b1e",
+        "doc_path": "corpus/manuals/Halden_HCP-500_IOM_RevB.pdf",
+        "doc_title": "Halden HCP-500 IOM Rev B",
+        "doc_type": "Installation, Operation and Maintenance Manual",
+        "revision": "B",
+        "effective_date": "2025-01-30",
+        "locator": {
+          "page": 5,
+          "section_path": [
+            "5 Installation"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden HCP-500 IOM Rev B | B | 5 Installation",
+        "text_original": "5 Installation\n\n5.1 Foundation and baseplate\nThe foundation must be rigid enough to absorb vibration and have a mass of at least three times the mass of the pump unit. Level the baseplate to within 0.2 mm/m using shims next to the foundation bolts, then grout it with non-shrink grout. Do not tighten the foundation bolts fully until the grout has cured (typically 48 hours).\n\n5.2 Piping\nSupport the piping independently so that no forces or moments are transmitted to the pump flanges. Connect the flanges only after the grout has cured. The suction line should be as short and straight as possible, with a straight length of at least five pipe diameters before the pump inlet, and must rise continuously toward the pump to prevent air pockets. Use an eccentric reducer with the flat side on top.\n\nCAUTION: Do not install a throttling valve in the suction line. The suction isolation valve must be fully open during operation (see 7.2).\n\nA suction strainer (basket strainer, mesh 3 mm, Halden part 18-1120) must be installed between the suction isolation valve and the pump inlet, with pressure gauges PI-01 and PI-02 on either side so that the strainer differential pressure can be read.\n\n5.3 Coupling alignment\nAlign the coupling after the piping has been connected. Permitted misalignment: radial offset 0.05 mm, angular 0.05 mm per 100 mm. Use a laser alignment tool where available. Re-check alignment after 24 hours of operation at operating temperature.\n\n5.4 Electrical connection\nConnect the motor according to the motor nameplate and the wiring diagram in the controller door. Connect transmitters PT-1 and PT-2 to terminals X3.1 to X3.4 with shielded cable, shield earthed at the controller end only. The PC-3 provides Modbus TCP on port 502 for connection to the plant control system (see chapter 11).\n\n5.5 Permitted nozzle loads\nForces and moments from the piping must not exceed the values below (EN ISO 5199, cast iron casing). Higher loads distort the casing, change the wear ring clearance and shorten bearing and seal life.\n\nFlange: Suction\nFx (N): 3,150\nFy (N): 2,800\nFz (N): 3,500\nMx (N-m): 1,450\nMy (N-m): 1,050\nMz (N-m): 1,200\n\nFlange: Discharge\nFx (N): 2,350\nFy (N): 2,100\nFz (N): 2,650\nMx (N-m): 1,050\nMy (N-m): 750\nMz (N-m): 860",
+        "text_en": "5 Installation\n\n5.1 Foundation and baseplate\nThe foundation must be rigid enough to absorb vibration and have a mass of at least three times the mass of the pump unit. Level the baseplate to within 0.2 mm/m using shims next to the foundation bolts, then grout it with non-shrink grout. Do not tighten the foundation bolts fully until the grout has cured (typically 48 hours).\n\n5.2 Piping\nSupport the piping independently so that no forces or moments are transmitted to the pump flanges. Connect the flanges only after the grout has cured. The suction line should be as short and straight as possible, with a straight length of at least five pipe diameters before the pump inlet, and must rise continuously toward the pump to prevent air pockets. Use an eccentric reducer with the flat side on top.\n\nCAUTION: Do not install a throttling valve in the suction line. The suction isolation valve must be fully open during operation (see 7.2).\n\nA suction strainer (basket strainer, mesh 3 mm, Halden part 18-1120) must be installed between the suction isolation valve and the pump inlet, with pressure gauges PI-01 and PI-02 on either side so that the strainer differential pressure can be read.\n\n5.3 Coupling alignment\nAlign the coupling after the piping has been connected. Permitted misalignment: radial offset 0.05 mm, angular 0.05 mm per 100 mm. Use a laser alignment tool where available. Re-check alignment after 24 hours of operation at operating temperature.\n\n5.4 Electrical connection\nConnect the motor according to the motor nameplate and the wiring diagram in the controller door. Connect transmitters PT-1 and PT-2 to terminals X3.1 to X3.4 with shielded cable, shield earthed at the controller end only. The PC-3 provides Modbus TCP on port 502 for connection to the plant control system (see chapter 11).\n\n5.5 Permitted nozzle loads\nForces and moments from the piping must not exceed the values below (EN ISO 5199, cast iron casing). Higher loads distort the casing, change the wear ring clearance and shorten bearing and seal life.\n\nFlange: Suction\nFx (N): 3,150\nFy (N): 2,800\nFz (N): 3,500\nMx (N-m): 1,450\nMy (N-m): 1,050\nMz (N-m): 1,200\n\nFlange: Discharge\nFx (N): 2,350\nFy (N): 2,100\nFz (N): 2,650\nMx (N-m): 1,050\nMy (N-m): 750\nMz (N-m): 860",
+        "acl_key": "family-pumps",
+        "cosine": 0.5400981903076172,
+        "bm25_rank": 41,
+        "vector_rank": 22,
+        "rrf": 0.022096112050229412
+      },
+      {
+        "chunk_id": "fd1787af11861253",
+        "doc_path": "corpus/data/maintpro_history_NA_2023-2026.csv",
+        "doc_title": "MaintPro history NA",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "232039",
+          "sender": null,
+          "date": "09/04/2026"
+        },
+        "header": "MaintPro history NA | 232039",
+        "text_original": "WO_No: 232039\nDate: 09/04/2026\nSite: FRS\nAsset: FRS-P-0007\nModel: HCP-200\nSerial: HCP200-180566\nEvent_Type: CM\nFault: \nHours: 34134\nTech: MOKAFOR\nNotes: flow ~20% low per cust. pulled pump, clearance meas 0.71mm - over limit (limit only in old scanned manual). wear rings ordered from Halden. SF 00043360\nParts: \nLabor_Hrs: 4\nStatus: WAITING PARTS",
+        "text_en": "WO_No: 232039\nDate: 09/04/2026\nSite: FRS\nAsset: FRS-P-0007\nModel: HCP-200\nSerial: HCP200-180566\nEvent_Type: CM\nFault: \nHours: 34134\nTech: MOKAFOR\nNotes: flow ~20% low per cust. pulled pump, clearance meas 0.71mm - over limit (limit only in old scanned manual). wear rings ordered from Halden. SF 00043360\nParts: \nLabor_Hrs: 4\nStatus: WAITING PARTS",
+        "acl_key": "region-na",
+        "cosine": 0.49267759919166565,
+        "bm25_rank": 33,
+        "vector_rank": 48,
+        "rrf": 0.02001194743130227
+      },
+      {
+        "chunk_id": "478199a6e2624667",
+        "doc_path": "corpus/manuals/Halden_HCP-200_Betriebsanleitung_1998_scan.pdf",
+        "doc_title": "Halden HCP-200 Betriebsanleitung 1998 (scan)",
+        "doc_type": "Betriebsanleitung / Operating Instructions",
+        "revision": "Revision A",
+        "effective_date": "03/1998",
+        "locator": {
+          "page": 4,
+          "section_path": [
+            "4 Aufstellung und Einbau / Installation"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden HCP-200 Betriebsanleitung 1998 (scan) | Revision A | 4 Aufstellung und Einbau / Installation",
+        "text_original": "4 Aufstellung und Einbau\nInstallation\n\n4.1 Transport / Transport\nDas Pumpenaggregat nur an den Transportösen des Grundrahmens anheben, nicht an der Ringschraube des Motors.\nLift the pump unit only at the lifting eyes of the baseplate, not at the eyebolt of the motor.\n\n4.2 Fundament / Foundation\nDas Fundament muss eben und tragfähig sein. Grundrahmen mit Unterlagen neben den Fundamentschrauben auf 0,2 mm/m ausrichten und vergießen. Fundamentschrauben erst nach Aushärten des Vergusses anziehen.\nThe foundation must be even and capable to carry the load. Align the baseplate with shims beside the foundation bolts to 0.2 mm/m and grout it. Tighten foundation bolts only after the grout has hardened.\n\n4.3 Rohrleitungen / Pipework\nRohrleitungen spannungsfrei anschließen und unmittelbar vor der Pumpe abfangen. Die Saugleitung möglichst kurz und zur Pumpe hin stetig steigend verlegen, damit sich keine Luftsäcke bilden.\nConnect the pipework free of stress and support it directly before the pump. Lay the suction pipe as short as possible and rising steadily towards the pump, so that no air pockets are formed.\n\nVor der Pumpe ist ein Saugsieb (Maschenweite 3 mm) einzubauen. Je ein Manometer vor und nach dem Sieb ermöglicht die Kontrolle der Verschmutzung.\nBefore the pump a suction strainer (mesh 3 mm) is to be installed. One pressure gauge before and one after the strainer allow the control of contamination.\n\nSaugschieber im Betrieb immer ganz öffnen. Nicht saugseitig drosseln!\nAlways open the suction valve fully in operation. Do not throttle on suction side!\n\n4.4 Kupplung ausrichten / Aligning the coupling\nNach Anschluss der Rohrleitungen die Kupplung mit Haarlineal und Fühlerlehre ausrichten. Zulässiger Versatz radial und axial je 0,1 mm. Nach 24 Betriebsstunden bei Betriebstemperatur nachprüfen.\nAfter connecting the pipework align the coupling with straight-edge and feeler gauge. Admissible offset radial and axial 0.1 mm each. Check again after 24 operating hours at operating temperature.\n\n4.5 Elektrischer Anschluss / Electrical connection\nMotor nach Schaltbild im Klemmenkasten anschließen. Die Pumpensteuerung PC-1 (Option) überwacht Saugdruck, Lagertemperatur, Leckage der Gleitringdichtung und Motorstrom und zeigt Störungen als Code P-01 bis P-06 an (siehe Abschnitt 8).\nConnect the motor according to the diagram in the terminal box. The pump control PC-1 (option) supervises suction pressure, bearing temperature, leakage of the mechanical seal and motor current and shows faults as code P-01 to P-06 (see section 8).",
+        "text_en": "4 Installation\n\n4.1 Transport\nLift the pump unit only by the lifting eyes on the baseplate, never by the motor eyebolt.\n\n4.2 Foundation\nThe foundation must be level and capable of carrying the load. Level the baseplate to 0,2 mm/m using shims beside the foundation bolts and grout it. Tighten the foundation bolts only after the grout has cured.\n\n4.3 Pipework\nConnect pipework without stress and support it immediately upstream of the pump. Keep the suction line as short as possible and continuously rising toward the pump to prevent air pockets.\n\nInstall a suction strainer with 3 mm mesh upstream of the pump. Install a pressure gauge before and after the strainer to monitor contamination.\n\nAlways fully open the suction valve during operation. Do not throttle on the suction side.\n\n4.4 Coupling alignment\nAfter pipework is connected, align the coupling using a straightedge and feeler gauge. Permitted radial and axial offset: 0,1 mm each. Recheck after 24 operating hours at operating temperature.\n\n4.5 Electrical connection\nConnect the motor in accordance with the diagram in the terminal box. The optional PC-1 pump controller monitors suction pressure, bearing temperature, mechanical-seal leakage, and motor current; it displays faults as codes P-01 through P-06. See section 8.",
+        "acl_key": "family-pumps",
+        "cosine": 0.5171653628349304,
+        "bm25_rank": 48,
+        "vector_rank": 37,
+        "rrf": 0.01956853760977472
+      },
+      {
+        "chunk_id": "649e9a003193b3c6",
+        "doc_path": "corpus/confluence/HCP-500-Maintenance-Quick-Reference.html",
+        "doc_title": "HCP-500 Maintenance Quick Reference",
+        "doc_type": "confluence",
+        "revision": "unknown",
+        "effective_date": "Apr 26, 2023",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service",
+            "HCP-500 Maintenance Quick Reference"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "HCP-500 Maintenance Quick Reference | Field Service › HCP-500 Maintenance Quick Reference",
+        "text_original": "Field Service: HCP-500 Maintenance Quick Reference\n\nCreated by Tom Becker, last modified on Apr 26, 2023\n\nMy notes from the Halden HCP-500 online training (March 2023), tidied up. The first 500 in our fleet goes in at Tacoma in July (TAC-P-0044) and we're helping with commissioning, so I wanted the PM tasks somewhere everyone can find them. This is the short version. The manual (HDN-IOM-500) has the details.\n\nThe HCP-500 is a split-case pump, not end-suction like the 350. Two bearing housings, two mechanical seals, top half of the casing lifts off. Don't plan a seal job on a 500 like a 350 job, it's twice the work.",
+        "text_en": "Field Service: HCP-500 Maintenance Quick Reference\n\nCreated by Tom Becker, last modified on Apr 26, 2023\n\nMy notes from the Halden HCP-500 online training (March 2023), tidied up. The first 500 in our fleet goes in at Tacoma in July (TAC-P-0044) and we're helping with commissioning, so I wanted the PM tasks somewhere everyone can find them. This is the short version. The manual (HDN-IOM-500) has the details.\n\nThe HCP-500 is a split-case pump, not end-suction like the 350. Two bearing housings, two mechanical seals, top half of the casing lifts off. Don't plan a seal job on a 500 like a 350 job, it's twice the work.",
+        "acl_key": "family-pumps",
+        "cosine": 0.5107861161231995,
+        "bm25_rank": 49,
+        "vector_rank": 41,
+        "rrf": 0.019075302025615408
+      },
+      {
+        "chunk_id": "a22e8cbd78317ed8",
+        "doc_path": "corpus/confluence/Work-Order-Writing-Guide.html",
+        "doc_title": "Work Order Writing Guide",
+        "doc_type": "Work Order Writing Guide",
+        "revision": "unknown",
+        "effective_date": "Jan 21, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service: Work Order Writing Guide",
+            "Certification required: the rule"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Work Order Writing Guide | Field Service: Work Order Writing Guide › Certification required: the rule",
+        "text_original": "State the certification the work needs. Don't assign yourself. The supervisor assigns the technician, and checks the certification against the Technician Certification Matrix when they do. This applies even if you hold the certification and you're standing next to the unit. In that case say so in the summary, and the supervisor will usually assign you.\n\nSome examples of what needs what:\n- Anything inside a VFD cabinet on a VRS-110, including fault resets the panel won't do (E-31): HV.\n- Connecting gauges, recovering or charging refrigerant, brazing on a refrigerant circuit: Refrigerant.\n- Entering a pump pit at Fresno or any other permit space: Confined space, plus the permit under CS-PROC-03.\n- Cleaning a condenser coil, changing an air filter, reading an alarm log: None.\n\nIf you're not sure, select the certification. It's much cheaper to send a certified technician who didn't need to be certified than the other way round.",
+        "text_en": "State the certification the work needs. Don't assign yourself. The supervisor assigns the technician, and checks the certification against the Technician Certification Matrix when they do. This applies even if you hold the certification and you're standing next to the unit. In that case say so in the summary, and the supervisor will usually assign you.\n\nSome examples of what needs what:\n- Anything inside a VFD cabinet on a VRS-110, including fault resets the panel won't do (E-31): HV.\n- Connecting gauges, recovering or charging refrigerant, brazing on a refrigerant circuit: Refrigerant.\n- Entering a pump pit at Fresno or any other permit space: Confined space, plus the permit under CS-PROC-03.\n- Cleaning a condenser coil, changing an air filter, reading an alarm log: None.\n\nIf you're not sure, select the certification. It's much cheaper to send a certified technician who didn't need to be certified than the other way round.",
+        "acl_key": "",
+        "cosine": null,
+        "bm25_rank": 2,
+        "vector_rank": null,
+        "rrf": 0.016129032258064516
+      },
+      {
+        "chunk_id": "993b5478e0412fdf",
+        "doc_path": "corpus/data/salesforce_cases_NA_2025-2026.json",
+        "doc_title": "Salesforce cases NA",
+        "doc_type": "Salesforce Case export",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "5008d00000XduD7w40",
+          "sender": null,
+          "date": "2026-09-04T17:30:00.000+0000",
+          "thread_record_ids": [
+            "5008d00000XduD7w40",
+            "00a8d00000bQLQQ6ft",
+            "02s8d00000U2Ibmdyw"
+          ]
+        },
+        "header": "Salesforce cases NA | 5008d00000XduD7w40",
+        "text_original": "attributes.type: Case\nattributes.url: /services/data/v60.0/sobjects/Case/5008d00000XduD7w40\nId: 5008d00000XduD7w40\nCaseNumber: 00043360\nSubject: HCP-200 pit pump low flow\nStatus: Closed\nPriority: Medium\nOrigin: Email\nCreatedDate: 2026-09-04T17:30:00.000+0000\nClosedDate: 2026-09-05T21:00:00.000+0000\nAccount.Name: Sierra Springs Beverage\nAsset__r.Name: FRS-P-0007\nEquipment_Model__c: HCP-200\nSerial_Number__c: HCP200-180566\nSite__c: FRS - Fresno Bottling Plant\nFault_Code__c: null\nDescription: Customer reports the pit pump FRS-P-0007 is about 20% down on flow. No alarms.\nResolution__c: Clearance measured 0.71 mm, over the limit in the old scanned manual. Wear rings ordered. Follow-up case for fitting.\nParts_Used__c: null\nOwner.Name: Maria Okafor\nCaseComments.totalSize: 1\nCaseComments.done: true\nEmailMessages.totalSize: 1\nEmailMessages.done: true\n\nattributes.type: CaseComment\nattributes.url: /services/data/v60.0/sobjects/CaseComment/00a8d00000bQLQQ6ft\nId: 00a8d00000bQLQQ6ft\nCommentBody: FYI for whoever does the follow-up: the clearance limit for the HCP-200 is only in the scanned paper manual (the 1998 Halden one in the manual library), it's not in MaintPro or on the wiki.\nCreatedDate: 2026-09-05T20:55:00.000+0000\nIsPublished: false\nCreatedBy.Name: Maria Okafor\n\nattributes.type: EmailMessage\nattributes.url: /services/data/v60.0/sobjects/EmailMessage/02s8d00000U2Ibmdyw\nId: 02s8d00000U2Ibmdyw\nSubject: Pit pump flow\nFromName: Gary Pham\nFromAddress: g.pham@sierrasprings.com\nToAddress: service.na@corvane.com\nMessageDate: 2026-09-04T17:30:00.000+0000\nIncoming: true\nTextBody: Hi team,\n\nOur flow meter on the pit return shows about 20% less than in the spring with the same level. No alarms. Can Maria take a look when she's here?",
+        "text_en": "attributes.type: Case\nattributes.url: /services/data/v60.0/sobjects/Case/5008d00000XduD7w40\nId: 5008d00000XduD7w40\nCaseNumber: 00043360\nSubject: HCP-200 pit pump low flow\nStatus: Closed\nPriority: Medium\nOrigin: Email\nCreatedDate: 2026-09-04T17:30:00.000+0000\nClosedDate: 2026-09-05T21:00:00.000+0000\nAccount.Name: Sierra Springs Beverage\nAsset__r.Name: FRS-P-0007\nEquipment_Model__c: HCP-200\nSerial_Number__c: HCP200-180566\nSite__c: FRS - Fresno Bottling Plant\nFault_Code__c: null\nDescription: Customer reports the pit pump FRS-P-0007 is about 20% down on flow. No alarms.\nResolution__c: Clearance measured 0.71 mm, over the limit in the old scanned manual. Wear rings ordered. Follow-up case for fitting.\nParts_Used__c: null\nOwner.Name: Maria Okafor\nCaseComments.totalSize: 1\nCaseComments.done: true\nEmailMessages.totalSize: 1\nEmailMessages.done: true\n\nattributes.type: CaseComment\nattributes.url: /services/data/v60.0/sobjects/CaseComment/00a8d00000bQLQQ6ft\nId: 00a8d00000bQLQQ6ft\nCommentBody: FYI for whoever does the follow-up: the clearance limit for the HCP-200 is only in the scanned paper manual (the 1998 Halden one in the manual library), it's not in MaintPro or on the wiki.\nCreatedDate: 2026-09-05T20:55:00.000+0000\nIsPublished: false\nCreatedBy.Name: Maria Okafor\n\nattributes.type: EmailMessage\nattributes.url: /services/data/v60.0/sobjects/EmailMessage/02s8d00000U2Ibmdyw\nId: 02s8d00000U2Ibmdyw\nSubject: Pit pump flow\nFromName: Gary Pham\nFromAddress: g.pham@sierrasprings.com\nToAddress: service.na@corvane.com\nMessageDate: 2026-09-04T17:30:00.000+0000\nIncoming: true\nTextBody: Hi team,\n\nOur flow meter on the pit return shows about 20% less than in the spring with the same level. No alarms. Can Maria take a look when she's here?",
+        "acl_key": "region-na",
+        "cosine": null,
+        "bm25_rank": 4,
+        "vector_rank": null,
+        "rrf": 0.015625
+      },
+      {
+        "chunk_id": "e4541cd981693613",
+        "doc_path": "corpus/confluence/Tacoma-Site-Notes.html",
+        "doc_title": "Tacoma Site Notes",
+        "doc_type": "Site Notes",
+        "revision": "unknown",
+        "effective_date": "Apr 14, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service",
+            "Field Service Home",
+            "Sites",
+            "North America",
+            "Field Service : Tacoma Site Notes",
+            "Our equipment and where it is"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Tacoma Site Notes | Field Service › Field Service Home › Sites › North America › Field Service : Tacoma Site Notes › Our equipment and where it is",
+        "text_original": "Asset | What | Where | Notes\nTAC-C-0142 | VRS-110 | Compressor room B, back left | See below. The awkward one\nTAC-C-0143 | VRS-110 | Compressor room B, back right | Easy access, door side\nTAC-C-0150 | VRS-75 | Compressor room B, front | Newest, 2025\nTAC-P-0044 | HCP-500 | Pump house by dock 14 | Condenser water loop. Strainer access from the walkway\nTAC-P-0045 | HCP-350 | Pump house by dock 14 | Same loop, standby duty\nTAC-V-0210 | BX-20 | Packing hall, line 2 | Olu's, conveyors\n\nAbout 0142: it's wedged in the back corner and you need to move the oil drums to get round the cooler side. 0142 sits right next to the freezer exhaust; the TS-2 harness runs along the duct. In summer it's like an oven back there, bring water and don't lean on the duct, it's hot. The cooler on 0142 also gets dirtier than on 0143 for the same reason, so give it extra time on PMs.\n\nCompressor room B in general: no wifi and the LTE drops to one bar or nothing. Download manuals, logs and firmware files before you go in. The ServiceTool laptop works offline. The room exhaust fan switch is by the door, it should be on Auto. If someone left it on Off, the whole room cooks.\n\nRough sketch of room B. Not to scale. Doors are where they are, everything else is approximate.",
+        "text_en": "Asset | What | Where | Notes\nTAC-C-0142 | VRS-110 | Compressor room B, back left | See below. The awkward one\nTAC-C-0143 | VRS-110 | Compressor room B, back right | Easy access, door side\nTAC-C-0150 | VRS-75 | Compressor room B, front | Newest, 2025\nTAC-P-0044 | HCP-500 | Pump house by dock 14 | Condenser water loop. Strainer access from the walkway\nTAC-P-0045 | HCP-350 | Pump house by dock 14 | Same loop, standby duty\nTAC-V-0210 | BX-20 | Packing hall, line 2 | Olu's, conveyors\n\nAbout 0142: it's wedged in the back corner and you need to move the oil drums to get round the cooler side. 0142 sits right next to the freezer exhaust; the TS-2 harness runs along the duct. In summer it's like an oven back there, bring water and don't lean on the duct, it's hot. The cooler on 0142 also gets dirtier than on 0143 for the same reason, so give it extra time on PMs.\n\nCompressor room B in general: no wifi and the LTE drops to one bar or nothing. Download manuals, logs and firmware files before you go in. The ServiceTool laptop works offline. The room exhaust fan switch is by the door, it should be on Auto. If someone left it on Off, the whole room cooks.\n\nRough sketch of room B. Not to scale. Doors are where they are, everything else is approximate.",
+        "acl_key": "region-na",
+        "cosine": null,
+        "bm25_rank": 5,
+        "vector_rank": null,
+        "rrf": 0.015384615384615385
+      },
+      {
+        "chunk_id": "c8e2a61622f6ed4a",
+        "doc_path": "corpus/confluence/HCP-500-Maintenance-Quick-Reference.html",
+        "doc_title": "HCP-500 Maintenance Quick Reference",
+        "doc_type": "confluence",
+        "revision": "unknown",
+        "effective_date": "Apr 26, 2023",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service",
+            "HCP-500 Maintenance Quick Reference",
+            "Things the trainer stressed"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "HCP-500 Maintenance Quick Reference | Field Service › HCP-500 Maintenance Quick Reference › Things the trainer stressed",
+        "text_original": "Things the trainer stressed\n\n- Suction isolation valve fully open in operation. No throttling on the suction side, ever.\n- Never run against a closed discharge valve for more than 30 seconds.\n- Casing bolts in a cross pattern, two passes. Torque is in the manual. Don't overtighten, the casing gasket seat can crack.\n- O-rings on the seals: water or glycerine only.",
+        "text_en": "Things the trainer stressed\n\n- Suction isolation valve fully open in operation. No throttling on the suction side, ever.\n- Never run against a closed discharge valve for more than 30 seconds.\n- Casing bolts in a cross pattern, two passes. Torque is in the manual. Don't overtighten, the casing gasket seat can crack.\n- O-rings on the seals: water or glycerine only.",
+        "acl_key": "family-pumps",
+        "cosine": 0.5729672312736511,
+        "bm25_rank": null,
+        "vector_rank": 6,
+        "rrf": 0.015151515151515152
+      },
+      {
+        "chunk_id": "4b51571191526614",
+        "doc_path": "corpus/confluence/Pump-Troubleshooting-Playbook.html",
+        "doc_title": "Pump Troubleshooting Playbook",
+        "doc_type": "Field Service wiki page",
+        "revision": "unknown",
+        "effective_date": "Sep 08, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Pump Troubleshooting Playbook",
+            "Vibration and P-03"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Pump Troubleshooting Playbook | Field Service : Pump Troubleshooting Playbook › Vibration and P-03",
+        "text_original": "Take readings at both bearings with the handheld and compare them with the last few PM readings in MaintPro. A sudden jump and a slow climb over weeks are different problems.\n\nSudden jump after maintenance: check the foundation bolt torque first, then coupling alignment. In my experience it's usually the bolts. Someone loosened them to shim the motor and didn't torque them back. Then alignment, preferably with the laser kit.\n\nSlow climb: bearings or impeller. If you have the spectrum function on the analyser, use it. The manual (section 9.2) explains what a peak at running speed, twice running speed and blade pass usually means. Trend it, put the readings in the case, and plan a bearing change before it becomes an emergency.\n\nUse the vibration bands in the manual rather than a number someone told you. They're for that pump on that kind of foundation.",
+        "text_en": "Take readings at both bearings with the handheld and compare them with the last few PM readings in MaintPro. A sudden jump and a slow climb over weeks are different problems.\n\nSudden jump after maintenance: check the foundation bolt torque first, then coupling alignment. In my experience it's usually the bolts. Someone loosened them to shim the motor and didn't torque them back. Then alignment, preferably with the laser kit.\n\nSlow climb: bearings or impeller. If you have the spectrum function on the analyser, use it. The manual (section 9.2) explains what a peak at running speed, twice running speed and blade pass usually means. Trend it, put the readings in the case, and plan a bearing change before it becomes an emergency.\n\nUse the vibration bands in the manual rather than a number someone told you. They're for that pump on that kind of foundation.",
+        "acl_key": "family-pumps",
+        "cosine": null,
+        "bm25_rank": 7,
+        "vector_rank": null,
+        "rrf": 0.014925373134328358
+      },
+      {
+        "chunk_id": "a356c1872ed8f6cb",
+        "doc_path": "corpus/bulletins/Halden_SB-2025-009_HCP-350_Casing_Torque.pdf",
+        "doc_title": "Halden SB-2025-009",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "effective_date": "2025-06-18",
+        "locator": {
+          "page": 1,
+          "section_path": [
+            "1 Summary / Zusammenfassung"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden SB-2025-009 | 0 | 1 Summary / Zusammenfassung",
+        "text_original": "Since production week 01/2024 (serial number HCP350-240001), HCP-350 pumps are built with a revised casing cover and a thinner casing gasket. The tightening torque for the casing bolts on these pumps is 38 N-m, applied in a cross pattern in two passes. The value of 45 N-m given in the Installation, Operation and Maintenance Manual HDN-IOM-350 Rev D applies only to pumps with serial numbers before HCP350-240001.\n\nTightening a revised casing cover to 45 N-m overloads the gasket seat and can crack it. A cracked gasket seat cannot be repaired. Pumps in service whose casing joint has been opened since delivery must be inspected as described in 5.2.",
+        "text_en": "Since production week 01/2024 (serial number HCP350-240001), HCP-350 pumps are built with a revised casing cover and a thinner casing gasket. The tightening torque for the casing bolts on these pumps is 38 N-m, applied in a cross pattern in two passes. The value of 45 N-m given in the Installation, Operation and Maintenance Manual HDN-IOM-350 Rev D applies only to pumps with serial numbers before HCP350-240001.\n\nTightening a revised casing cover to 45 N-m overloads the gasket seat and can crack it. A cracked gasket seat cannot be repaired. Pumps in service whose casing joint has been opened since delivery must be inspected as described in 5.2.",
+        "acl_key": "family-pumps",
+        "cosine": 0.5703334808349609,
+        "bm25_rank": null,
+        "vector_rank": 8,
+        "rrf": 0.014705882352941176
+      },
+      {
+        "chunk_id": "d2547ffb1fd7ce1b",
+        "doc_path": "corpus/manuals/Halden_HCP-200_Betriebsanleitung_1998_scan.pdf",
+        "doc_title": "Halden HCP-200 Betriebsanleitung 1998 (scan)",
+        "doc_type": "Betriebsanleitung / Operating Instructions",
+        "revision": "Revision A",
+        "effective_date": "03/1998",
+        "locator": {
+          "page": 8,
+          "section_path": [
+            "9 Ersatzteile / Spare parts",
+            "10 Kundendienst / Service",
+            "EG-Konformitätserklärung / EC declaration of conformity"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": "16.03.1998"
+        },
+        "header": "Halden HCP-200 Betriebsanleitung 1998 (scan) | Revision A | 9 Ersatzteile / Spare parts › 10 Kundendienst / Service › EG-Konformitätserklärung / EC declaration of conformity",
+        "text_original": "9 Ersatzteile\nSpare parts\n\nBei Ersatzteilbestellungen bitte angeben: Baureihe, Fabrik-Nr., Positions-Nr. und Benennung.\nFor spare part orders please state: series, works number, position number and designation.\n\nPos. / Item: 101\nBenennung / Designation: Spiralgehäuse / Volute casing\nBemerkung / Remark:\n\nPos. / Item: 161\nBenennung / Designation: Gehäusedeckel / Casing cover\nBemerkung / Remark:\n\nPos. / Item: 210\nBenennung / Designation: Welle / Shaft\nBemerkung / Remark:\n\nPos. / Item: 230\nBenennung / Designation: Laufrad / Impeller\nBemerkung / Remark: Ø 265 mm\n\nPos. / Item: 321\nBenennung / Designation: Rillenkugellager / Ball bearing\nBemerkung / Remark: 6309 C3 *\n\nPos. / Item: 400\nBenennung / Designation: Gehäusedichtung / Casing gasket\nBemerkung / Remark: *\n\nPos. / Item: 433\nBenennung / Designation: Gleitringdichtung, Satz / Mechanical seal, kit\nBemerkung / Remark: 18-0201 *\n\nPos. / Item: 502.1\nBenennung / Designation: Spaltring saugseitig / Wear ring suction side\nBemerkung / Remark: *\n\nPos. / Item: 502.2\nBenennung / Designation: Spaltring druckseitig / Wear ring pressure side\nBemerkung / Remark: *\n\n* Empfohlene Ersatzteile für zwei Jahre Betrieb.\n* Recommended spare parts for two years of operation.\n\n10 Kundendienst\nService\n\nHalden Pumpen GmbH, Industriestraße 14, D-73430 Aalen\nTelefon (0 73 61) 55 50-0, Telefax (0 73 61) 55 50-99\n\nEG-Konformitätserklärung / EC declaration of conformity\nHiermit erklären wir, dass die Pumpen der Baureihe HCP-200 den Bestimmungen der Maschinenrichtlinie 89/392/EWG in der Fassung 93/44/EWG entsprechen. Angewandte Normen: EN 292, EN 809.\nWe hereby declare that the pumps of series HCP-200 comply with the regulations of the Machinery Directive 89/392/EEC as amended by 93/44/EEC. Applied standards: EN 292, EN 809.\n\nAalen, 16.03.1998\ni.V. Dipl.-Ing. M. Kessler, Konstruktion / Engineering",
+        "text_en": "9 Spare parts\n\nFor spare-part orders, state the series, works number, item number, and designation.\n\nItem 101: Volute casing.\nItem 161: Casing cover.\nItem 210: Shaft.\nItem 230: Impeller. Remark: Ø 265 mm.\nItem 321: Ball bearing. Remark: 6309 C3 *.\nItem 400: Casing gasket. Remark: *.\nItem 433: Mechanical seal, kit. Remark: 18-0201 *.\nItem 502.1: Wear ring, suction side. Remark: *.\nItem 502.2: Wear ring, pressure side. Remark: *.\n\n* Recommended spare parts for two years of operation.\n\n10 Service\nHalden Pumpen GmbH, Industriestraße 14, D-73430 Aalen\nTelephone (0 73 61) 55 50-0; fax (0 73 61) 55 50-99\n\nEC declaration of conformity\nWe hereby declare that HCP-200 series pumps comply with Machinery Directive 89/392/EEC as amended by 93/44/EEC. Applied standards: EN 292, EN 809.\n\nAalen, 16.03.1998\nBy proxy: Dipl.-Ing. M. Kessler, Engineering.",
+        "acl_key": "family-pumps",
+        "cosine": 0.5673889517784119,
+        "bm25_rank": null,
+        "vector_rank": 9,
+        "rrf": 0.014492753623188406
+      },
+      {
+        "chunk_id": "189e841d996aa6a6",
+        "doc_path": "corpus/confluence/Work-Order-Writing-Guide.html",
+        "doc_title": "Work Order Writing Guide",
+        "doc_type": "Work Order Writing Guide",
+        "revision": "unknown",
+        "effective_date": "Jan 21, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service: Work Order Writing Guide",
+            "Required fields"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Work Order Writing Guide | Field Service: Work Order Writing Guide › Required fields",
+        "text_original": "Field | What to put in it | Common mistakes\nAsset ID | The asset ID from the fleet register, e.g. FRS-P-0031. One asset per work order | Writing the model instead of the asset. \"The 350 at Fresno\" could be two pumps\nFault code | The code exactly as shown on the controller, e.g. E-14, P-07, L-03. \"None\" if there isn't one | Writing the description instead of the code. Inventing a code. EU: putting old Servio codes here\nSummary | One line: what's wrong and what you propose. \"E-14 repeat, TS-2 reading 11 C high vs handheld, replace TS-2\" | \"Broken\", \"see case\", \"as discussed\"\nWork steps | The steps you expect to do, in order, with the document number for any procedure you'll follow | Pasting the steps of a controlled procedure. Reference the document number instead\nParts | Part numbers and quantities, from the parts list. If you don't know the number, write the description and the serial and let stores find it | Guessing part numbers\nCertification required | None, HV, Refrigerant (EPA 608 / F-gas), Confined space. Multi-select | Leaving it blank when the work needs one. Selecting None because you think you can do it\nEstimated duration | Hours on site, not including travel. Travel is calculated by the scheduler | Including travel. Writing \"half a day\"\nPriority | Low, Medium, High, Emergency, per the rules below | Everything High\nCampaign code | If the work is under an OEM campaign or warranty bulletin, the code from the bulletin, e.g. NK-C25-14 for the Nordkyl NK-600 EXV campaign. Blank otherwise | Leaving it blank. Without the code, the OEM doesn't pay and we eat the labour",
+        "text_en": "Field | What to put in it | Common mistakes\nAsset ID | The asset ID from the fleet register, e.g. FRS-P-0031. One asset per work order | Writing the model instead of the asset. \"The 350 at Fresno\" could be two pumps\nFault code | The code exactly as shown on the controller, e.g. E-14, P-07, L-03. \"None\" if there isn't one | Writing the description instead of the code. Inventing a code. EU: putting old Servio codes here\nSummary | One line: what's wrong and what you propose. \"E-14 repeat, TS-2 reading 11 C high vs handheld, replace TS-2\" | \"Broken\", \"see case\", \"as discussed\"\nWork steps | The steps you expect to do, in order, with the document number for any procedure you'll follow | Pasting the steps of a controlled procedure. Reference the document number instead\nParts | Part numbers and quantities, from the parts list. If you don't know the number, write the description and the serial and let stores find it | Guessing part numbers\nCertification required | None, HV, Refrigerant (EPA 608 / F-gas), Confined space. Multi-select | Leaving it blank when the work needs one. Selecting None because you think you can do it\nEstimated duration | Hours on site, not including travel. Travel is calculated by the scheduler | Including travel. Writing \"half a day\"\nPriority | Low, Medium, High, Emergency, per the rules below | Everything High\nCampaign code | If the work is under an OEM campaign or warranty bulletin, the code from the bulletin, e.g. NK-C25-14 for the Nordkyl NK-600 EXV campaign. Blank otherwise | Leaving it blank. Without the code, the OEM doesn't pay and we eat the labour",
+        "acl_key": "",
+        "cosine": null,
+        "bm25_rank": 10,
+        "vector_rank": null,
+        "rrf": 0.014285714285714285
+      },
+      {
+        "chunk_id": "c6305a9cbeeea984",
+        "doc_path": "corpus/manuals/Halden_HCP-500_IOM_RevB.pdf",
+        "doc_title": "Halden HCP-500 IOM Rev B",
+        "doc_type": "Installation, Operation and Maintenance Manual",
+        "revision": "B",
+        "effective_date": "2025-01-30",
+        "locator": {
+          "page": 3,
+          "section_path": [
+            "1 General information"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Halden HCP-500 IOM Rev B | B | 1 General information",
+        "text_original": "1 General information\n\n1.1 About this manual\nThis manual applies to Halden HCP-500 split-case centrifugal pumps with serial numbers from HCP500-230001, supplied as a bare-shaft pump or as a pump unit on a common baseplate with motor and Halden PC-3 pump controller. It is part of the product. Personnel responsible for installation, operation and maintenance must have read and understood it.\n\nInformation on accessories not supplied by Halden (motors, variable frequency drives, couplings of other makes) is given in the respective manufacturer's documentation. Where that documentation contradicts this manual for the pump itself, this manual applies.\n\nHalden publishes technical changes that affect safety or reliability as Service Bulletins between manual revisions. Service Bulletins take precedence over this manual for the units and serial ranges they name. Current bulletins are available from your Halden service partner.\n\n1.2 Symbols and signal words\nDANGER: Immediate hazard. Will result in death or serious injury if not avoided.\nWARNING: Possible hazard. Could result in death or serious injury if not avoided.\nCAUTION: Possible hazard. Could result in minor injury or damage to the pump or the installation.\nNOTE: Information for efficient and trouble-free operation.\n\n1.3 Manufacturer\nHalden Pumpen GmbH, Industriestrasse 14, 73430 Aalen, Germany. Service hotline +49 7361 555 0140 (Monday to Friday, 07:00 - 17:00 CET). For North American installations, contact your authorised Halden service partner.\n\n1.4 Warranty\nHalden warrants the pump against defects in material and workmanship for 24 months from delivery or 18 months from commissioning, whichever expires first. The warranty does not cover wear parts (mechanical seals, wear rings, bearings, gaskets), damage caused by dry running, cavitation, operation outside the permitted operating range, use of non-original spare parts, or failure to carry out the maintenance described in chapter 8. Claims must be submitted through the authorised service partner with the serial number and the controller event log.",
+        "text_en": "1 General information\n\n1.1 About this manual\nThis manual applies to Halden HCP-500 split-case centrifugal pumps with serial numbers from HCP500-230001, supplied as a bare-shaft pump or as a pump unit on a common baseplate with motor and Halden PC-3 pump controller. It is part of the product. Personnel responsible for installation, operation and maintenance must have read and understood it.\n\nInformation on accessories not supplied by Halden (motors, variable frequency drives, couplings of other makes) is given in the respective manufacturer's documentation. Where that documentation contradicts this manual for the pump itself, this manual applies.\n\nHalden publishes technical changes that affect safety or reliability as Service Bulletins between manual revisions. Service Bulletins take precedence over this manual for the units and serial ranges they name. Current bulletins are available from your Halden service partner.\n\n1.2 Symbols and signal words\nDANGER: Immediate hazard. Will result in death or serious injury if not avoided.\nWARNING: Possible hazard. Could result in death or serious injury if not avoided.\nCAUTION: Possible hazard. Could result in minor injury or damage to the pump or the installation.\nNOTE: Information for efficient and trouble-free operation.\n\n1.3 Manufacturer\nHalden Pumpen GmbH, Industriestrasse 14, 73430 Aalen, Germany. Service hotline +49 7361 555 0140 (Monday to Friday, 07:00 - 17:00 CET). For North American installations, contact your authorised Halden service partner.\n\n1.4 Warranty\nHalden warrants the pump against defects in material and workmanship for 24 months from delivery or 18 months from commissioning, whichever expires first. The warranty does not cover wear parts (mechanical seals, wear rings, bearings, gaskets), damage caused by dry running, cavitation, operation outside the permitted operating range, use of non-original spare parts, or failure to carry out the maintenance described in chapter 8. Claims must be submitted through the authorised service partner with the serial number and the controller event log.",
+        "acl_key": "family-pumps",
+        "cosine": 0.5534566640853882,
+        "bm25_rank": null,
+        "vector_rank": 10,
+        "rrf": 0.014285714285714285
+      }
+    ]
+  },
+  "judgement": {
+    "key_points": [
+      {
+        "point": "Impeller-to-casing clearance is 0.38–0.50 mm",
+        "verdict": "present",
+        "reason": "The copilot states that the HCP-200 clearance is 0.38–0.50 mm diametral."
+      },
+      {
+        "point": "Specification is from the 1998 HCP-200 manual",
+        "verdict": "present",
+        "reason": "The copilot attributes the value to the March 1998 operating instructions, Revision A, Table 3.1."
+      },
+      {
+        "point": "Replace the wear ring when clearance exceeds the upper limit",
+        "verdict": "missing",
+        "reason": "The copilot does not state that a wear ring must be replaced if clearance is above 0.50 mm."
+      }
+    ],
+    "constraints": [],
+    "verdict": "partially_correct"
+  }
+}

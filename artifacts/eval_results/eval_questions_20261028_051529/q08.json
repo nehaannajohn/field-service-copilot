@@ -1,0 +1,1719 @@
+{
+  "question": {
+    "id": "q08",
+    "user_id": "u03",
+    "question": "TAC-C-0142 tripped E-14 again. Has this happened before and what fixed it?",
+    "reference_answer": "Yes. TAC-C-0142 (VRS-110, firmware 5.0) had E-14 in March 2026 (case 00041207) and July 2026 (case 00042388), both times with TS-2 reading 11-16 C above a handheld probe, and TS-2 (41-2207) was replaced each time. The controller logged further E-14 auto-restarts on 28 July, 30 August and 17 September. Per Vastra SB-2026-003, below firmware 5.1 a failing TS-2 reports as E-14, so these are likely sensor faults. The TS-2 harness on this unit runs along the freezer exhaust duct, which is why sensors keep failing. Fix: check TS-2 against a handheld probe and replace if needed, update the controller to firmware 5.1, and reroute the harness away from the exhaust duct."
+  },
+  "result": {
+    "question": "TAC-C-0142 tripped E-14 again. Has this happened before and what fixed it?",
+    "user_id": "u03",
+    "status": "answered",
+    "message": null,
+    "summary": [
+      {
+        "sentence": "Yes—on March 12, 2026, WO 227933 / case 00041207 recorded E-14 with TS-2 at 112°C versus 96°C at the discharge flange; replacing TS-2 (part 41-2207) brought readings within 3°C, with no further trip reported overnight before closure.",
+        "sources": [
+          "S4",
+          "S9"
+        ]
+      },
+      {
+        "sentence": "On July 1, WO 230434 found plugged exhaust-side cooler fins; cleaning and restarting produced one trouble-free hour on site, but E-14 returned around 01:30 on July 2.",
+        "sources": [
+          "S1",
+          "S3",
+          "S7"
+        ]
+      },
+      {
+        "sentence": "On July 2, WO 230448 / case 00042388 recorded 38°C ambient and TS-2 at 113°C versus 102°C at the flange; a second TS-2 replacement (part 41-2207) brought readings within 4°C and restored operation, with no trips reported at the July 6 follow-up.",
+        "sources": [
+          "S1",
+          "S2",
+          "S3",
+          "S10"
+        ]
+      },
+      {
+        "sentence": "Although TS-2 replacement restored operation twice, a lasting fix was not established: further E-14 events occurred on July 28 at 03:12 (WO 231058), August 30 at 15:47 (WO 231801), and September 17, 2026 at 02:05 (WO 232346), each recording automatic restart after cooldown and no callout rather than corrective repair.",
+        "sources": [
+          "S1",
+          "S2",
+          "S3",
+          "S4",
+          "S5",
+          "S6",
+          "S7",
+          "S8",
+          "S9",
+          "S10"
+        ]
+      },
+      {
+        "sentence": "E-14 normally indicates discharge temperature above 110°C, but this VRS-110 was last documented on firmware 5.0; SB-2026-003 covers repeated E-14 on 5.0.3 or earlier, where the code alone cannot distinguish overheating from faulty TS-2, while firmware 5.1 separates sensor faults as E-15.",
+        "sources": [
+          "S1",
+          "S2",
+          "S3",
+          "S11",
+          "S12"
+        ]
+      },
+      {
+        "sentence": "The July service discussion suspected TS-2 harness heat exposure beside approximately 1.5 metres of freezer exhaust duct as a reason for repeated sensor failures and recommended rerouting it under the opposite-side cable tray during firmware work, but did not record completion.",
+        "sources": [
+          "S1"
+        ]
+      },
+      {
+        "sentence": "The firmware update remained outstanding in July—first because no X10 service cable was available, then because the customer could not provide a shutdown window—and the July 6 closure explicitly left it open rather than establishing that the underlying issue was fully corrected.",
+        "sources": [
+          "S1",
+          "S2",
+          "S3",
+          "S10"
+        ]
+      },
+      {
+        "sentence": "For this repeat, verify and record current firmware and compare TS-2 with a calibrated contact thermometer at the discharge flange while running loaded and settled; a difference greater than 8°C makes the sensor suspect.",
+        "sources": [
+          "S11",
+          "S12"
+        ]
+      },
+      {
+        "sentence": "SB-2026-003 directs replacement if outside tolerance, checks of cooler fouling, oil level, thermostatic valve, ambient and ventilation, and an update to 5.1.0 at the same visit—not the next scheduled service—using an X10 cable and a laptop with ServiceTool.",
+        "sources": [
+          "S11",
+          "S12"
+        ]
+      },
+      {
+        "sentence": "Do not treat another sensor swap as the complete fix: the playbook calls for investigating why a second TS-2 fails within a year, and FS-STD-001 requires calling the team lead before replacement if the same part was replaced within the last 90 days.",
+        "sources": [
+          "S1",
+          "S13"
+        ]
+      },
+      {
+        "sentence": "If E-14 or E-15 returns after the firmware update, SB-2026-003 directs exporting event log VC4-1952 and sending it with the serial number to Vastra Technical Support rather than replacing TS-2 again without that information.",
+        "sources": [
+          "S11",
+          "S12"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "sentence": "Yes—on March 12, 2026, WO 227933 / case 00041207 recorded E-14 with TS-2 at 112°C versus 96°C at the discharge flange; replacing TS-2 (part 41-2207) brought readings within 3°C, with no further trip reported overnight before closure.",
+        "source": "S4",
+        "chunk_id": "a23e6749653580d5",
+        "title": "MaintPro history NA",
+        "location": "227933 · 03/12/2026",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Fault: E-14"
+      },
+      {
+        "sentence": "Yes—on March 12, 2026, WO 227933 / case 00041207 recorded E-14 with TS-2 at 112°C versus 96°C at the discharge flange; replacing TS-2 (part 41-2207) brought readings within 3°C, with no further trip reported overnight before closure.",
+        "source": "S9",
+        "chunk_id": "4e8908580fc740d8",
+        "title": "Salesforce cases NA",
+        "location": "5008d00000zKjr82dY · 2026-03-12T13:47:00.000+0000",
+        "doc_type": "Salesforce Case export",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Replaced TS-2 (41-2207). Readings within 3 C after the swap."
+      },
+      {
+        "sentence": "On July 1, WO 230434 found plugged exhaust-side cooler fins; cleaning and restarting produced one trouble-free hour on site, but E-14 returned around 01:30 on July 2.",
+        "source": "S1",
+        "chunk_id": "41517193a33a0d9a",
+        "title": "Teams #na-compressors, July 2026",
+        "location": "1751400000000 · Priya Natarajan, 2026-07-02T13:41:00.000Z",
+        "doc_type": "teams",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "again?? we swapped TS-2 on that one in March"
+      },
+      {
+        "sentence": "On July 1, WO 230434 found plugged exhaust-side cooler fins; cleaning and restarting produced one trouble-free hour on site, but E-14 returned around 01:30 on July 2.",
+        "source": "S3",
+        "chunk_id": "c32c0b32c6cbf903",
+        "title": "Salesforce cases NA",
+        "location": "5008d00000iy50mmDa · 2026-07-02T13:10:00.000+0000",
+        "doc_type": "Salesforce Case export",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Second TS-2 on this unit since March."
+      },
+      {
+        "sentence": "On July 1, WO 230434 found plugged exhaust-side cooler fins; cleaning and restarting produced one trouble-free hour on site, but E-14 returned around 01:30 on July 2.",
+        "source": "S7",
+        "chunk_id": "291d1637d7ce383e",
+        "title": "MaintPro history NA",
+        "location": "230434 · 07/01/2026",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Fault: E-14"
+      },
+      {
+        "sentence": "On July 2, WO 230448 / case 00042388 recorded 38°C ambient and TS-2 at 113°C versus 102°C at the flange; a second TS-2 replacement (part 41-2207) brought readings within 4°C and restored operation, with no trips reported at the July 6 follow-up.",
+        "source": "S1",
+        "chunk_id": "41517193a33a0d9a",
+        "title": "Teams #na-compressors, July 2026",
+        "location": "1751400000000 · Priya Natarajan, 2026-07-02T13:41:00.000Z",
+        "doc_type": "teams",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "again?? we swapped TS-2 on that one in March"
+      },
+      {
+        "sentence": "On July 2, WO 230448 / case 00042388 recorded 38°C ambient and TS-2 at 113°C versus 102°C at the flange; a second TS-2 replacement (part 41-2207) brought readings within 4°C and restored operation, with no trips reported at the July 6 follow-up.",
+        "source": "S2",
+        "chunk_id": "01bb57b024d1e0a4",
+        "title": "MaintPro history NA",
+        "location": "230448 · 07/02/2026",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Tripped E-14 again ~01:30."
+      },
+      {
+        "sentence": "On July 2, WO 230448 / case 00042388 recorded 38°C ambient and TS-2 at 113°C versus 102°C at the flange; a second TS-2 replacement (part 41-2207) brought readings within 4°C and restored operation, with no trips reported at the July 6 follow-up.",
+        "source": "S3",
+        "chunk_id": "c32c0b32c6cbf903",
+        "title": "Salesforce cases NA",
+        "location": "5008d00000iy50mmDa · 2026-07-02T13:10:00.000+0000",
+        "doc_type": "Salesforce Case export",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Second TS-2 on this unit since March."
+      },
+      {
+        "sentence": "On July 2, WO 230448 / case 00042388 recorded 38°C ambient and TS-2 at 113°C versus 102°C at the flange; a second TS-2 replacement (part 41-2207) brought readings within 4°C and restored operation, with no trips reported at the July 6 follow-up.",
+        "source": "S10",
+        "chunk_id": "963f88393b9c6726",
+        "title": "MaintPro history NA",
+        "location": "230588 · 07/06/2026",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Follow-up. No trips since 07/02. Firmware update still to schedule with Dave."
+      },
+      {
+        "sentence": "Although TS-2 replacement restored operation twice, a lasting fix was not established: further E-14 events occurred on July 28 at 03:12 (WO 231058), August 30 at 15:47 (WO 231801), and September 17, 2026 at 02:05 (WO 232346), each recording automatic restart after cooldown and no callout rather than corrective repair.",
+        "source": "S1",
+        "chunk_id": "41517193a33a0d9a",
+        "title": "Teams #na-compressors, July 2026",
+        "location": "1751400000000 · Priya Natarajan, 2026-07-02T13:41:00.000Z",
+        "doc_type": "teams",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "again?? we swapped TS-2 on that one in March"
+      },
+      {
+        "sentence": "Although TS-2 replacement restored operation twice, a lasting fix was not established: further E-14 events occurred on July 28 at 03:12 (WO 231058), August 30 at 15:47 (WO 231801), and September 17, 2026 at 02:05 (WO 232346), each recording automatic restart after cooldown and no callout rather than corrective repair.",
+        "source": "S2",
+        "chunk_id": "01bb57b024d1e0a4",
+        "title": "MaintPro history NA",
+        "location": "230448 · 07/02/2026",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Tripped E-14 again ~01:30."
+      },
+      {
+        "sentence": "Although TS-2 replacement restored operation twice, a lasting fix was not established: further E-14 events occurred on July 28 at 03:12 (WO 231058), August 30 at 15:47 (WO 231801), and September 17, 2026 at 02:05 (WO 232346), each recording automatic restart after cooldown and no callout rather than corrective repair.",
+        "source": "S3",
+        "chunk_id": "c32c0b32c6cbf903",
+        "title": "Salesforce cases NA",
+        "location": "5008d00000iy50mmDa · 2026-07-02T13:10:00.000+0000",
+        "doc_type": "Salesforce Case export",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Second TS-2 on this unit since March."
+      },
+      {
+        "sentence": "Although TS-2 replacement restored operation twice, a lasting fix was not established: further E-14 events occurred on July 28 at 03:12 (WO 231058), August 30 at 15:47 (WO 231801), and September 17, 2026 at 02:05 (WO 232346), each recording automatic restart after cooldown and no callout rather than corrective repair.",
+        "source": "S4",
+        "chunk_id": "a23e6749653580d5",
+        "title": "MaintPro history NA",
+        "location": "227933 · 03/12/2026",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Fault: E-14"
+      },
+      {
+        "sentence": "Although TS-2 replacement restored operation twice, a lasting fix was not established: further E-14 events occurred on July 28 at 03:12 (WO 231058), August 30 at 15:47 (WO 231801), and September 17, 2026 at 02:05 (WO 232346), each recording automatic restart after cooldown and no callout rather than corrective repair.",
+        "source": "S5",
+        "chunk_id": "9a190dba75deae3b",
+        "title": "MaintPro history NA",
+        "location": "232346 · 09/17/2026",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "ctrl log: e-14 02:05, auto restart after cooldown. no callout"
+      },
+      {
+        "sentence": "Although TS-2 replacement restored operation twice, a lasting fix was not established: further E-14 events occurred on July 28 at 03:12 (WO 231058), August 30 at 15:47 (WO 231801), and September 17, 2026 at 02:05 (WO 232346), each recording automatic restart after cooldown and no callout rather than corrective repair.",
+        "source": "S6",
+        "chunk_id": "a4db1253f3119655",
+        "title": "MaintPro history NA",
+        "location": "231058 · 07/28/2026",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "ctrl log: e-14 03:12, auto restart after cooldown. no callout"
+      },
+      {
+        "sentence": "Although TS-2 replacement restored operation twice, a lasting fix was not established: further E-14 events occurred on July 28 at 03:12 (WO 231058), August 30 at 15:47 (WO 231801), and September 17, 2026 at 02:05 (WO 232346), each recording automatic restart after cooldown and no callout rather than corrective repair.",
+        "source": "S7",
+        "chunk_id": "291d1637d7ce383e",
+        "title": "MaintPro history NA",
+        "location": "230434 · 07/01/2026",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Fault: E-14"
+      },
+      {
+        "sentence": "Although TS-2 replacement restored operation twice, a lasting fix was not established: further E-14 events occurred on July 28 at 03:12 (WO 231058), August 30 at 15:47 (WO 231801), and September 17, 2026 at 02:05 (WO 232346), each recording automatic restart after cooldown and no callout rather than corrective repair.",
+        "source": "S8",
+        "chunk_id": "074fa59613ed3d32",
+        "title": "MaintPro history NA",
+        "location": "231801 · 08/30/2026",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "ctrl log: e-14 15:47, auto restart after cooldown. no callout"
+      },
+      {
+        "sentence": "Although TS-2 replacement restored operation twice, a lasting fix was not established: further E-14 events occurred on July 28 at 03:12 (WO 231058), August 30 at 15:47 (WO 231801), and September 17, 2026 at 02:05 (WO 232346), each recording automatic restart after cooldown and no callout rather than corrective repair.",
+        "source": "S9",
+        "chunk_id": "4e8908580fc740d8",
+        "title": "Salesforce cases NA",
+        "location": "5008d00000zKjr82dY · 2026-03-12T13:47:00.000+0000",
+        "doc_type": "Salesforce Case export",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Replaced TS-2 (41-2207). Readings within 3 C after the swap."
+      },
+      {
+        "sentence": "Although TS-2 replacement restored operation twice, a lasting fix was not established: further E-14 events occurred on July 28 at 03:12 (WO 231058), August 30 at 15:47 (WO 231801), and September 17, 2026 at 02:05 (WO 232346), each recording automatic restart after cooldown and no callout rather than corrective repair.",
+        "source": "S10",
+        "chunk_id": "963f88393b9c6726",
+        "title": "MaintPro history NA",
+        "location": "230588 · 07/06/2026",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Follow-up. No trips since 07/02. Firmware update still to schedule with Dave."
+      },
+      {
+        "sentence": "E-14 normally indicates discharge temperature above 110°C, but this VRS-110 was last documented on firmware 5.0; SB-2026-003 covers repeated E-14 on 5.0.3 or earlier, where the code alone cannot distinguish overheating from faulty TS-2, while firmware 5.1 separates sensor faults as E-15.",
+        "source": "S1",
+        "chunk_id": "41517193a33a0d9a",
+        "title": "Teams #na-compressors, July 2026",
+        "location": "1751400000000 · Priya Natarajan, 2026-07-02T13:41:00.000Z",
+        "doc_type": "teams",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "again?? we swapped TS-2 on that one in March"
+      },
+      {
+        "sentence": "E-14 normally indicates discharge temperature above 110°C, but this VRS-110 was last documented on firmware 5.0; SB-2026-003 covers repeated E-14 on 5.0.3 or earlier, where the code alone cannot distinguish overheating from faulty TS-2, while firmware 5.1 separates sensor faults as E-15.",
+        "source": "S2",
+        "chunk_id": "01bb57b024d1e0a4",
+        "title": "MaintPro history NA",
+        "location": "230448 · 07/02/2026",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Tripped E-14 again ~01:30."
+      },
+      {
+        "sentence": "E-14 normally indicates discharge temperature above 110°C, but this VRS-110 was last documented on firmware 5.0; SB-2026-003 covers repeated E-14 on 5.0.3 or earlier, where the code alone cannot distinguish overheating from faulty TS-2, while firmware 5.1 separates sensor faults as E-15.",
+        "source": "S3",
+        "chunk_id": "c32c0b32c6cbf903",
+        "title": "Salesforce cases NA",
+        "location": "5008d00000iy50mmDa · 2026-07-02T13:10:00.000+0000",
+        "doc_type": "Salesforce Case export",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Second TS-2 on this unit since March."
+      },
+      {
+        "sentence": "E-14 normally indicates discharge temperature above 110°C, but this VRS-110 was last documented on firmware 5.0; SB-2026-003 covers repeated E-14 on 5.0.3 or earlier, where the code alone cannot distinguish overheating from faulty TS-2, while firmware 5.1 separates sensor faults as E-15.",
+        "source": "S11",
+        "chunk_id": "507815a771fc1cf4",
+        "title": "Vastra SB-2026-003",
+        "location": "p.2 · 5 ACTION › 5.2 Units with repeated E-14 on firmware 5.0.3 or earlier",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "date": "2026-01-27",
+        "status": "Supported",
+        "evidence": "5.2 Units with repeated E-14 on firmware 5.0.3 or earlier\n\nOn these firmware versions it is not possible to tell from the alarm code alone whether E-14 is caused by a real high discharge temperature or by a faulty TS-2 sensor."
+      },
+      {
+        "sentence": "E-14 normally indicates discharge temperature above 110°C, but this VRS-110 was last documented on firmware 5.0; SB-2026-003 covers repeated E-14 on 5.0.3 or earlier, where the code alone cannot distinguish overheating from faulty TS-2, while firmware 5.1 separates sensor faults as E-15.",
+        "source": "S12",
+        "chunk_id": "a06a33ecb4c142be",
+        "title": "Compressor Troubleshooting Playbook",
+        "location": "Field Service : Compressor Troubleshooting Playbook › E-14 Discharge temperature high",
+        "doc_type": "Field Service : Compressor Troubleshooting Playbook",
+        "revision": "unknown",
+        "date": "Feb 11, 2026",
+        "status": "Supported",
+        "evidence": "The controller trips the unit when the discharge temperature goes above 110 C."
+      },
+      {
+        "sentence": "The July service discussion suspected TS-2 harness heat exposure beside approximately 1.5 metres of freezer exhaust duct as a reason for repeated sensor failures and recommended rerouting it under the opposite-side cable tray during firmware work, but did not record completion.",
+        "source": "S1",
+        "chunk_id": "41517193a33a0d9a",
+        "title": "Teams #na-compressors, July 2026",
+        "location": "1751400000000 · Priya Natarajan, 2026-07-02T13:41:00.000Z",
+        "doc_type": "teams",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "again?? we swapped TS-2 on that one in March"
+      },
+      {
+        "sentence": "The firmware update remained outstanding in July—first because no X10 service cable was available, then because the customer could not provide a shutdown window—and the July 6 closure explicitly left it open rather than establishing that the underlying issue was fully corrected.",
+        "source": "S1",
+        "chunk_id": "41517193a33a0d9a",
+        "title": "Teams #na-compressors, July 2026",
+        "location": "1751400000000 · Priya Natarajan, 2026-07-02T13:41:00.000Z",
+        "doc_type": "teams",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "again?? we swapped TS-2 on that one in March"
+      },
+      {
+        "sentence": "The firmware update remained outstanding in July—first because no X10 service cable was available, then because the customer could not provide a shutdown window—and the July 6 closure explicitly left it open rather than establishing that the underlying issue was fully corrected.",
+        "source": "S2",
+        "chunk_id": "01bb57b024d1e0a4",
+        "title": "MaintPro history NA",
+        "location": "230448 · 07/02/2026",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Tripped E-14 again ~01:30."
+      },
+      {
+        "sentence": "The firmware update remained outstanding in July—first because no X10 service cable was available, then because the customer could not provide a shutdown window—and the July 6 closure explicitly left it open rather than establishing that the underlying issue was fully corrected.",
+        "source": "S3",
+        "chunk_id": "c32c0b32c6cbf903",
+        "title": "Salesforce cases NA",
+        "location": "5008d00000iy50mmDa · 2026-07-02T13:10:00.000+0000",
+        "doc_type": "Salesforce Case export",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Second TS-2 on this unit since March."
+      },
+      {
+        "sentence": "The firmware update remained outstanding in July—first because no X10 service cable was available, then because the customer could not provide a shutdown window—and the July 6 closure explicitly left it open rather than establishing that the underlying issue was fully corrected.",
+        "source": "S10",
+        "chunk_id": "963f88393b9c6726",
+        "title": "MaintPro history NA",
+        "location": "230588 · 07/06/2026",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Follow-up. No trips since 07/02. Firmware update still to schedule with Dave."
+      },
+      {
+        "sentence": "For this repeat, verify and record current firmware and compare TS-2 with a calibrated contact thermometer at the discharge flange while running loaded and settled; a difference greater than 8°C makes the sensor suspect.",
+        "source": "S11",
+        "chunk_id": "507815a771fc1cf4",
+        "title": "Vastra SB-2026-003",
+        "location": "p.2 · 5 ACTION › 5.2 Units with repeated E-14 on firmware 5.0.3 or earlier",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "date": "2026-01-27",
+        "status": "Supported",
+        "evidence": "5.2 Units with repeated E-14 on firmware 5.0.3 or earlier\n\nOn these firmware versions it is not possible to tell from the alarm code alone whether E-14 is caused by a real high discharge temperature or by a faulty TS-2 sensor."
+      },
+      {
+        "sentence": "For this repeat, verify and record current firmware and compare TS-2 with a calibrated contact thermometer at the discharge flange while running loaded and settled; a difference greater than 8°C makes the sensor suspect.",
+        "source": "S12",
+        "chunk_id": "a06a33ecb4c142be",
+        "title": "Compressor Troubleshooting Playbook",
+        "location": "Field Service : Compressor Troubleshooting Playbook › E-14 Discharge temperature high",
+        "doc_type": "Field Service : Compressor Troubleshooting Playbook",
+        "revision": "unknown",
+        "date": "Feb 11, 2026",
+        "status": "Supported",
+        "evidence": "The controller trips the unit when the discharge temperature goes above 110 C."
+      },
+      {
+        "sentence": "SB-2026-003 directs replacement if outside tolerance, checks of cooler fouling, oil level, thermostatic valve, ambient and ventilation, and an update to 5.1.0 at the same visit—not the next scheduled service—using an X10 cable and a laptop with ServiceTool.",
+        "source": "S11",
+        "chunk_id": "507815a771fc1cf4",
+        "title": "Vastra SB-2026-003",
+        "location": "p.2 · 5 ACTION › 5.2 Units with repeated E-14 on firmware 5.0.3 or earlier",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "date": "2026-01-27",
+        "status": "Supported",
+        "evidence": "5.2 Units with repeated E-14 on firmware 5.0.3 or earlier\n\nOn these firmware versions it is not possible to tell from the alarm code alone whether E-14 is caused by a real high discharge temperature or by a faulty TS-2 sensor."
+      },
+      {
+        "sentence": "SB-2026-003 directs replacement if outside tolerance, checks of cooler fouling, oil level, thermostatic valve, ambient and ventilation, and an update to 5.1.0 at the same visit—not the next scheduled service—using an X10 cable and a laptop with ServiceTool.",
+        "source": "S12",
+        "chunk_id": "a06a33ecb4c142be",
+        "title": "Compressor Troubleshooting Playbook",
+        "location": "Field Service : Compressor Troubleshooting Playbook › E-14 Discharge temperature high",
+        "doc_type": "Field Service : Compressor Troubleshooting Playbook",
+        "revision": "unknown",
+        "date": "Feb 11, 2026",
+        "status": "Supported",
+        "evidence": "The controller trips the unit when the discharge temperature goes above 110 C."
+      },
+      {
+        "sentence": "Do not treat another sensor swap as the complete fix: the playbook calls for investigating why a second TS-2 fails within a year, and FS-STD-001 requires calling the team lead before replacement if the same part was replaced within the last 90 days.",
+        "source": "S1",
+        "chunk_id": "41517193a33a0d9a",
+        "title": "Teams #na-compressors, July 2026",
+        "location": "1751400000000 · Priya Natarajan, 2026-07-02T13:41:00.000Z",
+        "doc_type": "teams",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "again?? we swapped TS-2 on that one in March"
+      },
+      {
+        "sentence": "Do not treat another sensor swap as the complete fix: the playbook calls for investigating why a second TS-2 fails within a year, and FS-STD-001 requires calling the team lead before replacement if the same part was replaced within the last 90 days.",
+        "source": "S13",
+        "chunk_id": "72e481e852c2a58a",
+        "title": "FS-STD-001 Field Service Standard",
+        "location": "8. Before starting repairs: bulletins, campaigns and history",
+        "doc_type": "Field Service Standard",
+        "revision": "4",
+        "date": "2026-01-12",
+        "status": "Supported",
+        "evidence": "If the same part has already been replaced on the same asset in the last 90 days, do not replace it again without calling the team lead."
+      },
+      {
+        "sentence": "If E-14 or E-15 returns after the firmware update, SB-2026-003 directs exporting event log VC4-1952 and sending it with the serial number to Vastra Technical Support rather than replacing TS-2 again without that information.",
+        "source": "S11",
+        "chunk_id": "507815a771fc1cf4",
+        "title": "Vastra SB-2026-003",
+        "location": "p.2 · 5 ACTION › 5.2 Units with repeated E-14 on firmware 5.0.3 or earlier",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "date": "2026-01-27",
+        "status": "Supported",
+        "evidence": "5.2 Units with repeated E-14 on firmware 5.0.3 or earlier\n\nOn these firmware versions it is not possible to tell from the alarm code alone whether E-14 is caused by a real high discharge temperature or by a faulty TS-2 sensor."
+      },
+      {
+        "sentence": "If E-14 or E-15 returns after the firmware update, SB-2026-003 directs exporting event log VC4-1952 and sending it with the serial number to Vastra Technical Support rather than replacing TS-2 again without that information.",
+        "source": "S12",
+        "chunk_id": "a06a33ecb4c142be",
+        "title": "Compressor Troubleshooting Playbook",
+        "location": "Field Service : Compressor Troubleshooting Playbook › E-14 Discharge temperature high",
+        "doc_type": "Field Service : Compressor Troubleshooting Playbook",
+        "revision": "unknown",
+        "date": "Feb 11, 2026",
+        "status": "Supported",
+        "evidence": "The controller trips the unit when the discharge temperature goes above 110 C."
+      }
+    ],
+    "dropped_claims": [],
+    "work_order": {
+      "asset_id": "TAC-C-0142",
+      "fault_code": "E-14",
+      "summary": "Repeat E-14 trips persist despite prior TS-2 replacements; diagnose under SB-2026-003, update firmware to 5.1.0, and address the suspected heat-exposed TS-2 harness as supported by findings.",
+      "work_steps": [
+        "Review the repeat E-14 history and verify/record the unit’s current firmware version.",
+        "With the unit running loaded and settled, perform TS-2-to-discharge-flange temperature comparison and the required overheating-condition checks in accordance with SB-2026-003.",
+        "If TS-2 is outside the tolerance specified in SB-2026-003, replace TS-2 part 41-2207 in accordance with SB-2026-003; if the same part was replaced within the last 90 days, contact the team lead first per FS-STD-001.",
+        "Perform the firmware update to 5.1.0 during this visit in accordance with SB-2026-003, using the required X10 cable and ServiceTool laptop.",
+        "Assess the documented suspected heat exposure at the TS-2 harness and reroute the harness under the cable tray on the opposite side during the firmware work, as previously recommended.",
+        "If E-14 or E-15 returns after the firmware update, export event log VC4-1952 and send it with the serial number to Vastra Technical Support per SB-2026-003; do not replace TS-2 again without that information."
+      ],
+      "parts": [
+        {
+          "part_number": "41-2207",
+          "qty": null
+        }
+      ],
+      "certification_required": [
+        "None"
+      ],
+      "estimated_duration_h": null,
+      "priority": null,
+      "campaign_code": null,
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "S9",
+        "S10",
+        "S11",
+        "S12",
+        "S13"
+      ],
+      "requested_by": "u03",
+      "reason": "repeat_fault"
+    },
+    "trace": {
+      "events": [
+        {
+          "stage": "retrieve",
+          "inputs": {
+            "question": "TAC-C-0142 tripped E-14 again. Has this happened before and what fixed it?",
+            "user_id": "u03"
+          },
+          "outputs": {
+            "chunks": [
+              [
+                "41517193a33a0d9a",
+                "Teams #na-compressors, July 2026",
+                "Teams #na-compressors, July 2026 | 1751400000000"
+              ],
+              [
+                "01bb57b024d1e0a4",
+                "MaintPro history NA",
+                "MaintPro history NA | 230448"
+              ],
+              [
+                "191135bd179b0e30",
+                "Compressor Troubleshooting Playbook",
+                "Compressor Troubleshooting Playbook | Field Service : Compressor Troubleshooting Playbook › E-31 VFD overcurrent (VRS-110 only)"
+              ],
+              [
+                "507815a771fc1cf4",
+                "Vastra SB-2026-003",
+                "Vastra SB-2026-003 | 0 | 5 ACTION › 5.2 Units with repeated E-14 on firmware 5.0.3 or earlier"
+              ],
+              [
+                "94cfba6e244d0474",
+                "Teams #na-compressors, July 2026",
+                "Teams #na-compressors, July 2026 | 1751400174218"
+              ],
+              [
+                "a06a33ecb4c142be",
+                "Compressor Troubleshooting Playbook",
+                "Compressor Troubleshooting Playbook | Field Service : Compressor Troubleshooting Playbook › E-14 Discharge temperature high"
+              ],
+              [
+                "c3043139001822b9",
+                "Compressor Troubleshooting Playbook",
+                "Compressor Troubleshooting Playbook | Field Service : Compressor Troubleshooting Playbook › E-20 Motor temperature"
+              ],
+              [
+                "595b67096731e858",
+                "Compressor Troubleshooting Playbook",
+                "Compressor Troubleshooting Playbook | Field Service : Compressor Troubleshooting Playbook › E-02 Supply fault"
+              ],
+              [
+                "f5b39d220d9465c0",
+                "Compressor Troubleshooting Playbook",
+                "Compressor Troubleshooting Playbook | Field Service : Compressor Troubleshooting Playbook › Before you touch anything"
+              ],
+              [
+                "b3585187f6d490b1",
+                "Vastra VRS-75 Service Manual Rev B",
+                "Vastra VRS-75 Service Manual Rev B | B | 5 Fault finding › 5.2 Fault finding procedures › 5.2.3 E-13 and E-14 Discharge temperature"
+              ],
+              [
+                "5601e715a654c16f",
+                "Compressor Troubleshooting Playbook",
+                "Compressor Troubleshooting Playbook | Field Service : Compressor Troubleshooting Playbook › E-18 Air filter restriction"
+              ],
+              [
+                "1fa67f7b60fd58b7",
+                "Work Order Writing Guide",
+                "Work Order Writing Guide | Field Service: Work Order Writing Guide › Examples"
+              ],
+              [
+                "72e481e852c2a58a",
+                "FS-STD-001 Field Service Standard",
+                "FS-STD-001 Field Service Standard | 4 | 8. Before starting repairs: bulletins, campaigns and history"
+              ],
+              [
+                "c32c0b32c6cbf903",
+                "Salesforce cases NA",
+                "Salesforce cases NA | 5008d00000iy50mmDa"
+              ],
+              [
+                "a23e6749653580d5",
+                "MaintPro history NA",
+                "MaintPro history NA | 227933"
+              ],
+              [
+                "9a190dba75deae3b",
+                "MaintPro history NA",
+                "MaintPro history NA | 232346"
+              ],
+              [
+                "a4db1253f3119655",
+                "MaintPro history NA",
+                "MaintPro history NA | 231058"
+              ],
+              [
+                "291d1637d7ce383e",
+                "MaintPro history NA",
+                "MaintPro history NA | 230434"
+              ],
+              [
+                "327ad97468d7e01a",
+                "Work Order Writing Guide",
+                "Work Order Writing Guide | Field Service: Work Order Writing Guide › Why this matters"
+              ],
+              [
+                "6b80b2299cf70cb6",
+                "FS-STD-001 Field Service Standard",
+                "FS-STD-001 Field Service Standard | 4 | 10. Documentation standards for case resolutions"
+              ],
+              [
+                "074fa59613ed3d32",
+                "MaintPro history NA",
+                "MaintPro history NA | 231801"
+              ],
+              [
+                "4e8908580fc740d8",
+                "Salesforce cases NA",
+                "Salesforce cases NA | 5008d00000zKjr82dY"
+              ],
+              [
+                "bdc324d3da7b0fde",
+                "MaintPro history NA",
+                "MaintPro history NA | 225539"
+              ],
+              [
+                "62ca4eeb2a5f1618",
+                "Compressor Troubleshooting Playbook",
+                "Compressor Troubleshooting Playbook | Field Service : Compressor Troubleshooting Playbook › Why this page exists"
+              ],
+              [
+                "e543fa51153a0db0",
+                "FS-STD-001 Field Service Standard",
+                "FS-STD-001 Field Service Standard | 4 | 5. Case lifecycle"
+              ],
+              [
+                "7b54f254dc8505a8",
+                "Work Order Writing Guide",
+                "Work Order Writing Guide | Field Service: Work Order Writing Guide › Before you submit"
+              ],
+              [
+                "7ecd358b44ffb2fb",
+                "MaintPro history NA",
+                "MaintPro history NA | 231262"
+              ],
+              [
+                "f76e5dccac2cc788",
+                "Vastra VRS-75 Service Manual Rev C",
+                "Vastra VRS-75 Service Manual Rev C | C | About this revision"
+              ],
+              [
+                "963f88393b9c6726",
+                "MaintPro history NA",
+                "MaintPro history NA | 230588"
+              ],
+              [
+                "acfdb8128181d811",
+                "VRS Series Oil and Filter Quick Reference",
+                "VRS Series Oil and Filter Quick Reference | Field Service : VRS Series Oil and Filter Quick Reference"
+              ]
+            ]
+          },
+          "seconds": 0.284
+        },
+        {
+          "stage": "claims",
+          "inputs": {},
+          "outputs": {
+            "status": "answered",
+            "claims": [
+              {
+                "id": "c1",
+                "text": "Yes—TAC-C-0142 has repeated E-14 history. Replacing TS-2 restored operation twice, but later logged trips show that a lasting fix was not established.",
+                "citations": [
+                  "a23e6749653580d5",
+                  "01bb57b024d1e0a4",
+                  "a4db1253f3119655",
+                  "074fa59613ed3d32",
+                  "9a190dba75deae3b"
+                ]
+              },
+              {
+                "id": "c2",
+                "text": "On March 12, 2026, WO 227933 / case 00041207 recorded E-14 with TS-2 reading 112°C versus 96°C at the discharge flange. Replacing TS-2, part 41-2207, brought readings within 3°C; no further trip was reported overnight before the case closed.",
+                "citations": [
+                  "a23e6749653580d5",
+                  "4e8908580fc740d8"
+                ]
+              },
+              {
+                "id": "c3",
+                "text": "On July 1, 2026, WO 230434 recorded plugged cooler fins on the exhaust side. Cleaning and restarting gave one hour of trouble-free running on site, but E-14 returned around 01:30 on July 2.",
+                "citations": [
+                  "291d1637d7ce383e",
+                  "c32c0b32c6cbf903"
+                ]
+              },
+              {
+                "id": "c4",
+                "text": "On July 2, 2026, WO 230448 / case 00042388 recorded ambient temperature of 38°C and TS-2 reading 113°C versus 102°C at the flange. A second TS-2 replacement, part 41-2207, brought readings within 4°C and restored operation; the July 6 follow-up reported no trips since the replacement.",
+                "citations": [
+                  "01bb57b024d1e0a4",
+                  "c32c0b32c6cbf903",
+                  "963f88393b9c6726"
+                ]
+              },
+              {
+                "id": "c5",
+                "text": "Further E-14 events were recorded on July 28 at 03:12 (WO 231058), August 30 at 15:47 (WO 231801), and September 17, 2026 at 02:05 (WO 232346). Each entry records automatic restart after cooldown and no callout, rather than a corrective repair.",
+                "citations": [
+                  "a4db1253f3119655",
+                  "074fa59613ed3d32",
+                  "9a190dba75deae3b"
+                ]
+              },
+              {
+                "id": "c6",
+                "text": "E-14 normally indicates discharge temperature above 110°C. However, this VRS-110 was last documented on firmware 5.0: SB-2026-003 applies to repeated E-14 on firmware 5.0.3 or earlier, where the code alone cannot distinguish genuine overheating from a faulty TS-2. Firmware 5.1 separates a sensor fault as E-15.",
+                "citations": [
+                  "a06a33ecb4c142be",
+                  "507815a771fc1cf4",
+                  "c32c0b32c6cbf903",
+                  "41517193a33a0d9a"
+                ]
+              },
+              {
+                "id": "c7",
+                "text": "The July service discussion identified heat exposure of the TS-2 harness beside approximately 1.5 metres of freezer exhaust duct as a suspected reason for repeated sensor failures, and recommended rerouting it under the cable tray on the opposite side during the firmware work. That discussion records the recommendation, not its completion.",
+                "citations": [
+                  "41517193a33a0d9a"
+                ]
+              },
+              {
+                "id": "c8",
+                "text": "The firmware update remained outstanding in the July records: initially there was no X10 service cable, and then the customer could not provide a shutdown window. The July 6 case closure explicitly left the update open; it did not establish that the underlying issue was fully corrected.",
+                "citations": [
+                  "01bb57b024d1e0a4",
+                  "c32c0b32c6cbf903",
+                  "963f88393b9c6726"
+                ]
+              },
+              {
+                "id": "c9",
+                "text": "For this repeat, verify and record the current firmware and compare TS-2 against a calibrated contact thermometer at the discharge flange with the unit running loaded and settled. A difference greater than 8°C makes the sensor suspect. SB-2026-003 directs replacement if outside tolerance, checks of cooler fouling, oil level, thermostatic valve, ambient and ventilation, and an update to 5.1.0 at the same visit—not the next scheduled service. The update requires an X10 cable and a laptop with ServiceTool.",
+                "citations": [
+                  "a06a33ecb4c142be",
+                  "507815a771fc1cf4"
+                ]
+              },
+              {
+                "id": "c10",
+                "text": "Do not treat another sensor swap as the complete fix: the playbook calls for investigating why a second TS-2 fails within a year. If the same part was replaced within the last 90 days, FS-STD-001 requires calling the team lead before replacing it again. If E-14 or E-15 returns after the firmware update, SB-2026-003 directs exporting event log VC4-1952 and sending it with the serial number to Vastra Technical Support rather than replacing TS-2 again without that information.",
+                "citations": [
+                  "a06a33ecb4c142be",
+                  "72e481e852c2a58a",
+                  "507815a771fc1cf4"
+                ]
+              }
+            ],
+            "work_order_needed": true,
+            "work_order_reason": "repeat_fault"
+          },
+          "seconds": 19.113
+        },
+        {
+          "stage": "verify",
+          "inputs": {},
+          "outputs": {
+            "c1": "supported",
+            "c2": "supported",
+            "c3": "supported",
+            "c4": "supported",
+            "c5": "supported",
+            "c6": "supported",
+            "c7": "supported",
+            "c8": "supported",
+            "c9": "supported",
+            "c10": "supported"
+          },
+          "seconds": 35.548
+        },
+        {
+          "stage": "compose",
+          "inputs": {},
+          "outputs": {
+            "sentences": 11
+          },
+          "seconds": 13.004
+        },
+        {
+          "stage": "work_order",
+          "inputs": {},
+          "outputs": {
+            "drafted": true
+          },
+          "seconds": 6.912
+        }
+      ]
+    },
+    "retrieved": [
+      {
+        "chunk_id": "41517193a33a0d9a",
+        "doc_path": "corpus/chat/Teams_na-compressors_2026-07.json",
+        "doc_title": "Teams #na-compressors, July 2026",
+        "doc_type": "teams",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "1751400000000",
+          "sender": "Priya Natarajan",
+          "date": "2026-07-02T13:41:00.000Z",
+          "thread_record_ids": [
+            "1751400000000",
+            "1751400007919",
+            "1751400015838",
+            "1751400023757",
+            "1751400031676",
+            "1751400039595",
+            "1751400047514",
+            "1751400055433",
+            "1751400063352",
+            "1751400071271",
+            "1751400079190",
+            "1751400087109",
+            "1751400110866",
+            "1751400118785",
+            "1751400126704",
+            "1751400213813",
+            "1751400221732",
+            "1751400229651"
+          ]
+        },
+        "header": "Teams #na-compressors, July 2026 | 1751400000000",
+        "text_original": "0142 tripped E-14 again overnight, Dave Ortiz called me at 6. I'm on site.\n\nagain?? we swapped TS-2 on that one in March\n\nCooler fins were pretty bad on the exhaust side so I blew them out yesterday afternoon and restarted. Ran fine until about 01:30 then E-14. Ambient by the unit is 38C right now. Controller shows TS-2 at 113, my handheld at the discharge flange says 102.\n\nAttachment: IMG_4471.jpg\n\nso 11 degrees off\n\nWhat firmware is 0142 on?\n\n5.0\n\nOk. Read the Vastra bulletin on 5.1 (SB-2026-003). Below 5.1 a failing TS-2 shows up as E-14, so from the code alone you can't tell a dead sensor from a real overtemp. 5.1 splits them, a sensor problem comes up as E-15. 0143 is on 5.1 and hasn't done any of this.\n\nAnd two sensors in four months on the same unit is not a bad batch. On 0142 the TS-2 harness runs along the freezer exhaust duct for about a metre and a half before it goes into the cabinet. It cooks. When you do the firmware, reroute the harness under the cable tray on the other side of the unit. I told Dave about it last year but we never got to it.\n\nGot it. Should I swap the sensor now or wait for the firmware?\n\nSwap it now, they need the unit. 41-2207. Daniel Reyes you still have one in the van?\n\nyep one left. I'm at TAC-P-0044 till 10, I'll drop it by\n\nfirmware though, I don't have the X10 cable, lent it to Fresno. earliest next week\n\nTS-2 swapped, unit running. Controller and handheld within 4 degrees now. Case 00042388 updated.\n\nThanks. Put the harness routing in the case too, otherwise it gets lost again.\n\nwill do\n\n0142 update: no trips since the swap. Dave is asking when we do the firmware.\n\ncable is back from Fresno tomorrow. I can do it Thursday if Dave gives me a 2h window\n\nHe said Thursday doesn't work, they have a big inbound. Probably after the 20th\n\nReaction: sad — Daniel Reyes — 2026-07-08T23:30:00.000Z",
+        "text_en": "0142 tripped E-14 again overnight, Dave Ortiz called me at 6. I'm on site.\n\nagain?? we swapped TS-2 on that one in March\n\nCooler fins were pretty bad on the exhaust side so I blew them out yesterday afternoon and restarted. Ran fine until about 01:30 then E-14. Ambient by the unit is 38C right now. Controller shows TS-2 at 113, my handheld at the discharge flange says 102.\n\nAttachment: IMG_4471.jpg\n\nso 11 degrees off\n\nWhat firmware is 0142 on?\n\n5.0\n\nOk. Read the Vastra bulletin on 5.1 (SB-2026-003). Below 5.1 a failing TS-2 shows up as E-14, so from the code alone you can't tell a dead sensor from a real overtemp. 5.1 splits them, a sensor problem comes up as E-15. 0143 is on 5.1 and hasn't done any of this.\n\nAnd two sensors in four months on the same unit is not a bad batch. On 0142 the TS-2 harness runs along the freezer exhaust duct for about a metre and a half before it goes into the cabinet. It cooks. When you do the firmware, reroute the harness under the cable tray on the other side of the unit. I told Dave about it last year but we never got to it.\n\nGot it. Should I swap the sensor now or wait for the firmware?\n\nSwap it now, they need the unit. 41-2207. Daniel Reyes you still have one in the van?\n\nyep one left. I'm at TAC-P-0044 till 10, I'll drop it by\n\nfirmware though, I don't have the X10 cable, lent it to Fresno. earliest next week\n\nTS-2 swapped, unit running. Controller and handheld within 4 degrees now. Case 00042388 updated.\n\nThanks. Put the harness routing in the case too, otherwise it gets lost again.\n\nwill do\n\n0142 update: no trips since the swap. Dave is asking when we do the firmware.\n\ncable is back from Fresno tomorrow. I can do it Thursday if Dave gives me a 2h window\n\nHe said Thursday doesn't work, they have a big inbound. Probably after the 20th\n\nReaction: sad — Daniel Reyes — 2026-07-08T23:30:00.000Z",
+        "acl_key": "family-compressors|region-na",
+        "cosine": 0.5626230239868164,
+        "bm25_rank": 3,
+        "vector_rank": 4,
+        "rrf": 0.03149801587301587
+      },
+      {
+        "chunk_id": "01bb57b024d1e0a4",
+        "doc_path": "corpus/data/maintpro_history_NA_2023-2026.csv",
+        "doc_title": "MaintPro history NA",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "230448",
+          "sender": null,
+          "date": "07/02/2026"
+        },
+        "header": "MaintPro history NA | 230448",
+        "text_original": "WO_No: 230448\nDate: 07/02/2026\nSite: TAC\nAsset: TAC-C-0142\nModel: VRS-110\nSerial: VRS110-230877\nEvent_Type: CM\nFault: E-14\nHours: 22508\nTech: PNATARAJAN\nNotes: Tripped E-14 again ~01:30. Ambient at unit 38C. Controller TS-2 113 / handheld 102 at disch flange (11C off).\nReplaced TS-2 41-2207 (from DR van). Now within 4C.\nFW is 5.0 - not updated, no X10 cable. SF 00042388\nParts: 41-2207 x1\nLabor_Hrs: 4.5\nStatus: CLOSED",
+        "text_en": "WO_No: 230448\nDate: 07/02/2026\nSite: TAC\nAsset: TAC-C-0142\nModel: VRS-110\nSerial: VRS110-230877\nEvent_Type: CM\nFault: E-14\nHours: 22508\nTech: PNATARAJAN\nNotes: Tripped E-14 again ~01:30. Ambient at unit 38C. Controller TS-2 113 / handheld 102 at disch flange (11C off).\nReplaced TS-2 41-2207 (from DR van). Now within 4C.\nFW is 5.0 - not updated, no X10 cable. SF 00042388\nParts: 41-2207 x1\nLabor_Hrs: 4.5\nStatus: CLOSED",
+        "acl_key": "region-na",
+        "cosine": 0.6409594416618347,
+        "bm25_rank": 7,
+        "vector_rank": 1,
+        "rrf": 0.03131881575727918
+      },
+      {
+        "chunk_id": "191135bd179b0e30",
+        "doc_path": "corpus/confluence/Compressor-Troubleshooting-Playbook.html",
+        "doc_title": "Compressor Troubleshooting Playbook",
+        "doc_type": "Field Service : Compressor Troubleshooting Playbook",
+        "revision": "unknown",
+        "effective_date": "Feb 11, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Compressor Troubleshooting Playbook",
+            "E-31 VFD overcurrent (VRS-110 only)"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Compressor Troubleshooting Playbook | Field Service : Compressor Troubleshooting Playbook › E-31 VFD overcurrent (VRS-110 only)",
+        "text_original": "HV-certified technicians only. The panel reset is disabled for E-31 on purpose. The reset is done under HV-PROC-07, which you can open on SharePoint if you hold the HV certification. If you don't: do not open the VFD cabinet, not even to have a look. The DC bus stays charged after the unit is isolated.\n\nE-31 means the drive saw more current than it allows. Common reasons, in the order we see them: a grid dip or power event, a motor or motor cable fault, and occasionally an airend that's getting tight. The drive can't tell you which. The log and the conditions can.\n\nIf you're not HV-certified and you're first on site, here's what you can do, and it genuinely saves the HV tech half an hour:\n- Read the event log and write down every code in the hour before the trip, with times.\n- Note what the unit was doing: load, ambient, whether it was starting or running.\n- Ask the site whether there was a power event. Did anything else trip? Did lights flicker?\n- Photograph the controller screen and the log.\n- Put all of it in the case, then raise the work order with Certification required: HV (see the Work Order Writing Guide). The supervisor assigns. Don't call around to find someone yourself.\n- Tell the site contact the unit is out until an HV tech arrives, and roughly when. Don't promise a time you don't control.\n\nExample of how it should go: TAC-C-0143 tripped E-31 at 04:10 on November 20, 2025 after a grid dip that also tripped half the dock lighting. Daniel came in, did the reset under HV-PROC-07, the insulation test was clean and it's been fine since. Case 00040311. Short, because the cause was obvious and written down.\n\nIf a 110 trips E-31 again soon after a reset, it's not the grid. HV-PROC-07 covers what to do with a repeat, including when to get Vastra L2 involved. Don't keep resetting it.",
+        "text_en": "HV-certified technicians only. The panel reset is disabled for E-31 on purpose. The reset is done under HV-PROC-07, which you can open on SharePoint if you hold the HV certification. If you don't: do not open the VFD cabinet, not even to have a look. The DC bus stays charged after the unit is isolated.\n\nE-31 means the drive saw more current than it allows. Common reasons, in the order we see them: a grid dip or power event, a motor or motor cable fault, and occasionally an airend that's getting tight. The drive can't tell you which. The log and the conditions can.\n\nIf you're not HV-certified and you're first on site, here's what you can do, and it genuinely saves the HV tech half an hour:\n- Read the event log and write down every code in the hour before the trip, with times.\n- Note what the unit was doing: load, ambient, whether it was starting or running.\n- Ask the site whether there was a power event. Did anything else trip? Did lights flicker?\n- Photograph the controller screen and the log.\n- Put all of it in the case, then raise the work order with Certification required: HV (see the Work Order Writing Guide). The supervisor assigns. Don't call around to find someone yourself.\n- Tell the site contact the unit is out until an HV tech arrives, and roughly when. Don't promise a time you don't control.\n\nExample of how it should go: TAC-C-0143 tripped E-31 at 04:10 on November 20, 2025 after a grid dip that also tripped half the dock lighting. Daniel came in, did the reset under HV-PROC-07, the insulation test was clean and it's been fine since. Case 00040311. Short, because the cause was obvious and written down.\n\nIf a 110 trips E-31 again soon after a reset, it's not the grid. HV-PROC-07 covers what to do with a repeat, including when to get Vastra L2 involved. Don't keep resetting it.",
+        "acl_key": "family-compressors",
+        "cosine": 0.570504367351532,
+        "bm25_rank": 6,
+        "vector_rank": 3,
+        "rrf": 0.031024531024531024
+      },
+      {
+        "chunk_id": "507815a771fc1cf4",
+        "doc_path": "corpus/bulletins/Vastra_SB-2026-003_VRS-110_Firmware_5.1.pdf",
+        "doc_title": "Vastra SB-2026-003",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "effective_date": "2026-01-27",
+        "locator": {
+          "page": 2,
+          "section_path": [
+            "5 ACTION",
+            "5.2 Units with repeated E-14 on firmware 5.0.3 or earlier"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Vastra SB-2026-003 | 0 | 5 ACTION › 5.2 Units with repeated E-14 on firmware 5.0.3 or earlier",
+        "text_original": "5.2 Units with repeated E-14 on firmware 5.0.3 or earlier\n\nOn these firmware versions it is not possible to tell from the alarm code alone whether E-14 is caused by a real high discharge temperature or by a faulty TS-2 sensor. If a unit has shown E-14 more than one time, it is recommended to:\n\n1. Check TS-2 (part 41-2207) against a calibrated contact thermometer at the discharge flange, as described in the VRS-110 Service Manual under troubleshooting of E-14. Replace TS-2 if it is outside the tolerance given there.\n2. Check the normal causes of high discharge temperature in the same section (cooler fouling, oil level, thermostatic valve, ambient and ventilation).\n3. Update the firmware to 5.1.0 at the same visit. Do not wait for the next scheduled service.\n4. If E-14 or E-15 returns after the update, export the event log (VC4-1952) and send it to Vastra Technical Support with the serial number. Replacing TS-2 a further time without this information is not recommended.",
+        "text_en": "5.2 Units with repeated E-14 on firmware 5.0.3 or earlier\n\nOn these firmware versions it is not possible to tell from the alarm code alone whether E-14 is caused by a real high discharge temperature or by a faulty TS-2 sensor. If a unit has shown E-14 more than one time, it is recommended to:\n\n1. Check TS-2 (part 41-2207) against a calibrated contact thermometer at the discharge flange, as described in the VRS-110 Service Manual under troubleshooting of E-14. Replace TS-2 if it is outside the tolerance given there.\n2. Check the normal causes of high discharge temperature in the same section (cooler fouling, oil level, thermostatic valve, ambient and ventilation).\n3. Update the firmware to 5.1.0 at the same visit. Do not wait for the next scheduled service.\n4. If E-14 or E-15 returns after the update, export the event log (VC4-1952) and send it to Vastra Technical Support with the serial number. Replacing TS-2 a further time without this information is not recommended.",
+        "acl_key": "family-compressors",
+        "cosine": 0.591257631778717,
+        "bm25_rank": 10,
+        "vector_rank": 2,
+        "rrf": 0.0304147465437788
+      },
+      {
+        "chunk_id": "94cfba6e244d0474",
+        "doc_path": "corpus/chat/Teams_na-compressors_2026-07.json",
+        "doc_title": "Teams #na-compressors, July 2026",
+        "doc_type": "teams",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "1751400174218",
+          "sender": "Priya Natarajan",
+          "date": "2026-07-06T20:22:00.000Z",
+          "thread_record_ids": [
+            "1751400174218",
+            "1751400182137",
+            "1751400190056"
+          ]
+        },
+        "header": "Teams #na-compressors, July 2026 | 1751400174218",
+        "text_original": "Question for the HV folks: if a 110 trips E-31 and I'm the only one on site, is there anything I can do before someone certified gets there?\n\nRead the alarm log, note what the unit was doing when it tripped (load, ambient, any power dip), check the site didn't have a grid event, and put all that in the case. That saves whoever comes 30 minutes. Do not open the VFD cabinet. Request HV on the work order and the supervisor will send Daniel or me.\n\n(the panel won't let you reset an E-31 anyway)",
+        "text_en": "Question for the HV folks: if a 110 trips E-31 and I'm the only one on site, is there anything I can do before someone certified gets there?\n\nRead the alarm log, note what the unit was doing when it tripped (load, ambient, any power dip), check the site didn't have a grid event, and put all that in the case. That saves whoever comes 30 minutes. Do not open the VFD cabinet. Request HV on the work order and the supervisor will send Daniel or me.\n\n(the panel won't let you reset an E-31 anyway)",
+        "acl_key": "family-compressors|region-na",
+        "cosine": 0.5614637732505798,
+        "bm25_rank": 9,
+        "vector_rank": 5,
+        "rrf": 0.029877369007803793
+      },
+      {
+        "chunk_id": "a06a33ecb4c142be",
+        "doc_path": "corpus/confluence/Compressor-Troubleshooting-Playbook.html",
+        "doc_title": "Compressor Troubleshooting Playbook",
+        "doc_type": "Field Service : Compressor Troubleshooting Playbook",
+        "revision": "unknown",
+        "effective_date": "Feb 11, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Compressor Troubleshooting Playbook",
+            "E-14 Discharge temperature high"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Compressor Troubleshooting Playbook | Field Service : Compressor Troubleshooting Playbook › E-14 Discharge temperature high",
+        "text_original": "This is the one that gets us. It's our most common compressor code by a distance, and it has more possible causes than anything else on the list. The controller trips the unit when the discharge temperature goes above 110 C. Usually the temperature really was that high. Sometimes it wasn't.\n\n### Check the firmware first on the 110s\nFirmware matters for E-14 on the 110s. Before you replace anything on a VRS-110 with an E-14, check the firmware version on the info screen and read the bulletin: Vastra SB-2026-003 (January 2026), on SharePoint under OEM bulletins, Vastra. I'm not summarising it here on purpose, because people skim this page and get it half right. Read the bulletin, and put the firmware version in the case.\n\nFirmware updates need the X10 service cable and a laptop with ServiceTool. See Tools below.\n\n### The order I check things in\n- Firmware (110s only, see the box above).\n- Is the reading real? Compare the controller's TS-2 reading with a handheld.\n- Cooler condition.\n- Oil level and oil type.\n- Thermostatic valve.\n- The room: ventilation, ambient, what's blowing on the unit.\n\n### Is the reading real (TS-2 check)\nWith the unit running loaded and settled, read the discharge temperature on the controller (that's TS-2) and measure the discharge flange with a calibrated contact thermometer. Use a contact probe, not the IR gun. The paint on the flange throws the IR reading off by several degrees and you'll fool yourself. If the two readings are more than 8 C apart, the sensor is suspect. The check is written up in the E-14 section of the VRS-110 manual and it works the same way on the 45 and the 75.\n\nTS-2 is part 41-2207, same part across the whole VRS series. Keep one in the van.\n\nOne rule of mine: if you're replacing TS-2 on the same unit for the second time in a year, stop swapping sensors and find out why. Sensors don't die in pairs on their own. Something on that unit is killing them, or something is making a good sensor look bad. Write it up and call me.\n\n### Cooler\nThe cooler is the cause more often than everything else on this list put together. Each site fouls it differently:\n- Fresno: sugar and syrup mist from the bottling hall gets into the cooling air and coats the fins with a sticky film. Compressed air alone just moves it around. Use the foaming coil cleaner from the van, let it work, rinse, then air.\n- Tacoma: fluff and dust from the cold store evaporator fans and the dock. Blow from the fan side outwards, against the normal airflow. Blowing from the outside packs the dirt deeper into the core.\n- EU sites: Lena says Rotterdam is mostly salt and fine sand on the roof intake side, and Gdansk is flour dust from the processing hall. Same rule, clean against the airflow.\n\nA cooler that looks clean on the outside face can still be blocked in the middle. Shine a torch through it. If you can't see light, it isn't clean.\n\n### Oil\nCheck the level at standstill after the unit has been stopped for at least five minutes, in the sight glass on the separator vessel. Low oil means less heat carried away and a hotter discharge. If the level is low, find out where it went: a leak at the oil filter housing, carryover into the air system (check the condensate), or someone drained it during a PM and didn't fill it properly.\n\nDon't mix oil types. Most of our units run Vastra SynLube 46 (41-0046), but FRS-C-0104 (VRS-45) is still on mineral oil. Check the fleet register before you top up anything, and don't top up 0104 with SynLube from the van.\n\n### Thermostatic valve\nThe thermostatic valve sends oil through the cooler once it's warm. If it sticks in bypass, the oil never gets cooled and the discharge temperature climbs steadily with load. Feel the oil lines either side of the cooler after the unit has warmed up: if the line into the cooler is hot and the line out is the same temperature as the room, the oil isn't flowing through. The valve element is in the manual's spare parts list. We don't keep it on the van, order through stores.\n\n### The room\nA compressor room that's more than 10 C warmer than outside isn't being ventilated properly. Check the room exhaust fan runs and the louvres open. In summer at Tacoma and Fresno, ambient at the unit is often well above the outdoor temperature, and a unit that's fine in April trips in July. Write the ambient at the unit in the case. It helps the next person.\n\nAlso look at what's around the unit. Anything hot nearby, recirculating cooling air because a door was left open the wrong way, cardboard stacked against the intake. You'd be surprised.",
+        "text_en": "This is the one that gets us. It's our most common compressor code by a distance, and it has more possible causes than anything else on the list. The controller trips the unit when the discharge temperature goes above 110 C. Usually the temperature really was that high. Sometimes it wasn't.\n\n### Check the firmware first on the 110s\nFirmware matters for E-14 on the 110s. Before you replace anything on a VRS-110 with an E-14, check the firmware version on the info screen and read the bulletin: Vastra SB-2026-003 (January 2026), on SharePoint under OEM bulletins, Vastra. I'm not summarising it here on purpose, because people skim this page and get it half right. Read the bulletin, and put the firmware version in the case.\n\nFirmware updates need the X10 service cable and a laptop with ServiceTool. See Tools below.\n\n### The order I check things in\n- Firmware (110s only, see the box above).\n- Is the reading real? Compare the controller's TS-2 reading with a handheld.\n- Cooler condition.\n- Oil level and oil type.\n- Thermostatic valve.\n- The room: ventilation, ambient, what's blowing on the unit.\n\n### Is the reading real (TS-2 check)\nWith the unit running loaded and settled, read the discharge temperature on the controller (that's TS-2) and measure the discharge flange with a calibrated contact thermometer. Use a contact probe, not the IR gun. The paint on the flange throws the IR reading off by several degrees and you'll fool yourself. If the two readings are more than 8 C apart, the sensor is suspect. The check is written up in the E-14 section of the VRS-110 manual and it works the same way on the 45 and the 75.\n\nTS-2 is part 41-2207, same part across the whole VRS series. Keep one in the van.\n\nOne rule of mine: if you're replacing TS-2 on the same unit for the second time in a year, stop swapping sensors and find out why. Sensors don't die in pairs on their own. Something on that unit is killing them, or something is making a good sensor look bad. Write it up and call me.\n\n### Cooler\nThe cooler is the cause more often than everything else on this list put together. Each site fouls it differently:\n- Fresno: sugar and syrup mist from the bottling hall gets into the cooling air and coats the fins with a sticky film. Compressed air alone just moves it around. Use the foaming coil cleaner from the van, let it work, rinse, then air.\n- Tacoma: fluff and dust from the cold store evaporator fans and the dock. Blow from the fan side outwards, against the normal airflow. Blowing from the outside packs the dirt deeper into the core.\n- EU sites: Lena says Rotterdam is mostly salt and fine sand on the roof intake side, and Gdansk is flour dust from the processing hall. Same rule, clean against the airflow.\n\nA cooler that looks clean on the outside face can still be blocked in the middle. Shine a torch through it. If you can't see light, it isn't clean.\n\n### Oil\nCheck the level at standstill after the unit has been stopped for at least five minutes, in the sight glass on the separator vessel. Low oil means less heat carried away and a hotter discharge. If the level is low, find out where it went: a leak at the oil filter housing, carryover into the air system (check the condensate), or someone drained it during a PM and didn't fill it properly.\n\nDon't mix oil types. Most of our units run Vastra SynLube 46 (41-0046), but FRS-C-0104 (VRS-45) is still on mineral oil. Check the fleet register before you top up anything, and don't top up 0104 with SynLube from the van.\n\n### Thermostatic valve\nThe thermostatic valve sends oil through the cooler once it's warm. If it sticks in bypass, the oil never gets cooled and the discharge temperature climbs steadily with load. Feel the oil lines either side of the cooler after the unit has warmed up: if the line into the cooler is hot and the line out is the same temperature as the room, the oil isn't flowing through. The valve element is in the manual's spare parts list. We don't keep it on the van, order through stores.\n\n### The room\nA compressor room that's more than 10 C warmer than outside isn't being ventilated properly. Check the room exhaust fan runs and the louvres open. In summer at Tacoma and Fresno, ambient at the unit is often well above the outdoor temperature, and a unit that's fine in April trips in July. Write the ambient at the unit in the case. It helps the next person.\n\nAlso look at what's around the unit. Anything hot nearby, recirculating cooling air because a door was left open the wrong way, cardboard stacked against the intake. You'd be surprised.",
+        "acl_key": "family-compressors",
+        "cosine": 0.5411556959152222,
+        "bm25_rank": 8,
+        "vector_rank": 8,
+        "rrf": 0.029411764705882353
+      },
+      {
+        "chunk_id": "c3043139001822b9",
+        "doc_path": "corpus/confluence/Compressor-Troubleshooting-Playbook.html",
+        "doc_title": "Compressor Troubleshooting Playbook",
+        "doc_type": "Field Service : Compressor Troubleshooting Playbook",
+        "revision": "unknown",
+        "effective_date": "Feb 11, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Compressor Troubleshooting Playbook",
+            "E-20 Motor temperature"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Compressor Troubleshooting Playbook | Field Service : Compressor Troubleshooting Playbook › E-20 Motor temperature",
+        "text_original": "The PTC thermistors in the motor windings tripped. Look at the motor fan cowl first. Cold store fluff and cardboard dust collect on the cowl grille and starve the motor of air. Then look at starts per hour in the log. A fixed-speed unit (45 or 75) that's oversized for the demand will short-cycle, and repeated starts heat the motor. That one's a conversation with the site about demand, or a pressure band change, not a part.\n\nLet the motor cool down before you reset. If it trips again within an hour with a clean cowl and normal starts, call me.",
+        "text_en": "The PTC thermistors in the motor windings tripped. Look at the motor fan cowl first. Cold store fluff and cardboard dust collect on the cowl grille and starve the motor of air. Then look at starts per hour in the log. A fixed-speed unit (45 or 75) that's oversized for the demand will short-cycle, and repeated starts heat the motor. That one's a conversation with the site about demand, or a pressure band change, not a part.\n\nLet the motor cool down before you reset. If it trips again within an hour with a clean cowl and normal starts, call me.",
+        "acl_key": "family-compressors",
+        "cosine": 0.5230366587638855,
+        "bm25_rank": 11,
+        "vector_rank": 15,
+        "rrf": 0.027417840375586856
+      },
+      {
+        "chunk_id": "595b67096731e858",
+        "doc_path": "corpus/confluence/Compressor-Troubleshooting-Playbook.html",
+        "doc_title": "Compressor Troubleshooting Playbook",
+        "doc_type": "Field Service : Compressor Troubleshooting Playbook",
+        "revision": "unknown",
+        "effective_date": "Feb 11, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Compressor Troubleshooting Playbook",
+            "E-02 Supply fault"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Compressor Troubleshooting Playbook | Field Service : Compressor Troubleshooting Playbook › E-02 Supply fault",
+        "text_original": "Nine times out of ten this is the site, not the compressor. Tacoma gets grid dips in winter storms, and Fresno had a run of them in 2024 when the utility was working on the substation down the road. The controller is sensitive on purpose.\n\nAsk the site whether anything else tripped at the same time (lights, conveyors, the ammonia plant at TAC). If it did, it's power, and the case note should say so. If the compressor tripped alone and keeps doing it, check the incoming supply indicator and the phase sequence relay on the panel, and get a site electrician to look at the supply. We don't open the incoming supply terminals without isolation and the right person.\n\nOn a 110, an E-02 can come together with E-31 or E-33. If you see a VFD code in the same minute, the VFD code is the one that matters, and that's HV work.",
+        "text_en": "Nine times out of ten this is the site, not the compressor. Tacoma gets grid dips in winter storms, and Fresno had a run of them in 2024 when the utility was working on the substation down the road. The controller is sensitive on purpose.\n\nAsk the site whether anything else tripped at the same time (lights, conveyors, the ammonia plant at TAC). If it did, it's power, and the case note should say so. If the compressor tripped alone and keeps doing it, check the incoming supply indicator and the phase sequence relay on the panel, and get a site electrician to look at the supply. We don't open the incoming supply terminals without isolation and the right person.\n\nOn a 110, an E-02 can come together with E-31 or E-33. If you see a VFD code in the same minute, the VFD code is the one that matters, and that's HV work.",
+        "acl_key": "family-compressors",
+        "cosine": 0.5573216080665588,
+        "bm25_rank": 21,
+        "vector_rank": 7,
+        "rrf": 0.027271052146674038
+      },
+      {
+        "chunk_id": "f5b39d220d9465c0",
+        "doc_path": "corpus/confluence/Compressor-Troubleshooting-Playbook.html",
+        "doc_title": "Compressor Troubleshooting Playbook",
+        "doc_type": "Field Service : Compressor Troubleshooting Playbook",
+        "revision": "unknown",
+        "effective_date": "Feb 11, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Compressor Troubleshooting Playbook",
+            "Before you touch anything"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Compressor Troubleshooting Playbook | Field Service : Compressor Troubleshooting Playbook › Before you touch anything",
+        "text_original": "Every compressor call, whatever the code, starts the same way. I know it's tempting to clear the fault and see if it comes back. Don't, or at least not before you've done this:\n\n- Read the event log, not just the screen. The screen shows the last code. The log (Service menu, Event log, needs the level 2 code from the site binder) shows the sequence, and the sequence is usually the answer. An E-14 that follows two hours of high delivery pressure warnings is a different problem from an E-14 out of nowhere at 2 a.m. on a cool night.\n- Write down the conditions. Load, pressure setpoint, ambient temperature at the unit (not the weather app), and what the site was doing when it tripped. Ask the operator. They'll know if the dock doors were open all night or if the line was down for a changeover.\n- Check the firmware version on the controller info screen and put it in the case. On the 110s this matters more than people think. See E-14.\n- Look up the history. MaintPro for NA, the Servio export for the EU (Salesforce only has the EU from January 2025 onwards). Last PM, last oil change, anything replaced in the last 12 months. If a part was swapped recently and the same code is back, that's your biggest clue.\n- Photograph the controller screen and the log page. Thirty seconds. It's the first thing Vastra asks for, and it settles arguments later.\n\nThen decide whether you're fixing it or just restarting it, and be honest in the case about which one you did. A restart with no cause written down is how we end up at the same unit three times in a month. FS-STD-001 makes three trips in 24 hours a High priority case anyway, so if you don't find it now you'll be back tonight.",
+        "text_en": "Every compressor call, whatever the code, starts the same way. I know it's tempting to clear the fault and see if it comes back. Don't, or at least not before you've done this:\n\n- Read the event log, not just the screen. The screen shows the last code. The log (Service menu, Event log, needs the level 2 code from the site binder) shows the sequence, and the sequence is usually the answer. An E-14 that follows two hours of high delivery pressure warnings is a different problem from an E-14 out of nowhere at 2 a.m. on a cool night.\n- Write down the conditions. Load, pressure setpoint, ambient temperature at the unit (not the weather app), and what the site was doing when it tripped. Ask the operator. They'll know if the dock doors were open all night or if the line was down for a changeover.\n- Check the firmware version on the controller info screen and put it in the case. On the 110s this matters more than people think. See E-14.\n- Look up the history. MaintPro for NA, the Servio export for the EU (Salesforce only has the EU from January 2025 onwards). Last PM, last oil change, anything replaced in the last 12 months. If a part was swapped recently and the same code is back, that's your biggest clue.\n- Photograph the controller screen and the log page. Thirty seconds. It's the first thing Vastra asks for, and it settles arguments later.\n\nThen decide whether you're fixing it or just restarting it, and be honest in the case about which one you did. A restart with no cause written down is how we end up at the same unit three times in a month. FS-STD-001 makes three trips in 24 hours a High priority case anyway, so if you don't find it now you'll be back tonight.",
+        "acl_key": "family-compressors",
+        "cosine": 0.4836694598197937,
+        "bm25_rank": 2,
+        "vector_rank": 39,
+        "rrf": 0.02623004235907462
+      },
+      {
+        "chunk_id": "b3585187f6d490b1",
+        "doc_path": "corpus/manuals/Vastra_VRS-75_Service_Manual_RevB_2024.pdf",
+        "doc_title": "Vastra VRS-75 Service Manual Rev B",
+        "doc_type": "Service Manual",
+        "revision": "B",
+        "effective_date": "2024-02-12",
+        "locator": {
+          "page": 11,
+          "section_path": [
+            "5 Fault finding",
+            "5.2 Fault finding procedures",
+            "5.2.3 E-13 and E-14 Discharge temperature"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Vastra VRS-75 Service Manual Rev B | B | 5 Fault finding › 5.2 Fault finding procedures › 5.2.3 E-13 and E-14 Discharge temperature",
+        "text_original": "The controller stops the compressor when TS-2 measures more than 110 C at the element outlet. The pre-warning E-13 is shown at 105 C. In most cases the cause is insufficient cooling. Control in this order:\n1. The temperature in the compressor room and the ventilation. The hot cooling air from the cooler outlet shall not come back to the cooling air inlet. With an outlet duct, control that the duct fan runs and that the duct is not blocked.\n2. The coolers and the pre-filter mats. Clean them (4.6).\n3. The oil level. Top up and look for oil leaks.\n4. The cooling fan: it shall run when the motor runs, in the direction of the arrow on the fan cowl.\n5. The thermostatic valve. If the oil cooler stays cold while the discharge temperature is high, the valve does not open. Replace the insert.\n6. The oil filter (E-07 active?) and the age of the oil. An overdue oil change gives higher discharge temperature.\n\nAfter an E-14 shutdown, let the compressor cool for at least 15 minutes before restart. If E-14 comes back and no cause is found, export the event log and contact Vastra Technical Support.",
+        "text_en": "The controller stops the compressor when TS-2 measures more than 110 C at the element outlet. The pre-warning E-13 is shown at 105 C. In most cases the cause is insufficient cooling. Control in this order:\n1. The temperature in the compressor room and the ventilation. The hot cooling air from the cooler outlet shall not come back to the cooling air inlet. With an outlet duct, control that the duct fan runs and that the duct is not blocked.\n2. The coolers and the pre-filter mats. Clean them (4.6).\n3. The oil level. Top up and look for oil leaks.\n4. The cooling fan: it shall run when the motor runs, in the direction of the arrow on the fan cowl.\n5. The thermostatic valve. If the oil cooler stays cold while the discharge temperature is high, the valve does not open. Replace the insert.\n6. The oil filter (E-07 active?) and the age of the oil. An overdue oil change gives higher discharge temperature.\n\nAfter an E-14 shutdown, let the compressor cool for at least 15 minutes before restart. If E-14 comes back and no cause is found, export the event log and contact Vastra Technical Support.",
+        "acl_key": "family-compressors",
+        "cosine": 0.5156292915344238,
+        "bm25_rank": 25,
+        "vector_rank": 16,
+        "rrf": 0.024922600619195046
+      },
+      {
+        "chunk_id": "5601e715a654c16f",
+        "doc_path": "corpus/confluence/Compressor-Troubleshooting-Playbook.html",
+        "doc_title": "Compressor Troubleshooting Playbook",
+        "doc_type": "Field Service : Compressor Troubleshooting Playbook",
+        "revision": "unknown",
+        "effective_date": "Feb 11, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Compressor Troubleshooting Playbook",
+            "E-18 Air filter restriction"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Compressor Troubleshooting Playbook | Field Service : Compressor Troubleshooting Playbook › E-18 Air filter restriction",
+        "text_original": "Dirty air filter. Change it (41-1510 on the 45 and 75, 41-1512 on the 110). At Tacoma the filters load up much faster than the manual interval suggests, so if a unit there is on the standard interval and still tripping E-18, shorten the interval and note it on the asset in MaintPro so the PM schedule gets fixed and not just the filter.\n\nIf the filter is clean and you still get E-18, check the restriction indicator hose for a kink or a crack.",
+        "text_en": "Dirty air filter. Change it (41-1510 on the 45 and 75, 41-1512 on the 110). At Tacoma the filters load up much faster than the manual interval suggests, so if a unit there is on the standard interval and still tripping E-18, shorten the interval and note it on the asset in MaintPro so the PM schedule gets fixed and not just the filter.\n\nIf the filter is clean and you still get E-18, check the restriction indicator hose for a kink or a crack.",
+        "acl_key": "family-compressors",
+        "cosine": 0.5381068587303162,
+        "bm25_rank": 34,
+        "vector_rank": 12,
+        "rrf": 0.024527186761229315
+      },
+      {
+        "chunk_id": "1fa67f7b60fd58b7",
+        "doc_path": "corpus/confluence/Work-Order-Writing-Guide.html",
+        "doc_title": "Work Order Writing Guide",
+        "doc_type": "Work Order Writing Guide",
+        "revision": "unknown",
+        "effective_date": "Jan 21, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service: Work Order Writing Guide",
+            "Examples"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Work Order Writing Guide | Field Service: Work Order Writing Guide › Examples",
+        "text_original": "All examples below are based on real work orders from 2025, lightly edited.\n\nBad\nAsset: TAC compressor\nFault code: overheating\nSummary: tripped again, needs looking at\nWork steps: fix\nParts: sensor?\nCertification: None\nDuration:\nPriority: High\nCampaign code:\n\nWhat's wrong with it: no asset ID (Tacoma has three compressors), no fault code, no idea what was found, \"sensor?\" isn't a part, no duration, and High without a reason. The supervisor had to call the technician twice.\n\nGood\nAsset: TAC-C-0143\nFault code: E-31\nSummary: E-31 at 04:10 after site grid dip (dock lighting also tripped). Panel reset disabled. Unit isolated by site. Requesting HV reset.\nWork steps:\n1. Read and export event log.\n2. Reset per HV-PROC-07.\n3. Monitor first run.\n4. Update case with readings.\nParts: none expected\nCertification: HV\nDuration: 2.5 h\nPriority: High (customer running on 0142 only, no further backup)\nCampaign code:\n\nWhy it works: the supervisor knows which unit, what happened, that it needs HV, roughly how long, and why it's High. Note the work steps reference HV-PROC-07 by number and don't copy the procedure.\n\nGood (EU, with campaign)\nAsset: GDN-H-0014\nFault code: L-03\nSummary: L-03 circuit 2 after weekend idle. Charge looks normal, no oil marks. Serial in SB-2025-014 range. EXV replacement under campaign.\nWork steps:\n1. Confirm serial against SB-2025-014.\n2. Replace EXV both circuits per bulletin.\n3. Leak test, record.\n4. Monitor restart.\nParts: 63-1180 x2, 63-0410 x2\nCertification: Refrigerant\nDuration: 6 h\nPriority: Medium\nCampaign code: NK-C25-14",
+        "text_en": "All examples below are based on real work orders from 2025, lightly edited.\n\nBad\nAsset: TAC compressor\nFault code: overheating\nSummary: tripped again, needs looking at\nWork steps: fix\nParts: sensor?\nCertification: None\nDuration:\nPriority: High\nCampaign code:\n\nWhat's wrong with it: no asset ID (Tacoma has three compressors), no fault code, no idea what was found, \"sensor?\" isn't a part, no duration, and High without a reason. The supervisor had to call the technician twice.\n\nGood\nAsset: TAC-C-0143\nFault code: E-31\nSummary: E-31 at 04:10 after site grid dip (dock lighting also tripped). Panel reset disabled. Unit isolated by site. Requesting HV reset.\nWork steps:\n1. Read and export event log.\n2. Reset per HV-PROC-07.\n3. Monitor first run.\n4. Update case with readings.\nParts: none expected\nCertification: HV\nDuration: 2.5 h\nPriority: High (customer running on 0142 only, no further backup)\nCampaign code:\n\nWhy it works: the supervisor knows which unit, what happened, that it needs HV, roughly how long, and why it's High. Note the work steps reference HV-PROC-07 by number and don't copy the procedure.\n\nGood (EU, with campaign)\nAsset: GDN-H-0014\nFault code: L-03\nSummary: L-03 circuit 2 after weekend idle. Charge looks normal, no oil marks. Serial in SB-2025-014 range. EXV replacement under campaign.\nWork steps:\n1. Confirm serial against SB-2025-014.\n2. Replace EXV both circuits per bulletin.\n3. Leak test, record.\n4. Monitor restart.\nParts: 63-1180 x2, 63-0410 x2\nCertification: Refrigerant\nDuration: 6 h\nPriority: Medium\nCampaign code: NK-C25-14",
+        "acl_key": "",
+        "cosine": null,
+        "bm25_rank": 1,
+        "vector_rank": null,
+        "rrf": 0.01639344262295082
+      },
+      {
+        "chunk_id": "72e481e852c2a58a",
+        "doc_path": "corpus/sharepoint/FS-STD-001_Field_Service_Standard.docx",
+        "doc_title": "FS-STD-001 Field Service Standard",
+        "doc_type": "Field Service Standard",
+        "revision": "4",
+        "effective_date": "2026-01-12",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "8. Before starting repairs: bulletins, campaigns and history"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "FS-STD-001 Field Service Standard | 4 | 8. Before starting repairs: bulletins, campaigns and history",
+        "text_original": "# 8. Before starting repairs: bulletins, campaigns and history\n\nBefore any corrective repair, and before replacing any part, the technician checks:\n\n- Open OEM service bulletins and campaigns for the model and the serial number. Bulletins are in SharePoint under Field Procedures > OEM Bulletins and on the OEM portals. Check the serial on the nameplate, not only the model: many bulletins only apply to a serial range.\n- The asset history for the last 12 months: earlier cases, parts replaced, alarms, firmware level.\n- Other open cases on the same asset.\n\nWhere a bulletin conflicts with the OEM manual, the bulletin applies to the serial range it names. Where a campaign applies to the unit and covers the symptom, the campaign work is done first, or the case is escalated to the team lead, before other repairs aimed at the same symptom.\n\nIf the same part has already been replaced on the same asset in the last 90 days, do not replace it again without calling the team lead. Two identical parts failing in a row usually means the part is not the cause.\n\nWrite in the work order notes what you checked, for example \"Bulletins checked: none applicable to this serial\". A blank means it was not checked.",
+        "text_en": "# 8. Before starting repairs: bulletins, campaigns and history\n\nBefore any corrective repair, and before replacing any part, the technician checks:\n\n- Open OEM service bulletins and campaigns for the model and the serial number. Bulletins are in SharePoint under Field Procedures > OEM Bulletins and on the OEM portals. Check the serial on the nameplate, not only the model: many bulletins only apply to a serial range.\n- The asset history for the last 12 months: earlier cases, parts replaced, alarms, firmware level.\n- Other open cases on the same asset.\n\nWhere a bulletin conflicts with the OEM manual, the bulletin applies to the serial range it names. Where a campaign applies to the unit and covers the symptom, the campaign work is done first, or the case is escalated to the team lead, before other repairs aimed at the same symptom.\n\nIf the same part has already been replaced on the same asset in the last 90 days, do not replace it again without calling the team lead. Two identical parts failing in a row usually means the part is not the cause.\n\nWrite in the work order notes what you checked, for example \"Bulletins checked: none applicable to this serial\". A blank means it was not checked.",
+        "acl_key": "",
+        "cosine": null,
+        "bm25_rank": 4,
+        "vector_rank": null,
+        "rrf": 0.015625
+      },
+      {
+        "chunk_id": "c32c0b32c6cbf903",
+        "doc_path": "corpus/data/salesforce_cases_NA_2025-2026.json",
+        "doc_title": "Salesforce cases NA",
+        "doc_type": "Salesforce Case export",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "5008d00000iy50mmDa",
+          "sender": null,
+          "date": "2026-07-02T13:10:00.000+0000",
+          "thread_record_ids": [
+            "5008d00000iy50mmDa",
+            "00a8d00000K6GZBACD",
+            "00a8d000006WpoyIGJ",
+            "00a8d000009mY5AJaQ",
+            "00a8d00000mbfDCLG2",
+            "02s8d00000ADVLlnnl"
+          ]
+        },
+        "header": "Salesforce cases NA | 5008d00000iy50mmDa",
+        "text_original": "attributes.type: Case\nattributes.url: /services/data/v60.0/sobjects/Case/5008d00000iy50mmDa\nId: 5008d00000iy50mmDa\nCaseNumber: 00042388\nSubject: repeat E-14 on 0142\nStatus: Closed\nPriority: High\nOrigin: Phone\nCreatedDate: 2026-07-02T13:10:00.000+0000\nClosedDate: 2026-07-06T23:20:00.000+0000\nAccount.Name: Puget Cold Chain\nAsset__r.Name: TAC-C-0142\nEquipment_Model__c: VRS-110\nSerial_Number__c: VRS110-230877\nSite__c: TAC - Tacoma Cold Storage\nFault_Code__c: E-14\nDescription: Repeat E-14 on 0142. Unit tripped 07/01 afternoon, cooler fins cleaned on the exhaust side and restarted. Tripped again around 01:30 on 07/02. Ambient at the unit 38 C. Dave Ortiz called at 06:00.\nResolution__c: Controller TS-2 113 C vs handheld 102 C at the discharge flange, 11 C high. TS-2 replaced again (41-2207, from Daniel's van). Controller and handheld within 4 C after the swap. Firmware is 5.0. Update not done, no X10 cable available. Firmware update to be scheduled.\nParts_Used__c: 41-2207 x1\nOwner.Name: Priya Natarajan\nCaseComments.totalSize: 4\nCaseComments.done: true\nEmailMessages.totalSize: 1\nEmailMessages.done: true\n\nattributes.type: CaseComment\nattributes.url: /services/data/v60.0/sobjects/CaseComment/00a8d00000K6GZBACD\nId: 00a8d00000K6GZBACD\nCommentBody: On site. TS-2 controller 113 C, handheld 102 C. Same as March?\nCreatedDate: 2026-07-02T14:45:00.000+0000\nIsPublished: false\nCreatedBy.Name: Priya Natarajan\n\nattributes.type: CaseComment\nattributes.url: /services/data/v60.0/sobjects/CaseComment/00a8d000006WpoyIGJ\nId: 00a8d000006WpoyIGJ\nCommentBody: Second TS-2 on this unit since March. Check SB-2026-003 before you close this: on firmware below 5.1 a failing TS-2 is reported as E-14, so these may never have been real high temps. 0142 is still on 5.0 and needs the 5.1 update.\nCreatedDate: 2026-07-02T15:02:00.000+0000\nIsPublished: false\nCreatedBy.Name: Kenji Watanabe\n\nattributes.type: CaseComment\nattributes.url: /services/data/v60.0/sobjects/CaseComment/00a8d000009mY5AJaQ\nId: 00a8d000009mY5AJaQ\nCommentBody: TS-2 swapped, unit running, within 4 C.\nCreatedDate: 2026-07-02T18:50:00.000+0000\nIsPublished: false\nCreatedBy.Name: Priya Natarajan\n\nattributes.type: CaseComment\nattributes.url: /services/data/v60.0/sobjects/CaseComment/00a8d00000mbfDCLG2\nId: 00a8d00000mbfDCLG2\nCommentBody: No trips since 07/02. Closing. Firmware update open, Dave can't give us a window this week (big inbound).\nCreatedDate: 2026-07-06T23:18:00.000+0000\nIsPublished: false\nCreatedBy.Name: Priya Natarajan\n\nattributes.type: EmailMessage\nattributes.url: /services/data/v60.0/sobjects/EmailMessage/02s8d00000ADVLlnnl\nId: 02s8d00000ADVLlnnl\nSubject: RE: 0142\nFromName: Dave Ortiz\nFromAddress: dortiz@pugetcoldchain.com\nToAddress: p.natarajan@corvane.com\nMessageDate: 2026-07-06T17:41:00.000+0000\nIncoming: true\nTextBody: Priya,\n\nNo trips since Thursday. When do you want to do the software update? This week is bad, we have the big inbound. Week of the 20th should work.",
+        "text_en": "attributes.type: Case\nattributes.url: /services/data/v60.0/sobjects/Case/5008d00000iy50mmDa\nId: 5008d00000iy50mmDa\nCaseNumber: 00042388\nSubject: repeat E-14 on 0142\nStatus: Closed\nPriority: High\nOrigin: Phone\nCreatedDate: 2026-07-02T13:10:00.000+0000\nClosedDate: 2026-07-06T23:20:00.000+0000\nAccount.Name: Puget Cold Chain\nAsset__r.Name: TAC-C-0142\nEquipment_Model__c: VRS-110\nSerial_Number__c: VRS110-230877\nSite__c: TAC - Tacoma Cold Storage\nFault_Code__c: E-14\nDescription: Repeat E-14 on 0142. Unit tripped 07/01 afternoon, cooler fins cleaned on the exhaust side and restarted. Tripped again around 01:30 on 07/02. Ambient at the unit 38 C. Dave Ortiz called at 06:00.\nResolution__c: Controller TS-2 113 C vs handheld 102 C at the discharge flange, 11 C high. TS-2 replaced again (41-2207, from Daniel's van). Controller and handheld within 4 C after the swap. Firmware is 5.0. Update not done, no X10 cable available. Firmware update to be scheduled.\nParts_Used__c: 41-2207 x1\nOwner.Name: Priya Natarajan\nCaseComments.totalSize: 4\nCaseComments.done: true\nEmailMessages.totalSize: 1\nEmailMessages.done: true\n\nattributes.type: CaseComment\nattributes.url: /services/data/v60.0/sobjects/CaseComment/00a8d00000K6GZBACD\nId: 00a8d00000K6GZBACD\nCommentBody: On site. TS-2 controller 113 C, handheld 102 C. Same as March?\nCreatedDate: 2026-07-02T14:45:00.000+0000\nIsPublished: false\nCreatedBy.Name: Priya Natarajan\n\nattributes.type: CaseComment\nattributes.url: /services/data/v60.0/sobjects/CaseComment/00a8d000006WpoyIGJ\nId: 00a8d000006WpoyIGJ\nCommentBody: Second TS-2 on this unit since March. Check SB-2026-003 before you close this: on firmware below 5.1 a failing TS-2 is reported as E-14, so these may never have been real high temps. 0142 is still on 5.0 and needs the 5.1 update.\nCreatedDate: 2026-07-02T15:02:00.000+0000\nIsPublished: false\nCreatedBy.Name: Kenji Watanabe\n\nattributes.type: CaseComment\nattributes.url: /services/data/v60.0/sobjects/CaseComment/00a8d000009mY5AJaQ\nId: 00a8d000009mY5AJaQ\nCommentBody: TS-2 swapped, unit running, within 4 C.\nCreatedDate: 2026-07-02T18:50:00.000+0000\nIsPublished: false\nCreatedBy.Name: Priya Natarajan\n\nattributes.type: CaseComment\nattributes.url: /services/data/v60.0/sobjects/CaseComment/00a8d00000mbfDCLG2\nId: 00a8d00000mbfDCLG2\nCommentBody: No trips since 07/02. Closing. Firmware update open, Dave can't give us a window this week (big inbound).\nCreatedDate: 2026-07-06T23:18:00.000+0000\nIsPublished: false\nCreatedBy.Name: Priya Natarajan\n\nattributes.type: EmailMessage\nattributes.url: /services/data/v60.0/sobjects/EmailMessage/02s8d00000ADVLlnnl\nId: 02s8d00000ADVLlnnl\nSubject: RE: 0142\nFromName: Dave Ortiz\nFromAddress: dortiz@pugetcoldchain.com\nToAddress: p.natarajan@corvane.com\nMessageDate: 2026-07-06T17:41:00.000+0000\nIncoming: true\nTextBody: Priya,\n\nNo trips since Thursday. When do you want to do the software update? This week is bad, we have the big inbound. Week of the 20th should work.",
+        "acl_key": "region-na",
+        "cosine": null,
+        "bm25_rank": 5,
+        "vector_rank": null,
+        "rrf": 0.015384615384615385
+      },
+      {
+        "chunk_id": "a23e6749653580d5",
+        "doc_path": "corpus/data/maintpro_history_NA_2023-2026.csv",
+        "doc_title": "MaintPro history NA",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "227933",
+          "sender": null,
+          "date": "03/12/2026"
+        },
+        "header": "MaintPro history NA | 227933",
+        "text_original": "WO_No: 227933\nDate: 03/12/2026\nSite: TAC\nAsset: TAC-C-0142\nModel: VRS-110\nSerial: VRS110-230877\nEvent_Type: CM\nFault: E-14\nHours: 20378\nTech: DREYES\nNotes: e-14 overnight. ctrl ts-2 112 vs handheld 96 @ disch flange. ts2 swap, ok. sf 00041207\nParts: 41-2207 x1\nLabor_Hrs: 2.5\nStatus: CLOSED",
+        "text_en": "WO_No: 227933\nDate: 03/12/2026\nSite: TAC\nAsset: TAC-C-0142\nModel: VRS-110\nSerial: VRS110-230877\nEvent_Type: CM\nFault: E-14\nHours: 20378\nTech: DREYES\nNotes: e-14 overnight. ctrl ts-2 112 vs handheld 96 @ disch flange. ts2 swap, ok. sf 00041207\nParts: 41-2207 x1\nLabor_Hrs: 2.5\nStatus: CLOSED",
+        "acl_key": "region-na",
+        "cosine": 0.559582531452179,
+        "bm25_rank": null,
+        "vector_rank": 6,
+        "rrf": 0.015151515151515152
+      },
+      {
+        "chunk_id": "9a190dba75deae3b",
+        "doc_path": "corpus/data/maintpro_history_NA_2023-2026.csv",
+        "doc_title": "MaintPro history NA",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "232346",
+          "sender": null,
+          "date": "09/17/2026"
+        },
+        "header": "MaintPro history NA | 232346",
+        "text_original": "WO_No: 232346\nDate: 09/17/2026\nSite: TAC\nAsset: TAC-C-0142\nModel: VRS-110\nSerial: VRS110-230877\nEvent_Type: Alarm\nFault: E-14\nHours: \nTech: DREYES\nNotes: ctrl log: e-14 02:05, auto restart after cooldown. no callout (entered at pm 9/22)\nParts: \nLabor_Hrs: 0\nStatus: CLOSED",
+        "text_en": "WO_No: 232346\nDate: 09/17/2026\nSite: TAC\nAsset: TAC-C-0142\nModel: VRS-110\nSerial: VRS110-230877\nEvent_Type: Alarm\nFault: E-14\nHours: \nTech: DREYES\nNotes: ctrl log: e-14 02:05, auto restart after cooldown. no callout (entered at pm 9/22)\nParts: \nLabor_Hrs: 0\nStatus: CLOSED",
+        "acl_key": "region-na",
+        "cosine": 0.5410127639770508,
+        "bm25_rank": null,
+        "vector_rank": 9,
+        "rrf": 0.014492753623188406
+      },
+      {
+        "chunk_id": "a4db1253f3119655",
+        "doc_path": "corpus/data/maintpro_history_NA_2023-2026.csv",
+        "doc_title": "MaintPro history NA",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "231058",
+          "sender": null,
+          "date": "07/28/2026"
+        },
+        "header": "MaintPro history NA | 231058",
+        "text_original": "WO_No: 231058\nDate: 07/28/2026\nSite: TAC\nAsset: TAC-C-0142\nModel: VRS-110\nSerial: VRS110-230877\nEvent_Type: Alarm\nFault: E-14\nHours: \nTech: DREYES\nNotes: ctrl log: e-14 03:12, auto restart after cooldown. no callout (entered at pm 9/22)\nParts: \nLabor_Hrs: 0\nStatus: CLOSED",
+        "text_en": "WO_No: 231058\nDate: 07/28/2026\nSite: TAC\nAsset: TAC-C-0142\nModel: VRS-110\nSerial: VRS110-230877\nEvent_Type: Alarm\nFault: E-14\nHours: \nTech: DREYES\nNotes: ctrl log: e-14 03:12, auto restart after cooldown. no callout (entered at pm 9/22)\nParts: \nLabor_Hrs: 0\nStatus: CLOSED",
+        "acl_key": "region-na",
+        "cosine": 0.5405251979827881,
+        "bm25_rank": null,
+        "vector_rank": 10,
+        "rrf": 0.014285714285714285
+      },
+      {
+        "chunk_id": "291d1637d7ce383e",
+        "doc_path": "corpus/data/maintpro_history_NA_2023-2026.csv",
+        "doc_title": "MaintPro history NA",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "230434",
+          "sender": null,
+          "date": "07/01/2026"
+        },
+        "header": "MaintPro history NA | 230434",
+        "text_original": "WO_No: 230434\nDate: 07/01/2026\nSite: TAC\nAsset: TAC-C-0142\nModel: VRS-110\nSerial: VRS110-230877\nEvent_Type: CM\nFault: E-14\nHours: 22494\nTech: PNATARAJAN\nNotes: E-14 trip. Cooler fins plugged on exhaust side, blew them out, restarted. Ran 1 h on site without trip.\nParts: \nLabor_Hrs: 2\nStatus: CLOSED",
+        "text_en": "WO_No: 230434\nDate: 07/01/2026\nSite: TAC\nAsset: TAC-C-0142\nModel: VRS-110\nSerial: VRS110-230877\nEvent_Type: CM\nFault: E-14\nHours: 22494\nTech: PNATARAJAN\nNotes: E-14 trip. Cooler fins plugged on exhaust side, blew them out, restarted. Ran 1 h on site without trip.\nParts: \nLabor_Hrs: 2\nStatus: CLOSED",
+        "acl_key": "region-na",
+        "cosine": 0.538709819316864,
+        "bm25_rank": null,
+        "vector_rank": 11,
+        "rrf": 0.014084507042253521
+      },
+      {
+        "chunk_id": "327ad97468d7e01a",
+        "doc_path": "corpus/confluence/Work-Order-Writing-Guide.html",
+        "doc_title": "Work Order Writing Guide",
+        "doc_type": "Work Order Writing Guide",
+        "revision": "unknown",
+        "effective_date": "Jan 21, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service: Work Order Writing Guide",
+            "Why this matters"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Work Order Writing Guide | Field Service: Work Order Writing Guide › Why this matters",
+        "text_original": "Every work order is approved by a supervisor before the work is scheduled. The supervisor decides who goes, when, and with what parts, from what you wrote. They usually haven't seen the unit. If the work order says \"fix compressor\", they have to call you, and if they can't reach you, the job waits. Most of the delays I see in the scheduling queue are work orders that are missing one of the fields below.\n\nThe work order is also the record. Six months from now, somebody standing in front of the same unit will read it to find out what was done and why. Write it for that person.",
+        "text_en": "Every work order is approved by a supervisor before the work is scheduled. The supervisor decides who goes, when, and with what parts, from what you wrote. They usually haven't seen the unit. If the work order says \"fix compressor\", they have to call you, and if they can't reach you, the job waits. Most of the delays I see in the scheduling queue are work orders that are missing one of the fields below.\n\nThe work order is also the record. Six months from now, somebody standing in front of the same unit will read it to find out what was done and why. Write it for that person.",
+        "acl_key": "",
+        "cosine": null,
+        "bm25_rank": 12,
+        "vector_rank": null,
+        "rrf": 0.013888888888888888
+      },
+      {
+        "chunk_id": "6b80b2299cf70cb6",
+        "doc_path": "corpus/sharepoint/FS-STD-001_Field_Service_Standard.docx",
+        "doc_title": "FS-STD-001 Field Service Standard",
+        "doc_type": "Field Service Standard",
+        "revision": "4",
+        "effective_date": "2026-01-12",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "10. Documentation standards for case resolutions"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "FS-STD-001 Field Service Standard | 4 | 10. Documentation standards for case resolutions",
+        "text_original": "# 10. Documentation standards for case resolutions\n\nThe resolution is written for the next technician, who was not there and will read it at 6 in the morning in front of the same machine. Every resolution answers five questions:\n\nQuestion | What to write\nWhat did you find? | Symptom, fault codes, readings with units, and the asset ID.\nWhy did it happen? | The cause, or \"cause not confirmed\" with what you ruled out.\nWhat did you do? | Actions, in order. Parts with part numbers and quantities. Settings changed, with old and new values.\nWhat did you use? | The procedure, manual section or bulletin you worked to, with its number and revision.\nWhat happens next? | Follow-up needed, what is being monitored, recommendations to the customer, and who owns them.\n\n## 10.1 Not acceptable\n\"Fixed\", \"ok now\", \"done\", \"see email\", \"done per procedure\" without the procedure number and the readings.\n\nA fix that is described only in an email or a chat. If the fix came from the OEM by email, summarise it in the resolution and attach the email. The resolution must make sense without the attachment.\n\nParts listed without part numbers.\n\n## 10.2 Example\nNot acceptable: \"replaced seal, ok\".\n\nAcceptable: \"GDN-P-0070 (HCP-350), fault P-04 seal leakage. Seal flush line kinked behind the coupling guard, starving the seal. Rerouted the flush line with a new support clip. Replaced the mechanical seal with kit 18-0356 (1 off; 18-0355 is superseded per SB-2025-018). Leak sensor dry after a 2 h run. Reference: HCP-350 IOM fault table. No follow-up needed; flush line routing to be checked at next PM.\"\n\n## 10.3 Language, photos and time\nThe resolution field is written in English. Technicians may add case comments in Dutch or Polish for local colleagues, but the resolution must stand on its own in English.\n\nAttach photos of the nameplate, of the fault (before) and of the repair (after) to the work order.\n\nLog time and parts the same day.",
+        "text_en": "# 10. Documentation standards for case resolutions\n\nThe resolution is written for the next technician, who was not there and will read it at 6 in the morning in front of the same machine. Every resolution answers five questions:\n\nQuestion | What to write\nWhat did you find? | Symptom, fault codes, readings with units, and the asset ID.\nWhy did it happen? | The cause, or \"cause not confirmed\" with what you ruled out.\nWhat did you do? | Actions, in order. Parts with part numbers and quantities. Settings changed, with old and new values.\nWhat did you use? | The procedure, manual section or bulletin you worked to, with its number and revision.\nWhat happens next? | Follow-up needed, what is being monitored, recommendations to the customer, and who owns them.\n\n## 10.1 Not acceptable\n\"Fixed\", \"ok now\", \"done\", \"see email\", \"done per procedure\" without the procedure number and the readings.\n\nA fix that is described only in an email or a chat. If the fix came from the OEM by email, summarise it in the resolution and attach the email. The resolution must make sense without the attachment.\n\nParts listed without part numbers.\n\n## 10.2 Example\nNot acceptable: \"replaced seal, ok\".\n\nAcceptable: \"GDN-P-0070 (HCP-350), fault P-04 seal leakage. Seal flush line kinked behind the coupling guard, starving the seal. Rerouted the flush line with a new support clip. Replaced the mechanical seal with kit 18-0356 (1 off; 18-0355 is superseded per SB-2025-018). Leak sensor dry after a 2 h run. Reference: HCP-350 IOM fault table. No follow-up needed; flush line routing to be checked at next PM.\"\n\n## 10.3 Language, photos and time\nThe resolution field is written in English. Technicians may add case comments in Dutch or Polish for local colleagues, but the resolution must stand on its own in English.\n\nAttach photos of the nameplate, of the fault (before) and of the repair (after) to the work order.\n\nLog time and parts the same day.",
+        "acl_key": "",
+        "cosine": null,
+        "bm25_rank": 13,
+        "vector_rank": null,
+        "rrf": 0.0136986301369863
+      },
+      {
+        "chunk_id": "074fa59613ed3d32",
+        "doc_path": "corpus/data/maintpro_history_NA_2023-2026.csv",
+        "doc_title": "MaintPro history NA",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "231801",
+          "sender": null,
+          "date": "08/30/2026"
+        },
+        "header": "MaintPro history NA | 231801",
+        "text_original": "WO_No: 231801\nDate: 08/30/2026\nSite: TAC\nAsset: TAC-C-0142\nModel: VRS-110\nSerial: VRS110-230877\nEvent_Type: Alarm\nFault: E-14\nHours: \nTech: DREYES\nNotes: ctrl log: e-14 15:47, auto restart after cooldown. no callout (entered at pm 9/22)\nParts: \nLabor_Hrs: 0\nStatus: CLOSED",
+        "text_en": "WO_No: 231801\nDate: 08/30/2026\nSite: TAC\nAsset: TAC-C-0142\nModel: VRS-110\nSerial: VRS110-230877\nEvent_Type: Alarm\nFault: E-14\nHours: \nTech: DREYES\nNotes: ctrl log: e-14 15:47, auto restart after cooldown. no callout (entered at pm 9/22)\nParts: \nLabor_Hrs: 0\nStatus: CLOSED",
+        "acl_key": "region-na",
+        "cosine": 0.536615252494812,
+        "bm25_rank": null,
+        "vector_rank": 13,
+        "rrf": 0.0136986301369863
+      },
+      {
+        "chunk_id": "4e8908580fc740d8",
+        "doc_path": "corpus/data/salesforce_cases_NA_2025-2026.json",
+        "doc_title": "Salesforce cases NA",
+        "doc_type": "Salesforce Case export",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "5008d00000zKjr82dY",
+          "sender": null,
+          "date": "2026-03-12T13:47:00.000+0000"
+        },
+        "header": "Salesforce cases NA | 5008d00000zKjr82dY",
+        "text_original": "type: Case\nurl: /services/data/v60.0/sobjects/Case/5008d00000zKjr82dY\nId: 5008d00000zKjr82dY\nCaseNumber: 00041207\nSubject: E-14 high discharge temp TAC-C-0142\nStatus: Closed\nPriority: Medium\nOrigin: Email\nCreatedDate: 2026-03-12T13:47:00.000+0000\nClosedDate: 2026-03-13T15:15:00.000+0000\nAccount Name: Puget Cold Chain\nAsset Name: TAC-C-0142\nEquipment_Model__c: VRS-110\nSerial_Number__c: VRS110-230877\nSite__c: TAC - Tacoma Cold Storage\nFault_Code__c: E-14\nDescription: Compressor 0142 shut down overnight on E-14 high discharge temperature. Customer restarted it at 06:30, running, wants it checked.\nResolution__c: E-14 overnight. Controller TS-2 112 C vs handheld 96 C at the discharge flange. Replaced TS-2 (41-2207). Readings within 3 C after the swap.\nParts_Used__c: 41-2207 x1\nOwner Name: Daniel Reyes\nCaseComments:\n- Id: 00a8d00000gJotTi0W; CommentBody: ts-2 reading 16c high vs handheld. sensor swapped, unit running.; CreatedDate: 2026-03-12T18:20:00.000+0000; IsPublished: false; CreatedBy Name: Daniel Reyes\n- Id: 00a8d00000olx1l3uj; CommentBody: no trips overnight, closing; CreatedDate: 2026-03-13T15:14:00.000+0000; IsPublished: false; CreatedBy Name: Daniel Reyes\nEmailMessages:\n- Id: 02s8d00000s3kRXGX1; Subject: comp 0142 tripped overnight; FromName: Dave Ortiz; FromAddress: dortiz@pugetcoldchain.com; ToAddress: service.na@corvane.com; MessageDate: 2026-03-12T13:47:00.000+0000; Incoming: true; TextBody: Morning,\n\n0142 shut down sometime after 2am with E-14 high discharge temp. Night shift didn't call it in. I restarted it at 6:30 and it's running but I'd like someone to look at it today. It's not hot in there, 9 degrees outside.\n\nDave Ortiz\nMaintenance Manager | Puget Cold Chain | Tacoma",
+        "text_en": "type: Case\nurl: /services/data/v60.0/sobjects/Case/5008d00000zKjr82dY\nId: 5008d00000zKjr82dY\nCaseNumber: 00041207\nSubject: E-14 high discharge temp TAC-C-0142\nStatus: Closed\nPriority: Medium\nOrigin: Email\nCreatedDate: 2026-03-12T13:47:00.000+0000\nClosedDate: 2026-03-13T15:15:00.000+0000\nAccount Name: Puget Cold Chain\nAsset Name: TAC-C-0142\nEquipment_Model__c: VRS-110\nSerial_Number__c: VRS110-230877\nSite__c: TAC - Tacoma Cold Storage\nFault_Code__c: E-14\nDescription: Compressor 0142 shut down overnight on E-14 high discharge temperature. Customer restarted it at 06:30, running, wants it checked.\nResolution__c: E-14 overnight. Controller TS-2 112 C vs handheld 96 C at the discharge flange. Replaced TS-2 (41-2207). Readings within 3 C after the swap.\nParts_Used__c: 41-2207 x1\nOwner Name: Daniel Reyes\nCaseComments:\n- Id: 00a8d00000gJotTi0W; CommentBody: ts-2 reading 16c high vs handheld. sensor swapped, unit running.; CreatedDate: 2026-03-12T18:20:00.000+0000; IsPublished: false; CreatedBy Name: Daniel Reyes\n- Id: 00a8d00000olx1l3uj; CommentBody: no trips overnight, closing; CreatedDate: 2026-03-13T15:14:00.000+0000; IsPublished: false; CreatedBy Name: Daniel Reyes\nEmailMessages:\n- Id: 02s8d00000s3kRXGX1; Subject: comp 0142 tripped overnight; FromName: Dave Ortiz; FromAddress: dortiz@pugetcoldchain.com; ToAddress: service.na@corvane.com; MessageDate: 2026-03-12T13:47:00.000+0000; Incoming: true; TextBody: Morning,\n\n0142 shut down sometime after 2am with E-14 high discharge temp. Night shift didn't call it in. I restarted it at 6:30 and it's running but I'd like someone to look at it today. It's not hot in there, 9 degrees outside.\n\nDave Ortiz\nMaintenance Manager | Puget Cold Chain | Tacoma",
+        "acl_key": "region-na",
+        "cosine": null,
+        "bm25_rank": 14,
+        "vector_rank": null,
+        "rrf": 0.013513513513513514
+      },
+      {
+        "chunk_id": "bdc324d3da7b0fde",
+        "doc_path": "corpus/data/maintpro_history_NA_2023-2026.csv",
+        "doc_title": "MaintPro history NA",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "225539",
+          "sender": null,
+          "date": "11/20/2025"
+        },
+        "header": "MaintPro history NA | 225539",
+        "text_original": "WO_No: 225539\nDate: 11/20/2025\nSite: TAC\nAsset: TAC-C-0143\nModel: VRS-110\nSerial: VRS110-240210\nEvent_Type: CM\nFault: E-31\nHours: 9889\nTech: DREYES\nNotes: e-31 after grid dip 04:10 (dave says lights flickered dock 3). reset per hv-proc-07. insulation 2.4 gohm. back on line 07:55, no repeat. sf 00040311\nParts: \nLabor_Hrs: 3.5\nStatus: CLOSED",
+        "text_en": "WO_No: 225539\nDate: 11/20/2025\nSite: TAC\nAsset: TAC-C-0143\nModel: VRS-110\nSerial: VRS110-240210\nEvent_Type: CM\nFault: E-31\nHours: 9889\nTech: DREYES\nNotes: e-31 after grid dip 04:10 (dave says lights flickered dock 3). reset per hv-proc-07. insulation 2.4 gohm. back on line 07:55, no repeat. sf 00040311\nParts: \nLabor_Hrs: 3.5\nStatus: CLOSED",
+        "acl_key": "region-na",
+        "cosine": 0.5292144417762756,
+        "bm25_rank": null,
+        "vector_rank": 14,
+        "rrf": 0.013513513513513514
+      },
+      {
+        "chunk_id": "62ca4eeb2a5f1618",
+        "doc_path": "corpus/confluence/Compressor-Troubleshooting-Playbook.html",
+        "doc_title": "Compressor Troubleshooting Playbook",
+        "doc_type": "Field Service : Compressor Troubleshooting Playbook",
+        "revision": "unknown",
+        "effective_date": "Feb 11, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : Compressor Troubleshooting Playbook",
+            "Why this page exists"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Compressor Troubleshooting Playbook | Field Service : Compressor Troubleshooting Playbook › Why this page exists",
+        "text_original": "The Vastra manuals tell you what each code means. They don't tell you what it usually turns out to be at our sites, and they don't tell you which checks we've learned to do first because we got burned skipping them. That's what this page is for. Most of it comes from Tacoma and Fresno since 2019, plus a lot of phone calls with Anders Holm at Vastra L2.\n\nIt is not a complete code list. If a code isn't here, it's either rare for us or the manual explains it fine. Use the fault list in the service manual for your model, and check the manual revision while you're in there. Vastra changes things between revisions without making much noise about it, and the copy in your van might be two revisions old.\n\nWhat this page deliberately doesn't cover: anything inside the VFD cabinet on the 110s (that's HV work under the HV procedures), oil and filter intervals (see the quick reference linked at the bottom), and airend replacement, which we don't do in the field.",
+        "text_en": "The Vastra manuals tell you what each code means. They don't tell you what it usually turns out to be at our sites, and they don't tell you which checks we've learned to do first because we got burned skipping them. That's what this page is for. Most of it comes from Tacoma and Fresno since 2019, plus a lot of phone calls with Anders Holm at Vastra L2.\n\nIt is not a complete code list. If a code isn't here, it's either rare for us or the manual explains it fine. Use the fault list in the service manual for your model, and check the manual revision while you're in there. Vastra changes things between revisions without making much noise about it, and the copy in your van might be two revisions old.\n\nWhat this page deliberately doesn't cover: anything inside the VFD cabinet on the 110s (that's HV work under the HV procedures), oil and filter intervals (see the quick reference linked at the bottom), and airend replacement, which we don't do in the field.",
+        "acl_key": "family-compressors",
+        "cosine": null,
+        "bm25_rank": 15,
+        "vector_rank": null,
+        "rrf": 0.013333333333333334
+      },
+      {
+        "chunk_id": "e543fa51153a0db0",
+        "doc_path": "corpus/sharepoint/FS-STD-001_Field_Service_Standard.docx",
+        "doc_title": "FS-STD-001 Field Service Standard",
+        "doc_type": "Field Service Standard",
+        "revision": "4",
+        "effective_date": "2026-01-12",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "5. Case lifecycle"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "FS-STD-001 Field Service Standard | 4 | 5. Case lifecycle",
+        "text_original": "# 5. Case lifecycle\n\n## 5.1 Opening a case\nCases are opened by the dispatcher from a customer phone call, by email-to-case from the regional service mailbox, from the customer portal, or by a technician who finds a problem during other work. Every case must be linked to an asset ID from the fleet register. If the asset cannot be identified at intake, the case may be saved with \"Asset to be confirmed\", but the asset must be set before a work order is scheduled.\n\n## 5.2 Triage\nWithin 30 minutes of a case being opened during business hours, the dispatcher sets the priority (section 9), checks for other open cases on the same asset and merges duplicates, and reads the last 12 months of asset history. If the same symptom has a case resolved in the last 30 days, the dispatcher reopens that case instead of opening a new one and flags it as a repeat visit.\n\n## 5.3 Case statuses\nStatus | Meaning | Set by\nNew | Case received, not yet triaged. | System\nTriage | Priority set, history checked, work order being prepared. | Dispatcher\nIn Progress | At least one approved work order exists. | System\nWaiting on Parts | Work cannot continue until parts arrive. Parts order number in the case. | Technician or dispatcher\nWaiting on Customer | Waiting for access, a shutdown window, or a decision by the customer. | Technician or dispatcher\nMonitoring | A fix has been applied but is not yet proven, for example after an intermittent fault. | Technician\nResolved | Work complete, resolution written. | Technician\nClosed | Resolution reviewed. Closes automatically 7 days after Resolved unless the customer reopens it. | Supervisor or system\n\n## 5.4 Monitoring\nMonitoring is for faults that cannot be proven fixed on the day. The technician writes in the case what is being monitored, how (controller log, customer feedback, a follow-up reading) and until when. A case may stay in Monitoring for at most 30 days. After that it is resolved with the evidence, or escalated to the team lead. Monitoring is not a place to park cases that nobody owns.\n\n## 5.5 Resolving and closing\nThe technician resolves the case when the work is done and the resolution is written to the standard in section 10. The supervisor reads the resolution before the case closes and sends it back if it does not meet the standard. A case reopened within 30 days for the same symptom counts as a repeat visit.",
+        "text_en": "# 5. Case lifecycle\n\n## 5.1 Opening a case\nCases are opened by the dispatcher from a customer phone call, by email-to-case from the regional service mailbox, from the customer portal, or by a technician who finds a problem during other work. Every case must be linked to an asset ID from the fleet register. If the asset cannot be identified at intake, the case may be saved with \"Asset to be confirmed\", but the asset must be set before a work order is scheduled.\n\n## 5.2 Triage\nWithin 30 minutes of a case being opened during business hours, the dispatcher sets the priority (section 9), checks for other open cases on the same asset and merges duplicates, and reads the last 12 months of asset history. If the same symptom has a case resolved in the last 30 days, the dispatcher reopens that case instead of opening a new one and flags it as a repeat visit.\n\n## 5.3 Case statuses\nStatus | Meaning | Set by\nNew | Case received, not yet triaged. | System\nTriage | Priority set, history checked, work order being prepared. | Dispatcher\nIn Progress | At least one approved work order exists. | System\nWaiting on Parts | Work cannot continue until parts arrive. Parts order number in the case. | Technician or dispatcher\nWaiting on Customer | Waiting for access, a shutdown window, or a decision by the customer. | Technician or dispatcher\nMonitoring | A fix has been applied but is not yet proven, for example after an intermittent fault. | Technician\nResolved | Work complete, resolution written. | Technician\nClosed | Resolution reviewed. Closes automatically 7 days after Resolved unless the customer reopens it. | Supervisor or system\n\n## 5.4 Monitoring\nMonitoring is for faults that cannot be proven fixed on the day. The technician writes in the case what is being monitored, how (controller log, customer feedback, a follow-up reading) and until when. A case may stay in Monitoring for at most 30 days. After that it is resolved with the evidence, or escalated to the team lead. Monitoring is not a place to park cases that nobody owns.\n\n## 5.5 Resolving and closing\nThe technician resolves the case when the work is done and the resolution is written to the standard in section 10. The supervisor reads the resolution before the case closes and sends it back if it does not meet the standard. A case reopened within 30 days for the same symptom counts as a repeat visit.",
+        "acl_key": "",
+        "cosine": null,
+        "bm25_rank": 16,
+        "vector_rank": null,
+        "rrf": 0.013157894736842105
+      },
+      {
+        "chunk_id": "7b54f254dc8505a8",
+        "doc_path": "corpus/confluence/Work-Order-Writing-Guide.html",
+        "doc_title": "Work Order Writing Guide",
+        "doc_type": "Work Order Writing Guide",
+        "revision": "unknown",
+        "effective_date": "Jan 21, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service: Work Order Writing Guide",
+            "Before you submit"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Work Order Writing Guide | Field Service: Work Order Writing Guide › Before you submit",
+        "text_original": "- Is the asset ID from the fleet register?\n- Is the fault code exactly what the controller showed?\n- Would someone who has never seen the unit understand the summary?\n- Did you reference procedures by number instead of copying them?\n- Did you select every certification the work needs?\n- If there's a bulletin for this serial, is the campaign code in?\n\nQuestions to me or your team lead.",
+        "text_en": "- Is the asset ID from the fleet register?\n- Is the fault code exactly what the controller showed?\n- Would someone who has never seen the unit understand the summary?\n- Did you reference procedures by number instead of copying them?\n- Did you select every certification the work needs?\n- If there's a bulletin for this serial, is the campaign code in?\n\nQuestions to me or your team lead.",
+        "acl_key": "",
+        "cosine": null,
+        "bm25_rank": 17,
+        "vector_rank": null,
+        "rrf": 0.012987012987012988
+      },
+      {
+        "chunk_id": "7ecd358b44ffb2fb",
+        "doc_path": "corpus/data/maintpro_history_NA_2023-2026.csv",
+        "doc_title": "MaintPro history NA",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "231262",
+          "sender": null,
+          "date": "08/03/2026"
+        },
+        "header": "MaintPro history NA | 231262",
+        "text_original": "WO_No: 231262\nDate: 08/03/2026\nSite: TAC\nAsset: TAC-C-0143\nModel: VRS-110\nSerial: VRS110-240210\nEvent_Type: CM\nFault: E-11\nHours: \nTech: PNATARAJAN\nNotes: E-11: customer contractor closed header valve for a tie-in. Opened, reset, running. SF 00042851\nParts: \nLabor_Hrs: 2.5\nStatus: CLOSED",
+        "text_en": "WO_No: 231262\nDate: 08/03/2026\nSite: TAC\nAsset: TAC-C-0143\nModel: VRS-110\nSerial: VRS110-240210\nEvent_Type: CM\nFault: E-11\nHours: \nTech: PNATARAJAN\nNotes: E-11: customer contractor closed header valve for a tie-in. Opened, reset, running. SF 00042851\nParts: \nLabor_Hrs: 2.5\nStatus: CLOSED",
+        "acl_key": "region-na",
+        "cosine": 0.5136082768440247,
+        "bm25_rank": null,
+        "vector_rank": 17,
+        "rrf": 0.012987012987012988
+      },
+      {
+        "chunk_id": "f76e5dccac2cc788",
+        "doc_path": "corpus/manuals/Vastra_VRS-75_Service_Manual_RevC_2026.pdf",
+        "doc_title": "Vastra VRS-75 Service Manual Rev C",
+        "doc_type": "Service Manual",
+        "revision": "C",
+        "effective_date": "2026-04-20",
+        "locator": {
+          "page": 2,
+          "section_path": [
+            "About this revision"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Vastra VRS-75 Service Manual Rev C | C | About this revision",
+        "text_original": "About this revision\n\nWhat's new in Rev C\n\nThis revision replaces Rev B of February 2024. Text that is changed or new compared with Rev B is marked with a vertical bar in the left margin, as for this paragraph.\n\n- Longer oil change interval with Vastra SynLube 46: 6,000 running hours or 12 months, whichever comes first. With mineral compressor oil ISO VG 46 the interval is unchanged, 4,000 running hours or 12 months. See 4.1 and 4.2.\n- On compressors delivered before April 2026 the oil interval in the controller is set to 4,000 h from the factory. The interval must be changed manually when Vastra SynLube 46 is used. See 3.4.\n- The oil filter is now delivered as part no. 41-1475. It is the same filter as 41-1470 in new packaging. See 4.3 and 6.2.\n- New warning E-27, separator differential pressure high (above 1.0 bar). Replace the separator element 41-3075 and check the oil carry-over. See 5.1 and 5.2.4.\n- Service kits renamed (6.3). Contact details updated (7.3).\n\nWhich revision applies\n\nRev C applies to all VRS-75 compressors from serial no. VRS75-200001, also to compressors delivered before the date of this revision. Destroy or mark as invalid the printed copies of Rev B that are kept at the compressor.",
+        "text_en": "About this revision\n\nWhat's new in Rev C\n\nThis revision replaces Rev B of February 2024. Text that is changed or new compared with Rev B is marked with a vertical bar in the left margin, as for this paragraph.\n\n- Longer oil change interval with Vastra SynLube 46: 6,000 running hours or 12 months, whichever comes first. With mineral compressor oil ISO VG 46 the interval is unchanged, 4,000 running hours or 12 months. See 4.1 and 4.2.\n- On compressors delivered before April 2026 the oil interval in the controller is set to 4,000 h from the factory. The interval must be changed manually when Vastra SynLube 46 is used. See 3.4.\n- The oil filter is now delivered as part no. 41-1475. It is the same filter as 41-1470 in new packaging. See 4.3 and 6.2.\n- New warning E-27, separator differential pressure high (above 1.0 bar). Replace the separator element 41-3075 and check the oil carry-over. See 5.1 and 5.2.4.\n- Service kits renamed (6.3). Contact details updated (7.3).\n\nWhich revision applies\n\nRev C applies to all VRS-75 compressors from serial no. VRS75-200001, also to compressors delivered before the date of this revision. Destroy or mark as invalid the printed copies of Rev B that are kept at the compressor.",
+        "acl_key": "family-compressors",
+        "cosine": null,
+        "bm25_rank": 18,
+        "vector_rank": null,
+        "rrf": 0.01282051282051282
+      },
+      {
+        "chunk_id": "963f88393b9c6726",
+        "doc_path": "corpus/data/maintpro_history_NA_2023-2026.csv",
+        "doc_title": "MaintPro history NA",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "230588",
+          "sender": null,
+          "date": "07/06/2026"
+        },
+        "header": "MaintPro history NA | 230588",
+        "text_original": "WO_No: 230588\nDate: 07/06/2026\nSite: TAC\nAsset: TAC-C-0142\nModel: VRS-110\nSerial: VRS110-230877\nEvent_Type: Inspection\nFault: \nHours: \nTech: PNATARAJAN\nNotes: Follow-up. No trips since 07/02. Firmware update still to schedule with Dave.\nParts: \nLabor_Hrs: 0.5\nStatus: CLOSED",
+        "text_en": "WO_No: 230588\nDate: 07/06/2026\nSite: TAC\nAsset: TAC-C-0142\nModel: VRS-110\nSerial: VRS110-230877\nEvent_Type: Inspection\nFault: \nHours: \nTech: PNATARAJAN\nNotes: Follow-up. No trips since 07/02. Firmware update still to schedule with Dave.\nParts: \nLabor_Hrs: 0.5\nStatus: CLOSED",
+        "acl_key": "region-na",
+        "cosine": 0.5119492411613464,
+        "bm25_rank": null,
+        "vector_rank": 18,
+        "rrf": 0.01282051282051282
+      },
+      {
+        "chunk_id": "acfdb8128181d811",
+        "doc_path": "corpus/confluence/VRS-Series-Oil-and-Filter-Quick-Reference.html",
+        "doc_title": "VRS Series Oil and Filter Quick Reference",
+        "doc_type": "Field Service",
+        "revision": "unknown",
+        "effective_date": "Mar 21, 2024",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : VRS Series Oil and Filter Quick Reference"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": "Mar 21, 2024"
+        },
+        "header": "VRS Series Oil and Filter Quick Reference | Field Service : VRS Series Oil and Filter Quick Reference",
+        "text_original": "Quick reference for PM visits on the Vastra VRS compressors. I put this together during my apprentice placement in Tacoma so I didn't have to scroll through three manuals in the compressor room with one bar of signal. Values are from the current Vastra service manuals (March 2024). Kenji checked it.\n\nPrint this page and keep it in the van binder. The compressor room at TAC has no signal.",
+        "text_en": "Quick reference for PM visits on the Vastra VRS compressors. I put this together during my apprentice placement in Tacoma so I didn't have to scroll through three manuals in the compressor room with one bar of signal. Values are from the current Vastra service manuals (March 2024). Kenji checked it.\n\nPrint this page and keep it in the van binder. The compressor room at TAC has no signal.",
+        "acl_key": "family-compressors",
+        "cosine": null,
+        "bm25_rank": 19,
+        "vector_rank": null,
+        "rrf": 0.012658227848101266
+      }
+    ]
+  },
+  "judgement": {
+    "key_points": [
+      {
+        "point": "Prior E-14 incidents occurred in March 2026 (case 00041207) and July 2026 (case 00042388)",
+        "verdict": "present",
+        "reason": "The copilot identifies the March 12 case 00041207 and July 2 case 00042388 as prior E-14 occurrences."
+      },
+      {
+        "point": "Both prior incidents had TS-2 readings 11–16 C above a handheld probe",
+        "verdict": "present",
+        "reason": "It reports March TS-2 at 112 C versus 96 C and July TS-2 at 113 C versus 102 C, differences of 16 C and 11 C respectively."
+      },
+      {
+        "point": "TS-2 part 41-2207 was replaced on both prior incidents",
+        "verdict": "present",
+        "reason": "The copilot states that TS-2 part 41-2207 was replaced in March and again in July."
+      },
+      {
+        "point": "Further E-14 auto-restarts were logged on 28 July, 30 August, and 17 September",
+        "verdict": "present",
+        "reason": "It lists further automatic-restart E-14 events on July 28, August 30, and September 17."
+      },
+      {
+        "point": "On firmware below 5.1, a failing TS-2 reports as E-14, making sensor faults likely",
+        "verdict": "present",
+        "reason": "The copilot says SB-2026-003 covers firmware 5.0.3 or earlier, where E-14 cannot distinguish overheating from faulty TS-2, and notes firmware 5.1 separates sensor faults as E-15."
+      },
+      {
+        "point": "The TS-2 harness runs along the freezer exhaust duct, causing repeated sensor failures",
+        "verdict": "present",
+        "reason": "It identifies suspected TS-2 harness heat exposure beside the freezer exhaust duct as the reason for repeated failures."
+      },
+      {
+        "point": "Check TS-2 against a handheld probe and replace it if needed",
+        "verdict": "present",
+        "reason": "The copilot directs comparison of TS-2 with a calibrated contact thermometer and replacement if it is outside tolerance."
+      },
+      {
+        "point": "Update the controller to firmware 5.1",
+        "verdict": "present",
+        "reason": "It explicitly recommends updating to firmware 5.1.0 during the same visit and notes the update remains outstanding."
+      },
+      {
+        "point": "Reroute the TS-2 harness away from the exhaust duct",
+        "verdict": "present",
+        "reason": "It recommends rerouting the harness under the opposite-side cable tray, away from the freezer exhaust duct."
+      }
+    ],
+    "constraints": [],
+    "verdict": "correct"
+  }
+}

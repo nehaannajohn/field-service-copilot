@@ -1,0 +1,80 @@
+{
+  "questions": 10,
+  "correct": 5,
+  "by_verdict": {
+    "partially_correct": 5,
+    "correct": 5
+  },
+  "rows": [
+    {
+      "id": "q01",
+      "user_id": "u01",
+      "verdict": "partially_correct",
+      "status": "answered",
+      "seconds": 67.7
+    },
+    {
+      "id": "q02",
+      "user_id": "u01",
+      "verdict": "partially_correct",
+      "status": "answered",
+      "seconds": 22.0
+    },
+    {
+      "id": "q03",
+      "user_id": "u03",
+      "verdict": "partially_correct",
+      "status": "answered",
+      "seconds": 50.1
+    },
+    {
+      "id": "q04",
+      "user_id": "u04",
+      "verdict": "correct",
+      "status": "answered",
+      "seconds": 65.3
+    },
+    {
+      "id": "q05",
+      "user_id": "u02",
+      "verdict": "correct",
+      "status": "answered",
+      "seconds": 111.0
+    },
+    {
+      "id": "q06",
+      "user_id": "u03",
+      "verdict": "partially_correct",
+      "status": "answered",
+      "seconds": 71.8
+    },
+    {
+      "id": "q07",
+      "user_id": "u12",
+      "verdict": "correct",
+      "status": "no_permitted_source",
+      "seconds": 5.2
+    },
+    {
+      "id": "q08",
+      "user_id": "u03",
+      "verdict": "correct",
+      "status": "answered",
+      "seconds": 82.0
+    },
+    {
+      "id": "q09",
+      "user_id": "u05",
+      "verdict": "partially_correct",
+      "status": "answered",
+      "seconds": 152.1
+    },
+    {
+      "id": "q10",
+      "user_id": "u12",
+      "verdict": "correct",
+      "status": "answered",
+      "seconds": 87.1
+    }
+  ]
+}

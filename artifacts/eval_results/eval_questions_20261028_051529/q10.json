@@ -1,0 +1,1553 @@
+{
+  "question": {
+    "id": "q10",
+    "user_id": "u12",
+    "question": "Just put a new belt on a BX-12 and it keeps tracking left. I've adjusted the take-up a few times. Any known fix?",
+    "reference_answer": "Known Belton issue: return idlers from production lot 23-11 have an off-centre bore, so the belt walks to the drive side. Replace the return idler with revised part 77-0419. Until then, shim the tail pulley bearing on the drive side by 0.5 mm, and re-check tracking after three belt revolutions. It affects BX-12 units built in 2023-2024."
+  },
+  "result": {
+    "question": "Just put a new belt on a BX-12 and it keeps tracking left. I've adjusted the take-up a few times. Any known fix?",
+    "user_id": "u12",
+    "status": "answered",
+    "message": null,
+    "summary": [
+      {
+        "sentence": "Belton identified a known issue on BX-12 machines built in 2023–2024: lot-23-11 return idlers have an off-centre bore that steers a new belt toward the drive side, even if the old belt tracked normally.",
+        "sources": [
+          "S1"
+        ]
+      },
+      {
+        "sentence": "Stop compensating with the take-up if repeated corrections drift back; Rev B says more than two full turns’ difference between the take-up screws indicates another cause.",
+        "sources": [
+          "S2",
+          "S3"
+        ]
+      },
+      {
+        "sentence": "Before inspection, shimming or idler replacement, isolate and personally padlock the BCU-2 isolator—the emergency stop is not isolation—and never run with a guard removed; use the tail-guard access holes for running tracking adjustments.",
+        "sources": [
+          "S5"
+        ]
+      },
+      {
+        "sentence": "Check the return idler nearest the tail, roughly 600 mm from the tail pulley, for its lot stamp on the roller-tube end face opposite the part-number label; the confirmed defective idler was marked 23-11 and 77-0410 and visibly wobbled when spun with the belt slack.",
+        "sources": [
+          "S4",
+          "S3"
+        ]
+      },
+      {
+        "sentence": "Before corrective repair, check applicable OEM bulletins/campaigns and the asset’s last 12 months of history; if the same part was replaced within 90 days, call the team lead before replacing it again.",
+        "sources": [
+          "S13"
+        ]
+      },
+      {
+        "sentence": "For a confirmed defective lot-23-11 idler, the permanent fix is revised return idler 77-0419, with a blue rather than black end cap; Belton’s specific correction supplies the part absent from Rev B and takes precedence over the manual’s listed 77-0410 for this defect.",
+        "sources": [
+          "S1"
+        ]
+      },
+      {
+        "sentence": "Rev B’s replacement procedure is to isolate and lock off, slacken both take-ups two turns each, remove the spring clips and lift out the idler, fully seat the replacement’s hexagonal shaft ends in their slots, refit the clips and verify free, true rotation, then restore both take-ups two turns and check tension and tracking.",
+        "sources": [
+          "S6"
+        ]
+      },
+      {
+        "sentence": "For the confirmed lot-23-11 case, Belton’s temporary fix pending replacement was to equalise the take-ups at the existing measured 0.4% elongation and fit one 0.5 mm stainless shim between the drive-side tail bearing block and take-up slide, moving that end of the tail pulley 0.5 mm toward the tail.",
+        "sources": [
+          "S1"
+        ]
+      },
+      {
+        "sentence": "With that temporary fix, run with guards fitted and check after three complete belt revolutions; if it still walks, stop and call Belton, and when fitting 77-0419, remove the shim, equalise the take-ups and recheck after three revolutions.",
+        "sources": [
+          "S1",
+          "S5"
+        ]
+      },
+      {
+        "sentence": "The 0.4% setting was specific to that confirmed case, not the general new-belt setting: Rev B specifies 0.3% initially, checks after 8 and 50 running hours, retensioning to 0.3–0.5% if needed, and take-up locknuts tightened to 35 Nm.",
+        "sources": [
+          "S7",
+          "S1"
+        ]
+      },
+      {
+        "sentence": "If the defective idler is not confirmed, follow Rev B’s checks in order: compare take-up projections, check frame squareness with diagonals agreeing within 3 mm, inspect pulley residue or wear, check all return idlers for free rotation and squareness, then check belt camber; replace damaged idlers and return a cambered belt to Belton.",
+        "sources": [
+          "S2",
+          "S12"
+        ]
+      },
+      {
+        "sentence": "If tracking still fails after those checks, stop and contact Belton with the serial number, drift direction and turns applied at each take-up.",
+        "sources": [
+          "S2"
+        ]
+      },
+      {
+        "sentence": "C-02 means belt mistrack—the belt edge has remained over S3 or S4 for two seconds—so correct the tracking rather than moving sensors or increasing the delay, and leave U05 at two seconds.",
+        "sources": [
+          "S10",
+          "S11"
+        ]
+      },
+      {
+        "sentence": "A matching precedent is FRS-V-0201, serial BX12-240077: belt replacement on May 6, 2026 (WO 228844) was followed by seven C-02 stops on May 7 (WO 228878), repeated unsuccessful take-up adjustments (WO 228936), and a successful interim fix on May 11 (WO 229144).",
+        "sources": [
+          "S8"
+        ]
+      },
+      {
+        "sentence": "On that asset, WO 229186 records fitting 77-0419 on May 12, 2026, removing the interim fix and equalising the take-ups; tracking passed the three-revolution check and a two-hour run, and Case 00041750 closed with tracking satisfactory.",
+        "sources": [
+          "S9",
+          "S8"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "sentence": "Belton identified a known issue on BX-12 machines built in 2023–2024: lot-23-11 return idlers have an off-centre bore that steers a new belt toward the drive side, even if the old belt tracked normally.",
+        "source": "S1",
+        "chunk_id": "3eb238a3e8c23139",
+        "title": "RE: BX-12 tracking after belt change",
+        "location": "RE: BX-12 tracking after belt change · Henrik Sauer <h.sauer@belton-conveyors.co.uk>, Mon, 11 May 2026 08:14:22 +0000",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Return idlers from production lot 23-11 have an off-centre bore. ... On a belt that's been running a while you often don't see it, because the old belt has taken a set and its edges have worn in. Put a new belt on and it follows the idler. The belt walks to the drive side every time... This affects BX-12 built in 2023 and 2024."
+      },
+      {
+        "sentence": "Stop compensating with the take-up if repeated corrections drift back; Rev B says more than two full turns’ difference between the take-up screws indicates another cause.",
+        "source": "S2",
+        "chunk_id": "06b000796c14a078",
+        "title": "Belton BX-12 O&M Manual Rev B",
+        "location": "p.5 · Section 7 › Belt tracking",
+        "doc_type": "Operation & Maintenance Manual",
+        "revision": "Issue B",
+        "date": "1 October 2024",
+        "status": "Supported",
+        "evidence": "If you need more than two full turns of difference between the left and right take-up screws, the cause is somewhere else and the adjustment is only hiding it."
+      },
+      {
+        "sentence": "Stop compensating with the take-up if repeated corrections drift back; Rev B says more than two full turns’ difference between the take-up screws indicates another cause.",
+        "source": "S3",
+        "chunk_id": "6e9b6e6ddb505443",
+        "title": "RE: BX-12 tracking after belt change",
+        "location": "RE: BX-12 tracking after belt change · Henrik Sauer <h.sauer@belton-conveyors.co.uk>, Friday, May 8, 2026 9:36 AM",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "And please don't adjust the take-up any further for now. Four rounds of adjustment that keep coming back usually means you're correcting something that isn't at the tail"
+      },
+      {
+        "sentence": "Before inspection, shimming or idler replacement, isolate and personally padlock the BCU-2 isolator—the emergency stop is not isolation—and never run with a guard removed; use the tail-guard access holes for running tracking adjustments.",
+        "source": "S5",
+        "chunk_id": "872bc37ca2553d64",
+        "title": "Belton BX-12 O&M Manual Rev B",
+        "location": "p.2 · Section 2 › Safety",
+        "doc_type": "Operation & Maintenance Manual",
+        "revision": "Issue B",
+        "date": "1 October 2024",
+        "status": "Supported",
+        "evidence": "Before any work other than the running adjustments in Sections 6 and 7, isolate the conveyor at the lockable isolator on the BCU-2 and fit your personal padlock. The emergency stop is not an isolator. ... Never run the conveyor with a guard removed. ... The take-up adjusting screws are outside the guarded area and are reached through the two access holes in the tail guard. Do not remove the tail guard to make adjustments."
+      },
+      {
+        "sentence": "Check the return idler nearest the tail, roughly 600 mm from the tail pulley, for its lot stamp on the roller-tube end face opposite the part-number label; the confirmed defective idler was marked 23-11 and 77-0410 and visibly wobbled when spun with the belt slack.",
+        "source": "S4",
+        "chunk_id": "142f7eec1f4b102b",
+        "title": "RE: BX-12 tracking after belt change",
+        "location": "RE: BX-12 tracking after belt change · Olu Adeyemi <o.adeyemi@corvane.com>, 08 May 2026 23:31",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "The lot stamp on the return idler nearest the tail reads 23-11. ... The label on the other end says 77-0410. ... With the belt slack, if you spin that idler by hand it doesn't look perfectly true to me, there's a slight wobble you can see"
+      },
+      {
+        "sentence": "Check the return idler nearest the tail, roughly 600 mm from the tail pulley, for its lot stamp on the roller-tube end face opposite the part-number label; the confirmed defective idler was marked 23-11 and 77-0410 and visibly wobbled when spun with the belt slack.",
+        "source": "S3",
+        "chunk_id": "6e9b6e6ddb505443",
+        "title": "RE: BX-12 tracking after belt change",
+        "location": "RE: BX-12 tracking after belt change · Henrik Sauer <h.sauer@belton-conveyors.co.uk>, Friday, May 8, 2026 9:36 AM",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "And please don't adjust the take-up any further for now. Four rounds of adjustment that keep coming back usually means you're correcting something that isn't at the tail"
+      },
+      {
+        "sentence": "Before corrective repair, check applicable OEM bulletins/campaigns and the asset’s last 12 months of history; if the same part was replaced within 90 days, call the team lead before replacing it again.",
+        "source": "S13",
+        "chunk_id": "72e481e852c2a58a",
+        "title": "FS-STD-001 Field Service Standard",
+        "location": "8. Before starting repairs: bulletins, campaigns and history",
+        "doc_type": "Field Service Standard",
+        "revision": "4",
+        "date": "2026-01-12",
+        "status": "Supported",
+        "evidence": "Before any corrective repair, and before replacing any part, the technician checks:\n\n- Open OEM service bulletins and campaigns for the model and the serial number.\n- The asset history for the last 12 months\n\nIf the same part has already been replaced on the same asset in the last 90 days, do not replace it again without calling the team lead."
+      },
+      {
+        "sentence": "For a confirmed defective lot-23-11 idler, the permanent fix is revised return idler 77-0419, with a blue rather than black end cap; Belton’s specific correction supplies the part absent from Rev B and takes precedence over the manual’s listed 77-0410 for this defect.",
+        "source": "S1",
+        "chunk_id": "3eb238a3e8c23139",
+        "title": "RE: BX-12 tracking after belt change",
+        "location": "RE: BX-12 tracking after belt change · Henrik Sauer <h.sauer@belton-conveyors.co.uk>, Mon, 11 May 2026 08:14:22 +0000",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Return idlers from production lot 23-11 have an off-centre bore. ... On a belt that's been running a while you often don't see it, because the old belt has taken a set and its edges have worn in. Put a new belt on and it follows the idler. The belt walks to the drive side every time... This affects BX-12 built in 2023 and 2024."
+      },
+      {
+        "sentence": "Rev B’s replacement procedure is to isolate and lock off, slacken both take-ups two turns each, remove the spring clips and lift out the idler, fully seat the replacement’s hexagonal shaft ends in their slots, refit the clips and verify free, true rotation, then restore both take-ups two turns and check tension and tracking.",
+        "source": "S6",
+        "chunk_id": "c3c3af14669126e0",
+        "title": "Belton BX-12 O&M Manual Rev B",
+        "location": "p.6 · Section 8 › Belt replacement",
+        "doc_type": "Operation & Maintenance Manual",
+        "revision": "Issue B",
+        "date": "1 October 2024",
+        "status": "Supported",
+        "evidence": "a) Isolate and lock off the BCU-2. Slacken both take-up screws by two turns each to take the weight off the idlers.\nb) Remove the spring clips at both ends of the idler and lift it out of its slots.\nc) Fit the new idler (77-0410). Check that both hexagon shaft ends sit fully down in their slots, and refit the clips.\nd) Spin the idler by hand. It must turn freely and run true.\ne) Re-tension the belt by turning both screws back two turns, then check the tension marks (Section 6) and the tracking (Section 7)."
+      },
+      {
+        "sentence": "For the confirmed lot-23-11 case, Belton’s temporary fix pending replacement was to equalise the take-ups at the existing measured 0.4% elongation and fit one 0.5 mm stainless shim between the drive-side tail bearing block and take-up slide, moving that end of the tail pulley 0.5 mm toward the tail.",
+        "source": "S1",
+        "chunk_id": "3eb238a3e8c23139",
+        "title": "RE: BX-12 tracking after belt change",
+        "location": "RE: BX-12 tracking after belt change · Henrik Sauer <h.sauer@belton-conveyors.co.uk>, Mon, 11 May 2026 08:14:22 +0000",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Return idlers from production lot 23-11 have an off-centre bore. ... On a belt that's been running a while you often don't see it, because the old belt has taken a set and its edges have worn in. Put a new belt on and it follows the idler. The belt walks to the drive side every time... This affects BX-12 built in 2023 and 2024."
+      },
+      {
+        "sentence": "With that temporary fix, run with guards fitted and check after three complete belt revolutions; if it still walks, stop and call Belton, and when fitting 77-0419, remove the shim, equalise the take-ups and recheck after three revolutions.",
+        "source": "S1",
+        "chunk_id": "3eb238a3e8c23139",
+        "title": "RE: BX-12 tracking after belt change",
+        "location": "RE: BX-12 tracking after belt change · Henrik Sauer <h.sauer@belton-conveyors.co.uk>, Mon, 11 May 2026 08:14:22 +0000",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Return idlers from production lot 23-11 have an off-centre bore. ... On a belt that's been running a while you often don't see it, because the old belt has taken a set and its edges have worn in. Put a new belt on and it follows the idler. The belt walks to the drive side every time... This affects BX-12 built in 2023 and 2024."
+      },
+      {
+        "sentence": "With that temporary fix, run with guards fitted and check after three complete belt revolutions; if it still walks, stop and call Belton, and when fitting 77-0419, remove the shim, equalise the take-ups and recheck after three revolutions.",
+        "source": "S5",
+        "chunk_id": "872bc37ca2553d64",
+        "title": "Belton BX-12 O&M Manual Rev B",
+        "location": "p.2 · Section 2 › Safety",
+        "doc_type": "Operation & Maintenance Manual",
+        "revision": "Issue B",
+        "date": "1 October 2024",
+        "status": "Supported",
+        "evidence": "Before any work other than the running adjustments in Sections 6 and 7, isolate the conveyor at the lockable isolator on the BCU-2 and fit your personal padlock. The emergency stop is not an isolator. ... Never run the conveyor with a guard removed. ... The take-up adjusting screws are outside the guarded area and are reached through the two access holes in the tail guard. Do not remove the tail guard to make adjustments."
+      },
+      {
+        "sentence": "The 0.4% setting was specific to that confirmed case, not the general new-belt setting: Rev B specifies 0.3% initially, checks after 8 and 50 running hours, retensioning to 0.3–0.5% if needed, and take-up locknuts tightened to 35 Nm.",
+        "source": "S7",
+        "chunk_id": "e908a2a6fe73171f",
+        "title": "Belton BX-12 O&M Manual Rev B",
+        "location": "p.4 · Section 6 › Belt tensioning",
+        "doc_type": "Operation & Maintenance Manual",
+        "revision": "Issue B",
+        "date": "1 October 2024",
+        "status": "Supported",
+        "evidence": "Set a new belt to 0.3 %. A new belt relaxes during running-in. Check the marks again after 8 hours and 50 hours of running and re-tension to 0.3 - 0.5 % if needed. ... Tighten the take-up lock nuts to 35 Nm."
+      },
+      {
+        "sentence": "The 0.4% setting was specific to that confirmed case, not the general new-belt setting: Rev B specifies 0.3% initially, checks after 8 and 50 running hours, retensioning to 0.3–0.5% if needed, and take-up locknuts tightened to 35 Nm.",
+        "source": "S1",
+        "chunk_id": "3eb238a3e8c23139",
+        "title": "RE: BX-12 tracking after belt change",
+        "location": "RE: BX-12 tracking after belt change · Henrik Sauer <h.sauer@belton-conveyors.co.uk>, Mon, 11 May 2026 08:14:22 +0000",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Return idlers from production lot 23-11 have an off-centre bore. ... On a belt that's been running a while you often don't see it, because the old belt has taken a set and its edges have worn in. Put a new belt on and it follows the idler. The belt walks to the drive side every time... This affects BX-12 built in 2023 and 2024."
+      },
+      {
+        "sentence": "If the defective idler is not confirmed, follow Rev B’s checks in order: compare take-up projections, check frame squareness with diagonals agreeing within 3 mm, inspect pulley residue or wear, check all return idlers for free rotation and squareness, then check belt camber; replace damaged idlers and return a cambered belt to Belton.",
+        "source": "S2",
+        "chunk_id": "06b000796c14a078",
+        "title": "Belton BX-12 O&M Manual Rev B",
+        "location": "p.5 · Section 7 › Belt tracking",
+        "doc_type": "Operation & Maintenance Manual",
+        "revision": "Issue B",
+        "date": "1 October 2024",
+        "status": "Supported",
+        "evidence": "If you need more than two full turns of difference between the left and right take-up screws, the cause is somewhere else and the adjustment is only hiding it."
+      },
+      {
+        "sentence": "If the defective idler is not confirmed, follow Rev B’s checks in order: compare take-up projections, check frame squareness with diagonals agreeing within 3 mm, inspect pulley residue or wear, check all return idlers for free rotation and squareness, then check belt camber; replace damaged idlers and return a cambered belt to Belton.",
+        "source": "S12",
+        "chunk_id": "030eaef3e306b86b",
+        "title": "Belton BX-12 O&M Manual Rev B",
+        "location": "p.3 · Section 4 › Installation and commissioning",
+        "doc_type": "Operation & Maintenance Manual",
+        "revision": "Issue B",
+        "date": "1 October 2024",
+        "status": "Supported",
+        "evidence": "Measure the two diagonals of the frame between the centres of the drive and tail pulley bearings. They must agree within 3 mm."
+      },
+      {
+        "sentence": "If tracking still fails after those checks, stop and contact Belton with the serial number, drift direction and turns applied at each take-up.",
+        "source": "S2",
+        "chunk_id": "06b000796c14a078",
+        "title": "Belton BX-12 O&M Manual Rev B",
+        "location": "p.5 · Section 7 › Belt tracking",
+        "doc_type": "Operation & Maintenance Manual",
+        "revision": "Issue B",
+        "date": "1 October 2024",
+        "status": "Supported",
+        "evidence": "If you need more than two full turns of difference between the left and right take-up screws, the cause is somewhere else and the adjustment is only hiding it."
+      },
+      {
+        "sentence": "C-02 means belt mistrack—the belt edge has remained over S3 or S4 for two seconds—so correct the tracking rather than moving sensors or increasing the delay, and leave U05 at two seconds.",
+        "source": "S10",
+        "chunk_id": "a1a0a69d59a84f4b",
+        "title": "Belton BX-12 O&M Manual Rev B",
+        "location": "p.4 · Section 5 › The control unit",
+        "doc_type": "Operation & Maintenance Manual",
+        "revision": "Issue B",
+        "date": "1 October 2024",
+        "status": "Supported",
+        "evidence": "The edge sensors S3 and S4 stop the conveyor if the belt edge stays over a sensor for 2 seconds (fault C-02). They are a protection, not a tracking aid: a belt that keeps tripping C-02 needs tracking, not a sensor adjustment. ... U05 | Edge sensor delay (C-02) | 1-5 s | 2 s ... Leave it at 2 s and track the belt."
+      },
+      {
+        "sentence": "C-02 means belt mistrack—the belt edge has remained over S3 or S4 for two seconds—so correct the tracking rather than moving sensors or increasing the delay, and leave U05 at two seconds.",
+        "source": "S11",
+        "chunk_id": "98f41ec6e26d0c20",
+        "title": "Belton BX-12 O&M Manual Rev B",
+        "location": "p.7 · Section 10 › Fault finding",
+        "doc_type": "Operation & Maintenance Manual",
+        "revision": "Issue B",
+        "date": "1 October 2024",
+        "status": "Supported",
+        "evidence": "C-02 | Belt mistrack | Belt edge over S3 (left) or S4 (right) for 2 s | Track the belt (7). Do not move the sensors."
+      },
+      {
+        "sentence": "A matching precedent is FRS-V-0201, serial BX12-240077: belt replacement on May 6, 2026 (WO 228844) was followed by seven C-02 stops on May 7 (WO 228878), repeated unsuccessful take-up adjustments (WO 228936), and a successful interim fix on May 11 (WO 229144).",
+        "source": "S8",
+        "chunk_id": "47b58eb7e1cde216",
+        "title": "MaintPro history NA",
+        "location": "228844 · OADEYEMI, 05/06/2026",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "WO_No: 228844\nDate: 05/06/2026\nAsset: FRS-V-0201\nSerial: BX12-240077\nNotes: belt replaced ...\n\nWO_No: 228878\nDate: 05/07/2026\nFault: C-02\nNotes: 7x C-02 stops on 2nd shift per cust.\n\nWO_No: 228936\nNotes: ... adj take-up 4 times, keeps coming back.\n\nWO_No: 229144\nDate: 05/11/2026\nNotes: interim fix per Belton email applied, tracking holding at full speed."
+      },
+      {
+        "sentence": "On that asset, WO 229186 records fitting 77-0419 on May 12, 2026, removing the interim fix and equalising the take-ups; tracking passed the three-revolution check and a two-hour run, and Case 00041750 closed with tracking satisfactory.",
+        "source": "S9",
+        "chunk_id": "6203fc05fb2be961",
+        "title": "Salesforce cases NA",
+        "location": "5008d00000rRaMW446 · 2026-05-08T15:05:00.000+0000",
+        "doc_type": "Salesforce Case export",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "CaseNumber: 00041750\nStatus: Closed\n... Parts_Used__c: 77-0419 x1\n... CommentBody: new idler fitted, tracking ok after 2h at full speed. closing"
+      },
+      {
+        "sentence": "On that asset, WO 229186 records fitting 77-0419 on May 12, 2026, removing the interim fix and equalising the take-ups; tracking passed the three-revolution check and a two-hour run, and Case 00041750 closed with tracking satisfactory.",
+        "source": "S8",
+        "chunk_id": "47b58eb7e1cde216",
+        "title": "MaintPro history NA",
+        "location": "228844 · OADEYEMI, 05/06/2026",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "WO_No: 228844\nDate: 05/06/2026\nAsset: FRS-V-0201\nSerial: BX12-240077\nNotes: belt replaced ...\n\nWO_No: 228878\nDate: 05/07/2026\nFault: C-02\nNotes: 7x C-02 stops on 2nd shift per cust.\n\nWO_No: 228936\nNotes: ... adj take-up 4 times, keeps coming back.\n\nWO_No: 229144\nDate: 05/11/2026\nNotes: interim fix per Belton email applied, tracking holding at full speed."
+      }
+    ],
+    "dropped_claims": [],
+    "work_order": {
+      "asset_id": null,
+      "fault_code": "C-02",
+      "summary": "New BX-12 belt tracks left; inspect for a defective lot 23-11 return idler and, if confirmed, replace it with revised idler 77-0419.",
+      "work_steps": [
+        "Stop further compensating take-up adjustments when repeated corrections drift back; more than two full turns’ difference between take-up screws indicates another cause.",
+        "Before inspection or repair, isolate and personally padlock the BCU-2 isolator; do not use the emergency stop as isolation. Keep guards fitted for any running tracking check.",
+        "Inspect the return idler nearest the tail, approximately 600 mm from the tail pulley, for lot stamp 23-11 and part marking 77-0410; check for wobble with the belt slack.",
+        "If lot 23-11 defective idler is confirmed, replace it with revised return idler 77-0419 (blue end cap) in accordance with Rev B idler-replacement procedure.",
+        "Following 77-0419 installation, remove any interim shim, equalise the take-ups, and verify tracking with guards fitted after three complete belt revolutions.",
+        "If the defective idler is not confirmed, perform the Rev B tracking checks in order, including take-up projection, frame squareness, pulley condition, return-idler rotation/squareness, and belt camber.",
+        "If tracking remains unsatisfactory, stop and contact Belton with the serial number, drift direction, and turns applied at each take-up; check applicable OEM bulletins/campaigns and the previous 12 months of asset history before corrective repair."
+      ],
+      "parts": [
+        {
+          "part_number": "77-0419",
+          "qty": null
+        }
+      ],
+      "certification_required": [
+        "None"
+      ],
+      "estimated_duration_h": null,
+      "priority": null,
+      "campaign_code": null,
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S12",
+        "S13"
+      ],
+      "requested_by": "u12",
+      "reason": "parts"
+    },
+    "trace": {
+      "events": [
+        {
+          "stage": "retrieve",
+          "inputs": {
+            "question": "Just put a new belt on a BX-12 and it keeps tracking left. I've adjusted the take-up a few times. Any known fix?",
+            "user_id": "u12"
+          },
+          "outputs": {
+            "chunks": [
+              [
+                "57d3bc8f185f832f",
+                "RE: BX-12 tracking after belt change",
+                "RE: BX-12 tracking after belt change | BX-12 tracking after belt change"
+              ],
+              [
+                "e908a2a6fe73171f",
+                "Belton BX-12 O&M Manual Rev B",
+                "Belton BX-12 O&M Manual Rev B | Issue B | Section 6 › Belt tensioning"
+              ],
+              [
+                "06b000796c14a078",
+                "Belton BX-12 O&M Manual Rev B",
+                "Belton BX-12 O&M Manual Rev B | Issue B | Section 7 › Belt tracking"
+              ],
+              [
+                "3eb238a3e8c23139",
+                "RE: BX-12 tracking after belt change",
+                "RE: BX-12 tracking after belt change | RE: BX-12 tracking after belt change"
+              ],
+              [
+                "142f7eec1f4b102b",
+                "RE: BX-12 tracking after belt change",
+                "RE: BX-12 tracking after belt change | RE: BX-12 tracking after belt change"
+              ],
+              [
+                "6e9b6e6ddb505443",
+                "RE: BX-12 tracking after belt change",
+                "RE: BX-12 tracking after belt change | RE: BX-12 tracking after belt change"
+              ],
+              [
+                "c3c3af14669126e0",
+                "Belton BX-12 O&M Manual Rev B",
+                "Belton BX-12 O&M Manual Rev B | Issue B | Section 8 › Belt replacement"
+              ],
+              [
+                "9efba3a5897f3000",
+                "Belton BX-12 O&M Manual Rev B",
+                "Belton BX-12 O&M Manual Rev B | Issue B | Section 9 › Maintenance"
+              ],
+              [
+                "030eaef3e306b86b",
+                "Belton BX-12 O&M Manual Rev B",
+                "Belton BX-12 O&M Manual Rev B | Issue B | Section 4 › Installation and commissioning"
+              ],
+              [
+                "6203fc05fb2be961",
+                "Salesforce cases NA",
+                "Salesforce cases NA | 5008d00000rRaMW446"
+              ],
+              [
+                "47b58eb7e1cde216",
+                "MaintPro history NA",
+                "MaintPro history NA | 228844"
+              ],
+              [
+                "2564043270116d44",
+                "Belton BX-12 O&M Manual Rev B",
+                "Belton BX-12 O&M Manual Rev B | Issue B | Section 1 › About this manual"
+              ],
+              [
+                "872bc37ca2553d64",
+                "Belton BX-12 O&M Manual Rev B",
+                "Belton BX-12 O&M Manual Rev B | Issue B | Section 2 › Safety"
+              ],
+              [
+                "a1a0a69d59a84f4b",
+                "Belton BX-12 O&M Manual Rev B",
+                "Belton BX-12 O&M Manual Rev B | Issue B | Section 5 › The control unit"
+              ],
+              [
+                "9ad0c8ad5318e73e",
+                "Belton BX-12 O&M Manual Rev B",
+                "Belton BX-12 O&M Manual Rev B | Issue B | Section 14 › Storage and disposal"
+              ],
+              [
+                "98f41ec6e26d0c20",
+                "Belton BX-12 O&M Manual Rev B",
+                "Belton BX-12 O&M Manual Rev B | Issue B | Section 10 › Fault finding"
+              ],
+              [
+                "1197f26fdb237056",
+                "Belton BX-12 O&M Manual Rev B",
+                "Belton BX-12 O&M Manual Rev B | Issue B | Section 3 › Specification"
+              ],
+              [
+                "325306e5887277b9",
+                "Belton BX-12 O&M Manual Rev B",
+                "Belton BX-12 O&M Manual Rev B | Issue B | Commissioning record"
+              ],
+              [
+                "77db146507f3252c",
+                "Belton BX-12 O&M Manual Rev B",
+                "Belton BX-12 O&M Manual Rev B | Issue B | Section 12 › Warranty"
+              ],
+              [
+                "ad47022d016106b0",
+                "Belton BX-12 O&M Manual Rev B",
+                "Belton BX-12 O&M Manual Rev B | Issue B | Section 11 › Spare parts"
+              ],
+              [
+                "8ae3b837143800e5",
+                "MaintPro history NA",
+                "MaintPro history NA | 227381"
+              ],
+              [
+                "e8efc8aecf1d8206",
+                "Salesforce cases NA",
+                "Salesforce cases NA | 5008d000000SWHQmRj"
+              ],
+              [
+                "ecb21a80984e0231",
+                "FS-STD-001 Field Service Standard",
+                "FS-STD-001 Field Service Standard | 4 | 6. Work order lifecycle"
+              ],
+              [
+                "69c9066e9be06e4f",
+                "Work Order Writing Guide",
+                "Work Order Writing Guide | Field Service: Work Order Writing Guide › Comments"
+              ],
+              [
+                "8445dffc63c2c2c7",
+                "Belton BX-12 O&M Manual Rev B",
+                "Belton BX-12 O&M Manual Rev B | Issue B | Cover"
+              ],
+              [
+                "72e481e852c2a58a",
+                "FS-STD-001 Field Service Standard",
+                "FS-STD-001 Field Service Standard | 4 | 8. Before starting repairs: bulletins, campaigns and history"
+              ],
+              [
+                "802d4f0b70f61bfe",
+                "Tacoma Site Notes",
+                "Tacoma Site Notes | Field Service › Field Service Home › Sites › North America › Field Service : Tacoma Site Notes › Practical stuff"
+              ],
+              [
+                "327ad97468d7e01a",
+                "Work Order Writing Guide",
+                "Work Order Writing Guide | Field Service: Work Order Writing Guide › Why this matters"
+              ],
+              [
+                "5aac90f51ff0d2d9",
+                "Belton BX-12 O&M Manual Rev B",
+                "Belton BX-12 O&M Manual Rev B | Issue B | Maintenance log"
+              ],
+              [
+                "189e841d996aa6a6",
+                "Work Order Writing Guide",
+                "Work Order Writing Guide | Field Service: Work Order Writing Guide › Required fields"
+              ]
+            ]
+          },
+          "seconds": 0.548
+        },
+        {
+          "stage": "claims",
+          "inputs": {},
+          "outputs": {
+            "status": "answered",
+            "claims": [
+              {
+                "id": "c1",
+                "text": "Yes—Belton identified a known BX-12 issue on machines built in 2023–2024: return idlers from lot 23-11 have an off-centre bore that steers a new belt toward the drive side, although the old belt may have tracked normally.",
+                "citations": [
+                  "3eb238a3e8c23139"
+                ]
+              },
+              {
+                "id": "c2",
+                "text": "Do not keep compensating with the take-up: Belton advised stopping further adjustment when repeated corrections drift back, and Rev B says more than two full turns of difference between the take-up screws indicates another cause.",
+                "citations": [
+                  "6e9b6e6ddb505443",
+                  "06b000796c14a078"
+                ]
+              },
+              {
+                "id": "c3",
+                "text": "Check the return idler nearest the tail, roughly 600 mm in from the tail pulley; its lot stamp is on the roller-tube end face opposite the part-number label. In the confirmed case, this idler was marked 23-11 and 77-0410 and visibly wobbled when spun with the belt slack.",
+                "citations": [
+                  "6e9b6e6ddb505443",
+                  "142f7eec1f4b102b"
+                ]
+              },
+              {
+                "id": "c4",
+                "text": "Before inspection, shimming or idler replacement, isolate and personally padlock the BCU-2 isolator; the emergency stop is not isolation. Never run with a guard removed; running tracking adjustments use the access holes in the tail guard.",
+                "citations": [
+                  "872bc37ca2553d64"
+                ]
+              },
+              {
+                "id": "c5",
+                "text": "For a confirmed defective lot-23-11 idler, the permanent fix is revised return idler 77-0419, identified by a blue rather than black end cap. Belton's specific correction supplies the part absent from Rev B; use it instead of the manual's listed 77-0410 for this defect.",
+                "citations": [
+                  "3eb238a3e8c23139",
+                  "c3c3af14669126e0"
+                ]
+              },
+              {
+                "id": "c6",
+                "text": "Rev B's idler replacement procedure is to isolate and lock off, slacken both take-ups two turns each, remove the spring clips and lift out the idler, seat the replacement's hexagonal shaft ends fully in their slots, refit the clips, and verify free, true rotation; then restore both take-ups two turns and check tension and tracking.",
+                "citations": [
+                  "c3c3af14669126e0"
+                ]
+              },
+              {
+                "id": "c7",
+                "text": "For the confirmed lot-23-11 case, Belton's temporary fix pending the replacement was to equalise the take-ups at the existing measured 0.4% elongation, then place one 0.5 mm stainless shim behind the drive-side tail bearing block, between the block and take-up slide, moving that end of the tail pulley 0.5 mm toward the tail.",
+                "citations": [
+                  "3eb238a3e8c23139"
+                ]
+              },
+              {
+                "id": "c8",
+                "text": "For that temporary fix, run with guards fitted and check after three complete belt revolutions; if it still walks, stop and call Belton. When fitting 77-0419, remove the shim, equalise the take-ups and recheck after three revolutions.",
+                "citations": [
+                  "3eb238a3e8c23139",
+                  "872bc37ca2553d64"
+                ]
+              },
+              {
+                "id": "c9",
+                "text": "The 0.4% setting was Belton's instruction for that confirmed case, not the general new-belt setting: Rev B specifies 0.3% initially for a new belt, with checks after 8 and 50 running hours and retensioning to 0.3–0.5% if needed; the take-up locknuts are tightened to 35 Nm.",
+                "citations": [
+                  "3eb238a3e8c23139",
+                  "e908a2a6fe73171f"
+                ]
+              },
+              {
+                "id": "c10",
+                "text": "A matching precedent is FRS-V-0201, serial BX12-240077: belt replacement on May 6, 2026 (WO 228844) was followed by seven C-02 stops on May 7 (WO 228878), repeated unsuccessful take-up adjustments (WO 228936), and a successful interim fix on May 11 (WO 229144).",
+                "citations": [
+                  "47b58eb7e1cde216"
+                ]
+              },
+              {
+                "id": "c11",
+                "text": "On that asset, WO 229186 records fitting 77-0419 on May 12, 2026, removing the interim fix and equalising the take-ups; tracking passed the three-revolution check and a two-hour run. Case 00041750 then closed with tracking satisfactory.",
+                "citations": [
+                  "47b58eb7e1cde216",
+                  "6203fc05fb2be961"
+                ]
+              },
+              {
+                "id": "c12",
+                "text": "C-02 means belt mistrack: the belt edge has remained over S3 or S4 for two seconds. Correct the tracking rather than moving the sensors or increasing the delay; leave U05 at two seconds.",
+                "citations": [
+                  "98f41ec6e26d0c20",
+                  "a1a0a69d59a84f4b"
+                ]
+              },
+              {
+                "id": "c13",
+                "text": "If the defective idler is not confirmed, follow Rev B's checks in order: compare take-up projections, check frame squareness, inspect pulley residue or wear, check all return idlers for free rotation and squareness, then check belt camber. Frame diagonals must agree within 3 mm; replace damaged idlers and return a cambered belt to Belton.",
+                "citations": [
+                  "06b000796c14a078",
+                  "030eaef3e306b86b"
+                ]
+              },
+              {
+                "id": "c14",
+                "text": "If tracking still fails after those checks, stop and contact Belton with the serial number, drift direction and turns applied at each take-up. Before corrective repair, check applicable OEM bulletins/campaigns and the asset's last 12 months of history; if the same part was replaced within 90 days, call the team lead before replacing it again.",
+                "citations": [
+                  "06b000796c14a078",
+                  "72e481e852c2a58a"
+                ]
+              }
+            ],
+            "work_order_needed": true,
+            "work_order_reason": "parts"
+          },
+          "seconds": 22.645
+        },
+        {
+          "stage": "verify",
+          "inputs": {},
+          "outputs": {
+            "c1": "supported",
+            "c2": "supported",
+            "c3": "supported",
+            "c4": "supported",
+            "c5": "supported",
+            "c6": "supported",
+            "c7": "supported",
+            "c8": "supported",
+            "c9": "supported",
+            "c10": "supported",
+            "c11": "supported",
+            "c12": "supported",
+            "c13": "supported",
+            "c14": "supported"
+          },
+          "seconds": 38.499
+        },
+        {
+          "stage": "compose",
+          "inputs": {},
+          "outputs": {
+            "sentences": 15
+          },
+          "seconds": 11.506
+        },
+        {
+          "stage": "work_order",
+          "inputs": {},
+          "outputs": {
+            "drafted": true
+          },
+          "seconds": 9.725
+        }
+      ]
+    },
+    "retrieved": [
+      {
+        "chunk_id": "57d3bc8f185f832f",
+        "doc_path": "corpus/email/RE_BX-12_tracking_after_belt_change.eml",
+        "doc_title": "RE: BX-12 tracking after belt change",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "BX-12 tracking after belt change"
+          ],
+          "record_id": null,
+          "sender": "Olu Adeyemi <o.adeyemi@corvane.com>",
+          "date": "08 May 2026 15:52"
+        },
+        "header": "RE: BX-12 tracking after belt change | BX-12 tracking after belt change",
+        "text_original": "Hi Henrik,\n\nBelton support in Leeds gave me your name and said you're the FAE who covers the BX range for North American customers. They've logged it on their side too, but said email would get to you faster. Apologies if it should have gone through the ticket.\n\nWe service a BX-12 at Sierra Springs Beverage in Fresno, California: asset FRS-V-0201, serial BX12-240077, commissioned March 2024. It's the case conveyor feeding the shrink wrapper on line 2. On Wednesday (May 6) Tom Becker and I replaced the belt. The old one had a torn edge next to the splice. The new belt is your 77-1012, 600 mm PU food grade, bought through your US distributor, fitted per the belt replacement section of the Rev B manual, direction of travel checked against the arrow on the belt.\n\nSince then the belt runs left. Looking downstream toward the wrapper, left is the motor side. It isn't dramatic at first. Over 20 to 30 minutes it creeps over until the edge sensor trips C-02 and the line stops. Yesterday they had seven C-02 stops on one shift, and the plant noticed.\n\nWhat we've done so far:\n- Tracking adjustment per the manual, on the tail take-up. I've adjusted it four times now. Each time it runs centred for a while and then drifts back left. The two take-up screws are now a long way from even, which can't be right.\n- Belt tension checked with the elongation method, marks 1,000 mm apart: 0.4%, which is inside the range in the manual. I didn't want to go tighter.\n- Frame checked for square, diagonals within 2 mm of each other.\n- Drive and tail pulleys clean, no product build-up, lagging on the drive pulley is fine.\n- The sister conveyor next to it, FRS-V-0202 (BX12-240078), still has its original belt and tracks fine.\n\nThe old belt ran centred for two years on this frame, so I don't think the frame has moved. Is there anything known about new belts on the BX-12? I'd rather not keep cranking the take-up. The customer wants it right before their Monday run, they have a promotional pack going through next week.\n\nOur reference is Corvane case 00041750 if you need one.\n\nThanks,\nOlu",
+        "text_en": "Hi Henrik,\n\nBelton support in Leeds gave me your name and said you're the FAE who covers the BX range for North American customers. They've logged it on their side too, but said email would get to you faster. Apologies if it should have gone through the ticket.\n\nWe service a BX-12 at Sierra Springs Beverage in Fresno, California: asset FRS-V-0201, serial BX12-240077, commissioned March 2024. It's the case conveyor feeding the shrink wrapper on line 2. On Wednesday (May 6) Tom Becker and I replaced the belt. The old one had a torn edge next to the splice. The new belt is your 77-1012, 600 mm PU food grade, bought through your US distributor, fitted per the belt replacement section of the Rev B manual, direction of travel checked against the arrow on the belt.\n\nSince then the belt runs left. Looking downstream toward the wrapper, left is the motor side. It isn't dramatic at first. Over 20 to 30 minutes it creeps over until the edge sensor trips C-02 and the line stops. Yesterday they had seven C-02 stops on one shift, and the plant noticed.\n\nWhat we've done so far:\n- Tracking adjustment per the manual, on the tail take-up. I've adjusted it four times now. Each time it runs centred for a while and then drifts back left. The two take-up screws are now a long way from even, which can't be right.\n- Belt tension checked with the elongation method, marks 1,000 mm apart: 0.4%, which is inside the range in the manual. I didn't want to go tighter.\n- Frame checked for square, diagonals within 2 mm of each other.\n- Drive and tail pulleys clean, no product build-up, lagging on the drive pulley is fine.\n- The sister conveyor next to it, FRS-V-0202 (BX12-240078), still has its original belt and tracks fine.\n\nThe old belt ran centred for two years on this frame, so I don't think the frame has moved. Is there anything known about new belts on the BX-12? I'd rather not keep cranking the take-up. The customer wants it right before their Monday run, they have a promotional pack going through next week.\n\nOur reference is Corvane case 00041750 if you need one.\n\nThanks,\nOlu",
+        "acl_key": "family-conveyors",
+        "cosine": 0.6471254229545593,
+        "bm25_rank": 1,
+        "vector_rank": 2,
+        "rrf": 0.03252247488101534
+      },
+      {
+        "chunk_id": "e908a2a6fe73171f",
+        "doc_path": "corpus/manuals/Belton_BX-12_OM_Manual_RevB.pdf",
+        "doc_title": "Belton BX-12 O&M Manual Rev B",
+        "doc_type": "Operation & Maintenance Manual",
+        "revision": "Issue B",
+        "effective_date": "1 October 2024",
+        "locator": {
+          "page": 4,
+          "section_path": [
+            "Section 6",
+            "Belt tensioning"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Belton BX-12 O&M Manual Rev B | Issue B | Section 6 › Belt tensioning",
+        "text_original": "6.1 The belt needs just enough tension to drive without slipping. Too little and the belt slips on the drive pulley (fault C-03). Too much and it overloads the pulley bearings, stretches the belt and makes tracking harder, not easier.\n\n6.2 Elongation method\nBelton specifies tension as elongation of the belt: 0.3 - 0.5 % of its relaxed length. Measure it like this:\na) Isolate the conveyor. Slacken both take-up screws until the belt is just slack.\nb) On the top run near the middle of the conveyor, mark two fine lines across the belt exactly 1000 mm apart.\nc) Tighten the left and right take-up screws equally, counting the turns, until the marks are 1003 mm to 1005 mm apart (0.3 - 0.5 %).\nd) Tighten the take-up lock nuts to 35 Nm.\ne) Run the belt and check the tracking (Section 7).\n\n6.3 New belts\nSet a new belt to 0.3 %. A new belt relaxes during running-in. Check the marks again after 8 hours and 50 hours of running and re-tension to 0.3 - 0.5 % if needed. Always turn both screws by the same amount, or you will change the tracking as well as the tension.",
+        "text_en": "6.1 The belt needs just enough tension to drive without slipping. Too little and the belt slips on the drive pulley (fault C-03). Too much and it overloads the pulley bearings, stretches the belt and makes tracking harder, not easier.\n\n6.2 Elongation method\nBelton specifies tension as elongation of the belt: 0.3 - 0.5 % of its relaxed length. Measure it like this:\na) Isolate the conveyor. Slacken both take-up screws until the belt is just slack.\nb) On the top run near the middle of the conveyor, mark two fine lines across the belt exactly 1000 mm apart.\nc) Tighten the left and right take-up screws equally, counting the turns, until the marks are 1003 mm to 1005 mm apart (0.3 - 0.5 %).\nd) Tighten the take-up lock nuts to 35 Nm.\ne) Run the belt and check the tracking (Section 7).\n\n6.3 New belts\nSet a new belt to 0.3 %. A new belt relaxes during running-in. Check the marks again after 8 hours and 50 hours of running and re-tension to 0.3 - 0.5 % if needed. Always turn both screws by the same amount, or you will change the tracking as well as the tension.",
+        "acl_key": "family-conveyors",
+        "cosine": 0.5926496386528015,
+        "bm25_rank": 4,
+        "vector_rank": 3,
+        "rrf": 0.03149801587301587
+      },
+      {
+        "chunk_id": "06b000796c14a078",
+        "doc_path": "corpus/manuals/Belton_BX-12_OM_Manual_RevB.pdf",
+        "doc_title": "Belton BX-12 O&M Manual Rev B",
+        "doc_type": "Operation & Maintenance Manual",
+        "revision": "Issue B",
+        "effective_date": "1 October 2024",
+        "locator": {
+          "page": 5,
+          "section_path": [
+            "Section 7",
+            "Belt tracking"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Belton BX-12 O&M Manual Rev B | Issue B | Section 7 › Belt tracking",
+        "text_original": "7.1 How tracking works\nA belt moves towards the end of a pulley or roller that it touches first. The crowned drive and tail pulleys pull the belt towards their centre, but only if the frame is square, the pulleys are square to the frame and every roller the belt touches is free and square. Tracking on the BX-12 is adjusted at the tail pulley only. Do not move the drive pulley; it is squared at the factory.\n\nFigure 7-1 Tail end seen from the infeed. Belt running to the left: tighten the LEFT take-up (or slacken the right). Belt running to the right: tighten the RIGHT take-up.\n\n7.2 Procedure\nRun the belt empty at the normal speed. Watch the belt at the tail pulley for at least three full revolutions of the belt before deciding which way it is going.\na) If the belt runs off to the left, tighten the left-hand take-up screw a quarter of a turn, or slacken the right-hand screw a quarter of a turn. If it runs to the right, do the opposite.\nb) Wait for three revolutions of the belt. The belt reacts slowly; impatience is the commonest cause of over-correction.\nc) Repeat in quarter turns until the belt runs centrally at the tail and at the drive.\nd) Load the belt with typical product and check again.\ne) Re-check the tension (Section 6). Tracking adjustments change it slightly.\n\nNOTE\nMake small adjustments only. If you need more than two full turns of difference between the left and right take-up screws, the cause is somewhere else and the adjustment is only hiding it.\n\n7.3 If the belt will not track\nBelts that track badly after a belt change usually have one of these causes. Check them in this order:\na) Take-ups not equal. Compare the left and right screw projections with a rule.\nb) Frame out of square (4.2), often after the conveyor has been moved or a leg has been knocked.\nc) Product residue or wear on the pulley faces. Clean with warm water; never use solvent on the lagging.\nd) Return idlers. Spin each idler by hand. A tight, seized or bent idler, or one not square to the frame, steers the belt. Replace damaged idlers (77-0410).\ne) The belt itself. Lay the old and new belts flat and compare the edges with a straight edge. A belt that is not straight (cambered) will never track; return it to Belton.\n\n7.4 If the belt still tracks to one side after these checks, stop and call Belton Technical Support with the serial number, the direction of tracking, and the turns already applied at each take-up.",
+        "text_en": "7.1 How tracking works\nA belt moves towards the end of a pulley or roller that it touches first. The crowned drive and tail pulleys pull the belt towards their centre, but only if the frame is square, the pulleys are square to the frame and every roller the belt touches is free and square. Tracking on the BX-12 is adjusted at the tail pulley only. Do not move the drive pulley; it is squared at the factory.\n\nFigure 7-1 Tail end seen from the infeed. Belt running to the left: tighten the LEFT take-up (or slacken the right). Belt running to the right: tighten the RIGHT take-up.\n\n7.2 Procedure\nRun the belt empty at the normal speed. Watch the belt at the tail pulley for at least three full revolutions of the belt before deciding which way it is going.\na) If the belt runs off to the left, tighten the left-hand take-up screw a quarter of a turn, or slacken the right-hand screw a quarter of a turn. If it runs to the right, do the opposite.\nb) Wait for three revolutions of the belt. The belt reacts slowly; impatience is the commonest cause of over-correction.\nc) Repeat in quarter turns until the belt runs centrally at the tail and at the drive.\nd) Load the belt with typical product and check again.\ne) Re-check the tension (Section 6). Tracking adjustments change it slightly.\n\nNOTE\nMake small adjustments only. If you need more than two full turns of difference between the left and right take-up screws, the cause is somewhere else and the adjustment is only hiding it.\n\n7.3 If the belt will not track\nBelts that track badly after a belt change usually have one of these causes. Check them in this order:\na) Take-ups not equal. Compare the left and right screw projections with a rule.\nb) Frame out of square (4.2), often after the conveyor has been moved or a leg has been knocked.\nc) Product residue or wear on the pulley faces. Clean with warm water; never use solvent on the lagging.\nd) Return idlers. Spin each idler by hand. A tight, seized or bent idler, or one not square to the frame, steers the belt. Replace damaged idlers (77-0410).\ne) The belt itself. Lay the old and new belts flat and compare the edges with a straight edge. A belt that is not straight (cambered) will never track; return it to Belton.\n\n7.4 If the belt still tracks to one side after these checks, stop and call Belton Technical Support with the serial number, the direction of tracking, and the turns already applied at each take-up.",
+        "acl_key": "family-conveyors",
+        "cosine": 0.7089397311210632,
+        "bm25_rank": 7,
+        "vector_rank": 1,
+        "rrf": 0.03131881575727918
+      },
+      {
+        "chunk_id": "3eb238a3e8c23139",
+        "doc_path": "corpus/email/RE_BX-12_tracking_after_belt_change.eml",
+        "doc_title": "RE: BX-12 tracking after belt change",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "RE: BX-12 tracking after belt change"
+          ],
+          "record_id": null,
+          "sender": "Henrik Sauer <h.sauer@belton-conveyors.co.uk>",
+          "date": "Mon, 11 May 2026 08:14:22 +0000"
+        },
+        "header": "RE: BX-12 tracking after belt change | RE: BX-12 tracking after belt change",
+        "text_original": "Morning Olu, Tom,\n\nThanks for the photos and the lot number, that confirms it. And the wobble you saw is real, it's not your eyes.\n\nReturn idlers from production lot 23-11 have an off-centre bore. It was a machining problem at our roller supplier. We caught it in early 2025, but by then the lot had gone out on new machines and as spares. The roller runs very slightly eccentric, which is enough to steer the return side of the belt. On a belt that's been running a while you often don't see it, because the old belt has taken a set and its edges have worn in. Put a new belt on and it follows the idler. The belt walks to the drive side every time, which is exactly what you've got.\n\nThe fix is to replace that return idler with the revised part, 77-0419. Same roller, corrected bore, and it has a blue end cap instead of black so you can tell them apart on the frame. It isn't in the parts list of your Rev B manual. Quote 77-0419 to the distributor and they'll find it, or I can ship from Leeds. I'll send two at no charge, one for 0201 and one for 0202 (see below). Please send me a delivery address in Fresno.\n\nUntil the idler arrives, this will let them run at full speed:\n\n1. Set both take-up screws back to equal, at the position that gives you the 0.4% you measured. Your tension was right, don't change it.\n2. Shim the tail pulley bearing on the drive side by 0.5 mm. The shim goes behind the bearing block, between the block and the take-up slide, so the drive-side end of the tail pulley moves 0.5 mm back towards the tail. Use one 0.5 mm piece of stainless shim, not a stack of thin ones.\n3. Run the belt and re-check the tracking after three belt revolutions. On that length at line speed that's a couple of minutes. It should settle and hold centre. If it's still walking after three revolutions, stop and ring me, because then it's something else.\n4. When you fit the 77-0419, take the shim out again, set the take-up even, and re-check after three revolutions as before.\n\nThis affects BX-12 built in 2023 and 2024. Your 0202 (BX12-240078) came off the line the same week as 0201 and very likely has a 23-11 idler as well. It will show itself the day you change that belt, so I'd swap the idler at its next PM rather than wait. If you have BX-20s anywhere, they use a different idler and aren't affected.\n\nSorry this has cost you and the plant a week. We should have put a bulletin out on it, and we haven't. I've raised that again internally this morning.\n\nKind regards,\nHenrik",
+        "text_en": "Morning Olu, Tom,\n\nThanks for the photos and the lot number, that confirms it. And the wobble you saw is real, it's not your eyes.\n\nReturn idlers from production lot 23-11 have an off-centre bore. It was a machining problem at our roller supplier. We caught it in early 2025, but by then the lot had gone out on new machines and as spares. The roller runs very slightly eccentric, which is enough to steer the return side of the belt. On a belt that's been running a while you often don't see it, because the old belt has taken a set and its edges have worn in. Put a new belt on and it follows the idler. The belt walks to the drive side every time, which is exactly what you've got.\n\nThe fix is to replace that return idler with the revised part, 77-0419. Same roller, corrected bore, and it has a blue end cap instead of black so you can tell them apart on the frame. It isn't in the parts list of your Rev B manual. Quote 77-0419 to the distributor and they'll find it, or I can ship from Leeds. I'll send two at no charge, one for 0201 and one for 0202 (see below). Please send me a delivery address in Fresno.\n\nUntil the idler arrives, this will let them run at full speed:\n\n1. Set both take-up screws back to equal, at the position that gives you the 0.4% you measured. Your tension was right, don't change it.\n2. Shim the tail pulley bearing on the drive side by 0.5 mm. The shim goes behind the bearing block, between the block and the take-up slide, so the drive-side end of the tail pulley moves 0.5 mm back towards the tail. Use one 0.5 mm piece of stainless shim, not a stack of thin ones.\n3. Run the belt and re-check the tracking after three belt revolutions. On that length at line speed that's a couple of minutes. It should settle and hold centre. If it's still walking after three revolutions, stop and ring me, because then it's something else.\n4. When you fit the 77-0419, take the shim out again, set the take-up even, and re-check after three revolutions as before.\n\nThis affects BX-12 built in 2023 and 2024. Your 0202 (BX12-240078) came off the line the same week as 0201 and very likely has a 23-11 idler as well. It will show itself the day you change that belt, so I'd swap the idler at its next PM rather than wait. If you have BX-20s anywhere, they use a different idler and aren't affected.\n\nSorry this has cost you and the plant a week. We should have put a bulletin out on it, and we haven't. I've raised that again internally this morning.\n\nKind regards,\nHenrik",
+        "acl_key": "family-conveyors",
+        "cosine": 0.5754168629646301,
+        "bm25_rank": 3,
+        "vector_rank": 5,
+        "rrf": 0.03125763125763126
+      },
+      {
+        "chunk_id": "142f7eec1f4b102b",
+        "doc_path": "corpus/email/RE_BX-12_tracking_after_belt_change.eml",
+        "doc_title": "RE: BX-12 tracking after belt change",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "RE: BX-12 tracking after belt change"
+          ],
+          "record_id": null,
+          "sender": "Olu Adeyemi <o.adeyemi@corvane.com>",
+          "date": "08 May 2026 23:31"
+        },
+        "header": "RE: BX-12 tracking after belt change | RE: BX-12 tracking after belt change",
+        "text_original": "Henrik,\n\nPhotos attached (4). Tom went back out after lunch and we pulled the guard.\n\nThe lot stamp on the return idler nearest the tail reads 23-11. It was faint, Tom had to clean it with brake cleaner before we could read it. The label on the other end says 77-0410.\n\nBelt edge at the tail is about 15 mm left of where it starts after 20 minutes, then it reaches the sensor. That's photo 3.\n\nTake-up: we don't have a record of where the screws were before the change. Tom thinks they were close to even, near the factory marks. Before your email the left screw was about four turns further in than the right. Yes, I know.\n\nOne thing I didn't mention before. With the belt slack, if you spin that idler by hand it doesn't look perfectly true to me, there's a slight wobble you can see against the frame member behind it. Could be my eyes. The other return idlers look fine.\n\nWe've put the take-up back to roughly even and the plant has agreed to run line 2 at reduced speed over the weekend with an operator watching the conveyor. They're not happy about it but it's better than the stops.\n\nThanks,\nOlu",
+        "text_en": "Henrik,\n\nPhotos attached (4). Tom went back out after lunch and we pulled the guard.\n\nThe lot stamp on the return idler nearest the tail reads 23-11. It was faint, Tom had to clean it with brake cleaner before we could read it. The label on the other end says 77-0410.\n\nBelt edge at the tail is about 15 mm left of where it starts after 20 minutes, then it reaches the sensor. That's photo 3.\n\nTake-up: we don't have a record of where the screws were before the change. Tom thinks they were close to even, near the factory marks. Before your email the left screw was about four turns further in than the right. Yes, I know.\n\nOne thing I didn't mention before. With the belt slack, if you spin that idler by hand it doesn't look perfectly true to me, there's a slight wobble you can see against the frame member behind it. Could be my eyes. The other return idlers look fine.\n\nWe've put the take-up back to roughly even and the plant has agreed to run line 2 at reduced speed over the weekend with an operator watching the conveyor. They're not happy about it but it's better than the stops.\n\nThanks,\nOlu",
+        "acl_key": "family-conveyors",
+        "cosine": 0.5795096755027771,
+        "bm25_rank": 6,
+        "vector_rank": 4,
+        "rrf": 0.030776515151515152
+      },
+      {
+        "chunk_id": "6e9b6e6ddb505443",
+        "doc_path": "corpus/email/RE_BX-12_tracking_after_belt_change.eml",
+        "doc_title": "RE: BX-12 tracking after belt change",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "RE: BX-12 tracking after belt change"
+          ],
+          "record_id": null,
+          "sender": "Henrik Sauer <h.sauer@belton-conveyors.co.uk>",
+          "date": "Friday, May 8, 2026 9:36 AM"
+        },
+        "header": "RE: BX-12 tracking after belt change | RE: BX-12 tracking after belt change",
+        "text_original": "Hi Olu,\n\nEmail is fine, the ticket and I will catch up with each other.\n\nThanks for the detail, that saves us a round. Before I say anything that sends you down the wrong road, could you send me:\n\n1. A photo of the return idler nearest the tail, the one under the frame roughly 600 mm in from the tail pulley. One from the side and one looking along the roller.\n2. The lot number stamped on the roller end. It's on the end face of the roller tube, at the opposite end to the part number label. Four digits with a dash. You'll want a torch and probably a rag, they're not easy to read once there's been some washdown on them.\n3. A photo of the belt edge at the tail pulley with the belt running, so I can see how far over it has gone.\n4. If you know it, roughly how far you've moved each take-up screw from where it was before the belt change.\n\nAnd please don't adjust the take-up any further for now. Four rounds of adjustment that keep coming back usually means you're correcting something that isn't at the tail, and the more you skew the tail pulley the harder the new belt edge works against the side guide.\n\nI'm on a customer site in Coventry on Monday morning but will have the laptop with me.\n\nKind regards,\nHenrik",
+        "text_en": "Hi Olu,\n\nEmail is fine, the ticket and I will catch up with each other.\n\nThanks for the detail, that saves us a round. Before I say anything that sends you down the wrong road, could you send me:\n\n1. A photo of the return idler nearest the tail, the one under the frame roughly 600 mm in from the tail pulley. One from the side and one looking along the roller.\n2. The lot number stamped on the roller end. It's on the end face of the roller tube, at the opposite end to the part number label. Four digits with a dash. You'll want a torch and probably a rag, they're not easy to read once there's been some washdown on them.\n3. A photo of the belt edge at the tail pulley with the belt running, so I can see how far over it has gone.\n4. If you know it, roughly how far you've moved each take-up screw from where it was before the belt change.\n\nAnd please don't adjust the take-up any further for now. Four rounds of adjustment that keep coming back usually means you're correcting something that isn't at the tail, and the more you skew the tail pulley the harder the new belt edge works against the side guide.\n\nI'm on a customer site in Coventry on Monday morning but will have the laptop with me.\n\nKind regards,\nHenrik",
+        "acl_key": "family-conveyors",
+        "cosine": 0.5281351804733276,
+        "bm25_rank": 5,
+        "vector_rank": 8,
+        "rrf": 0.030090497737556562
+      },
+      {
+        "chunk_id": "c3c3af14669126e0",
+        "doc_path": "corpus/manuals/Belton_BX-12_OM_Manual_RevB.pdf",
+        "doc_title": "Belton BX-12 O&M Manual Rev B",
+        "doc_type": "Operation & Maintenance Manual",
+        "revision": "Issue B",
+        "effective_date": "1 October 2024",
+        "locator": {
+          "page": 6,
+          "section_path": [
+            "Section 8",
+            "Belt replacement"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Belton BX-12 O&M Manual Rev B | Issue B | Section 8 › Belt replacement",
+        "text_original": "8.1 The BX-12 belt is endless and is replaced from the right-hand side, which has removable bed plates and a cantilevered return frame. Allow one hour for two people on a 6 m conveyor.\na) Isolate and lock off the BCU-2.\nb) Remove the side guards on the right-hand side. Slacken both take-up screws fully and note their positions.\nc) Remove the four bolts holding the right-hand return frame brackets and the bed plate retaining clips.\nd) Slide the old belt off sideways. Inspect the slider bed for wear and grooves while it is exposed.\ne) Check the direction arrow on the inside of the new belt (77-1012) and fit it with the arrow pointing towards the drive end on the top run.\nf) Refit the return frame brackets (tighten to 25 Nm), the bed plate clips and the guards.\ng) Tension the belt to 0.3 % (Section 6) and track it (Section 7).\nh) Re-check tension and tracking after 8 hours and 50 hours of running.\n\n8.2 Replacing a return idler\nReturn idlers drop into slotted brackets on both side frames and are held by spring clips.\na) Isolate and lock off the BCU-2. Slacken both take-up screws by two turns each to take the weight off the idlers.\nb) Remove the spring clips at both ends of the idler and lift it out of its slots.\nc) Fit the new idler (77-0410). Check that both hexagon shaft ends sit fully down in their slots, and refit the clips.\nd) Spin the idler by hand. It must turn freely and run true.\ne) Re-tension the belt by turning both screws back two turns, then check the tension marks (Section 6) and the tracking (Section 7).\n\n8.3 Replacing the geared motor\nThe geared motor is mounted on the drive pulley shaft with a hollow shaft and torque arm.\na) Isolate and lock off. Unplug the motor cable at the motor.\nb) Remove the torque arm bolt and the shaft end retaining bolt.\nc) Draw the motor off the shaft with a puller on the extraction thread. Do not hammer on the gear housing.\nd) Coat the shaft with anti-seize paste, slide the new motor on, and refit the retaining bolt (25 Nm) and the torque arm bolt with its rubber bush.\ne) Check the direction of travel before running with product.",
+        "text_en": "8.1 The BX-12 belt is endless and is replaced from the right-hand side, which has removable bed plates and a cantilevered return frame. Allow one hour for two people on a 6 m conveyor.\na) Isolate and lock off the BCU-2.\nb) Remove the side guards on the right-hand side. Slacken both take-up screws fully and note their positions.\nc) Remove the four bolts holding the right-hand return frame brackets and the bed plate retaining clips.\nd) Slide the old belt off sideways. Inspect the slider bed for wear and grooves while it is exposed.\ne) Check the direction arrow on the inside of the new belt (77-1012) and fit it with the arrow pointing towards the drive end on the top run.\nf) Refit the return frame brackets (tighten to 25 Nm), the bed plate clips and the guards.\ng) Tension the belt to 0.3 % (Section 6) and track it (Section 7).\nh) Re-check tension and tracking after 8 hours and 50 hours of running.\n\n8.2 Replacing a return idler\nReturn idlers drop into slotted brackets on both side frames and are held by spring clips.\na) Isolate and lock off the BCU-2. Slacken both take-up screws by two turns each to take the weight off the idlers.\nb) Remove the spring clips at both ends of the idler and lift it out of its slots.\nc) Fit the new idler (77-0410). Check that both hexagon shaft ends sit fully down in their slots, and refit the clips.\nd) Spin the idler by hand. It must turn freely and run true.\ne) Re-tension the belt by turning both screws back two turns, then check the tension marks (Section 6) and the tracking (Section 7).\n\n8.3 Replacing the geared motor\nThe geared motor is mounted on the drive pulley shaft with a hollow shaft and torque arm.\na) Isolate and lock off. Unplug the motor cable at the motor.\nb) Remove the torque arm bolt and the shaft end retaining bolt.\nc) Draw the motor off the shaft with a puller on the extraction thread. Do not hammer on the gear housing.\nd) Coat the shaft with anti-seize paste, slide the new motor on, and refit the retaining bolt (25 Nm) and the torque arm bolt with its rubber bush.\ne) Check the direction of travel before running with product.",
+        "acl_key": "family-conveyors",
+        "cosine": 0.5595958232879639,
+        "bm25_rank": 9,
+        "vector_rank": 6,
+        "rrf": 0.02964426877470356
+      },
+      {
+        "chunk_id": "9efba3a5897f3000",
+        "doc_path": "corpus/manuals/Belton_BX-12_OM_Manual_RevB.pdf",
+        "doc_title": "Belton BX-12 O&M Manual Rev B",
+        "doc_type": "Operation & Maintenance Manual",
+        "revision": "Issue B",
+        "effective_date": "1 October 2024",
+        "locator": {
+          "page": 7,
+          "section_path": [
+            "Section 9",
+            "Maintenance"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Belton BX-12 O&M Manual Rev B | Issue B | Section 9 › Maintenance",
+        "text_original": "Interval | Task\nDaily | Clean the belt and pulleys of product residue. Check the belt runs centrally.\nWeekly | Check belt edges for fraying. Check that the edge sensors are clean.\nMonthly | Spin every return idler by hand. Check the belt tension marks. Check guard fixings.\n6 months | Check frame squareness (4.2). Check pulley lagging for wear. Check the slider bed.\n12 months | Check the gear unit for oil leaks (sealed for life, no oil change). Test the emergency stops.\n\n9.1 Pulley and idler bearings are sealed for life and need no grease. Do not wash bearings with a high-pressure jet; it drives water past the seals.\n\n9.2 Cleaning\nDaily cleaning: isolate, scrape off loose product, wash the belt top and bottom with warm water and an approved detergent (2.5), rinse, and run the belt slowly for a few minutes with the guards on to dry it. Lift the bed plate clips once a week and clean under the slider bed, where product collects and lifts the belt.\n\n9.3 Belt inspection\nInspect the belt surface for cuts, and the belt edges for fraying. An edge that frays on one side only is the record of a tracking problem: find the cause before fitting a new belt, or the new belt will go the same way.",
+        "text_en": "Interval | Task\nDaily | Clean the belt and pulleys of product residue. Check the belt runs centrally.\nWeekly | Check belt edges for fraying. Check that the edge sensors are clean.\nMonthly | Spin every return idler by hand. Check the belt tension marks. Check guard fixings.\n6 months | Check frame squareness (4.2). Check pulley lagging for wear. Check the slider bed.\n12 months | Check the gear unit for oil leaks (sealed for life, no oil change). Test the emergency stops.\n\n9.1 Pulley and idler bearings are sealed for life and need no grease. Do not wash bearings with a high-pressure jet; it drives water past the seals.\n\n9.2 Cleaning\nDaily cleaning: isolate, scrape off loose product, wash the belt top and bottom with warm water and an approved detergent (2.5), rinse, and run the belt slowly for a few minutes with the guards on to dry it. Lift the bed plate clips once a week and clean under the slider bed, where product collects and lifts the belt.\n\n9.3 Belt inspection\nInspect the belt surface for cuts, and the belt edges for fraying. An edge that frays on one side only is the record of a tracking problem: find the cause before fitting a new belt, or the new belt will go the same way.",
+        "acl_key": "family-conveyors",
+        "cosine": 0.5084614753723145,
+        "bm25_rank": 8,
+        "vector_rank": 9,
+        "rrf": 0.02919863597612958
+      },
+      {
+        "chunk_id": "030eaef3e306b86b",
+        "doc_path": "corpus/manuals/Belton_BX-12_OM_Manual_RevB.pdf",
+        "doc_title": "Belton BX-12 O&M Manual Rev B",
+        "doc_type": "Operation & Maintenance Manual",
+        "revision": "Issue B",
+        "effective_date": "1 October 2024",
+        "locator": {
+          "page": 3,
+          "section_path": [
+            "Section 4",
+            "Installation and commissioning"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Belton BX-12 O&M Manual Rev B | Issue B | Section 4 › Installation and commissioning",
+        "text_original": "4.1 Levelling\nSet the conveyor on its legs and level it along its length and across the belt with a spirit level, using the adjustable feet. Use packers under the feet only on soft floors.\n\n4.2 Squareness\nA frame that is out of square will make the belt track to one side however carefully it is adjusted. Measure the two diagonals of the frame between the centres of the drive and tail pulley bearings. They must agree within 3 mm. Where sections are bolted together, check the joint plates are tight before measuring.\n\n4.3 Commissioning\nBefore first start: check that all guards are fitted, the belt is tensioned (Section 6), the edge sensors are 5 mm from the belt edge, and the direction of travel matches the arrows on the side frame. Run the belt empty for 30 minutes and adjust the tracking (Section 7). Complete the commissioning record at the back of this manual and return a copy to Belton within 30 days: it starts the warranty (Section 12).\n\n4.4 Electrical connection\nThe BCU-2 needs a 400 V three-phase supply with earth, protected by a 10 A type C circuit breaker. Cable entries are at the bottom of the enclosure; keep them there, since water runs down cables. The motor and sensor cables are factory-wired and plugged; do not cut them to length.\n\n4.5 Transfers\nWhere the BX-12 receives product from, or passes it to, other equipment, keep the transfer gap below half the length of the smallest pack, and set the belt surface level with, or slightly below, the feeding surface. A belt that sits higher than the infeed catches the leading edge of each pack and pushes it to one side, which looks like a tracking problem but is not.\n\n4.6 Edge sensors\nSet the gap between each belt edge sensor and the belt edge to 5 mm with the belt running centrally. Sensors set closer than this trip C-02 on normal belt wander.",
+        "text_en": "4.1 Levelling\nSet the conveyor on its legs and level it along its length and across the belt with a spirit level, using the adjustable feet. Use packers under the feet only on soft floors.\n\n4.2 Squareness\nA frame that is out of square will make the belt track to one side however carefully it is adjusted. Measure the two diagonals of the frame between the centres of the drive and tail pulley bearings. They must agree within 3 mm. Where sections are bolted together, check the joint plates are tight before measuring.\n\n4.3 Commissioning\nBefore first start: check that all guards are fitted, the belt is tensioned (Section 6), the edge sensors are 5 mm from the belt edge, and the direction of travel matches the arrows on the side frame. Run the belt empty for 30 minutes and adjust the tracking (Section 7). Complete the commissioning record at the back of this manual and return a copy to Belton within 30 days: it starts the warranty (Section 12).\n\n4.4 Electrical connection\nThe BCU-2 needs a 400 V three-phase supply with earth, protected by a 10 A type C circuit breaker. Cable entries are at the bottom of the enclosure; keep them there, since water runs down cables. The motor and sensor cables are factory-wired and plugged; do not cut them to length.\n\n4.5 Transfers\nWhere the BX-12 receives product from, or passes it to, other equipment, keep the transfer gap below half the length of the smallest pack, and set the belt surface level with, or slightly below, the feeding surface. A belt that sits higher than the infeed catches the leading edge of each pack and pushes it to one side, which looks like a tracking problem but is not.\n\n4.6 Edge sensors\nSet the gap between each belt edge sensor and the belt edge to 5 mm with the belt running centrally. Sensors set closer than this trip C-02 on normal belt wander.",
+        "acl_key": "family-conveyors",
+        "cosine": 0.5294091701507568,
+        "bm25_rank": 12,
+        "vector_rank": 7,
+        "rrf": 0.028814262023217248
+      },
+      {
+        "chunk_id": "6203fc05fb2be961",
+        "doc_path": "corpus/data/salesforce_cases_NA_2025-2026.json",
+        "doc_title": "Salesforce cases NA",
+        "doc_type": "Salesforce Case export",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "5008d00000rRaMW446",
+          "sender": null,
+          "date": "2026-05-08T15:05:00.000+0000"
+        },
+        "header": "Salesforce cases NA | 5008d00000rRaMW446",
+        "text_original": "type: Case\nurl: /services/data/v60.0/sobjects/Case/5008d00000rRaMW446\nId: 5008d00000rRaMW446\nCaseNumber: 00041750\nSubject: BX-12 tracking left after belt change - line 2\nStatus: Closed\nPriority: High\nOrigin: Technician\nCreatedDate: 2026-05-08T15:05:00.000+0000\nClosedDate: 2026-05-12T22:40:00.000+0000\nAccount Name: Sierra Springs Beverage\nAsset Name: FRS-V-0201\nEquipment_Model__c: BX-12\nSerial_Number__c: BX12-240077\nSite__c: FRS - Fresno Bottling Plant\nFault_Code__c: C-02\nDescription: Belt replaced 05/06 on line 2 case conveyor (FRS-V-0201). Since restart the belt tracks to the left (motor side) and rubs the side guide at the tail end. C-02 stops: 7 on 2nd shift 05/07. Take-up adjusted several times, it keeps coming back.\nResolution__c: Belton confirmed a known issue, see email thread. Fix applied, tracking OK.\nParts_Used__c: 77-0419 x1\nOwner Name: Olu Adeyemi\nCaseComments:\n- Id: 00a8d00000m8T0iV5m; CommentBody: emailed Belton (Henrik Sauer) with details, waiting.; CreatedDate: 2026-05-08T15:30:00.000+0000; IsPublished: false; CreatedBy Name: Olu Adeyemi\n- Id: 00a8d00000bknZETms; CommentBody: Pulled the guard with Olu, photos sent to Belton. Line 2 running slow over the weekend with an operator watching.; CreatedDate: 2026-05-09T19:10:00.000+0000; IsPublished: false; CreatedBy Name: Tom Becker\n- Id: 00a8d000003JdDc3bg; CommentBody: Belton replied, known issue on this model. Part on order, interim fix done this morning.; CreatedDate: 2026-05-11T16:05:00.000+0000; IsPublished: false; CreatedBy Name: Olu Adeyemi\n- Id: 00a8d00000Ca1pghE8; CommentBody: new idler fitted, tracking ok after 2h at full speed. closing; CreatedDate: 2026-05-12T22:38:00.000+0000; IsPublished: false; CreatedBy Name: Olu Adeyemi\nEmailMessages: null",
+        "text_en": "type: Case\nurl: /services/data/v60.0/sobjects/Case/5008d00000rRaMW446\nId: 5008d00000rRaMW446\nCaseNumber: 00041750\nSubject: BX-12 tracking left after belt change - line 2\nStatus: Closed\nPriority: High\nOrigin: Technician\nCreatedDate: 2026-05-08T15:05:00.000+0000\nClosedDate: 2026-05-12T22:40:00.000+0000\nAccount Name: Sierra Springs Beverage\nAsset Name: FRS-V-0201\nEquipment_Model__c: BX-12\nSerial_Number__c: BX12-240077\nSite__c: FRS - Fresno Bottling Plant\nFault_Code__c: C-02\nDescription: Belt replaced 05/06 on line 2 case conveyor (FRS-V-0201). Since restart the belt tracks to the left (motor side) and rubs the side guide at the tail end. C-02 stops: 7 on 2nd shift 05/07. Take-up adjusted several times, it keeps coming back.\nResolution__c: Belton confirmed a known issue, see email thread. Fix applied, tracking OK.\nParts_Used__c: 77-0419 x1\nOwner Name: Olu Adeyemi\nCaseComments:\n- Id: 00a8d00000m8T0iV5m; CommentBody: emailed Belton (Henrik Sauer) with details, waiting.; CreatedDate: 2026-05-08T15:30:00.000+0000; IsPublished: false; CreatedBy Name: Olu Adeyemi\n- Id: 00a8d00000bknZETms; CommentBody: Pulled the guard with Olu, photos sent to Belton. Line 2 running slow over the weekend with an operator watching.; CreatedDate: 2026-05-09T19:10:00.000+0000; IsPublished: false; CreatedBy Name: Tom Becker\n- Id: 00a8d000003JdDc3bg; CommentBody: Belton replied, known issue on this model. Part on order, interim fix done this morning.; CreatedDate: 2026-05-11T16:05:00.000+0000; IsPublished: false; CreatedBy Name: Olu Adeyemi\n- Id: 00a8d00000Ca1pghE8; CommentBody: new idler fitted, tracking ok after 2h at full speed. closing; CreatedDate: 2026-05-12T22:38:00.000+0000; IsPublished: false; CreatedBy Name: Olu Adeyemi\nEmailMessages: null",
+        "acl_key": "region-na",
+        "cosine": 0.3986682891845703,
+        "bm25_rank": 2,
+        "vector_rank": 23,
+        "rrf": 0.028177225029148854
+      },
+      {
+        "chunk_id": "47b58eb7e1cde216",
+        "doc_path": "corpus/data/maintpro_history_NA_2023-2026.csv",
+        "doc_title": "MaintPro history NA",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "228844",
+          "sender": "OADEYEMI",
+          "date": "05/06/2026",
+          "thread_record_ids": [
+            "228844",
+            "228878",
+            "228936",
+            "228977",
+            "229144",
+            "229186"
+          ]
+        },
+        "header": "MaintPro history NA | 228844",
+        "text_original": "WO_No: 228844\nDate: 05/06/2026\nSite: FRS\nAsset: FRS-V-0201\nModel: BX-12\nSerial: BX12-240077\nEvent_Type: PM\nFault: \nHours: \nTech: OADEYEMI\nNotes: belt replaced w/ Tom, old belt torn edge at splice. new 77-1012, tension set, direction arrow ok. ran 30 min\nParts: 77-1012 x1\nLabor_Hrs: 4\nStatus: CLOSED\n\nWO_No: 228878\nDate: 05/07/2026\nSite: FRS\nAsset: FRS-V-0201\nModel: BX-12\nSerial: BX12-240077\nEvent_Type: Alarm\nFault: C-02\nHours: \nTech: OADEYEMI\nNotes: 7x C-02 stops on 2nd shift per cust. adj take-up again\nParts: \nLabor_Hrs: 0\nStatus: CLOSED\n\nWO_No: 228936\nDate: 05/08/2026\nSite: FRS\nAsset: FRS-V-0201\nModel: BX-12\nSerial: BX12-240077\nEvent_Type: CM\nFault: C-02\nHours: \nTech: OADEYEMI\nNotes: tracking L after new belt, rubbing guard at tail. adj take-up 4 times, keeps coming back. emailed Belton w/ photos. SF 00041750\nParts: \nLabor_Hrs: 2.5\nStatus: OPEN\n\nWO_No: 228977\nDate: 05/09/2026\nSite: FRS\nAsset: FRS-V-0201\nModel: BX-12\nSerial: BX12-240077\nEvent_Type: CM\nFault: C-02\nHours: \nTech: TBECKER\nNotes: pulled guard w/ olu for Belton photos. take-up back to even. cust running line 2 slow over wknd w/ operator\nParts: \nLabor_Hrs: 2\nStatus: OPEN\n\nWO_No: 229144\nDate: 05/11/2026\nSite: FRS\nAsset: FRS-V-0201\nModel: BX-12\nSerial: BX12-240077\nEvent_Type: CM\nFault: C-02\nHours: \nTech: OADEYEMI\nNotes: interim fix per Belton email applied, tracking holding at full speed. idler on order\nParts: \nLabor_Hrs: 1.5\nStatus: OPEN\n\nWO_No: 229186\nDate: 05/12/2026\nSite: FRS\nAsset: FRS-V-0201\nModel: BX-12\nSerial: BX12-240077\nEvent_Type: CM\nFault: C-02\nHours: \nTech: OADEYEMI\nNotes: ret idler repl w/ 77-0419 (distributor, Sacramento). interim fix removed, take-up even. tracking ok, rechk after 3 revs + 2h run\nParts: 77-0419 x1\nLabor_Hrs: 2\nStatus: CLOSED",
+        "text_en": "WO_No: 228844\nDate: 05/06/2026\nSite: FRS\nAsset: FRS-V-0201\nModel: BX-12\nSerial: BX12-240077\nEvent_Type: PM\nFault: \nHours: \nTech: OADEYEMI\nNotes: belt replaced w/ Tom, old belt torn edge at splice. new 77-1012, tension set, direction arrow ok. ran 30 min\nParts: 77-1012 x1\nLabor_Hrs: 4\nStatus: CLOSED\n\nWO_No: 228878\nDate: 05/07/2026\nSite: FRS\nAsset: FRS-V-0201\nModel: BX-12\nSerial: BX12-240077\nEvent_Type: Alarm\nFault: C-02\nHours: \nTech: OADEYEMI\nNotes: 7x C-02 stops on 2nd shift per cust. adj take-up again\nParts: \nLabor_Hrs: 0\nStatus: CLOSED\n\nWO_No: 228936\nDate: 05/08/2026\nSite: FRS\nAsset: FRS-V-0201\nModel: BX-12\nSerial: BX12-240077\nEvent_Type: CM\nFault: C-02\nHours: \nTech: OADEYEMI\nNotes: tracking L after new belt, rubbing guard at tail. adj take-up 4 times, keeps coming back. emailed Belton w/ photos. SF 00041750\nParts: \nLabor_Hrs: 2.5\nStatus: OPEN\n\nWO_No: 228977\nDate: 05/09/2026\nSite: FRS\nAsset: FRS-V-0201\nModel: BX-12\nSerial: BX12-240077\nEvent_Type: CM\nFault: C-02\nHours: \nTech: TBECKER\nNotes: pulled guard w/ olu for Belton photos. take-up back to even. cust running line 2 slow over wknd w/ operator\nParts: \nLabor_Hrs: 2\nStatus: OPEN\n\nWO_No: 229144\nDate: 05/11/2026\nSite: FRS\nAsset: FRS-V-0201\nModel: BX-12\nSerial: BX12-240077\nEvent_Type: CM\nFault: C-02\nHours: \nTech: OADEYEMI\nNotes: interim fix per Belton email applied, tracking holding at full speed. idler on order\nParts: \nLabor_Hrs: 1.5\nStatus: OPEN\n\nWO_No: 229186\nDate: 05/12/2026\nSite: FRS\nAsset: FRS-V-0201\nModel: BX-12\nSerial: BX12-240077\nEvent_Type: CM\nFault: C-02\nHours: \nTech: OADEYEMI\nNotes: ret idler repl w/ 77-0419 (distributor, Sacramento). interim fix removed, take-up even. tracking ok, rechk after 3 revs + 2h run\nParts: 77-0419 x1\nLabor_Hrs: 2\nStatus: CLOSED",
+        "acl_key": "region-na",
+        "cosine": 0.4878051280975342,
+        "bm25_rank": 11,
+        "vector_rank": 12,
+        "rrf": 0.02797339593114241
+      },
+      {
+        "chunk_id": "2564043270116d44",
+        "doc_path": "corpus/manuals/Belton_BX-12_OM_Manual_RevB.pdf",
+        "doc_title": "Belton BX-12 O&M Manual Rev B",
+        "doc_type": "Operation & Maintenance Manual",
+        "revision": "Issue B",
+        "effective_date": "1 October 2024",
+        "locator": {
+          "page": 2,
+          "section_path": [
+            "Section 1",
+            "About this manual"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Belton BX-12 O&M Manual Rev B | Issue B | Section 1 › About this manual",
+        "text_original": "1.1 This manual covers installation, commissioning, adjustment, maintenance and fault finding for the Belton BX-12 packaging conveyor with the BCU-2 control unit. Keep it with the conveyor. Further copies can be downloaded from the customer area of our website, quoting the serial number on the rating plate at the drive end.\n\n1.2 In this manual, left and right are as seen standing at the tail (infeed) end, looking along the conveyor towards the drive (discharge) end. Please use the same convention when you call Technical Support; it saves a great deal of confusion.\n\n1.3 Changes in Issue B: Section 6, belt tensioning by elongation replaces the old deflection method. Section 10, fault code C-06 added for BCU-2 firmware 2.2 and later. Section 11, parts list updated.",
+        "text_en": "1.1 This manual covers installation, commissioning, adjustment, maintenance and fault finding for the Belton BX-12 packaging conveyor with the BCU-2 control unit. Keep it with the conveyor. Further copies can be downloaded from the customer area of our website, quoting the serial number on the rating plate at the drive end.\n\n1.2 In this manual, left and right are as seen standing at the tail (infeed) end, looking along the conveyor towards the drive (discharge) end. Please use the same convention when you call Technical Support; it saves a great deal of confusion.\n\n1.3 Changes in Issue B: Section 6, belt tensioning by elongation replaces the old deflection method. Section 10, fault code C-06 added for BCU-2 firmware 2.2 and later. Section 11, parts list updated.",
+        "acl_key": "family-conveyors",
+        "cosine": 0.5074352025985718,
+        "bm25_rank": 18,
+        "vector_rank": 10,
+        "rrf": 0.027106227106227107
+      },
+      {
+        "chunk_id": "872bc37ca2553d64",
+        "doc_path": "corpus/manuals/Belton_BX-12_OM_Manual_RevB.pdf",
+        "doc_title": "Belton BX-12 O&M Manual Rev B",
+        "doc_type": "Operation & Maintenance Manual",
+        "revision": "Issue B",
+        "effective_date": "1 October 2024",
+        "locator": {
+          "page": 2,
+          "section_path": [
+            "Section 2",
+            "Safety"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Belton BX-12 O&M Manual Rev B | Issue B | Section 2 › Safety",
+        "text_original": "2.1 The BX-12 must be installed and used in accordance with the Provision and Use of Work Equipment Regulations 1998 (PUWER) or the equivalent rules in the country of use. Only trained persons may adjust or maintain the conveyor.\n\n2.2 Before any work other than the running adjustments in Sections 6 and 7, isolate the conveyor at the lockable isolator on the BCU-2 and fit your personal padlock. The emergency stop is not an isolator.\n\nWARNING\nThe in-running nips at the drive and tail pulleys can draw in fingers, gloves and clothing in a fraction of a second. Never run the conveyor with a guard removed.\n\n2.3 Belt tracking has to be adjusted with the belt running. The take-up adjusting screws are outside the guarded area and are reached through the two access holes in the tail guard. Do not remove the tail guard to make adjustments.\n\n2.4 Lifting\nLift conveyor sections only with slings around the side frames at the marked lifting points, never by the drive unit, the BCU-2 or the guards. A 6 m BX-12 weighs about 210 kg.\n\n2.5 Cleaning\nIn food areas the conveyor is usually washed down every shift. Isolate it first. Keep high-pressure jets away from the BCU-2, the motor terminal box, the sensors and all bearings. Use only cleaning chemicals with a pH between 4 and 10 that are approved for polyurethane; chlorinated cleaners above 200 ppm make the belt brittle within months.\n\n2.6 Noise\nThe airborne noise of the BX-12 is below 70 dB(A) at 1 m. A noticeable increase usually means a seized idler or a bearing on its way out. Find it before it fails.",
+        "text_en": "2.1 The BX-12 must be installed and used in accordance with the Provision and Use of Work Equipment Regulations 1998 (PUWER) or the equivalent rules in the country of use. Only trained persons may adjust or maintain the conveyor.\n\n2.2 Before any work other than the running adjustments in Sections 6 and 7, isolate the conveyor at the lockable isolator on the BCU-2 and fit your personal padlock. The emergency stop is not an isolator.\n\nWARNING\nThe in-running nips at the drive and tail pulleys can draw in fingers, gloves and clothing in a fraction of a second. Never run the conveyor with a guard removed.\n\n2.3 Belt tracking has to be adjusted with the belt running. The take-up adjusting screws are outside the guarded area and are reached through the two access holes in the tail guard. Do not remove the tail guard to make adjustments.\n\n2.4 Lifting\nLift conveyor sections only with slings around the side frames at the marked lifting points, never by the drive unit, the BCU-2 or the guards. A 6 m BX-12 weighs about 210 kg.\n\n2.5 Cleaning\nIn food areas the conveyor is usually washed down every shift. Isolate it first. Keep high-pressure jets away from the BCU-2, the motor terminal box, the sensors and all bearings. Use only cleaning chemicals with a pH between 4 and 10 that are approved for polyurethane; chlorinated cleaners above 200 ppm make the belt brittle within months.\n\n2.6 Noise\nThe airborne noise of the BX-12 is below 70 dB(A) at 1 m. A noticeable increase usually means a seized idler or a bearing on its way out. Find it before it fails.",
+        "acl_key": "family-conveyors",
+        "cosine": 0.42812517285346985,
+        "bm25_rank": 10,
+        "vector_rank": 20,
+        "rrf": 0.026785714285714288
+      },
+      {
+        "chunk_id": "a1a0a69d59a84f4b",
+        "doc_path": "corpus/manuals/Belton_BX-12_OM_Manual_RevB.pdf",
+        "doc_title": "Belton BX-12 O&M Manual Rev B",
+        "doc_type": "Operation & Maintenance Manual",
+        "revision": "Issue B",
+        "effective_date": "1 October 2024",
+        "locator": {
+          "page": 4,
+          "section_path": [
+            "Section 5",
+            "The control unit"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Belton BX-12 O&M Manual Rev B | Issue B | Section 5 › The control unit",
+        "text_original": "5.1 The BCU-2 has a two-line display, START and STOP push buttons, a speed potentiometer and a RESET button. Faults are shown as a C-code with a short text (Section 10). The last 50 faults are stored with date and time under MENU > LOG.\n\n5.2 The edge sensors S3 and S4 stop the conveyor if the belt edge stays over a sensor for 2 seconds (fault C-02). They are a protection, not a tracking aid: a belt that keeps tripping C-02 needs tracking, not a sensor adjustment.\n\n5.3 User parameters are under MENU > SETTINGS and are protected by the four-digit code supplied with the conveyor. Factory settings are restored with MENU > SETTINGS > DEFAULTS.\n\nParameter | Function | Range | Factory setting\nU01 | Belt speed | 0.10 - 0.60 m/s | 0.30 m/s\nU02 | Acceleration ramp | 0.5 - 10 s | 2 s\nU03 | Deceleration ramp | 0.5 - 10 s | 1 s\nU04 | Jam timer (C-05) | 1 - 60 s | 8 s\nU05 | Edge sensor delay (C-02) | 1-5 s | 2 s\nU06 | Slip threshold (C-03) | 2 - 15 % | 5%\nU07 | Run-on after infeed stops | 0 - 120 s | 30 s\nU08 | Restart after power loss | Manual / Auto | Manual\n\n5.4 Increasing U05 to stop nuisance C-02 trips only lets the belt run further off before it stops. Leave it at 2 s and track the belt.",
+        "text_en": "5.1 The BCU-2 has a two-line display, START and STOP push buttons, a speed potentiometer and a RESET button. Faults are shown as a C-code with a short text (Section 10). The last 50 faults are stored with date and time under MENU > LOG.\n\n5.2 The edge sensors S3 and S4 stop the conveyor if the belt edge stays over a sensor for 2 seconds (fault C-02). They are a protection, not a tracking aid: a belt that keeps tripping C-02 needs tracking, not a sensor adjustment.\n\n5.3 User parameters are under MENU > SETTINGS and are protected by the four-digit code supplied with the conveyor. Factory settings are restored with MENU > SETTINGS > DEFAULTS.\n\nParameter | Function | Range | Factory setting\nU01 | Belt speed | 0.10 - 0.60 m/s | 0.30 m/s\nU02 | Acceleration ramp | 0.5 - 10 s | 2 s\nU03 | Deceleration ramp | 0.5 - 10 s | 1 s\nU04 | Jam timer (C-05) | 1 - 60 s | 8 s\nU05 | Edge sensor delay (C-02) | 1-5 s | 2 s\nU06 | Slip threshold (C-03) | 2 - 15 % | 5%\nU07 | Run-on after infeed stops | 0 - 120 s | 30 s\nU08 | Restart after power loss | Manual / Auto | Manual\n\n5.4 Increasing U05 to stop nuisance C-02 trips only lets the belt run further off before it stops. Leave it at 2 s and track the belt.",
+        "acl_key": "family-conveyors",
+        "cosine": 0.4556769132614136,
+        "bm25_rank": 16,
+        "vector_rank": 17,
+        "rrf": 0.026144907723855092
+      },
+      {
+        "chunk_id": "9ad0c8ad5318e73e",
+        "doc_path": "corpus/manuals/Belton_BX-12_OM_Manual_RevB.pdf",
+        "doc_title": "Belton BX-12 O&M Manual Rev B",
+        "doc_type": "Operation & Maintenance Manual",
+        "revision": "Issue B",
+        "effective_date": "1 October 2024",
+        "locator": {
+          "page": 9,
+          "section_path": [
+            "Section 14",
+            "Storage and disposal"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Belton BX-12 O&M Manual Rev B | Issue B | Section 14 › Storage and disposal",
+        "text_original": "14.1 Store the conveyor indoors, dry, with the belt tension released. A belt left tensioned for months takes a permanent set over the pulleys. Before returning to service, re-tension (Section 6) and track (Section 7) as for a new belt.\n\n14.2 At the end of its life, the stainless steel frame, the aluminium motor housing and the copper windings can be recycled. The polyurethane belt and the BCU-2 electronics go to an authorised waste contractor under the WEEE Regulations.",
+        "text_en": "14.1 Store the conveyor indoors, dry, with the belt tension released. A belt left tensioned for months takes a permanent set over the pulleys. Before returning to service, re-tension (Section 6) and track (Section 7) as for a new belt.\n\n14.2 At the end of its life, the stainless steel frame, the aluminium motor housing and the copper windings can be recycled. The polyurethane belt and the BCU-2 electronics go to an authorised waste contractor under the WEEE Regulations.",
+        "acl_key": "family-conveyors",
+        "cosine": 0.43081268668174744,
+        "bm25_rank": 17,
+        "vector_rank": 19,
+        "rrf": 0.025645240835114255
+      },
+      {
+        "chunk_id": "98f41ec6e26d0c20",
+        "doc_path": "corpus/manuals/Belton_BX-12_OM_Manual_RevB.pdf",
+        "doc_title": "Belton BX-12 O&M Manual Rev B",
+        "doc_type": "Operation & Maintenance Manual",
+        "revision": "Issue B",
+        "effective_date": "1 October 2024",
+        "locator": {
+          "page": 7,
+          "section_path": [
+            "Section 10",
+            "Fault finding"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Belton BX-12 O&M Manual Rev B | Issue B | Section 10 › Fault finding",
+        "text_original": "10.1 Fault codes shown on the BCU-2. Press RESET once the cause has been cleared.\n\nCode | Fault | Likely cause | Action\nC-01 | Drive overload | Belt overloaded or jammed; motor thermistor trip; tension too high | Clear the belt. Check tension (6). Let the motor cool.\nC-02 | Belt mistrack | Belt edge over S3 (left) or S4 (right) for 2 s | Track the belt (7). Do not move the sensors.\nC-03 | Belt slip | Speed at S5 more than 5 % below drive speed for 5 s; low tension; wet or worn lagging | Check tension (6) and clean the drive pulley.\nC-04 | Emergency stop | E-stop or pull-wire operated | Find out why. Reset the E-stop, then RESET.\nC-05 | Product jam | Discharge photo-eye blocked longer than the set time | Clear the discharge. Check downstream equipment.\nC-06 | Safety relay fault | Safety relay or guard interlock fault (firmware 2.2 and later) | Check guard switches and wiring. Call Belton if it persists.\n\nSymptom | Check\nBelt runs to one side | Section 7.3, in order\nBelt slips on start-up | Tension; drive pulley lagging; load on the belt at start\nSquealing at the tail | Seized return idler or tail bearing\nBelt edges fraying | Mistracking against the frame; edge sensor bracket bent",
+        "text_en": "10.1 Fault codes shown on the BCU-2. Press RESET once the cause has been cleared.\n\nCode | Fault | Likely cause | Action\nC-01 | Drive overload | Belt overloaded or jammed; motor thermistor trip; tension too high | Clear the belt. Check tension (6). Let the motor cool.\nC-02 | Belt mistrack | Belt edge over S3 (left) or S4 (right) for 2 s | Track the belt (7). Do not move the sensors.\nC-03 | Belt slip | Speed at S5 more than 5 % below drive speed for 5 s; low tension; wet or worn lagging | Check tension (6) and clean the drive pulley.\nC-04 | Emergency stop | E-stop or pull-wire operated | Find out why. Reset the E-stop, then RESET.\nC-05 | Product jam | Discharge photo-eye blocked longer than the set time | Clear the discharge. Check downstream equipment.\nC-06 | Safety relay fault | Safety relay or guard interlock fault (firmware 2.2 and later) | Check guard switches and wiring. Call Belton if it persists.\n\nSymptom | Check\nBelt runs to one side | Section 7.3, in order\nBelt slips on start-up | Tension; drive pulley lagging; load on the belt at start\nSquealing at the tail | Seized return idler or tail bearing\nBelt edges fraying | Mistracking against the frame; edge sensor bracket bent",
+        "acl_key": "family-conveyors",
+        "cosine": 0.5021758675575256,
+        "bm25_rank": 28,
+        "vector_rank": 11,
+        "rrf": 0.025448143405889884
+      },
+      {
+        "chunk_id": "1197f26fdb237056",
+        "doc_path": "corpus/manuals/Belton_BX-12_OM_Manual_RevB.pdf",
+        "doc_title": "Belton BX-12 O&M Manual Rev B",
+        "doc_type": "Operation & Maintenance Manual",
+        "revision": "Issue B",
+        "effective_date": "1 October 2024",
+        "locator": {
+          "page": 3,
+          "section_path": [
+            "Section 3",
+            "Specification"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Belton BX-12 O&M Manual Rev B | Issue B | Section 3 › Specification",
+        "text_original": "Item | BX-12\nBelt | 600 mm wide, PU food grade, endless (factory joined), part 77-1012\nConveyor length | 2 m to 12 m centres, in 0.5 m steps (see rating plate)\nBelt speed | 0.1 to 0.6 m/s, set at BCU-2 (inverter)\nMaximum load | 35 kg per metre, evenly distributed; 150 kg in total\nDrive | End drive at discharge, 1.1 kW geared motor, IP65\nDrive pulley | 160 mm, crowned, lagged; fixed and squared at the factory\nTail pulley | 120 mm, crowned, with screw take-ups both sides\nBelt support | Slider bed (top run); return idlers 77-0410 at 1 m pitch\nSensors | Belt edge sensors S3 (left) and S4 (right) at the tail; speed sensor S5 on tail pulley\nFrame | Stainless steel 304, folded side frames\nControl | BCU-2 control unit, 400 V 3-phase 50 Hz supply\n\n3.1 Rating plate\nThe rating plate on the drive-end side frame gives the serial number, the conveyor length between pulley centres, the year of manufacture and the BCU-2 firmware fitted at despatch. Serial numbers begin BX12- followed by the year and a sequence number, for example BX12-240077.",
+        "text_en": "Item | BX-12\nBelt | 600 mm wide, PU food grade, endless (factory joined), part 77-1012\nConveyor length | 2 m to 12 m centres, in 0.5 m steps (see rating plate)\nBelt speed | 0.1 to 0.6 m/s, set at BCU-2 (inverter)\nMaximum load | 35 kg per metre, evenly distributed; 150 kg in total\nDrive | End drive at discharge, 1.1 kW geared motor, IP65\nDrive pulley | 160 mm, crowned, lagged; fixed and squared at the factory\nTail pulley | 120 mm, crowned, with screw take-ups both sides\nBelt support | Slider bed (top run); return idlers 77-0410 at 1 m pitch\nSensors | Belt edge sensors S3 (left) and S4 (right) at the tail; speed sensor S5 on tail pulley\nFrame | Stainless steel 304, folded side frames\nControl | BCU-2 control unit, 400 V 3-phase 50 Hz supply\n\n3.1 Rating plate\nThe rating plate on the drive-end side frame gives the serial number, the conveyor length between pulley centres, the year of manufacture and the BCU-2 firmware fitted at despatch. Serial numbers begin BX12- followed by the year and a sequence number, for example BX12-240077.",
+        "acl_key": "family-conveyors",
+        "cosine": 0.46689921617507935,
+        "bm25_rank": 27,
+        "vector_rank": 14,
+        "rrf": 0.025007766387076732
+      },
+      {
+        "chunk_id": "325306e5887277b9",
+        "doc_path": "corpus/manuals/Belton_BX-12_OM_Manual_RevB.pdf",
+        "doc_title": "Belton BX-12 O&M Manual Rev B",
+        "doc_type": "Operation & Maintenance Manual",
+        "revision": "Issue B",
+        "effective_date": "1 October 2024",
+        "locator": {
+          "page": 10,
+          "section_path": [
+            "Commissioning record"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Belton BX-12 O&M Manual Rev B | Issue B | Commissioning record",
+        "text_original": "Item | Entry\nSerial number |\nSite and line |\nConveyor length (centres) |\nFrame diagonals (mm), left-right / right-left |\nBelt elongation set (%) |\nTracking checked empty and loaded (Y/N) |\nEdge sensor gap S3 / S4 (mm) |\nBCU-2 firmware |\nDate of commissioning |\nCommissioned by (name, company) |\nSignature |",
+        "text_en": "Item | Entry\nSerial number |\nSite and line |\nConveyor length (centres) |\nFrame diagonals (mm), left-right / right-left |\nBelt elongation set (%) |\nTracking checked empty and loaded (Y/N) |\nEdge sensor gap S3 / S4 (mm) |\nBCU-2 firmware |\nDate of commissioning |\nCommissioned by (name, company) |\nSignature |",
+        "acl_key": "family-conveyors",
+        "cosine": 0.4831639528274536,
+        "bm25_rank": 44,
+        "vector_rank": 13,
+        "rrf": 0.023314014752370917
+      },
+      {
+        "chunk_id": "77db146507f3252c",
+        "doc_path": "corpus/manuals/Belton_BX-12_OM_Manual_RevB.pdf",
+        "doc_title": "Belton BX-12 O&M Manual Rev B",
+        "doc_type": "Operation & Maintenance Manual",
+        "revision": "Issue B",
+        "effective_date": "1 October 2024",
+        "locator": {
+          "page": 8,
+          "section_path": [
+            "Section 12",
+            "Warranty"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Belton BX-12 O&M Manual Rev B | Issue B | Section 12 › Warranty",
+        "text_original": "12.1 Belton warrants the BX-12 conveyor against defects in materials and workmanship for 12 months from the date of commissioning. The commissioning date is the date on the commissioning record returned to Belton (4.3). If no record has been returned, the warranty runs from the date of delivery.\n\n12.2 The warranty does not cover belts, pulley lagging and slider beds, which wear in normal use, nor damage caused by overloading, incorrect tensioning, cleaning chemicals not approved by Belton, or parts not supplied by Belton.\n\n12.3 To make a claim, contact Belton Technical Support with the serial number, the commissioning date, a description of the fault and, where possible, photographs. Do not return parts without a returns number.",
+        "text_en": "12.1 Belton warrants the BX-12 conveyor against defects in materials and workmanship for 12 months from the date of commissioning. The commissioning date is the date on the commissioning record returned to Belton (4.3). If no record has been returned, the warranty runs from the date of delivery.\n\n12.2 The warranty does not cover belts, pulley lagging and slider beds, which wear in normal use, nor damage caused by overloading, incorrect tensioning, cleaning chemicals not approved by Belton, or parts not supplied by Belton.\n\n12.3 To make a claim, contact Belton Technical Support with the serial number, the commissioning date, a description of the fault and, where possible, photographs. Do not return parts without a returns number.",
+        "acl_key": "family-conveyors",
+        "cosine": 0.438501238822937,
+        "bm25_rank": 38,
+        "vector_rank": 18,
+        "rrf": 0.023024594453165882
+      },
+      {
+        "chunk_id": "ad47022d016106b0",
+        "doc_path": "corpus/manuals/Belton_BX-12_OM_Manual_RevB.pdf",
+        "doc_title": "Belton BX-12 O&M Manual Rev B",
+        "doc_type": "Operation & Maintenance Manual",
+        "revision": "Issue B",
+        "effective_date": "1 October 2024",
+        "locator": {
+          "page": 8,
+          "section_path": [
+            "Section 11",
+            "Spare parts"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Belton BX-12 O&M Manual Rev B | Issue B | Section 11 › Spare parts",
+        "text_original": "11.1 Order parts from Belton Technical Support, quoting the serial number from the rating plate. Parts not listed here are specific to the conveyor length and are quoted by serial number.\n\nPart no. | Description | Qty\n77-1012 | Belt, BX-12, 600 mm, PU food grade, endless (state conveyor length) | 1\n77-0410 | Return idler roller, BX-12, complete with bearings | 1 per metre",
+        "text_en": "11.1 Order parts from Belton Technical Support, quoting the serial number from the rating plate. Parts not listed here are specific to the conveyor length and are quoted by serial number.\n\nPart no. | Description | Qty\n77-1012 | Belt, BX-12, 600 mm, PU food grade, endless (state conveyor length) | 1\n77-0410 | Return idler roller, BX-12, complete with bearings | 1 per metre",
+        "acl_key": "family-conveyors",
+        "cosine": 0.4607976973056793,
+        "bm25_rank": 46,
+        "vector_rank": 16,
+        "rrf": 0.022591857000993046
+      },
+      {
+        "chunk_id": "8ae3b837143800e5",
+        "doc_path": "corpus/data/maintpro_history_NA_2023-2026.csv",
+        "doc_title": "MaintPro history NA",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "227381",
+          "sender": null,
+          "date": "02/24/2026"
+        },
+        "header": "MaintPro history NA | 227381",
+        "text_original": "WO_No: 227381\nDate: 02/24/2026\nSite: FRS\nAsset: FRS-V-0202\nModel: BX-12\nSerial: BX12-240078\nEvent_Type: CM\nFault: C-02\nHours: \nTech: OADEYEMI\nNotes: C-02 x2, tracking R after washdown. tail take-up knocked by hose. adj half turn, centred SF 00041084\nParts: \nLabor_Hrs: 1.5\nStatus: CLOSED",
+        "text_en": "WO_No: 227381\nDate: 02/24/2026\nSite: FRS\nAsset: FRS-V-0202\nModel: BX-12\nSerial: BX12-240078\nEvent_Type: CM\nFault: C-02\nHours: \nTech: OADEYEMI\nNotes: C-02 x2, tracking R after washdown. tail take-up knocked by hose. adj half turn, centred SF 00041084\nParts: \nLabor_Hrs: 1.5\nStatus: CLOSED",
+        "acl_key": "region-na",
+        "cosine": 0.3760928213596344,
+        "bm25_rank": 50,
+        "vector_rank": 28,
+        "rrf": 0.020454545454545454
+      },
+      {
+        "chunk_id": "e8efc8aecf1d8206",
+        "doc_path": "corpus/data/salesforce_cases_NA_2025-2026.json",
+        "doc_title": "Salesforce cases NA",
+        "doc_type": "Salesforce Case export",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "5008d000000SWHQmRj",
+          "sender": null,
+          "date": "2026-02-24T21:05:00.000+0000"
+        },
+        "header": "Salesforce cases NA | 5008d000000SWHQmRj",
+        "text_original": "type: Case\nurl: /services/data/v60.0/sobjects/Case/5008d000000SWHQmRj\nId: 5008d000000SWHQmRj\nCaseNumber: 00041084\nSubject: Line 1 belt tracking right\nStatus: Closed\nPriority: Low\nOrigin: Technician\nCreatedDate: 2026-02-24T21:05:00.000+0000\nClosedDate: 2026-02-24T22:30:00.000+0000\nAccount Name: Sierra Springs Beverage\nAsset Name: FRS-V-0202\nEquipment_Model__c: BX-12\nSerial_Number__c: BX12-240078\nSite__c: FRS - Fresno Bottling Plant\nFault_Code__c: C-02\nDescription: Line 1 belt drifting right after customer washdown, C-02 twice.\nResolution__c: Washdown hose had knocked the tail take-up. Adjusted take-up half a turn, tracking centred. No belt change on this unit.\nParts_Used__c: null\nOwner Name: Olu Adeyemi\nCaseComments: null\nEmailMessages: null",
+        "text_en": "type: Case\nurl: /services/data/v60.0/sobjects/Case/5008d000000SWHQmRj\nId: 5008d000000SWHQmRj\nCaseNumber: 00041084\nSubject: Line 1 belt tracking right\nStatus: Closed\nPriority: Low\nOrigin: Technician\nCreatedDate: 2026-02-24T21:05:00.000+0000\nClosedDate: 2026-02-24T22:30:00.000+0000\nAccount Name: Sierra Springs Beverage\nAsset Name: FRS-V-0202\nEquipment_Model__c: BX-12\nSerial_Number__c: BX12-240078\nSite__c: FRS - Fresno Bottling Plant\nFault_Code__c: C-02\nDescription: Line 1 belt drifting right after customer washdown, C-02 twice.\nResolution__c: Washdown hose had knocked the tail take-up. Adjusted take-up half a turn, tracking centred. No belt change on this unit.\nParts_Used__c: null\nOwner Name: Olu Adeyemi\nCaseComments: null\nEmailMessages: null",
+        "acl_key": "region-na",
+        "cosine": null,
+        "bm25_rank": 13,
+        "vector_rank": null,
+        "rrf": 0.0136986301369863
+      },
+      {
+        "chunk_id": "ecb21a80984e0231",
+        "doc_path": "corpus/sharepoint/FS-STD-001_Field_Service_Standard.docx",
+        "doc_title": "FS-STD-001 Field Service Standard",
+        "doc_type": "Field Service Standard",
+        "revision": "4",
+        "effective_date": "2026-01-12",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "6. Work order lifecycle"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "FS-STD-001 Field Service Standard | 4 | 6. Work order lifecycle",
+        "text_original": "# 6. Work order lifecycle\n\n## 6.1 Creating a work order\nWork orders are created from the case, one per asset per visit. The required fields are listed in the Work Order Writing Guide. The ones most often missed are:\n\n- Required certification (section 7). It is mandatory. \"Not sure\" is not a value; ask the team lead.\n- Symptom as reported, and any alarm or fault code with the date and time it appeared.\n- Procedure or manual section the technician is expected to use, where known.\n- Site permits needed: site work permit, isolation, confined space, work at height, hot work.\n- Parts expected, with part numbers, so they can be checked against the van stock before the visit.\n- Campaign code, when the work is done under an OEM campaign. Without it the OEM does not pay for the work.\n\n## 6.2 Supervisor approval before scheduling\nNo work order may be scheduled until a supervisor has approved it. Approval means the supervisor has checked that:\n\n- the asset is correct and the work order describes the problem clearly enough for someone who has not seen the case;\n- the required certification is set correctly for the work described;\n- the proposed technician holds that certification, valid on the day of the visit;\n- known bulletins and campaigns for the serial have been checked, or are listed for the technician to check (section 8);\n- parts and permits are arranged or planned.\n\nException: a Critical case may be dispatched on the verbal approval of the on-call supervisor. The supervisor records the approval in Salesforce within 4 hours. The certification rules in section 7 still apply in full.\n\n## 6.3 Work order statuses\nStatus | Meaning\nNew | Created, not yet approved.\nApproved | Supervisor approved. Technician assigned.\nScheduled | Service appointment booked with the customer.\nDispatched | Sent to the technician's mobile app.\nIn Progress | Technician checked in on site.\nCompleted | Work done, time and parts logged, notes written.\nCannot Complete | Work stopped. A reason is required: parts, access, certification not available on site, customer refused, unsafe condition.\nClosed | Reviewed with the case.\n\n## 6.4 On arrival\nBefore starting, the technician reads the work order and the case, checks in with the site contact, and confirms that the work matches the required certification. If the job turns out to need a certification the technician does not hold, the technician stops, sets the work order to Cannot Complete with the reason, and calls the supervisor. Do not carry on \"just to help the customer\". Write down the readings and observations you are allowed to take so the next visit starts further ahead.",
+        "text_en": "# 6. Work order lifecycle\n\n## 6.1 Creating a work order\nWork orders are created from the case, one per asset per visit. The required fields are listed in the Work Order Writing Guide. The ones most often missed are:\n\n- Required certification (section 7). It is mandatory. \"Not sure\" is not a value; ask the team lead.\n- Symptom as reported, and any alarm or fault code with the date and time it appeared.\n- Procedure or manual section the technician is expected to use, where known.\n- Site permits needed: site work permit, isolation, confined space, work at height, hot work.\n- Parts expected, with part numbers, so they can be checked against the van stock before the visit.\n- Campaign code, when the work is done under an OEM campaign. Without it the OEM does not pay for the work.\n\n## 6.2 Supervisor approval before scheduling\nNo work order may be scheduled until a supervisor has approved it. Approval means the supervisor has checked that:\n\n- the asset is correct and the work order describes the problem clearly enough for someone who has not seen the case;\n- the required certification is set correctly for the work described;\n- the proposed technician holds that certification, valid on the day of the visit;\n- known bulletins and campaigns for the serial have been checked, or are listed for the technician to check (section 8);\n- parts and permits are arranged or planned.\n\nException: a Critical case may be dispatched on the verbal approval of the on-call supervisor. The supervisor records the approval in Salesforce within 4 hours. The certification rules in section 7 still apply in full.\n\n## 6.3 Work order statuses\nStatus | Meaning\nNew | Created, not yet approved.\nApproved | Supervisor approved. Technician assigned.\nScheduled | Service appointment booked with the customer.\nDispatched | Sent to the technician's mobile app.\nIn Progress | Technician checked in on site.\nCompleted | Work done, time and parts logged, notes written.\nCannot Complete | Work stopped. A reason is required: parts, access, certification not available on site, customer refused, unsafe condition.\nClosed | Reviewed with the case.\n\n## 6.4 On arrival\nBefore starting, the technician reads the work order and the case, checks in with the site contact, and confirms that the work matches the required certification. If the job turns out to need a certification the technician does not hold, the technician stops, sets the work order to Cannot Complete with the reason, and calls the supervisor. Do not carry on \"just to help the customer\". Write down the readings and observations you are allowed to take so the next visit starts further ahead.",
+        "acl_key": "",
+        "cosine": null,
+        "bm25_rank": 14,
+        "vector_rank": null,
+        "rrf": 0.013513513513513514
+      },
+      {
+        "chunk_id": "69c9066e9be06e4f",
+        "doc_path": "corpus/confluence/Work-Order-Writing-Guide.html",
+        "doc_title": "Work Order Writing Guide",
+        "doc_type": "Work Order Writing Guide",
+        "revision": "unknown",
+        "effective_date": "Jan 21, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service: Work Order Writing Guide",
+            "Comments"
+          ],
+          "record_id": "comment-1",
+          "sender": "Daniel Reyes",
+          "date": "Jan 21, 2026 09:12",
+          "thread_record_ids": [
+            "comment-1",
+            "comment-2"
+          ]
+        },
+        "header": "Work Order Writing Guide | Field Service: Work Order Writing Guide › Comments",
+        "text_original": "Can certification required be more than one? Pit pumps with a VFD would be HV and confined space.\n\nYes, it's multi-select. I've made that clearer in the table.",
+        "text_en": "Can certification required be more than one? Pit pumps with a VFD would be HV and confined space.\n\nYes, it's multi-select. I've made that clearer in the table.",
+        "acl_key": "",
+        "cosine": null,
+        "bm25_rank": 15,
+        "vector_rank": null,
+        "rrf": 0.013333333333333334
+      },
+      {
+        "chunk_id": "8445dffc63c2c2c7",
+        "doc_path": "corpus/manuals/Belton_BX-12_OM_Manual_RevB.pdf",
+        "doc_title": "Belton BX-12 O&M Manual Rev B",
+        "doc_type": "Operation & Maintenance Manual",
+        "revision": "Issue B",
+        "effective_date": "1 October 2024",
+        "locator": {
+          "page": 1,
+          "section_path": [
+            "Cover"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Belton BX-12 O&M Manual Rev B | Issue B | Cover",
+        "text_original": "BELTON CONVEYORS LTD\n\nBX-12\nPackaging Conveyor\nOperation & Maintenance Manual\n\nThis manual applies to the BX-12 conveyor only. It does not apply to other Belton conveyors, which are supplied with their own manuals.\n\nDocument BC-OM-012, Issue B, 1 October 2024\nBelton Conveyors Ltd, Unit 4, Stafford Park 11, Telford, Shropshire TF3 3AY, United Kingdom\nTechnical Support +44 (0)1952 210 480 service@belton-conveyors.co.uk",
+        "text_en": "BELTON CONVEYORS LTD\n\nBX-12\nPackaging Conveyor\nOperation & Maintenance Manual\n\nThis manual applies to the BX-12 conveyor only. It does not apply to other Belton conveyors, which are supplied with their own manuals.\n\nDocument BC-OM-012, Issue B, 1 October 2024\nBelton Conveyors Ltd, Unit 4, Stafford Park 11, Telford, Shropshire TF3 3AY, United Kingdom\nTechnical Support +44 (0)1952 210 480 service@belton-conveyors.co.uk",
+        "acl_key": "family-conveyors",
+        "cosine": 0.4651873707771301,
+        "bm25_rank": null,
+        "vector_rank": 15,
+        "rrf": 0.013333333333333334
+      },
+      {
+        "chunk_id": "72e481e852c2a58a",
+        "doc_path": "corpus/sharepoint/FS-STD-001_Field_Service_Standard.docx",
+        "doc_title": "FS-STD-001 Field Service Standard",
+        "doc_type": "Field Service Standard",
+        "revision": "4",
+        "effective_date": "2026-01-12",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "8. Before starting repairs: bulletins, campaigns and history"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "FS-STD-001 Field Service Standard | 4 | 8. Before starting repairs: bulletins, campaigns and history",
+        "text_original": "# 8. Before starting repairs: bulletins, campaigns and history\n\nBefore any corrective repair, and before replacing any part, the technician checks:\n\n- Open OEM service bulletins and campaigns for the model and the serial number. Bulletins are in SharePoint under Field Procedures > OEM Bulletins and on the OEM portals. Check the serial on the nameplate, not only the model: many bulletins only apply to a serial range.\n- The asset history for the last 12 months: earlier cases, parts replaced, alarms, firmware level.\n- Other open cases on the same asset.\n\nWhere a bulletin conflicts with the OEM manual, the bulletin applies to the serial range it names. Where a campaign applies to the unit and covers the symptom, the campaign work is done first, or the case is escalated to the team lead, before other repairs aimed at the same symptom.\n\nIf the same part has already been replaced on the same asset in the last 90 days, do not replace it again without calling the team lead. Two identical parts failing in a row usually means the part is not the cause.\n\nWrite in the work order notes what you checked, for example \"Bulletins checked: none applicable to this serial\". A blank means it was not checked.",
+        "text_en": "# 8. Before starting repairs: bulletins, campaigns and history\n\nBefore any corrective repair, and before replacing any part, the technician checks:\n\n- Open OEM service bulletins and campaigns for the model and the serial number. Bulletins are in SharePoint under Field Procedures > OEM Bulletins and on the OEM portals. Check the serial on the nameplate, not only the model: many bulletins only apply to a serial range.\n- The asset history for the last 12 months: earlier cases, parts replaced, alarms, firmware level.\n- Other open cases on the same asset.\n\nWhere a bulletin conflicts with the OEM manual, the bulletin applies to the serial range it names. Where a campaign applies to the unit and covers the symptom, the campaign work is done first, or the case is escalated to the team lead, before other repairs aimed at the same symptom.\n\nIf the same part has already been replaced on the same asset in the last 90 days, do not replace it again without calling the team lead. Two identical parts failing in a row usually means the part is not the cause.\n\nWrite in the work order notes what you checked, for example \"Bulletins checked: none applicable to this serial\". A blank means it was not checked.",
+        "acl_key": "",
+        "cosine": null,
+        "bm25_rank": 19,
+        "vector_rank": null,
+        "rrf": 0.012658227848101266
+      },
+      {
+        "chunk_id": "802d4f0b70f61bfe",
+        "doc_path": "corpus/confluence/Tacoma-Site-Notes.html",
+        "doc_title": "Tacoma Site Notes",
+        "doc_type": "Site Notes",
+        "revision": "unknown",
+        "effective_date": "Apr 14, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service",
+            "Field Service Home",
+            "Sites",
+            "North America",
+            "Field Service : Tacoma Site Notes",
+            "Practical stuff"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Tacoma Site Notes | Field Service › Field Service Home › Sites › North America › Field Service : Tacoma Site Notes › Practical stuff",
+        "text_original": "- Ladders and lifting: the site has a step ladder in room B you can borrow, ask Dave's guys first. No lifting gear for airends or motors, that's a rental and a plan.\n- Waste oil and filters: waste oil drum is in the maintenance shop, there's a log sheet on the clipboard, fill it in. Used filters go in the oily waste bin next to it, not in the general trash.\n- X10 firmware cable: there are two in NA. One lives in my van, one is usually in Fresno. If you need it, ask in #na-compressors before you drive out, not after.\n- Coffee: break room in Building A, contractors welcome, put a couple of dollars in the jar. Taco truck at Gate 2 on Tuesdays and Fridays around 11.\n- Restrooms: Building A or the dock office. Not the ones in the cold store corridor, they're for the warehouse crew and they will tell you.",
+        "text_en": "- Ladders and lifting: the site has a step ladder in room B you can borrow, ask Dave's guys first. No lifting gear for airends or motors, that's a rental and a plan.\n- Waste oil and filters: waste oil drum is in the maintenance shop, there's a log sheet on the clipboard, fill it in. Used filters go in the oily waste bin next to it, not in the general trash.\n- X10 firmware cable: there are two in NA. One lives in my van, one is usually in Fresno. If you need it, ask in #na-compressors before you drive out, not after.\n- Coffee: break room in Building A, contractors welcome, put a couple of dollars in the jar. Taco truck at Gate 2 on Tuesdays and Fridays around 11.\n- Restrooms: Building A or the dock office. Not the ones in the cold store corridor, they're for the warehouse crew and they will tell you.",
+        "acl_key": "region-na",
+        "cosine": null,
+        "bm25_rank": 20,
+        "vector_rank": null,
+        "rrf": 0.0125
+      },
+      {
+        "chunk_id": "327ad97468d7e01a",
+        "doc_path": "corpus/confluence/Work-Order-Writing-Guide.html",
+        "doc_title": "Work Order Writing Guide",
+        "doc_type": "Work Order Writing Guide",
+        "revision": "unknown",
+        "effective_date": "Jan 21, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service: Work Order Writing Guide",
+            "Why this matters"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Work Order Writing Guide | Field Service: Work Order Writing Guide › Why this matters",
+        "text_original": "Every work order is approved by a supervisor before the work is scheduled. The supervisor decides who goes, when, and with what parts, from what you wrote. They usually haven't seen the unit. If the work order says \"fix compressor\", they have to call you, and if they can't reach you, the job waits. Most of the delays I see in the scheduling queue are work orders that are missing one of the fields below.\n\nThe work order is also the record. Six months from now, somebody standing in front of the same unit will read it to find out what was done and why. Write it for that person.",
+        "text_en": "Every work order is approved by a supervisor before the work is scheduled. The supervisor decides who goes, when, and with what parts, from what you wrote. They usually haven't seen the unit. If the work order says \"fix compressor\", they have to call you, and if they can't reach you, the job waits. Most of the delays I see in the scheduling queue are work orders that are missing one of the fields below.\n\nThe work order is also the record. Six months from now, somebody standing in front of the same unit will read it to find out what was done and why. Write it for that person.",
+        "acl_key": "",
+        "cosine": null,
+        "bm25_rank": 21,
+        "vector_rank": null,
+        "rrf": 0.012345679012345678
+      },
+      {
+        "chunk_id": "5aac90f51ff0d2d9",
+        "doc_path": "corpus/manuals/Belton_BX-12_OM_Manual_RevB.pdf",
+        "doc_title": "Belton BX-12 O&M Manual Rev B",
+        "doc_type": "Operation & Maintenance Manual",
+        "revision": "Issue B",
+        "effective_date": "1 October 2024",
+        "locator": {
+          "page": 10,
+          "section_path": [
+            "Maintenance log"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Belton BX-12 O&M Manual Rev B | Issue B | Maintenance log",
+        "text_original": "Date | Hours | Work carried out / parts fitted | Name\n| | |\n| | |\n| | |\n| | |\n| | |\n| | |\n| | |\n| | |\n| | |\n| | |\n| | |\n| | |\n| | |",
+        "text_en": "Date | Hours | Work carried out / parts fitted | Name\n| | |\n| | |\n| | |\n| | |\n| | |\n| | |\n| | |\n| | |\n| | |\n| | |\n| | |\n| | |\n| | |",
+        "acl_key": "family-conveyors",
+        "cosine": 0.41939711570739746,
+        "bm25_rank": null,
+        "vector_rank": 21,
+        "rrf": 0.012345679012345678
+      },
+      {
+        "chunk_id": "189e841d996aa6a6",
+        "doc_path": "corpus/confluence/Work-Order-Writing-Guide.html",
+        "doc_title": "Work Order Writing Guide",
+        "doc_type": "Work Order Writing Guide",
+        "revision": "unknown",
+        "effective_date": "Jan 21, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service: Work Order Writing Guide",
+            "Required fields"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Work Order Writing Guide | Field Service: Work Order Writing Guide › Required fields",
+        "text_original": "Field | What to put in it | Common mistakes\nAsset ID | The asset ID from the fleet register, e.g. FRS-P-0031. One asset per work order | Writing the model instead of the asset. \"The 350 at Fresno\" could be two pumps\nFault code | The code exactly as shown on the controller, e.g. E-14, P-07, L-03. \"None\" if there isn't one | Writing the description instead of the code. Inventing a code. EU: putting old Servio codes here\nSummary | One line: what's wrong and what you propose. \"E-14 repeat, TS-2 reading 11 C high vs handheld, replace TS-2\" | \"Broken\", \"see case\", \"as discussed\"\nWork steps | The steps you expect to do, in order, with the document number for any procedure you'll follow | Pasting the steps of a controlled procedure. Reference the document number instead\nParts | Part numbers and quantities, from the parts list. If you don't know the number, write the description and the serial and let stores find it | Guessing part numbers\nCertification required | None, HV, Refrigerant (EPA 608 / F-gas), Confined space. Multi-select | Leaving it blank when the work needs one. Selecting None because you think you can do it\nEstimated duration | Hours on site, not including travel. Travel is calculated by the scheduler | Including travel. Writing \"half a day\"\nPriority | Low, Medium, High, Emergency, per the rules below | Everything High\nCampaign code | If the work is under an OEM campaign or warranty bulletin, the code from the bulletin, e.g. NK-C25-14 for the Nordkyl NK-600 EXV campaign. Blank otherwise | Leaving it blank. Without the code, the OEM doesn't pay and we eat the labour",
+        "text_en": "Field | What to put in it | Common mistakes\nAsset ID | The asset ID from the fleet register, e.g. FRS-P-0031. One asset per work order | Writing the model instead of the asset. \"The 350 at Fresno\" could be two pumps\nFault code | The code exactly as shown on the controller, e.g. E-14, P-07, L-03. \"None\" if there isn't one | Writing the description instead of the code. Inventing a code. EU: putting old Servio codes here\nSummary | One line: what's wrong and what you propose. \"E-14 repeat, TS-2 reading 11 C high vs handheld, replace TS-2\" | \"Broken\", \"see case\", \"as discussed\"\nWork steps | The steps you expect to do, in order, with the document number for any procedure you'll follow | Pasting the steps of a controlled procedure. Reference the document number instead\nParts | Part numbers and quantities, from the parts list. If you don't know the number, write the description and the serial and let stores find it | Guessing part numbers\nCertification required | None, HV, Refrigerant (EPA 608 / F-gas), Confined space. Multi-select | Leaving it blank when the work needs one. Selecting None because you think you can do it\nEstimated duration | Hours on site, not including travel. Travel is calculated by the scheduler | Including travel. Writing \"half a day\"\nPriority | Low, Medium, High, Emergency, per the rules below | Everything High\nCampaign code | If the work is under an OEM campaign or warranty bulletin, the code from the bulletin, e.g. NK-C25-14 for the Nordkyl NK-600 EXV campaign. Blank otherwise | Leaving it blank. Without the code, the OEM doesn't pay and we eat the labour",
+        "acl_key": "",
+        "cosine": null,
+        "bm25_rank": 22,
+        "vector_rank": null,
+        "rrf": 0.012195121951219513
+      }
+    ]
+  },
+  "judgement": {
+    "key_points": [
+      {
+        "point": "Lot 23-11 return idlers have an off-centre bore",
+        "verdict": "present",
+        "reason": "The copilot states that lot-23-11 return idlers have an off-centre bore."
+      },
+      {
+        "point": "Defective idlers make the belt walk to the drive side",
+        "verdict": "present",
+        "reason": "The copilot says the bore steers the belt toward the drive side."
+      },
+      {
+        "point": "Issue affects BX-12 units built in 2023-2024",
+        "verdict": "present",
+        "reason": "The copilot identifies BX-12 machines built in 2023–2024 as affected."
+      },
+      {
+        "point": "Replace the return idler with revised part 77-0419",
+        "verdict": "present",
+        "reason": "The copilot identifies revised return idler 77-0419 as the permanent fix."
+      },
+      {
+        "point": "Temporarily shim the drive-side tail-pulley bearing by 0.5 mm",
+        "verdict": "present",
+        "reason": "The copilot instructs fitting one 0.5 mm shim at the drive-side tail bearing block."
+      },
+      {
+        "point": "Re-check tracking after three belt revolutions",
+        "verdict": "present",
+        "reason": "The copilot repeatedly specifies checking tracking after three complete belt revolutions."
+      }
+    ],
+    "constraints": [],
+    "verdict": "correct"
+  }
+}

@@ -1,0 +1,2103 @@
+{
+  "question": {
+    "id": "q09",
+    "user_id": "u05",
+    "question": "RTM-H-0007 has an L-03 alarm again, suction at 1.9 bar. What should I do?",
+    "reference_answer": "L-03 is low suction pressure. RTM-H-0007 is an NK-600, serial NK600-230415, inside the Nordkyl SB-2025-014 EXV campaign range, which wasn't checked when 2.5 kg was topped up in February under KT-WI-14. Check the EXV position in the service menu first; if it is stuck below 15% while the controller asks for more opening, replace the EXV with 63-1180 rev 3 on both circuits under campaign code NK-C25-14. If the EXV is fine, leak test per SOP-020 before any recharge. Note the conflict: KT-WI-14 allows a top-up without a leak test, SOP-020 forbids it. Draft a work order for supervisor approval: asset RTM-H-0007, fault L-03, refrigerant certification required, parts 63-1180 x2, campaign NK-C25-14."
+  },
+  "result": {
+    "question": "RTM-H-0007 has an L-03 alarm again, suction at 1.9 bar. What should I do?",
+    "user_id": "u05",
+    "status": "answered",
+    "message": null,
+    "summary": [
+      {
+        "sentence": "Do not top up RTM-H-0007 again: check circuit 2’s EXV before connecting gauges or leak testing, because a sticking valve can mimic low charge and leave the circuit overcharged when it frees.",
+        "sources": [
+          "S2",
+          "S3",
+          "S4",
+          "S5",
+          "S6",
+          "S1",
+          "S7",
+          "S8"
+        ]
+      },
+      {
+        "sentence": "L-03 means suction below 2.4 bar for 60 seconds, so 1.9 bar is below threshold; the NK-600 automatically restarts after five minutes but locks out after three occurrences in 24 hours.",
+        "sources": [
+          "S1"
+        ]
+      },
+      {
+        "sentence": "RTM-H-0007 is NK-600 serial NK600-230415, within SB-2025-014’s affected range NK600-220001–NK600-231999 for campaign NK-C25-14, with no completion recorded, making a sticking valve a strong possibility rather than a confirmed diagnosis.",
+        "sources": [
+          "S4",
+          "S9",
+          "S8"
+        ]
+      },
+      {
+        "sentence": "Follow SB-2025-014 before generic low-suction troubleshooting for this serial number; the sources explicitly disagree on topping up—KT-WI-14 permits a deficit below 10% without a visible leak, whereas SOP-020 prohibits topping up without leak testing—and the unresolved conflict leaves the asset-specific instruction as EXV first, no top-up.",
+        "sources": [
+          "S4",
+          "S5",
+          "S6",
+          "S10",
+          "S7",
+          "S8"
+        ]
+      },
+      {
+        "sentence": "Review the alarm log for circuit, timing, pressures, superheat, EXV position and water temperatures, export its CSV for the campaign/warranty claim or Nordkyl support enquiry, and establish whether the event followed more than 48 hours idle, since the campaign typically causes one-circuit L-03 after such an idle period, often at low ambient temperature.",
+        "sources": [
+          "S11",
+          "S10",
+          "S1",
+          "S7"
+        ]
+      },
+      {
+        "sentence": "For the campaign check, run or restart the alarmed circuit for at least 10 minutes, use the service-level login at Service > Circuits > Circuit 2 > EXV, record EXV request and position for both circuits, and check whether the fitted valves are rev 2 or rev 3.",
+        "sources": [
+          "S4",
+          "S5"
+        ]
+      },
+      {
+        "sentence": "Under SB-2025-014, position remaining below 15% while request is higher, usually 40–100%, confirms a stuck valve: do not add refrigerant or tap the valve free, because it remains defective and will stick again; replace the campaign valves.",
+        "sources": [
+          "S5"
+        ]
+      },
+      {
+        "sentence": "If EXV position follows request within about 5%, SB-2025-014 directs continued NK-600 manual L-03 troubleshooting while still scheduling campaign valve replacement; the manual cautions that displayed position is calculated from driver steps rather than measured at the valve and refers to the section 7.4.3 manual response test.",
+        "sources": [
+          "S3",
+          "S5"
+        ]
+      },
+      {
+        "sentence": "If the EXV is not causing the alarm, check chilled-water pump/flow and strainer, evaporator or suction-line ice, condenser cleanliness and fan operation, and filter-drier restriction before concluding charge is low; a temperature drop above 3 K across the drier indicates restriction and requires replacement of core 63-0410.",
+        "sources": [
+          "S3",
+          "S10",
+          "S7"
+        ]
+      },
+      {
+        "sentence": "High superheat with subcooling below 2 K and sight-glass bubbles supports low charge, whereas high superheat with normal/high subcooling and a clear sight glass supports EXV restriction; typical suction of 3.4–3.9 bar absolute and superheat of 5–8 K apply only at nominal conditions of chilled water 12/7°C, ambient 35°C and full load.",
+        "sources": [
+          "S3",
+          "S10"
+        ]
+      },
+      {
+        "sentence": "Use the open work order to arrange campaign parts and certified work through the supervisor rather than self-assigning: NK-C25-14 requires replacement on both circuits despite only circuit 2 alarming, with two 63-1180 rev 3 valve assemblies and two 63-0410 filter-drier cores, half a day on site, and EU F-gas Category I or national-equivalent certification for refrigerant-circuit work.",
+        "sources": [
+          "S17",
+          "S4",
+          "S12"
+        ]
+      },
+      {
+        "sentence": "Coordinate roof access and the work-at-height permit before attending; circuit 2’s service valves face the roof edge close to the guardrail, where the site instruction is to kneel, not lean.",
+        "sources": [
+          "S2",
+          "S4",
+          "S8"
+        ]
+      },
+      {
+        "sentence": "For campaign replacement, stop, electrically isolate and lock out the unit, then recover, weigh and record refrigerant separately from each circuit, including the asset-specific requirement to assess circuit 2’s February addition.",
+        "sources": [
+          "S12",
+          "S4"
+        ]
+      },
+      {
+        "sentence": "Replace the valves and drier cores using nitrogen purging during brazing and a wet-cloth-protected valve body kept at or below 120°C, fit the supplied rev 3 stepper cables without modifying the old cables, and select EXV type ‘rev 3’ in each circuit’s controller configuration.",
+        "sources": [
+          "S12"
+        ]
+      },
+      {
+        "sentence": "Pressure-test and evacuate according to the NK-600 manual and local regulations, then charge each circuit to its nameplate quantity rather than blindly to the recovered quantity after an earlier top-up.",
+        "sources": [
+          "S12"
+        ]
+      },
+      {
+        "sentence": "If the valve is sound or charge remains short after valve correction, leak-test and repair under SOP-020 without topping up; if no leak can be found, tag the unit and escalate.",
+        "sources": [
+          "S4"
+        ]
+      },
+      {
+        "sentence": "After campaign replacement, run for 30 minutes and verify both circuits’ EXV positions follow request with stable superheat, fit the campaign label, log work and refrigerant quantities in the F-gas record, and return both removed valves to Nordkyl within 30 days for the claim.",
+        "sources": [
+          "S12"
+        ]
+      },
+      {
+        "sentence": "This is a repeat fault: circuit 2 had L-03 after winter restarts on 15 January 2024 under WO 2400209 and 20 January 2025 under WO 2500253, with both records reporting recovery after reset and no further corrective work.",
+        "sources": [
+          "S13",
+          "S14"
+        ]
+      },
+      {
+        "sentence": "On 24 February 2026, WO 2600347 / case 00041055 recorded circuit 2 at 2.1 bar and a 2.5 kg R-513A top-up under KT-WI-14 after visual inspection found no leak and the estimated deficit was below 10%; the 25 February check under WO 2600357 recorded 3.3 bar without alarm, but Sofie later confirmed the EXV campaign had been missed and could not find a scheduled full leak test.",
+        "sources": [
+          "S2",
+          "S4",
+          "S15",
+          "S9"
+        ]
+      },
+      {
+        "sentence": "The 28 September 2026 recurrence is open WO 2601148 / critical case 00044102, recording circuit 2 at 1.9 bar, circuit 1 normal, no visible oil traces, no gauges connected and operation on circuit 1 only; Sofie’s recorded attendance is 1 October at 07:00, with diagnosis followed by a return replacement visit if campaign parts are unavailable.",
+        "sources": [
+          "S16",
+          "S4",
+          "S8"
+        ]
+      },
+      {
+        "sentence": "The customer wants a root cause, not another top-up, and Sofie’s plan commits to a written root-cause report after the visit.",
+        "sources": [
+          "S17",
+          "S4",
+          "S18"
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "sentence": "Do not top up RTM-H-0007 again: check circuit 2’s EXV before connecting gauges or leak testing, because a sticking valve can mimic low charge and leave the circuit overcharged when it frees.",
+        "source": "S2",
+        "chunk_id": "28cfef0bfb4c1b07",
+        "title": "Rotterdam Site Notes",
+        "location": "Field Service: Rotterdam Site Notes › RTM-H-0007 history",
+        "doc_type": "Site Notes",
+        "revision": "unknown",
+        "date": "Mar 02, 2026",
+        "status": "Supported",
+        "evidence": "If 0007 alarms again, don't just top it up again."
+      },
+      {
+        "sentence": "Do not top up RTM-H-0007 again: check circuit 2’s EXV before connecting gauges or leak testing, because a sticking valve can mimic low charge and leave the circuit overcharged when it frees.",
+        "source": "S3",
+        "chunk_id": "8d490b4d5749fd52",
+        "title": "NK600 manual final v2",
+        "location": "p.8 · 6 Alarms › 6.2 Alarm codes › 6.3 Diagnosing L-03 › 6.4 Typical operating values",
+        "doc_type": "Service Manual",
+        "revision": "C",
+        "date": "2025-03-05",
+        "status": "Supported",
+        "evidence": "Before connecting gauges, open the EXV menu for the alarmed circuit and the alarm log entry."
+      },
+      {
+        "sentence": "Do not top up RTM-H-0007 again: check circuit 2’s EXV before connecting gauges or leak testing, because a sticking valve can mimic low charge and leave the circuit overcharged when it frees.",
+        "source": "S4",
+        "chunk_id": "c11e8e188b85b515",
+        "title": "FW: RTM-H-0007 repeat alarm",
+        "location": "Sofie de Vries <s.devries@corvane.eu>, 30 September 2026 05:48:09 +0000",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Check the EXV on circuit 2 first, before anything is connected to the refrigerant side"
+      },
+      {
+        "sentence": "Do not top up RTM-H-0007 again: check circuit 2’s EXV before connecting gauges or leak testing, because a sticking valve can mimic low charge and leave the circuit overcharged when it frees.",
+        "source": "S5",
+        "chunk_id": "cd550eba05134bd1",
+        "title": "Nordkyl SB-2025-014",
+        "location": "p.2 · FIELD CAMPAIGN NK-C25-14 › DIAGNOSIS: CHECK THE EXV BEFORE LEAK TESTING OR CHARGING",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "date": "2 September 2025",
+        "status": "Supported",
+        "evidence": "DIAGNOSIS: CHECK THE EXV BEFORE LEAK TESTING OR CHARGING"
+      },
+      {
+        "sentence": "Do not top up RTM-H-0007 again: check circuit 2’s EXV before connecting gauges or leak testing, because a sticking valve can mimic low charge and leave the circuit overcharged when it frees.",
+        "source": "S6",
+        "chunk_id": "18f603e2fc995d6b",
+        "title": "Nordkyl SB-2025-014",
+        "location": "p.1 · FIELD CAMPAIGN NK-C25-14",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "date": "2 September 2025",
+        "status": "Supported",
+        "evidence": "check the EXV position in the service menu first. A sticking expansion valve starves the evaporator and gives the same alarm as a low charge. Adding refrigerant does not correct it, and the circuit is overcharged when the valve frees again."
+      },
+      {
+        "sentence": "Do not top up RTM-H-0007 again: check circuit 2’s EXV before connecting gauges or leak testing, because a sticking valve can mimic low charge and leave the circuit overcharged when it frees.",
+        "source": "S1",
+        "chunk_id": "f149ef009bdf5fc5",
+        "title": "NK600 manual final v2",
+        "location": "p.7 · 5 Control logic › 6 Alarms › 6.1 Alarm handling › 6.2 Alarm codes",
+        "doc_type": "Service Manual",
+        "revision": "C",
+        "date": "2025-03-05",
+        "status": "Supported",
+        "evidence": "Alarm: Low suction pressure\nTrigger: Suction pressure below 2.4 bar for 60 s\nRestart: Auto, 5 min; lockout after 3 in 24 h"
+      },
+      {
+        "sentence": "Do not top up RTM-H-0007 again: check circuit 2’s EXV before connecting gauges or leak testing, because a sticking valve can mimic low charge and leave the circuit overcharged when it frees.",
+        "source": "S7",
+        "chunk_id": "7e7e072a9c7fdcad",
+        "title": "SOP-020 Chiller Leak Test and Refrigerant Recharge",
+        "location": "SOP-020 Chiller Leak Test and Refrigerant Recharge › 6. Procedure › 6.1 Before you connect gauges",
+        "doc_type": "Standard Operating Procedure",
+        "revision": "3",
+        "date": "2025-06-11",
+        "status": "Supported",
+        "evidence": "On Nordkyl NK-600 units covered by the EXV replacement campaign, follow the bulletin first: a sticking expansion valve produces the same alarm as a low charge."
+      },
+      {
+        "sentence": "Do not top up RTM-H-0007 again: check circuit 2’s EXV before connecting gauges or leak testing, because a sticking valve can mimic low charge and leave the circuit overcharged when it frees.",
+        "source": "S8",
+        "chunk_id": "d75c10274982523a",
+        "title": "Salesforce cases EU",
+        "location": "5008d00000NbLGDVtk · 2026-09-28T06:55:00.000+0000",
+        "doc_type": "Salesforce Case export",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Do not top up refrigerant before I arrive. EXV first."
+      },
+      {
+        "sentence": "L-03 means suction below 2.4 bar for 60 seconds, so 1.9 bar is below threshold; the NK-600 automatically restarts after five minutes but locks out after three occurrences in 24 hours.",
+        "source": "S1",
+        "chunk_id": "f149ef009bdf5fc5",
+        "title": "NK600 manual final v2",
+        "location": "p.7 · 5 Control logic › 6 Alarms › 6.1 Alarm handling › 6.2 Alarm codes",
+        "doc_type": "Service Manual",
+        "revision": "C",
+        "date": "2025-03-05",
+        "status": "Supported",
+        "evidence": "Alarm: Low suction pressure\nTrigger: Suction pressure below 2.4 bar for 60 s\nRestart: Auto, 5 min; lockout after 3 in 24 h"
+      },
+      {
+        "sentence": "RTM-H-0007 is NK-600 serial NK600-230415, within SB-2025-014’s affected range NK600-220001–NK600-231999 for campaign NK-C25-14, with no completion recorded, making a sticking valve a strong possibility rather than a confirmed diagnosis.",
+        "source": "S4",
+        "chunk_id": "c11e8e188b85b515",
+        "title": "FW: RTM-H-0007 repeat alarm",
+        "location": "Sofie de Vries <s.devries@corvane.eu>, 30 September 2026 05:48:09 +0000",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Check the EXV on circuit 2 first, before anything is connected to the refrigerant side"
+      },
+      {
+        "sentence": "RTM-H-0007 is NK-600 serial NK600-230415, within SB-2025-014’s affected range NK600-220001–NK600-231999 for campaign NK-C25-14, with no completion recorded, making a sticking valve a strong possibility rather than a confirmed diagnosis.",
+        "source": "S9",
+        "chunk_id": "0fbeafabb3a79bd0",
+        "title": "Salesforce cases EU",
+        "location": "5008d00000z3PmOJLL · 2026-02-24T06:40:00.000+0000",
+        "doc_type": "Salesforce Case export",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Equipment Model: NK-600\nSerial Number: NK600-230415"
+      },
+      {
+        "sentence": "RTM-H-0007 is NK-600 serial NK600-230415, within SB-2025-014’s affected range NK600-220001–NK600-231999 for campaign NK-C25-14, with no completion recorded, making a sticking valve a strong possibility rather than a confirmed diagnosis.",
+        "source": "S8",
+        "chunk_id": "d75c10274982523a",
+        "title": "Salesforce cases EU",
+        "location": "5008d00000NbLGDVtk · 2026-09-28T06:55:00.000+0000",
+        "doc_type": "Salesforce Case export",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Do not top up refrigerant before I arrive. EXV first."
+      },
+      {
+        "sentence": "Follow SB-2025-014 before generic low-suction troubleshooting for this serial number; the sources explicitly disagree on topping up—KT-WI-14 permits a deficit below 10% without a visible leak, whereas SOP-020 prohibits topping up without leak testing—and the unresolved conflict leaves the asset-specific instruction as EXV first, no top-up.",
+        "source": "S4",
+        "chunk_id": "c11e8e188b85b515",
+        "title": "FW: RTM-H-0007 repeat alarm",
+        "location": "Sofie de Vries <s.devries@corvane.eu>, 30 September 2026 05:48:09 +0000",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Check the EXV on circuit 2 first, before anything is connected to the refrigerant side"
+      },
+      {
+        "sentence": "Follow SB-2025-014 before generic low-suction troubleshooting for this serial number; the sources explicitly disagree on topping up—KT-WI-14 permits a deficit below 10% without a visible leak, whereas SOP-020 prohibits topping up without leak testing—and the unresolved conflict leaves the asset-specific instruction as EXV first, no top-up.",
+        "source": "S5",
+        "chunk_id": "cd550eba05134bd1",
+        "title": "Nordkyl SB-2025-014",
+        "location": "p.2 · FIELD CAMPAIGN NK-C25-14 › DIAGNOSIS: CHECK THE EXV BEFORE LEAK TESTING OR CHARGING",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "date": "2 September 2025",
+        "status": "Supported",
+        "evidence": "DIAGNOSIS: CHECK THE EXV BEFORE LEAK TESTING OR CHARGING"
+      },
+      {
+        "sentence": "Follow SB-2025-014 before generic low-suction troubleshooting for this serial number; the sources explicitly disagree on topping up—KT-WI-14 permits a deficit below 10% without a visible leak, whereas SOP-020 prohibits topping up without leak testing—and the unresolved conflict leaves the asset-specific instruction as EXV first, no top-up.",
+        "source": "S6",
+        "chunk_id": "18f603e2fc995d6b",
+        "title": "Nordkyl SB-2025-014",
+        "location": "p.1 · FIELD CAMPAIGN NK-C25-14",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "date": "2 September 2025",
+        "status": "Supported",
+        "evidence": "check the EXV position in the service menu first. A sticking expansion valve starves the evaporator and gives the same alarm as a low charge. Adding refrigerant does not correct it, and the circuit is overcharged when the valve frees again."
+      },
+      {
+        "sentence": "Follow SB-2025-014 before generic low-suction troubleshooting for this serial number; the sources explicitly disagree on topping up—KT-WI-14 permits a deficit below 10% without a visible leak, whereas SOP-020 prohibits topping up without leak testing—and the unresolved conflict leaves the asset-specific instruction as EXV first, no top-up.",
+        "source": "S10",
+        "chunk_id": "878dbe59ff355470",
+        "title": "KT-WI-14 Low Suction Pressure, Chillers (EN)",
+        "location": "5. Werkwijze / Method",
+        "doc_type": "Work instruction",
+        "revision": "3",
+        "date": "15-03-2021",
+        "status": "Supported",
+        "evidence": "If no leak is found by visual inspection and the deficit is below 10% of nameplate charge, top up and monitor"
+      },
+      {
+        "sentence": "Follow SB-2025-014 before generic low-suction troubleshooting for this serial number; the sources explicitly disagree on topping up—KT-WI-14 permits a deficit below 10% without a visible leak, whereas SOP-020 prohibits topping up without leak testing—and the unresolved conflict leaves the asset-specific instruction as EXV first, no top-up.",
+        "source": "S7",
+        "chunk_id": "7e7e072a9c7fdcad",
+        "title": "SOP-020 Chiller Leak Test and Refrigerant Recharge",
+        "location": "SOP-020 Chiller Leak Test and Refrigerant Recharge › 6. Procedure › 6.1 Before you connect gauges",
+        "doc_type": "Standard Operating Procedure",
+        "revision": "3",
+        "date": "2025-06-11",
+        "status": "Supported",
+        "evidence": "On Nordkyl NK-600 units covered by the EXV replacement campaign, follow the bulletin first: a sticking expansion valve produces the same alarm as a low charge."
+      },
+      {
+        "sentence": "Follow SB-2025-014 before generic low-suction troubleshooting for this serial number; the sources explicitly disagree on topping up—KT-WI-14 permits a deficit below 10% without a visible leak, whereas SOP-020 prohibits topping up without leak testing—and the unresolved conflict leaves the asset-specific instruction as EXV first, no top-up.",
+        "source": "S8",
+        "chunk_id": "d75c10274982523a",
+        "title": "Salesforce cases EU",
+        "location": "5008d00000NbLGDVtk · 2026-09-28T06:55:00.000+0000",
+        "doc_type": "Salesforce Case export",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Do not top up refrigerant before I arrive. EXV first."
+      },
+      {
+        "sentence": "Review the alarm log for circuit, timing, pressures, superheat, EXV position and water temperatures, export its CSV for the campaign/warranty claim or Nordkyl support enquiry, and establish whether the event followed more than 48 hours idle, since the campaign typically causes one-circuit L-03 after such an idle period, often at low ambient temperature.",
+        "source": "S11",
+        "chunk_id": "e8cbbe85d1120490",
+        "title": "Nordkyl SB-2025-014",
+        "location": "p.1 · FIELD CAMPAIGN NK-C25-14 › SYMPTOM",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "date": "2 September 2025",
+        "status": "Supported",
+        "evidence": "Typically in the first hours after a restart that follows an idle period of more than 48 hours: weekend shutdown, low load in winter, or after maintenance. More frequent at low ambient temperature."
+      },
+      {
+        "sentence": "Review the alarm log for circuit, timing, pressures, superheat, EXV position and water temperatures, export its CSV for the campaign/warranty claim or Nordkyl support enquiry, and establish whether the event followed more than 48 hours idle, since the campaign typically causes one-circuit L-03 after such an idle period, often at low ambient temperature.",
+        "source": "S10",
+        "chunk_id": "878dbe59ff355470",
+        "title": "KT-WI-14 Low Suction Pressure, Chillers (EN)",
+        "location": "5. Werkwijze / Method",
+        "doc_type": "Work instruction",
+        "revision": "3",
+        "date": "15-03-2021",
+        "status": "Supported",
+        "evidence": "If no leak is found by visual inspection and the deficit is below 10% of nameplate charge, top up and monitor"
+      },
+      {
+        "sentence": "Review the alarm log for circuit, timing, pressures, superheat, EXV position and water temperatures, export its CSV for the campaign/warranty claim or Nordkyl support enquiry, and establish whether the event followed more than 48 hours idle, since the campaign typically causes one-circuit L-03 after such an idle period, often at low ambient temperature.",
+        "source": "S1",
+        "chunk_id": "f149ef009bdf5fc5",
+        "title": "NK600 manual final v2",
+        "location": "p.7 · 5 Control logic › 6 Alarms › 6.1 Alarm handling › 6.2 Alarm codes",
+        "doc_type": "Service Manual",
+        "revision": "C",
+        "date": "2025-03-05",
+        "status": "Supported",
+        "evidence": "Alarm: Low suction pressure\nTrigger: Suction pressure below 2.4 bar for 60 s\nRestart: Auto, 5 min; lockout after 3 in 24 h"
+      },
+      {
+        "sentence": "Review the alarm log for circuit, timing, pressures, superheat, EXV position and water temperatures, export its CSV for the campaign/warranty claim or Nordkyl support enquiry, and establish whether the event followed more than 48 hours idle, since the campaign typically causes one-circuit L-03 after such an idle period, often at low ambient temperature.",
+        "source": "S7",
+        "chunk_id": "7e7e072a9c7fdcad",
+        "title": "SOP-020 Chiller Leak Test and Refrigerant Recharge",
+        "location": "SOP-020 Chiller Leak Test and Refrigerant Recharge › 6. Procedure › 6.1 Before you connect gauges",
+        "doc_type": "Standard Operating Procedure",
+        "revision": "3",
+        "date": "2025-06-11",
+        "status": "Supported",
+        "evidence": "On Nordkyl NK-600 units covered by the EXV replacement campaign, follow the bulletin first: a sticking expansion valve produces the same alarm as a low charge."
+      },
+      {
+        "sentence": "For the campaign check, run or restart the alarmed circuit for at least 10 minutes, use the service-level login at Service > Circuits > Circuit 2 > EXV, record EXV request and position for both circuits, and check whether the fitted valves are rev 2 or rev 3.",
+        "source": "S4",
+        "chunk_id": "c11e8e188b85b515",
+        "title": "FW: RTM-H-0007 repeat alarm",
+        "location": "Sofie de Vries <s.devries@corvane.eu>, 30 September 2026 05:48:09 +0000",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Check the EXV on circuit 2 first, before anything is connected to the refrigerant side"
+      },
+      {
+        "sentence": "For the campaign check, run or restart the alarmed circuit for at least 10 minutes, use the service-level login at Service > Circuits > Circuit 2 > EXV, record EXV request and position for both circuits, and check whether the fitted valves are rev 2 or rev 3.",
+        "source": "S5",
+        "chunk_id": "cd550eba05134bd1",
+        "title": "Nordkyl SB-2025-014",
+        "location": "p.2 · FIELD CAMPAIGN NK-C25-14 › DIAGNOSIS: CHECK THE EXV BEFORE LEAK TESTING OR CHARGING",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "date": "2 September 2025",
+        "status": "Supported",
+        "evidence": "DIAGNOSIS: CHECK THE EXV BEFORE LEAK TESTING OR CHARGING"
+      },
+      {
+        "sentence": "Under SB-2025-014, position remaining below 15% while request is higher, usually 40–100%, confirms a stuck valve: do not add refrigerant or tap the valve free, because it remains defective and will stick again; replace the campaign valves.",
+        "source": "S5",
+        "chunk_id": "cd550eba05134bd1",
+        "title": "Nordkyl SB-2025-014",
+        "location": "p.2 · FIELD CAMPAIGN NK-C25-14 › DIAGNOSIS: CHECK THE EXV BEFORE LEAK TESTING OR CHARGING",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "date": "2 September 2025",
+        "status": "Supported",
+        "evidence": "DIAGNOSIS: CHECK THE EXV BEFORE LEAK TESTING OR CHARGING"
+      },
+      {
+        "sentence": "If EXV position follows request within about 5%, SB-2025-014 directs continued NK-600 manual L-03 troubleshooting while still scheduling campaign valve replacement; the manual cautions that displayed position is calculated from driver steps rather than measured at the valve and refers to the section 7.4.3 manual response test.",
+        "source": "S3",
+        "chunk_id": "8d490b4d5749fd52",
+        "title": "NK600 manual final v2",
+        "location": "p.8 · 6 Alarms › 6.2 Alarm codes › 6.3 Diagnosing L-03 › 6.4 Typical operating values",
+        "doc_type": "Service Manual",
+        "revision": "C",
+        "date": "2025-03-05",
+        "status": "Supported",
+        "evidence": "Before connecting gauges, open the EXV menu for the alarmed circuit and the alarm log entry."
+      },
+      {
+        "sentence": "If EXV position follows request within about 5%, SB-2025-014 directs continued NK-600 manual L-03 troubleshooting while still scheduling campaign valve replacement; the manual cautions that displayed position is calculated from driver steps rather than measured at the valve and refers to the section 7.4.3 manual response test.",
+        "source": "S5",
+        "chunk_id": "cd550eba05134bd1",
+        "title": "Nordkyl SB-2025-014",
+        "location": "p.2 · FIELD CAMPAIGN NK-C25-14 › DIAGNOSIS: CHECK THE EXV BEFORE LEAK TESTING OR CHARGING",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "date": "2 September 2025",
+        "status": "Supported",
+        "evidence": "DIAGNOSIS: CHECK THE EXV BEFORE LEAK TESTING OR CHARGING"
+      },
+      {
+        "sentence": "If the EXV is not causing the alarm, check chilled-water pump/flow and strainer, evaporator or suction-line ice, condenser cleanliness and fan operation, and filter-drier restriction before concluding charge is low; a temperature drop above 3 K across the drier indicates restriction and requires replacement of core 63-0410.",
+        "source": "S3",
+        "chunk_id": "8d490b4d5749fd52",
+        "title": "NK600 manual final v2",
+        "location": "p.8 · 6 Alarms › 6.2 Alarm codes › 6.3 Diagnosing L-03 › 6.4 Typical operating values",
+        "doc_type": "Service Manual",
+        "revision": "C",
+        "date": "2025-03-05",
+        "status": "Supported",
+        "evidence": "Before connecting gauges, open the EXV menu for the alarmed circuit and the alarm log entry."
+      },
+      {
+        "sentence": "If the EXV is not causing the alarm, check chilled-water pump/flow and strainer, evaporator or suction-line ice, condenser cleanliness and fan operation, and filter-drier restriction before concluding charge is low; a temperature drop above 3 K across the drier indicates restriction and requires replacement of core 63-0410.",
+        "source": "S10",
+        "chunk_id": "878dbe59ff355470",
+        "title": "KT-WI-14 Low Suction Pressure, Chillers (EN)",
+        "location": "5. Werkwijze / Method",
+        "doc_type": "Work instruction",
+        "revision": "3",
+        "date": "15-03-2021",
+        "status": "Supported",
+        "evidence": "If no leak is found by visual inspection and the deficit is below 10% of nameplate charge, top up and monitor"
+      },
+      {
+        "sentence": "If the EXV is not causing the alarm, check chilled-water pump/flow and strainer, evaporator or suction-line ice, condenser cleanliness and fan operation, and filter-drier restriction before concluding charge is low; a temperature drop above 3 K across the drier indicates restriction and requires replacement of core 63-0410.",
+        "source": "S7",
+        "chunk_id": "7e7e072a9c7fdcad",
+        "title": "SOP-020 Chiller Leak Test and Refrigerant Recharge",
+        "location": "SOP-020 Chiller Leak Test and Refrigerant Recharge › 6. Procedure › 6.1 Before you connect gauges",
+        "doc_type": "Standard Operating Procedure",
+        "revision": "3",
+        "date": "2025-06-11",
+        "status": "Supported",
+        "evidence": "On Nordkyl NK-600 units covered by the EXV replacement campaign, follow the bulletin first: a sticking expansion valve produces the same alarm as a low charge."
+      },
+      {
+        "sentence": "High superheat with subcooling below 2 K and sight-glass bubbles supports low charge, whereas high superheat with normal/high subcooling and a clear sight glass supports EXV restriction; typical suction of 3.4–3.9 bar absolute and superheat of 5–8 K apply only at nominal conditions of chilled water 12/7°C, ambient 35°C and full load.",
+        "source": "S3",
+        "chunk_id": "8d490b4d5749fd52",
+        "title": "NK600 manual final v2",
+        "location": "p.8 · 6 Alarms › 6.2 Alarm codes › 6.3 Diagnosing L-03 › 6.4 Typical operating values",
+        "doc_type": "Service Manual",
+        "revision": "C",
+        "date": "2025-03-05",
+        "status": "Supported",
+        "evidence": "Before connecting gauges, open the EXV menu for the alarmed circuit and the alarm log entry."
+      },
+      {
+        "sentence": "High superheat with subcooling below 2 K and sight-glass bubbles supports low charge, whereas high superheat with normal/high subcooling and a clear sight glass supports EXV restriction; typical suction of 3.4–3.9 bar absolute and superheat of 5–8 K apply only at nominal conditions of chilled water 12/7°C, ambient 35°C and full load.",
+        "source": "S10",
+        "chunk_id": "878dbe59ff355470",
+        "title": "KT-WI-14 Low Suction Pressure, Chillers (EN)",
+        "location": "5. Werkwijze / Method",
+        "doc_type": "Work instruction",
+        "revision": "3",
+        "date": "15-03-2021",
+        "status": "Supported",
+        "evidence": "If no leak is found by visual inspection and the deficit is below 10% of nameplate charge, top up and monitor"
+      },
+      {
+        "sentence": "Use the open work order to arrange campaign parts and certified work through the supervisor rather than self-assigning: NK-C25-14 requires replacement on both circuits despite only circuit 2 alarming, with two 63-1180 rev 3 valve assemblies and two 63-0410 filter-drier cores, half a day on site, and EU F-gas Category I or national-equivalent certification for refrigerant-circuit work.",
+        "source": "S17",
+        "chunk_id": "3a05f6cfa10b9f6c",
+        "title": "FW: RTM-H-0007 repeat alarm",
+        "location": "Pieter Jansen <p.jansen@maasvlaktefresh.nl>, 29 September 2026 08:12",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "1. A root cause. Not \"low refrigerant\", but why it is low, or why the alarm keeps coming back.\n3. Confirmation that you will not simply top it up again."
+      },
+      {
+        "sentence": "Use the open work order to arrange campaign parts and certified work through the supervisor rather than self-assigning: NK-C25-14 requires replacement on both circuits despite only circuit 2 alarming, with two 63-1180 rev 3 valve assemblies and two 63-0410 filter-drier cores, half a day on site, and EU F-gas Category I or national-equivalent certification for refrigerant-circuit work.",
+        "source": "S4",
+        "chunk_id": "c11e8e188b85b515",
+        "title": "FW: RTM-H-0007 repeat alarm",
+        "location": "Sofie de Vries <s.devries@corvane.eu>, 30 September 2026 05:48:09 +0000",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Check the EXV on circuit 2 first, before anything is connected to the refrigerant side"
+      },
+      {
+        "sentence": "Use the open work order to arrange campaign parts and certified work through the supervisor rather than self-assigning: NK-C25-14 requires replacement on both circuits despite only circuit 2 alarming, with two 63-1180 rev 3 valve assemblies and two 63-0410 filter-drier cores, half a day on site, and EU F-gas Category I or national-equivalent certification for refrigerant-circuit work.",
+        "source": "S12",
+        "chunk_id": "3b82b278a707bd88",
+        "title": "Nordkyl SB-2025-014",
+        "location": "p.2 · FIELD CAMPAIGN NK-C25-14 › CORRECTIVE ACTION: REPLACE EXV-2 ON BOTH CIRCUITS",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "date": "2 September 2025",
+        "status": "Supported",
+        "evidence": "Replace the valve on both circuits of the unit, also when only one circuit has alarmed. The work opens the refrigerant circuit and may only be done by refrigerant-certified technicians (EU F-gas Category I or national equivalent). Allow half a day on site for the unit.\nOrder two valve assemblies 63-1180 (rev 3) and two filter drier cores 63-0410 per unit."
+      },
+      {
+        "sentence": "Coordinate roof access and the work-at-height permit before attending; circuit 2’s service valves face the roof edge close to the guardrail, where the site instruction is to kneel, not lean.",
+        "source": "S2",
+        "chunk_id": "28cfef0bfb4c1b07",
+        "title": "Rotterdam Site Notes",
+        "location": "Field Service: Rotterdam Site Notes › RTM-H-0007 history",
+        "doc_type": "Site Notes",
+        "revision": "unknown",
+        "date": "Mar 02, 2026",
+        "status": "Supported",
+        "evidence": "If 0007 alarms again, don't just top it up again."
+      },
+      {
+        "sentence": "Coordinate roof access and the work-at-height permit before attending; circuit 2’s service valves face the roof edge close to the guardrail, where the site instruction is to kneel, not lean.",
+        "source": "S4",
+        "chunk_id": "c11e8e188b85b515",
+        "title": "FW: RTM-H-0007 repeat alarm",
+        "location": "Sofie de Vries <s.devries@corvane.eu>, 30 September 2026 05:48:09 +0000",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Check the EXV on circuit 2 first, before anything is connected to the refrigerant side"
+      },
+      {
+        "sentence": "Coordinate roof access and the work-at-height permit before attending; circuit 2’s service valves face the roof edge close to the guardrail, where the site instruction is to kneel, not lean.",
+        "source": "S8",
+        "chunk_id": "d75c10274982523a",
+        "title": "Salesforce cases EU",
+        "location": "5008d00000NbLGDVtk · 2026-09-28T06:55:00.000+0000",
+        "doc_type": "Salesforce Case export",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Do not top up refrigerant before I arrive. EXV first."
+      },
+      {
+        "sentence": "For campaign replacement, stop, electrically isolate and lock out the unit, then recover, weigh and record refrigerant separately from each circuit, including the asset-specific requirement to assess circuit 2’s February addition.",
+        "source": "S12",
+        "chunk_id": "3b82b278a707bd88",
+        "title": "Nordkyl SB-2025-014",
+        "location": "p.2 · FIELD CAMPAIGN NK-C25-14 › CORRECTIVE ACTION: REPLACE EXV-2 ON BOTH CIRCUITS",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "date": "2 September 2025",
+        "status": "Supported",
+        "evidence": "Replace the valve on both circuits of the unit, also when only one circuit has alarmed. The work opens the refrigerant circuit and may only be done by refrigerant-certified technicians (EU F-gas Category I or national equivalent). Allow half a day on site for the unit.\nOrder two valve assemblies 63-1180 (rev 3) and two filter drier cores 63-0410 per unit."
+      },
+      {
+        "sentence": "For campaign replacement, stop, electrically isolate and lock out the unit, then recover, weigh and record refrigerant separately from each circuit, including the asset-specific requirement to assess circuit 2’s February addition.",
+        "source": "S4",
+        "chunk_id": "c11e8e188b85b515",
+        "title": "FW: RTM-H-0007 repeat alarm",
+        "location": "Sofie de Vries <s.devries@corvane.eu>, 30 September 2026 05:48:09 +0000",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Check the EXV on circuit 2 first, before anything is connected to the refrigerant side"
+      },
+      {
+        "sentence": "Replace the valves and drier cores using nitrogen purging during brazing and a wet-cloth-protected valve body kept at or below 120°C, fit the supplied rev 3 stepper cables without modifying the old cables, and select EXV type ‘rev 3’ in each circuit’s controller configuration.",
+        "source": "S12",
+        "chunk_id": "3b82b278a707bd88",
+        "title": "Nordkyl SB-2025-014",
+        "location": "p.2 · FIELD CAMPAIGN NK-C25-14 › CORRECTIVE ACTION: REPLACE EXV-2 ON BOTH CIRCUITS",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "date": "2 September 2025",
+        "status": "Supported",
+        "evidence": "Replace the valve on both circuits of the unit, also when only one circuit has alarmed. The work opens the refrigerant circuit and may only be done by refrigerant-certified technicians (EU F-gas Category I or national equivalent). Allow half a day on site for the unit.\nOrder two valve assemblies 63-1180 (rev 3) and two filter drier cores 63-0410 per unit."
+      },
+      {
+        "sentence": "Pressure-test and evacuate according to the NK-600 manual and local regulations, then charge each circuit to its nameplate quantity rather than blindly to the recovered quantity after an earlier top-up.",
+        "source": "S12",
+        "chunk_id": "3b82b278a707bd88",
+        "title": "Nordkyl SB-2025-014",
+        "location": "p.2 · FIELD CAMPAIGN NK-C25-14 › CORRECTIVE ACTION: REPLACE EXV-2 ON BOTH CIRCUITS",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "date": "2 September 2025",
+        "status": "Supported",
+        "evidence": "Replace the valve on both circuits of the unit, also when only one circuit has alarmed. The work opens the refrigerant circuit and may only be done by refrigerant-certified technicians (EU F-gas Category I or national equivalent). Allow half a day on site for the unit.\nOrder two valve assemblies 63-1180 (rev 3) and two filter drier cores 63-0410 per unit."
+      },
+      {
+        "sentence": "If the valve is sound or charge remains short after valve correction, leak-test and repair under SOP-020 without topping up; if no leak can be found, tag the unit and escalate.",
+        "source": "S4",
+        "chunk_id": "c11e8e188b85b515",
+        "title": "FW: RTM-H-0007 repeat alarm",
+        "location": "Sofie de Vries <s.devries@corvane.eu>, 30 September 2026 05:48:09 +0000",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Check the EXV on circuit 2 first, before anything is connected to the refrigerant side"
+      },
+      {
+        "sentence": "After campaign replacement, run for 30 minutes and verify both circuits’ EXV positions follow request with stable superheat, fit the campaign label, log work and refrigerant quantities in the F-gas record, and return both removed valves to Nordkyl within 30 days for the claim.",
+        "source": "S12",
+        "chunk_id": "3b82b278a707bd88",
+        "title": "Nordkyl SB-2025-014",
+        "location": "p.2 · FIELD CAMPAIGN NK-C25-14 › CORRECTIVE ACTION: REPLACE EXV-2 ON BOTH CIRCUITS",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "date": "2 September 2025",
+        "status": "Supported",
+        "evidence": "Replace the valve on both circuits of the unit, also when only one circuit has alarmed. The work opens the refrigerant circuit and may only be done by refrigerant-certified technicians (EU F-gas Category I or national equivalent). Allow half a day on site for the unit.\nOrder two valve assemblies 63-1180 (rev 3) and two filter drier cores 63-0410 per unit."
+      },
+      {
+        "sentence": "This is a repeat fault: circuit 2 had L-03 after winter restarts on 15 January 2024 under WO 2400209 and 20 January 2025 under WO 2500253, with both records reporting recovery after reset and no further corrective work.",
+        "source": "S13",
+        "chunk_id": "1501352ec59241ad",
+        "title": "Servio export EU",
+        "location": "2400209 · 15-01-2024",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "date: 15-01-2024\nwork order: 2400209\ndescription: L-03 c2 shortly after restart following winter shutdown, automatically recovered after reset. no action"
+      },
+      {
+        "sentence": "This is a repeat fault: circuit 2 had L-03 after winter restarts on 15 January 2024 under WO 2400209 and 20 January 2025 under WO 2500253, with both records reporting recovery after reset and no further corrective work.",
+        "source": "S14",
+        "chunk_id": "d7bb02df0e159d14",
+        "title": "Servio export EU",
+        "location": "2500253 · 20-01-2025",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "date: 20-01-2025\nwork order: 2500253\ndescription: L-03 c2 after restart (customer winter shutdown), reset, then ran normally. no action"
+      },
+      {
+        "sentence": "On 24 February 2026, WO 2600347 / case 00041055 recorded circuit 2 at 2.1 bar and a 2.5 kg R-513A top-up under KT-WI-14 after visual inspection found no leak and the estimated deficit was below 10%; the 25 February check under WO 2600357 recorded 3.3 bar without alarm, but Sofie later confirmed the EXV campaign had been missed and could not find a scheduled full leak test.",
+        "source": "S2",
+        "chunk_id": "28cfef0bfb4c1b07",
+        "title": "Rotterdam Site Notes",
+        "location": "Field Service: Rotterdam Site Notes › RTM-H-0007 history",
+        "doc_type": "Site Notes",
+        "revision": "unknown",
+        "date": "Mar 02, 2026",
+        "status": "Supported",
+        "evidence": "If 0007 alarms again, don't just top it up again."
+      },
+      {
+        "sentence": "On 24 February 2026, WO 2600347 / case 00041055 recorded circuit 2 at 2.1 bar and a 2.5 kg R-513A top-up under KT-WI-14 after visual inspection found no leak and the estimated deficit was below 10%; the 25 February check under WO 2600357 recorded 3.3 bar without alarm, but Sofie later confirmed the EXV campaign had been missed and could not find a scheduled full leak test.",
+        "source": "S4",
+        "chunk_id": "c11e8e188b85b515",
+        "title": "FW: RTM-H-0007 repeat alarm",
+        "location": "Sofie de Vries <s.devries@corvane.eu>, 30 September 2026 05:48:09 +0000",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Check the EXV on circuit 2 first, before anything is connected to the refrigerant side"
+      },
+      {
+        "sentence": "On 24 February 2026, WO 2600347 / case 00041055 recorded circuit 2 at 2.1 bar and a 2.5 kg R-513A top-up under KT-WI-14 after visual inspection found no leak and the estimated deficit was below 10%; the 25 February check under WO 2600357 recorded 3.3 bar without alarm, but Sofie later confirmed the EXV campaign had been missed and could not find a scheduled full leak test.",
+        "source": "S15",
+        "chunk_id": "fe4a2c3e838fddb8",
+        "title": "Servio export EU",
+        "location": "2600347 · 24-02-2026",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "work order: 2600347\ndate: 24-02-2026\ndescription: L-03 circuit 2 after winter shutdown/restart, suction pressure 2,1 bar. 2,5 kg R513A topped up, no leak found (visual), cfm KT-WI-14. shortfall < 10% fill. SF 00041055\nwork order: 2600357\ndate: 25-02-2026\ndescription: check after topping up, suction pressure c2 3,3 bar, no alarm."
+      },
+      {
+        "sentence": "On 24 February 2026, WO 2600347 / case 00041055 recorded circuit 2 at 2.1 bar and a 2.5 kg R-513A top-up under KT-WI-14 after visual inspection found no leak and the estimated deficit was below 10%; the 25 February check under WO 2600357 recorded 3.3 bar without alarm, but Sofie later confirmed the EXV campaign had been missed and could not find a scheduled full leak test.",
+        "source": "S9",
+        "chunk_id": "0fbeafabb3a79bd0",
+        "title": "Salesforce cases EU",
+        "location": "5008d00000z3PmOJLL · 2026-02-24T06:40:00.000+0000",
+        "doc_type": "Salesforce Case export",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Equipment Model: NK-600\nSerial Number: NK600-230415"
+      },
+      {
+        "sentence": "The 28 September 2026 recurrence is open WO 2601148 / critical case 00044102, recording circuit 2 at 1.9 bar, circuit 1 normal, no visible oil traces, no gauges connected and operation on circuit 1 only; Sofie’s recorded attendance is 1 October at 07:00, with diagnosis followed by a return replacement visit if campaign parts are unavailable.",
+        "source": "S16",
+        "chunk_id": "28a8c9ca0129122a",
+        "title": "Servio export EU",
+        "location": "2601148 · 28-09-2026",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "work order: 2601148\ndate: 28-09-2026\nfault code: L-03\ndescription: L-03 circuit 2 again, suction 1,9 bar. circuit 1 normal. no oil traces visible at joints. not F-gas certified - no gauges connected. unit running on circuit 1 only. needs certified technician. SF 00044102\nstatus: Open"
+      },
+      {
+        "sentence": "The 28 September 2026 recurrence is open WO 2601148 / critical case 00044102, recording circuit 2 at 1.9 bar, circuit 1 normal, no visible oil traces, no gauges connected and operation on circuit 1 only; Sofie’s recorded attendance is 1 October at 07:00, with diagnosis followed by a return replacement visit if campaign parts are unavailable.",
+        "source": "S4",
+        "chunk_id": "c11e8e188b85b515",
+        "title": "FW: RTM-H-0007 repeat alarm",
+        "location": "Sofie de Vries <s.devries@corvane.eu>, 30 September 2026 05:48:09 +0000",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Check the EXV on circuit 2 first, before anything is connected to the refrigerant side"
+      },
+      {
+        "sentence": "The 28 September 2026 recurrence is open WO 2601148 / critical case 00044102, recording circuit 2 at 1.9 bar, circuit 1 normal, no visible oil traces, no gauges connected and operation on circuit 1 only; Sofie’s recorded attendance is 1 October at 07:00, with diagnosis followed by a return replacement visit if campaign parts are unavailable.",
+        "source": "S8",
+        "chunk_id": "d75c10274982523a",
+        "title": "Salesforce cases EU",
+        "location": "5008d00000NbLGDVtk · 2026-09-28T06:55:00.000+0000",
+        "doc_type": "Salesforce Case export",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Do not top up refrigerant before I arrive. EXV first."
+      },
+      {
+        "sentence": "The customer wants a root cause, not another top-up, and Sofie’s plan commits to a written root-cause report after the visit.",
+        "source": "S17",
+        "chunk_id": "3a05f6cfa10b9f6c",
+        "title": "FW: RTM-H-0007 repeat alarm",
+        "location": "Pieter Jansen <p.jansen@maasvlaktefresh.nl>, 29 September 2026 08:12",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "1. A root cause. Not \"low refrigerant\", but why it is low, or why the alarm keeps coming back.\n3. Confirmation that you will not simply top it up again."
+      },
+      {
+        "sentence": "The customer wants a root cause, not another top-up, and Sofie’s plan commits to a written root-cause report after the visit.",
+        "source": "S4",
+        "chunk_id": "c11e8e188b85b515",
+        "title": "FW: RTM-H-0007 repeat alarm",
+        "location": "Sofie de Vries <s.devries@corvane.eu>, 30 September 2026 05:48:09 +0000",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "date": "unknown",
+        "status": "Supported",
+        "evidence": "Check the EXV on circuit 2 first, before anything is connected to the refrigerant side"
+      },
+      {
+        "sentence": "The customer wants a root cause, not another top-up, and Sofie’s plan commits to a written root-cause report after the visit.",
+        "source": "S18",
+        "chunk_id": "a22e8cbd78317ed8",
+        "title": "Work Order Writing Guide",
+        "location": "Field Service: Work Order Writing Guide › Certification required: the rule",
+        "doc_type": "Work Order Writing Guide",
+        "revision": "unknown",
+        "date": "Jan 21, 2026",
+        "status": "Supported",
+        "evidence": "Don't assign yourself. The supervisor assigns the technician, and checks the certification against the Technician Certification Matrix when they do."
+      }
+    ],
+    "dropped_claims": [],
+    "work_order": {
+      "asset_id": "RTM-H-0007",
+      "fault_code": "L-03",
+      "summary": "Repeat circuit 2 low-suction L-03 at 1.9 bar; diagnose the suspected EXV fault and complete campaign NK-C25-14 replacement on both circuits without another top-up.",
+      "work_steps": [
+        "Arrange campaign parts and supervisor-assigned certified refrigerant work; coordinate roof access and the work-at-height permit before attendance.",
+        "Review and export the alarm-log CSV, including circuit data, timing, pressures, superheat, EXV position, and water temperatures, for the campaign/warranty record and root-cause report.",
+        "Perform the circuit 2 EXV diagnostic in accordance with SB-2025-014 before connecting gauges, leak testing, or adding refrigerant; record EXV request/position for both circuits and confirm fitted valve revisions.",
+        "If the EXV diagnosis does not identify the cause, continue L-03 diagnosis in accordance with the NK-600 manual, including the manual response test, and assess flow, ice, condenser/fans, filter-drier restriction, and charge indicators.",
+        "Do not top up circuit 2. Recover and weigh circuit 2 refrigerant to assess the previous addition; if the valve is sound or charge remains short after valve correction, leak-test and repair in accordance with SOP-020, or tag and escalate if no leak is found.",
+        "Complete campaign NK-C25-14 replacement of both circuit EXV valve assemblies and filter-drier cores in accordance with SB-2025-014, the NK-600 manual, and local regulations.",
+        "Complete commissioning and campaign close-out in accordance with SB-2025-014: verify stable operation, update F-gas and campaign records, fit the campaign label, return removed valves, and issue the committed written root-cause report."
+      ],
+      "parts": [
+        {
+          "part_number": "63-1180 rev 3",
+          "qty": 2
+        },
+        {
+          "part_number": "63-0410",
+          "qty": 2
+        }
+      ],
+      "certification_required": [
+        "Refrigerant"
+      ],
+      "estimated_duration_h": 4,
+      "priority": "Critical",
+      "campaign_code": "NK-C25-14",
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S7",
+        "S8",
+        "S10",
+        "S11",
+        "S12",
+        "S16",
+        "S17",
+        "S18"
+      ],
+      "requested_by": "u05",
+      "reason": "campaign"
+    },
+    "trace": {
+      "events": [
+        {
+          "stage": "retrieve",
+          "inputs": {
+            "question": "RTM-H-0007 has an L-03 alarm again, suction at 1.9 bar. What should I do?",
+            "user_id": "u05"
+          },
+          "outputs": {
+            "chunks": [
+              [
+                "9bd5b6c398d88ff6",
+                "FW: RTM-H-0007 repeat alarm",
+                "FW: RTM-H-0007 repeat alarm"
+              ],
+              [
+                "28a8c9ca0129122a",
+                "Servio export EU",
+                "Servio export EU | 2601148"
+              ],
+              [
+                "28cfef0bfb4c1b07",
+                "Rotterdam Site Notes",
+                "Rotterdam Site Notes | Field Service: Rotterdam Site Notes › RTM-H-0007 history"
+              ],
+              [
+                "8d490b4d5749fd52",
+                "NK600 manual final v2",
+                "NK600 manual final v2 | C | 6 Alarms › 6.2 Alarm codes › 6.3 Diagnosing L-03 › 6.4 Typical operating values"
+              ],
+              [
+                "d996ac6313270362",
+                "EU Chiller Field Guide",
+                "EU Chiller Field Guide | Field Service : EU Chiller Field Guide › L-03 low suction pressure"
+              ],
+              [
+                "9c4a8e9aafea29ee",
+                "KT-WI-14 Low Suction Pressure, Chillers (EN)",
+                "KT-WI-14 Low Suction Pressure, Chillers (EN) | 3 | 1. Doel / Purpose"
+              ],
+              [
+                "e8cbbe85d1120490",
+                "Nordkyl SB-2025-014",
+                "Nordkyl SB-2025-014 | 0 | FIELD CAMPAIGN NK-C25-14 › SYMPTOM"
+              ],
+              [
+                "3a05f6cfa10b9f6c",
+                "FW: RTM-H-0007 repeat alarm",
+                "FW: RTM-H-0007 repeat alarm"
+              ],
+              [
+                "4d11384cad846acd",
+                "EU Chiller Field Guide",
+                "EU Chiller Field Guide | Field Service : EU Chiller Field Guide › The alarms we actually see"
+              ],
+              [
+                "c11e8e188b85b515",
+                "FW: RTM-H-0007 repeat alarm",
+                "FW: RTM-H-0007 repeat alarm"
+              ],
+              [
+                "cd550eba05134bd1",
+                "Nordkyl SB-2025-014",
+                "Nordkyl SB-2025-014 | 0 | FIELD CAMPAIGN NK-C25-14 › DIAGNOSIS: CHECK THE EXV BEFORE LEAK TESTING OR CHARGING"
+              ],
+              [
+                "18f603e2fc995d6b",
+                "Nordkyl SB-2025-014",
+                "Nordkyl SB-2025-014 | 0 | FIELD CAMPAIGN NK-C25-14"
+              ],
+              [
+                "878dbe59ff355470",
+                "KT-WI-14 Low Suction Pressure, Chillers (EN)",
+                "KT-WI-14 Low Suction Pressure, Chillers (EN) | 3 | 5. Werkwijze / Method"
+              ],
+              [
+                "fe4a2c3e838fddb8",
+                "Servio export EU",
+                "Servio export EU | 2600347"
+              ],
+              [
+                "3b82b278a707bd88",
+                "Nordkyl SB-2025-014",
+                "Nordkyl SB-2025-014 | 0 | FIELD CAMPAIGN NK-C25-14 › CORRECTIVE ACTION: REPLACE EXV-2 ON BOTH CIRCUITS"
+              ],
+              [
+                "0fbeafabb3a79bd0",
+                "Salesforce cases EU",
+                "Salesforce cases EU | 5008d00000z3PmOJLL"
+              ],
+              [
+                "f149ef009bdf5fc5",
+                "NK600 manual final v2",
+                "NK600 manual final v2 | C | 5 Control logic › 6 Alarms › 6.1 Alarm handling › 6.2 Alarm codes"
+              ],
+              [
+                "1501352ec59241ad",
+                "Servio export EU",
+                "Servio export EU | 2400209"
+              ],
+              [
+                "9d3be16d38160c56",
+                "KT-WI-14 Low Suction Pressure, Chillers (EN)",
+                "KT-WI-14 Low Suction Pressure, Chillers (EN) | 3 | 2. Toepassingsgebied / Scope"
+              ],
+              [
+                "d7bb02df0e159d14",
+                "Servio export EU",
+                "Servio export EU | 2500253"
+              ],
+              [
+                "7e7e072a9c7fdcad",
+                "SOP-020 Chiller Leak Test and Refrigerant Recharge",
+                "SOP-020 Chiller Leak Test and Refrigerant Recharge | 3 | SOP-020 Chiller Leak Test and Refrigerant Recharge › 6. Procedure › 6.1 Before you connect gauges"
+              ],
+              [
+                "893d1a137c0b9871",
+                "Servio export EU",
+                "Servio export EU | 2400695"
+              ],
+              [
+                "03c1f5dc19521830",
+                "Servio export EU",
+                "Servio export EU | 2600712"
+              ],
+              [
+                "f048fae955d27360",
+                "Rotterdam Site Notes",
+                "Rotterdam Site Notes | Field Service: Rotterdam Site Notes › Comments"
+              ],
+              [
+                "d75c10274982523a",
+                "Salesforce cases EU",
+                "Salesforce cases EU | 5008d00000NbLGDVtk"
+              ],
+              [
+                "484cce67a02fdbec",
+                "EU Chiller Field Guide",
+                "EU Chiller Field Guide | Field Service : EU Chiller Field Guide › Old Kyltek notes on the NK-300 (from the original page, kept for history)"
+              ],
+              [
+                "fb460547f47eb27b",
+                "EU Chiller Field Guide",
+                "EU Chiller Field Guide | Field Service : EU Chiller Field Guide › L-01 high discharge pressure"
+              ],
+              [
+                "a22e8cbd78317ed8",
+                "Work Order Writing Guide",
+                "Work Order Writing Guide | Field Service: Work Order Writing Guide › Certification required: the rule"
+              ],
+              [
+                "1edfcef65a93e503",
+                "Servio export EU",
+                "Servio export EU | 2500355"
+              ],
+              [
+                "8d1c124c2f2fb619",
+                "Servio export EU",
+                "Servio export EU | 2300538"
+              ]
+            ]
+          },
+          "seconds": 0.344
+        },
+        {
+          "stage": "claims",
+          "inputs": {},
+          "outputs": {
+            "status": "answered",
+            "claims": [
+              {
+                "id": "c1",
+                "text": "L-03 means low suction pressure: below 2.4 bar for 60 seconds. The NK-600 automatically restarts after 5 minutes but locks out after three occurrences in 24 hours; 1.9 bar is below the alarm threshold.",
+                "citations": [
+                  "f149ef009bdf5fc5"
+                ]
+              },
+              {
+                "id": "c2",
+                "text": "Do not top up RTM-H-0007 again: check circuit 2's EXV first, before connecting gauges or leak testing. A sticking EXV can mimic low charge, and adding refrigerant can leave the circuit overcharged when the valve frees.",
+                "citations": [
+                  "d75c10274982523a",
+                  "18f603e2fc995d6b",
+                  "c11e8e188b85b515"
+                ]
+              },
+              {
+                "id": "c3",
+                "text": "RTM-H-0007 is NK-600 serial NK600-230415, within SB-2025-014's affected range NK600-220001–NK600-231999, campaign NK-C25-14. No campaign completion is recorded; the sticking-valve fault is a strong possibility, not yet a confirmed diagnosis.",
+                "citations": [
+                  "c11e8e188b85b515"
+                ]
+              },
+              {
+                "id": "c4",
+                "text": "For this serial number, follow SB-2025-014 before the generic low-suction procedure. KT-WI-14 permits topping up a deficit below 10% without a visible leak, whereas SOP-020 prohibits topping up without leak testing; the records explicitly identify this unresolved procedural conflict, and the asset-specific plan is EXV first, no top-up.",
+                "citations": [
+                  "c11e8e188b85b515"
+                ]
+              },
+              {
+                "id": "c5",
+                "text": "Review the alarm log for circuit, timing, pressures, superheat, EXV position and water temperatures; export its CSV for the campaign/warranty claim or Nordkyl support enquiry. Establish whether this event followed an idle period: the campaign typically causes one-circuit L-03 after more than 48 hours idle, often at low ambient temperature.",
+                "citations": [
+                  "f149ef009bdf5fc5",
+                  "e8cbbe85d1120490"
+                ]
+              },
+              {
+                "id": "c6",
+                "text": "For the campaign EXV check, run or restart the alarmed circuit for at least 10 minutes, then use the service-level login at Service > Circuits > Circuit 2 > EXV. Record EXV request and position for both circuits, and check whether the fitted valves are rev 2 or rev 3.",
+                "citations": [
+                  "cd550eba05134bd1",
+                  "c11e8e188b85b515"
+                ]
+              },
+              {
+                "id": "c7",
+                "text": "Under SB-2025-014, EXV position remaining below 15% while request is higher—usually 40–100%—confirms a stuck valve: do not add refrigerant; replace the campaign valves. Do not tap the valve free, because it remains defective and will stick again.",
+                "citations": [
+                  "cd550eba05134bd1"
+                ]
+              },
+              {
+                "id": "c8",
+                "text": "If EXV position follows request within about 5%, SB-2025-014 directs you to continue the NK-600 manual's L-03 troubleshooting; campaign valve replacement must still be scheduled. The manual cautions that displayed position is calculated from driver steps, not measured at the valve, and refers to its section 7.4.3 manual response test.",
+                "citations": [
+                  "cd550eba05134bd1",
+                  "8d490b4d5749fd52"
+                ]
+              },
+              {
+                "id": "c9",
+                "text": "If the EXV is not causing the alarm, check chilled-water pump/flow and strainer, evaporator or suction-line ice, condenser cleanliness and fan operation, and filter-drier restriction before concluding the charge is low. A temperature drop across the filter drier above 3 K indicates restriction and calls for replacement of core 63-0410.",
+                "citations": [
+                  "878dbe59ff355470",
+                  "7e7e072a9c7fdcad"
+                ]
+              },
+              {
+                "id": "c10",
+                "text": "For NK-600 diagnosis, high superheat with subcooling below 2 K and sight-glass bubbles supports low charge; high superheat with normal/high subcooling and a clear sight glass supports an EXV restriction. Typical suction pressure is 3.4–3.9 bar absolute and superheat 5–8 K only at nominal conditions: chilled water 12/7°C, ambient 35°C, full load.",
+                "citations": [
+                  "8d490b4d5749fd52"
+                ]
+              },
+              {
+                "id": "c11",
+                "text": "Campaign NK-C25-14 requires replacement on both circuits, even though only circuit 2 alarms: order two 63-1180 rev 3 valve assemblies and two 63-0410 filter-drier cores. Allow half a day on site; the refrigerant-circuit work requires EU F-gas Category I or national-equivalent certification.",
+                "citations": [
+                  "3b82b278a707bd88"
+                ]
+              },
+              {
+                "id": "c12",
+                "text": "For campaign replacement, stop, electrically isolate and lock out the unit; recover, weigh and record refrigerant separately from each circuit. Replace the valves and drier cores, pressure-test and evacuate according to the NK-600 manual and local regulations, then charge each circuit to its nameplate quantity—not blindly to the recovered quantity after an earlier top-up.",
+                "citations": [
+                  "3b82b278a707bd88"
+                ]
+              },
+              {
+                "id": "c13",
+                "text": "Campaign valve installation requires nitrogen purging during brazing and a wet-cloth-protected valve body kept at or below 120°C. Fit the supplied rev 3 stepper cables without modifying the old cables, and select EXV type 'rev 3' in each circuit's controller configuration.",
+                "citations": [
+                  "3b82b278a707bd88"
+                ]
+              },
+              {
+                "id": "c14",
+                "text": "After campaign replacement, run the unit for 30 minutes and verify both circuits' EXV positions follow request with stable superheat. Fit the campaign label, log work and refrigerant quantities in the F-gas record, and return both removed valves to Nordkyl within 30 days for the claim.",
+                "citations": [
+                  "3b82b278a707bd88"
+                ]
+              },
+              {
+                "id": "c15",
+                "text": "The asset-specific plan also requires recovering and weighing circuit 2's charge to assess the February addition. If the valve is sound, or charge remains short after valve correction, leak-test and repair under SOP-020 without topping up; if no leak can be found, tag the unit and escalate.",
+                "citations": [
+                  "c11e8e188b85b515"
+                ]
+              },
+              {
+                "id": "c16",
+                "text": "This is a repeat fault: circuit 2 had L-03 after winter restarts on 15 January 2024, WO 2400209, and 20 January 2025, WO 2500253; both records report recovery after reset without further corrective work.",
+                "citations": [
+                  "1501352ec59241ad",
+                  "d7bb02df0e159d14"
+                ]
+              },
+              {
+                "id": "c17",
+                "text": "On 24 February 2026, WO 2600347 / case 00041055 recorded circuit 2 at 2.1 bar and a 2.5 kg R-513A top-up under KT-WI-14 after visual inspection found no leak and the estimated deficit was below 10%. The 25 February check, WO 2600357, recorded 3.3 bar without alarm; Sofie later confirmed the EXV campaign had been missed and could not find a scheduled full leak test.",
+                "citations": [
+                  "fe4a2c3e838fddb8",
+                  "c11e8e188b85b515",
+                  "0fbeafabb3a79bd0"
+                ]
+              },
+              {
+                "id": "c18",
+                "text": "The 28 September 2026 recurrence is open WO 2601148 / critical case 00044102: circuit 2 at 1.9 bar, circuit 1 normal, no visible oil traces, no gauges connected, and the unit operating on circuit 1 only. Sofie's recorded attendance is 1 October at 07:00; if campaign parts are unavailable, the plan is diagnosis followed by a return visit for replacement.",
+                "citations": [
+                  "28a8c9ca0129122a",
+                  "d75c10274982523a",
+                  "c11e8e188b85b515"
+                ]
+              },
+              {
+                "id": "c19",
+                "text": "Coordinate roof access and the work-at-height permit before attending. Circuit 2 service valves face the roof edge close to the guardrail; the site instruction is to kneel, not lean.",
+                "citations": [
+                  "d75c10274982523a",
+                  "28cfef0bfb4c1b07"
+                ]
+              },
+              {
+                "id": "c20",
+                "text": "Use the open work order to arrange campaign parts and certified work through the supervisor rather than self-assigning. The customer has requested a root cause, not another top-up; Sofie's plan commits to a written root-cause report after the visit.",
+                "citations": [
+                  "a22e8cbd78317ed8",
+                  "3a05f6cfa10b9f6c",
+                  "c11e8e188b85b515"
+                ]
+              }
+            ],
+            "work_order_needed": true,
+            "work_order_reason": "campaign"
+          },
+          "seconds": 34.992
+        },
+        {
+          "stage": "verify",
+          "inputs": {},
+          "outputs": {
+            "c1": "supported",
+            "c2": "supported",
+            "c3": "supported",
+            "c4": "supported",
+            "c5": "supported",
+            "c6": "supported",
+            "c7": "supported",
+            "c8": "supported",
+            "c9": "supported",
+            "c10": "supported",
+            "c11": "supported",
+            "c12": "supported",
+            "c13": "supported",
+            "c14": "supported",
+            "c15": "supported",
+            "c16": "supported",
+            "c17": "supported",
+            "c18": "supported",
+            "c19": "supported",
+            "c20": "supported"
+          },
+          "seconds": 78.211
+        },
+        {
+          "stage": "compose",
+          "inputs": {},
+          "outputs": {
+            "sentences": 21
+          },
+          "seconds": 19.222
+        },
+        {
+          "stage": "work_order",
+          "inputs": {},
+          "outputs": {
+            "drafted": true
+          },
+          "seconds": 8.949
+        }
+      ]
+    },
+    "retrieved": [
+      {
+        "chunk_id": "9bd5b6c398d88ff6",
+        "doc_path": "corpus/email/FW_RTM-H-0007_repeat_alarm_customer_escalation.eml",
+        "doc_title": "FW: RTM-H-0007 repeat alarm",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": null,
+          "sender": "Lena Hoffmann <l.hoffmann@corvane.eu>",
+          "date": "29 September 2026 10:41"
+        },
+        "header": "FW: RTM-H-0007 repeat alarm",
+        "text_original": "Sofie,\n\nSee below from Pieter Jansen. He also called me at 08:30 this morning and he wasn't shouting, which is worse.\n\nTwo things I need from you today, ideally before 15:00 because I promised to call him back with a date:\n\n1. Why did we top it up in February? I've looked at 00041055 and it says 2.5 kg topped up, no leak found. If there was no leak, where did 2.5 kg go? I need to understand what we did before I explain it to the customer. Not to blame anyone, I just don't want to tell Pieter something that turns out to be wrong next week.\n\n2. Who can go. Jakub was there yesterday (00044102), 1.9 bar on circuit 2, and he did the right thing by not touching it, but he can't do the work and his exam isn't until November. Marco is compressors only. So unless I borrow someone from Gdansk, that's you.\n\nAlso, is this the Nordkyl valve thing? I have a vague memory of a bulletin last year.\n\nThanks,\nLena",
+        "text_en": "Sofie,\n\nSee below from Pieter Jansen. He also called me at 08:30 this morning and he wasn't shouting, which is worse.\n\nTwo things I need from you today, ideally before 15:00 because I promised to call him back with a date:\n\n1. Why did we top it up in February? I've looked at 00041055 and it says 2.5 kg topped up, no leak found. If there was no leak, where did 2.5 kg go? I need to understand what we did before I explain it to the customer. Not to blame anyone, I just don't want to tell Pieter something that turns out to be wrong next week.\n\n2. Who can go. Jakub was there yesterday (00044102), 1.9 bar on circuit 2, and he did the right thing by not touching it, but he can't do the work and his exam isn't until November. Marco is compressors only. So unless I borrow someone from Gdansk, that's you.\n\nAlso, is this the Nordkyl valve thing? I have a vague memory of a bulletin last year.\n\nThanks,\nLena",
+        "acl_key": "family-chillers|region-eu",
+        "cosine": 0.5883165597915649,
+        "bm25_rank": 7,
+        "vector_rank": 2,
+        "rrf": 0.031054405392392875
+      },
+      {
+        "chunk_id": "28a8c9ca0129122a",
+        "doc_path": "corpus/data/servio_export_EU_2023-2026.csv",
+        "doc_title": "Servio export EU",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "2601148",
+          "sender": null,
+          "date": "28-09-2026"
+        },
+        "header": "Servio export EU | 2601148",
+        "text_original": "werkorder: 2601148\ndatum: 28-09-2026\nobject: RTM-H-0007\nobject_oud: MFL-KM07\nlocatie: Rotterdam DC Maasvlakte\ntype: Storing\nstoringscode: L-03\nomschrijving: L-03 circuit 2 again, suction 1,9 bar. circuit 1 normal. no oil traces visible at joints. not F-gas certified - no gauges connected. unit running on circuit 1 only. needs certified tech. SF 00044102\nmonteur: JNOWAK\nonderdelen: \nuren: 1,5\ndraaiuren: 13639\nstatus: Open",
+        "text_en": "work order: 2601148\ndate: 28-09-2026\nobject: RTM-H-0007\nold object: MFL-KM07\nlocation: Rotterdam DC Maasvlakte\ntype: Fault\nfault code: L-03\ndescription: L-03 circuit 2 again, suction 1,9 bar. circuit 1 normal. no oil traces visible at joints. not F-gas certified - no gauges connected. unit running on circuit 1 only. needs certified technician. SF 00044102\ntechnician: JNOWAK\nparts: \nhours: 1,5\noperating hours: 13639\nstatus: Open",
+        "acl_key": "region-eu",
+        "cosine": 0.5469678044319153,
+        "bm25_rank": 3,
+        "vector_rank": 7,
+        "rrf": 0.030798389007344232
+      },
+      {
+        "chunk_id": "28cfef0bfb4c1b07",
+        "doc_path": "corpus/confluence/Rotterdam-Site-Notes.html",
+        "doc_title": "Rotterdam Site Notes",
+        "doc_type": "Site Notes",
+        "revision": "unknown",
+        "effective_date": "Mar 02, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service: Rotterdam Site Notes",
+            "RTM-H-0007 history"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Rotterdam Site Notes | Field Service: Rotterdam Site Notes › RTM-H-0007 history",
+        "text_original": "0007 is the unit that keeps us busy. It's an NK-600 from 2023, and its circuit 2 has had low suction pressure alarms more than once, always after a period of very low load, usually the first big restart after the winter. Circuit 1 has been fine.\n\nIn February 2026 circuit 2 went to L-03 again after the winter restart. I inspected it myself: no leak found visually, no oil marks, the charge deficit was small, and I topped it up following KT-WI-14 with a full leak test planned for the next visit. It ran fine after that. The details are in the case and in the Servio export for the older history.\n\nIf 0007 alarms again, don't just top it up again. A unit that keeps needing charge has a reason, and we need to find it. Call me first.\n\nPractical: on 0007, the circuit 2 service valves are on the side facing the roof edge, so you're working close to the guardrail. Kneel, don't lean. The controller is on the hatch side.",
+        "text_en": "0007 is the unit that keeps us busy. It's an NK-600 from 2023, and its circuit 2 has had low suction pressure alarms more than once, always after a period of very low load, usually the first big restart after the winter. Circuit 1 has been fine.\n\nIn February 2026 circuit 2 went to L-03 again after the winter restart. I inspected it myself: no leak found visually, no oil marks, the charge deficit was small, and I topped it up following KT-WI-14 with a full leak test planned for the next visit. It ran fine after that. The details are in the case and in the Servio export for the older history.\n\nIf 0007 alarms again, don't just top it up again. A unit that keeps needing charge has a reason, and we need to find it. Call me first.\n\nPractical: on 0007, the circuit 2 service valves are on the side facing the roof edge, so you're working close to the guardrail. Kneel, don't lean. The controller is on the hatch side.",
+        "acl_key": "region-eu",
+        "cosine": 0.5703759789466858,
+        "bm25_rank": 6,
+        "vector_rank": 4,
+        "rrf": 0.030776515151515152
+      },
+      {
+        "chunk_id": "8d490b4d5749fd52",
+        "doc_path": "corpus/manuals/NK600_manual_final_v2.pdf",
+        "doc_title": "NK600 manual final v2",
+        "doc_type": "Service Manual",
+        "revision": "C",
+        "effective_date": "2025-03-05",
+        "locator": {
+          "page": 8,
+          "section_path": [
+            "6 Alarms",
+            "6.2 Alarm codes",
+            "6.3 Diagnosing L-03",
+            "6.4 Typical operating values"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "NK600 manual final v2 | C | 6 Alarms › 6.2 Alarm codes › 6.3 Diagnosing L-03 › 6.4 Typical operating values",
+        "text_original": "Code: L-10\nAlarm: Sensor fault\nTrigger: Any sensor out of range\nRestart: Lockout of affected circuit\nPossible causes: Wire break, failed sensor\nFirst action: Check sensor and connector.\n\nCode: L-11\nAlarm: EXV driver fault\nTrigger: EXD reports open coil, short or low supply\nRestart: Lockout\nPossible causes: Coil or cable damage, driver failure\nFirst action: Check coil resistance and cable.\n\nCode: L-12\nAlarm: High superheat\nTrigger: Superheat above 15 K for 10 min with EXV at 100 %\nRestart: Warning only\nPossible causes: Low charge, restriction before the EXV, EXV not opening\nFirst action: Treat as early warning of L-03. See 6.3.\n\nCode: L-13\nAlarm: Low superheat\nTrigger: Superheat below 1 K for 3 min\nRestart: Auto, 5 min\nPossible causes: TS-S1 loose or uninsulated, EXV not closing\nFirst action: Check TS-S mounting, then EXV (7.4).\n\nCode: L-14\nAlarm: Communication loss\nTrigger: No response from EXD or fan bus for 30 s\nRestart: Auto\nPossible causes: Bus cable, termination\nFirst action: Check bus wiring and termination.\n\n6.3 Diagnosing L-03\nL-03 is the most frequent alarm on air-cooled chillers and the one most often misdiagnosed. Low suction pressure means the evaporator is getting too little refrigerant, or is taking up too little heat. A low charge is only one of the causes. An EXV that does not open as far as the controller commands starves the evaporator in exactly the same way, and produces the same alarm.\n\nBefore connecting gauges, open the EXV menu for the alarmed circuit and the alarm log entry. Then compare:\n\nReading: Superheat\nLow charge (leak): High\nEXV restricted or not opening: High\nBlocked filter drier: High\nIced evaporator / low flow: Low or normal\n\nReading: EXV position shown\nLow charge (leak): At or near 100 %\nEXV restricted or not opening: Any value; often normal\nBlocked filter drier: At or near 100 %\nIced evaporator / low flow: Low\n\nReading: Subcooling\nLow charge (leak): Low (below 2 K)\nEXV restricted or not opening: Normal or high\nBlocked filter drier: Normal before the drier\nIced evaporator / low flow: Normal\n\nReading: Sight glass\nLow charge (leak): Bubbles\nEXV restricted or not opening: Clear\nBlocked filter drier: Bubbles after the drier\nIced evaporator / low flow: Clear\n\nReading: Temperature drop across FD1\nLow charge (leak): Below 1 K\nEXV restricted or not opening: Below 1 K\nBlocked filter drier: Above 3 K\nIced evaporator / low flow: Below 1 K\n\nThe EXV position shown on the display is calculated from the number of steps the driver has sent. It is not measured at the valve. A valve that is sticking reports a normal position while passing far less refrigerant than the position suggests. Use the manual test in 7.4.3 to check whether the valve actually responds.\n\nIMPORTANT: Do not add refrigerant to clear L-03. If the charge is low, there is a leak: find and repair it first (chapter 8). Adding refrigerant to a circuit with a restricted EXV floods the condenser, raises the discharge pressure, and in warm weather leads to L-01.\n\n6.4 Typical operating values\nAt nominal conditions (chilled water 12/7 C, ambient 35 C, full load). Values at part load and low ambient are lower for discharge pressure and EXV position.\n\nValue: Suction pressure\nTypical range: 3.4 - 3.9 bar a\nValue: Suction superheat\nTypical range: 5 - 8 K (setpoint 6 K)",
+        "text_en": "Code: L-10\nAlarm: Sensor fault\nTrigger: Any sensor out of range\nRestart: Lockout of affected circuit\nPossible causes: Wire break, failed sensor\nFirst action: Check sensor and connector.\n\nCode: L-11\nAlarm: EXV driver fault\nTrigger: EXD reports open coil, short or low supply\nRestart: Lockout\nPossible causes: Coil or cable damage, driver failure\nFirst action: Check coil resistance and cable.\n\nCode: L-12\nAlarm: High superheat\nTrigger: Superheat above 15 K for 10 min with EXV at 100 %\nRestart: Warning only\nPossible causes: Low charge, restriction before the EXV, EXV not opening\nFirst action: Treat as early warning of L-03. See 6.3.\n\nCode: L-13\nAlarm: Low superheat\nTrigger: Superheat below 1 K for 3 min\nRestart: Auto, 5 min\nPossible causes: TS-S1 loose or uninsulated, EXV not closing\nFirst action: Check TS-S mounting, then EXV (7.4).\n\nCode: L-14\nAlarm: Communication loss\nTrigger: No response from EXD or fan bus for 30 s\nRestart: Auto\nPossible causes: Bus cable, termination\nFirst action: Check bus wiring and termination.\n\n6.3 Diagnosing L-03\nL-03 is the most frequent alarm on air-cooled chillers and the one most often misdiagnosed. Low suction pressure means the evaporator is getting too little refrigerant, or is taking up too little heat. A low charge is only one of the causes. An EXV that does not open as far as the controller commands starves the evaporator in exactly the same way, and produces the same alarm.\n\nBefore connecting gauges, open the EXV menu for the alarmed circuit and the alarm log entry. Then compare:\n\nReading: Superheat\nLow charge (leak): High\nEXV restricted or not opening: High\nBlocked filter drier: High\nIced evaporator / low flow: Low or normal\n\nReading: EXV position shown\nLow charge (leak): At or near 100 %\nEXV restricted or not opening: Any value; often normal\nBlocked filter drier: At or near 100 %\nIced evaporator / low flow: Low\n\nReading: Subcooling\nLow charge (leak): Low (below 2 K)\nEXV restricted or not opening: Normal or high\nBlocked filter drier: Normal before the drier\nIced evaporator / low flow: Normal\n\nReading: Sight glass\nLow charge (leak): Bubbles\nEXV restricted or not opening: Clear\nBlocked filter drier: Bubbles after the drier\nIced evaporator / low flow: Clear\n\nReading: Temperature drop across FD1\nLow charge (leak): Below 1 K\nEXV restricted or not opening: Below 1 K\nBlocked filter drier: Above 3 K\nIced evaporator / low flow: Below 1 K\n\nThe EXV position shown on the display is calculated from the number of steps the driver has sent. It is not measured at the valve. A valve that is sticking reports a normal position while passing far less refrigerant than the position suggests. Use the manual test in 7.4.3 to check whether the valve actually responds.\n\nIMPORTANT: Do not add refrigerant to clear L-03. If the charge is low, there is a leak: find and repair it first (chapter 8). Adding refrigerant to a circuit with a restricted EXV floods the condenser, raises the discharge pressure, and in warm weather leads to L-01.\n\n6.4 Typical operating values\nAt nominal conditions (chilled water 12/7 C, ambient 35 C, full load). Values at part load and low ambient are lower for discharge pressure and EXV position.\n\nValue: Suction pressure\nTypical range: 3.4 - 3.9 bar a\nValue: Suction superheat\nTypical range: 5 - 8 K (setpoint 6 K)",
+        "acl_key": "family-chillers",
+        "cosine": 0.5725790858268738,
+        "bm25_rank": 11,
+        "vector_rank": 3,
+        "rrf": 0.029957522915269395
+      },
+      {
+        "chunk_id": "d996ac6313270362",
+        "doc_path": "corpus/confluence/EU-Chiller-Field-Guide.html",
+        "doc_title": "EU Chiller Field Guide",
+        "doc_type": "Field Service guide",
+        "revision": "unknown",
+        "effective_date": "Oct 14, 2025",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : EU Chiller Field Guide",
+            "L-03 low suction pressure"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "EU Chiller Field Guide | Field Service : EU Chiller Field Guide › L-03 low suction pressure",
+        "text_original": "This is the important one, and the one where we have made mistakes. The procedure for low suction pressure on chillers in the EU is KT-WI-14 Low Suction Pressure on Chillers. I wrote the original in 2021 for Kyltek and it was translated in 2024 with the other work instructions. Follow it step by step.\n\nIn short, KT-WI-14 has you rule out the causes that aren't a refrigerant loss first, inspect for leaks, and then decide what to do about the charge. It has a rule for a small deficit with no visible leak, where you can top up and plan a full leak test for the next planned visit. Read the instruction for the exact condition. Don't do it from memory.\n\nBut first read the warning panel at the top of this page. On NK-600s in the SB-2025-014 serial range, check the bulletin before you go anywhere near KT-WI-14.\n\nCorvane has its own procedure for leak testing and recharging, SOP-020, which is stricter about topping up. As far as I know KT-WI-14 is still valid for the EU, because FS-STD-001 says the legacy Kyltek instructions stay valid until they're superseded, and nobody has superseded it. Lena has asked for the two to be reviewed together. Until then, if you're unsure, call me or Lena before you charge anything.\n\nThings to check before you think about the charge\n- Which circuit, and when. L-03 at start-up after a long stop is different from L-03 under load.\n- Ice on the evaporator or the suction line. An iced evaporator gives low suction pressure with a perfectly good charge.\n- Chilled water flow. Low flow through the evaporator does the same. Check the customer's pump and the differential across the evaporator.\n- Filter drier. Feel both ends. If the outlet is noticeably colder than the inlet, the drier is restricting. (Kyltek rule of thumb: if you can feel the difference with your hand, it's too much.) Part 63-0410 for the core.\n- EXV. On the controller service menu, watch the valve opening percentage while the circuit runs. If it sits at one value and doesn't move with load, or it's at 100% with low suction, the valve isn't doing its job. On campaign units, see the bulletin.\n- Sight glass. Bubbles in the liquid line sight glass with the circuit running steady suggest a low charge. Bubbles just after start-up mean nothing.\n- Oil marks. Where refrigerant leaks, oil comes with it. Look at flare nuts, Schrader valves, the compressor connections and the brazed joints at the coil headers.\n\nWinter restarts\nSeveral of our units in Rotterdam run at very low load or stand idle for weeks in winter, when the customer doesn't need much cooling. The first big restart in February or March is when L-03 tends to show up. We used to put this down to the cold. Since SB-2025-014 I'm less sure that was the whole story on the NK-600s. If you get L-03 on an NK-600 after a winter idle period, that's exactly the pattern the bulletin describes.",
+        "text_en": "This is the important one, and the one where we have made mistakes. The procedure for low suction pressure on chillers in the EU is KT-WI-14 Low Suction Pressure on Chillers. I wrote the original in 2021 for Kyltek and it was translated in 2024 with the other work instructions. Follow it step by step.\n\nIn short, KT-WI-14 has you rule out the causes that aren't a refrigerant loss first, inspect for leaks, and then decide what to do about the charge. It has a rule for a small deficit with no visible leak, where you can top up and plan a full leak test for the next planned visit. Read the instruction for the exact condition. Don't do it from memory.\n\nBut first read the warning panel at the top of this page. On NK-600s in the SB-2025-014 serial range, check the bulletin before you go anywhere near KT-WI-14.\n\nCorvane has its own procedure for leak testing and recharging, SOP-020, which is stricter about topping up. As far as I know KT-WI-14 is still valid for the EU, because FS-STD-001 says the legacy Kyltek instructions stay valid until they're superseded, and nobody has superseded it. Lena has asked for the two to be reviewed together. Until then, if you're unsure, call me or Lena before you charge anything.\n\nThings to check before you think about the charge\n- Which circuit, and when. L-03 at start-up after a long stop is different from L-03 under load.\n- Ice on the evaporator or the suction line. An iced evaporator gives low suction pressure with a perfectly good charge.\n- Chilled water flow. Low flow through the evaporator does the same. Check the customer's pump and the differential across the evaporator.\n- Filter drier. Feel both ends. If the outlet is noticeably colder than the inlet, the drier is restricting. (Kyltek rule of thumb: if you can feel the difference with your hand, it's too much.) Part 63-0410 for the core.\n- EXV. On the controller service menu, watch the valve opening percentage while the circuit runs. If it sits at one value and doesn't move with load, or it's at 100% with low suction, the valve isn't doing its job. On campaign units, see the bulletin.\n- Sight glass. Bubbles in the liquid line sight glass with the circuit running steady suggest a low charge. Bubbles just after start-up mean nothing.\n- Oil marks. Where refrigerant leaks, oil comes with it. Look at flare nuts, Schrader valves, the compressor connections and the brazed joints at the coil headers.\n\nWinter restarts\nSeveral of our units in Rotterdam run at very low load or stand idle for weeks in winter, when the customer doesn't need much cooling. The first big restart in February or March is when L-03 tends to show up. We used to put this down to the cold. Since SB-2025-014 I'm less sure that was the whole story on the NK-600s. If you get L-03 on an NK-600 after a winter idle period, that's exactly the pattern the bulletin describes.",
+        "acl_key": "family-chillers|region-eu",
+        "cosine": 0.5497379899024963,
+        "bm25_rank": 8,
+        "vector_rank": 6,
+        "rrf": 0.029857397504456328
+      },
+      {
+        "chunk_id": "9c4a8e9aafea29ee",
+        "doc_path": "corpus/sharepoint/KT-WI-14_Low_Suction_Pressure_Chillers_EN.docx",
+        "doc_title": "KT-WI-14 Low Suction Pressure, Chillers (EN)",
+        "doc_type": "Work instruction",
+        "revision": "3",
+        "effective_date": "15-03-2021",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "1. Doel / Purpose"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "KT-WI-14 Low Suction Pressure, Chillers (EN) | 3 | 1. Doel / Purpose",
+        "text_original": "1. Doel / Purpose\nThis work instruction describes how the service technician finds the cause of a low suction pressure alarm or trip on an air-cooled chiller, and what he may do on site to put the machine back in operation. The aim is that the machine runs again after one visit where this is safely possible, and that the customer does not wait for a second visit for small faults.",
+        "text_en": "1. Doel / Purpose\nThis work instruction describes how the service technician finds the cause of a low suction pressure alarm or trip on an air-cooled chiller, and what he may do on site to put the machine back in operation. The aim is that the machine runs again after one visit where this is safely possible, and that the customer does not wait for a second visit for small faults.",
+        "acl_key": "family-chillers|region-eu",
+        "cosine": 0.5360329747200012,
+        "bm25_rank": 5,
+        "vector_rank": 10,
+        "rrf": 0.02967032967032967
+      },
+      {
+        "chunk_id": "e8cbbe85d1120490",
+        "doc_path": "corpus/bulletins/Nordkyl_SB-2025-014_NK-600_EXV_Campaign.pdf",
+        "doc_title": "Nordkyl SB-2025-014",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "effective_date": "2 September 2025",
+        "locator": {
+          "page": 1,
+          "section_path": [
+            "FIELD CAMPAIGN NK-C25-14",
+            "SYMPTOM"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Nordkyl SB-2025-014 | 0 | FIELD CAMPAIGN NK-C25-14 › SYMPTOM",
+        "text_original": "• Alarm L-03 (low suction pressure) on one circuit only. The other circuit runs normally.\n• Typically in the first hours after a restart that follows an idle period of more than 48 hours: weekend shutdown, low load in winter, or after maintenance. More frequent at low ambient temperature.\n• Refrigerant charge is normal: liquid line sight glass clear, subcooling in the normal range, no leak found.\n• Suction superheat on the affected circuit is high, while the controller log shows the EXV request rising toward 100%.\n• The alarm often clears after a reset and a restart and comes back days or weeks later. This is why units have been topped up in the field without a leak being found.",
+        "text_en": "• Alarm L-03 (low suction pressure) on one circuit only. The other circuit runs normally.\n• Typically in the first hours after a restart that follows an idle period of more than 48 hours: weekend shutdown, low load in winter, or after maintenance. More frequent at low ambient temperature.\n• Refrigerant charge is normal: liquid line sight glass clear, subcooling in the normal range, no leak found.\n• Suction superheat on the affected circuit is high, while the controller log shows the EXV request rising toward 100%.\n• The alarm often clears after a reset and a restart and comes back days or weeks later. This is why units have been topped up in the field without a leak being found.",
+        "acl_key": "family-chillers|region-eu",
+        "cosine": 0.6005592942237854,
+        "bm25_rank": 17,
+        "vector_rank": 1,
+        "rrf": 0.02938045560996381
+      },
+      {
+        "chunk_id": "3a05f6cfa10b9f6c",
+        "doc_path": "corpus/email/FW_RTM-H-0007_repeat_alarm_customer_escalation.eml",
+        "doc_title": "FW: RTM-H-0007 repeat alarm",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": null,
+          "sender": "Pieter Jansen <p.jansen@maasvlaktefresh.nl>",
+          "date": "29 September 2026 08:12"
+        },
+        "header": "FW: RTM-H-0007 repeat alarm",
+        "text_original": "Dear Lena,\n\nI am writing to you directly because I don't think this is being handled at the right level.\n\nYesterday morning (Monday 28/9) the chiller on the roof of hall B, your number RTM-H-0007, went into alarm again with the same low pressure alarm as in February. Your technician Jakub came in the afternoon. He was polite and he spent more than an hour on it, but he told our shift lead that he is not allowed to work on the refrigerant side and that a certified colleague has to come. Nobody has given us a date for that. Since then the unit is running on one circuit.\n\nThis is the second visit for the same fault this year. In February your engineer added refrigerant, told us the unit was fine, and left. We were not told there was anything to follow up. Seven months later we are back where we started, and frankly, dit kan zo niet langer.\n\nI want to be clear about what is at stake for us. RTM-H-0007 cools the chilled rooms in hall B (AGF, fresh produce, set point 2 to 4 C). On one circuit the rooms held overnight, but yesterday at 16:00 cold room B3 was at 6.8 C and we had to move pallets into B1 and B2, which are now overfull. Our QA has raised a temperature deviation. We have two retail customers auditing us in October and they will look at those logs.\n\nWhat I need from Corvane:\n1. A root cause. Not \"low refrigerant\", but why it is low, or why the alarm keeps coming back.\n2. A date when a certified engineer will be on site. This week, please.\n3. Confirmation that you will not simply top it up again.\n\nI am on site all week. Please call me if that is quicker than email.",
+        "text_en": "Dear Lena,\n\nI am writing to you directly because I don't think this is being handled at the right level.\n\nYesterday morning (Monday 28/9) the chiller on the roof of hall B, your number RTM-H-0007, went into alarm again with the same low pressure alarm as in February. Your technician Jakub came in the afternoon. He was polite and he spent more than an hour on it, but he told our shift lead that he is not allowed to work on the refrigerant side and that a certified colleague has to come. Nobody has given us a date for that. Since then the unit is running on one circuit.\n\nThis is the second visit for the same fault this year. In February your engineer added refrigerant, told us the unit was fine, and left. We were not told there was anything to follow up. Seven months later we are back where we started, and frankly, this cannot go on any longer.\n\nI want to be clear about what is at stake for us. RTM-H-0007 cools the chilled rooms in hall B (AGF, fresh produce, set point 2 to 4 C). On one circuit the rooms held overnight, but yesterday at 16:00 cold room B3 was at 6.8 C and we had to move pallets into B1 and B2, which are now overfull. Our QA has raised a temperature deviation. We have two retail customers auditing us in October and they will look at those logs.\n\nWhat I need from Corvane:\n1. A root cause. Not \"low refrigerant\", but why it is low, or why the alarm keeps coming back.\n2. A date when a certified engineer will be on site. This week, please.\n3. Confirmation that you will not simply top it up again.\n\nI am on site all week. Please call me if that is quicker than email.",
+        "acl_key": "family-chillers|region-eu",
+        "cosine": 0.5054478645324707,
+        "bm25_rank": 1,
+        "vector_rank": 19,
+        "rrf": 0.029051670471052088
+      },
+      {
+        "chunk_id": "4d11384cad846acd",
+        "doc_path": "corpus/confluence/EU-Chiller-Field-Guide.html",
+        "doc_title": "EU Chiller Field Guide",
+        "doc_type": "Field Service guide",
+        "revision": "unknown",
+        "effective_date": "Oct 14, 2025",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : EU Chiller Field Guide",
+            "The alarms we actually see"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "EU Chiller Field Guide | Field Service : EU Chiller Field Guide › The alarms we actually see",
+        "text_original": "Code: L-01\nWhat it means: High discharge pressure\nWhat it usually is for us: Dirty condenser coil. In Rotterdam: salt, sand, and in June the poplar fluff from the trees along the access road. In Gdansk: flour dust\n\nCode: L-03\nWhat it means: Low suction pressure (below 2.4 bar for 60 s)\nWhat it usually is for us: Low charge from a leak, an iced evaporator, low water flow, a blocked filter drier, or on campaign-range NK-600s a sticking EXV. See below\n\nCode: L-06\nWhat it means: Chilled water flow switch\nWhat it usually is for us: Customer's pump stopped or a strainer on their side blocked. Ask before you open anything\n\nThere are more codes in the Nordkyl manual (chapter on alarms). These three are 90% of our call-outs.",
+        "text_en": "Code: L-01\nWhat it means: High discharge pressure\nWhat it usually is for us: Dirty condenser coil. In Rotterdam: salt, sand, and in June the poplar fluff from the trees along the access road. In Gdansk: flour dust\n\nCode: L-03\nWhat it means: Low suction pressure (below 2.4 bar for 60 s)\nWhat it usually is for us: Low charge from a leak, an iced evaporator, low water flow, a blocked filter drier, or on campaign-range NK-600s a sticking EXV. See below\n\nCode: L-06\nWhat it means: Chilled water flow switch\nWhat it usually is for us: Customer's pump stopped or a strainer on their side blocked. Ask before you open anything\n\nThere are more codes in the Nordkyl manual (chapter on alarms). These three are 90% of our call-outs.",
+        "acl_key": "family-chillers|region-eu",
+        "cosine": 0.5624473690986633,
+        "bm25_rank": 14,
+        "vector_rank": 5,
+        "rrf": 0.0288981288981289
+      },
+      {
+        "chunk_id": "c11e8e188b85b515",
+        "doc_path": "corpus/email/FW_RTM-H-0007_repeat_alarm_customer_escalation.eml",
+        "doc_title": "FW: RTM-H-0007 repeat alarm",
+        "doc_type": "email thread",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": null,
+          "sender": "Sofie de Vries <s.devries@corvane.eu>",
+          "date": "30 September 2026 05:48:09 +0000"
+        },
+        "header": "FW: RTM-H-0007 repeat alarm",
+        "text_original": "Hoi Lena,\n\nAs promised on the phone last night, here it is in writing so you have it for Pieter and for the file. Sorry it didn't make 15:00 yesterday, I was on a roof in Botlek with no signal most of the afternoon.\n\nFebruary first, because you asked and because it was my visit.\n\nI did the February call-out (00041055). L-03 on circuit 2 after the winter restart, suction 2.1 bar. I worked to KT-WI-14: visual inspection of circuit 2, the joints, service valves and around the compressor, no oil traces, no leak found. The deficit came out under 10% of nameplate charge, so per KT-WI-14 I topped up 2.5 kg R-513A and left it running to monitor. That is what the work instruction says, and it's how we did it at Kyltek for years. KT-WI-14 also says to schedule a full leak test at the next planned visit. I can't find in Servio or Salesforce that it was ever scheduled. I should have made sure it was.\n\nWhat I didn't do: I did not check the EXV campaign. RTM-H-0007 is serial NK600-230415. That is inside the serial range of the Nordkyl bulletin SB-2025-014 (NK600-220001 up to NK600-231999), campaign NK-C25-14. The symptom in the bulletin is L-03 after idle periods with normal charge, because the expansion valve sticks. A winter restart is exactly an idle period. So your memory is right, and it is quite possible the February alarm was the valve and not the charge at all, and I put 2.5 kg into a circuit that didn't need it. I'll check for that too.\n\nEerlijk gezegd, the worst part is that I put the campaign warning on the EU chiller field guide myself last October. I didn't connect it on the day. Balen.\n\nI've checked what we have. No record of the campaign being done on 0007. RTM-H-0008 is NK600-240702, outside the range, so that one is fine. GDN-H-0014 in Gdansk is NK600-221190, also inside the range, but that one Jakub and I did last October. That is the unit that taught us about the valve in the first place, which makes missing it on 0007 worse.\n\nWho goes: me. Jakub can't, he isn't F-gas certified yet, and he did the right thing on Monday by not putting gauges on it. I can be on site Thursday 1 October at 07:00. Jakub has asked Pieter's shift lead for roof access and the work at height permit for Thursday morning. I'll take Jakub with me so he sees it done.\n\nPlan on site:\n1. Check the EXV on circuit 2 first, before anything is connected to the refrigerant side: valve position in the service menu at restart and under load, superheat, and whether it's modulating or stuck. Also check which valve is fitted, rev 2 or rev 3. The label is readable on that unit.\n2. If it's the valve: replace with 63-1180 rev 3 on both circuits as the campaign says, booked under NK-C25-14. I emailed Mette Kjaer at Nordkyl this morning to confirm 0007 is still open on their campaign list and to get two valves sent to Rotterdam. If they're not here by Thursday, I do the diagnosis Thursday and come back for the swap.\n3. If the valve is fine, or the charge is still short after the valve: leak test per SOP-020 and repair. No top-up. If I can't find the leak, I tag the unit and escalate, which is what SOP-020 says to do.\n4. Either way I recover and weigh what's in circuit 2, so we know what the February 2.5 kg actually did.\n\nFor Pieter, I would say: in February we followed an instruction that allowed a top-up without a leak test; we missed a manufacturer campaign on the expansion valve that matches his symptoms; a certified engineer (me) is there Thursday at 07:00; we will not top up; and he gets the root cause in writing after the visit. I would not promise him it's the valve until I've seen it.\n\nOne more thing, and I'd like you to take it up because I can't. KT-WI-14 and SOP-020 say opposite things. SOP-020 says never top up without a leak test, and check the bulletins for the serial first. KT-WI-14, my own instruction from 2021, says top up if there's no visible leak and the deficit is under 10%. Both are in SharePoint, both look valid, and FS-STD-001 says the Kyltek instructions stay valid until superseded without saying which ones. So a technician here can do exactly what I did in February and be following procedure. I wrote KT-WI-14, but I don't own it any more. It was migrated in 2024 and nobody took it over. Who owns retiring it? Rachel? I'm happy to do the work, but someone on the Corvane side has to sign it off, otherwise this happens again on the next NK-600 after a cold week.\n\nGroetjes,\nSofie",
+        "text_en": "Hi Lena,\n\nAs promised on the phone last night, here it is in writing so you have it for Pieter and for the file. Sorry it didn't make 15:00 yesterday, I was on a roof in Botlek with no signal most of the afternoon.\n\nFebruary first, because you asked and because it was my visit.\n\nI did the February call-out (00041055). L-03 on circuit 2 after the winter restart, suction 2.1 bar. I worked to KT-WI-14: visual inspection of circuit 2, the joints, service valves and around the compressor, no oil traces, no leak found. The deficit came out under 10% of nameplate charge, so per KT-WI-14 I topped up 2.5 kg R-513A and left it running to monitor. That is what the work instruction says, and it's how we did it at Kyltek for years. KT-WI-14 also says to schedule a full leak test at the next planned visit. I can't find in Servio or Salesforce that it was ever scheduled. I should have made sure it was.\n\nWhat I didn't do: I did not check the EXV campaign. RTM-H-0007 is serial NK600-230415. That is inside the serial range of the Nordkyl bulletin SB-2025-014 (NK600-220001 up to NK600-231999), campaign NK-C25-14. The symptom in the bulletin is L-03 after idle periods with normal charge, because the expansion valve sticks. A winter restart is exactly an idle period. So your memory is right, and it is quite possible the February alarm was the valve and not the charge at all, and I put 2.5 kg into a circuit that didn't need it. I'll check for that too.\n\nHonestly, the worst part is that I put the campaign warning on the EU chiller field guide myself last October. I didn't connect it on the day. That sucks.\n\nI've checked what we have. No record of the campaign being done on 0007. RTM-H-0008 is NK600-240702, outside the range, so that one is fine. GDN-H-0014 in Gdansk is NK600-221190, also inside the range, but that one Jakub and I did last October. That is the unit that taught us about the valve in the first place, which makes missing it on 0007 worse.\n\nWho goes: me. Jakub can't, he isn't F-gas certified yet, and he did the right thing on Monday by not putting gauges on it. I can be on site Thursday 1 October at 07:00. Jakub has asked Pieter's shift lead for roof access and the work at height permit for Thursday morning. I'll take Jakub with me so he sees it done.\n\nPlan on site:\n1. Check the EXV on circuit 2 first, before anything is connected to the refrigerant side: valve position in the service menu at restart and under load, superheat, and whether it's modulating or stuck. Also check which valve is fitted, rev 2 or rev 3. The label is readable on that unit.\n2. If it's the valve: replace with 63-1180 rev 3 on both circuits as the campaign says, booked under NK-C25-14. I emailed Mette Kjaer at Nordkyl this morning to confirm 0007 is still open on their campaign list and to get two valves sent to Rotterdam. If they're not here by Thursday, I do the diagnosis Thursday and come back for the swap.\n3. If the valve is fine, or the charge is still short after the valve: leak test per SOP-020 and repair. No top-up. If I can't find the leak, I tag the unit and escalate, which is what SOP-020 says to do.\n4. Either way I recover and weigh what's in circuit 2, so we know what the February 2.5 kg actually did.\n\nFor Pieter, I would say: in February we followed an instruction that allowed a top-up without a leak test; we missed a manufacturer campaign on the expansion valve that matches his symptoms; a certified engineer (me) is there Thursday at 07:00; we will not top up; and he gets the root cause in writing after the visit. I would not promise him it's the valve until I've seen it.\n\nOne more thing, and I'd like you to take it up because I can't. KT-WI-14 and SOP-020 say opposite things. SOP-020 says never top up without a leak test, and check the bulletins for the serial first. KT-WI-14, my own instruction from 2021, says top up if there's no visible leak and the deficit is under 10%. Both are in SharePoint, both look valid, and FS-STD-001 says the Kyltek instructions stay valid until superseded without saying which ones. So a technician here can do exactly what I did in February and be following procedure. I wrote KT-WI-14, but I don't own it any more. It was migrated in 2024 and nobody took it over. Who owns retiring it? Rachel? I'm happy to do the work, but someone on the Corvane side has to sign it off, otherwise this happens again on the next NK-600 after a cold week.\n\nRegards,\nSofie",
+        "acl_key": "family-chillers|region-eu",
+        "cosine": 0.5014947652816772,
+        "bm25_rank": 4,
+        "vector_rank": 21,
+        "rrf": 0.02797067901234568
+      },
+      {
+        "chunk_id": "cd550eba05134bd1",
+        "doc_path": "corpus/bulletins/Nordkyl_SB-2025-014_NK-600_EXV_Campaign.pdf",
+        "doc_title": "Nordkyl SB-2025-014",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "effective_date": "2 September 2025",
+        "locator": {
+          "page": 2,
+          "section_path": [
+            "FIELD CAMPAIGN NK-C25-14",
+            "DIAGNOSIS: CHECK THE EXV BEFORE LEAK TESTING OR CHARGING"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Nordkyl SB-2025-014 | 0 | FIELD CAMPAIGN NK-C25-14 › DIAGNOSIS: CHECK THE EXV BEFORE LEAK TESTING OR CHARGING",
+        "text_original": "1. Confirm that the unit serial number is in the range above.\n2. Let the alarmed circuit run, or restart it, for at least 10 minutes.\n3. On the controller, open Service > Circuits > Circuit 1 (or 2) > EXV. Read \"EXV request\" and \"EXV position\" in %. Service level login is needed.\n4. If the position stays below 15% while the request is higher (usually 40 to 100%), the valve is stuck. The fault is confirmed. Do not add refrigerant. Replace the valves as described below.\n5. If the position follows the request within about 5%, the EXV is not the cause of this alarm. Continue with the L-03 troubleshooting in the NK-600 Service Manual. The unit is still in the campaign; schedule the valve replacement.\n6. Do not tap the valve body to free it. A valve that moves after tapping is still defective and will stick again.\n\nWrite down the request and position values for both circuits. They are needed for the campaign claim.",
+        "text_en": "1. Confirm that the unit serial number is in the range above.\n2. Let the alarmed circuit run, or restart it, for at least 10 minutes.\n3. On the controller, open Service > Circuits > Circuit 1 (or 2) > EXV. Read \"EXV request\" and \"EXV position\" in %. Service level login is needed.\n4. If the position stays below 15% while the request is higher (usually 40 to 100%), the valve is stuck. The fault is confirmed. Do not add refrigerant. Replace the valves as described below.\n5. If the position follows the request within about 5%, the EXV is not the cause of this alarm. Continue with the L-03 troubleshooting in the NK-600 Service Manual. The unit is still in the campaign; schedule the valve replacement.\n6. Do not tap the valve body to free it. A valve that moves after tapping is still defective and will stick again.\n\nWrite down the request and position values for both circuits. They are needed for the campaign claim.",
+        "acl_key": "family-chillers|region-eu",
+        "cosine": 0.5436731576919556,
+        "bm25_rank": 19,
+        "vector_rank": 9,
+        "rrf": 0.02715098147128967
+      },
+      {
+        "chunk_id": "18f603e2fc995d6b",
+        "doc_path": "corpus/bulletins/Nordkyl_SB-2025-014_NK-600_EXV_Campaign.pdf",
+        "doc_title": "Nordkyl SB-2025-014",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "effective_date": "2 September 2025",
+        "locator": {
+          "page": 1,
+          "section_path": [
+            "FIELD CAMPAIGN NK-C25-14"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Nordkyl SB-2025-014 | 0 | FIELD CAMPAIGN NK-C25-14",
+        "text_original": "NK-600: expansion valve EXV-2 rev 2 can stick partly closed after idle periods\n\nBulletin: SB-2025-014\nCategory: Reliability, field campaign\nIssued: 2 September 2025\nCampaign code: NK-C25-14\nProduct: NK-600 air-cooled chiller, R-513A\nRevision: 0\n\nBefore you leak test or add refrigerant\nOn an NK-600 in the serial range below with an L-03 alarm, check the EXV position in the service menu first (section 4). A sticking expansion valve starves the evaporator and gives the same alarm as a low charge. Adding refrigerant does not correct it, and the circuit is overcharged when the valve frees again.",
+        "text_en": "NK-600: expansion valve EXV-2 rev 2 can stick partly closed after idle periods\n\nBulletin: SB-2025-014\nCategory: Reliability, field campaign\nIssued: 2 September 2025\nCampaign code: NK-C25-14\nProduct: NK-600 air-cooled chiller, R-513A\nRevision: 0\n\nBefore you leak test or add refrigerant\nOn an NK-600 in the serial range below with an L-03 alarm, check the EXV position in the service menu first (section 4). A sticking expansion valve starves the evaporator and gives the same alarm as a low charge. Adding refrigerant does not correct it, and the circuit is overcharged when the valve frees again.",
+        "acl_key": "family-chillers|region-eu",
+        "cosine": 0.5130100250244141,
+        "bm25_rank": 16,
+        "vector_rank": 17,
+        "rrf": 0.026144907723855092
+      },
+      {
+        "chunk_id": "878dbe59ff355470",
+        "doc_path": "corpus/sharepoint/KT-WI-14_Low_Suction_Pressure_Chillers_EN.docx",
+        "doc_title": "KT-WI-14 Low Suction Pressure, Chillers (EN)",
+        "doc_type": "Work instruction",
+        "revision": "3",
+        "effective_date": "15-03-2021",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "5. Werkwijze / Method"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "KT-WI-14 Low Suction Pressure, Chillers (EN) | 3 | 5. Werkwijze / Method",
+        "text_original": "5. Werkwijze / Method\nWork through the checks in the order below. Most low suction pressure alarms are not caused by a lack of refrigerant. Check first the things that can be seen without opening the circuit.\n\n5.1 Eerste beoordeling (First assessment)\n5.1.1 Read the alarm history on the controller. Write down which circuit stopped, the date and time, and how often in the last 30 days.\n5.1.2 Ask the customer what happened before the alarm: a restart after a stop, a cold night, a change in the process, work on the water side.\n5.1.3 Look at the suction and discharge pressure and the leaving water temperature on the controller display while the circuit runs. Compare with the normal values in the manufacturer's manual.\n5.1.4 Note whether the alarm came at start-up, after a long stop, or during normal running. An alarm only at start-up in cold weather points to the condenser side (5.3) before the charge.\n\n5.2 Verdamper en waterzijde (Evaporator and water side)\n5.2.1 Check that the chilled water pump runs and that the flow switch is made. Low water flow gives a low evaporating pressure even with a full charge.\n5.2.2 Check the water strainer (vuilfilter) before the evaporator. A blocked strainer is a frequent cause at food sites.\n5.2.3 Measure the water temperature in and out. A very small difference with a low suction pressure means low load; a large difference means low flow.\n5.2.4 Check for ice (ijsvorming) on the suction line and on the evaporator. Ice is a result, not a cause. Find out first whether the flow or the load is too low.\n5.2.5 Where the system has glycol, check the concentration with the refractometer. Too little glycol at low water temperatures can freeze the evaporator.\n\n5.3 Condensorzijde en ventilatoren (Condenser side and fans)\n5.3.1 Check that all condenser fans run and turn in the right direction. Listen for bearing noise.\n5.3.2 In cold weather the fan speed control (toerenregeling) must keep the condensing pressure up. If the fans run at full speed at low outside temperature, the condensing pressure falls and the suction pressure falls with it. Check the setting and the pressure transmitter of the fan speed control.\n5.3.3 Check the condenser coil for dirt, leaves and plastic. Clean with low-pressure water from the inside out, with the fans isolated.\n5.3.4 On units on a roof, check that nothing blocks the air inlet, for example stored pallets or snow.\n\n5.4 Filterdroger (Filter drier)\n5.4.1 Measure the temperature of the liquid line before and after the filter drier with the circuit running.\n5.4.2 A difference of more than 3 K means a (partly) blocked filter drier. [F] Replace the filter drier core. [Translator: Corvane part no. 63-0410 for Nordkyl NK units.]\n5.4.3 Bubbles in the sight glass directly after the filter drier can also come from a blocked filter drier, not only from a lack of refrigerant. Check the temperature difference before concluding the charge is low.\n\n5.5 Expansieventiel (Expansion valve)\n5.5.1 On the controller service screen, check that the electronic expansion valve opens and closes with the load.\n5.5.2 Electronic expansion valves are reliable and are rarely the cause of a low suction pressure. If the valve opening looks wrong, contact the manufacturer before replacing anything.\n\n5.6 Vulling en lekcontrole [F] (Charge and leak check [F])\n5.6.1 [F] Connect the manifold. Measure suction and liquid pressure, superheat (oververhitting) and subcooling (onderkoeling) with the circuit running at stable load for at least 10 minutes.\n5.6.2 [F] High superheat together with low subcooling and bubbles in the sight glass, with a clean filter drier, points to a lack of refrigerant (ondervulling).\n5.6.3 [F] Do a visual inspection of the circuit for oil traces at flare connections, service valves, the compressor and the brazed joints that can be reached. Check the accessible joints with the electronic leak detector.\n5.6.4 [F] Estimate the deficit: compare the last known charge in the logbook with the nameplate charge, and note the amount needed to get a clear sight glass and normal subcooling.\n5.6.5 [F] If no leak is found by visual inspection and the deficit is below 10% of nameplate charge, top up and monitor; schedule a full leak test at the next planned visit.\n5.6.6 [F] If a leak is found, or the deficit is 10% of the nameplate charge or more, do not top up. Recover, repair and test the circuit according to KT-WI-09 (Lekdichtheidsbeproeving en herstel / Leak tightness testing and repair).\n5.6.7 [F] Top up (bijvullen) by weight, as liquid, in small steps of maximum 0,5 kg, and wait 5 minutes after each step for the readings to settle. Stop when the sight glass is clear and the subcooling is normal.\n\n5.7 Na de werkzaamheden (After the work)\n5.7.1 Run the machine for at least 30 minutes and check that the suction pressure stays stable at full and at partial load.\n5.7.2 Tell the customer what was found and done. Where refrigerant was added, tell the customer that a full leak test will be done at the next planned visit.\n5.7.3 Put a note on the machine with the date, the amount added and your name.",
+        "text_en": "5. Werkwijze / Method\nWork through the checks in the order below. Most low suction pressure alarms are not caused by a lack of refrigerant. Check first the things that can be seen without opening the circuit.\n\n5.1 Eerste beoordeling (First assessment)\n5.1.1 Read the alarm history on the controller. Write down which circuit stopped, the date and time, and how often in the last 30 days.\n5.1.2 Ask the customer what happened before the alarm: a restart after a stop, a cold night, a change in the process, work on the water side.\n5.1.3 Look at the suction and discharge pressure and the leaving water temperature on the controller display while the circuit runs. Compare with the normal values in the manufacturer's manual.\n5.1.4 Note whether the alarm came at start-up, after a long stop, or during normal running. An alarm only at start-up in cold weather points to the condenser side (5.3) before the charge.\n\n5.2 Verdamper en waterzijde (Evaporator and water side)\n5.2.1 Check that the chilled water pump runs and that the flow switch is made. Low water flow gives a low evaporating pressure even with a full charge.\n5.2.2 Check the water strainer (vuilfilter) before the evaporator. A blocked strainer is a frequent cause at food sites.\n5.2.3 Measure the water temperature in and out. A very small difference with a low suction pressure means low load; a large difference means low flow.\n5.2.4 Check for ice (ijsvorming) on the suction line and on the evaporator. Ice is a result, not a cause. Find out first whether the flow or the load is too low.\n5.2.5 Where the system has glycol, check the concentration with the refractometer. Too little glycol at low water temperatures can freeze the evaporator.\n\n5.3 Condensorzijde en ventilatoren (Condenser side and fans)\n5.3.1 Check that all condenser fans run and turn in the right direction. Listen for bearing noise.\n5.3.2 In cold weather the fan speed control (toerenregeling) must keep the condensing pressure up. If the fans run at full speed at low outside temperature, the condensing pressure falls and the suction pressure falls with it. Check the setting and the pressure transmitter of the fan speed control.\n5.3.3 Check the condenser coil for dirt, leaves and plastic. Clean with low-pressure water from the inside out, with the fans isolated.\n5.3.4 On units on a roof, check that nothing blocks the air inlet, for example stored pallets or snow.\n\n5.4 Filterdroger (Filter drier)\n5.4.1 Measure the temperature of the liquid line before and after the filter drier with the circuit running.\n5.4.2 A difference of more than 3 K means a (partly) blocked filter drier. [F] Replace the filter drier core. [Translator: Corvane part no. 63-0410 for Nordkyl NK units.]\n5.4.3 Bubbles in the sight glass directly after the filter drier can also come from a blocked filter drier, not only from a lack of refrigerant. Check the temperature difference before concluding the charge is low.\n\n5.5 Expansieventiel (Expansion valve)\n5.5.1 On the controller service screen, check that the electronic expansion valve opens and closes with the load.\n5.5.2 Electronic expansion valves are reliable and are rarely the cause of a low suction pressure. If the valve opening looks wrong, contact the manufacturer before replacing anything.\n\n5.6 Vulling en lekcontrole [F] (Charge and leak check [F])\n5.6.1 [F] Connect the manifold. Measure suction and liquid pressure, superheat (oververhitting) and subcooling (onderkoeling) with the circuit running at stable load for at least 10 minutes.\n5.6.2 [F] High superheat together with low subcooling and bubbles in the sight glass, with a clean filter drier, points to a lack of refrigerant (ondervulling).\n5.6.3 [F] Do a visual inspection of the circuit for oil traces at flare connections, service valves, the compressor and the brazed joints that can be reached. Check the accessible joints with the electronic leak detector.\n5.6.4 [F] Estimate the deficit: compare the last known charge in the logbook with the nameplate charge, and note the amount needed to get a clear sight glass and normal subcooling.\n5.6.5 [F] If no leak is found by visual inspection and the deficit is below 10% of nameplate charge, top up and monitor; schedule a full leak test at the next planned visit.\n5.6.6 [F] If a leak is found, or the deficit is 10% of the nameplate charge or more, do not top up. Recover, repair and test the circuit according to KT-WI-09 (Lekdichtheidsbeproeving en herstel / Leak tightness testing and repair).\n5.6.7 [F] Top up (bijvullen) by weight, as liquid, in small steps of maximum 0,5 kg, and wait 5 minutes after each step for the readings to settle. Stop when the sight glass is clear and the subcooling is normal.\n\n5.7 Na de werkzaamheden (After the work)\n5.7.1 Run the machine for at least 30 minutes and check that the suction pressure stays stable at full and at partial load.\n5.7.2 Tell the customer what was found and done. Where refrigerant was added, tell the customer that a full leak test will be done at the next planned visit.\n5.7.3 Put a note on the machine with the date, the amount added and your name.",
+        "acl_key": "family-chillers|region-eu",
+        "cosine": 0.5344032049179077,
+        "bm25_rank": 23,
+        "vector_rank": 11,
+        "rrf": 0.026132699813337858
+      },
+      {
+        "chunk_id": "fe4a2c3e838fddb8",
+        "doc_path": "corpus/data/servio_export_EU_2023-2026.csv",
+        "doc_title": "Servio export EU",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "2600347",
+          "sender": null,
+          "date": "24-02-2026",
+          "thread_record_ids": [
+            "2600347",
+            "2600357"
+          ]
+        },
+        "header": "Servio export EU | 2600347",
+        "text_original": "werkorder: 2600347\ndatum: 24-02-2026\nobject: RTM-H-0007\nobject_oud: MFL-KM07\nlocatie: Rotterdam DC Maasvlakte\ntype: Storing\nstoringscode: L-03\nomschrijving: L-03 circuit 2 na winterstop/herstart, zuigdruk 2,1 bar. 2,5 kg R513A bijgevuld, geen lek gevonden (visueel), cfm KT-WI-14. tekort < 10% vulling. SF 00041055\nmonteur: SDEVRIES\nonderdelen: R513A 2,5 kg (cil. 4471)\nuren: 3\ndraaiuren: 11252\nstatus: Gereed\n\nwerkorder: 2600357\ndatum: 25-02-2026\nobject: RTM-H-0007\nobject_oud: MFL-KM07\nlocatie: Rotterdam DC Maasvlakte\ntype: Inspectie\nstoringscode: \nomschrijving: controle na bijvullen, zuigdruk c2 3,3 bar, geen alarm. klant geinformeerd\nmonteur: SDEVRIES\nonderdelen: \nuren: 1\ndraaiuren: \nstatus: Gereed",
+        "text_en": "work order: 2600347\ndate: 24-02-2026\nobject: RTM-H-0007\nold object: MFL-KM07\nlocation: Rotterdam DC Maasvlakte\ntype: Fault\nfault code: L-03\ndescription: L-03 circuit 2 after winter shutdown/restart, suction pressure 2,1 bar. 2,5 kg R513A topped up, no leak found (visual), cfm KT-WI-14. shortfall < 10% fill. SF 00041055\ntechnician: SDEVRIES\nparts: R513A 2,5 kg (cil. 4471)\nhours: 3\noperating hours: 11252\nstatus: Complete\n\nwork order: 2600357\ndate: 25-02-2026\nobject: RTM-H-0007\nold object: MFL-KM07\nlocation: Rotterdam DC Maasvlakte\ntype: Inspection\nfault code: \ndescription: check after topping up, suction pressure c2 3,3 bar, no alarm. customer informed\ntechnician: SDEVRIES\nparts: \nhours: 1\noperating hours: \nstatus: Complete",
+        "acl_key": "region-eu",
+        "cosine": 0.4964550733566284,
+        "bm25_rank": 10,
+        "vector_rank": 25,
+        "rrf": 0.026050420168067225
+      },
+      {
+        "chunk_id": "3b82b278a707bd88",
+        "doc_path": "corpus/bulletins/Nordkyl_SB-2025-014_NK-600_EXV_Campaign.pdf",
+        "doc_title": "Nordkyl SB-2025-014",
+        "doc_type": "Service Bulletin",
+        "revision": "0",
+        "effective_date": "2 September 2025",
+        "locator": {
+          "page": 2,
+          "section_path": [
+            "FIELD CAMPAIGN NK-C25-14",
+            "CORRECTIVE ACTION: REPLACE EXV-2 ON BOTH CIRCUITS"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Nordkyl SB-2025-014 | 0 | FIELD CAMPAIGN NK-C25-14 › CORRECTIVE ACTION: REPLACE EXV-2 ON BOTH CIRCUITS",
+        "text_original": "Replace the valve on both circuits of the unit, also when only one circuit has alarmed. The work opens the refrigerant circuit and may only be done by refrigerant-certified technicians (EU F-gas Category I or national equivalent). Allow half a day on site for the unit.\n\n1. Order two valve assemblies 63-1180 (rev 3) and two filter drier cores 63-0410 per unit. Each 63-1180 kit includes the new stepper cable and a campaign label.\n2. Stop the unit, isolate it electrically and lock it out.\n3. Recover the refrigerant from circuit 1 into a recovery cylinder. Weigh and record the amount recovered.\n4. Remove the EXV-2 rev 2 (63-1170). Braze the new valve 63-1180 in place with a nitrogen purge through the circuit. Wrap the valve body in a wet cloth; the body must not exceed 120 C.\n5. Replace the filter drier core with 63-0410.\n6. Pressure test and evacuate the circuit as described in the NK-600 Service Manual and according to local regulations.\n7. Charge by weight to the nameplate charge of the circuit. If refrigerant was added to this circuit at an earlier visit for an L-03 alarm, do not return the recovered amount blindly: the nameplate charge is the target.\n8. Fit the new stepper cable. The rev 2 cable does not fit the rev 3 motor and must not be modified.\n9. In Service > Configuration > Circuit 1 > EXV type, select \"rev 3\". With the wrong setting the valve opens too slowly.\n10. Repeat steps 3 to 9 for circuit 2.\n11. Start the unit. After 30 minutes check on both circuits that the EXV position follows the request and that superheat is stable.\n12. Fit the campaign label next to the nameplate. Log the work and the refrigerant quantities in the unit's F-gas record.\n13. Return the two removed valves to Nordkyl within 30 days with the return label from the partner portal. The returned valves are part of the claim.",
+        "text_en": "Replace the valve on both circuits of the unit, also when only one circuit has alarmed. The work opens the refrigerant circuit and may only be done by refrigerant-certified technicians (EU F-gas Category I or national equivalent). Allow half a day on site for the unit.\n\n1. Order two valve assemblies 63-1180 (rev 3) and two filter drier cores 63-0410 per unit. Each 63-1180 kit includes the new stepper cable and a campaign label.\n2. Stop the unit, isolate it electrically and lock it out.\n3. Recover the refrigerant from circuit 1 into a recovery cylinder. Weigh and record the amount recovered.\n4. Remove the EXV-2 rev 2 (63-1170). Braze the new valve 63-1180 in place with a nitrogen purge through the circuit. Wrap the valve body in a wet cloth; the body must not exceed 120 C.\n5. Replace the filter drier core with 63-0410.\n6. Pressure test and evacuate the circuit as described in the NK-600 Service Manual and according to local regulations.\n7. Charge by weight to the nameplate charge of the circuit. If refrigerant was added to this circuit at an earlier visit for an L-03 alarm, do not return the recovered amount blindly: the nameplate charge is the target.\n8. Fit the new stepper cable. The rev 2 cable does not fit the rev 3 motor and must not be modified.\n9. In Service > Configuration > Circuit 1 > EXV type, select \"rev 3\". With the wrong setting the valve opens too slowly.\n10. Repeat steps 3 to 9 for circuit 2.\n11. Start the unit. After 30 minutes check on both circuits that the EXV position follows the request and that superheat is stable.\n12. Fit the campaign label next to the nameplate. Log the work and the refrigerant quantities in the unit's F-gas record.\n13. Return the two removed valves to Nordkyl within 30 days with the return label from the partner portal. The returned valves are part of the claim.",
+        "acl_key": "family-chillers|region-eu",
+        "cosine": 0.4976021349430084,
+        "bm25_rank": 13,
+        "vector_rank": 24,
+        "rrf": 0.025603392041748205
+      },
+      {
+        "chunk_id": "0fbeafabb3a79bd0",
+        "doc_path": "corpus/data/salesforce_cases_EU_2025-2026.json",
+        "doc_title": "Salesforce cases EU",
+        "doc_type": "Salesforce Case export",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "5008d00000z3PmOJLL",
+          "sender": null,
+          "date": "2026-02-24T06:40:00.000+0000",
+          "thread_record_ids": [
+            "5008d00000z3PmOJLL",
+            "00a8d00000QYo9DaC2",
+            "00a8d00000xRyLIpKT",
+            "00a8d00000YHgGpu4T",
+            "00a8d00000DJ25NnhG"
+          ]
+        },
+        "header": "Salesforce cases EU | 5008d00000z3PmOJLL",
+        "text_original": "Id: 5008d00000z3PmOJLL\nCase Number: 00041055\nSubject: L-03 circuit 2 RTM-H-0007\nStatus: Closed\nPriority: High\nOrigin: Phone\nCreated Date: 2026-02-24T06:40:00.000+0000\nClosed Date: 2026-02-25T10:30:00.000+0000\nAccount: Maasvlakte Fresh Logistics\nAsset: RTM-H-0007\nEquipment Model: NK-600\nSerial Number: NK600-230415\nSite: RTM - Rotterdam Distribution Hub\nFault Code: L-03\nDescription: L-03 lage zuigdruk circuit 2 na herstart na de winterstop. Klant (P. Jansen) belde 07:30.\nResolution: L-03 circuit 2 after winter restart, suction 2.1 bar. Visual inspection, no leak found, deficit under 10% of nameplate. Topped up 2,5 kg R-513A per KT-WI-14. Monitoring.\nParts Used: R-513A 2.5 kg\nOwner: Sofie de Vries\n\nId: 00a8d00000QYo9DaC2\nComment: Unit stond ca. 6 weken stil (winterstop klant). Na herstart L-03 op circuit 2, circuit 1 normaal.\nCreated Date: 2026-02-24T12:15:00.000+0000\nPublished: false\nCreated By: Sofie de Vries\n\nId: 00a8d00000xRyLIpKT\nComment: Controle na bijvullen: zuigdruk c2 3,3 bar, geen alarm meer. Afgesloten.\nCreated Date: 2026-02-25T10:28:00.000+0000\nPublished: false\nCreated By: Sofie de Vries\n\nId: 00a8d00000YHgGpu4T\nComment: Linked to 00044102, L-03 again on the same circuit. Customer escalated.\nCreated Date: 2026-09-29T07:20:00.000+0000\nPublished: false\nCreated By: Lena Hoffmann\n\nId: 00a8d00000DJ25NnhG\nComment: EXV not checked at this visit. Will check it on site 01/10 before anything else, see 00044102.\nCreated Date: 2026-09-30T06:05:00.000+0000\nPublished: false\nCreated By: Sofie de Vries",
+        "text_en": "Id: 5008d00000z3PmOJLL\nCase Number: 00041055\nSubject: L-03 circuit 2 RTM-H-0007\nStatus: Closed\nPriority: High\nOrigin: Phone\nCreated Date: 2026-02-24T06:40:00.000+0000\nClosed Date: 2026-02-25T10:30:00.000+0000\nAccount: Maasvlakte Fresh Logistics\nAsset: RTM-H-0007\nEquipment Model: NK-600\nSerial Number: NK600-230415\nSite: RTM - Rotterdam Distribution Hub\nFault Code: L-03\nDescription: L-03 low suction pressure circuit 2 after restart following winter shutdown. Customer (P. Jansen) called 07:30.\nResolution: L-03 circuit 2 after winter restart, suction 2.1 bar. Visual inspection, no leak found, deficit under 10% of nameplate. Topped up 2,5 kg R-513A per KT-WI-14. Monitoring.\nParts Used: R-513A 2.5 kg\nOwner: Sofie de Vries\n\nId: 00a8d00000QYo9DaC2\nComment: Unit was stopped for approximately 6 weeks (customer winter shutdown). After restart, L-03 on circuit 2; circuit 1 normal.\nCreated Date: 2026-02-24T12:15:00.000+0000\nPublished: false\nCreated By: Sofie de Vries\n\nId: 00a8d00000xRyLIpKT\nComment: Check after topping up: suction pressure c2 3,3 bar, no alarm anymore. Closed.\nCreated Date: 2026-02-25T10:28:00.000+0000\nPublished: false\nCreated By: Sofie de Vries\n\nId: 00a8d00000YHgGpu4T\nComment: Linked to 00044102, L-03 again on the same circuit. Customer escalated.\nCreated Date: 2026-09-29T07:20:00.000+0000\nPublished: false\nCreated By: Lena Hoffmann\n\nId: 00a8d00000DJ25NnhG\nComment: EXV not checked at this visit. Will check it on site 01/10 before anything else, see 00044102.\nCreated Date: 2026-09-30T06:05:00.000+0000\nPublished: false\nCreated By: Sofie de Vries",
+        "acl_key": "region-eu",
+        "cosine": 0.4824758768081665,
+        "bm25_rank": 9,
+        "vector_rank": 35,
+        "rrf": 0.02501906941266209
+      },
+      {
+        "chunk_id": "f149ef009bdf5fc5",
+        "doc_path": "corpus/manuals/NK600_manual_final_v2.pdf",
+        "doc_title": "NK600 manual final v2",
+        "doc_type": "Service Manual",
+        "revision": "C",
+        "effective_date": "2025-03-05",
+        "locator": {
+          "page": 7,
+          "section_path": [
+            "5 Control logic",
+            "6 Alarms",
+            "6.1 Alarm handling",
+            "6.2 Alarm codes"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "NK600 manual final v2 | C | 5 Control logic › 6 Alarms › 6.1 Alarm handling › 6.2 Alarm codes",
+        "text_original": "Register: 40150\nPoint: Active alarm, highest priority\nScaling: L-code number, 0 = none\nAccess: R\nRegister: 40200\nPoint: Chilled water setpoint\nScaling: C x 10\nAccess: R/W\nRegister: 40201\nPoint: Remote enable\nScaling: 0 = off, 1 = on\nAccess: R/W\nRegister: 40202\nPoint: Demand limit\nScaling: % of capacity\nAccess: R/W\n\nWriting the setpoint from the BMS more often than once a minute wears the controller memory. Integrators should write only on change.\n\n6 Alarms\n\n6.1 Alarm handling\nActive alarms appear on the display with the L-code, the circuit, and the time. The last 500 alarms and events are stored in Main > Alarms > Log, with the suction and discharge pressures, superheat, EXV position and water temperatures at the moment of the alarm. Export the log to USB as a CSV file (Main > Alarms > Export) and attach it to every warranty claim and every enquiry to Nordkyl support.\n\n6.2 Alarm codes\nTable 6-1. Auto: restarts after the delay shown. Lockout: manual reset required.\n\nCode: L-01\nAlarm: High discharge pressure\nTrigger: HP switch opens, or PT-D above 22.5 bar\nRestart: Lockout\nPossible causes: Dirty condenser coil, fan fault, air recirculation, overcharge\nFirst action: Check fans and coil. Reset HP switch by hand.\n\nCode: L-02\nAlarm: High discharge temperature\nTrigger: TS-D above 105 C for 30 s\nRestart: Auto, 10 min; lockout after 3 in 24 h\nPossible causes: High superheat, low charge, compressor wear\nFirst action: Check superheat and subcooling (6.4).\n\nCode: L-03\nAlarm: Low suction pressure\nTrigger: Suction pressure below 2.4 bar for 60 s\nRestart: Auto, 5 min; lockout after 3 in 24 h\nPossible causes: Low refrigerant charge (leak); iced or fouled evaporator, low water flow; blocked filter drier; EXV fault\nFirst action: Check EXV position and superheat in the EXV menu (7.4) before connecting gauges. See 6.3.\n\nCode: L-04\nAlarm: Freeze protection\nTrigger: Leaving water below 3.0 C\nRestart: Lockout\nPossible causes: Low water flow, setpoint too low, glycol too weak\nFirst action: Check flow and glycol before reset.\n\nCode: L-05\nAlarm: Compressor protection\nTrigger: Motor protection module trips\nRestart: Lockout\nPossible causes: Motor overheating, phase imbalance, winding fault\nFirst action: Measure winding resistance and supply.\n\nCode: L-06\nAlarm: Chilled water flow\nTrigger: Chilled water flow switch open for 10 s\nRestart: Auto when flow returns\nPossible causes: Pump stopped, strainer blocked, air in system\nFirst action: Check chilled water pump and strainer.\n\nCode: L-07\nAlarm: Oil level low\nTrigger: Optical level switch for 30 s\nRestart: Auto, 10 min; lockout after 2 in 24 h\nPossible causes: Oil foaming at start, poor oil return at low load\nFirst action: Check crankcase heater (4.1).\n\nCode: L-08\nAlarm: Phase fault\nTrigger: Phase loss or wrong sequence\nRestart: Auto when corrected\nPossible causes: Supply fault\nFirst action: Check supply.\n\nCode: L-09\nAlarm: Fan fault\nTrigger: EC fan reports fault\nRestart: Auto\nPossible causes: Fan motor, fan supply, Modbus link to fan\nFirst action: Read fan fault code in Service > Fans.",
+        "text_en": "Register: 40150\nPoint: Active alarm, highest priority\nScaling: L-code number, 0 = none\nAccess: R\nRegister: 40200\nPoint: Chilled water setpoint\nScaling: C x 10\nAccess: R/W\nRegister: 40201\nPoint: Remote enable\nScaling: 0 = off, 1 = on\nAccess: R/W\nRegister: 40202\nPoint: Demand limit\nScaling: % of capacity\nAccess: R/W\n\nWriting the setpoint from the BMS more often than once a minute wears the controller memory. Integrators should write only on change.\n\n6 Alarms\n\n6.1 Alarm handling\nActive alarms appear on the display with the L-code, the circuit, and the time. The last 500 alarms and events are stored in Main > Alarms > Log, with the suction and discharge pressures, superheat, EXV position and water temperatures at the moment of the alarm. Export the log to USB as a CSV file (Main > Alarms > Export) and attach it to every warranty claim and every enquiry to Nordkyl support.\n\n6.2 Alarm codes\nTable 6-1. Auto: restarts after the delay shown. Lockout: manual reset required.\n\nCode: L-01\nAlarm: High discharge pressure\nTrigger: HP switch opens, or PT-D above 22.5 bar\nRestart: Lockout\nPossible causes: Dirty condenser coil, fan fault, air recirculation, overcharge\nFirst action: Check fans and coil. Reset HP switch by hand.\n\nCode: L-02\nAlarm: High discharge temperature\nTrigger: TS-D above 105 C for 30 s\nRestart: Auto, 10 min; lockout after 3 in 24 h\nPossible causes: High superheat, low charge, compressor wear\nFirst action: Check superheat and subcooling (6.4).\n\nCode: L-03\nAlarm: Low suction pressure\nTrigger: Suction pressure below 2.4 bar for 60 s\nRestart: Auto, 5 min; lockout after 3 in 24 h\nPossible causes: Low refrigerant charge (leak); iced or fouled evaporator, low water flow; blocked filter drier; EXV fault\nFirst action: Check EXV position and superheat in the EXV menu (7.4) before connecting gauges. See 6.3.\n\nCode: L-04\nAlarm: Freeze protection\nTrigger: Leaving water below 3.0 C\nRestart: Lockout\nPossible causes: Low water flow, setpoint too low, glycol too weak\nFirst action: Check flow and glycol before reset.\n\nCode: L-05\nAlarm: Compressor protection\nTrigger: Motor protection module trips\nRestart: Lockout\nPossible causes: Motor overheating, phase imbalance, winding fault\nFirst action: Measure winding resistance and supply.\n\nCode: L-06\nAlarm: Chilled water flow\nTrigger: Chilled water flow switch open for 10 s\nRestart: Auto when flow returns\nPossible causes: Pump stopped, strainer blocked, air in system\nFirst action: Check chilled water pump and strainer.\n\nCode: L-07\nAlarm: Oil level low\nTrigger: Optical level switch for 30 s\nRestart: Auto, 10 min; lockout after 2 in 24 h\nPossible causes: Oil foaming at start, poor oil return at low load\nFirst action: Check crankcase heater (4.1).\n\nCode: L-08\nAlarm: Phase fault\nTrigger: Phase loss or wrong sequence\nRestart: Auto when corrected\nPossible causes: Supply fault\nFirst action: Check supply.\n\nCode: L-09\nAlarm: Fan fault\nTrigger: EC fan reports fault\nRestart: Auto\nPossible causes: Fan motor, fan supply, Modbus link to fan\nFirst action: Read fan fault code in Service > Fans.",
+        "acl_key": "family-chillers",
+        "cosine": 0.5019957423210144,
+        "bm25_rank": 21,
+        "vector_rank": 20,
+        "rrf": 0.02484567901234568
+      },
+      {
+        "chunk_id": "1501352ec59241ad",
+        "doc_path": "corpus/data/servio_export_EU_2023-2026.csv",
+        "doc_title": "Servio export EU",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "2400209",
+          "sender": null,
+          "date": "15-01-2024"
+        },
+        "header": "Servio export EU | 2400209",
+        "text_original": "werkorder: 2400209\ndatum: 15-01-2024\nobject: RTM-H-0007\nobject_oud: MFL-KM07\nlocatie: Rotterdam DC Maasvlakte\ntype: Alarm\nstoringscode: L-03\nomschrijving: L-03 c2 kort na herstart winterstop, vanzelf hersteld na reset. geen actie\nmonteur: SDEVRIES\nonderdelen: \nuren: 0,5\ndraaiuren: \nstatus: Gereed",
+        "text_en": "work order: 2400209\ndate: 15-01-2024\nobject: RTM-H-0007\nold object: MFL-KM07\nlocation: Rotterdam DC Maasvlakte\ntype: Alarm\nfault code: L-03\ndescription: L-03 c2 shortly after restart following winter shutdown, automatically recovered after reset. no action\ntechnician: SDEVRIES\nparts: \nhours: 0,5\nrunning hours: \nstatus: Completed",
+        "acl_key": "region-eu",
+        "cosine": 0.5321251153945923,
+        "bm25_rank": 32,
+        "vector_rank": 12,
+        "rrf": 0.024758454106280192
+      },
+      {
+        "chunk_id": "9d3be16d38160c56",
+        "doc_path": "corpus/sharepoint/KT-WI-14_Low_Suction_Pressure_Chillers_EN.docx",
+        "doc_title": "KT-WI-14 Low Suction Pressure, Chillers (EN)",
+        "doc_type": "Work instruction",
+        "revision": "3",
+        "effective_date": "15-03-2021",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "2. Toepassingsgebied / Scope"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "KT-WI-14 Low Suction Pressure, Chillers (EN) | 3 | 2. Toepassingsgebied / Scope",
+        "text_original": "2. Toepassingsgebied / Scope\nAir-cooled chillers (luchtgekoelde koelmachines) with HFC or HFO refrigerant serviced by Kyltek, including the Nordkyl NK-300 and NK-600 series with R-513A and older units with R-134a or R-410A. For chillers with ammonia or CO2 this instruction does not apply.\n\nThe instruction is used when the controller gives a low suction pressure alarm (on Nordkyl units alarm L-03; for the setpoint see the manufacturer's alarm list) or when the customer reports that a circuit stops on low pressure.",
+        "text_en": "2. Toepassingsgebied / Scope\nAir-cooled chillers (luchtgekoelde koelmachines) with HFC or HFO refrigerant serviced by Kyltek, including the Nordkyl NK-300 and NK-600 series with R-513A and older units with R-134a or R-410A. For chillers with ammonia or CO2 this instruction does not apply.\n\nThe instruction is used when the controller gives a low suction pressure alarm (on Nordkyl units alarm L-03; for the setpoint see the manufacturer's alarm list) or when the customer reports that a circuit stops on low pressure.",
+        "acl_key": "family-chillers|region-eu",
+        "cosine": 0.544739842414856,
+        "bm25_rank": 41,
+        "vector_rank": 8,
+        "rrf": 0.024606872451951076
+      },
+      {
+        "chunk_id": "d7bb02df0e159d14",
+        "doc_path": "corpus/data/servio_export_EU_2023-2026.csv",
+        "doc_title": "Servio export EU",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "2500253",
+          "sender": null,
+          "date": "20-01-2025"
+        },
+        "header": "Servio export EU | 2500253",
+        "text_original": "werkorder: 2500253\ndatum: 20-01-2025\nobject: RTM-H-0007\nobject_oud: MFL-KM07\nlocatie: Rotterdam DC Maasvlakte\ntype: Alarm\nstoringscode: L-03\nomschrijving: L-03 c2 na herstart (klant winterstop), gereset, liep daarna normaal. geen actie\nmonteur: BVISSER\nonderdelen: \nuren: 0,5\ndraaiuren: \nstatus: Gereed",
+        "text_en": "work order: 2500253\ndate: 20-01-2025\nobject: RTM-H-0007\nold object: MFL-KM07\nlocation: Rotterdam DC Maasvlakte\ntype: Alarm\nfault code: L-03\ndescription: L-03 c2 after restart (customer winter shutdown), reset, then ran normally. no action\ntechnician: BVISSER\nparts: \nhours: 0,5\noperating hours: \nstatus: Completed",
+        "acl_key": "region-eu",
+        "cosine": 0.5188919305801392,
+        "bm25_rank": 31,
+        "vector_rank": 14,
+        "rrf": 0.024502524502524506
+      },
+      {
+        "chunk_id": "7e7e072a9c7fdcad",
+        "doc_path": "corpus/sharepoint/SOP-020_Chiller_Leak_Test_and_Recharge.docx",
+        "doc_title": "SOP-020 Chiller Leak Test and Refrigerant Recharge",
+        "doc_type": "Standard Operating Procedure",
+        "revision": "3",
+        "effective_date": "2025-06-11",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "SOP-020 Chiller Leak Test and Refrigerant Recharge",
+            "6. Procedure",
+            "6.1 Before you connect gauges"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "SOP-020 Chiller Leak Test and Refrigerant Recharge | 3 | SOP-020 Chiller Leak Test and Refrigerant Recharge › 6. Procedure › 6.1 Before you connect gauges",
+        "text_original": "Check the asset's serial number against open service bulletins and campaigns for the model. On Nordkyl NK-600 units covered by the EXV replacement campaign, follow the bulletin first: a sticking expansion valve produces the same alarm as a low charge.\n\nRead the alarm history on the controller. Note which circuit alarmed, when, and the suction and discharge pressures at the time.\n\nCheck for causes that are not a leak: an iced evaporator, low chilled water flow, a dirty condenser coil, a blocked filter drier (temperature drop across the drier above 3 C), or an expansion valve not modulating.\n\nInspect for oil stains at joints, flare nuts, service valves and the compressor. Oil marks the place where refrigerant escapes.",
+        "text_en": "Check the asset's serial number against open service bulletins and campaigns for the model. On Nordkyl NK-600 units covered by the EXV replacement campaign, follow the bulletin first: a sticking expansion valve produces the same alarm as a low charge.\n\nRead the alarm history on the controller. Note which circuit alarmed, when, and the suction and discharge pressures at the time.\n\nCheck for causes that are not a leak: an iced evaporator, low chilled water flow, a dirty condenser coil, a blocked filter drier (temperature drop across the drier above 3 C), or an expansion valve not modulating.\n\nInspect for oil stains at joints, flare nuts, service valves and the compressor. Oil marks the place where refrigerant escapes.",
+        "acl_key": "cert-refrigerant|family-chillers",
+        "cosine": 0.48447874188423157,
+        "bm25_rank": 27,
+        "vector_rank": 33,
+        "rrf": 0.02224694104560623
+      },
+      {
+        "chunk_id": "893d1a137c0b9871",
+        "doc_path": "corpus/data/servio_export_EU_2023-2026.csv",
+        "doc_title": "Servio export EU",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "2400695",
+          "sender": null,
+          "date": "29-08-2024"
+        },
+        "header": "Servio export EU | 2400695",
+        "text_original": "werkorder: 2400695\ndatum: 29-08-2024\nobject: RTM-H-0007\nobject_oud: MFL-KM07\nlocatie: Rotterdam DC Maasvlakte\ntype: PO\nstoringscode: \nomschrijving: kwartaalcontrole, geen bijzonderheden. persdruk c1 10,9 bar\nmonteur: SDEVRIES\nonderdelen: \nuren: 2\ndraaiuren: 5099\nstatus: Gereed",
+        "text_en": "work order: 2400695\ndate: 29-08-2024\nobject: RTM-H-0007\nprevious object: MFL-KM07\nlocation: Rotterdam DC Maasvlakte\ntype: PO\nfault code: \ndescription: quarterly inspection, no abnormalities. discharge pressure c1 10,9 bar\ntechnician: SDEVRIES\nparts: \nhours: 2\noperating hours: 5099\nstatus: Complete",
+        "acl_key": "region-eu",
+        "cosine": 0.48869937658309937,
+        "bm25_rank": 37,
+        "vector_rank": 29,
+        "rrf": 0.021545233406695237
+      },
+      {
+        "chunk_id": "03c1f5dc19521830",
+        "doc_path": "corpus/data/servio_export_EU_2023-2026.csv",
+        "doc_title": "Servio export EU",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "2600712",
+          "sender": null,
+          "date": "19-05-2026"
+        },
+        "header": "Servio export EU | 2600712",
+        "text_original": "werkorder: 2600712\ndatum: 19-05-2026\nobject: RTM-H-0007\nobject_oud: MFL-KM07\nlocatie: Rotterdam DC Maasvlakte\ntype: PO\nstoringscode: \nomschrijving: PO kwartaal. condensor gereinigd. zuigdruk c1 3,5 / c2 3,4 bar. geen alarmen sinds feb\nmonteur: SDEVRIES\nonderdelen: \nuren: 2,5\ndraaiuren: 12189\nstatus: Gereed",
+        "text_en": "work order: 2600712\ndate: 19-05-2026\nobject: RTM-H-0007\nold object: MFL-KM07\nlocation: Rotterdam DC Maasvlakte\ntype: PO\nfault code: \ndescription: Quarterly PO. condenser cleaned. suction pressure c1 3,5 / c2 3,4 bar. no alarms since Feb\ntechnician: SDEVRIES\nparts: \nhours: 2,5\noperating hours: 12189\nstatus: Completed",
+        "acl_key": "region-eu",
+        "cosine": 0.48120567202568054,
+        "bm25_rank": 49,
+        "vector_rank": 37,
+        "rrf": 0.019483590277120967
+      },
+      {
+        "chunk_id": "f048fae955d27360",
+        "doc_path": "corpus/confluence/Rotterdam-Site-Notes.html",
+        "doc_title": "Rotterdam Site Notes",
+        "doc_type": "Site Notes",
+        "revision": "unknown",
+        "effective_date": "Mar 02, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service: Rotterdam Site Notes",
+            "Comments"
+          ],
+          "record_id": "comment-3",
+          "sender": "Lena Hoffmann",
+          "date": "Sep 30, 2026 08:17"
+        },
+        "header": "Rotterdam Site Notes | Field Service: Rotterdam Site Notes › Comments",
+        "text_original": "0007 alarmed again on the 28th, circuit 2, and Pieter has escalated. Sofie, please update this page after you've been there.",
+        "text_en": "0007 alarmed again on the 28th, circuit 2, and Pieter has escalated. Sofie, please update this page after you've been there.",
+        "acl_key": "region-eu",
+        "cosine": 0.47701504826545715,
+        "bm25_rank": 47,
+        "vector_rank": 41,
+        "rrf": 0.019246784491533265
+      },
+      {
+        "chunk_id": "d75c10274982523a",
+        "doc_path": "corpus/data/salesforce_cases_EU_2025-2026.json",
+        "doc_title": "Salesforce cases EU",
+        "doc_type": "Salesforce Case export",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "5008d00000NbLGDVtk",
+          "sender": null,
+          "date": "2026-09-28T06:55:00.000+0000",
+          "thread_record_ids": [
+            "5008d00000NbLGDVtk",
+            "00a8d00000FGBB44hp",
+            "00a8d000001LTNPUwg",
+            "00a8d00000oytt487Y",
+            "02s8d00000pbZlL60A"
+          ]
+        },
+        "header": "Salesforce cases EU | 5008d00000NbLGDVtk",
+        "text_original": "Id: 5008d00000NbLGDVtk\nCase Number: 00044102\nSubject: RTM-H-0007 L-03 again\nStatus: Waiting on Technician\nPriority: Critical\nOrigin: Email\nCreated Date: 2026-09-28T06:55:00.000+0000\nClosed Date: null\nAccount: Maasvlakte Fresh Logistics\nAsset: RTM-H-0007\nEquipment Model: NK-600\nSerial Number: NK600-230415\nSite: RTM - Rotterdam Distribution Hub\nFault Code: L-03\nDescription: L-03 again on circuit 2. Same unit as February (00041055). Customer cold rooms in hall B affected.\nResolution: null\nParts Used: null\nOwner: Jakub Nowak\n\nId: 00a8d00000FGBB44hp\nComment: On site 14:10. L-03 circuit 2, suction 1.9 bar. Circuit 1 normal. No oil traces at joints or valves. I am not F-gas certified so no gauges connected. Unit running on circuit 1. Needs certified technician.\nCreated Date: 2026-09-28T13:40:00.000+0000\nPublished: false\nCreated By: Jakub Nowak\n\nId: 00a8d000001LTNPUwg\nComment: Customer (Pieter Jansen) escalated to me directly, unhappy about the repeat. Sofie attends Thu 01/10 07:00. Jakub to arrange roof access and work at height permit.\nCreated Date: 2026-09-29T07:25:00.000+0000\nPublished: false\nCreated By: Lena Hoffmann\n\nId: 00a8d00000oytt487Y\nComment: Geen koudemiddel bijvullen voor ik er ben. EXV first.\nCreated Date: 2026-09-30T06:10:00.000+0000\nPublished: false\nCreated By: Sofie de Vries\n\nId: 02s8d00000pbZlL60A\nSubject: Storing koelmachine dak hal B\nFrom: Pieter Jansen <p.jansen@maasvlaktefresh.nl>\nTo: service.eu@corvane.eu\nMessage Date: 2026-09-28T06:55:00.000+0000\nIncoming: true\nBody: The chiller on the roof of hall B (your RTM-H-0007) is in alarm again since this morning, low pressure alarm, same as February. One circuit is off. Please send someone today.",
+        "text_en": "Id: 5008d00000NbLGDVtk\nCase Number: 00044102\nSubject: RTM-H-0007 L-03 again\nStatus: Waiting on Technician\nPriority: Critical\nOrigin: Email\nCreated Date: 2026-09-28T06:55:00.000+0000\nClosed Date: null\nAccount: Maasvlakte Fresh Logistics\nAsset: RTM-H-0007\nEquipment Model: NK-600\nSerial Number: NK600-230415\nSite: RTM - Rotterdam Distribution Hub\nFault Code: L-03\nDescription: L-03 again on circuit 2. Same unit as February (00041055). Customer cold rooms in hall B affected.\nResolution: null\nParts Used: null\nOwner: Jakub Nowak\n\nId: 00a8d00000FGBB44hp\nComment: On site 14:10. L-03 circuit 2, suction 1.9 bar. Circuit 1 normal. No oil traces at joints or valves. I am not F-gas certified so no gauges connected. Unit running on circuit 1. Needs certified technician.\nCreated Date: 2026-09-28T13:40:00.000+0000\nPublished: false\nCreated By: Jakub Nowak\n\nId: 00a8d000001LTNPUwg\nComment: Customer (Pieter Jansen) escalated to me directly, unhappy about the repeat. Sofie attends Thu 01/10 07:00. Jakub to arrange roof access and work at height permit.\nCreated Date: 2026-09-29T07:25:00.000+0000\nPublished: false\nCreated By: Lena Hoffmann\n\nId: 00a8d00000oytt487Y\nComment: Do not top up refrigerant before I arrive. EXV first.\nCreated Date: 2026-09-30T06:10:00.000+0000\nPublished: false\nCreated By: Sofie de Vries\n\nId: 02s8d00000pbZlL60A\nSubject: Chiller fault, roof of hall B\nFrom: Pieter Jansen <p.jansen@maasvlaktefresh.nl>\nTo: service.eu@corvane.eu\nMessage Date: 2026-09-28T06:55:00.000+0000\nIncoming: true\nBody: The chiller on the roof of hall B (your RTM-H-0007) is in alarm again since this morning, low pressure alarm, same as February. One circuit is off. Please send someone today.",
+        "acl_key": "region-eu",
+        "cosine": null,
+        "bm25_rank": 2,
+        "vector_rank": null,
+        "rrf": 0.016129032258064516
+      },
+      {
+        "chunk_id": "484cce67a02fdbec",
+        "doc_path": "corpus/confluence/EU-Chiller-Field-Guide.html",
+        "doc_title": "EU Chiller Field Guide",
+        "doc_type": "Field Service guide",
+        "revision": "unknown",
+        "effective_date": "Oct 14, 2025",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : EU Chiller Field Guide",
+            "Old Kyltek notes on the NK-300 (from the original page, kept for history)"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "EU Chiller Field Guide | Field Service : EU Chiller Field Guide › Old Kyltek notes on the NK-300 (from the original page, kept for history)",
+        "text_original": "The NK-300s were first installed in 2022 (RTM-H-0011). Early units had the controller on firmware 6.x, which did not log the pressure at the moment of the alarm. All our NK-300s are now on 7.2. If you find an old printout in the plant room that doesn't have pressures in the alarm list, that's why.\n\nThe NK-300 has a single circuit, so an L-03 takes the whole unit down. Customers notice those faster.",
+        "text_en": "The NK-300s were first installed in 2022 (RTM-H-0011). Early units had the controller on firmware 6.x, which did not log the pressure at the moment of the alarm. All our NK-300s are now on 7.2. If you find an old printout in the plant room that doesn't have pressures in the alarm list, that's why.\n\nThe NK-300 has a single circuit, so an L-03 takes the whole unit down. Customers notice those faster.",
+        "acl_key": "family-chillers|region-eu",
+        "cosine": null,
+        "bm25_rank": 12,
+        "vector_rank": null,
+        "rrf": 0.013888888888888888
+      },
+      {
+        "chunk_id": "fb460547f47eb27b",
+        "doc_path": "corpus/confluence/EU-Chiller-Field-Guide.html",
+        "doc_title": "EU Chiller Field Guide",
+        "doc_type": "Field Service guide",
+        "revision": "unknown",
+        "effective_date": "Oct 14, 2025",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service : EU Chiller Field Guide",
+            "L-01 high discharge pressure"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "EU Chiller Field Guide | Field Service : EU Chiller Field Guide › L-01 high discharge pressure",
+        "text_original": "Clean the condenser coil. Every L-01 I've seen in Rotterdam in summer was the coil. Use the coil cleaner and low-pressure water, from the inside out where the fans allow it. Never use a pressure washer on the fins, they fold flat and then you've made it worse permanently. Check all the condenser fans run. A dead fan on one section shows up as L-01 on that circuit only on hot days.\n\nIf the coil is clean and the fans run and L-01 continues, it can be non-condensables in the circuit after a repair that wasn't evacuated properly. That's certified work.",
+        "text_en": "Clean the condenser coil. Every L-01 I've seen in Rotterdam in summer was the coil. Use the coil cleaner and low-pressure water, from the inside out where the fans allow it. Never use a pressure washer on the fins, they fold flat and then you've made it worse permanently. Check all the condenser fans run. A dead fan on one section shows up as L-01 on that circuit only on hot days.\n\nIf the coil is clean and the fans run and L-01 continues, it can be non-condensables in the circuit after a repair that wasn't evacuated properly. That's certified work.",
+        "acl_key": "family-chillers|region-eu",
+        "cosine": 0.5301343202590942,
+        "bm25_rank": null,
+        "vector_rank": 13,
+        "rrf": 0.0136986301369863
+      },
+      {
+        "chunk_id": "a22e8cbd78317ed8",
+        "doc_path": "corpus/confluence/Work-Order-Writing-Guide.html",
+        "doc_title": "Work Order Writing Guide",
+        "doc_type": "Work Order Writing Guide",
+        "revision": "unknown",
+        "effective_date": "Jan 21, 2026",
+        "locator": {
+          "page": null,
+          "section_path": [
+            "Field Service: Work Order Writing Guide",
+            "Certification required: the rule"
+          ],
+          "record_id": null,
+          "sender": null,
+          "date": null
+        },
+        "header": "Work Order Writing Guide | Field Service: Work Order Writing Guide › Certification required: the rule",
+        "text_original": "State the certification the work needs. Don't assign yourself. The supervisor assigns the technician, and checks the certification against the Technician Certification Matrix when they do. This applies even if you hold the certification and you're standing next to the unit. In that case say so in the summary, and the supervisor will usually assign you.\n\nSome examples of what needs what:\n- Anything inside a VFD cabinet on a VRS-110, including fault resets the panel won't do (E-31): HV.\n- Connecting gauges, recovering or charging refrigerant, brazing on a refrigerant circuit: Refrigerant.\n- Entering a pump pit at Fresno or any other permit space: Confined space, plus the permit under CS-PROC-03.\n- Cleaning a condenser coil, changing an air filter, reading an alarm log: None.\n\nIf you're not sure, select the certification. It's much cheaper to send a certified technician who didn't need to be certified than the other way round.",
+        "text_en": "State the certification the work needs. Don't assign yourself. The supervisor assigns the technician, and checks the certification against the Technician Certification Matrix when they do. This applies even if you hold the certification and you're standing next to the unit. In that case say so in the summary, and the supervisor will usually assign you.\n\nSome examples of what needs what:\n- Anything inside a VFD cabinet on a VRS-110, including fault resets the panel won't do (E-31): HV.\n- Connecting gauges, recovering or charging refrigerant, brazing on a refrigerant circuit: Refrigerant.\n- Entering a pump pit at Fresno or any other permit space: Confined space, plus the permit under CS-PROC-03.\n- Cleaning a condenser coil, changing an air filter, reading an alarm log: None.\n\nIf you're not sure, select the certification. It's much cheaper to send a certified technician who didn't need to be certified than the other way round.",
+        "acl_key": "",
+        "cosine": null,
+        "bm25_rank": 15,
+        "vector_rank": null,
+        "rrf": 0.013333333333333334
+      },
+      {
+        "chunk_id": "1edfcef65a93e503",
+        "doc_path": "corpus/data/servio_export_EU_2023-2026.csv",
+        "doc_title": "Servio export EU",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "2500355",
+          "sender": null,
+          "date": "04-03-2025"
+        },
+        "header": "Servio export EU | 2500355",
+        "text_original": "werkorder: 2500355\ndatum: 04-03-2025\nobject: RTM-P-0060\nobject_oud: MFL-PO60\nlocatie: Rotterdam DC Maasvlakte\ntype: Storing\nstoringscode: P-07\nomschrijving: P-07, strainer full of pallet wrap bits, dp 0,48 bar. cleaned, suction valve open. ok\nmonteur: ARAHMAN\nonderdelen: 18-1121\nuren: 2\ndraaiuren: 6033\nstatus: Gereed",
+        "text_en": "work order: 2500355\ndate: 04-03-2025\nobject: RTM-P-0060\nold object: MFL-PO60\nlocation: Rotterdam DC Maasvlakte\ntype: Fault\nfault code: P-07\ndescription: P-07, strainer full of pallet wrap bits, dp 0,48 bar. cleaned, suction valve open. ok\ntechnician: ARAHMAN\nparts: 18-1121\nhours: 2\noperating hours: 6033\nstatus: Completed",
+        "acl_key": "region-eu",
+        "cosine": 0.5149945616722107,
+        "bm25_rank": null,
+        "vector_rank": 15,
+        "rrf": 0.013333333333333334
+      },
+      {
+        "chunk_id": "8d1c124c2f2fb619",
+        "doc_path": "corpus/data/servio_export_EU_2023-2026.csv",
+        "doc_title": "Servio export EU",
+        "doc_type": "cmms",
+        "revision": "unknown",
+        "effective_date": "unknown",
+        "locator": {
+          "page": null,
+          "section_path": [],
+          "record_id": "2300538",
+          "sender": null,
+          "date": "29-11-2023"
+        },
+        "header": "Servio export EU | 2300538",
+        "text_original": "werkorder: 2300538\ndatum: 29-11-2023\nobject: RTM-H-0007\nobject_oud: MFL-KM07\nlocatie: Rotterdam DC Maasvlakte\ntype: Storing\nstoringscode: L-01\nomschrijving: hoge druk L-01, condensor dicht met vuil. gereinigd, gereset\nmonteur: BVISSER\nonderdelen: \nuren: 2\ndraaiuren: \nstatus: Gereed",
+        "text_en": "work order: 2300538\ndate: 29-11-2023\nobject: RTM-H-0007\nold object: MFL-KM07\nlocation: Rotterdam DC Maasvlakte\ntype: Fault\nfault code: L-01\ndescription: high pressure L-01, condenser clogged with dirt. cleaned, reset\ntechnician: BVISSER\nparts: \nhours: 2\nrunning hours: \nstatus: Completed",
+        "acl_key": "region-eu",
+        "cosine": 0.5135480165481567,
+        "bm25_rank": null,
+        "vector_rank": 16,
+        "rrf": 0.013157894736842105
+      }
+    ]
+  },
+  "judgement": {
+    "key_points": [
+      {
+        "point": "L-03 means low suction pressure",
+        "verdict": "present",
+        "reason": "The copilot explicitly says that “L-03 means suction below 2.4 bar,” and identifies 1.9 bar as below threshold."
+      },
+      {
+        "point": "Asset is NK-600 serial NK600-230415 in the SB-2025-014 EXV campaign range",
+        "verdict": "present",
+        "reason": "The copilot identifies RTM-H-0007 as NK-600 serial NK600-230415 and says it is within the SB-2025-014 affected range."
+      },
+      {
+        "point": "Campaign check was missed during the February 2.5 kg top-up under KT-WI-14",
+        "verdict": "present",
+        "reason": "The copilot states no campaign completion is recorded and later describes the February 2.5 kg top-up under KT-WI-14, followed by confirmation that the EXV campaign had been missed."
+      },
+      {
+        "point": "Check EXV position in the service menu first",
+        "verdict": "present",
+        "reason": "The copilot directs EXV checking before gauges or leak testing and gives the service-menu path for viewing EXV request and position."
+      },
+      {
+        "point": "If EXV is below 15% while more opening is requested, it is stuck",
+        "verdict": "present",
+        "reason": "The copilot says position remaining below 15% while request is higher confirms a stuck valve."
+      },
+      {
+        "point": "Replace EXVs on both circuits with 63-1180 rev 3 under NK-C25-14 if stuck",
+        "verdict": "present",
+        "reason": "The copilot directs campaign valve replacement on both circuits and specifies two 63-1180 rev 3 valve assemblies under campaign NK-C25-14."
+      },
+      {
+        "point": "If EXV is fine, leak-test per SOP-020 before any recharge",
+        "verdict": "present",
+        "reason": "The copilot says that if the valve is sound or charge remains short, leak-test and repair under SOP-020 without topping up."
+      },
+      {
+        "point": "KT-WI-14 permits top-up without a leak test, while SOP-020 forbids it",
+        "verdict": "present",
+        "reason": "The copilot explicitly describes the disagreement between KT-WI-14 permitting certain top-ups and SOP-020 prohibiting top-up without leak testing."
+      },
+      {
+        "point": "Draft a supervisor-approved work order identifying the asset and L-03 fault",
+        "verdict": "partial",
+        "reason": "The copilot refers to the open work order and says to arrange certified campaign work through the supervisor, but it does not explicitly draft a work order with RTM-H-0007 and L-03 as requested."
+      },
+      {
+        "point": "Work order requires refrigerant certification",
+        "verdict": "present",
+        "reason": "The copilot specifies EU F-gas Category I or equivalent certification for refrigerant-circuit work."
+      },
+      {
+        "point": "Work order requires 63-1180 x2 and campaign NK-C25-14",
+        "verdict": "present",
+        "reason": "The copilot specifies two 63-1180 rev 3 valve assemblies and identifies campaign NK-C25-14."
+      }
+    ],
+    "constraints": [
+      {
+        "constraint": "Do not recharge before leak testing when the EXV is not faulty",
+        "verdict": "respected",
+        "reason": "The copilot repeatedly says not to top up and requires leak testing and repair under SOP-020 before charging."
+      }
+    ],
+    "verdict": "partially_correct"
+  }
+}
